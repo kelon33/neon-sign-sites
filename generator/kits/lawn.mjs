@@ -9,7 +9,7 @@
 //   gallery[] { src, alt, size? }, reviews[] { text, name, note? }, why[], whyTitle,
 //   areas[], areasTitle, hours[], email, logo, logoChip, wordmark { top, bottom }
 
-import { esc, tel } from '../shared.mjs';
+import { esc, tel, previewTop, previewEnd } from '../shared.mjs';
 
 const star = '<svg viewBox="0 0 20 20" aria-hidden="true"><path d="M10 1.6l2.6 5.3 5.8.8-4.2 4.1 1 5.8L10 14.9l-5.2 2.7 1-5.8L1.6 7.7l5.8-.8z"/></svg>';
 const stars = `<span class="stars" aria-label="5 stars">${star.repeat(5)}</span>`;
@@ -22,7 +22,8 @@ const ICONS = [
 ];
 
 export function renderLawn(d) {
-  const preview = d.preview ? `<div class="preview-bar">Preview prepared for ${esc(d.name)} by <a href="https://neonsignsites.com/">Neon Sign Sites</a>. Not the live site.</div>` : '';
+  const preview = d.preview ? previewTop(d, esc) : '';
+  const previewClose = d.preview ? previewEnd(d, esc) : '';
   const rating = d.rating ? `<a class="rating" href="${esc(d.rating.url)}" target="_blank" rel="noopener">${stars}<b>${esc(d.rating.score)}</b><span>${esc(d.rating.count)} Google reviews</span></a>` : '';
   const highlights = d.highlights ?? d.mobile;
   const wordmark = d.wordmark ?? { top: d.name, bottom: '' };
@@ -341,6 +342,7 @@ ${d.why?.length ? `<section class="section">
     clearTimeout(b._t); b._t = setTimeout(() => b.classList.remove('shine'), 800);
   });
 </script>
+${previewClose}
 </body>
 </html>
 `;

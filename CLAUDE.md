@@ -23,6 +23,15 @@ We rebuild weak websites of US local service businesses (lawn care, mobile detai
 - The customer adds one CNAME (`www` → `config.json` `customerTarget`) and forwards `<domain>` to `www.<domain>` at their registrar (no apex on Cloudflare's non-Enterprise plans). Their other records, and so their email, are never touched. They choose: do it themselves from the email, or let us do it (delegate access at their registrar, or a screen-share). Never ask for their password. One-click Domain Connect comes later.
 - Not set up yet (Alon, in the Cloudflare dashboard): Custom Hostnames on the zone with a fallback origin, the Worker route for customer hosts, `cloudflareZoneId` in `config.json`, and a token with SSL and Certificates Edit reachable from the session.
 
+## Site forms and tracking
+- `forms.js` (called by `worker.js`): the home page form posts to `/api/preview-request`, the preview's "Make it live" goes to `/go` (`site/go.html`), which posts to `/api/go`. Both email Alon through Resend (Worker secret `RESEND_API_KEY`, set by Alon in the dashboard) and then go to `/thanks`; `/api/go` goes to the plan's PayPal link instead when `PAYPAL_MONTHLY_URL` / `PAYPAL_OWN_URL` are set in `wrangler.jsonc` `vars`.
+- Previews (and only previews) get a "Make it live" banner and a closing block (`generator/shared.mjs`). Re-render previews after changing it: `node generator/render.mjs demos/<slug>/site.json`.
+- `config.json` `analyticsToken` (Cloudflare Web Analytics, public): `deploy.mjs` adds the beacon to the site and previews, never to customer sites.
+
+## Later (remind Alon when we get there)
+- **Trust details:** a short "who's behind this" line about Alon, and the business postal address in the footer and terms, once the address is sorted.
+- **Examples:** a "Recent sites" section with before/after, only from customers who are live and agreed. Never show unsent previews publicly.
+
 ## Rules that must not break
 - **Nothing is sent without Alon's explicit approval of the exact text and link.** Show him each email in full first.
 - Previews use only the business's own public content (their website; rating and review count from Google). Never invent reviews, prices, years, guarantees or licences. Never copy Google listing photos or review texts into a site (Google's terms).

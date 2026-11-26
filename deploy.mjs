@@ -6,7 +6,7 @@
 //   npm run deploy          → builds and uploads with wrangler from a computer. Not from a cloud
 //                             session: its proxy replaces wrangler's upload token.
 
-import { cp, mkdir, rm, readdir, writeFile, stat } from 'node:fs/promises';
+import { cp, mkdir, rm, readdir, readFile, writeFile, stat } from 'node:fs/promises';
 import { execFileSync } from 'node:child_process';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
@@ -42,6 +42,22 @@ for (const domain of await readdir(customers).catch(() => [])) {
     if (f === 'index.html' || f === 'img' || /^logo.*\.(png|svg|jpe?g|webp)$/.test(f)) await cp(path.join(dir, f), path.join(to, f), { recursive: true });
   }
   launched.push(domain);
+}
+// Cloudflare Web Analytics (config.json analyticsToken): page views for the site and every preview,
+// so we can see who opened their preview. Never on customer sites (dist/c/).
+const { analyticsToken } = JSON.parse(await readFile(path.join(root, 'config.json'), 'utf8'));
+if (analyticsToken) {
+  const beacon = `<script defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token": "${analyticsToken}"}'></script>`;
+  const walk = async (dir) => {
+    for (const e of await readdir(dir, { withFileTypes: true })) {
+      const f = path.join(dir, e.name);
+      if (e.isDirectory()) { if (f !== path.join(dist, 'c')) await walk(f); continue; }
+      if (!e.name.endsWith('.html')) continue;
+      const html = await readFile(f, 'utf8');
+      if (!html.includes('cloudflareinsights')) await writeFile(f, html.replace(/<\/body>(?![\s\S]*<\/body>)/, `${beacon}\n</body>`));
+    }
+  };
+  await walk(dist);
 }
 await writeFile(path.join(dist, 'robots.txt'), 'User-agent: *\nDisallow: /p/\n\nSitemap: https://neonsignsites.com/sitemap.xml\n');
 await writeFile(path.join(dist, 'sitemap.xml'), `<?xml version="1.0" encoding="UTF-8"?>

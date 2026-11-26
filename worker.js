@@ -4,6 +4,8 @@
 // Customer domains reach us through Cloudflare for SaaS (custom hostnames): the customer points
 // www.<domain> at us with one CNAME and forwards <domain> to www.<domain> at their registrar.
 
+import { previewRequest, makeItLive } from './forms.js';
+
 const OWN = new Set(['neonsignsites.com', 'www.neonsignsites.com', 'localhost', '127.0.0.1']);
 
 // The customer folder for a host: "www.example.com" and "example.com" both → "example.com".
@@ -24,6 +26,8 @@ export default {
     const host = url.hostname.toLowerCase();
 
     if (OWN.has(host) || host.endsWith('.workers.dev')) {
+      if (request.method === 'POST' && url.pathname === '/api/preview-request') return previewRequest(request, env);
+      if (request.method === 'POST' && url.pathname === '/api/go') return makeItLive(request, env);
       const res = await env.ASSETS.fetch(request);
       // Customer sites are also reachable at /c/<domain>/ here: keep those copies out of search engines.
       return url.pathname.startsWith('/c/') ? withHeader(res, 'X-Robots-Tag', 'noindex, nofollow') : res;

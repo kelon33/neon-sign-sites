@@ -194,6 +194,17 @@ details[open] p { animation: faq-in .35s ease both; }
 .form input:focus { outline: none; border-color: var(--pink); box-shadow: 0 0 0 3px rgba(255,79,139,.2); }
 .form .btn { margin-top: 10px; }
 .form .fine { text-align: center; }
+.form .btn { justify-self: center; }
+.hp { position: absolute; left: -10000px; width: 1px; height: 1px; overflow: hidden; }
+.plans-pick { border: 0; padding: 0; margin: 0 0 6px; display: grid; gap: 10px; }
+.pick { display: grid !important; grid-template-columns: auto 1fr; gap: 14px !important; align-items: start; padding: 16px 18px; border: 1px solid var(--line); border-radius: 16px; background: var(--card); cursor: pointer; }
+.pick:has(input:checked) { border-color: rgba(255,79,139,.6); box-shadow: 0 0 0 3px rgba(255,79,139,.14); }
+.pick input { accent-color: var(--pink); margin-top: 4px; }
+.pick strong { display: block; color: var(--fg); font-size: 1.05rem; margin-bottom: 2px; }
+.agree { display: flex !important; align-items: center; gap: 10px !important; color: var(--fg) !important; }
+.agree input { accent-color: var(--pink); width: 18px; height: 18px; }
+.agree a { color: #ff7aa8; }
+.thanks .btn { margin-top: 18px; }
 
 .footer { border-top: 1px solid var(--line); padding: 44px 0; }
 .footer .wrap { display: grid; gap: 10px; }

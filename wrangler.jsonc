@@ -5,6 +5,13 @@
   "name": "neon-sign-sites",
   "compatibility_date": "2026-11-01",
   "main": "worker.js",
+  // Plain settings for the forms (forms.js). The Resend key is a secret set in the dashboard, not here.
+  "vars": {
+    "MAIL_FROM": "Neon Sign Sites <hello@neonsignsites.com>",
+    "NOTIFY_TO": "alon@neonsignsites.com",
+    "PAYPAL_MONTHLY_URL": "",
+    "PAYPAL_OWN_URL": ""
+  },
   "assets": {
     "directory": "./dist",
     "binding": "ASSETS",
