@@ -138,3 +138,13 @@ test('detailing menu links only to sections the page has', () => {
   assert.doesNotMatch(renderSite({ ...base, reviews: [], gallery: [] }), /href="#reviews"|href="#work"/);
   assert.match(renderSite({ ...base, reviews: [{ text: 't', name: 'n' }], gallery: [{ src: 'a.jpg', alt: '' }] }), /href="#reviews"[\s\S]*id="reviews"/);
 });
+
+import { weaknesses, emailsIn, pickEmail } from '../pipeline/research.mjs';
+
+test('research: weaknesses and the business email', () => {
+  const old = '<html><body>Hi © 2019 Bob</body></html>';
+  assert.deepEqual(weaknesses({ html: old, url: 'http://x.com/', ms: 6200 }), ['no https', 'not mobile-friendly', 'copyright 2019', 'slow (6.2s)', 'almost empty']);
+  const html = '<a href="mailto:Info@BobsLawn.com?subject=x">mail</a> logo@2x.png bob@gmail.com noreply@bobslawn.com';
+  assert.deepEqual(emailsIn(html).sort(), ['bob@gmail.com', 'info@bobslawn.com']);
+  assert.equal(pickEmail(['bob@gmail.com', 'info@bobslawn.com'], 'https://www.bobslawn.com/'), 'info@bobslawn.com');
+});
