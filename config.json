@@ -7,7 +7,7 @@
  "cloudflareAccountId": "a8a12cfcfad0e7b0d4f01b88f3744e64",
  "aiModel": "claude-sonnet-5-5",
  "outreach": {
-  "about": "Cold email only from these .net/.co mailboxes, never from neonsignsites.com. Each mailbox ramps on its own: ramp[n] a day in its nth week of cold email. Window: lead's local time, weekdays.",
+  "about": "Cold email only from these .net/.co mailboxes, never from neonsignsites.com. Each mailbox ramps on its own: ramp[n] a day in its (n+1)th week of cold email. Window: lead's local time, weekdays.",
   "startDate": null,
   "mailboxes": [
    {
@@ -36,7 +36,6 @@
    }
   ],
   "ramp": [
-   5,
    10,
    15,
    20,

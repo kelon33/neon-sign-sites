@@ -15,8 +15,8 @@ First emails to the businesses whose previews are ready, sent from the six cold 
 3. `npm run outreach -- send` is a dry run; `--confirm` sends. Each email goes out:
    - only on a weekday, 8:00-12:00 in the business's own time zone (from the state in its site);
      the rest wait for a later run;
-   - from the mailbox with the most room left today. Each mailbox ramps on its own: 5 a day in its
-     first week of cold email, then 10, 15, 20, 30 (`ramp`), back to 5 if 2% or more bounced;
+   - from the mailbox with the most room left today. Each mailbox ramps on its own: 10 a day in its
+     first week of cold email, then 15, 20, 30 (`ramp`), back to 10 if 2% or more bounced;
    - 1 to 2.5 minutes apart, only if their domain receives mail and the preview link loads;
    - never twice to the same business: `outreach/log.json` (committed) and each mailbox's sent folder.
 4. `npm run outreach -- replies` reads all six inboxes. A "no" and every bounce go onto

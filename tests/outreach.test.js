@@ -21,10 +21,10 @@ test('sending window is weekday mornings in the lead\'s own time', () => {
 
 test('each mailbox ramps weekly, and falls back on bounces', () => {
   const now = new Date('2026-12-20T12:00:00Z');
-  assert.equal(dailyLimit({ firstSentAt: '', now }), 5);
-  assert.equal(dailyLimit({ firstSentAt: '2026-12-10T12:00:00Z', now }), 10);
+  assert.equal(dailyLimit({ firstSentAt: '', now }), 10);
+  assert.equal(dailyLimit({ firstSentAt: '2026-12-10T12:00:00Z', now }), 15);
   assert.equal(dailyLimit({ firstSentAt: '2026-10-01T12:00:00Z', now }), 30);
-  assert.equal(dailyLimit({ firstSentAt: '2026-10-01T12:00:00Z', now, sent7: 50, bounced7: 2 }), 5);
+  assert.equal(dailyLimit({ firstSentAt: '2026-10-01T12:00:00Z', now, sent7: 50, bounced7: 2 }), 10);
   assert.equal(pickMailbox([{ address: 'a', left: 0 }, { address: 'b', left: 3, lastAt: '2' }, { address: 'c', left: 3, lastAt: '1' }]).address, 'c');
   assert.equal(pickMailbox([{ address: 'a', left: 0 }]), null);
 });

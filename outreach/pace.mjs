@@ -45,7 +45,7 @@ export const sendDay = (now = new Date()) => localTime(now, 'America/New_York').
  * A mailbox's limit today: one ramp step per week since its first cold email, held at the first
  * step while the last 7 days look unhealthy (2% or more bounced, once there are 20 or more sent).
  */
-export function dailyLimit({ firstSentAt, now = new Date(), ramp = [5, 10, 15, 20, 30], max = 30, sent7 = 0, bounced7 = 0 }) {
+export function dailyLimit({ firstSentAt, now = new Date(), ramp = [10, 15, 20, 30], max = 30, sent7 = 0, bounced7 = 0 }) {
   let limit = ramp[0];
   if (firstSentAt) {
     const weeks = Math.floor((now.getTime() - Date.parse(firstSentAt)) / (7 * 86400000));
