@@ -90,7 +90,10 @@ async function main() {
       const thumbs = [];
       for (const p of photos) thumbs.push(await thumbnail(tool, p.file));
       console.log('Asking Claude for sharper wording and the photo choice');
-      const ai = await sharpen({ kit, lead, text, draft: copy, thumbs });
+      let ai = null;
+      try { ai = await sharpen({ kit, lead, text, draft: copy, thumbs }); }
+      catch (e) { checks.push(`Claude failed (${e.message}): used the kit wording.`); }
+      if (ai) {
       const r = ai.result;
       const merged = {
         ...copy,
@@ -115,7 +118,9 @@ async function main() {
       wordmark = { top: r.wordmarkTop || lead.name, bottom: r.wordmarkBottom };
       if (r.notes) checks.push(`Claude's notes: ${r.notes}`);
       const u = ai.usage;
-      console.log(`Claude: ${u.input_tokens} in, ${u.output_tokens} out`);
+      const cents = (u.input_tokens * 0.10 + u.output_tokens * 0.50) / 1e4;
+      console.log(`Claude: ${u.input_tokens} in, ${u.output_tokens} out (about ${cents.toFixed(2)} cents)`);
+      }
     }
 
     // 4. Gallery with no holes; the tall slot goes to a portrait photo when there is one.

@@ -1,7 +1,7 @@
 // The words on the new site. Two layers:
 //   1. kitCopy(): ready-made wording for the trade, filled in with the business's facts. Free, always works.
-//   2. sharpen(): Claude rewrites it from the business's own site and picks the photos. About
-//      10 cents a lead. Used when ANTHROPIC_API_KEY is set; anything it says that can't be
+//   2. sharpen(): Claude (Haiku 5.5) rewrites it from the business's own site and picks the photos.
+//      About a quarter of a cent a lead. Used when ANTHROPIC_API_KEY is set; anything it says that can't be
 //      traced back to the business's own words is dropped (see verify()).
 
 // Detailing services we recognise on a site, with plain descriptions of what each service is.
@@ -148,12 +148,12 @@ export async function sharpen({ kit, lead, text, draft, thumbs }) {
     { type: 'text', text: `${facts}\n\nKit: ${kit}\n\nOur ready-made draft (improve on it; keep its structure):\n${JSON.stringify(draft)}\n\nTheir current website text:\n<site>\n${text.slice(0, 24000)}\n</site>\n\nTheir photos follow, numbered from 1.` },
     ...thumbs.flatMap((b64, i) => [{ type: 'text', text: `Photo ${i + 1}` }, { type: 'image', source: { type: 'base64', media_type: 'image/jpeg', data: b64 } }]),
   ];
-  const response = await client.beta.messages.create({
-    model: 'claude-opus-5-5',
+  // Claude Haiku 5.5: about a quarter of a cent per lead. Low effort keeps the thinking short;
+  // verify() still drops anything the business's own site doesn't back up.
+  const response = await client.messages.create({
+    model: 'claude-haiku-5-5',
     max_tokens: 16000,
-    betas: ['server-side-fallback-2026-07-01'],
-    fallbacks: 'default',
-    output_config: { effort: 'medium', format: { type: 'json_schema', schema: SCHEMA } },
+    output_config: { effort: 'low', format: { type: 'json_schema', schema: SCHEMA } },
     system: SYSTEM,
     messages: [{ role: 'user', content }],
   });
