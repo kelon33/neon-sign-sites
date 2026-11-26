@@ -1,7 +1,7 @@
 // The words on the new site. Two layers:
 //   1. kitCopy(): ready-made wording for the trade, filled in with the business's facts. Free, always works.
-//   2. sharpen(): Claude (Haiku 5.5) rewrites it from the business's own site and picks the photos.
-//      About a quarter of a cent a lead. Used when ANTHROPIC_API_KEY is set; anything it says that can't be
+//   2. sharpen(): Claude (config.json "aiModel", Sonnet 5.5 by default) rewrites it from the
+//      business's own site and picks the photos. A few cents a lead. Used when ANTHROPIC_API_KEY is set; anything it says that can't be
 //      traced back to the business's own words is dropped (see verify()).
 
 // Detailing services we recognise on a site, with plain descriptions of what each service is.
@@ -19,6 +19,22 @@ export const DETAILING_SERVICES = [
   [/pet hair/i, 'Pet hair removal', 'Every last pet hair out of seats and carpets.'],
 ];
 const ALSO = [[/boat|marine/i, 'Boats'], [/\brv\b|motorhome|camper/i, 'RVs'], [/motorcycle|motorbike/i, 'Motorcycles'], [/fleet/i, 'Fleets']];
+
+// Lawn and landscaping services we recognise on a site.
+export const LAWN_SERVICES = [
+  [/mow/i, 'Lawn mowing', 'Precision mowing on a regular schedule, with clippings blown off walks and drives.'],
+  [/edg|trim/i, 'Edging & trimming', 'Crisp edges along every walk, drive and bed, and trimming where the mower can\'t reach.'],
+  [/mulch/i, 'Mulching', 'Fresh mulch that keeps beds neat, holds moisture and blocks weeds.'],
+  [/hedge|shrub|bush/i, 'Hedge & shrub trimming', 'Hedges and shrubs shaped clean and kept in check.'],
+  [/leaf|clean[- ]?up|debris/i, 'Yard cleanups', 'Leaves, branches and storm debris cleared and hauled away.'],
+  [/sod/i, 'Sod installation', 'New sod laid level and tight, for a lawn that looks finished on day one.'],
+  [/irrigation|sprinkler/i, 'Irrigation & sprinklers', 'Sprinkler systems installed, adjusted and repaired.'],
+  [/landscap/i, 'Landscaping', 'New beds, plants and stone, designed for your yard and the local climate.'],
+  [/fertiliz|weed control|weed/i, 'Fertilizing & weed control', 'Feeding and weed treatments that keep grass thick and green.'],
+  [/aerat/i, 'Aeration', 'Core aeration that lets water and air reach the roots.'],
+  [/tree/i, 'Tree trimming', 'Low limbs and overgrowth trimmed back safely.'],
+  [/pressure wash|power wash/i, 'Pressure washing', 'Drives, walks and patios washed clean.'],
+];
 
 export function kitFor(trade) {
   if (/detail|car wash|auto spa/i.test(trade ?? '')) return 'detailing';
@@ -66,6 +82,46 @@ export function detailingCopy({ name, city, text }) {
     ],
     contactTitle: 'Book your detail.',
     footerLine: `${mobile ? 'Mobile car detailing' : 'Car detailing'} in ${town}`,
+    reviews: [],
+    hours: [],
+  };
+}
+
+/** Ready-made lawn wording, filled with what the site says it offers. Claims only when the site makes them. */
+export function lawnCopy({ name, city, text }) {
+  const town = city?.replace(/,\s*[A-Z]{2}$/, '') ?? '';
+  let list = LAWN_SERVICES.filter(([re]) => re.test(text)).map(([, n, t]) => ({ name: n, text: t })).slice(0, 6);
+  if (list.length < 3) for (const d of LAWN_SERVICES.slice(0, 5)) if (list.length < 3 && !list.some((s) => s.name === d[1])) list.push({ name: d[1], text: d[2] });
+  const free = /free (estimate|quote)/i.test(text);
+  const badges = [
+    /licensed/i.test(text) && /insured/i.test(text) ? 'Licensed & insured' : null,
+    free ? 'Free estimates' : null,
+    /family[- ]owned/i.test(text) ? 'Family owned' : null,
+    /veteran[- ]owned/i.test(text) ? 'Veteran owned' : null,
+    /residential|homeowner/i.test(text) && /commercial|business/i.test(text) ? 'Homes and businesses' : null,
+  ].filter(Boolean);
+  return {
+    kicker: `Lawn care & landscaping · ${city}`,
+    headline: 'A lawn the whole street<br><em>notices.</em>',
+    intro: `Lawn care and landscaping across ${town}: crisp edges, healthy grass and a yard you're proud of, without giving up your weekend.`,
+    badges,
+    highlights: null,
+    servicesTitle: 'Everything your yard needs, in one call.',
+    servicesIntro: 'Regular care or a one-time transformation, done by one team.',
+    services: list,
+    also: [],
+    alsoTitle: 'We also do:',
+    promise: 'We don\'t just mow. <em>We take care of it.</em> Every edge, every bed, every visit.',
+    why: [],
+    whyTitle: '',
+    howTitle: 'A better lawn in three easy steps.',
+    steps: [
+      { name: free ? 'Ask for a free quote' : 'Ask for a quote', text: 'Tell us about your yard by phone or with the form below.' },
+      { name: 'We take a look', text: 'We look at your lawn and beds and suggest a plan that fits.' },
+      { name: 'Enjoy the view', text: 'We get to work on your schedule. You get your weekends back.' },
+    ],
+    contactTitle: 'Ready for a better lawn?',
+    footerLine: `Lawn care & landscaping in ${town}`,
     reviews: [],
     hours: [],
   };
@@ -134,12 +190,12 @@ Facts: use ONLY facts in the business's own site text and the Google facts given
 
 Reviews: copy up to 6 customer reviews from the site text word for word (you may cut a long review with "…" between untouched parts). Pick ones that are specific (what was done, what changed). Use the reviewer's name exactly as shown. No reviews on the site: return [].
 
-Structure (keep it): headline is 2 short lines joined by <br>, the second line wrapped in <em>…</em> (the part that shines). intro: 1–2 sentences. mobilePoints: 4 short points if the business comes to the customer, else []. services: 3–6, in the business's own service names, each with one sentence on what it is or does. also: other vehicles they detail (e.g. Boats, RVs), only if the site says so. why: 3 reasons taken from what the site claims, else []. steps: 3 steps. wordmarkTop/wordmarkBottom: the business name split for a two-line logo (e.g. "Erick's" / "Auto Detailing"). hours: as the site states them, one line per day range, else [].
+Structure (keep it): headline is 2 short lines joined by <br>, the second line wrapped in <em>…</em> (the part that shines). intro: 1–2 sentences. mobilePoints: 4 short points: for detailing, why coming to the customer helps (only if they do); for lawn care, why neighbors call them (schedule, care, results), from what the site says; else []. services: 3–6, in the business's own service names, each with one sentence on what it is or does. also: for detailing, other vehicles they detail (e.g. Boats, RVs); for lawn care, other property types or extra services not in the cards; only if the site says so. why: 3 reasons taken from what the site claims, else []. steps: 3 steps. wordmarkTop/wordmarkBottom: the business name split for a two-line logo (e.g. "Erick's" / "Auto Detailing"). hours: as the site states them, one line per day range, else [].
 
-Photos: the numbered photos are from their site. heroPhoto: the most striking photo of a finished vehicle, landscape, clean background (0 if none is good). galleryPhotos: the other good ones, best first: real finished work, foam/process shots, the team at work. Leave out flyers, graphics with text, screenshots, logos, blurry or dark photos, near-duplicates, stock-looking images. photoAlts: a short, factual description for each photo you used. notes: anything a human should check (e.g. "no reviews on site", "only 3 usable photos").`;
+Photos: the numbered photos are from their site. heroPhoto: the most striking photo of finished work (a gleaming vehicle, or a green, freshly cut lawn or finished landscape), landscape if possible, bright (0 if none is good). galleryPhotos: the other good ones, best first: real finished work, foam/process shots, the team at work. Leave out flyers, before-photos of messy yards or dirty cars unless paired with the after, graphics with text, screenshots, logos, blurry or dark photos, near-duplicates, stock-looking images. photoAlts: a short, factual description for each photo you used. notes: anything a human should check (e.g. "no reviews on site", "only 3 usable photos").`;
 
 /** Asks Claude for sharper wording and the photo choice. Returns null when there is no API key. */
-export async function sharpen({ kit, lead, text, draft, thumbs }) {
+export async function sharpen({ kit, lead, text, draft, thumbs, model = 'claude-sonnet-5-5' }) {
   if (!process.env.ANTHROPIC_API_KEY) return null;
   const { default: Anthropic } = await import('@anthropic-ai/sdk');
   const client = new Anthropic();
@@ -148,11 +204,15 @@ export async function sharpen({ kit, lead, text, draft, thumbs }) {
     { type: 'text', text: `${facts}\n\nKit: ${kit}\n\nOur ready-made draft (improve on it; keep its structure):\n${JSON.stringify(draft)}\n\nTheir current website text:\n<site>\n${text.slice(0, 24000)}\n</site>\n\nTheir photos follow, numbered from 1.` },
     ...thumbs.flatMap((b64, i) => [{ type: 'text', text: `Photo ${i + 1}` }, { type: 'image', source: { type: 'base64', media_type: 'image/jpeg', data: b64 } }]),
   ];
-  // Claude Haiku 5.5: about a quarter of a cent per lead. Low effort keeps the thinking short;
-  // verify() still drops anything the business's own site doesn't back up.
-  const response = await client.messages.create({
-    model: 'claude-haiku-5-5',
+  // The model is one setting in config.json ("aiModel"): claude-sonnet-5-5 (about 3-5 cents a lead)
+  // or claude-haiku-5-5 (about a quarter of a cent). Low effort keeps the thinking short;
+  // verify() still drops anything the business's own site doesn't back up. Sonnet can hand a
+  // request it declines to its fallback model on the server; Haiku has no such fallback.
+  const fallback = model.startsWith('claude-haiku') ? {} : { betas: ['server-side-fallback-2026-07-01'], fallbacks: 'default' };
+  const response = await client.beta.messages.create({
+    model,
     max_tokens: 16000,
+    ...fallback,
     output_config: { effort: 'low', format: { type: 'json_schema', schema: SCHEMA } },
     system: SYSTEM,
     messages: [{ role: 'user', content }],
@@ -167,11 +227,11 @@ export function cleanName(name, city) {
   const town = (city ?? '').replace(/,\s*[A-Z]{2}$/, '');
   let n = String(name).split(/\s+[|–—-]\s+/)[0].trim();
   if (town) n = n.replace(new RegExp(`\\s+(?:in|of)\\s+${town}(?:,?\\s*[A-Z]{2})?$`, 'i'), '');
-  return n.replace(/\s+(?:LLC|Inc\.?)$/i, '').trim();
+  return n.replace(/,?\s+(?:LLC|L\.L\.C\.|Inc\.?|Co\.)$/i, '').trim();
 }
 
 /** Two-line logo text: "Erick's" over "Auto Detailing". */
 export function splitWordmark(name) {
-  const m = name.match(/^(.+?)\s+((?:mobile\s+)?(?:car\s+|auto\s+)?(?:detailing|detail|car\s+wash|car\s+care|auto\s+spa)(?:\s*(?:&|and)\s+.+)?)$/i);
+  const m = name.match(/^(.+?)\s+((?:mobile\s+)?(?:car\s+|auto\s+)?(?:detailing|detail|car\s+wash|car\s+care|auto\s+spa|lawn\s+(?:care|services?)|landscaping|lawn\s+(?:&|and)\s+landscap\w*)(?:\s*(?:&|and)\s+.+)?)$/i);
   return m ? { top: m[1], bottom: m[2] } : { top: name, bottom: '' };
 }

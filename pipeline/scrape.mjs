@@ -16,6 +16,16 @@ function readPage() {
       logoHint: /logo|brand/i.test(around),
     };
   });
+  // Photos set as backgrounds (common in page builders): size taken from the element they cover.
+  for (const el of document.querySelectorAll('body *')) {
+    const bg = getComputedStyle(el).backgroundImage;
+    if (!bg || bg === 'none') continue;
+    const r = el.getBoundingClientRect();
+    for (const m of bg.matchAll(/url\(["']?([^"')]+)["']?\)/g)) {
+      if (m[1].startsWith('data:')) continue;
+      imgs.push({ src: new URL(m[1], location.href).href, w: Math.round(r.width), h: Math.round(r.height), alt: '', inHeader: !!el.closest('header, nav'), logoHint: /logo/i.test(m[1]), bg: true });
+    }
+  }
   const og = document.querySelector('meta[property="og:image"]')?.content;
   if (og) imgs.push({ src: og, w: 0, h: 0, alt: '', inHeader: false, logoHint: false, og: true });
   const links = [...document.links].map((a) => ({ href: a.href, text: a.innerText.trim().slice(0, 60) }));
@@ -38,7 +48,8 @@ export async function scrapeSite(browser, url, { maxPages = 5 } = {}) {
         for (let y = 0; y < document.body.scrollHeight; y += 600) { window.scrollTo(0, y); await new Promise((r) => setTimeout(r, 120)); }
       });
       await page.waitForTimeout(800);
-      pages.push({ url: page.url(), ...(await page.evaluate(readPage)) });
+      // A site that doesn't load shows the browser's own error page: nothing to build from.
+      if (!page.url().startsWith('chrome-error:')) pages.push({ url: page.url(), ...(await page.evaluate(readPage)) });
     } catch { /* a page that fails is skipped */ }
     await page.close();
   };

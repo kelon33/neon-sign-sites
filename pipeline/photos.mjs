@@ -22,7 +22,8 @@ export function photoCandidates(imgs) {
     if (!img.src || img.src.startsWith('data:') || /\.(svg|gif)(\?|$)/i.test(img.src)) continue;
     if (img.logoHint || NOT_A_PHOTO.test(img.src) || NOT_A_PHOTO.test(img.alt ?? '')) continue;
     const big = Math.max(img.w, img.h), small = Math.min(img.w, img.h);
-    if (!img.og && (big < 700 || small < 450)) continue;
+    // Background photos are judged by the area they cover; the real file is checked when saved.
+    if (img.bg ? (big < 600 || small < 300) : (!img.og && (big < 700 || small < 450))) continue;
     const key = imageKey(img.src);
     const had = best.get(key);
     if (!had || img.w * img.h > had.w * had.h) best.set(key, img);

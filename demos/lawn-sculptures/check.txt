@@ -1,0 +1,6 @@
+- No logo found: the header shows the name only.
+- Kept the hand-written wording from the existing site.json (use --fresh to start over).
+- No photos at all: the hero has no picture. Find photos by hand.
+- Only 0 gallery photos.
+- No reviews on the site: the page shows the Google rating only.
+- No postal address yet (config.json sender.address): required by law before sending.

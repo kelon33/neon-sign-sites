@@ -10,30 +10,88 @@
  "phone": "(813) 935-7724",
  "email": "office@lstampa.com",
  "address": "817 S MacDill Ave, Tampa, FL 33609",
- "hours": ["Monday to Friday, 9:00 AM – 5:00 PM", "Saturday and Sunday: closed"],
+ "hours": [
+  "Monday to Friday, 9:00 AM – 5:00 PM",
+  "Saturday and Sunday: closed"
+ ],
  "kicker": "Tampa's landscape sculpture specialists",
  "headline": "The art<br>of the lawn.",
  "intro": "From precision mowing in South Tampa to native plant installations in North Tampa, we bring a detail-oriented approach to every yard. We don't just cut grass. We make it so you don't have to.",
- "badges": ["Licensed & insured", "Homes and businesses", "Free estimates"],
+ "badges": [
+  "Licensed & insured",
+  "Homes and businesses",
+  "Free estimates"
+ ],
  "servicesTitle": "Everything your yard needs, done with care.",
  "servicesIntro": "Weekly care or a one-time transformation: one team, one call, and a yard that looks sculpted, not just mowed.",
  "services": [
-  { "name": "Lawn care & mowing", "text": "Weekly and bi-weekly precision mowing, edging and debris blow-off, on a schedule you can set and forget." },
-  { "name": "Trimming & edging", "text": "Crisp edge lines along every walk and bed, and hedges shaped clean and square." },
-  { "name": "Professional mulching", "text": "Premium cypress mulch that protects your soil and lifts your curb appeal." },
-  { "name": "Florida-friendly plants", "text": "Native plants chosen to thrive in the Tampa heat, installed to last." },
-  { "name": "Property cleanups", "text": "Heavy-duty yard restoration, leaf removal and storm-debris hauling." }
+  {
+   "name": "Lawn care & mowing",
+   "text": "Weekly and bi-weekly precision mowing, edging and debris blow-off, on a schedule you can set and forget."
+  },
+  {
+   "name": "Trimming & edging",
+   "text": "Crisp edge lines along every walk and bed, and hedges shaped clean and square."
+  },
+  {
+   "name": "Professional mulching",
+   "text": "Premium cypress mulch that protects your soil and lifts your curb appeal."
+  },
+  {
+   "name": "Florida-friendly plants",
+   "text": "Native plants chosen to thrive in the Tampa heat, installed to last."
+  },
+  {
+   "name": "Property cleanups",
+   "text": "Heavy-duty yard restoration, leaf removal and storm-debris hauling."
+  }
  ],
  "promise": "We don't just cut grass. <em>We sculpt it.</em> Every edge, every bed, every visit, finished like it's our own front yard.",
  "howTitle": "A better lawn in three easy steps.",
  "steps": [
-  { "name": "Ask for a free quote", "text": "Tell us about your yard by phone or with the form below." },
-  { "name": "We walk the property", "text": "We look at your lawn, beds and trees and recommend a plan that fits." },
-  { "name": "Enjoy the view", "text": "We get to work on your schedule. You get your weekends back." }
+  {
+   "name": "Ask for a free quote",
+   "text": "Tell us about your yard by phone or with the form below."
+  },
+  {
+   "name": "We walk the property",
+   "text": "We look at your lawn, beds and trees and recommend a plan that fits."
+  },
+  {
+   "name": "Enjoy the view",
+   "text": "We get to work on your schedule. You get your weekends back."
+  }
  ],
  "areasTitle": "Serving Tampa, from South Tampa to North Tampa.",
  "areasIntro": "Homeowners and businesses across the Tampa Bay area.",
- "areas": ["South Tampa", "Davis Island", "North Tampa", "Tampa Bay"],
+ "areas": [
+  "South Tampa",
+  "Davis Island",
+  "North Tampa",
+  "Tampa Bay"
+ ],
  "contactTitle": "Ready for a better lawn?",
- "footerLine": "Licensed & insured · Professional mowing, landscaping & property cleanup"
+ "footerLine": "Licensed & insured · Professional mowing, landscaping & property cleanup",
+ "kit": "lawn",
+ "logoChip": false,
+ "wordmark": {
+  "top": "Lawn Sculptures",
+  "bottom": ""
+ },
+ "heroImage": null,
+ "heroAlt": "",
+ "heroPosition": "60% 60%",
+ "heroPositionPhone": "60% 50%",
+ "rating": {
+  "score": "5.0",
+  "count": 3,
+  "url": "https://maps.google.com/?cid=9355926141608308612"
+ },
+ "highlights": null,
+ "also": [],
+ "alsoTitle": "We also do:",
+ "why": [],
+ "whyTitle": "",
+ "reviews": [],
+ "gallery": []
 }

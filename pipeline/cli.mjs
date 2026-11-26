@@ -13,7 +13,7 @@ import { createRequire } from 'node:module';
 const { chromium } = createRequire(import.meta.url)('playwright');
 import { scrapeSite } from './scrape.mjs';
 import { photoCandidates, logoCandidate, galleryPlan, saveImage, thumbnail, pickHero } from './photos.mjs';
-import { kitFor, detailingCopy, sharpen, verify, cleanName, splitWordmark } from './copy.mjs';
+import { kitFor, detailingCopy, lawnCopy, sharpen, verify, cleanName, splitWordmark } from './copy.mjs';
 import { draftEmail } from './email.mjs';
 import { renderSite } from '../generator/render.mjs';
 
@@ -42,7 +42,7 @@ async function main() {
   const lead = leads.find((l) => l.website && l.email) ?? leads[0];
   if (leads.length > 1) console.log(`(${leads.length} matches; using ${lead.name})`);
   const kit = kitFor(lead.trade);
-  if (kit !== 'detailing') throw new Error(`No automatic kit for "${lead.trade}" yet (detailing only).`);
+  if (!kit) throw new Error(`No kit for "${lead.trade}" yet (detailing and lawn care only).`);
   if (!lead.website || /instagram|facebook/.test(lead.website)) throw new Error('This lead has no website to rebuild from.');
 
   // People call the business by its plain name, not Google's keyword-stuffed one.
@@ -67,7 +67,8 @@ async function main() {
     for (const c of photoCandidates(site.imgs).slice(0, 24)) {
       const file = path.join(out, 'img', `photo-${photos.length + 1}.jpg`);
       const saved = await saveImage(tool, c.src, file);
-      if (saved) photos.push({ file, rel: `img/photo-${photos.length + 1}.jpg`, ...saved, alt: c.alt });
+      // Small files (icons, textures behind a big box) are dropped once their real size is known.
+      if (saved && Math.max(saved.w, saved.h) >= 600 && Math.min(saved.w, saved.h) >= 380) photos.push({ file, rel: `img/photo-${photos.length + 1}.jpg`, ...saved, alt: c.alt });
     }
     console.log(`${photos.length} photos`);
     let logo = null;
@@ -77,7 +78,13 @@ async function main() {
     else if (logo.dark && logo.transparent) checks.push('Logo is dark on a transparent background: shown on a white chip. Check it reads well.');
 
     // 3. Words: the kit's, then sharper ones from Claude when available.
-    let copy = detailingCopy({ name: lead.name, city: lead.city, text });
+    let copy = (kit === 'lawn' ? lawnCopy : detailingCopy)({ name: lead.name, city: lead.city, text });
+    // A preview already polished by hand keeps its wording (--fresh starts over); only the photos,
+    // logo and rating are refreshed.
+    const existingFile = path.join(out, 'site.json');
+    const existing = !args.includes('--fresh') ? await readFile(existingFile, 'utf8').then(JSON.parse).catch(() => null) : null;
+    const WORDS = ['kicker', 'headline', 'intro', 'badges', 'highlights', 'mobile', 'servicesTitle', 'servicesIntro', 'services', 'also', 'alsoTitle', 'promise', 'why', 'whyTitle', 'howTitle', 'steps', 'contactTitle', 'footerLine', 'reviews', 'hours', 'areas', 'areasTitle', 'areasIntro', 'title', 'description', 'wordmark', 'address', 'legalName'];
+    if (existing) { for (const k of WORDS) if (existing[k] !== undefined) copy[k] = existing[k]; checks.push('Kept the hand-written wording from the existing site.json (use --fresh to start over).'); }
     // The hero prefers a landscape photo; phone photos (all portrait) still work, cropped.
     let heroIndex = pickHero(photos);
     if (heroIndex >= 0 && photos[heroIndex].h >= photos[heroIndex].w) checks.push('Hero uses a portrait photo, cropped: check it looks good.');
@@ -86,19 +93,20 @@ async function main() {
     let wordmark = splitWordmark(lead.name);
     const useAi = !args.includes('--no-ai');
     if (useAi && !process.env.ANTHROPIC_API_KEY) checks.push('No ANTHROPIC_API_KEY: used the kit wording (no reviews, generic intro).');
-    if (useAi && process.env.ANTHROPIC_API_KEY) {
+    if (useAi && process.env.ANTHROPIC_API_KEY && !existing) {
       const thumbs = [];
       for (const p of photos) thumbs.push(await thumbnail(tool, p.file));
       console.log('Asking Claude for sharper wording and the photo choice');
       let ai = null;
-      try { ai = await sharpen({ kit, lead, text, draft: copy, thumbs }); }
+      try { ai = await sharpen({ kit, lead, text, draft: copy, thumbs, model: config.aiModel }); }
       catch (e) { checks.push(`Claude failed (${e.message}): used the kit wording.`); }
       if (ai) {
       const r = ai.result;
+      const points = r.mobilePoints.length ? { title: r.mobileTitle, intro: r.mobileIntro, points: r.mobilePoints } : null;
       const merged = {
         ...copy,
         kicker: r.kicker, headline: r.headline, intro: r.intro,
-        mobile: r.mobilePoints.length ? { title: r.mobileTitle, intro: r.mobileIntro, points: r.mobilePoints } : null,
+        ...(kit === 'lawn' ? { highlights: points } : { mobile: points }),
         servicesTitle: r.servicesTitle, servicesIntro: r.servicesIntro,
         services: r.services.map((s) => ({ name: s.name, text: s.text, ...(s.price ? { price: s.price } : {}) })),
         also: r.also.map((n) => ({ name: n })),
@@ -109,6 +117,7 @@ async function main() {
       for (const k of Object.keys(checked)) if (checked[k] === null) checked[k] = copy[k];
       if (checked.steps.length < 3) checked.steps = copy.steps;
       if (checked.services.length < 3) checked.services = copy.services;
+      if (checked.highlights) checked.highlights.points = checked.highlights.points.filter((p) => verify({ steps: [p] }, { text, facts: ai.facts }).copy.steps.length);
       copy = checked;
       for (const d of dropped) checks.push(`Dropped (not backed by their site): ${d}`);
       if (r.heroPhoto >= 1 && r.heroPhoto <= photos.length) heroIndex = r.heroPhoto - 1;
@@ -118,14 +127,15 @@ async function main() {
       wordmark = { top: r.wordmarkTop || lead.name, bottom: r.wordmarkBottom };
       if (r.notes) checks.push(`Claude's notes: ${r.notes}`);
       const u = ai.usage;
-      const cents = (u.input_tokens * 0.10 + u.output_tokens * 0.50) / 1e4;
+      const price = config.aiModel?.startsWith('claude-haiku') ? [0.10, 0.50] : [2, 10];
+      const cents = (u.input_tokens * price[0] + u.output_tokens * price[1]) / 1e4;
       console.log(`Claude: ${u.input_tokens} in, ${u.output_tokens} out (about ${cents.toFixed(2)} cents)`);
       }
     }
 
     // 4. Gallery with no holes; the tall slot goes to a portrait photo when there is one.
     const plan = galleryPlan(order.length);
-    let gallery = order.slice(0, plan.count).map((i) => ({ src: photos[i].rel, alt: alts[i] || photos[i].alt || `Detailing work by ${lead.name}` }));
+    let gallery = order.slice(0, plan.count).map((i) => ({ src: photos[i].rel, alt: alts[i] || photos[i].alt || `${kit === 'lawn' ? 'Yard work' : 'Detailing work'} by ${lead.name}` }));
     if (gallery.length) {
       gallery[0].size = 'big';
       if (plan.tall) {
@@ -141,17 +151,18 @@ async function main() {
     // 5. The site.
     const email = lead.email || site.emails[0] || '';
     const data = {
-      kit, name: lead.name, legalName: lead.name, preview: true,
-      title: `${lead.name} | ${copy.kicker.split(' · ')[0]} in ${lead.city}`,
-      description: `${copy.intro} ${lead.rating ? `${lead.rating.toFixed(1)} on Google from ${lead.reviews} reviews.` : ''}`.trim(),
-      brand: '#1670ff', brandHi: '#52c6ff', accent: '#8fd0ff',
-      logo: logo ? 'logo.png' : null, logoChip: !!(logo && (!logo.transparent || logo.dark)), wordmark,
+      ...(existing ?? {}),
+      kit, name: existing?.name ?? lead.name, legalName: copy.legalName ?? lead.name, preview: true,
+      title: copy.title ?? `${lead.name} | ${copy.kicker.split(' · ')[0]} in ${lead.city}`,
+      description: copy.description ?? `${copy.intro} ${lead.rating ? `${lead.rating.toFixed(1)} on Google from ${lead.reviews} reviews.` : ''}`.trim(),
+      ...(kit === 'detailing' ? { brand: '#1670ff', brandHi: '#52c6ff', accent: '#8fd0ff' } : {}),
+      logo: logo ? 'logo.png' : (existing?.logo ?? null), logoChip: logo ? !!(!logo.transparent || logo.dark) : !!existing?.logoChip, wordmark: copy.wordmark ?? wordmark,
       phone: lead.phone, email,
       heroImage: heroIndex >= 0 ? photos[heroIndex].rel : null,
       heroAlt: heroIndex >= 0 ? (alts[heroIndex] ?? '') : '',
       heroPosition: '60% 60%', heroPositionPhone: '60% 50%',
       rating: lead.rating ? { score: lead.rating.toFixed(1), count: lead.reviews, url: lead.mapsUrl?.split('&')[0] } : null,
-      ...copy, gallery, areas: [lead.city.replace(/,\s*[A-Z]{2}$/, '')],
+      ...copy, gallery, areas: copy.areas ?? [lead.city.replace(/,\s*[A-Z]{2}$/, '')],
     };
     await writeFile(path.join(out, 'site.json'), JSON.stringify(data, null, 1));
     const html = renderSite(data);

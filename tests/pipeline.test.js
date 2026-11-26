@@ -100,6 +100,9 @@ test('plain business names and two-line wordmarks', async () => {
   assert.equal(cleanName('602 Mobile Car Detailing in Phoenix', 'Phoenix, AZ'), '602 Mobile Car Detailing');
   assert.equal(cleanName('Grunt Wash Mobile Detailing LLC', 'Houston, TX'), 'Grunt Wash Mobile Detailing');
   assert.equal(cleanName('Shine Co - Best Detailing in Tampa', 'Tampa, FL'), 'Shine Co');
+  assert.equal(cleanName('Evergreen Outdoor Services, LLC', 'Houston, TX'), 'Evergreen Outdoor Services');
+  assert.deepEqual(splitWordmark('Merion Landscape Services'), { top: 'Merion Landscape Services', bottom: '' });
+  assert.deepEqual(splitWordmark('Central Lawn Care'), { top: 'Central', bottom: 'Lawn Care' });
   assert.deepEqual(splitWordmark("Erick's Auto Detailing"), { top: "Erick's", bottom: 'Auto Detailing' });
   assert.deepEqual(splitWordmark('602 Mobile Car Detailing'), { top: '602', bottom: 'Mobile Car Detailing' });
   assert.deepEqual(splitWordmark('Pure Power Detail'), { top: 'Pure Power', bottom: 'Detail' });

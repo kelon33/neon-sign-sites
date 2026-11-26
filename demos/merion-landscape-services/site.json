@@ -1,0 +1,104 @@
+{
+ "kit": "lawn",
+ "name": "Merion Landscape Services",
+ "legalName": "Merion Landscape Services",
+ "preview": true,
+ "title": "Merion Landscape Services | Lawn care & landscaping in Tampa, FL",
+ "description": "Lawn care and landscaping across Tampa: crisp edges, healthy grass and a yard you're proud of, without giving up your weekend. 5.0 on Google from 15 reviews.",
+ "logo": "logo.png",
+ "logoChip": false,
+ "wordmark": {
+  "top": "Merion Landscape Services",
+  "bottom": ""
+ },
+ "phone": "(813) 374-6408",
+ "email": "admin@merionls.com",
+ "heroImage": "img/photo-1.jpg",
+ "heroAlt": "",
+ "heroPosition": "60% 60%",
+ "heroPositionPhone": "60% 50%",
+ "rating": {
+  "score": "5.0",
+  "count": 15,
+  "url": "https://maps.google.com/?cid=5634570967618322729"
+ },
+ "kicker": "Lawn care & landscaping · Tampa, FL",
+ "headline": "A lawn the whole street<br><em>notices.</em>",
+ "intro": "Lawn care and landscaping across Tampa: crisp edges, healthy grass and a yard you're proud of, without giving up your weekend.",
+ "badges": [],
+ "highlights": null,
+ "servicesTitle": "Everything your yard needs, in one call.",
+ "servicesIntro": "Regular care or a one-time transformation, done by one team.",
+ "services": [
+  {
+   "name": "Lawn mowing",
+   "text": "Precision mowing on a regular schedule, with clippings blown off walks and drives."
+  },
+  {
+   "name": "Yard cleanups",
+   "text": "Leaves, branches and storm debris cleared and hauled away."
+  },
+  {
+   "name": "Irrigation & sprinklers",
+   "text": "Sprinkler systems installed, adjusted and repaired."
+  },
+  {
+   "name": "Landscaping",
+   "text": "New beds, plants and stone, designed for your yard and the local climate."
+  },
+  {
+   "name": "Tree trimming",
+   "text": "Low limbs and overgrowth trimmed back safely."
+  }
+ ],
+ "also": [],
+ "alsoTitle": "We also do:",
+ "promise": "We don't just mow. <em>We take care of it.</em> Every edge, every bed, every visit.",
+ "why": [],
+ "whyTitle": "",
+ "howTitle": "A better lawn in three easy steps.",
+ "steps": [
+  {
+   "name": "Ask for a quote",
+   "text": "Tell us about your yard by phone or with the form below."
+  },
+  {
+   "name": "We take a look",
+   "text": "We look at your lawn and beds and suggest a plan that fits."
+  },
+  {
+   "name": "Enjoy the view",
+   "text": "We get to work on your schedule. You get your weekends back."
+  }
+ ],
+ "contactTitle": "Ready for a better lawn?",
+ "footerLine": "Lawn care & landscaping in Tampa",
+ "reviews": [],
+ "hours": [],
+ "gallery": [
+  {
+   "src": "img/photo-2.jpg",
+   "alt": "Yard work by Merion Landscape Services",
+   "size": "big"
+  },
+  {
+   "src": "img/photo-3.jpg",
+   "alt": "Yard work by Merion Landscape Services"
+  },
+  {
+   "src": "img/photo-4.jpg",
+   "alt": "Yard work by Merion Landscape Services"
+  },
+  {
+   "src": "img/photo-5.jpg",
+   "alt": "Yard work by Merion Landscape Services"
+  },
+  {
+   "src": "img/photo-6.jpg",
+   "alt": "Yard work by Merion Landscape Services"
+  }
+ ],
+ "areas": [
+  "Tampa"
+ ]
+}
