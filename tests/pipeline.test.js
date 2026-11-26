@@ -121,3 +121,20 @@ test('email only promises the reviews when the preview has them', () => {
   assert.match(draftEmail({ lead, link: 'l', sender: { name: 'A' }, used: { photos: true, reviews: false } }).body, /your own photos and services\./);
   assert.match(draftEmail({ lead, link: 'l', sender: { name: 'A' } }).body, /your own photos, services and reviews\./);
 });
+
+test('do-not-contact: matches by email, by company domain, by name; a shared gmail domain alone does not', async () => {
+  const { blocked } = await import('../pipeline/dnc.mjs');
+  const lead = { name: 'Evergreen Outdoor Services', email: 'admin@evergreenoutdoorservicestx.com', website: 'http://evergreenlawncaretx.com/' };
+  assert.ok(blocked(lead, [{ email: 'Admin@EvergreenOutdoorServicesTX.com' }]));
+  assert.ok(blocked(lead, [{ email: 'owner@evergreenoutdoorservicestx.com' }]), 'another address at their domain');
+  assert.ok(blocked(lead, [{ domain: 'www.evergreenlawncaretx.com' }]));
+  assert.ok(blocked(lead, [{ name: 'evergreen outdoor services' }]));
+  assert.equal(blocked({ name: 'New Shine', email: 'newshinedetailingfl@gmail.com' }, [{ email: 'someone@gmail.com' }]), null);
+  assert.equal(blocked(lead, []), null);
+});
+
+test('detailing menu links only to sections the page has', () => {
+  const base = { kit: 'detailing', name: 'X', phone: '1', kicker: 'a · b', headline: 'h', intro: 'i', services: [], steps: [], areas: ['Tampa'] };
+  assert.doesNotMatch(renderSite({ ...base, reviews: [], gallery: [] }), /href="#reviews"|href="#work"/);
+  assert.match(renderSite({ ...base, reviews: [{ text: 't', name: 'n' }], gallery: [{ src: 'a.jpg', alt: '' }] }), /href="#reviews"[\s\S]*id="reviews"/);
+});

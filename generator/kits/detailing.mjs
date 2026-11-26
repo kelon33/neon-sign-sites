@@ -228,7 +228,7 @@ ${preview}
 <header class="top">
   <div class="wrap">
     <a class="logo" href="#">${d.logo ? `<img src="${esc(d.logo)}" alt=""${d.logoChip ? ' class="chip"' : ''}>` : ''}<span><b>${esc(d.wordmark?.top ?? d.name)}</b>${d.wordmark?.bottom ? `<small>${esc(d.wordmark.bottom)}</small>` : ''}</span></a>
-    <nav aria-label="Main"><a href="#services">Services</a><a href="#work">Our work</a><a href="#reviews">Reviews</a><a href="#book">Contact</a></nav>
+    <nav aria-label="Main"><a href="#services">Services</a>${d.gallery?.length ? '<a href="#work">Our work</a>' : ''}${d.reviews?.length ? '<a href="#reviews">Reviews</a>' : ''}<a href="#book">Contact</a></nav>
     <a class="btn" href="#book">Book a detail</a>
   </div>
 </header>

@@ -1,0 +1,2 @@
+- Hand-written wording and photo choice (kept as is).
+- No postal address yet (config.json sender.address): required by law before sending.

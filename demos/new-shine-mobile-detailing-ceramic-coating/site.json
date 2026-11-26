@@ -1,0 +1,161 @@
+{
+ "kit": "detailing",
+ "name": "New Shine Mobile Detailing & Ceramic Coating",
+ "legalName": "New Shine Mobile Detailing & Ceramic Coating",
+ "preview": true,
+ "title": "New Shine Mobile Detailing & Ceramic Coating | Mobile car detailing in Tampa, FL",
+ "description": "Professional detailing at your home or office, anywhere around Tampa. No drop-off, no waiting room: just a car that looks new again. 5.0 on Google from 145 reviews.",
+ "brand": "#1670ff",
+ "brandHi": "#52c6ff",
+ "accent": "#8fd0ff",
+ "logo": "logo.png",
+ "logoChip": false,
+ "wordmark": {
+  "top": "New Shine",
+  "bottom": "Mobile Detailing & Ceramic Coating"
+ },
+ "phone": "(813) 773-1829",
+ "email": "newshinedetailingfl@gmail.com",
+ "heroImage": "img/photo-20.jpg",
+ "heroAlt": "",
+ "heroPosition": "60% 60%",
+ "heroPositionPhone": "60% 50%",
+ "rating": {
+  "score": "5.0",
+  "count": 145,
+  "url": "https://maps.google.com/?cid=12073001566109140325"
+ },
+ "kicker": "Mobile car detailing · Tampa, FL",
+ "headline": "Showroom shine.<br><em>Wherever you are.</em>",
+ "intro": "Professional detailing at your home or office, anywhere around Tampa. No drop-off, no waiting room: just a car that looks new again.",
+ "mobile": {
+  "title": "Your driveway is our shop.",
+  "intro": "We bring the detail to you, so your day keeps moving.",
+  "points": [
+   {
+    "name": "At your door",
+    "text": "Home, apartment or office, anywhere around Tampa."
+   },
+   {
+    "name": "No time lost",
+    "text": "No dropping off, no waiting for a call, no picking up."
+   },
+   {
+    "name": "Inside and out",
+    "text": "Every surface, every crevice, done by hand."
+   },
+   {
+    "name": "Easy to book",
+    "text": "Call, text or send the form. We confirm fast."
+   }
+  ]
+ },
+ "servicesTitle": "Inside, outside, and everything that shines.",
+ "servicesIntro": "Pick what your car needs, from a deep interior clean to lasting paint protection.",
+ "services": [
+  {
+   "name": "Interior & exterior detailing",
+   "text": "A complete detail, top to bottom: wash, wheels, glass, vacuum and wipe-down."
+  },
+  {
+   "name": "Paint correction & polish",
+   "text": "Machine polishing that takes out swirls, scratches and oxidation."
+  },
+  {
+   "name": "Ceramic coating",
+   "text": "A hard, glossy layer that protects your paint and makes every wash easier."
+  },
+  {
+   "name": "Wax, clay & sealant",
+   "text": "Clay to lift bonded grime, then wax or sealant for a deep, slick shine."
+  }
+ ],
+ "also": [
+  {
+   "name": "Boats"
+  },
+  {
+   "name": "RVs"
+  },
+  {
+   "name": "Fleets"
+  }
+ ],
+ "alsoTitle": "Not just cars:",
+ "why": [],
+ "whyTitle": "",
+ "howTitle": "Booked in a minute. Shining by tonight.",
+ "steps": [
+  {
+   "name": "Tell us about your car",
+   "text": "Call, text or send the form: your vehicle, the service and where it is."
+  },
+  {
+   "name": "We pull up",
+   "text": "We arrive at your home or office with everything we need."
+  },
+  {
+   "name": "You get the keys back",
+   "text": "To a car that looks, and smells, brand new."
+  }
+ ],
+ "contactTitle": "Book your detail.",
+ "footerLine": "Mobile car detailing in Tampa",
+ "reviews": [],
+ "hours": [],
+ "gallery": [
+  {
+   "src": "img/photo-1.jpg",
+   "alt": "New Shine Detailing mobile detailing team in Tampa Bay, Florida",
+   "size": "big"
+  },
+  {
+   "src": "img/photo-2.jpg",
+   "alt": "New Shine Detailing ceramic coating a luxury sports car in Tampa, Florida"
+  },
+  {
+   "src": "img/photo-4.jpg",
+   "alt": "New Shine Detailing auto detailing on a Bentley luxury car in Tampa, Florida"
+  },
+  {
+   "src": "img/photo-5.jpg",
+   "alt": "New Shine Detailing fleet and dealership detailing on commercial vans and trucks in Tampa, Florida"
+  },
+  {
+   "src": "img/photo-3.jpg",
+   "alt": "New Shine Detailing ceramic coating a Lotus Emira sports car in Tampa, Florida",
+   "size": "tall"
+  },
+  {
+   "src": "img/photo-6.jpg",
+   "alt": "New Shine Detailing boat detailing on a fiberglass hull in Tampa Bay, Florida"
+  },
+  {
+   "src": "img/photo-7.jpg",
+   "alt": "New Shine Detailing RV detailing on a Class A motorhome in Tampa, Florida"
+  },
+  {
+   "src": "img/photo-15.jpg",
+   "alt": "New Shine Detailing — 2018 Ferrari 488 Ceramic Coating in Tampa Bay, Florida"
+  },
+  {
+   "src": "img/photo-9.jpg",
+   "alt": "New Shine Detailing — 2024 BMW XM Ceramic Coating in Tampa Bay, Florida"
+  },
+  {
+   "src": "img/photo-14.jpg",
+   "alt": "New Shine Detailing — Berkshire 40' Class A RV Detailing in Tampa Bay, Florida"
+  },
+  {
+   "src": "img/photo-11.jpg",
+   "alt": "New Shine Detailing — Tiffin Phaeton Class A RV Detailing in Tampa Bay, Florida"
+  },
+  {
+   "src": "img/photo-12.jpg",
+   "alt": "New Shine Detailing — 2023 Mercedes-Benz AMG G 63 Interior & Exterior in Tampa Bay, Florida"
+  }
+ ],
+ "areas": [
+  "Tampa"
+ ]
+}

@@ -1,0 +1,4 @@
+{
+ "about": "Businesses that asked not to be emailed again (CAN-SPAM: honour every opt-out within 10 business days, forever). Add one entry per reply: the email they wrote from, and their domain or business name when known. The pipeline refuses any lead that matches. Never remove an entry.",
+ "entries": []
+}

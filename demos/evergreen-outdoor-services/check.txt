@@ -1,0 +1,2 @@
+- No reviews on the site: the page shows the Google rating only.
+- No postal address yet (config.json sender.address): required by law before sending.

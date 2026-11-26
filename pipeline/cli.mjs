@@ -15,6 +15,7 @@ import { scrapeSite } from './scrape.mjs';
 import { photoCandidates, logoCandidate, galleryPlan, saveImage, thumbnail, pickHero } from './photos.mjs';
 import { kitFor, detailingCopy, lawnCopy, sharpen, verify, cleanName, splitWordmark } from './copy.mjs';
 import { draftEmail } from './email.mjs';
+import { blocked } from './dnc.mjs';
 import { renderSite } from '../generator/render.mjs';
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
@@ -41,6 +42,9 @@ async function main() {
   if (!leads.length) throw new Error(`No lead matches "${query}" in leads/.`);
   const lead = leads.find((l) => l.website && l.email) ?? leads[0];
   if (leads.length > 1) console.log(`(${leads.length} matches; using ${lead.name})`);
+  const dnc = JSON.parse(await readFile(path.join(root, 'do-not-contact.json'), 'utf8')).entries;
+  const no = blocked(lead, dnc);
+  if (no) throw new Error(`${lead.name} is on the do-not-contact list (${no.email ?? no.domain ?? no.name}, ${no.date ?? 'no date'}). Not building it.`);
   const kit = kitFor(lead.trade);
   if (!kit) throw new Error(`No kit for "${lead.trade}" yet (detailing and lawn care only).`);
   if (!lead.website || /instagram|facebook/.test(lead.website)) throw new Error('This lead has no website to rebuild from.');
