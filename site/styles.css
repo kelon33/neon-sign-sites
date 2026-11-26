@@ -217,3 +217,32 @@ details[open] p { animation: faq-in .35s ease both; }
 .legal p, .legal li { color: var(--muted); }
 .legal ul { padding-left: 20px; display: grid; gap: 6px; }
 .legal a { color: var(--fg); }
+
+/* Phones: the whole first offer, through the preview button, fits on the first screen. */
+@media (max-width: 600px) {
+  .hero { padding-top: 26px; }
+  .hero .eyebrow { margin-bottom: 12px; line-height: 1.35; }
+  .hero h1 { font-size: 2.55rem; }
+  .hero .lead { font-size: 1rem; line-height: 1.5; margin-top: 14px; }
+  .hero .lead.strong { margin-top: 10px; }
+  .hero-offer { margin-top: 10px; gap: 16px; }
+  .hero-price { font-size: 4.4rem; }
+  .hero-terms { font-size: .9rem; }
+  .hero-terms strong { font-size: 1.1rem; }
+  .hero .actions { margin-top: 20px; gap: 18px; }
+}
+
+@media (max-width: 380px) {
+  .hero { padding-top: 18px; }
+  .hero h1 { font-size: 2.2rem; }
+  .hero .lead { font-size: .94rem; line-height: 1.45; }
+  .hero-price { font-size: 3.8rem; }
+  .hero .actions { margin-top: 16px; }
+  .brand { gap: 8px; }
+  .brand-name { font-size: .95rem; }
+  .brand img { width: 38px; height: auto; }
+  .btn-small { padding: 10px 14px; font-size: .88rem; }
+}
+@media (max-width: 340px) {
+  .brand-name { display: none; }
+}
