@@ -1,7 +1,7 @@
 // The words on the new site. Two layers:
 //   1. kitCopy(): ready-made wording for the trade, filled in with the business's facts. Free, always works.
 //   2. sharpen(): Claude (config.json "aiModel", Sonnet 5.5 by default) rewrites it from the
-//      business's own site and picks the photos. A few cents a lead. Used when ANTHROPIC_API_KEY is set; anything it says that can't be
+//      business's own site and picks the photos. A few cents a lead. Used when ANTHROPIC_API_KEY (or NEON_ANTHROPIC_API_KEY) is set; anything it says that can't be
 //      traced back to the business's own words is dropped (see verify()).
 
 // Detailing services we recognise on a site, with plain descriptions of what each service is.
@@ -194,11 +194,17 @@ Structure (keep it): headline is 2 short lines joined by <br>, the second line w
 
 Photos: the numbered photos are from their site. heroPhoto: the most striking photo of finished work (a gleaming vehicle, or a green, freshly cut lawn or finished landscape), landscape if possible, bright (0 if none is good). galleryPhotos: the other good ones, best first: real finished work, foam/process shots, the team at work. Leave out flyers, before-photos of messy yards or dirty cars unless paired with the after, graphics with text, screenshots, logos, blurry or dark photos, near-duplicates, stock-looking images. photoAlts: a short, factual description for each photo you used. notes: anything a human should check (e.g. "no reviews on site", "only 3 usable photos").`;
 
+/** The Anthropic API key: ANTHROPIC_API_KEY, or NEON_ANTHROPIC_API_KEY (the name the cloud environment uses). */
+export function anthropicKey() {
+  return process.env.ANTHROPIC_API_KEY || process.env.NEON_ANTHROPIC_API_KEY || '';
+}
+
 /** Asks Claude for sharper wording and the photo choice. Returns null when there is no API key. */
 export async function sharpen({ kit, lead, text, draft, thumbs, model = 'claude-sonnet-5-5' }) {
-  if (!process.env.ANTHROPIC_API_KEY) return null;
+  const apiKey = anthropicKey();
+  if (!apiKey) return null;
   const { default: Anthropic } = await import('@anthropic-ai/sdk');
-  const client = new Anthropic();
+  const client = new Anthropic({ apiKey });
   const facts = `Business: ${lead.name}\nTrade: ${lead.trade}\nCity: ${lead.city}\nGoogle rating: ${lead.rating} from ${lead.reviews} reviews\nPhone: ${lead.phone}`;
   const content = [
     { type: 'text', text: `${facts}\n\nKit: ${kit}\n\nOur ready-made draft (improve on it; keep its structure):\n${JSON.stringify(draft)}\n\nTheir current website text:\n<site>\n${text.slice(0, 24000)}\n</site>\n\nTheir photos follow, numbered from 1.` },

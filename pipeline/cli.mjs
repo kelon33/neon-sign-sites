@@ -13,7 +13,7 @@ import { createRequire } from 'node:module';
 const { chromium } = createRequire(import.meta.url)('playwright');
 import { scrapeSite } from './scrape.mjs';
 import { photoCandidates, logoCandidate, galleryPlan, saveImage, thumbnail, pickHero } from './photos.mjs';
-import { kitFor, detailingCopy, lawnCopy, sharpen, verify, cleanName, splitWordmark } from './copy.mjs';
+import { kitFor, detailingCopy, lawnCopy, sharpen, anthropicKey, verify, cleanName, splitWordmark } from './copy.mjs';
 import { draftEmail } from './email.mjs';
 import { blocked } from './dnc.mjs';
 import { renderSite } from '../generator/render.mjs';
@@ -96,8 +96,8 @@ async function main() {
     let alts = {};
     let wordmark = splitWordmark(lead.name);
     const useAi = !args.includes('--no-ai');
-    if (useAi && !process.env.ANTHROPIC_API_KEY) checks.push('No ANTHROPIC_API_KEY: used the kit wording (no reviews, generic intro).');
-    if (useAi && process.env.ANTHROPIC_API_KEY && !existing) {
+    if (useAi && !anthropicKey()) checks.push('No ANTHROPIC_API_KEY (or NEON_ANTHROPIC_API_KEY): used the kit wording (no reviews, generic intro).');
+    if (useAi && anthropicKey() && !existing) {
       const thumbs = [];
       for (const p of photos) thumbs.push(await thumbnail(tool, p.file));
       console.log('Asking Claude for sharper wording and the photo choice');
