@@ -220,24 +220,25 @@ details[open] p { animation: faq-in .35s ease both; }
 
 /* Phones: the whole first offer, through the preview button, fits on the first screen. */
 @media (max-width: 600px) {
-  .hero { padding-top: 26px; }
-  .hero .eyebrow { margin-bottom: 12px; line-height: 1.35; }
-  .hero h1 { font-size: 2.55rem; }
-  .hero .lead { font-size: 1rem; line-height: 1.5; margin-top: 14px; }
-  .hero .lead.strong { margin-top: 10px; }
+  .hero .eyebrow { display: none; }
+  .hero { padding-top: 34px; }
+  /* The first screen ends at the preview button; "How it works" sits just below it. */
+  .hero-grid > div:first-child { display: flex; flex-direction: column; min-height: calc(100vh - 73px - 34px - 20px); min-height: calc(100svh - 73px - 34px - 20px); }
+  .hero .actions { margin-top: auto; padding-top: 20px; position: relative; }
+  .hero .actions .link { position: absolute; left: 0; top: 100%; margin-top: 26px; }
+  .hero-grid { gap: 90px; }
+  .hero h1 { font-size: min(2.55rem, 10vw); line-height: 1.05; white-space: nowrap; }
+  .hero .lead.strong { margin-top: auto; padding-top: 14px; }
+  .hero .lead { font-size: 1.08rem; line-height: 1.5; margin-top: 18px; }
   .hero-offer { margin-top: 10px; gap: 16px; }
   .hero-price { font-size: 4.4rem; }
   .hero-terms { font-size: .9rem; }
   .hero-terms strong { font-size: 1.1rem; }
-  .hero .actions { margin-top: 20px; gap: 18px; }
 }
 
 @media (max-width: 380px) {
-  .hero { padding-top: 18px; }
-  .hero h1 { font-size: 2.2rem; }
-  .hero .lead { font-size: .94rem; line-height: 1.45; }
+  .hero .lead { font-size: 1rem; }
   .hero-price { font-size: 3.8rem; }
-  .hero .actions { margin-top: 16px; }
   .brand { gap: 8px; }
   .brand-name { font-size: .95rem; }
   .brand img { width: 38px; height: auto; }
