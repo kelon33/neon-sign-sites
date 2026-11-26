@@ -9,6 +9,7 @@ Modern websites for US local service businesses, offered by email with a free pr
 | `pipeline/` | `npm run lead -- --lead "<name>"`: their site → photos, wording, preview, email draft, check list |
 | `demos/<slug>/` | Previews, published at `neonsignsites.com/p/<slug>/` (never indexed) |
 | `leads/` | Lead research (Google Places) |
+| `outreach/` | `npm run outreach`: batch approval, sending from the six cold mailboxes, replies (see `outreach/README.md`) |
 
 Publishing: Cloudflare Workers Builds runs `node deploy.mjs --dry` and `npx wrangler deploy` on every push to `main`; `wrangler.jsonc` serves `dist/` as static files.
 

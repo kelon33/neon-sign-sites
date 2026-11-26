@@ -10,6 +10,7 @@
     "render": "node generator/render.mjs",
     "build": "node deploy.mjs --dry",
     "deploy": "node deploy.mjs",
+    "outreach": "node outreach/cli.mjs",
     "test": "node --test \"tests/**/*.test.js\""
   },
   "dependencies": {

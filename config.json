@@ -5,5 +5,51 @@
   "address": null
  },
  "cloudflareAccountId": "a8a12cfcfad0e7b0d4f01b88f3744e64",
- "aiModel": "claude-sonnet-5-5"
+ "aiModel": "claude-sonnet-5-5",
+ "outreach": {
+  "about": "Cold email only from these .net/.co mailboxes, never from neonsignsites.com. Each mailbox ramps on its own: ramp[n] a day in its nth week of cold email. Window: lead's local time, weekdays.",
+  "startDate": null,
+  "mailboxes": [
+   {
+    "address": "alon@neonsignsites.net",
+    "token": "NEON_GMAIL_TOKEN_ALON_NET"
+   },
+   {
+    "address": "alon.katz@neonsignsites.net",
+    "token": "NEON_GMAIL_TOKEN_ALON_KATZ_NET"
+   },
+   {
+    "address": "katz.alon@neonsignsites.net",
+    "token": "NEON_GMAIL_TOKEN_KATZ_ALON_NET"
+   },
+   {
+    "address": "alon@neonsignsites.co",
+    "token": "NEON_GMAIL_TOKEN_ALON_CO"
+   },
+   {
+    "address": "alon.katz@neonsignsites.co",
+    "token": "NEON_GMAIL_TOKEN_ALON_KATZ_CO"
+   },
+   {
+    "address": "katz.alon@neonsignsites.co",
+    "token": "NEON_GMAIL_TOKEN_KATZ_ALON_CO"
+   }
+  ],
+  "ramp": [
+   5,
+   10,
+   15,
+   20,
+   30
+  ],
+  "maxDaily": 30,
+  "window": {
+   "fromHour": 8,
+   "toHour": 12
+  },
+  "delaySeconds": [
+   60,
+   150
+  ]
+ }
 }

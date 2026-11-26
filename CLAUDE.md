@@ -19,11 +19,11 @@ We rebuild weak websites of US local service businesses (lawn care, mobile detai
 - `demos/ericks-auto-detailing` and `demos/lawn-sculptures` are hand-written: don't regenerate their wording.
 
 ## Rules that must not break
-- **Nothing is sent without Alon's explicit approval of the exact text and link.** Show him each email in full first.
+- **Nothing is sent without Alon's explicit approval of the exact text and link.** First emails are approved a batch at a time (`npm run outreach -- plan` writes every email in full; `approve` locks those exact texts). Answers to replies are approved one by one. See `outreach/README.md`.
 - Previews use only the business's own public content (their website; rating and review count from Google). Never invent reviews, prices, years, guarantees or licences. Never copy Google listing photos or review texts into a site (Google's terms).
 - US cold email (CAN-SPAM): our postal address and an opt-out line in every email; honour every "no": add them to `do-not-contact.json` (email, and domain or name) the day they reply; the pipeline refuses any lead on it, and no entry is ever removed. No cold SMS (TCPA).
-- Cold email goes from the `.net` (later `.co`) mailboxes, **never from neonsignsites.com**. The .com is the brand: the site, hello@ and alon@ (aliases of alon@neonsignsites.net).
-- Start slow: 5 emails a day from alon@neonsignsites.net in the first week, 10 from week 2, more only after the mailboxes are warmed up.
+- Cold email goes from the `.net` and `.co` mailboxes, **never from neonsignsites.com**. The .com is the brand: the site, hello@ and alon@ (aliases of alon@neonsignsites.net).
+- Start slow: each of the six .net/.co mailboxes sends 5 a day in its first week of cold email, 10 from week 2, and more only while bounces stay under 2% (`config.json` `outreach.ramp`). Nothing before `outreach.startDate`, which is set only once the mailboxes are warmed up.
 - Google Places API spend stays under about $25 a month in total.
 - Never ask for secrets in chat. Never commit secrets. The repo stays private.
 - Commit messages end with the attribution lines the session gives.
