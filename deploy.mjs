@@ -30,6 +30,19 @@ for (const slug of await readdir(demos)) {
   }
   published.push(slug);
 }
+// Launched customer sites: customers/<domain>/ → dist/c/<domain>/, served on their own domain by worker.js.
+const customers = path.join(root, 'customers');
+const launched = [];
+for (const domain of await readdir(customers).catch(() => [])) {
+  const dir = path.join(customers, domain);
+  try { await stat(path.join(dir, 'index.html')); } catch { continue; }
+  const to = path.join(dist, 'c', domain);
+  await mkdir(to, { recursive: true });
+  for (const f of await readdir(dir)) {
+    if (f === 'index.html' || f === 'img' || /^logo.*\.(png|svg|jpe?g|webp)$/.test(f)) await cp(path.join(dir, f), path.join(to, f), { recursive: true });
+  }
+  launched.push(domain);
+}
 await writeFile(path.join(dist, 'robots.txt'), 'User-agent: *\nDisallow: /p/\n\nSitemap: https://neonsignsites.com/sitemap.xml\n');
 await writeFile(path.join(dist, 'sitemap.xml'), `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
@@ -37,7 +50,7 @@ ${['', 'terms', 'privacy'].map((p) => `  <url><loc>https://neonsignsites.com/${p
 </urlset>
 `);
 await writeFile(path.join(dist, '_headers'), '/p/*\n  X-Robots-Tag: noindex, nofollow\n');
-console.log(`Built ${dist} with ${published.length} previews: ${published.join(', ')}`);
+console.log(`Built ${dist} with ${published.length} previews: ${published.join(', ')}; ${launched.length} customer sites${launched.length ? ': ' + launched.join(', ') : ''}`);
 
 if (!process.argv.includes('--dry')) {
   // wrangler wants a token variable; the proxy replaces this placeholder with the real token.

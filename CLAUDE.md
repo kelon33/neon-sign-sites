@@ -18,6 +18,11 @@ We rebuild weak websites of US local service businesses (lawn care, mobile detai
 - Always look at `desktop.jpg`/`phone.jpg` and `check.txt` before showing a preview to Alon.
 - `demos/ericks-auto-detailing` and `demos/lawn-sculptures` are hand-written: don't regenerate their wording.
 
+## Launching a customer site
+- `npm run launch -- --slug <demo> --domain <their-domain.com>` renders the live version (no preview bar, indexable) into `customers/<domain>/`, registers `www.<domain>` with Cloudflare for SaaS (custom hostnames: 100 free, then $0.10/month each) and writes `connect-email.txt`. `--check` tells whether it's live. A push to `main` publishes it: `deploy.mjs` copies it to `dist/c/<domain>/` and `worker.js` serves it on their domain by Host header.
+- The customer adds one CNAME (`www` → `config.json` `customerTarget`) and forwards `<domain>` to `www.<domain>` at their registrar (no apex on Cloudflare's non-Enterprise plans). Their other records, and so their email, are never touched. They choose: do it themselves from the email, or let us do it (delegate access at their registrar, or a screen-share). Never ask for their password. One-click Domain Connect comes later.
+- Not set up yet (Alon, in the Cloudflare dashboard): Custom Hostnames on the zone with a fallback origin, the Worker route for customer hosts, `cloudflareZoneId` in `config.json`, and a token with SSL and Certificates Edit reachable from the session.
+
 ## Rules that must not break
 - **Nothing is sent without Alon's explicit approval of the exact text and link.** Show him each email in full first.
 - Previews use only the business's own public content (their website; rating and review count from Google). Never invent reviews, prices, years, guarantees or licences. Never copy Google listing photos or review texts into a site (Google's terms).
