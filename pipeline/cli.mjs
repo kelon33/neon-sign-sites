@@ -37,9 +37,10 @@ async function findLead(query) {
 
 async function main() {
   const query = arg('lead');
-  if (!query) { console.log('npm run lead -- --lead "<business name>" [--no-ai]'); process.exit(1); }
-  const leads = await findLead(query);
-  if (!leads.length) throw new Error(`No lead matches "${query}" in leads/.`);
+  const placeId = arg('place');
+  if (!query && !placeId) { console.log('npm run lead -- --lead "<business name>" | --place <Google place id> [--no-ai]'); process.exit(1); }
+  const leads = placeId ? (await findLead('')).filter((l) => l.placeId === placeId) : await findLead(query);
+  if (!leads.length) throw new Error(`No lead matches "${query ?? placeId}" in leads/.`);
   const lead = leads.find((l) => l.website && l.email) ?? leads[0];
   if (leads.length > 1) console.log(`(${leads.length} matches; using ${lead.name})`);
   const dnc = JSON.parse(await readFile(path.join(root, 'do-not-contact.json'), 'utf8')).entries;
@@ -195,6 +196,8 @@ async function main() {
     if (!config.sender.address) checks.push('No postal address yet (config.json sender.address): required by law before sending.');
     if (!email) checks.push('No email address for this business.');
     await writeFile(path.join(out, 'email.txt'), `To: ${email}\nSubject: ${mail.subject}\n\n${mail.body}\n`);
+    // Which lead this preview was built from (batch.mjs skips leads already built).
+    await writeFile(path.join(out, 'lead.json'), JSON.stringify({ placeId: lead.placeId, name: lead.listedName, trade: lead.trade, city: lead.city, website: lead.website, reasons: lead.reasons ?? [], builtAt: new Date().toISOString() }, null, 1) + '\n');
     await writeFile(path.join(out, 'check.txt'), checks.length ? checks.map((c) => `- ${c}`).join('\n') + '\n' : 'Nothing flagged.\n');
     console.log(`\n→ demos/${slug}/  (preview.html, desktop.jpg, phone.jpg, email.txt, check.txt)`);
     for (const c of checks) console.log(`  ! ${c}`);

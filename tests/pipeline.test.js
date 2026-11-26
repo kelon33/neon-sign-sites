@@ -148,3 +148,21 @@ test('research: weaknesses and the business email', () => {
   assert.deepEqual(emailsIn(html).sort(), ['bob@gmail.com', 'info@bobslawn.com']);
   assert.equal(pickEmail(['bob@gmail.com', 'info@bobslawn.com'], 'https://www.bobslawn.com/'), 'info@bobslawn.com');
 });
+
+import { candidates } from '../pipeline/batch.mjs';
+
+test('email opens with the strongest weakness; batch picks only buildable leads', () => {
+  assert.match(weakness(['no https', 'slow (6.0s)']), /6\.0 seconds/);
+  assert.match(weakness(['no https']), /Not secure/);
+  assert.match(weakness(['copyright 2016']), /© 2016/);
+  const leads = [
+    { placeId: 'a', kind: 'weak site', email: 'a@a.com', website: 'https://a.com', trade: 'Lawn care', reviews: 10 },
+    { placeId: 'b', kind: 'weak site', email: 'b@b.com', website: 'https://b.com', trade: 'Mobile car detailing', reviews: 90 },
+    { placeId: 'c', kind: 'decent site', email: 'c@c.com', website: 'https://c.com', trade: 'Lawn care', reviews: 500 },
+    { placeId: 'd', kind: 'weak site', email: '', website: 'https://d.com', trade: 'Lawn care', reviews: 500 },
+    { placeId: 'e', kind: 'weak site', email: 'e@e.com', website: 'https://e.com', trade: 'House cleaning', reviews: 500 },
+    { placeId: 'f', kind: 'weak site', email: 'f@f.com', website: 'https://f.com', trade: 'Lawn care', reviews: 50 },
+  ];
+  assert.deepEqual(candidates(leads, { built: new Set(['f']) }).map((l) => l.placeId), ['b', 'a']);
+  assert.deepEqual(candidates(leads, { dnc: [{ email: 'b@b.com' }] }).map((l) => l.placeId), ['f', 'a']);
+});

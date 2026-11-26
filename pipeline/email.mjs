@@ -7,10 +7,13 @@ const WHY = [
   [/does not load|broken/, () => "your website didn't load when I tried it"],
   [/almost empty/, () => "your website says very little about what you do"],
   [/site builder|Weebly|Wix|GoDaddy/i, () => "your website looks like a template that doesn't show off your work"],
+  [/no https/, () => 'your website shows a "Not secure" warning in the browser, which makes people think twice before they call'],
+  [/copyright (\d{4})/, (m) => `your website still says © ${m[1]} at the bottom, so it looks out of date to people finding you today`],
 ];
 
 export function weakness(reasons = []) {
-  for (const r of reasons) for (const [re, say] of WHY) { const m = r.match(re); if (m) return say(m); }
+  // The strongest point first (WHY's order), not the order the checks happened to run in.
+  for (const [re, say] of WHY) for (const r of reasons) { const m = r.match(re); if (m) return say(m); }
   return "your website doesn't show your work the way your reviews do";
 }
 
