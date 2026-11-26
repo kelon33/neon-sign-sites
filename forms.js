@@ -16,17 +16,18 @@ function redirect(location) {
   return new Response(null, { status: 303, headers: { location } });
 }
 
-function problem(message) {
+function problem(message, code) {
   const html = `<!doctype html><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Something went wrong | Neon Sign Sites</title>
 <body style="margin:0;background:#0b0b10;color:#f3f0e9;font:17px/1.6 system-ui,sans-serif;display:grid;place-items:center;min-height:100vh;padding:24px;text-align:center">
 <div><h1 style="font-weight:500">Sorry, that didn't go through.</h1><p style="color:#a9a6b2">${message}</p>
-<p>Please email us at <a style="color:#ff7aa8" href="mailto:hello@neonsignsites.com">hello@neonsignsites.com</a>, or <a style="color:#ff7aa8" href="javascript:history.back()">go back</a> and try again.</p></div></body>`;
+${code ? `<p style="color:#6f6c78;font-size:13px">(code: ${code})</p>` : ''}<p>Please email us at <a style="color:#ff7aa8" href="mailto:hello@neonsignsites.com">hello@neonsignsites.com</a>, or <a style="color:#ff7aa8" href="javascript:history.back()">go back</a> and try again.</p></div></body>`;
   return new Response(html, { status: 400, headers: { 'content-type': 'text/html; charset=utf-8' } });
 }
 
-/** Sends a plain-text email to Alon. Returns true when Resend accepted it. */
+/** Sends a plain-text email to Alon. Returns '' when Resend accepted it, else a short reason code
+ * (shown on the error page, so it says nothing secret). */
 export async function notify(env, { subject, text, replyTo }, fetchImpl = fetch) {
-  if (!env.RESEND_API_KEY) return false;
+  if (!env.RESEND_API_KEY) return 'no-key';
   const res = await fetchImpl('https://api.resend.com/emails', {
     method: 'POST',
     headers: { authorization: `Bearer ${env.RESEND_API_KEY}`, 'content-type': 'application/json' },
@@ -38,7 +39,11 @@ export async function notify(env, { subject, text, replyTo }, fetchImpl = fetch)
       ...(replyTo ? { reply_to: replyTo } : {}),
     }),
   }).catch(() => null);
-  return Boolean(res?.ok);
+  if (!res) return 'resend-unreachable';
+  if (res.ok) return '';
+  const body = await res.json().catch(() => ({}));
+  console.log('Resend refused the email', res.status, JSON.stringify(body));
+  return `resend-${res.status}${body.name ? '-' + String(body.name).replace(/[^a-z_]/gi, '') : ''}`;
 }
 
 export async function previewRequest(request, env, fetchImpl) {
@@ -49,12 +54,12 @@ export async function previewRequest(request, env, fetchImpl) {
   const website = clean(f.get('website'), 500);
   const email = clean(f.get('email'), 200);
   if (!business || !website || !isEmail(email)) return problem('Please fill in the business name, its website or Google listing, and a valid email.');
-  const sent = await notify(env, {
+  const failed = await notify(env, {
     subject: `Preview request: ${business}`,
     text: `Someone asked for a free preview on neonsignsites.com.\n\nBusiness: ${business}\nWebsite or Google listing: ${website}\nEmail: ${email}\n\nReply to this email to answer them.`,
     replyTo: email,
   }, fetchImpl);
-  return sent ? redirect('/thanks?for=preview') : problem("Our form isn't working right now.");
+  return failed ? problem("Our form isn't working right now.", failed) : redirect('/thanks?for=preview');
 }
 
 export async function makeItLive(request, env, fetchImpl) {
@@ -72,12 +77,12 @@ export async function makeItLive(request, env, fetchImpl) {
   if (!business || !name || !isEmail(email)) return problem('Please fill in your business, your name and a valid email.');
   if (f.get('terms') !== 'yes') return problem('Please confirm you agree to the terms.');
   const preview = slugOk(site) ? `https://neonsignsites.com/p/${site}/` : '(not given)';
-  const sent = await notify(env, {
+  const failed = await notify(env, {
     subject: `Make it live: ${business} (${plan === 'own' ? '$299' : 'monthly'})`,
     text: `A business wants their site live.\n\nPlan: ${PLANS[plan]}\nBusiness: ${business}\nPreview: ${preview}\nTheir domain: ${domain || '(none given)'}\nName: ${name}\nEmail: ${email}\nPhone: ${phone || '(none given)'}\n\nThey agreed to the terms. Next: check the payment arrived, then run the launch.`,
     replyTo: email,
   }, fetchImpl);
-  if (!sent) return problem("Our form isn't working right now.");
+  if (failed) return problem("Our form isn't working right now.", failed);
   const pay = plan === 'own' ? env.PAYPAL_OWN_URL : env.PAYPAL_MONTHLY_URL;
   return redirect(pay || `/thanks?for=go&plan=${plan}`);
 }
