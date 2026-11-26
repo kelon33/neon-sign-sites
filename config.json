@@ -8,5 +8,5 @@
  "aiModel": "claude-sonnet-5-5",
  "customerTarget": "sites.neonsignsites.com",
  "cloudflareZoneId": null,
- "analyticsToken": null
+ "analyticsToken": "602c929a29b84d86bbc04d6adad71b4e"
 }
