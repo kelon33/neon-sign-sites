@@ -14,7 +14,7 @@ We rebuild weak websites of US local service businesses (lawn care, mobile detai
 
 ## Pipeline
 - `npm run lead -- --lead "<name>"` reads their site, picks photos and logo, writes the wording, renders the site and writes `preview.html`, `desktop.jpg`, `phone.jpg`, `email.txt` and `check.txt` in `demos/<slug>/`. `--no-ai` uses the free kit wording; `--fresh` ignores an existing hand-written `site.json` (otherwise its wording is kept).
-- The AI wording needs `ANTHROPIC_API_KEY` (an environment variable). The model is `config.json` `aiModel` (Sonnet 5.5, a few cents a lead; Haiku 5.5 is the cheap option). `verify()` drops reviews not on their site word for word and any number not in their site text or Google facts.
+- The AI wording needs `NEON_ANTHROPIC_API_KEY` (an environment variable; `ANTHROPIC_API_KEY` also works locally, but cloud sessions keep that name out of the shell). The model is `config.json` `aiModel` (Sonnet 5.5, a few cents a lead; Haiku 5.5 is the cheap option). `verify()` drops reviews not on their site word for word and any number not in their site text or Google facts.
 - Always look at `desktop.jpg`/`phone.jpg` and `check.txt` before showing a preview to Alon.
 - `demos/ericks-auto-detailing` and `demos/lawn-sculptures` are hand-written: don't regenerate their wording.
 
