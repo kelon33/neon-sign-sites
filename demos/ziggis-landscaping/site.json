@@ -1,0 +1,185 @@
+{
+ "kit": "lawn",
+ "name": "Ziggi's Landscaping",
+ "legalName": "Ziggi's Landscaping",
+ "preview": true,
+ "title": "Ziggi's Landscaping | Landscaping & lawn care in Tampa, FL",
+ "description": "Ziggi's Landscaping designs, installs and maintains yards for homes and businesses across Tampa Bay. One owner-led team handles it from the first sketch to the final walk-through. 4.9 on Google from 241 reviews.",
+ "logo": "logo.png",
+ "logoChip": false,
+ "wordmark": {
+  "top": "Ziggi's",
+  "bottom": "Landscaping"
+ },
+ "phone": "(720) 280-6358",
+ "email": "ziggislawns@gmail.com",
+ "heroImage": "img/photo-4.jpg",
+ "heroAlt": "Modern white home with fresh lawn and landscaped front beds",
+ "heroPosition": "60% 60%",
+ "heroPositionPhone": "60% 50%",
+ "rating": {
+  "score": "4.9",
+  "count": 241,
+  "url": "https://maps.google.com/?cid=4403990631681270692"
+ },
+ "kicker": "Landscaping & lawn care · Tampa, FL",
+ "headline": "Landscapes built right.<br><em>Kept that way.</em>",
+ "intro": "Ziggi's Landscaping designs, installs and maintains yards for homes and businesses across Tampa Bay, from the first sketch to the finished yard.",
+ "badges": [
+  "Homes and businesses"
+ ],
+ "highlights": {
+  "title": "Why Tampa neighbors call Ziggi's",
+  "intro": "Design, installation, irrigation, lighting and upkeep from one company.",
+  "points": [
+   {
+    "name": "Owner-led",
+    "text": "Justin, a teacher turned landscape pro, leads the work. Reviews thank him and his team by name."
+   },
+   {
+    "name": "Full service",
+    "text": "Design, turf, irrigation, lighting and maintenance, so one company knows your yard."
+   },
+   {
+    "name": "Built for Florida",
+    "text": "Plants, irrigation and turf are chosen for Tampa Bay's climate, soil and seasons."
+   },
+   {
+    "name": "Homes and businesses",
+    "text": "Residential yards get the same attention as commercial properties, start to finish."
+   }
+  ]
+ },
+ "servicesTitle": "Everything your yard needs, from one team.",
+ "servicesIntro": "A full makeover or steady upkeep, for homes and businesses.",
+ "services": [
+  {
+   "name": "Landscape Design & Installation",
+   "text": "Custom layouts and quality craftsmanship, from concept to finished yard."
+  },
+  {
+   "name": "Irrigation Systems",
+   "text": "Efficient, smart irrigation that keeps lawn and garden healthy while saving water and time."
+  },
+  {
+   "name": "Outdoor Lighting",
+   "text": "Low-voltage lighting for pathways, gardens and architectural highlights."
+  },
+  {
+   "name": "Lawn & Landscape Maintenance",
+   "text": "Scheduled mowing, edging, trimming and general upkeep all year."
+  },
+  {
+   "name": "Turf Installation",
+   "text": "Real sod or artificial turf, installed for families, pets and low-maintenance living."
+  },
+  {
+   "name": "Planting & Bed Design",
+   "text": "Plants, flower beds and shrubs chosen and arranged for Florida's environment."
+  }
+ ],
+ "also": [
+  {
+   "name": "Commercial properties"
+  },
+  {
+   "name": "French drains"
+  },
+  {
+   "name": "Tree installation"
+  },
+  {
+   "name": "Plant removal"
+  },
+  {
+   "name": "Tree removal"
+  }
+ ],
+ "alsoTitle": "We also do:",
+ "promise": "We don't just mow. <em>We take care of it.</em> Every edge, every bed, every visit.",
+ "why": [
+  {
+   "name": "Owner-led",
+   "text": "Justin moved Ziggi's to Tampa in 2021 and leads the work himself, with his team."
+  },
+  {
+   "name": "One company, full service",
+   "text": "Design, installation, irrigation, lighting and maintenance in one place."
+  },
+  {
+   "name": "Tailored designs",
+   "text": "Designs that reflect you and your property, not a template."
+  }
+ ],
+ "whyTitle": "Why Ziggi's",
+ "howTitle": "From first call to finished yard.",
+ "steps": [
+  {
+   "name": "Tell us your plan",
+   "text": "Call or send the form with your project, timeline and budget."
+  },
+  {
+   "name": "Get a plan",
+   "text": "We assess the property and share a design for your approval."
+  },
+  {
+   "name": "We build it",
+   "text": "Our crew installs it and walks it through with you at the end."
+  }
+ ],
+ "contactTitle": "Ready to transform your outdoors?",
+ "footerLine": "Landscaping & lawn care in Tampa, FL · Hillsborough, Pasco, Pinellas",
+ "reviews": [
+  {
+   "text": "Justin really listened to what I wanted and provided a complete landscape plan for approval to make sure we were on the same page. The yard turned out amazing! Thanks to Justin and his team!",
+   "name": "Kari"
+  },
+  {
+   "text": "Ziggi's was able to talk us through the various sod options and what made the most sense given our sunlight/neighbors lawns, etc. They were incredibly knowledgeable and friendly. Their work was done quickly and neatly.",
+   "name": "Lindsay Maloney"
+  },
+  {
+   "text": "Our office needed a major refresh after 20 years of the same plants being in place. Ziggi's came and assessed the property, gave us great visuals and fair pricing, and did a spectacular job. Our office looks fantastic now.",
+   "name": "Dennis Regan"
+  },
+  {
+   "text": "The fresh sod completely transformed my backyard into a lush, green, and inviting space.",
+   "name": "Shannon Webley"
+  },
+  {
+   "text": "They helped transform our front and backyard into an area that we can actually enjoy, and we are so thankful!",
+   "name": "Morgan Laurienzo"
+  },
+  {
+   "text": "We wanted a fresh restart to the front yard and they delivered. His team worked fast, helped with recommendations and incorporated what we wanted as well.",
+   "name": "Scott Brown"
+  }
+ ],
+ "hours": [],
+ "gallery": [
+  {
+   "src": "img/photo-5.jpg",
+   "alt": "Porch-front home with new mulch beds and green lawn",
+   "size": "big"
+  },
+  {
+   "src": "img/photo-3.jpg",
+   "alt": "Modern home with paver driveway set in turf strips and landscaped beds"
+  },
+  {
+   "src": "img/photo-7.jpg",
+   "alt": "Front yard with tropical plants, gravel bed and landscape lighting"
+  },
+  {
+   "src": "img/photo-2.jpg",
+   "alt": "Commercial building with manicured lawn and palms"
+  },
+  {
+   "src": "img/photo-9.jpg",
+   "alt": "Garden bed with stepping stones and river rock path"
+  }
+ ],
+ "areas": [
+  "Tampa"
+ ]
+}

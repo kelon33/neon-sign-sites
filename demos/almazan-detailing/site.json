@@ -1,0 +1,180 @@
+{
+ "kit": "detailing",
+ "name": "Almazan Detailing",
+ "legalName": "Almazan Detailing",
+ "preview": true,
+ "title": "Almazan Detailing | Mobile car detailing in Phoenix, AZ",
+ "description": "Brian Almazan brings a fully equipped detailing setup to your home or office. Over 1,000 vehicles detailed, and a 5.0 rating on Google. 5.0 on Google from 456 reviews.",
+ "brand": "#1670ff",
+ "brandHi": "#52c6ff",
+ "accent": "#8fd0ff",
+ "logo": "logo.png",
+ "logoChip": false,
+ "wordmark": {
+  "top": "Almazan",
+  "bottom": "Detailing"
+ },
+ "phone": "(480) 862-2359",
+ "email": "almazan.detailing@gmail.com",
+ "heroImage": "img/photo-1.jpg",
+ "heroAlt": "Black Tesla SUV with a deep shine parked on a driveway",
+ "heroPosition": "60% 60%",
+ "heroPositionPhone": "60% 50%",
+ "rating": {
+  "score": "5.0",
+  "count": 456,
+  "url": "https://maps.google.com/?cid=15264303395122290184"
+ },
+ "kicker": "Mobile car detailing · Arcadia, Phoenix, AZ",
+ "headline": "Showroom shine.<br><em>Right in your driveway.</em>",
+ "intro": "Brian Almazan brings a fully equipped detailing setup to your home or office. Over 1,000 vehicles detailed, and a 5.0 rating on Google.",
+ "mobile": {
+  "title": "Your driveway is our shop.",
+  "intro": "We come to the place that suits you, so your day keeps moving.",
+  "points": [
+   {
+    "name": "At your location",
+    "text": "Professional detailing wherever you prefer, with a fully equipped mobile setup."
+   },
+   {
+    "name": "No drop-off",
+    "text": "No shop, no waiting room, no ride home."
+   },
+   {
+    "name": "Inside and out",
+    "text": "From the wheels to the windows, the dashboard to the carpets."
+   },
+   {
+    "name": "Easy to book",
+    "text": "Call (480) 862-2359 or send the form."
+   }
+  ]
+ },
+ "servicesTitle": "Three details. One clear price each.",
+ "servicesIntro": "Prices start at the amounts shown and depend on vehicle size: small, medium or large.",
+ "services": [
+  {
+   "name": "Standard Detail",
+   "text": "Exterior hand wash, bugs removed, rims and tires deep cleaned, windows, door jambs, tire shine, vacuum and wipe down.",
+   "price": "From $245 small · $275 medium · $299 large"
+  },
+  {
+   "name": "Premium Detail",
+   "text": "Everything in Standard, plus clay bar decontamination, a 6-month spray sealant, trim shine, steam-cleaned interior, and conditioned plastics and leathers.",
+   "price": "From $375 small · $425 medium · $450 large"
+  },
+  {
+   "name": "Ultimate Detail",
+   "text": "Standard and Premium, plus a 1-step polish, engine bay cleaned and shined, and seats and carpets shampooed.",
+   "price": "From $550 small · $600 medium · $650 large"
+  },
+  {
+   "name": "RV Wash & Wax",
+   "text": "A thorough clean for large vehicles that protects and brings out your RV's finish.",
+   "price": "From $15 per linear foot"
+  },
+  {
+   "name": "Exterior Detailing",
+   "text": "Wheels to windows, polished and protected so the paint stands out."
+  },
+  {
+   "name": "Interior Detailing",
+   "text": "Dashboard to carpets, refreshed with nothing left untouched."
+  }
+ ],
+ "also": [
+  {
+   "name": "RVs"
+  }
+ ],
+ "alsoTitle": "Not just cars:",
+ "why": [
+  {
+   "name": "Mobile convenience",
+   "text": "A fully equipped mobile service that comes to your preferred location."
+  },
+  {
+   "name": "Attention to detail",
+   "text": "We don't just wash your car, we detail it, inside and out."
+  },
+  {
+   "name": "Proven satisfaction",
+   "text": "Glowing reviews back up the work, with a 5.0 rating on Google."
+  },
+  {
+   "name": "Eco-friendly products",
+   "text": "Eco-friendly products and sustainable practices."
+  }
+ ],
+ "whyTitle": "Why Phoenix drivers book Almazan",
+ "howTitle": "Book it. We show up. You drive off shining.",
+ "steps": [
+  {
+   "name": "Tell us about your vehicle",
+   "text": "Call or send the form with your vehicle and the service you want."
+  },
+  {
+   "name": "We come to you",
+   "text": "We arrive with the equipment and products to do the job on site."
+  },
+  {
+   "name": "Take the keys back",
+   "text": "Your car is clean, restored and showroom-ready."
+  }
+ ],
+ "contactTitle": "Book your detail.",
+ "footerLine": "Mobile car detailing in Arcadia, Phoenix, AZ",
+ "reviews": [
+  {
+   "text": "Brian did an incredible job cleaning my car. After going on a road trip a couple weeks ago, I had tons of dead bugs and caked on junk on my hood and windshield. When Brian was done my car looked like it just got off of the showroom floor. I can't recommend Almazan Detailing enough!",
+   "name": "Andrew Wiest"
+  },
+  {
+   "text": "Brian and his brother did an excellent job on my old Mustang! They were fast, friendly, and efficient! The car looks great and the price was more than reasonable.",
+   "name": "Doug Mathis"
+  },
+  {
+   "text": "Excellent personalized service right in your own driveway. My car didn't look as good the day I picked it up from the dealer.",
+   "name": "E.J. Peiker"
+  },
+  {
+   "text": "Brian did a spectacular job! The vehicle is now as clean as it's ever been. With us having four kids, the interior was very dirty and messy. Brian took his time and really exceeded my expectations with how clean he got it. It feels like a new car now.",
+   "name": "Gadi Nagar"
+  },
+  {
+   "text": "Brian is awesome! He and his crew were punctual, friendly, and very thorough. His pricing was very competitive and the end result was phenomenal. I’ll be rebooking with him for regular washes moving forward.",
+   "name": "Christian Greene"
+  },
+  {
+   "text": "Great detail…my car looks brand new! I will be using them again!",
+   "name": "Ellen Lindzon"
+  }
+ ],
+ "hours": [],
+ "gallery": [
+  {
+   "src": "img/photo-3.jpg",
+   "alt": "Gray Jeep Patriot detailed at a mobile setup with hose and equipment",
+   "size": "big"
+  },
+  {
+   "src": "img/photo-2.jpg",
+   "alt": "Gloved hand washing a red vehicle with a foam mitt"
+  },
+  {
+   "src": "img/photo-5.jpg",
+   "alt": "Black Porsche SUV with a deep, glossy finish"
+  },
+  {
+   "src": "img/photo-6.jpg",
+   "alt": "Audi SUV front end freshly detailed"
+  },
+  {
+   "src": "img/photo-7.jpg",
+   "alt": "Black Mercedes-Maybach SUV with a polished grille"
+  }
+ ],
+ "areas": [
+  "Phoenix"
+ ]
+}

@@ -1,0 +1,198 @@
+{
+ "kit": "detailing",
+ "name": "Ray's Luxury Detailing",
+ "legalName": "Ray's Luxury Mobile Car Detailing & Ceramic Coating Tampa",
+ "preview": true,
+ "title": "Ray's Luxury Detailing | Mobile car detailing in Tampa, FL",
+ "description": "Ray's Luxury brings paint correction, ceramic coating and deep interior work to your home, office or apartment. 5.0 on Google from 443 reviews.",
+ "brand": "#1670ff",
+ "brandHi": "#52c6ff",
+ "accent": "#8fd0ff",
+ "logo": "logo.png",
+ "logoChip": true,
+ "wordmark": {
+  "top": "Ray's Luxury",
+  "bottom": "Mobile Detailing"
+ },
+ "phone": "(656) 270-0576",
+ "email": "rayluxurydetailing@gmail.com",
+ "heroImage": "img/photo-1.jpg",
+ "heroAlt": "Red BMW coupe with black wheels after detailing",
+ "heroPosition": "60% 60%",
+ "heroPositionPhone": "60% 50%",
+ "rating": {
+  "score": "5.0",
+  "count": 443,
+  "url": "https://maps.google.com/?cid=4052628380148085589"
+ },
+ "kicker": "Mobile car detailing · Tampa, FL",
+ "headline": "Showroom shine.<br><em>Right in your driveway.</em>",
+ "intro": "Ray's Luxury brings paint correction, ceramic coating and deep interior work to your home, office or apartment, with a 5.0 rating on Google.",
+ "mobile": {
+  "title": "Your driveway is our shop.",
+  "intro": "We bring the detail to you, so your day keeps moving.",
+  "points": [
+   {
+    "name": "At your door",
+    "text": "Home, workplace or apartment complex across Tampa Bay."
+   },
+   {
+    "name": "No waiting room",
+    "text": "No drop-off, no hassle. You stay home and the car gets done."
+   },
+   {
+    "name": "Open 24 hours",
+    "text": "Monday to Sunday, around the clock. Book the time that suits you."
+   },
+   {
+    "name": "Easy to book",
+    "text": "Call, text or send the form. We confirm your appointment and give you a detailed quote."
+   }
+  ]
+ },
+ "servicesTitle": "Inside, outside, and built to last.",
+ "servicesIntro": "Pick what your car needs, from a deep interior clean to long-term protection against Florida sun and lovebugs.",
+ "services": [
+  {
+   "name": "Lifetime Ceramic Coatings",
+   "text": "A coating that bonds to your paint for extreme gloss, hydrophobic performance and easier washing."
+  },
+  {
+   "name": "Paint Correction",
+   "text": "Multi-stage polishing that removes swirl marks, oxidation and fine scratches."
+  },
+  {
+   "name": "Paint Protection Film",
+   "text": "A nearly invisible, self-healing layer that shields paint from rock chips and road debris."
+  },
+  {
+   "name": "Interior Car Detailing",
+   "text": "Deep-cleaned carpets and upholstery, sanitized touch points, conditioned leather and restored trim."
+  },
+  {
+   "name": "Exterior Car Detailing",
+   "text": "Deep wheel cleaning, paint decontamination and protective treatments for a deeper gloss."
+  },
+  {
+   "name": "Monthly Maintenance Wash",
+   "text": "Safe washes and interior refreshes that keep a detailed or coated car looking sharp."
+  }
+ ],
+ "also": [
+  {
+   "name": "Window tinting"
+  },
+  {
+   "name": "Car wraps"
+  },
+  {
+   "name": "Fleet wraps"
+  },
+  {
+   "name": "Trucks and SUVs"
+  },
+  {
+   "name": "Luxury and exotic cars"
+  }
+ ],
+ "alsoTitle": "Not just cars:",
+ "why": [
+  {
+   "name": "5.0 on Google",
+   "text": "Customers call out the thorough work and the clear communication."
+  },
+  {
+   "name": "A crew you know by name",
+   "text": "Reviews name Tanner, Cade, Tristan and Jack for careful, friendly work."
+  },
+  {
+   "name": "Every kind of vehicle",
+   "text": "Daily drivers, family SUVs, luxury and exotic cars."
+  }
+ ],
+ "whyTitle": "Why Tampa drivers trust Ray's",
+ "howTitle": "Book it. We show up. You drive off shining.",
+ "steps": [
+  {
+   "name": "Tell us about your car",
+   "text": "Fill out the form with your vehicle, the services you want and where it is."
+  },
+  {
+   "name": "Get your quote",
+   "text": "We get in touch to confirm the appointment and send a detailed quote."
+  },
+  {
+   "name": "We pull up",
+   "text": "We detail your car at your home, workplace or apartment."
+  }
+ ],
+ "contactTitle": "Book your detail.",
+ "footerLine": "Mobile car detailing in Tampa, FL",
+ "reviews": [
+  {
+   "text": "Tanner and Cade were awesome. They detailed my FL5 Type R and it came out looking brand new like the day I bought it. Super happy with the service and their quickness in the actual service. I highly recommend!",
+   "name": "Adam Z"
+  },
+  {
+   "text": "Cade and Tanner did an amazing job on my car. They were also kind, professional, and efficient. It looks brand new despite being 5 years old and very lived in by a family of 4! Highly recommend.",
+   "name": "Jessica VanGuilder"
+  },
+  {
+   "text": "Tristan and Jack did a phenomenal job! I was a bit skeptical because of all the set in stains on the seats but the managed to get everything out and looking brand new.",
+   "name": "Donna Rosario"
+  },
+  {
+   "text": "Had Ray’s Luxury Mobile Detailing come out to clean our company truck, and Tanner did a great job! He was really easy to work with, communicated with us the whole time, and did an awesome job on the truck.",
+   "name": "Brian Casas"
+  },
+  {
+   "text": "Absolutely incredible job! My car looks brand new again—every detail was spotless, inside and out. You can tell they take pride in their work and don’t cut corners.",
+   "name": "Stacy Melvin"
+  }
+ ],
+ "hours": [
+  "Monday to Sunday: Open 24 hours"
+ ],
+ "gallery": [
+  {
+   "src": "img/photo-4.jpg",
+   "alt": "Silver BMW sedan with a clean, glossy finish",
+   "size": "big"
+  },
+  {
+   "src": "img/photo-3.jpg",
+   "alt": "Color-shifting wrapped Cybertruck in a parking lot"
+  },
+  {
+   "src": "img/photo-6.jpg",
+   "alt": "Blue Subaru WRX front end and wheel"
+  },
+  {
+   "src": "img/photo-21.jpg",
+   "alt": "Detailer foaming a car in a driveway"
+  },
+  {
+   "src": "img/photo-19.jpg",
+   "alt": "Detailer steam-cleaning a car interior"
+  },
+  {
+   "src": "img/photo-14.jpg",
+   "alt": "Black Kia Stinger with deep gloss paint"
+  },
+  {
+   "src": "img/photo-8.jpg",
+   "alt": "Green Dodge Viper with black stripes in a driveway"
+  },
+  {
+   "src": "img/photo-13.jpg",
+   "alt": "Black SUV with mirror-like paint"
+  },
+  {
+   "src": "img/photo-10.jpg",
+   "alt": "Black Ford truck detailed at a home"
+  }
+ ],
+ "areas": [
+  "Tampa"
+ ]
+}

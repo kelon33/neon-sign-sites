@@ -1,0 +1,189 @@
+{
+ "kit": "lawn",
+ "name": "Dirty Turf",
+ "legalName": "Dirty Turf",
+ "preview": true,
+ "title": "Dirty Turf | Turf cleaning & pet odor removal in Phoenix, AZ",
+ "description": "Truck-mounted deep extraction pulls pet urine out of the infill, not just off the surface. Kids and pets are back on the turf in about an hour. 5.0 on Google from 1044 reviews.",
+ "logo": "logo.png",
+ "logoChip": true,
+ "wordmark": {
+  "top": "Dirty",
+  "bottom": "Turf"
+ },
+ "phone": "(602) 755-8432",
+ "email": "hello@dirtyturf.com",
+ "heroImage": "img/photo-1.jpg",
+ "heroAlt": "Freshly cleaned green turf beside a rock bed and paver patio",
+ "heroPosition": "60% 60%",
+ "heroPositionPhone": "60% 50%",
+ "rating": {
+  "score": "5.0",
+  "count": 1044,
+  "url": "https://maps.google.com/?cid=4712536251808867564"
+ },
+ "kicker": "Turf cleaning & pet odor removal · Phoenix, AZ",
+ "headline": "That pet smell<br><em>doesn't stand a chance.</em>",
+ "intro": "Truck-mounted deep extraction pulls pet urine out of the infill, not just off the surface. Kids and pets are back on the turf in about an hour.",
+ "badges": [
+  "Family owned",
+  "Free quotes",
+  "Truck-mounted extraction",
+  "Homes and businesses"
+ ],
+ "highlights": {
+  "title": "Why Phoenix turf owners call us",
+  "intro": "Family-owned, with 30+ years of professional cleaning experience and a background in turf installation.",
+  "points": [
+   {
+    "name": "Truck-mounted power",
+    "text": "650+ CFM suction cleans through the blades, backing and infill."
+   },
+   {
+    "name": "Odor removed at the source",
+    "text": "We extract urine crystals and bacteria, then back it with a warranty."
+   },
+   {
+    "name": "Installers who clean",
+    "text": "We know how turf is built, so we clean it that way."
+   },
+   {
+    "name": "Back in about an hour",
+    "text": "Most residential cleans take 1 to 2 hours."
+   }
+  ]
+ },
+ "servicesTitle": "Everything your turf needs.",
+ "servicesIntro": "Deep cleaning is our specialty. We also repair, install and restore the surfaces around it.",
+ "services": [
+  {
+   "name": "Turf Cleaning",
+   "text": "Deep extraction and rinsing that lifts odors, bacteria and buildup from the roots up.",
+   "price": "From $140"
+  },
+  {
+   "name": "Urine Extraction",
+   "text": "Deep cleaning built to eliminate pet urine buildup and restore freshness."
+  },
+  {
+   "name": "Turf Repair",
+   "text": "Seams, tears and worn spots restored to blend in."
+  },
+  {
+   "name": "Turf Installation",
+   "text": "Level ground, proper drainage and a finish built to last."
+  },
+  {
+   "name": "Hardscape Cleaning",
+   "text": "Pressure washing and soft-wash for patios, driveways and walkways."
+  },
+  {
+   "name": "Hardwater Removal",
+   "text": "Calcium and mineral deposits removed from turf and hard surfaces."
+  }
+ ],
+ "also": [
+  {
+   "name": "Pavers restoration"
+  },
+  {
+   "name": "Turf inspection"
+  },
+  {
+   "name": "Turf maintenance"
+  },
+  {
+   "name": "Landscape rock cleaning"
+  },
+  {
+   "name": "HOAs and commercial turf"
+  }
+ ],
+ "alsoTitle": "We also do:",
+ "promise": "We don't just spray it. <em>We pull it out.</em> Blades, backing and infill, every clean.",
+ "why": [
+  {
+   "name": "Truck-mounted deep cleaning",
+   "text": "High-powered systems that clean through the turf, not just the surface."
+  },
+  {
+   "name": "Warranty-backed odor removal",
+   "text": "Plan-based warranties up to 100 days. We extract urine, we don't perfume it."
+  },
+  {
+   "name": "Turf expertise",
+   "text": "An installation background means the right products, amounts and methods."
+  }
+ ],
+ "whyTitle": "Why Arizona calls Dirty Turf",
+ "howTitle": "A fresh turf in three steps.",
+ "steps": [
+  {
+   "name": "Get a free quote",
+   "text": "Call or send the form for an upfront quote."
+  },
+  {
+   "name": "Book this week or next",
+   "text": "Pick a time that works for you."
+  },
+  {
+   "name": "Same-day clean",
+   "text": "We inspect, extract and treat. You're ready to use the turf again in about an hour."
+  }
+ ],
+ "contactTitle": "Ready for turf that smells like nothing?",
+ "footerLine": "Turf cleaning & pet odor removal in Phoenix",
+ "reviews": [
+  {
+   "text": "They came quick and saved us from the horrible smells our turf held!! 2 hours later you would never know it smelled beforehand! Looks great!",
+   "name": "Dee Dee"
+  },
+  {
+   "text": "We had another company come out to clean our artificial grass, but unfortunately, they didn't get the job done. I called Dirty Turf and spoke with “Mustache” Mike, and he was awesome!",
+   "name": "Jared Laakso"
+  },
+  {
+   "text": "They did a great job renewing a very old, heavily soiled, and very worn area of turf. Fast, looks new, and smells great!",
+   "name": "B T"
+  },
+  {
+   "text": "I have three dogs and a small backyard. Dirty Turf does a great job cleaning our turf. If there is a problem, they are quick to make it right.",
+   "name": "Phil"
+  },
+  {
+   "text": "We have two dogs. They use our turf multiple times each day. It has been almost two years since we have it cleaned. The 3-men crew were on time and friendly. They did a great job.",
+   "name": "Peter Nguyen"
+  },
+  {
+   "text": "We've been using Dirty Turf for over a year now and absolutely love their work. Our turf still looks brand new and with having large dogs and kids it's important to keep up on it.",
+   "name": "Madison Phillips"
+  }
+ ],
+ "hours": [],
+ "gallery": [
+  {
+   "src": "img/photo-7.jpg",
+   "alt": "Backyard turf before and after cleaning",
+   "size": "big"
+  },
+  {
+   "src": "img/photo-4.jpg",
+   "alt": "Dog and child playing on clean turf"
+  },
+  {
+   "src": "img/photo-2.jpg",
+   "alt": "Power broom brushing artificial turf"
+  },
+  {
+   "src": "img/photo-9.jpg",
+   "alt": "Woman with two dogs on clean turf"
+  },
+  {
+   "src": "img/photo-6.jpg",
+   "alt": "Water spraying across turf"
+  }
+ ],
+ "areas": [
+  "Phoenix"
+ ]
+}

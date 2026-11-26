@@ -1,0 +1,5 @@
+- Claude's notes: Site shows Google review count 125, Google facts say 241. Site counters are inconsistent, so no years or numbers were used. Contact form lists a 10k minimum budget; not stated in copy. Photo 1 (owners with dog) and photo 8 (duplicate of 7) left out. Reviews are from Google as shown on site.
+- Only 5 gallery photos.
+- No postal address yet (config.json sender.address): required by law before sending.
+- Review (session): Removed claims not on their site ("no subcontractors", "handled in-house", "owners personally involved in every project", "no cookie-cutter work"); rewrote around what the site says (Justin, a teacher turned landscaper, moved to Tampa in 2021; tailored designs; full service). Phone (720) 280-6358 is a Denver number but it is the one on their site.
+- Reviews: their site shows Google reviews through a Trustindex widget (true of all five previews in this batch). They are on their site word for word, but they are Google review texts: decide whether that is OK under the "no Google review texts" rule.
