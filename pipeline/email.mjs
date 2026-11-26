@@ -27,7 +27,7 @@ I came across ${lead.name} on Google. ${praise ? praise + why : why.charAt(0).to
 So I rebuilt it, with your own ${ownList}. Have a look on your phone:
 ${link}
 
-If you like it, it's yours: $299 once, or $0 to start and $49 a month with hosting and edits included. If not, no hard feelings.
+If you like it, it's yours: your first month is free, then $49 a month with hosting and edits included (minimum 2 paid months after the free one, then cancel anytime). Or own it outright for $299. If not, no hard feelings.
 
 ${sender.name}
 Neon Sign Sites

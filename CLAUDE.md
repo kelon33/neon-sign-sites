@@ -4,7 +4,7 @@ We rebuild weak websites of US local service businesses (lawn care, mobile detai
 
 ## Offer (keep the site, terms, emails and previews consistent with it)
 - **Own it:** $299 one-time. Hosting and SSL included for the first year, then $49/year. Changes $25 each, or $19/month care.
-- **Monthly:** $0 to start, $49/month. First month paid at launch, 3-month minimum, then cancel anytime. Up to 2 small edits a month (text, photos, prices, hours). Switch to owning for $299 anytime.
+- **Monthly:** first month free, then $49/month. Card at signup, first charge on day 31. Minimum 2 paid months after the free month ($98), then cancel anytime; cancelling during the free month costs nothing. Say "minimum 2 paid months" (never just "2-month minimum") so nobody reads it as 2 months in total. Up to 2 small edits a month (text, photos, prices, hours). Switch to owning for $299 anytime.
 
 ## Repo and publishing
 - `site/` is neonsignsites.com (home, terms, privacy, 404). `generator/` builds a customer site from `demos/<slug>/site.json`, with one kit per trade (`kits/detailing.mjs` dark/glossy, `kits/lawn.mjs` bright/green). `pipeline/` goes from a lead to a preview. `leads/` holds lead research.
