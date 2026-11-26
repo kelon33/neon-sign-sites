@@ -10,6 +10,6 @@ Modern websites for US local service businesses, offered by email with a free pr
 | `demos/<slug>/` | Previews, published at `neonsignsites.com/p/<slug>/` (never indexed) |
 | `leads/` | Lead research (Google Places) |
 
-Publishing: Cloudflare Pages builds this repo on every push to `main` (build command `node deploy.mjs --dry`, output `dist`).
+Publishing: Cloudflare Workers Builds runs `node deploy.mjs --dry` and `npx wrangler deploy` on every push to `main`; `wrangler.jsonc` serves `dist/` as static files.
 
 Rules: previews use only the business's own public content (no invented reviews, prices or claims); every email is approved by a person before it is sent; email has a postal address and an opt-out.

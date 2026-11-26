@@ -1,8 +1,8 @@
 #!/usr/bin/env node
 // Publishes neonsignsites.com: the site (site/) plus every preview in demos/<slug>/
 // at /p/<slug>/. Previews are never indexed (robots.txt, X-Robots-Tag and a noindex tag).
-//   node deploy.mjs --dry   → builds dist/ only. Cloudflare Pages runs exactly this on every push
-//                             to main (build command) and publishes dist/.
+//   node deploy.mjs --dry   → builds dist/ only. Cloudflare (Workers Builds) runs this on every push
+//                             to main, then `npx wrangler deploy` publishes dist/ (see wrangler.jsonc).
 //   npm run deploy          → builds and uploads with wrangler from a computer. Not from a cloud
 //                             session: its proxy replaces wrangler's upload token.
 
