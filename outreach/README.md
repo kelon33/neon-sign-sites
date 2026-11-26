@@ -46,3 +46,5 @@ One Internal Google app for the Workspace, and one sign-in per mailbox:
 6. In the cloud environment's settings, add the variables `NEON_GMAIL_CLIENT_ID`,
    `NEON_GMAIL_CLIENT_SECRET` and one `NEON_GMAIL_TOKEN_*` per mailbox (names in `config.json`
    `outreach.mailboxes`). A new session picks them up. Never paste them into chat or the repo.
+7. `npm run outreach -- check` (read-only, sends nothing): each mailbox gets a token and reads its
+   Gmail profile; the address Gmail returns is shown next to the configured one.

@@ -1,5 +1,5 @@
 #!/usr/bin/env node
-// npm run outreach -- plan | approve | send | replies | answer | status   (see outreach/README.md)
+// npm run outreach -- plan | approve | send | replies | answer | status | check   (see outreach/README.md)
 
 import { existsSync } from 'node:fs';
 import { mkdir, readFile, readdir, writeFile } from 'node:fs/promises';
@@ -9,7 +9,7 @@ import { parseArgs } from 'node:util';
 import { openLog, normalize } from './log.mjs';
 import { planBatch, readable, approvedMessages, hashOf } from './batch.mjs';
 import { dailyLimit, inWindow, pickMailbox, localTime } from './pace.mjs';
-import { credentials, gmailClient, gmailTransport, sentAddresses, inbox, bouncedAddress } from './gmail.mjs';
+import { credentials, gmailClient, gmailTransport, sentAddresses, inbox, bouncedAddress, checkMailbox } from './gmail.mjs';
 import { classify, ownWords, senderAddress, matchEntry } from './replies.mjs';
 import { acceptsMail } from './mx.mjs';
 import { blocked } from '../pipeline/dnc.mjs';
@@ -30,6 +30,7 @@ const HELP = `Outreach: first emails to the businesses whose previews are ready,
   npm run outreach -- replies                         new replies: no and bounces → do-not-contact.json; yes/questions shown
   npm run outreach -- answer --to <address> --text <file> [--confirm]   an approved answer, in their conversation
   npm run outreach -- status                          per mailbox: sent today, today's limit, last 7 days
+  npm run outreach -- check                           read-only: each mailbox's credentials work (Gmail profile), sends nothing
 `;
 
 async function load() {
@@ -235,6 +236,18 @@ async function status() {
   console.log(`${sent.length} businesses emailed, ${ctx.dnc.entries.length} on the do-not-contact list.`);
 }
 
+async function check() {
+  const ctx = await load();
+  let bad = 0;
+  for (const b of ctx.o.mailboxes) {
+    const r = await checkMailbox(b);
+    if (!r.ok || !r.matches) bad++;
+    console.log(r.ok ? `${r.matches ? 'OK  ' : 'DIFF'} ${b.address.padEnd(28)} Gmail says ${r.gmail}` : `FAIL ${b.address.padEnd(28)} ${r.error}`);
+  }
+  console.log(bad ? `\n${bad} of ${ctx.o.mailboxes.length} mailboxes need attention.` : `\nAll ${ctx.o.mailboxes.length} mailboxes work. Nothing was sent.`);
+  if (bad) process.exitCode = 1;
+}
+
 const [command, ...rest] = process.argv.slice(2);
 const { values } = parseArgs({
   args: rest,
@@ -243,7 +256,7 @@ const { values } = parseArgs({
     now: { type: 'boolean', default: false }, max: { type: 'string' }, to: { type: 'string' }, text: { type: 'string' },
   },
 });
-const commands = { plan, approve, send, replies, answer, status };
+const commands = { plan, approve, send, replies, answer, status, check };
 (commands[command] ?? (async () => console.log(HELP)))(values).catch((error) => {
   console.error(`\nStopped: ${error.message}`);
   process.exitCode = 1;

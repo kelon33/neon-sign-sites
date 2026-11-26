@@ -131,3 +131,15 @@ export function bouncedAddress(message) {
   if (failed) return failed.split(',')[0].trim().toLowerCase();
   return (/(?:delivered to|address|to)\s+([\w.+-]+@[\w-]+(?:\.[\w-]+)+)/i.exec(message.text)?.[1] ?? '').toLowerCase();
 }
+
+/** Read-only check of one mailbox: fetches an access token and reads GET /profile. Sends nothing.
+ *  → { address, ok, gmail, matches, error } (never includes a credential). */
+export async function checkMailbox(mailbox, { env = process.env, fetchImpl = fetch } = {}) {
+  try {
+    const profile = await gmailClient(credentials(mailbox, env), { fetchImpl }).call('/profile');
+    const gmail = String(profile.emailAddress ?? '');
+    return { address: mailbox.address, ok: true, gmail, matches: gmail.toLowerCase() === mailbox.address.toLowerCase(), error: '' };
+  } catch (error) {
+    return { address: mailbox.address, ok: false, gmail: '', matches: false, error: error.message };
+  }
+}

@@ -64,3 +64,24 @@ test('messages are plain text with a proper From; bounces are recognised', () =>
   assert.equal(bouncedAddress({ from: 'Mail Delivery Subsystem <mailer-daemon@googlemail.com>', headers: { 'x-failed-recipients': 'Gone@X.com' }, text: '' }), 'gone@x.com');
   assert.equal(bouncedAddress({ from: 'bob@x.com', headers: {}, text: '' }), '');
 });
+
+test('mailbox check reads the profile only and reports Google\'s error', async () => {
+  const { checkMailbox } = await import('../outreach/gmail.mjs');
+  const box = { address: 'a@x.net', token: 'T_A' };
+  const env = { NEON_GMAIL_CLIENT_ID: 'id', NEON_GMAIL_CLIENT_SECRET: 'secret', T_A: 'refresh' };
+  const calls = [];
+  const ok = async (url, init) => {
+    calls.push([init?.method ?? 'GET', url]);
+    if (url.includes('oauth2')) return new Response(JSON.stringify({ access_token: 'tok', expires_in: 3600 }));
+    return new Response(JSON.stringify({ emailAddress: 'A@x.net' }));
+  };
+  assert.deepEqual(await checkMailbox(box, { env, fetchImpl: ok }), { address: 'a@x.net', ok: true, gmail: 'A@x.net', matches: true, error: '' });
+  assert.deepEqual(calls.map(([m, u]) => `${m} ${u.replace(/^https:\/\/[^/]+/, '')}`), ['POST /token', 'GET /gmail/v1/users/me/profile']);
+  const refused = async () => new Response(JSON.stringify({ error: 'invalid_grant', error_description: 'Token has been expired or revoked.' }), { status: 400 });
+  const r = await checkMailbox(box, { env, fetchImpl: refused });
+  assert.equal(r.ok, false);
+  assert.match(r.error, /invalid_grant: Token has been expired or revoked/);
+  assert.doesNotMatch(r.error, /refresh|secret/);
+  const missing = await checkMailbox(box, { env: {}, fetchImpl: ok });
+  assert.match(missing.error, /missing NEON_GMAIL_CLIENT_ID, NEON_GMAIL_CLIENT_SECRET, T_A/);
+});
