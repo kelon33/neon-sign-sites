@@ -1,0 +1,177 @@
+// The words on the new site. Two layers:
+//   1. kitCopy(): ready-made wording for the trade, filled in with the business's facts. Free, always works.
+//   2. sharpen(): Claude rewrites it from the business's own site and picks the photos. About
+//      10 cents a lead. Used when ANTHROPIC_API_KEY is set; anything it says that can't be
+//      traced back to the business's own words is dropped (see verify()).
+
+// Detailing services we recognise on a site, with plain descriptions of what each service is.
+export const DETAILING_SERVICES = [
+  [/full detail|premium detail|complete detail|interior\s*(?:&|and|\/)\s*exterior|exterior\s*(?:&|and|\/)\s*interior/i, 'Interior & exterior detailing', 'A complete detail, top to bottom: wash, wheels, glass, vacuum and wipe-down.'],
+  [/interior detail|interior clean|deep clean/i, 'Interior detailing', 'Seats, carpets, dash and every crevice, vacuumed, cleaned and dressed.'],
+  [/exterior detail|hand wash|exterior wash/i, 'Exterior detailing', 'A careful hand wash, wheels and tires, glass and a protective finish.'],
+  [/paint correction|swirl|polish(?!ing machine)/i, 'Paint correction & polish', 'Machine polishing that takes out swirls, scratches and oxidation.'],
+  [/ceramic/i, 'Ceramic coating', 'A hard, glossy layer that protects your paint and makes every wash easier.'],
+  [/\bwax|sealant|clay/i, 'Wax, clay & sealant', 'Clay to lift bonded grime, then wax or sealant for a deep, slick shine.'],
+  [/shampoo|upholstery|carpet|stain/i, 'Seat & carpet shampoo', 'Stains, spills and odors lifted out of seats, carpets and mats.'],
+  [/headlight/i, 'Headlight restoration', 'Cloudy, yellowed headlights made clear again.'],
+  [/odor|ozone|smoke/i, 'Odor removal', 'Smoke, pet and food smells removed, not covered up.'],
+  [/engine bay|engine clean/i, 'Engine bay cleaning', 'A careful clean and dress under the hood.'],
+  [/pet hair/i, 'Pet hair removal', 'Every last pet hair out of seats and carpets.'],
+];
+const ALSO = [[/boat|marine/i, 'Boats'], [/\brv\b|motorhome|camper/i, 'RVs'], [/motorcycle|motorbike/i, 'Motorcycles'], [/fleet/i, 'Fleets']];
+
+export function kitFor(trade) {
+  if (/detail|car wash|auto spa/i.test(trade ?? '')) return 'detailing';
+  if (/lawn|landscap|yard|mow/i.test(trade ?? '')) return 'lawn';
+  return null;
+}
+
+/** Ready-made detailing wording, filled with what the site says it offers. */
+export function detailingCopy({ name, city, text }) {
+  const mobile = /mobile|we come to you|come to you|at your (home|door|location)|wherever you are/i.test(`${name} ${text}`);
+  const services = DETAILING_SERVICES.filter(([re]) => re.test(text)).map(([, n, t]) => ({ name: n, text: t }));
+  // A full detail makes separate interior/exterior cards redundant.
+  const full = services.some((s) => s.name.startsWith('Interior & exterior'));
+  const list = (full ? services.filter((s) => !/^(Interior|Exterior) detailing$/.test(s.name)) : services).slice(0, 6);
+  if (list.length < 3) for (const d of DETAILING_SERVICES.slice(0, 5)) if (list.length < 3 && !list.some((s) => s.name === d[1])) list.push({ name: d[1], text: d[2] });
+  const town = city?.replace(/,\s*[A-Z]{2}$/, '') ?? '';
+  return {
+    kicker: `${mobile ? 'Mobile car detailing' : 'Car detailing'} · ${city}`,
+    headline: mobile ? 'Showroom shine.<br><em>Wherever you are.</em>' : 'Showroom shine.<br><em>Every single time.</em>',
+    intro: mobile
+      ? `Professional detailing at your home or office, anywhere around ${town}. No drop-off, no waiting room: just a car that looks new again.`
+      : `Professional detailing in ${town}, inside and out, for a car that looks new again.`,
+    mobile: mobile ? {
+      title: 'Your driveway is our shop.',
+      intro: 'We bring the detail to you, so your day keeps moving.',
+      points: [
+        { name: 'At your door', text: `Home, apartment or office, anywhere around ${town}.` },
+        { name: 'No time lost', text: 'No dropping off, no waiting for a call, no picking up.' },
+        { name: 'Inside and out', text: 'Every surface, every crevice, done by hand.' },
+        { name: 'Easy to book', text: 'Call, text or send the form. We confirm fast.' },
+      ],
+    } : null,
+    servicesTitle: 'Inside, outside, and everything that shines.',
+    servicesIntro: 'Pick what your car needs, from a deep interior clean to lasting paint protection.',
+    services: list,
+    also: ALSO.filter(([re]) => re.test(text)).map(([, n]) => ({ name: n })),
+    alsoTitle: 'Not just cars:',
+    why: [],
+    whyTitle: '',
+    howTitle: 'Booked in a minute. Shining by tonight.',
+    steps: [
+      { name: 'Tell us about your car', text: 'Call, text or send the form: your vehicle, the service and where it is.' },
+      { name: mobile ? 'We pull up' : 'Bring it in', text: mobile ? 'We arrive at your home or office with everything we need.' : 'Drop it off at a time that suits you.' },
+      { name: 'You get the keys back', text: 'To a car that looks, and smells, brand new.' },
+    ],
+    contactTitle: 'Book your detail.',
+    footerLine: `${mobile ? 'Mobile car detailing' : 'Car detailing'} in ${town}`,
+    reviews: [],
+    hours: [],
+  };
+}
+
+const norm = (s) => String(s ?? '').toLowerCase().replace(/[’‘]/g, "'").replace(/[“”]/g, '"').replace(/\s+/g, ' ').trim();
+
+/**
+ * Keeps only what the business itself said: reviews must appear word for word on their site,
+ * and every number in the new wording must appear in their site text or Google facts.
+ */
+export function verify(copy, { text, facts }) {
+  const source = norm(`${text} ${facts}`);
+  // Whole numbers only: "15" must not pass because a review mentions an "F150".
+  const has = (n) => new RegExp(`(^|[^\\d])${n.replace(/[.,]/g, '\\$&')}(?![\\d])`).test(source);
+  const numbersOk = (s) => [...String(s).matchAll(/\d[\d,.]*/g)].every((m) => has(m[0].replace(/[.,]$/, '')));
+  const dropped = [];
+  const keep = (label, s) => { if (numbersOk(s)) return true; dropped.push(`${label}: ${s}`); return false; };
+  const out = structuredClone(copy);
+  out.reviews = (out.reviews ?? []).filter((r) => {
+    const snippets = r.text.split(/\s*(?:…|\.\.\.)\s*/).filter(Boolean);
+    const ok = snippets.every((p) => source.includes(norm(p).replace(/^"|"$/g, '')));
+    if (!ok) dropped.push(`review: ${r.text.slice(0, 60)}`);
+    return ok;
+  });
+  for (const f of ['kicker', 'headline', 'intro', 'servicesTitle', 'servicesIntro', 'howTitle', 'contactTitle', 'footerLine', 'whyTitle']) {
+    if (out[f] && !keep(f, out[f])) out[f] = null;
+  }
+  out.services = (out.services ?? []).filter((s) => keep('service', `${s.name} ${s.text} ${s.price ?? ''}`));
+  out.why = (out.why ?? []).filter((w) => keep('why', `${w.name} ${w.text}`));
+  if (out.mobile) out.mobile.points = out.mobile.points.filter((p) => keep('point', `${p.name} ${p.text}`));
+  out.steps = (out.steps ?? []).filter((s) => keep('step', `${s.name} ${s.text}`));
+  out.hours = (out.hours ?? []).filter((h) => keep('hours', h));
+  return { copy: out, dropped };
+}
+
+const item = { type: 'object', properties: { name: { type: 'string' }, text: { type: 'string' } }, required: ['name', 'text'], additionalProperties: false };
+const SCHEMA = {
+  type: 'object',
+  properties: {
+    wordmarkTop: { type: 'string' }, wordmarkBottom: { type: 'string' },
+    kicker: { type: 'string' }, headline: { type: 'string' }, intro: { type: 'string' },
+    mobileTitle: { type: 'string' }, mobileIntro: { type: 'string' }, mobilePoints: { type: 'array', items: item },
+    servicesTitle: { type: 'string' }, servicesIntro: { type: 'string' },
+    services: { type: 'array', items: { type: 'object', properties: { name: { type: 'string' }, text: { type: 'string' }, price: { type: 'string' } }, required: ['name', 'text', 'price'], additionalProperties: false } },
+    also: { type: 'array', items: { type: 'string' } },
+    whyTitle: { type: 'string' }, why: { type: 'array', items: item },
+    howTitle: { type: 'string' }, steps: { type: 'array', items: item },
+    contactTitle: { type: 'string' }, footerLine: { type: 'string' },
+    hours: { type: 'array', items: { type: 'string' } },
+    reviews: { type: 'array', items: { type: 'object', properties: { text: { type: 'string' }, name: { type: 'string' } }, required: ['text', 'name'], additionalProperties: false } },
+    heroPhoto: { type: 'integer' },
+    galleryPhotos: { type: 'array', items: { type: 'integer' } },
+    photoAlts: { type: 'array', items: { type: 'object', properties: { photo: { type: 'integer' }, alt: { type: 'string' } }, required: ['photo', 'alt'], additionalProperties: false } },
+    notes: { type: 'string' },
+  },
+  required: ['wordmarkTop', 'wordmarkBottom', 'kicker', 'headline', 'intro', 'mobileTitle', 'mobileIntro', 'mobilePoints', 'servicesTitle', 'servicesIntro', 'services', 'also', 'whyTitle', 'why', 'howTitle', 'steps', 'contactTitle', 'footerLine', 'hours', 'reviews', 'heroPhoto', 'galleryPhotos', 'photoAlts', 'notes'],
+  additionalProperties: false,
+};
+
+const SYSTEM = `You write the copy for a premium one-page website for a local service business, rebuilt from its current website, and you choose its photos.
+
+Voice: sharp, confident, warm, plain American English. Short sentences. Concrete, not generic. Sounds like a top local business, not an agency. No exclamation marks, no clichés like "look no further", "second to none", "passion", "we pride ourselves".
+
+Facts: use ONLY facts in the business's own site text and the Google facts given. Never invent prices, years in business, numbers, guarantees, certifications, insurance, awards, products, brands, service areas or opening hours. If the site does not say it, leave it out. Prices: only exactly as the site states them, else "".
+
+Reviews: copy up to 6 customer reviews from the site text word for word (you may cut a long review with "…" between untouched parts). Pick ones that are specific (what was done, what changed). Use the reviewer's name exactly as shown. No reviews on the site: return [].
+
+Structure (keep it): headline is 2 short lines joined by <br>, the second line wrapped in <em>…</em> (the part that shines). intro: 1–2 sentences. mobilePoints: 4 short points if the business comes to the customer, else []. services: 3–6, in the business's own service names, each with one sentence on what it is or does. also: other vehicles they detail (e.g. Boats, RVs), only if the site says so. why: 3 reasons taken from what the site claims, else []. steps: 3 steps. wordmarkTop/wordmarkBottom: the business name split for a two-line logo (e.g. "Erick's" / "Auto Detailing"). hours: as the site states them, one line per day range, else [].
+
+Photos: the numbered photos are from their site. heroPhoto: the most striking photo of a finished vehicle, landscape, clean background (0 if none is good). galleryPhotos: the other good ones, best first: real finished work, foam/process shots, the team at work. Leave out flyers, graphics with text, screenshots, logos, blurry or dark photos, near-duplicates, stock-looking images. photoAlts: a short, factual description for each photo you used. notes: anything a human should check (e.g. "no reviews on site", "only 3 usable photos").`;
+
+/** Asks Claude for sharper wording and the photo choice. Returns null when there is no API key. */
+export async function sharpen({ kit, lead, text, draft, thumbs }) {
+  if (!process.env.ANTHROPIC_API_KEY) return null;
+  const { default: Anthropic } = await import('@anthropic-ai/sdk');
+  const client = new Anthropic();
+  const facts = `Business: ${lead.name}\nTrade: ${lead.trade}\nCity: ${lead.city}\nGoogle rating: ${lead.rating} from ${lead.reviews} reviews\nPhone: ${lead.phone}`;
+  const content = [
+    { type: 'text', text: `${facts}\n\nKit: ${kit}\n\nOur ready-made draft (improve on it; keep its structure):\n${JSON.stringify(draft)}\n\nTheir current website text:\n<site>\n${text.slice(0, 24000)}\n</site>\n\nTheir photos follow, numbered from 1.` },
+    ...thumbs.flatMap((b64, i) => [{ type: 'text', text: `Photo ${i + 1}` }, { type: 'image', source: { type: 'base64', media_type: 'image/jpeg', data: b64 } }]),
+  ];
+  const response = await client.beta.messages.create({
+    model: 'claude-opus-5-5',
+    max_tokens: 16000,
+    betas: ['server-side-fallback-2026-07-01'],
+    fallbacks: 'default',
+    output_config: { effort: 'medium', format: { type: 'json_schema', schema: SCHEMA } },
+    system: SYSTEM,
+    messages: [{ role: 'user', content }],
+  });
+  if (response.stop_reason !== 'end_turn') throw new Error(`Claude stopped: ${response.stop_reason}`);
+  const out = response.content.find((b) => b.type === 'text');
+  return { result: JSON.parse(out.text), usage: response.usage, facts };
+}
+
+/** A business name as people say it: Google names often carry " in Phoenix" or " - Best Detailing". */
+export function cleanName(name, city) {
+  const town = (city ?? '').replace(/,\s*[A-Z]{2}$/, '');
+  let n = String(name).split(/\s+[|–—-]\s+/)[0].trim();
+  if (town) n = n.replace(new RegExp(`\\s+(?:in|of)\\s+${town}(?:,?\\s*[A-Z]{2})?$`, 'i'), '');
+  return n.replace(/\s+(?:LLC|Inc\.?)$/i, '').trim();
+}
+
+/** Two-line logo text: "Erick's" over "Auto Detailing". */
+export function splitWordmark(name) {
+  const m = name.match(/^(.+?)\s+((?:mobile\s+)?(?:car\s+|auto\s+)?(?:detailing|detail|car\s+wash|car\s+care|auto\s+spa)(?:\s*(?:&|and)\s+.+)?)$/i);
+  return m ? { top: m[1], bottom: m[2] } : { top: name, bottom: '' };
+}

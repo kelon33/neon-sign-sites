@@ -1,0 +1,205 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Lawn Sculptures | Lawn Care &amp; Landscape Maintenance in Tampa, FL</title>
+<meta name="description" content="Precision mowing, edging, mulching, Florida-friendly plants and property cleanups across South Tampa, Davis Island and North Tampa. Licensed and insured. Free quotes.">
+<meta name="robots" content="noindex, nofollow">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500&family=Inter:wght@400;500;600&display=swap">
+<style>
+:root { --brand: #5c6339; --brand-dark: #33361f; --brand-deep: #1c1e11; --brand-light: #e8e9e3; --accent: #e9d27c; --stripe-a: #4b512f; --stripe-b: #404528;
+  --ink: #1a1d16; --muted: #5d6356; --paper: #faf8f2; --line: #e5e1d4; --serif: "Fraunces", Georgia, serif; --sans: "Inter", system-ui, sans-serif; }
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body { margin: 0; background: var(--paper); color: var(--ink); font: 400 17px/1.65 var(--sans); -webkit-font-smoothing: antialiased; }
+a { color: inherit; }
+.wrap { max-width: 1140px; margin: 0 auto; padding: 0 24px; }
+h1, h2, h3 { margin: 0; font-weight: 400; }
+h1, h2 { font-family: var(--serif); letter-spacing: -0.015em; line-height: 1.04; }
+h1 { font-size: clamp(2.7rem, 6vw, 4.9rem); }
+h2 { font-size: clamp(2rem, 4vw, 3.1rem); }
+h3 { font: 600 1.08rem/1.35 var(--sans); }
+p { margin: 0; }
+.eyebrow { font: 600 0.76rem/1 var(--sans); letter-spacing: 0.16em; text-transform: uppercase; color: var(--brand); margin-bottom: 16px; }
+.btn { display: inline-flex; align-items: center; gap: 10px; background: var(--accent); color: var(--brand-deep); font: 600 1rem/1 var(--sans); padding: 17px 26px; border-radius: 999px; text-decoration: none; border: 0; cursor: pointer; transition: transform .15s ease; }
+.btn:hover { transform: translateY(-1px); }
+.btn.ghost { background: transparent; color: #fff; box-shadow: inset 0 0 0 1.5px rgba(255,255,255,.55); }
+.preview-bar { background: #0b0b10; color: #cfcbd6; font: 500 13px/1.4 var(--sans); text-align: center; padding: 9px 16px; }
+.preview-bar a { color: #ff7aa8; }
+
+/* Header */
+.top { position: absolute; left: 0; right: 0; z-index: 5; }
+.top .wrap { display: flex; align-items: center; justify-content: space-between; gap: 20px; height: 92px; }
+.logo img { height: 58px; width: auto; display: block; }
+.top nav { display: flex; gap: 30px; }
+.top nav a { color: rgba(255,255,255,.82); text-decoration: none; font-size: .95rem; }
+.top nav a:hover { color: #fff; }
+.call { color: #fff; text-decoration: none; font-weight: 600; white-space: nowrap; }
+
+/* Hero: a freshly mowed lawn, in the brand's greens. */
+.hero { position: relative; color: #fff; padding: 190px 0 120px; overflow: hidden;
+  background:
+    radial-gradient(ellipse at 78% 0%, rgba(255,255,255,.14), transparent 55%),
+    linear-gradient(180deg, rgba(0,0,0,0) 30%, rgba(0,0,0,.38)),
+    repeating-linear-gradient(100deg, var(--stripe-a) 0 120px, var(--stripe-b) 120px 240px); }
+.hero::after { content: ""; position: absolute; inset: 0; background: radial-gradient(ellipse at 20% 100%, rgba(0,0,0,.35), transparent 60%); pointer-events: none; }
+.hero .wrap { position: relative; z-index: 1; }
+.hero .eyebrow { color: var(--accent); }
+.hero p.lead { font-size: 1.18rem; color: rgba(255,255,255,.86); max-width: 33em; margin-top: 22px; }
+.hero .actions { display: flex; flex-wrap: wrap; gap: 14px; margin-top: 36px; }
+.badges { display: flex; flex-wrap: wrap; gap: 10px 26px; margin-top: 44px; color: rgba(255,255,255,.85); font-size: .92rem; }
+.badges span::before { content: "✓"; color: var(--accent); margin-right: 8px; }
+
+/* Sections */
+.section { padding: 110px 0; }
+.section.tint { background: #fff; border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
+.head { display: grid; grid-template-columns: 1fr 1fr; gap: 48px; align-items: end; margin-bottom: 54px; }
+.head p { color: var(--muted); font-size: 1.08rem; }
+.services { display: grid; grid-template-columns: repeat(auto-fit, minmax(196px, 1fr)); gap: 16px; }
+.service { background: #fff; border: 1px solid var(--line); border-radius: 20px; padding: 30px 26px; transition: transform .2s ease, box-shadow .2s ease; }
+.section.tint .service { background: var(--paper); }
+.service:hover { transform: translateY(-3px); box-shadow: 0 18px 40px -24px rgba(0,0,0,.25); }
+.service .mark { width: 42px; height: 42px; border-radius: 12px; background: var(--brand-light); display: grid; place-items: center; color: var(--brand-dark); font: 500 1.2rem var(--serif); margin-bottom: 20px; }
+.service p { color: var(--muted); margin-top: 10px; font-size: .97rem; }
+
+.quote-line { font: 400 clamp(1.8rem, 3.6vw, 2.8rem)/1.2 var(--serif); max-width: 22em; }
+.quote-line em { color: var(--brand); }
+
+.steps { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; }
+.step { border-top: 2px solid var(--brand); padding-top: 22px; }
+.step .n { font: 400 2.4rem/1 var(--serif); color: var(--brand); }
+.step h3 { margin-top: 14px; }
+.step p { color: var(--muted); margin-top: 8px; font-size: .97rem; }
+
+.areas { display: flex; flex-wrap: wrap; gap: 10px; }
+.areas span { background: var(--brand-light); color: var(--brand-deep); border-radius: 999px; padding: 10px 18px; font-weight: 500; }
+
+/* Contact */
+.contact { background: var(--brand-deep); color: #fff; padding: 110px 0; }
+.contact .grid { display: grid; grid-template-columns: 1fr 1fr; gap: 64px; }
+.contact .eyebrow { color: var(--accent); }
+.contact dl { margin: 34px 0 0; display: grid; gap: 18px; }
+.contact dt { font-size: .8rem; letter-spacing: .12em; text-transform: uppercase; color: rgba(255,255,255,.6); }
+.contact dd { margin: 4px 0 0; font-size: 1.1rem; }
+.contact dd a { text-decoration: none; }
+.hours { font-size: .95rem; color: rgba(255,255,255,.82); }
+form { background: #fff; color: var(--ink); border-radius: 24px; padding: 34px; display: grid; gap: 14px; }
+form h3 { font: 400 1.7rem/1.1 var(--serif); }
+form label { display: grid; gap: 6px; font-size: .88rem; color: var(--muted); }
+form input, form select, form textarea { border: 1px solid var(--line); border-radius: 12px; padding: 13px 14px; font: 400 1rem var(--sans); background: var(--paper); color: var(--ink); }
+form textarea { min-height: 96px; resize: vertical; }
+form .btn { justify-content: center; background: var(--brand); color: #fff; margin-top: 6px; }
+.footer { background: var(--brand-deep); border-top: 1px solid rgba(255,255,255,.12); color: rgba(255,255,255,.65); padding: 28px 0; font-size: .9rem; }
+.footer .wrap { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 10px; }
+
+/* Phone: a call button always in reach */
+.sticky-call { display: none; }
+:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; border-radius: 6px; }
+@media (max-width: 860px) {
+  .top nav { display: none; }
+  .hero { padding: 150px 0 90px; }
+  .head, .contact .grid { grid-template-columns: 1fr; gap: 22px; }
+  .steps { grid-template-columns: 1fr; }
+  .section, .contact { padding: 80px 0; }
+  .sticky-call { display: flex; position: fixed; left: 14px; right: 14px; bottom: 14px; z-index: 20; justify-content: center; box-shadow: 0 12px 30px -10px rgba(0,0,0,.45); }
+  body { padding-bottom: 80px; }
+}
+</style>
+</head>
+<body>
+<div class="preview-bar">Preview prepared for Lawn Sculptures by <a href="https://neonsignsites.com/">Neon Sign Sites</a>. Not the live site.</div>
+<header class="top">
+  <div class="wrap">
+    <a class="logo" href="#"><img src="logo-white.png" alt="Lawn Sculptures"></a>
+    <nav aria-label="Main"><a href="#services">Services</a><a href="#how">How it works</a><a href="#areas">Service area</a><a href="#contact">Contact</a></nav>
+    <a class="call" href="tel:+18139357724">(813) 935-7724</a>
+  </div>
+</header>
+
+<main>
+<section class="hero">
+  <div class="wrap">
+    <p class="eyebrow">Tampa's landscape sculpture specialists</p>
+    <h1>The art<br>of the lawn.</h1>
+    <p class="lead">From precision mowing in South Tampa to native plant installations in North Tampa, we bring a detail-oriented approach to every yard. We don't just cut grass. We make it so you don't have to.</p>
+    <div class="actions">
+      <a class="btn" href="#contact">Get a free quote</a>
+      <a class="btn ghost" href="tel:+18139357724">Call (813) 935-7724</a>
+    </div>
+    <div class="badges"><span>Licensed &amp; insured</span><span>Homes and businesses</span><span>Free estimates</span></div>
+  </div>
+</section>
+
+<section class="section" id="services">
+  <div class="wrap">
+    <div class="head">
+      <div><p class="eyebrow">Services</p><h2>Everything your yard needs, done with care.</h2></div>
+      <p>Weekly care or a one-time transformation: one team, one call, and a yard that looks sculpted, not just mowed.</p>
+    </div>
+    <div class="services">
+      <article class="service"><div class="mark">01</div><h3>Lawn care &amp; mowing</h3><p>Weekly and bi-weekly precision mowing, edging and debris blow-off, on a schedule you can set and forget.</p></article>
+      <article class="service"><div class="mark">02</div><h3>Trimming &amp; edging</h3><p>Crisp edge lines along every walk and bed, and hedges shaped clean and square.</p></article>
+      <article class="service"><div class="mark">03</div><h3>Professional mulching</h3><p>Premium cypress mulch that protects your soil and lifts your curb appeal.</p></article>
+      <article class="service"><div class="mark">04</div><h3>Florida-friendly plants</h3><p>Native plants chosen to thrive in the Tampa heat, installed to last.</p></article>
+      <article class="service"><div class="mark">05</div><h3>Property cleanups</h3><p>Heavy-duty yard restoration, leaf removal and storm-debris hauling.</p></article>
+    </div>
+  </div>
+</section>
+
+<section class="section tint">
+  <div class="wrap"><p class="quote-line">We don't just cut grass. <em>We sculpt it.</em> Every edge, every bed, every visit, finished like it's our own front yard.</p></div>
+</section>
+
+<section class="section" id="how">
+  <div class="wrap">
+    <p class="eyebrow">How it works</p>
+    <h2 style="margin-bottom:48px">A better lawn in three easy steps.</h2>
+    <div class="steps">
+      <div class="step"><span class="n">01</span><h3>Ask for a free quote</h3><p>Tell us about your yard by phone or with the form below.</p></div>
+      <div class="step"><span class="n">02</span><h3>We walk the property</h3><p>We look at your lawn, beds and trees and recommend a plan that fits.</p></div>
+      <div class="step"><span class="n">03</span><h3>Enjoy the view</h3><p>We get to work on your schedule. You get your weekends back.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="section tint" id="areas">
+  <div class="wrap">
+    <div class="head">
+      <div><p class="eyebrow">Service area</p><h2>Serving Tampa, from South Tampa to North Tampa.</h2></div>
+      <p>Homeowners and businesses across the Tampa Bay area.</p>
+    </div>
+    <div class="areas"><span>South Tampa</span><span>Davis Island</span><span>North Tampa</span><span>Tampa Bay</span></div>
+  </div>
+</section>
+
+<section class="contact" id="contact">
+  <div class="wrap grid">
+    <div>
+      <p class="eyebrow">Contact</p>
+      <h2>Ready for a better lawn?</h2>
+      <dl>
+        <div><dt>Call</dt><dd><a href="tel:+18139357724">(813) 935-7724</a></dd></div>
+        <div><dt>Email</dt><dd><a href="mailto:office@lstampa.com">office@lstampa.com</a></dd></div>
+        <div><dt>Office</dt><dd>817 S MacDill Ave, Tampa, FL 33609</dd></div>
+        <div><dt>Hours</dt><dd class="hours">Monday to Friday, 9:00 AM – 5:00 PM<br>Saturday and Sunday: closed</dd></div>
+      </dl>
+    </div>
+    <form onsubmit="event.preventDefault(); this.querySelector('button').textContent='Thanks! We\'ll be in touch.';">
+      <h3>Get your free quote</h3>
+      <label>Name <input name="name" autocomplete="name" required></label>
+      <label>Phone <input name="phone" type="tel" autocomplete="tel" required></label>
+      <label>Service <select name="service"><option>Lawn care &amp; mowing</option><option>Trimming &amp; edging</option><option>Professional mulching</option><option>Florida-friendly plants</option><option>Property cleanups</option></select></label>
+      <label>Address or neighborhood <input name="address" autocomplete="street-address"></label>
+      <label>Anything we should know? <textarea name="note"></textarea></label>
+      <button class="btn" type="submit">Request my quote</button>
+    </form>
+  </div>
+</section>
+</main>
+
+<footer class="footer"><div class="wrap"><span>© 2026 Lawn Sculptures · Lawn Care Tampa</span><span>Licensed &amp; insured · Professional mowing, landscaping &amp; property cleanup</span></div></footer>
+<a class="btn sticky-call" href="tel:+18139357724">Call (813) 935-7724</a>
+</body>
+</html>

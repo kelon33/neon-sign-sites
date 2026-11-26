@@ -1,0 +1,4 @@
+- Logo is dark on a transparent background: shown on a white chip. Check it reads well.
+- Hero uses a portrait photo, cropped: check it looks good.
+- No reviews on the site: the page shows the Google rating only.
+- No postal address yet (config.json sender.address): required by law before sending.

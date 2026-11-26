@@ -1,0 +1,358 @@
+// Mobile car detailing: dark and glossy, the business's own photos up front, then what they do,
+// that they come to you, the work itself (gallery), their real reviews and a booking form.
+//
+// site.json fields on top of the shared ones (name, phone, email, hours, services, steps, areas):
+//   heroImage, rating { score, count, url }, mobile { title, intro, points[] },
+//   services[] { name, text, price? }  (price only when the business publishes one),
+//   alsoTitle, also[] (other vehicles), gallery[] { src, alt }, reviews[] { text, name },
+//   why[] { name, text }, giftCard (url), wordmark { top, bottom }
+
+import { esc, tel, shade } from '../shared.mjs';
+
+const star = '<svg viewBox="0 0 20 20" aria-hidden="true"><path d="M10 1.6l2.6 5.3 5.8.8-4.2 4.1 1 5.8L10 14.9l-5.2 2.7 1-5.8L1.6 7.7l5.8-.8z"/></svg>';
+const stars = `<span class="stars" aria-label="5 stars">${star.repeat(5)}</span>`;
+const icons = {
+  pin: '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 22s7-6.2 7-12a7 7 0 10-14 0c0 5.8 7 12 7 12z"/><circle cx="12" cy="10" r="2.6"/></svg>',
+  clock: '<svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>',
+  spark: '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3l1.8 5.4L19 10l-5.2 1.6L12 17l-1.8-5.4L5 10l5.2-1.6z"/><path d="M19 16l.7 2 2 .7-2 .7-.7 2-.7-2-2-.7 2-.7z"/></svg>',
+  shield: '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3l8 3v6c0 4.6-3.4 8-8 9-4.6-1-8-4.4-8-9V6z"/><path d="M8.5 12l2.5 2.5 4.5-5"/></svg>',
+  drop: '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3s6 6.4 6 11a6 6 0 01-12 0c0-4.6 6-11 6-11z"/></svg>',
+  team: '<svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="9" cy="8" r="3.2"/><path d="M3 20c.6-3.4 3-5.4 6-5.4s5.4 2 6 5.4"/><path d="M16 4.8a3.2 3.2 0 010 6.4M18 14.8c1.7.7 2.8 2.6 3 5.2"/></svg>',
+};
+const pointIcons = [icons.pin, icons.clock, icons.spark, icons.shield];
+const whyIcons = [icons.drop, icons.team, icons.shield];
+
+export function renderDetailing(d) {
+  const brand = d.brand ?? '#3a6acc';
+  // The top of the glossy buttons: a lighter brand shade, or a colour of its own ("brandHi").
+  const brandHi = d.brandHi ?? shade(brand, 0.35);
+  const brandLo = shade(brand, -0.3);
+  const accent = d.accent ?? '#8fd0ff';
+  const preview = d.preview ? `<div class="preview-bar">Preview prepared for ${esc(d.name)} by <a href="https://neonsignsites.com/">Neon Sign Sites</a>. Not the live site.</div>` : '';
+  const rating = d.rating ? `<a class="rating" href="${esc(d.rating.url)}" target="_blank" rel="noopener">${stars}<b>${esc(d.rating.score)}</b><span>${esc(d.rating.count)} Google reviews</span></a>` : '';
+  const vehicleTypes = ['Car', 'SUV or truck', ...(d.also ?? []).map((a) => a.name)];
+  return `<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>${esc(d.title)}</title>
+<meta name="description" content="${esc(d.description)}">
+<meta name="theme-color" content="#07090d">
+${d.preview ? '<meta name="robots" content="noindex, nofollow">' : ''}
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@100..125,500..800&family=Inter:wght@400;500;600&display=swap">
+<style>
+:root { --brand: ${brand}; --brand-hi: ${brandHi}; --brand-lo: ${brandLo}; --accent: ${accent};
+  --bg: #07090d; --panel: #0e1219; --panel-2: #131824; --line: rgba(255,255,255,.08); --ink: #eef2f8; --muted: #98a2b3;
+  --display: "Archivo", "Inter", system-ui, sans-serif; --sans: "Inter", system-ui, sans-serif; --ease: cubic-bezier(.22,.61,.36,1); }
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body { margin: 0; background: var(--bg); color: var(--ink); font: 400 17px/1.65 var(--sans); -webkit-font-smoothing: antialiased; }
+a { color: inherit; }
+img { display: block; max-width: 100%; }
+.wrap { max-width: 1180px; margin: 0 auto; padding: 0 24px; }
+h1, h2, h3 { margin: 0; }
+h1, h2 { font-family: var(--display); font-stretch: 118%; font-weight: 750; letter-spacing: -0.02em; line-height: 1.02; }
+h1 { font-size: clamp(2.6rem, 6.4vw, 5.3rem); }
+h2 { font-size: clamp(1.95rem, 4vw, 3.2rem); }
+h3 { font: 600 1.08rem/1.35 var(--sans); }
+p { margin: 0; }
+.eyebrow { font: 600 .74rem/1 var(--sans); letter-spacing: .2em; text-transform: uppercase; color: var(--accent); margin-bottom: 18px; }
+.muted { color: var(--muted); }
+
+/* Buttons: a glossy, freshly waxed finish. */
+.btn { position: relative; overflow: hidden; display: inline-flex; align-items: center; justify-content: center; gap: 10px; padding: 17px 28px; border-radius: 14px; border: 0; cursor: pointer;
+  font: 600 1rem/1 var(--sans); color: #fff; text-decoration: none; -webkit-tap-highlight-color: transparent; touch-action: manipulation;
+  background: linear-gradient(180deg, var(--brand-hi), var(--brand) 52%, var(--brand-lo));
+  box-shadow: inset 0 1px 0 rgba(255,255,255,.45), inset 0 -1px 0 rgba(0,0,0,.25), 0 12px 30px -10px ${brand}cc;
+  transition: transform .3s var(--ease), box-shadow .3s var(--ease); }
+.btn::after { content: ""; position: absolute; inset: -40% auto -40% -60%; width: 40%; transform: skewX(-20deg); pointer-events: none;
+  background: linear-gradient(90deg, transparent, rgba(255,255,255,.55), transparent); transition: left .7s var(--ease); left: -60%; }
+.btn.ghost { background: rgba(255,255,255,.06); box-shadow: inset 0 0 0 1px rgba(255,255,255,.22); backdrop-filter: blur(6px); }
+@media (hover: hover) and (pointer: fine) {
+  .btn:hover { transform: translateY(-1px); box-shadow: inset 0 1px 0 rgba(255,255,255,.5), 0 16px 40px -10px ${brand}; }
+  .btn:hover::after { left: 130%; }
+}
+.btn.shine::after { left: 130%; }
+.preview-bar { background: #000; color: #cfcbd6; font: 500 13px/1.4 var(--sans); text-align: center; padding: 9px 16px; border-bottom: 1px solid var(--line); }
+.preview-bar a { color: #ff7aa8; }
+
+/* Header */
+.top { position: absolute; left: 0; right: 0; z-index: 5; }
+.top .wrap { display: flex; align-items: center; justify-content: space-between; gap: 20px; height: 96px; }
+.logo { display: flex; align-items: center; gap: 12px; text-decoration: none; }
+.logo img { height: 50px; width: auto; filter: drop-shadow(0 4px 14px rgba(0,0,0,.5)); }
+/* A dark logo with no transparent background sits on a light chip ("logoChip"). */
+.logo img.chip { background: #fff; border-radius: 10px; padding: 5px 8px; filter: none; }
+.logo span { display: grid; line-height: 1; }
+.logo b { font: 800 1.32rem/1 var(--display); font-stretch: 125%; letter-spacing: .01em; text-transform: uppercase; }
+.logo small { font: 600 .64rem/1 var(--sans); letter-spacing: .32em; text-transform: uppercase; color: var(--muted); margin-top: 6px; }
+.top nav { display: flex; gap: 30px; }
+.top nav a { color: rgba(255,255,255,.78); text-decoration: none; font-size: .95rem; transition: color .2s; }
+.top nav a:hover { color: #fff; }
+.top .btn { padding: 13px 20px; font-size: .93rem; }
+
+/* Hero: their own best photo, darkened on the side the words sit. */
+.hero { position: relative; min-height: min(100vh, 860px); display: flex; align-items: flex-end; padding: 170px 0 90px; overflow: hidden; isolation: isolate; }
+.hero > img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: ${esc(d.heroPosition ?? '60% 60%')}; z-index: -2; transform: scale(1.04); animation: settle 2.4s var(--ease) forwards; }
+.hero::before { content: ""; position: absolute; inset: 0; z-index: -1;
+  background: linear-gradient(90deg, rgba(7,9,13,.94) 0%, rgba(7,9,13,.78) 38%, rgba(7,9,13,.15) 75%), linear-gradient(180deg, rgba(7,9,13,.6), transparent 30%, transparent 62%, var(--bg)); }
+@keyframes settle { to { transform: scale(1); } }
+.hero h1 { max-width: 11em; }
+.hero h1 em { font-style: normal; background: linear-gradient(100deg, #fff 0%, #fff 40%, var(--accent) 50%, #fff 60%, #fff 100%); background-size: 250% 100%; background-position: 100% 0;
+  -webkit-background-clip: text; background-clip: text; color: transparent; animation: gloss 2.6s .5s var(--ease) forwards; }
+@keyframes gloss { to { background-position: 0 0; } }
+.hero .lead { font-size: 1.16rem; color: rgba(238,242,248,.82); max-width: 32em; margin-top: 24px; }
+.hero .actions { display: flex; flex-wrap: wrap; gap: 14px; margin-top: 34px; }
+.rating { display: inline-flex; align-items: center; gap: 10px; margin-top: 34px; text-decoration: none; padding: 10px 16px; border-radius: 999px; background: rgba(255,255,255,.07); box-shadow: inset 0 0 0 1px var(--line); backdrop-filter: blur(8px); font-size: .93rem; }
+.rating b { font-weight: 600; }
+.rating span { color: rgba(238,242,248,.75); }
+.stars { display: inline-flex; gap: 2px; }
+.stars svg { width: 16px; height: 16px; fill: #ffc24b; }
+
+/* Bands and sections */
+.section { padding: 110px 0; position: relative; }
+.head { display: grid; grid-template-columns: 1.1fr .9fr; gap: 48px; align-items: end; margin-bottom: 52px; }
+.head p { color: var(--muted); font-size: 1.07rem; }
+
+.points { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1px; background: var(--line); border: 1px solid var(--line); border-radius: 22px; overflow: hidden; }
+.point { background: var(--panel); padding: 30px 26px; }
+.point svg, .why svg { width: 30px; height: 30px; fill: none; stroke: var(--accent); stroke-width: 1.6; stroke-linecap: round; stroke-linejoin: round; margin-bottom: 18px; }
+.point p { color: var(--muted); font-size: .95rem; margin-top: 8px; }
+
+.services { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
+.service { position: relative; padding: 30px 28px 28px; border-radius: 20px; overflow: hidden;
+  background: linear-gradient(160deg, var(--panel-2), var(--panel) 60%); box-shadow: inset 0 0 0 1px var(--line); transition: transform .35s var(--ease), box-shadow .35s var(--ease); }
+.service::before { content: ""; position: absolute; inset: 0 0 auto; height: 1px; background: linear-gradient(90deg, transparent, rgba(255,255,255,.35), transparent); }
+.service .n { font: 700 .8rem/1 var(--display); font-stretch: 125%; color: var(--accent); letter-spacing: .1em; }
+.service h3 { margin-top: 16px; font-size: 1.16rem; }
+.service p { color: var(--muted); margin-top: 10px; font-size: .96rem; }
+.service .price { margin-top: 18px; font: 700 1.3rem/1 var(--display); font-stretch: 118%; }
+.service .price small { font: 500 .8rem var(--sans); color: var(--muted); margin-right: 6px; }
+@media (hover: hover) { .service:hover { transform: translateY(-4px); box-shadow: inset 0 0 0 1px ${brand}88, 0 24px 50px -30px ${brand}; } }
+.also { display: flex; flex-wrap: wrap; align-items: center; gap: 10px 12px; margin-top: 28px; color: var(--muted); }
+.also span.tag { color: var(--ink); background: var(--panel-2); box-shadow: inset 0 0 0 1px var(--line); border-radius: 999px; padding: 9px 16px; font-size: .93rem; }
+
+/* Gallery: the work, big. */
+.gallery { display: grid; grid-template-columns: repeat(4, 1fr); grid-auto-rows: 230px; gap: 12px; grid-auto-flow: dense; }
+.gallery button { padding: 0; border: 0; border-radius: 16px; overflow: hidden; cursor: zoom-in; background: var(--panel); position: relative; -webkit-tap-highlight-color: transparent; }
+/* "size": "big" (2×2) or "tall" (1×2) in site.json; one big and one tall with ten more fill four rows exactly. */
+.gallery .big { grid-column: span 2; grid-row: span 2; }
+.gallery .tall { grid-row: span 2; }
+.gallery img { width: 100%; height: 100%; object-fit: cover; transition: transform .8s var(--ease), filter .8s var(--ease); filter: saturate(1.05); }
+@media (hover: hover) { .gallery button:hover img { transform: scale(1.05); filter: saturate(1.15) brightness(1.05); } }
+dialog.lightbox { padding: 0; border: 0; background: transparent; max-width: min(94vw, 1100px); max-height: 92vh; }
+dialog.lightbox::backdrop { background: rgba(3,4,7,.9); backdrop-filter: blur(6px); }
+dialog.lightbox img { max-height: 88vh; width: auto; margin: auto; border-radius: 14px; }
+dialog.lightbox form { position: absolute; top: 10px; right: 10px; }
+dialog.lightbox form button { width: 44px; height: 44px; border-radius: 50%; border: 0; background: rgba(0,0,0,.6); color: #fff; font-size: 1.4rem; cursor: pointer; }
+
+/* Reviews */
+.reviews { display: grid; grid-auto-flow: column; grid-auto-columns: minmax(300px, 1fr); gap: 16px; overflow-x: auto; scroll-snap-type: x mandatory; padding-bottom: 14px; scrollbar-width: thin; scrollbar-color: #2a3242 transparent; }
+.review { scroll-snap-align: start; background: var(--panel); box-shadow: inset 0 0 0 1px var(--line); border-radius: 20px; padding: 28px; display: flex; flex-direction: column; gap: 16px; }
+.review p { font-size: 1.02rem; color: rgba(238,242,248,.9); flex: 1; }
+.review cite { font-style: normal; font-weight: 600; font-size: .92rem; }
+.review cite small { display: block; font-weight: 400; color: var(--muted); }
+
+.why { display: grid; grid-template-columns: repeat(3, 1fr); gap: 34px; }
+.why p { color: var(--muted); margin-top: 8px; font-size: .96rem; }
+
+.steps { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; counter-reset: s; }
+.step { padding-top: 22px; border-top: 1px solid rgba(255,255,255,.14); position: relative; }
+.step::before { content: ""; position: absolute; top: -1px; left: 0; width: 56px; height: 2px; background: linear-gradient(90deg, var(--accent), var(--brand)); }
+.step .n { font: 750 2.2rem/1 var(--display); font-stretch: 118%; color: rgba(255,255,255,.22); }
+.step h3 { margin-top: 12px; }
+.step p { color: var(--muted); margin-top: 8px; font-size: .96rem; }
+
+/* Booking */
+.book { padding: 110px 0; background: radial-gradient(ellipse at 15% 0%, ${brand}38, transparent 55%), var(--panel); border-top: 1px solid var(--line); }
+.book .grid { display: grid; grid-template-columns: .9fr 1.1fr; gap: 64px; }
+.book dl { margin: 34px 0 0; display: grid; gap: 20px; }
+.book dt { font-size: .76rem; letter-spacing: .16em; text-transform: uppercase; color: var(--muted); }
+.book dd { margin: 5px 0 0; font-size: 1.08rem; }
+.book dd a { text-decoration: none; }
+.areas { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 8px; }
+.areas span { background: rgba(255,255,255,.06); border-radius: 999px; padding: 6px 13px; font-size: .9rem; }
+.gift { display: inline-block; margin-top: 30px; color: var(--accent); text-decoration: none; font-weight: 600; }
+.gift:hover { text-decoration: underline; }
+form.booking { background: var(--bg); box-shadow: inset 0 0 0 1px var(--line), 0 40px 80px -40px #000; border-radius: 24px; padding: 34px; display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+form.booking h3 { grid-column: 1 / -1; font: 750 1.6rem/1.1 var(--display); font-stretch: 118%; margin-bottom: 4px; }
+form.booking label { display: grid; gap: 7px; font-size: .86rem; color: var(--muted); }
+form.booking .full { grid-column: 1 / -1; }
+form.booking input, form.booking select, form.booking textarea { width: 100%; border: 0; box-shadow: inset 0 0 0 1px rgba(255,255,255,.12); border-radius: 12px; padding: 14px; font: 400 1rem var(--sans); background: var(--panel-2); color: var(--ink); color-scheme: dark; transition: box-shadow .2s; }
+form.booking input:focus, form.booking select:focus, form.booking textarea:focus { outline: none; box-shadow: inset 0 0 0 1.5px var(--brand-hi); }
+form.booking textarea { min-height: 90px; resize: vertical; }
+form.booking .btn { grid-column: 1 / -1; margin-top: 6px; }
+.footer { border-top: 1px solid var(--line); color: var(--muted); padding: 28px 0; font-size: .9rem; }
+.footer .wrap { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 10px; }
+
+/* Phone: call and book always in reach */
+.dock { display: none; }
+:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; }
+@media (max-width: 900px) {
+  .top nav { display: none; }
+  .top .btn { display: none; }
+  .hero { min-height: 0; padding: 140px 0 70px; }
+  .hero::before { background: linear-gradient(180deg, rgba(7,9,13,.55) 0%, rgba(7,9,13,.35) 30%, rgba(7,9,13,.88) 62%, var(--bg) 100%); }
+  .hero > img { object-position: ${esc(d.heroPositionPhone ?? d.heroPosition ?? '60% 40%')}; }
+  .head, .book .grid { grid-template-columns: 1fr; gap: 20px; }
+  .points { grid-template-columns: 1fr 1fr; }
+  .point { padding: 22px 18px; }
+  .point svg { margin-bottom: 12px; }
+  .services, .why, .steps { grid-template-columns: 1fr; }
+  .why { gap: 26px; }
+  .gallery { grid-template-columns: 1fr 1fr; grid-auto-rows: 160px; gap: 8px; }
+  .reviews { grid-auto-columns: 84%; }
+  .section, .book { padding: 80px 0; }
+  form.booking { grid-template-columns: 1fr; padding: 24px; }
+  .dock { display: grid; transition: transform .45s var(--ease), opacity .45s var(--ease); grid-template-columns: 1fr 1fr; gap: 10px; position: fixed; left: 12px; right: 12px; bottom: 12px; z-index: 20; padding: 8px; border-radius: 20px; background: rgba(14,18,25,.82); backdrop-filter: blur(14px); box-shadow: inset 0 0 0 1px var(--line), 0 14px 34px -10px rgba(0,0,0,.7); }
+  .dock .btn { padding: 15px 10px; }
+  .dock.away { transform: translateY(130%); opacity: 0; pointer-events: none; }
+  body { padding-bottom: 86px; }
+}
+@media (max-width: 340px) { .points { grid-template-columns: 1fr; } }
+@media (max-width: 520px) {
+  .logo b { font-size: 1.12rem; }
+  .logo img { height: 42px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { animation: none !important; transition: none !important; }
+  .hero h1 em { background-position: 0 0; }
+  .hero > img { transform: none; }
+}
+</style>
+</head>
+<body>
+${preview}
+<header class="top">
+  <div class="wrap">
+    <a class="logo" href="#">${d.logo ? `<img src="${esc(d.logo)}" alt=""${d.logoChip ? ' class="chip"' : ''}>` : ''}<span><b>${esc(d.wordmark?.top ?? d.name)}</b>${d.wordmark?.bottom ? `<small>${esc(d.wordmark.bottom)}</small>` : ''}</span></a>
+    <nav aria-label="Main"><a href="#services">Services</a><a href="#work">Our work</a><a href="#reviews">Reviews</a><a href="#book">Contact</a></nav>
+    <a class="btn" href="#book">Book a detail</a>
+  </div>
+</header>
+
+<main>
+<section class="hero">
+  ${d.heroImage ? `<img src="${esc(d.heroImage)}" alt="${esc(d.heroAlt ?? '')}" fetchpriority="high">` : ''}
+  <div class="wrap">
+    <p class="eyebrow">${esc(d.kicker)}</p>
+    <h1>${d.headline}</h1>
+    <p class="lead">${esc(d.intro)}</p>
+    <div class="actions">
+      <a class="btn" href="#book">Book a detail</a>
+      <a class="btn ghost" href="${tel(d.phone)}">Call ${esc(d.phone)}</a>
+    </div>
+    ${rating}
+  </div>
+</section>
+
+${d.mobile ? `<section class="section" style="padding-top:40px">
+  <div class="wrap">
+    <div class="head"><div><p class="eyebrow">We come to you</p><h2>${esc(d.mobile.title)}</h2></div><p>${esc(d.mobile.intro)}</p></div>
+    <div class="points">
+      ${d.mobile.points.map((p, i) => `<div class="point">${pointIcons[i % pointIcons.length]}<h3>${esc(p.name)}</h3><p>${esc(p.text)}</p></div>`).join('\n      ')}
+    </div>
+  </div>
+</section>` : ''}
+
+<section class="section" id="services"${d.mobile ? ' style="padding-top:40px"' : ''}>
+  <div class="wrap">
+    <div class="head"><div><p class="eyebrow">Services</p><h2>${esc(d.servicesTitle)}</h2></div><p>${esc(d.servicesIntro)}</p></div>
+    <div class="services">
+      ${d.services.map((s, i) => `<article class="service"><span class="n">${String(i + 1).padStart(2, '0')}</span><h3>${esc(s.name)}</h3><p>${esc(s.text)}</p>${s.price ? `<p class="price"><small>from</small>${esc(s.price)}</p>` : ''}</article>`).join('\n      ')}
+    </div>
+    ${d.also?.length ? `<div class="also"><span>${esc(d.alsoTitle ?? 'We also detail')}</span>${d.also.map((a) => `<span class="tag">${esc(a.name)}</span>`).join('')}</div>` : ''}
+  </div>
+</section>
+
+${d.gallery?.length ? `<section class="section" id="work" style="padding-top:20px">
+  <div class="wrap">
+    <div class="head"><div><p class="eyebrow">Our work</p><h2>${esc(d.galleryTitle ?? 'Fresh off the driveway.')}</h2></div><p>${esc(d.galleryIntro ?? '')}</p></div>
+    <div class="gallery">
+      ${d.gallery.map((g) => `<button type="button"${g.size ? ` class="${esc(g.size)}"` : ''} data-full="${esc(g.src)}" aria-label="View larger: ${esc(g.alt)}"><img src="${esc(g.src)}" alt="${esc(g.alt)}" loading="lazy"></button>`).join('\n      ')}
+    </div>
+  </div>
+  <dialog class="lightbox" aria-label="Photo"><form method="dialog"><button aria-label="Close">×</button></form><img alt=""></dialog>
+</section>` : ''}
+
+${d.reviews?.length ? `<section class="section" id="reviews" style="padding-top:20px">
+  <div class="wrap">
+    <div class="head"><div><p class="eyebrow">Reviews</p><h2>${esc(d.reviewsTitle ?? 'Our customers say it best.')}</h2></div>${d.rating ? `<p><a class="rating" style="margin:0" href="${esc(d.rating.url)}" target="_blank" rel="noopener">${stars}<b>${esc(d.rating.score)}</b><span>from ${esc(d.rating.count)} reviews on Google</span></a></p>` : ''}</div>
+    <div class="reviews">
+      ${d.reviews.map((r) => `<figure class="review" style="margin:0">${stars}<p>“${esc(r.text)}”</p><cite>${esc(r.name)}${r.note ? `<small>${esc(r.note)}</small>` : ''}</cite></figure>`).join('\n      ')}
+    </div>
+  </div>
+</section>` : ''}
+
+${d.why?.length ? `<section class="section" style="padding-top:30px">
+  <div class="wrap">
+    <p class="eyebrow">Why ${esc(d.wordmark?.top ?? d.name)}</p>
+    <h2 style="margin-bottom:46px;max-width:16em">${esc(d.whyTitle)}</h2>
+    <div class="why">
+      ${d.why.map((w, i) => `<div>${whyIcons[i % whyIcons.length]}<h3>${esc(w.name)}</h3><p>${esc(w.text)}</p></div>`).join('\n      ')}
+    </div>
+  </div>
+</section>` : ''}
+
+<section class="section" id="how" style="padding-top:30px">
+  <div class="wrap">
+    <p class="eyebrow">How it works</p>
+    <h2 style="margin-bottom:46px">${esc(d.howTitle)}</h2>
+    <div class="steps">
+      ${d.steps.map((s, i) => `<div class="step"><span class="n">0${i + 1}</span><h3>${esc(s.name)}</h3><p>${esc(s.text)}</p></div>`).join('\n      ')}
+    </div>
+  </div>
+</section>
+
+<section class="book" id="book">
+  <div class="wrap grid">
+    <div>
+      <p class="eyebrow">Book</p>
+      <h2>${esc(d.contactTitle)}</h2>
+      <dl>
+        <div><dt>Call or text</dt><dd><a href="${tel(d.phone)}">${esc(d.phone)}</a></dd></div>
+        ${d.email ? `<div><dt>Email</dt><dd><a href="mailto:${esc(d.email)}">${esc(d.email)}</a></dd></div>` : ''}
+        ${d.hours?.length ? `<div><dt>Hours</dt><dd>${d.hours.map(esc).join('<br>')}</dd></div>` : ''}
+        ${d.areas?.length ? `<div><dt>Where we go</dt><dd><div class="areas">${d.areas.map((a) => `<span>${esc(a)}</span>`).join('')}</div></dd></div>` : ''}
+      </dl>
+      ${d.giftCard ? `<a class="gift" href="${esc(d.giftCard)}" target="_blank" rel="noopener">Give a detail as a gift card →</a>` : ''}
+    </div>
+    <form class="booking" onsubmit="event.preventDefault(); this.querySelector('button').textContent='Thanks! We\\'ll text you to confirm.';">
+      <h3>Request a booking</h3>
+      <label>Name <input name="name" autocomplete="name" required></label>
+      <label>Phone <input name="phone" type="tel" autocomplete="tel" required></label>
+      <label>Vehicle type <select name="vehicle">${vehicleTypes.map((v) => `<option>${esc(v)}</option>`).join('')}</select></label>
+      <label>Make and model <input name="model" placeholder="e.g. Toyota RAV4"></label>
+      <label class="full">Service <select name="service">${d.services.map((s) => `<option>${esc(s.name)}</option>`).join('')}<option>Not sure yet</option></select></label>
+      <label>Where should we come? <input name="address" autocomplete="street-address" placeholder="Address or neighborhood"></label>
+      <label>Preferred day <input name="date" type="date"></label>
+      <label class="full">Anything we should know? <textarea name="note" placeholder="Pet hair, stains, oxidized paint…"></textarea></label>
+      <button class="btn" type="submit">Request my booking</button>
+    </form>
+  </div>
+</section>
+</main>
+
+<footer class="footer"><div class="wrap"><span>© ${new Date().getFullYear()} ${esc(d.legalName ?? d.name)}</span><span>${esc(d.footerLine ?? '')}</span></div></footer>
+<div class="dock away"><a class="btn ghost" href="${tel(d.phone)}">Call</a><a class="btn" href="#book">Book a detail</a></div>
+<script>
+  // Gallery: a tap opens the photo large.
+  const box = document.querySelector('dialog.lightbox');
+  if (box) for (const b of document.querySelectorAll('.gallery button')) b.addEventListener('click', () => { box.querySelector('img').src = b.dataset.full; box.querySelector('img').alt = b.querySelector('img').alt; box.showModal(); });
+  box?.addEventListener('click', (e) => { if (e.target === box) box.close(); });
+  // The phone's call/book dock slides in once the hero's own buttons have scrolled away.
+  const dock = document.querySelector('.dock'), heroActions = document.querySelector('.hero .actions');
+  new IntersectionObserver(([e]) => dock.classList.toggle('away', e.isIntersecting)).observe(heroActions);
+  // On a phone there is no hover: the shine sweeps across a button when it is tapped.
+  for (const b of document.querySelectorAll('.btn')) b.addEventListener('pointerdown', (e) => {
+    if (e.pointerType === 'mouse') return;
+    b.classList.remove('shine'); void b.offsetWidth; b.classList.add('shine');
+    clearTimeout(b._t); b._t = setTimeout(() => b.classList.remove('shine'), 800);
+  });
+</script>
+</body>
+</html>
+`;
+}

@@ -1,0 +1,216 @@
+{
+ "kit": "detailing",
+ "name": "Erick's Auto Detailing",
+ "legalName": "Erick's Auto Detailing",
+ "preview": true,
+ "title": "Erick's Auto Detailing | Mobile Car Detailing in Tampa, FL",
+ "description": "Mobile car detailing in Tampa: interior and exterior detailing, paint correction, ceramic coating, headlight restoration and seat shampoo, at your home or office. 5.0 on Google from 161 reviews.",
+ "brand": "#1670ff",
+ "accent": "#8fd0ff",
+ "logo": "logo-mark.png",
+ "wordmark": {
+  "top": "Erick's",
+  "bottom": "Auto Detailing"
+ },
+ "phone": "(813) 560-4845",
+ "email": "info@eautodetailing.com",
+ "hours": [
+  "Monday to Friday, 9 AM – 6 PM",
+  "Sunday, 9 AM – 4 PM"
+ ],
+ "heroImage": "img/hero.jpg",
+ "heroAlt": "A red BMW X6, freshly detailed in a Tampa driveway",
+ "heroPosition": "70% 62%",
+ "heroPositionPhone": "64% 50%",
+ "kicker": "Mobile car detailing · Tampa, FL",
+ "headline": "Showroom shine.<br><em>Wherever you are.</em>",
+ "intro": "Interior and exterior detailing, paint correction and ceramic coating, done in your driveway. No drop-off, no waiting room: you get your car back looking better than the day you bought it.",
+ "rating": {
+  "score": "5.0",
+  "count": 161,
+  "url": "https://maps.google.com/?cid=3961155016848579084"
+ },
+ "mobile": {
+  "title": "Your driveway is our shop.",
+  "intro": "We bring the detail to your home, apartment or office, and work until it's just right.",
+  "points": [
+   {
+    "name": "At your door",
+    "text": "Home, apartment or office, anywhere around Tampa."
+   },
+   {
+    "name": "No time lost",
+    "text": "No dropping off, no waiting for a call, no picking up."
+   },
+   {
+    "name": "Pet hair? Gone.",
+    "text": "Every last dog hair, sand and stain, inside and out."
+   },
+   {
+    "name": "100% guaranteed",
+    "text": "If something isn't right, we make it right."
+   }
+  ]
+ },
+ "servicesTitle": "Inside, outside, and everything that shines.",
+ "servicesIntro": "From a deep interior clean to multi-stage paint correction, with high-quality products for every surface.",
+ "services": [
+  {
+   "name": "Interior & exterior premium detailing",
+   "text": "A complete detail, top to bottom: wash, decontamination, wheels, interior vacuum, wipe-down and glass."
+  },
+  {
+   "name": "Paint correction",
+   "text": "One- and two-stage machine polishing that takes out swirls and oxidation and brings tired paint back to life."
+  },
+  {
+   "name": "Ceramic coating",
+   "text": "A hard, glossy layer that protects your paint and makes every wash easier."
+  },
+  {
+   "name": "Wax, clay bar & polish",
+   "text": "Clay to lift bonded grime, then polish and wax for a deep, slick shine."
+  },
+  {
+   "name": "Seat & carpet shampoo",
+   "text": "Stains, spills and odors lifted out of seats, carpets and mats."
+  },
+  {
+   "name": "Headlight restoration",
+   "text": "Cloudy, yellowed headlights made clear again, for looks and for safer night driving."
+  }
+ ],
+ "alsoTitle": "Not just cars:",
+ "also": [
+  {
+   "name": "Motorcycles"
+  },
+  {
+   "name": "RVs"
+  },
+  {
+   "name": "Boats"
+  }
+ ],
+ "galleryTitle": "Fresh off the driveway.",
+ "galleryIntro": "Real cars, real customers, all around Tampa.",
+ "gallery": [
+  {
+   "src": "img/tundra.jpg",
+   "alt": "Black Toyota Tundra after a full detail",
+   "size": "big"
+  },
+  {
+   "src": "img/charger.jpg",
+   "alt": "Purple Dodge Charger, freshly detailed"
+  },
+  {
+   "src": "img/rangerover.jpg",
+   "alt": "Red Range Rover Sport, detailed"
+  },
+  {
+   "src": "img/gle.jpg",
+   "alt": "Mercedes GLE with a deep, glossy finish"
+  },
+  {
+   "src": "img/teslax.jpg",
+   "alt": "Hand-finishing a Tesla Model X",
+   "size": "tall"
+  },
+  {
+   "src": "img/foam.jpg",
+   "alt": "Lexus GX under a foam pre-wash"
+  },
+  {
+   "src": "img/velar.jpg",
+   "alt": "Black Range Rover Velar after detailing"
+  },
+  {
+   "src": "img/tesla-y.jpg",
+   "alt": "White Tesla Model Y, detailed"
+  },
+  {
+   "src": "img/boat.jpg",
+   "alt": "Boat seats, cleaned and conditioned"
+  },
+  {
+   "src": "img/lexus.jpg",
+   "alt": "Lexus NX after a detail"
+  },
+  {
+   "src": "img/tesla-open.jpg",
+   "alt": "Interior detail on a Tesla Model Y"
+  },
+  {
+   "src": "img/erick.jpg",
+   "alt": "On the job in a Tampa neighborhood"
+  }
+ ],
+ "reviewsTitle": "Our customers say it best.",
+ "reviews": [
+  {
+   "text": "Erick did a great job on my F150! My truck's paint was very oxidized, he did 2 stage correction on the hood and 1 stage around the rest of the truck. Looks like new again!",
+   "name": "Alain"
+  },
+  {
+   "text": "They detailed our SUV and sedan. My vehicles look like new and I didn't have to waste time dropping off my cars, waiting for a call and picking them up.",
+   "name": "Steve Phelps"
+  },
+  {
+   "text": "Best detail and wash I've ever seen!! My dirty car now looks brand new. They got every single dog hair out of my car. Very professional and friendly.",
+   "name": "Jen Bruce"
+  },
+  {
+   "text": "WOW!! My car looks better than when I drove it off the lot. I couldn't be happier with Erick's service and would highly recommend him!",
+   "name": "Erin McKinnon"
+  },
+  {
+   "text": "There were glass shards and fine glass dust everywhere. They came to her apartment and did a phenomenal job cleaning it all up. They cleaned it up better than the dealership did.",
+   "name": "Kim Bell"
+  },
+  {
+   "text": "Erick just finished detailing my Ford Escape and he did a tremendous job, inside and out. He's detail oriented and keeps working until it's just right.",
+   "name": "Tony Noriega",
+   "note": "South Tampa"
+  }
+ ],
+ "whyTitle": "The detail is in the name.",
+ "why": [
+  {
+   "name": "High-quality products",
+   "text": "We use high-quality products for the care of your vehicle, inside and out."
+  },
+  {
+   "name": "An expert team",
+   "text": "Experts in the area, up to date on the latest detailing techniques."
+  },
+  {
+   "name": "Guaranteed work",
+   "text": "Our work is 100% guaranteed."
+  }
+ ],
+ "howTitle": "Booked in a minute. Shining by tonight.",
+ "steps": [
+  {
+   "name": "Tell us about your car",
+   "text": "Call, text or send the form: your vehicle, the service and where it's parked."
+  },
+  {
+   "name": "We pull up",
+   "text": "We arrive on time at your home or office, with everything we need."
+  },
+  {
+   "name": "You get the keys back",
+   "text": "To a car that looks, and smells, brand new."
+  }
+ ],
+ "contactTitle": "Book your detail.",
+ "areas": [
+  "Tampa",
+  "South Tampa",
+  "Tampa Bay area"
+ ],
+ "giftCard": "https://squareup.com/gift/ML3BJ6TV0DHPE/order",
+ "footerLine": "Mobile car wash & detailing, wherever you are",
+ "brandHi": "#52c6ff"
+}

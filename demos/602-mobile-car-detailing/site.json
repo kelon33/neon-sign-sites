@@ -1,0 +1,146 @@
+{
+ "kit": "detailing",
+ "name": "602 Mobile Car Detailing",
+ "legalName": "602 Mobile Car Detailing",
+ "preview": true,
+ "title": "602 Mobile Car Detailing | Mobile car detailing in Phoenix, AZ",
+ "description": "Professional detailing at your home or office, anywhere around Phoenix. No drop-off, no waiting room: just a car that looks new again. 5.0 on Google from 26 reviews.",
+ "brand": "#1670ff",
+ "brandHi": "#52c6ff",
+ "accent": "#8fd0ff",
+ "logo": "logo.png",
+ "logoChip": true,
+ "wordmark": {
+  "top": "602",
+  "bottom": "Mobile Car Detailing"
+ },
+ "phone": "(602) 699-4520",
+ "email": "hello@602mobilecardetailing.com",
+ "heroImage": "img/photo-5.jpg",
+ "heroAlt": "",
+ "heroPosition": "60% 60%",
+ "heroPositionPhone": "60% 50%",
+ "rating": {
+  "score": "5.0",
+  "count": 26,
+  "url": "https://maps.google.com/?cid=16675217358752375429"
+ },
+ "kicker": "Mobile car detailing · Phoenix, AZ",
+ "headline": "Showroom shine.<br><em>Wherever you are.</em>",
+ "intro": "Professional detailing at your home or office, anywhere around Phoenix. No drop-off, no waiting room: just a car that looks new again.",
+ "mobile": {
+  "title": "Your driveway is our shop.",
+  "intro": "We bring the detail to you, so your day keeps moving.",
+  "points": [
+   {
+    "name": "At your door",
+    "text": "Home, apartment or office, anywhere around Phoenix."
+   },
+   {
+    "name": "No time lost",
+    "text": "No dropping off, no waiting for a call, no picking up."
+   },
+   {
+    "name": "Inside and out",
+    "text": "Every surface, every crevice, done by hand."
+   },
+   {
+    "name": "Easy to book",
+    "text": "Call, text or send the form. We confirm fast."
+   }
+  ]
+ },
+ "servicesTitle": "Inside, outside, and everything that shines.",
+ "servicesIntro": "Pick what your car needs, from a deep interior clean to lasting paint protection.",
+ "services": [
+  {
+   "name": "Interior & exterior detailing",
+   "text": "A complete detail, top to bottom: wash, wheels, glass, vacuum and wipe-down."
+  },
+  {
+   "name": "Wax, clay & sealant",
+   "text": "Clay to lift bonded grime, then wax or sealant for a deep, slick shine."
+  },
+  {
+   "name": "Seat & carpet shampoo",
+   "text": "Stains, spills and odors lifted out of seats, carpets and mats."
+  },
+  {
+   "name": "Headlight restoration",
+   "text": "Cloudy, yellowed headlights made clear again."
+  },
+  {
+   "name": "Odor removal",
+   "text": "Smoke, pet and food smells removed, not covered up."
+  },
+  {
+   "name": "Engine bay cleaning",
+   "text": "A careful clean and dress under the hood."
+  }
+ ],
+ "also": [],
+ "alsoTitle": "Not just cars:",
+ "why": [],
+ "whyTitle": "",
+ "howTitle": "Booked in a minute. Shining by tonight.",
+ "steps": [
+  {
+   "name": "Tell us about your car",
+   "text": "Call, text or send the form: your vehicle, the service and where it is."
+  },
+  {
+   "name": "We pull up",
+   "text": "We arrive at your home or office with everything we need."
+  },
+  {
+   "name": "You get the keys back",
+   "text": "To a car that looks, and smells, brand new."
+  }
+ ],
+ "contactTitle": "Book your detail.",
+ "footerLine": "Mobile car detailing in Phoenix",
+ "reviews": [],
+ "hours": [],
+ "gallery": [
+  {
+   "src": "img/photo-1.jpg",
+   "alt": "602 Mobile Car Detailing gallery photo 1",
+   "size": "big"
+  },
+  {
+   "src": "img/photo-2.jpg",
+   "alt": "602 Mobile Car Detailing gallery photo 2"
+  },
+  {
+   "src": "img/photo-3.jpg",
+   "alt": "602 Mobile Car Detailing gallery photo 3"
+  },
+  {
+   "src": "img/photo-4.jpg",
+   "alt": "602 Mobile Car Detailing gallery photo 4"
+  },
+  {
+   "src": "img/photo-6.jpg",
+   "alt": "602 Mobile Car Detailing gallery photo 6"
+  },
+  {
+   "src": "img/photo-7.jpg",
+   "alt": "After detailing"
+  },
+  {
+   "src": "img/photo-8.jpg",
+   "alt": "Before detailing"
+  },
+  {
+   "src": "img/photo-9.jpg",
+   "alt": "After detailing"
+  },
+  {
+   "src": "img/photo-10.jpg",
+   "alt": "Before detailing"
+  }
+ ],
+ "areas": [
+  "Phoenix"
+ ]
+}

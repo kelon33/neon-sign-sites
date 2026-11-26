@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 64" role="img" aria-label="Neon Sign Sites">
+  <!-- An OPEN sign in neon: the mark of Neon Sign Sites. -->
+  <defs>
+    <filter id="glow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="2.2" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+  <line x1="40" y1="2" x2="34" y2="12" stroke="#5b5b6b" stroke-width="1.5"/>
+  <line x1="80" y1="2" x2="86" y2="12" stroke="#5b5b6b" stroke-width="1.5"/>
+  <rect x="6" y="12" width="108" height="46" rx="12" fill="none" stroke="#ff4f8b" stroke-width="3" filter="url(#glow)"/>
+  <text x="60" y="44.5" text-anchor="middle" font-family="'Arial Rounded MT Bold','Helvetica Neue',Arial,sans-serif" font-weight="700" font-size="24" letter-spacing="4" fill="none" stroke="#ffd27a" stroke-width="2.2" filter="url(#glow)">OPEN</text>
+</svg>
