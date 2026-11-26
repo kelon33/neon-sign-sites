@@ -3,6 +3,10 @@
 //   npm run find -- --trade lawn --city "Austin, TX"            (one search, up to 3 pages)
 //   npm run find -- --trade detailing,lawn --city "Austin, TX" --city "Dallas, TX"
 //   npm run find -- ... --dry                                  (shows the plan and the worst-case cost, calls nothing)
+//   npm run find -- ... --no-check                             (the paid search only: for an environment that can
+//                                                               reach Google but not the open web)
+//   npm run find -- --check leads/found-2026-11-26.json        (the free part only: their sites and emails, for
+//                                                               an environment with open network access)
 //
 // How it keeps the bill down:
 // - Only Text Search (New), never Place Details: one request returns up to 20 businesses with
@@ -60,6 +64,13 @@ export const monthOf = (d = new Date()) => d.toISOString().slice(0, 7);
 
 /** List-price cost of a number of requests, in dollars. */
 export const cost = (requests, usdPer1000 = DEFAULTS.usdPer1000) => Math.round(requests * usdPer1000) / 1000;
+
+/** True when nearly every site failed to load: the network is blocking them, not the sites
+ *  being broken (about 1 in 10 is, normally). Then nothing is saved as "site broken". */
+export function networkLooksBlocked(checked) {
+  const failed = checked.filter((l) => l.kind === 'site broken').length;
+  return (checked.length >= 3 && failed === checked.length) || (checked.length >= 5 && failed / checked.length >= 0.8);
+}
 
 /** Why a place from the search is not worth a lead (or null if it is). Uses only the API's fields. */
 export function skipReason(place, { minReviews = DEFAULTS.minReviews, known = new Set() } = {}) {
@@ -205,6 +216,8 @@ function parseArgs(argv) {
     cities: all('city').map((c) => c.trim()).filter(Boolean),
     dry: argv.includes('--dry'),
     again: argv.includes('--again'),
+    noCheck: argv.includes('--no-check'),
+    check: one('check'),
     maxPages: one('pages') ? Math.min(3, +one('pages')) : undefined,
     minReviews: one('min-reviews') ? +one('min-reviews') : undefined,
   };
@@ -212,8 +225,11 @@ function parseArgs(argv) {
 
 async function main() {
   const args = parseArgs(process.argv.slice(2));
+  const dnc = (await readJson(path.join(root, 'do-not-contact.json'), { entries: [] })).entries;
+  if (args.check) return checkFile(path.resolve(args.check), dnc);
   if (!args.trades.length || !args.cities.length || args.trades.some((t) => !TRADES[t])) {
-    console.log('npm run find -- --trade lawn|detailing[,…] --city "Austin, TX" [--city …] [--pages 1-3] [--min-reviews 10] [--dry] [--again]');
+    console.log('npm run find -- --trade lawn|detailing[,…] --city "Austin, TX" [--city …] [--pages 1-3] [--min-reviews 10] [--dry] [--again] [--no-check]');
+    console.log('npm run find -- --check leads/found-<date>.json');
     process.exit(1);
   }
   const config = await readJson(path.join(root, 'config.json'), {});
@@ -238,7 +254,6 @@ async function main() {
   if (left <= 0) throw new Error(`Monthly cap reached (${opts.monthlyRequestCap} requests, config.json places.monthlyRequestCap). Nothing was called.`);
 
   const known = await knownPlaceIds();
-  const dnc = (await readJson(path.join(root, 'do-not-contact.json'), { entries: [] })).entries;
   const leads = [];
   const skipped = {};
   let used = 0;
@@ -268,26 +283,47 @@ async function main() {
     await writeFile(usageFile, JSON.stringify(usage, null, 1) + '\n');
   }
 
-  // Free from here on: their websites, emails and the do-not-contact list.
+  // Save what was paid for before anything else can fail.
+  const out = path.join(root, 'leads', `found-${new Date().toISOString().slice(0, 10)}.json`);
+  const fresh = leads.filter((l) => !blocked(l, dnc)).map((l) => ({ ...l, kind: 'not checked' }));
+  await saveLeads(out, fresh);
+  console.log(`\n${used} requests (~$${cost(used, opts.usdPer1000).toFixed(2)} at list price); ${month.requests} of ${opts.monthlyRequestCap} this month.`);
+  console.log(`${fresh.length} new leads → ${path.relative(root, out)}. Left out: ${Object.entries(skipped).map(([k, v]) => `${v} ${k}`).join(', ') || 'none'}.`);
+  if (args.noCheck) {
+    console.log(`Not checked yet. In an environment with open network access: npm run find -- --check ${path.relative(root, out)}`);
+    return;
+  }
+  await checkFile(out, dnc);
+}
+
+async function saveLeads(file, leads) {
+  const before = await readJson(file, []);
+  const merged = [...before.filter((b) => !leads.some((k) => k.placeId === b.placeId)), ...leads];
+  await writeFile(file, JSON.stringify(merged, null, 1) + '\n');
+}
+
+/** The free part: their websites and emails, for every lead in the file not checked yet. */
+async function checkFile(file, dnc) {
+  const all = await readJson(file, null);
+  if (!Array.isArray(all)) throw new Error(`${file} is not a lead file.`);
+  const todo = all.filter((l) => l.kind === 'not checked' && !blocked(l, dnc));
+  if (!todo.length) { console.log(`Nothing to check in ${path.relative(root, file)}.`); return; }
   // Playwright is installed globally in the cloud sessions; require() finds it from any folder.
   const { chromium } = createRequire(import.meta.url)('playwright');
   const browser = await chromium.launch();
   const checked = [];
   try {
-    for (let i = 0; i < leads.length; i += 6) checked.push(...await Promise.all(leads.slice(i, i + 6).map((l) => checkSite(l, browser))));
+    for (let i = 0; i < todo.length; i += 6) checked.push(...await Promise.all(todo.slice(i, i + 6).map((l) => checkSite(l, browser))));
   } finally {
     await browser.close();
   }
-  const kept = checked.filter((l) => !blocked(l, dnc));
-  const out = path.join(root, 'leads', `found-${new Date().toISOString().slice(0, 10)}.json`);
-  const before = await readJson(out, []);
-  const merged = [...before.filter((b) => !kept.some((k) => k.placeId === b.placeId)), ...kept];
-  await writeFile(out, JSON.stringify(merged, null, 1) + '\n');
-
-  const withEmail = kept.filter((l) => l.email);
-  console.log(`\n${used} requests (~$${cost(used, opts.usdPer1000).toFixed(2)} at list price); ${month.requests} of ${opts.monthlyRequestCap} this month.`);
-  console.log(`${kept.length} new leads, ${withEmail.length} with an email (${withEmail.filter((l) => l.kind !== 'decent site').length} with a weak or broken site) → ${path.relative(root, out)}`);
-  console.log(`Left out: ${Object.entries(skipped).map(([k, v]) => `${v} ${k}`).join(', ') || 'none'}.`);
+  if (networkLooksBlocked(checked)) {
+    throw new Error(`${checked.filter((l) => l.kind === 'site broken').length} of ${checked.length} sites did not load: this environment's network is probably blocking them. `
+      + `Nothing was changed; the leads are saved unchecked. Run npm run find -- --check ${path.relative(root, file)} where the network is open.`);
+  }
+  await saveLeads(file, checked.filter((l) => !blocked(l, dnc)));
+  const withEmail = checked.filter((l) => l.email);
+  console.log(`Checked ${checked.length} sites: ${withEmail.length} with an email (${withEmail.filter((l) => l.kind !== 'decent site').length} with a weak or broken site) → ${path.relative(root, file)}`);
 }
 
 if (process.argv[1] && fileURLToPath(import.meta.url) === path.resolve(process.argv[1])) {

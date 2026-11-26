@@ -1,6 +1,6 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import { FIELD_MASK, skipReason, worthNextPage, pickEmail, weaknesses, toLead, cost } from '../pipeline/find.mjs';
+import { FIELD_MASK, skipReason, worthNextPage, pickEmail, weaknesses, toLead, cost, networkLooksBlocked } from '../pipeline/find.mjs';
 
 const place = (o = {}) => ({ id: 'p1', displayName: { text: 'Joe’s Lawn Care' }, websiteUri: 'https://joeslawn.com/', userRatingCount: 40, businessStatus: 'OPERATIONAL', ...o });
 
@@ -56,4 +56,13 @@ test('leads keep the shape npm run lead reads, and costs are list price per 1,00
   assert.deepEqual(Object.keys(l), ['placeId', 'name', 'website', 'address', 'phone', 'rating', 'reviews', 'mapsUrl', 'trade', 'city']);
   assert.equal(cost(600, 35), 21);
   assert.equal(cost(3, 35), 0.105);
+});
+
+test('a blocked network is not mistaken for broken sites', () => {
+  const lead = (kind) => ({ kind });
+  assert.equal(networkLooksBlocked([lead('site broken'), lead('site broken'), lead('site broken')]), true);
+  assert.equal(networkLooksBlocked([...Array(8)].map(() => lead('site broken')).concat(lead('decent site'))), true);
+  // About 1 in 10 broken is normal.
+  assert.equal(networkLooksBlocked([...Array(9)].map(() => lead('decent site')).concat(lead('site broken'))), false);
+  assert.equal(networkLooksBlocked([lead('site broken')]), false);
 });
