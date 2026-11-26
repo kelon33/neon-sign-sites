@@ -4,9 +4,12 @@
   "private": true,
   "description": "Neon Sign Sites: the website, the site kits, and the lead-to-preview pipeline.",
   "type": "module",
-  "engines": { "node": ">=22" },
+  "engines": {
+    "node": ">=22"
+  },
   "scripts": {
     "lead": "node pipeline/cli.mjs",
+    "find": "node pipeline/find.mjs",
     "render": "node generator/render.mjs",
     "build": "node deploy.mjs --dry",
     "deploy": "node deploy.mjs",
