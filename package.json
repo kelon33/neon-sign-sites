@@ -17,7 +17,8 @@
     "deploy": "node deploy.mjs",
     "test": "node --test \"tests/**/*.test.js\"",
     "fold": "node pipeline/fold.mjs",
-    "wording": "node pipeline/wording.mjs"
+    "wording": "node pipeline/wording.mjs",
+    "send": "node pipeline/send.mjs"
   },
   "dependencies": {
     "@anthropic-ai/sdk": "^1.14.0"

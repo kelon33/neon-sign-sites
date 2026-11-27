@@ -98,7 +98,8 @@ async function main() {
     if (!config.sender?.address) throw new Error('No postal address in config.json (sender.address): US law (CAN-SPAM) requires it in every email. No plan until it is set.');
     if (!mailboxes.length) throw new Error('No sending mailboxes in config.json (sending.mailboxes).');
     const { out, skipped, room } = plan({ ready: await readyPreviews(), sent, mailboxes, dnc });
-    const lines = [`# Emails for ${today()}: for Alon's approval`, '', 'Nothing has been sent. Each email goes out only once Alon approves its exact text and link.', ''];
+    const lines = [`# Emails for ${today()}: for Alon's approval`, '', 'Nothing has been sent. Alon approves the list as a whole ("go", or "go, skip #4"); then `npm run send -- --approve [--skip 4]` and `npm run send` send exactly these texts.', ''];
+    const emails = [];
     for (const b of room) lines.push(`- ${b.address}: ${b.left + out.filter((o) => o.from === b.address).length} allowed today`);
     lines.push('');
     for (const o of out) {
@@ -106,12 +107,15 @@ async function main() {
       if (o.text.includes('[POSTAL ADDRESS')) throw new Error(`${o.slug}: the draft has no postal address in its signature. Fix demos/${o.slug}/email.txt.`);
       const link = o.text.match(/https:\/\/neonsignsites\.com\/p\/[^\s]+/)?.[0];
       const up = link ? await live(link) : null;
-      lines.push(`## ${o.name} → ${o.to} (from ${o.from})`, '', up === false ? '**The preview link does not open yet (not on main?). Do not send.**\n' : '', '```', o.text.trim(), '```', '');
+      const n = emails.length + 1;
+      emails.push({ n, slug: o.slug, name: o.name, to: o.to, from: o.from, text: o.text.trim() + '\n', link, linkLive: up });
+      lines.push(`## ${n}. ${o.name} → ${o.to} (from ${o.from})`, '', up === false ? '**The preview link does not open yet (not on main?). It will not be sent.**\n' : '', '```', o.text.trim(), '```', '');
     }
     if (skipped.length) lines.push('Left out:', ...skipped.map((s) => `- ${s}`), '');
     await mkdir(path.join(root, 'outbox'), { recursive: true });
     const file = path.join(root, 'outbox', `${today()}.md`);
     await writeFile(file, lines.join('\n') + '\n');
+    await writeFile(file.replace(/\.md$/, '.json'), JSON.stringify({ date: today(), approved: null, emails }, null, 1) + '\n');
     console.log(`${out.length} emails planned for today → ${path.relative(root, file)} (for approval; nothing sent).`);
     return;
   }
