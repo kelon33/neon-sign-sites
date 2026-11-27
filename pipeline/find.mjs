@@ -275,19 +275,21 @@ async function knownPlaceIds() {
   return ids;
 }
 
-/** The next cities from leads/cities.json that no search has covered yet. */
-async function nextCities(n) {
+/** The next cities from leads/cities.json not searched yet for these trades (a city searched only
+ *  for other trades still counts as new). */
+async function nextCities(n, tradeKeys) {
   const list = (await readJson(path.join(root, 'leads', 'cities.json'), { cities: [] })).cities;
   const usage = await readJson(path.join(root, 'leads', 'places-usage.json'), { queries: {} });
-  const main = Object.values(TRADES).filter((t) => !t.test).flatMap((t) => t.queries);
-  const done = new Set(Object.keys(usage.queries ?? {}).filter((q) => main.some((m) => q.startsWith(`${m} in `))).map((q) => q.split(' in ').at(-1)));
+  const trades = tradeKeys.map((k) => TRADES[k]).filter(Boolean);
+  const seen = new Set(); // "trade|city" already covered by a search or an older lead file
+  for (const t of trades) for (const q of Object.keys(usage.queries ?? {})) if (q.startsWith(`${t.queries[0]} in `)) seen.add(`${t.trade}|${q.split(' in ').at(-1)}`);
   for (const f of await readdir(path.join(root, 'leads'))) {
     if (!/^(us-|found-).*\.json$/.test(f)) continue;
     const data = await readJson(path.join(root, 'leads', f), []);
-    for (const l of Array.isArray(data) ? data : []) if (l?.city && !TEST_TRADES.has(l.trade)) done.add(l.city);
+    for (const l of Array.isArray(data) ? data : []) if (l?.city) seen.add(`${l.trade}|${l.city}`);
   }
-  const picked = list.filter((c) => !done.has(c)).slice(0, n);
-  if (!picked.length) throw new Error('Every city in leads/cities.json has been searched: add more.');
+  const picked = list.filter((c) => trades.some((t) => !seen.has(`${t.trade}|${c}`))).slice(0, n);
+  if (!picked.length) throw new Error('Every city in leads/cities.json has been searched for these trades: add more.');
   console.log(`Next cities: ${picked.join('; ')}`);
   return picked;
 }
@@ -324,7 +326,7 @@ async function main() {
   const args = parseArgs(process.argv.slice(2));
   const dnc = (await readJson(path.join(root, 'do-not-contact.json'), { entries: [] })).entries;
   if (args.check) return checkFile(path.resolve(args.check), dnc, { again: args.again });
-  if (args.next) args.cities.push(...await nextCities(args.next));
+  if (args.next) args.cities.push(...await nextCities(args.next, args.trades));
   if (!args.trades.length || !args.cities.length || args.trades.some((t) => !TRADES[t])) {
     console.log(`Trades: ${Object.keys(TRADES).join(', ')} (${Object.entries(TRADES).filter(([, t]) => t.test).map(([k]) => k).join(', ')}: test only, no kit yet).`);
     console.log('npm run find -- --trade lawn|detailing[,…] --city "Austin, TX" [--city …] | --next 3 [--pages 1-3] [--phrases 1-4] [--min-reviews 10] [--dry] [--again] [--no-check]');
