@@ -53,7 +53,7 @@ export const TRADES = {
   sprinkler: { trade: 'Sprinkler repair', queries: ['sprinkler repair'], test: true, kit: 'lawn' },
   stump: { trade: 'Stump grinding', queries: ['stump grinding'], test: true, kit: 'lawn' },
   sod: { trade: 'Sod installation', queries: ['sod installation'], test: true, kit: 'lawn' },
-  lights: { trade: 'Christmas light installation', queries: ['christmas light installation', 'holiday lighting installation'], kit: 'lawn' },
+  lights: { trade: 'Christmas light installation', queries: ['christmas light installation', 'holiday lighting installation'], kit: 'holiday' },
   boat: { trade: 'Boat detailing', queries: ['boat detailing', 'marine detailing'], kit: 'detailing' },
   rv: { trade: 'RV detailing', queries: ['rv detailing'], test: true, kit: 'detailing' },
   dent: { trade: 'Paintless dent repair', queries: ['paintless dent repair', 'hail damage repair'], kit: 'detailing' },

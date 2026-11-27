@@ -15,7 +15,8 @@
     "render": "node generator/render.mjs",
     "build": "node deploy.mjs --dry",
     "deploy": "node deploy.mjs",
-    "test": "node --test \"tests/**/*.test.js\""
+    "test": "node --test \"tests/**/*.test.js\"",
+    "fold": "node pipeline/fold.mjs"
   },
   "dependencies": {
     "@anthropic-ai/sdk": "^1.14.0"

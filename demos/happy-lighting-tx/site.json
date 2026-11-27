@@ -1,5 +1,5 @@
 {
- "kit": "lawn",
+ "kit": "holiday",
  "name": "Happy Lighting TX",
  "legalName": "Happy Lighting TX",
  "preview": true,
@@ -23,7 +23,7 @@
   "count": 113,
   "url": "https://maps.google.com/?cid=3350773402108692652"
  },
- "kicker": "Christmas light installation · Lubbock",
+ "kicker": "Christmas light installation \u00b7 Lubbock",
  "headline": "We hang the lights.<br><em>You enjoy the holidays.</em>",
  "intro": "Custom Christmas lighting for Lubbock homes and businesses, cut to fit your property. We handle design, installation, maintenance and takedown.",
  "badges": [],
@@ -122,13 +122,13 @@
  "footerLine": "Christmas light installation in Lubbock, TX",
  "reviews": [
   {
-   "text": "Happy Lighting transformed our home into a holiday masterpiece! Their attention to detail and creative design exceeded our expectations. The installation process was seamless, and the team was professional and friendly. We received countless compliments from neighbors, and the best part is knowing they’ll be back for maintenance and removal. We couldn’t be happier with our experience!",
+   "text": "Happy Lighting transformed our home into a holiday masterpiece! Their attention to detail and creative design exceeded our expectations. The installation process was seamless, and the team was professional and friendly. We received countless compliments from neighbors, and the best part is knowing they\u2019ll be back for maintenance and removal. We couldn\u2019t be happier with our experience!",
    "name": "Emily Johnson"
   }
  ],
  "hours": [],
  "galleryTitle": "Homes we light up.",
- "notePlaceholder": "Roofline length, trees, a date you want them up…",
+ "notePlaceholder": "Roofline length, trees, a date you want them up\u2026",
  "gallery": [],
  "areas": [
   "Lubbock"

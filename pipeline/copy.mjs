@@ -38,7 +38,8 @@ export const LAWN_SERVICES = [
 
 export function kitFor(trade) {
   if (/detail|car wash|auto spa|dent repair/i.test(trade ?? '')) return 'detailing';
-  if (/lawn|landscap|yard|mow|christmas light|holiday light/i.test(trade ?? '')) return 'lawn';
+  if (/christmas light|holiday light/i.test(trade ?? '')) return 'holiday';
+  if (/lawn|landscap|yard|mow/i.test(trade ?? '')) return 'lawn';
   if (/house paint|painter|painting/i.test(trade ?? '')) return 'painting';
   return null;
 }

@@ -151,7 +151,7 @@ async function main() {
 
     // 4. Gallery with no holes; the tall slot goes to a portrait photo when there is one.
     const plan = galleryPlan(order.length);
-    let gallery = order.slice(0, plan.count).map((i) => ({ src: photos[i].rel, alt: alts[i] || photos[i].alt || `${{ lawn: 'Yard work', detailing: 'Detailing work', painting: 'Painting work' }[kit] ?? 'Work'} by ${lead.name}` }));
+    let gallery = order.slice(0, plan.count).map((i) => ({ src: photos[i].rel, alt: alts[i] || photos[i].alt || `${{ lawn: 'Yard work', detailing: 'Detailing work', painting: 'Painting work', holiday: 'Holiday lights' }[kit] ?? 'Work'} by ${lead.name}` }));
     if (gallery.length) {
       gallery[0].size = 'big';
       if (plan.tall) {
@@ -194,6 +194,9 @@ async function main() {
       await p.screenshot({ path: path.join(out, `${name}.jpg`), type: 'jpeg', quality: 70, fullPage: true });
       await p.close();
     }
+    // RULE: the first screen reads as a whole page (headline, buttons, Google rating) on every screen size.
+    const { foldProblems } = await import('./fold.mjs');
+    for (const f of await foldProblems(browser, path.join(out, 'index.html'))) checks.push(`First screen: ${f}. Fix before sending.`);
     const { readFile: rf } = await import('node:fs/promises');
     let inline = html;
     for (const m of [...new Set([...html.matchAll(/(?:src|data-full)="((?:img\/[^"]+)|logo\.png)"/g)].map((x) => x[1]))]) {

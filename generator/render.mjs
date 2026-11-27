@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 // Neon Sign Sites: builds a premium one-page site for a local service business from a data file.
 //   node generator/render.mjs demos/<business>/site.json   → index.html next to it
-//   site.json "kit": lawn (default) | detailing | painting
+//   site.json "kit": lawn (default) | detailing | painting | holiday
 // The data comes from the business's own website and Google listing; nothing is invented: no
 // made-up reviews, numbers or claims. A thin bar marks a preview as a preview until launch.
 
@@ -11,10 +11,11 @@ import path from 'node:path';
 import { renderLawn } from './kits/lawn.mjs';
 import { renderDetailing } from './kits/detailing.mjs';
 import { renderPainting } from './kits/painting.mjs';
+import { renderHoliday } from './kits/holiday.mjs';
 
 // One kit per trade: its own look and sections, the same data file shape where they overlap.
 // site.json picks one with "kit" (lawn when it has none).
-export const KITS = { lawn: renderLawn, detailing: renderDetailing, painting: renderPainting };
+export const KITS = { lawn: renderLawn, detailing: renderDetailing, painting: renderPainting, holiday: renderHoliday };
 
 export function renderSite(d) {
   const kit = KITS[d.kit ?? 'lawn'];

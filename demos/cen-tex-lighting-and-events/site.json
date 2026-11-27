@@ -1,5 +1,5 @@
 {
- "kit": "lawn",
+ "kit": "holiday",
  "name": "Cen-Tex Lighting and Events",
  "legalName": "Cen-Tex Lighting and Events",
  "preview": true,
@@ -23,7 +23,7 @@
   "count": 30,
   "url": "https://maps.google.com/?cid=6460878749723675570"
  },
- "kicker": "Lighting and event rentals · Hewitt",
+ "kicker": "Lighting and event rentals \u00b7 Hewitt",
  "headline": "Holidays and events,<br><em>lit up right.</em>",
  "intro": "Professional holiday lighting and event rentals across Central Texas. We handle the planning and the setup so you can enjoy the moment.",
  "badges": [],
@@ -85,7 +85,7 @@
  "footerLine": "Lighting and event rentals in Central Texas",
  "reviews": [
   {
-   "text": "Very happy with our lights and they’re very easy to work with!...",
+   "text": "Very happy with our lights and they\u2019re very easy to work with!...",
    "name": "Scott Hannas"
   },
   {
@@ -95,7 +95,7 @@
  ],
  "hours": [],
  "galleryTitle": "Homes we light up.",
- "notePlaceholder": "Roofline length, trees, a date you want them up…",
+ "notePlaceholder": "Roofline length, trees, a date you want them up\u2026",
  "gallery": [],
  "areas": [
   "Hewitt"

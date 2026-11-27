@@ -61,12 +61,12 @@ test('borrowing trades get a kit and their own default wording, with no lawn or 
   const { kitFor, tradeCopy, lawnCopy, detailingCopy } = await import('../pipeline/copy.mjs');
   const { renderSite } = await import('../generator/render.mjs');
   assert.equal(kitFor('Paintless dent repair'), 'detailing');
-  assert.equal(kitFor('Christmas light installation'), 'lawn');
+  assert.equal(kitFor('Christmas light installation'), 'holiday');
   assert.equal(kitFor('Handyman'), null);
   const lights = tradeCopy('Christmas light installation', lawnCopy({ name: 'Glow Co', city: 'Waco, TX', text: '' }), 'Waco, TX');
   assert.equal(lights.promise, null);
   assert.match(lights.kicker, /Christmas light installation · Waco/);
-  const html = renderSite({ kit: 'lawn', name: 'Glow Co', phone: '1', email: 'a@b.com', gallery: [], areas: ['Waco'], ...lights });
+  const html = renderSite({ kit: 'holiday', name: 'Glow Co', phone: '1', email: 'a@b.com', gallery: [], areas: ['Waco'], ...lights });
   assert.doesNotMatch(html.replace(/<style[\s\S]*?<\/style>/g, ''), /mow|Yard size|Yards we take care/i); // CSS comments aside
   const dent = tradeCopy('Paintless dent repair', detailingCopy({ name: 'Dent Pro', city: 'Waco, TX', text: '' }), 'Waco, TX');
   const html2 = renderSite({ kit: 'detailing', name: 'Dent Pro', phone: '1', email: 'a@b.com', gallery: [{ src: 'img/a.jpg', alt: 'a', size: 'big' }], areas: ['Waco'], ...dent });
