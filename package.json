@@ -21,7 +21,8 @@
     "wording": "node pipeline/wording.mjs",
     "send": "node pipeline/send.mjs",
     "replies": "node pipeline/replies.mjs",
-    "answer": "node pipeline/answer.mjs"
+    "answer": "node pipeline/answer.mjs",
+    "review": "node pipeline/review.mjs"
   },
   "dependencies": {
     "@anthropic-ai/sdk": "^1.14.0"

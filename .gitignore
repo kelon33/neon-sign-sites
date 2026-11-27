@@ -7,3 +7,4 @@ dist/
 demos/*/.build.json
 demos/*/.ai-request.json
 demos/*/.ai-result.json
+review/
