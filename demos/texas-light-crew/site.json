@@ -1,0 +1,164 @@
+{
+  "kit": "holiday",
+  "trade": "Christmas light installation",
+  "name": "Texas Light Crew",
+  "legalName": "Texas Light Crew",
+  "preview": true,
+  "placeId": "ChIJRYOwi1yDRoYRGi7s6F1ogHM",
+  "title": "Texas Light Crew | Christmas light installation in College Station, TX",
+  "description": "Professional Christmas light installation in College Station, done by background-checked local firefighters and first responders. You own your lights, and we come back every year. 5.0 on Google from 146 reviews.",
+  "logo": null,
+  "logoChip": false,
+  "wordmark": {
+    "top": "Texas Light Crew"
+  },
+  "phone": "(979) 436-4278",
+  "email": "bcssales@texaslightcrew.com",
+  "heroImage": "img/photo-12.jpg",
+  "heroAlt": "Large home with warm white lights along the roofline at dusk",
+  "heroPosition": "60% 60%",
+  "heroPositionPhone": "60% 50%",
+  "rating": {
+    "score": "5.0",
+    "count": 146,
+    "url": "https://maps.google.com/?cid=8322766863929716250"
+  },
+  "kicker": "Christmas light installation · College Station",
+  "headline": "We hang the lights.<br><em>You enjoy the holidays.</em>",
+  "intro": "Professional Christmas light installation in College Station, done by background-checked local firefighters and first responders. You own your lights, and we come back every year.",
+  "badges": [],
+  "highlights": {
+    "title": "Why neighbors call us",
+    "intro": "Clean, safe installs by people you can trust on your roof.",
+    "points": [
+      {
+        "name": "First responders",
+        "text": "Every installer is a background-checked local first responder."
+      },
+      {
+        "name": "You own your lights",
+        "text": "No contract. We earn your business again each year."
+      },
+      {
+        "name": "Fast replies",
+        "text": "We answer emails and inquiries quickly, and we do what we say."
+      },
+      {
+        "name": "Takedown included",
+        "text": "After the holidays, we take your lights down and store them in a tub."
+      }
+    ]
+  },
+  "servicesTitle": "Lighting, done for you.",
+  "servicesIntro": "Custom commercial grade lights, installed, maintained and taken down.",
+  "services": [
+    {
+      "name": "Front or street-facing roof outline",
+      "text": "Clean lines on the part of your home the neighborhood sees."
+    },
+    {
+      "name": "Full roof outline",
+      "text": "Every edge of your roof lit, front to back."
+    },
+    {
+      "name": "Lighted wreath",
+      "text": "A wreath of light to finish your front door or gable."
+    },
+    {
+      "name": "Driveways, sidewalks and paths",
+      "text": "Lights that line your walkways and guide guests to the door."
+    },
+    {
+      "name": "Wedding, backyard and event lighting",
+      "text": "The same careful work for special events and outdoor spaces."
+    }
+  ],
+  "also": [
+    {
+      "name": "Commercial and HOA lighting"
+    },
+    {
+      "name": "Wedding and event lighting"
+    },
+    {
+      "name": "Backyard lighting"
+    }
+  ],
+  "alsoTitle": "We also do:",
+  "promise": null,
+  "why": [
+    {
+      "name": "Firefighter care",
+      "text": "Background-checked first responders bring fire service safety and teamwork to your home."
+    },
+    {
+      "name": "Backed by a warranty",
+      "text": "Lights carry a 3-year warranty, with a 48-hour response time for any lighting issues."
+    }
+  ],
+  "whyTitle": "Why Texas Light Crew",
+  "howTitle": "Lit up in three steps.",
+  "steps": [
+    {
+      "name": "Get a free quote",
+      "text": "Fill out the form and send photos of everywhere you want lights."
+    },
+    {
+      "name": "Approve your mock-up",
+      "text": "We send a quote with a mock-up. Ask for any changes you like."
+    },
+    {
+      "name": "We install and take down",
+      "text": "We schedule your install, then take the lights down after the holidays."
+    }
+  ],
+  "contactTitle": "Ready for a quote?",
+  "footerLine": "Christmas light installation in College Station",
+  "reviews": [],
+  "hours": [],
+  "galleryTitle": "Homes we light up.",
+  "notePlaceholder": "Roofline length, trees, a date you want them up…",
+  "gallery": [
+    {
+      "src": "img/photo-1.jpg",
+      "alt": "Stone home with roofline lights glowing at dusk",
+      "size": "big"
+    },
+    {
+      "src": "img/photo-17.jpg",
+      "alt": "Home with lighted wreaths and roofline lights"
+    },
+    {
+      "src": "img/photo-5.jpg",
+      "alt": "Two-story home with white roofline and walkway lights at night"
+    },
+    {
+      "src": "img/photo-18.jpg",
+      "alt": "Brick home with white lights and a flag at night"
+    },
+    {
+      "src": "img/photo-3.jpg",
+      "alt": "Home with red and white lights on the roof and lawn border"
+    },
+    {
+      "src": "img/photo-6.jpg",
+      "alt": "Home with red and white lights lining the front walkway"
+    },
+    {
+      "src": "img/photo-16.jpg",
+      "alt": "Two installers hanging lights on a white home"
+    },
+    {
+      "src": "img/photo-20.jpg",
+      "alt": "Home with warm lights over a green lawn at dusk"
+    },
+    {
+      "src": "img/photo-7.jpg",
+      "alt": "Stone home lit in red with roofline lights"
+    }
+  ],
+  "areas": [
+    "College Station"
+  ],
+  "pitch": "site"
+}

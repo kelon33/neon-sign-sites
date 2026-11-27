@@ -1,0 +1,6 @@
+- Found by a search in Waco, TX, but their address is in College Station, TX: the site uses that. Check their service area.
+- No logo found: the header shows the name only.
+- Dropped (not backed by their site): why (a note about the site, not copy): Insured crews The site says installers are insured for liability and employees.
+- Claude's notes: No reviews on site. Site text mentions 11 years, 90% retention, 1000+ jobs; not used in copy. Draft's 'Why Cen-Tex' replaced. Photo 13 is a bokeh graphic, left out. Services also lists Commercial and HOA via the site nav.
+- No reviews on the site: the page shows the Google rating only.
+- Review (session): Good: 9 of their own night photos. Wordmark set to the full name (the eyebrow read 'Why Texas'). The AI's 'Why Cen-Tex' came from the wording library (short name words were not caught); fixed in pipeline/wording.mjs. Firefighter/first-responder and warranty lines are on their site. College Station address, so the town is College Station.
