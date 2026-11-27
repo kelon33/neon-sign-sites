@@ -9,7 +9,7 @@ import path from 'node:path';
 
 const json = (f, fallback) => readFile(f, 'utf8').then(JSON.parse).catch(() => fallback);
 const esc = (s) => String(s ?? '').replace(/[&<>"']/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' })[c]);
-const day = (iso) => String(iso ?? '').slice(0, 10);
+const day = (iso) => (iso ? new Date(iso).toLocaleDateString('en-CA', { timeZone: 'Asia/Jerusalem' }) : ''); // dates in Israel time
 
 /** Every business we emailed (or that wrote in through the site), with its status. Exported for tests. */
 export function pipeline({ sent, replies, dnc, names = {} }) {
@@ -83,7 +83,8 @@ export async function buildDashboard(root) {
     `<tr class="${esc(r.status)}" data-slug="${esc(r.slug)}"><td>${preview(r.slug)}<small>${esc(r.to ?? '')}</small></td><td>${open(r.slug)}</td><td><span class="tag ${esc(r.status)}">${esc(label[r.status])}</span></td><td class="opened">–</td><td class="calls">–</td><td>${esc(r.sentOn ?? '')}</td><td>${esc((r.from ?? '').replace('@neonsignsites.', ' @ .'))}</td><td>${esc(r.variant ?? '–')}</td></tr>`).join('')}</tbody></table>` : '<p class="muted">Nothing here yet.</p>';
   const order = { 'hot-form': 0, 'hot-reply': 1, cold: 2, no: 3, bounced: 4 };
   const all = [...rows].sort((a, b) => order[a.status] - order[b.status] || String(b.sentOn).localeCompare(String(a.sentOn)));
-  const built = new Date().toISOString().replace('T', ' ').slice(0, 16) + ' UTC';
+  // Every time on the dashboard is Israel time (Alon's), whatever the device's own time zone.
+  const built = new Date().toLocaleString('en-GB', { timeZone: 'Asia/Jerusalem', day: 'numeric', month: 'short', hour: '2-digit', minute: '2-digit' }) + ' Israel time';
 
   return `<!doctype html>
 <html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
@@ -149,7 +150,7 @@ a.open:hover { background: rgba(255,79,139,.12); text-decoration: none; } a:hove
 // Live numbers from the site itself (KV via /dashboard/api/events): who opened their preview, who opened "Make it live".
 fetch('/dashboard/api/events', { credentials: 'same-origin' }).then((r) => r.json()).then((ev) => {
   let warm = 0, cold = 0;
-  const when = (iso) => new Date(iso).toLocaleString([], { month: 'short', day: 'numeric', hour: '2-digit', minute: '2-digit' });
+  const when = (iso) => new Date(iso).toLocaleString('en-GB', { timeZone: 'Asia/Jerusalem', month: 'short', day: 'numeric', hour: '2-digit', minute: '2-digit' });
   for (const tr of document.querySelectorAll('tr[data-slug]')) {
     const s = tr.dataset.slug, p = ev.p[s], g = ev.g[s], m = ev.m[s];
     const cell = tr.querySelector('.opened');
