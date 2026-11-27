@@ -1,0 +1,163 @@
+{
+  "kit": "detailing",
+  "trade": "Mobile car detailing",
+  "name": "Tony's Mobile Detailing",
+  "legalName": "Tony's Mobile Detailing",
+  "preview": true,
+  "placeId": "ChIJhcJJPoDlmaQRbvn0lHjnapQ",
+  "title": "Tony's Mobile Detailing | Mobile auto detailing in Sarasota, FL",
+  "description": "Tony's Mobile Detailing brings expert interior and exterior care to your home, office or apartment. Book online 24/7, no credit card required. 5.0 on Google from 182 reviews.",
+  "brand": "#1670ff",
+  "brandHi": "#52c6ff",
+  "accent": "#8fd0ff",
+  "logo": "logo.png",
+  "logoChip": false,
+  "wordmark": {
+    "top": "Tony's",
+    "bottom": "Mobile Detailing"
+  },
+  "phone": "(407) 722-1585",
+  "email": "tonysmobdetailing@gmail.com",
+  "heroImage": "img/photo-1.jpg",
+  "heroAlt": "Detailed white Audi R8 parked on a Sarasota street",
+  "heroPosition": "60% 60%",
+  "heroPositionPhone": "60% 50%",
+  "rating": {
+    "score": "5.0",
+    "count": 182,
+    "url": "https://maps.google.com/?cid=10694614770225838446"
+  },
+  "kicker": "Mobile auto detailing · Sarasota",
+  "headline": "Showroom shine,<br><em>at your driveway.</em>",
+  "intro": "Tony's Mobile Detailing brings expert interior and exterior care to your home, office or apartment. Book online 24/7, no credit card required.",
+  "mobile": {
+    "title": "We come to you.",
+    "intro": "Mobile service means your car gets a full detail right where it sits. All we need is your home's power and water.",
+    "points": [
+      {
+        "name": "At your door",
+        "text": "Home, office or apartment around Sarasota and nearby cities."
+      },
+      {
+        "name": "No shop trip",
+        "text": "Skip the drop-off and the wait. Get your time back."
+      },
+      {
+        "name": "Reminders and updates",
+        "text": "Book online or by phone and stay updated through the whole process."
+      },
+      {
+        "name": "Check it yourself",
+        "text": "You inspect the result, make sure you're happy, then pay."
+      }
+    ]
+  },
+  "servicesTitle": "Inside, outside, protected.",
+  "servicesIntro": "From a one-time clean to regular upkeep, pick the service that fits your vehicle.",
+  "services": [
+    {
+      "name": "Exterior Detailing",
+      "text": "Hand wash and foam bath, clay bar, wax or sealant, wheels, glass and more.",
+      "price": "Starting at $149"
+    },
+    {
+      "name": "Interior Detailing",
+      "text": "Vacuum, shampoo, hot water extraction, steam cleaning, odor removal and leather conditioning.",
+      "price": "Starting at $159"
+    },
+    {
+      "name": "Full Detailing, Exterior & Interior",
+      "text": "The complete in-and-out detail, with paint correction and ceramic coating available.",
+      "price": "Starting at $229"
+    },
+    {
+      "name": "Ceramic Coating",
+      "text": "Protects paint from UV, dirt and scratches with a deep, long-lasting shine."
+    },
+    {
+      "name": "Paint Correction",
+      "text": "Removes swirl marks, scratches and oxidation to restore shine and clarity."
+    },
+    {
+      "name": "Headlight & Plastic Restoration",
+      "text": "Clears cloudy headlights and revives faded plastics for a like-new finish."
+    }
+  ],
+  "also": [
+    {
+      "name": "Family vans"
+    },
+    {
+      "name": "Work trucks"
+    },
+    {
+      "name": "Sports cars"
+    },
+    {
+      "name": "SUVs"
+    }
+  ],
+  "alsoTitle": "We also detail",
+  "why": [
+    {
+      "name": "Trained team",
+      "text": "Trained experts with the right tools and products for the job."
+    },
+    {
+      "name": "Attention to detail",
+      "text": "Meticulous work that keeps your car looking its best and holding its value."
+    },
+    {
+      "name": "Easy from start to finish",
+      "text": "Online scheduling around the clock, and flexible packages for one-time or regular care."
+    }
+  ],
+  "whyTitle": "Why Sarasota calls Tony.",
+  "howTitle": "Detailed in three steps.",
+  "steps": [
+    {
+      "name": "Book",
+      "text": "Book online or by phone and stay updated the whole way."
+    },
+    {
+      "name": "We detail",
+      "text": "Our experts inspect your vehicle and detail it with high-quality products and tools."
+    },
+    {
+      "name": "You approve",
+      "text": "Inspect the result, make sure you're satisfied, then pay."
+    }
+  ],
+  "contactTitle": "Book your detail.",
+  "footerLine": "Mobile auto detailing in Sarasota, FL",
+  "reviews": [],
+  "hours": [],
+  "galleryTitle": "Fresh off the driveway.",
+  "gallery": [
+    {
+      "src": "img/photo-7.jpg",
+      "alt": "Gray Audi SUV with black wheels after a detail",
+      "size": "big"
+    },
+    {
+      "src": "img/photo-8.jpg",
+      "alt": "Black Porsche Boxster convertible, freshly detailed"
+    },
+    {
+      "src": "img/photo-12.jpg",
+      "alt": "White Ford Mustang, front view"
+    },
+    {
+      "src": "img/photo-2.jpg",
+      "alt": "Gray Toyota Camry with a clean finish"
+    },
+    {
+      "src": "img/photo-5.jpg",
+      "alt": "Clean black leather interior of a Ford Mustang"
+    }
+  ],
+  "areas": [
+    "Sarasota"
+  ],
+  "pitch": "site"
+}
