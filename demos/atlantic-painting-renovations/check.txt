@@ -1,0 +1,10 @@
+- Found by a search in Jacksonville, FL, but their address is in Jacksonville Beach, FL: the site uses that. Check their service area.
+- No logo found: the header shows the name only.
+- No hero photo: Claude found none of their photos usable.
+- Photo pitch: only 0 usable photos by Claude's choice, so no gallery; the email asks them for photos of their work.
+- Claude's notes: No usable real project photos: the site images look like stock (painter with roller, kitchen under renovation), so none were used. Photo 1 is their logo. Site says 'Atlantic Painting + Restoration' in the footer; name kept as Atlantic Painting & Renovations. Draft cabinet service was left out because the site does not list cabinets. No hours on site.
+- Dropped 4 reviews: a review widget (elfsight) on https://www.atlanticpaintingandrenovation.com/.
+- No photos at all: the hero has no picture. Find photos by hand.
+- Only 0 gallery photos.
+- No reviews on the site: the page shows the Google rating only.
+- Hero is a licensed stock photo for the trade (credited on the page, see generator/assets/CREDITS.md), not their work: swap in their own photo once they send one.

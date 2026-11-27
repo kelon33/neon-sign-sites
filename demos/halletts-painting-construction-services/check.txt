@@ -1,0 +1,5 @@
+- Logo is dark on a transparent background: shown on a white chip. Check it reads well.
+- Claude's notes: Site says 25 years and 25+ in places, and 20+ in another; none used. Google shows 25 reviews, site widget says 26. Photos 1, 4 and 5 show restaurant chain storefronts with brand signage; check client permission. Services drawn from the painting page. Fix: second service was typed with a typo field in drafting; verify the Staining and Refinishing price is empty.
+- Dropped 6 reviews: a review widget (trustindex) on https://hpcservicesusa.com/.
+- Only 5 gallery photos.
+- No reviews on the site: the page shows the Google rating only.

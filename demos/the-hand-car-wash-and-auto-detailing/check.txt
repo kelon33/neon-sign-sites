@@ -1,0 +1,6 @@
+- Details cars and boats (found by a boat search): the AI was told to show all their work.
+- Photo pitch: only 2 usable photos by Claude's choice, so no gallery; the email asks them for photos of their work.
+- Logo dropped: Claude saw it is not theirs (a badge, a client's or their web designer's). The header shows the name only.
+- Claude's notes: No reviews on site. The supplied logo image is Sewell INEOS, not this business, so logoIsTheirs is false. Photo 1 is their logo, but it looks AI-generated, so it was not used. Photo 3 may be a stock-style image, so verify it. Only 3 usable photos, none of boats. Site says 'Satisfaction Guaranteed' only in a badge, so no guarantee was claimed. Draft boat steps and 'Fleets' wording should be checked against the site.
+- Only 0 gallery photos.
+- No reviews on the site: the page shows the Google rating only.

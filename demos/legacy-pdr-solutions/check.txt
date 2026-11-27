@@ -1,0 +1,4 @@
+- Photo pitch: only 0 usable photos by Claude's choice, so no gallery; the email asks them for photos of their work.
+- Claude's notes: No reviews on site. Only 1 usable photo (shop interior, photo 8); the rest are graphics, flyers or a logo. Site claims 10+ years, certified technicians and a quality guarantee; these were left out for a human to verify. Two locations listed: 11008 Iota Dr Suite 3, San Antonio and 8021 FM 78, Converse (mobile tent). The draft's mobile-service claims are not supported by the site, so mobilePoints is empty. Site says nothing on prices.
+- Only 0 gallery photos.
+- No reviews on the site: the page shows the Google rating only.

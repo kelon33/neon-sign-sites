@@ -1,0 +1,109 @@
+{
+ "kit": "detailing",
+ "trade": "Paintless dent repair",
+ "name": "Automobiles For Tomorrow Auto Body & Collision Repair",
+ "legalName": "Automobiles For Tomorrow Auto Body & Collision Repair",
+ "preview": true,
+ "placeId": "ChIJsQ4a1rlnZIgRqlomWTIsidE",
+ "title": "Automobiles For Tomorrow Auto Body & Collision Repair | Paintless dent repair in Nashville, TN",
+ "description": "Auto body and collision repair in Nashville. Experienced technicians handle your accident repair and your insurance claim, from estimate to finish. 4.9 on Google from 46 reviews.",
+ "brand": "#1670ff",
+ "brandHi": "#52c6ff",
+ "accent": "#8fd0ff",
+ "logo": null,
+ "logoChip": false,
+ "wordmark": {
+  "top": "Automobiles",
+  "bottom": "For Tomorrow"
+ },
+ "phone": "(615) 423-6203",
+ "email": "jimmychavezauto@gmail.com",
+ "heroImage": null,
+ "heroAlt": "",
+ "heroPosition": "60% 60%",
+ "heroPositionPhone": "60% 50%",
+ "rating": {
+  "score": "4.9",
+  "count": 46,
+  "url": "https://maps.google.com/?cid=15098647820491971242"
+ },
+ "kicker": "Paintless dent repair · Nashville",
+ "headline": "Hail damage gone.<br><em>Paint untouched.</em>",
+ "intro": "Auto body and collision repair in Nashville. Experienced technicians handle your accident repair and your insurance claim, from estimate to finish.",
+ "mobile": null,
+ "servicesTitle": "Every kind of dent.",
+ "servicesIntro": "One team handles the repair, the claim and the rental.",
+ "services": [
+  {
+   "name": "Collision Repair",
+   "text": "Complete collision restoration to bring your vehicle back safely and to high quality standards."
+  },
+  {
+   "name": "Dent Repair",
+   "text": "Dents repaired by experienced technicians at the shop."
+  },
+  {
+   "name": "Bumper Repair & Replacement",
+   "text": "Damaged bumpers repaired or replaced."
+  },
+  {
+   "name": "Auto Painting / Paint Repair",
+   "text": "Paint repair done with quality paint and materials."
+  },
+  {
+   "name": "Frame Repair",
+   "text": "Structural frame repair after an accident."
+  },
+  {
+   "name": "Insurance Claim Assistance",
+   "text": "We guide you through the claim from start to finish."
+  }
+ ],
+ "also": [],
+ "alsoTitle": "We also fix",
+ "why": [
+  {
+   "name": "30+ years of experience",
+   "text": "Three decades of collision repair work behind every job."
+  },
+  {
+   "name": "Works with your insurer",
+   "text": "GEICO, Progressive, State Farm, Allstate and more. We guide you through the claim."
+  },
+  {
+   "name": "Free estimates, fast turnaround",
+   "text": "Know the cost up front, then get your vehicle back quickly."
+  }
+ ],
+ "whyTitle": "Why Automobiles For Tomorrow Auto Body & Collision Repair",
+ "howTitle": "Back to like new, step by step.",
+ "steps": [
+  {
+   "name": "Schedule a free inspection",
+   "text": "Call, text or visit our shop."
+  },
+  {
+   "name": "We handle insurance",
+   "text": "We take care of the claim so you don't have to."
+  },
+  {
+   "name": "Drive away satisfied",
+   "text": "We repair the damage with paintless dent repair and you drive off happy."
+  }
+ ],
+ "contactTitle": "Got a dent?",
+ "footerLine": "Paintless dent repair in Nashville",
+ "reviews": [],
+ "hours": [
+  "Mon-Fri 7am-7pm",
+  "Sat 9am-3pm"
+ ],
+ "galleryTitle": "Dents gone, paint untouched.",
+ "notePlaceholder": "Where the dent is, how big, hail or a door ding…",
+ "ctaLabel": "Get an estimate",
+ "gallery": [],
+ "areas": [
+  "Nashville"
+ ],
+ "pitch": "photos"
+}

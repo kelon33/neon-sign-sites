@@ -1,0 +1,182 @@
+{
+ "kit": "detailing",
+ "trade": "Mobile car detailing",
+ "name": "Touchstone Detailing",
+ "legalName": "Touchstone Detailing",
+ "preview": true,
+ "placeId": "ChIJ_-KhhtxmZIgRdr3vQymnfpE",
+ "title": "Touchstone Detailing | Mobile car detailing in Nashville, TN",
+ "description": "Mobile and in-shop car detailing in Nashville. We come to your home or work, or you drop off at our shop on Deal Ave. Same-day appointments are available. 5.0 on Google from 450 reviews.",
+ "brand": "#1670ff",
+ "brandHi": "#52c6ff",
+ "accent": "#8fd0ff",
+ "logo": null,
+ "logoChip": false,
+ "wordmark": {
+  "top": "Touchstone",
+  "bottom": "Detailing"
+ },
+ "phone": "(615) 240-6240",
+ "email": "mrtouchstone615@gmail.com",
+ "heroImage": "img/photo-5.jpg",
+ "heroAlt": "Glossy red Kia Stinger after detailing",
+ "heroPosition": "60% 60%",
+ "heroPositionPhone": "60% 50%",
+ "rating": {
+  "score": "5.0",
+  "count": 450,
+  "url": "https://maps.google.com/?cid=10484000778240376182"
+ },
+ "kicker": "Mobile car detailing · Nashville, TN",
+ "headline": "Showroom shine.<br><em>Right in your driveway.</em>",
+ "intro": "Mobile and in-shop car detailing in Nashville. We come to your home or work, or you drop off at our shop on Deal Ave. Same-day appointments are available.",
+ "mobile": {
+  "title": "Your driveway is our shop.",
+  "intro": "We bring the detail to you, so your day keeps moving.",
+  "points": [
+   {
+    "name": "At your door",
+    "text": "We bring the equipment to your home or workplace."
+   },
+   {
+    "name": "Keep working",
+    "text": "Stay productive while we detail. No shop visit needed."
+   },
+   {
+    "name": "Fully equipped",
+    "text": "Our mobile unit arrives ready to do the whole job on site."
+   },
+   {
+    "name": "Your choice",
+    "text": "Prefer the shop? Drop off, or ask about pick-up and delivery."
+   }
+  ]
+ },
+ "servicesTitle": "Three details. One clear price each.",
+ "servicesIntro": "From a deep interior clean to multi-stage paint correction, with high-quality products for every surface.",
+ "services": [
+  {
+   "name": "Full Detail",
+   "text": "A complete interior and exterior detail in three packages: Touch N' Go, Traditional and Executive.",
+   "price": "Starting at $189"
+  },
+  {
+   "name": "Interior Detail",
+   "text": "Deep cleaning for carpets, seats, dashboard and more, with shampooing, leather care and disinfecting.",
+   "price": "Starting at $189"
+  },
+  {
+   "name": "Exterior Detail",
+   "text": "A thorough wash, decontamination, waxing and polishing to restore shine and protect the paint."
+  },
+  {
+   "name": "Ceramic Coating",
+   "text": "Long-lasting protection with extreme gloss and hydrophobic properties against UV, dirt and minor scratches."
+  },
+  {
+   "name": "Smoke & Malodor Removal",
+   "text": "A shop-based package that neutralizes lingering smoke, pet and food odors with gas and enzyme treatments.",
+   "price": "Starting at $349"
+  },
+  {
+   "name": "Water Intrusion & Mold Remediation",
+   "text": "A shop-based service that removes seats, dries the subfloor and treats mold and mildew.",
+   "price": "Starting at $449"
+  }
+ ],
+ "also": [],
+ "alsoTitle": "Not just cars:",
+ "why": [
+  {
+   "name": "Convenience at your doorstep",
+   "text": "We bring expert detailing to you and save you the trip."
+  },
+  {
+   "name": "Licensed and insured",
+   "text": "A fully licensed and insured team."
+  },
+  {
+   "name": "Attention to detail",
+   "text": "Every inch of your vehicle is cleaned, protected and restored."
+  }
+ ],
+ "whyTitle": "The detail is in the name.",
+ "howTitle": "Book it. We show up. You drive off shining.",
+ "steps": [
+  {
+   "name": "Tell us about your vehicle",
+   "text": "Call or send the form with your vehicle and the service you want."
+  },
+  {
+   "name": "We come to you",
+   "text": "We arrive with the equipment and products to do the job on site."
+  },
+  {
+   "name": "Take the keys back",
+   "text": "Your car is clean, restored and showroom-ready."
+  }
+ ],
+ "contactTitle": "Book your consultation.",
+ "footerLine": "Mobile car detailing in Nashville",
+ "reviews": [],
+ "hours": [
+  "Mon - Sun: 6 AM to 6 PM"
+ ],
+ "galleryTitle": "Fresh off the driveway.",
+ "gallery": [
+  {
+   "src": "img/photo-4.jpg",
+   "alt": "Bright blue Corvette with a deep shine",
+   "size": "big"
+  },
+  {
+   "src": "img/photo-8.jpg",
+   "alt": "Black BMW parked in a driveway"
+  },
+  {
+   "src": "img/photo-14.jpg",
+   "alt": "Black BMW convertible on alloy wheels"
+  },
+  {
+   "src": "img/photo-10.jpg",
+   "alt": "Maroon vintage pickup with a polished finish"
+  },
+  {
+   "src": "img/photo-3.jpg",
+   "alt": "Wheel of a red BMW being rinsed",
+   "size": "tall"
+  },
+  {
+   "src": "img/photo-13.jpg",
+   "alt": "Black Range Rover with a clean finish"
+  },
+  {
+   "src": "img/photo-15.jpg",
+   "alt": "Black GMC Denali wheel and fender"
+  },
+  {
+   "src": "img/photo-1.jpg",
+   "alt": "Black BMW convertible in the sun"
+  },
+  {
+   "src": "img/photo-16.jpg",
+   "alt": "Red and black leather interior of a Range Rover"
+  },
+  {
+   "src": "img/photo-18.jpg",
+   "alt": "Tan leather interior of an Aston Martin"
+  },
+  {
+   "src": "img/photo-12.jpg",
+   "alt": "Detailed BMW interior with black leather and orange accents"
+  },
+  {
+   "src": "img/photo-22.jpg",
+   "alt": "Blue vintage Bronco interior"
+  }
+ ],
+ "areas": [
+  "Nashville"
+ ],
+ "pitch": "site"
+}

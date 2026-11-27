@@ -1,0 +1,178 @@
+{
+ "kit": "painting",
+ "trade": "House painting",
+ "name": "Alphex Painting & Remodeling",
+ "legalName": "Alphex Painting & Remodeling",
+ "preview": true,
+ "placeId": "ChIJFa1j9bJhXIYRMCK1lbOF6Hk",
+ "title": "Alphex Painting & Remodeling | House painting in San Antonio, TX",
+ "description": "Interior and exterior painting for San Antonio homes and businesses. Premium products, careful prep, and a final walkthrough before we call it done. 5.0 on Google from 32 reviews.",
+ "logo": "logo.png",
+ "logoChip": false,
+ "wordmark": {
+  "top": "Alphex",
+  "bottom": "Painting & Remodeling"
+ },
+ "phone": "(210) 371-8615",
+ "email": "alphexpainting@gmail.com",
+ "heroImage": "img/photo-14.jpg",
+ "heroAlt": "Stucco and stone home with a dark metal roof",
+ "heroPosition": "60% 60%",
+ "heroPositionPhone": "60% 50%",
+ "rating": {
+  "score": "5.0",
+  "count": 32,
+  "url": "https://maps.google.com/?cid=8784418079543468592"
+ },
+ "kicker": "House painting · San Antonio",
+ "headline": "Fresh paint.<br><em>Honest work.</em>",
+ "intro": "Interior and exterior painting for San Antonio homes and businesses. Premium products, careful prep, and a final walkthrough before we call it done.",
+ "badges": [
+  "Licensed & insured",
+  "Free estimates",
+  "Homes and businesses"
+ ],
+ "highlights": {
+  "points": [
+   {
+    "name": "Fast response",
+    "text": "Send a request and we reply within 24 hours."
+   },
+   {
+    "name": "On time",
+    "text": "Our team values your time and works efficiently."
+   },
+   {
+    "name": "Clear pricing",
+    "text": "Honest estimates and clear communication from the first call."
+   },
+   {
+    "name": "Careful prep",
+    "text": "We prepare surfaces before any paint goes on."
+   }
+  ]
+ },
+ "servicesTitle": "Inside and out.",
+ "servicesIntro": "Homes, businesses and industrial sites. One crew that does it right.",
+ "services": [
+  {
+   "name": "Interior Painting",
+   "text": "Living spaces, kitchens, baths, trim and accent walls, finished smooth and built to last."
+  },
+  {
+   "name": "Exterior Painting",
+   "text": "High-quality exterior paint designed to withstand Texas weather."
+  },
+  {
+   "name": "Commercial Painting",
+   "text": "Offices, retail spaces and restaurants painted with minimal disruption."
+  },
+  {
+   "name": "Flooring",
+   "text": "Durable, attractive flooring installed and refinished with precision and care."
+  }
+ ],
+ "also": [
+  {
+   "name": "Offices"
+  },
+  {
+   "name": "Retail spaces"
+  },
+  {
+   "name": "Restaurants"
+  },
+  {
+   "name": "Cabinet refinishing"
+  }
+ ],
+ "alsoTitle": "We also do:",
+ "promise": null,
+ "why": [
+  {
+   "name": "Licensed & insured",
+   "text": "Your property is protected by a fully insured team."
+  },
+  {
+   "name": "Premium quality",
+   "text": "We use premium products and proven techniques."
+  },
+  {
+   "name": "Fair, transparent pricing",
+   "text": "We provide honest estimates and clear communication."
+  }
+ ],
+ "whyTitle": "Why San Antonio homeowners choose us.",
+ "howTitle": "A fresh coat in three steps.",
+ "steps": [
+  {
+   "name": "Free consultation",
+   "text": "Tell us what you need. We talk through the scope and give you a free quote."
+  },
+  {
+   "name": "Plan and schedule",
+   "text": "We agree on the details and set the work with clear communication."
+  },
+  {
+   "name": "Paint and walkthrough",
+   "text": "Our team does the work, then walks the finished job with you."
+  }
+ ],
+ "contactTitle": "Let's bring your vision to life.",
+ "footerLine": "House painting in San Antonio",
+ "reviews": [
+  {
+   "text": "Alphex did an incredible job on our home's interior. The crew was professional, clean, and finished ahead of schedule. Our walls look absolutely stunning",
+   "name": "Maria Gonzalez"
+  },
+  {
+   "text": "Used Alphex for our office renovation. They worked perfectly around our schedule and the results completely exceeded expectations. Our clients love the new look!",
+   "name": "James Torres"
+  },
+  {
+   "text": "The exterior painting is absolutely beautiful and held up perfectly through the Texas summer. Fair pricing, outstanding quality, zero headaches. Highly recommended!",
+   "name": "Robert Smith"
+  },
+  {
+   "text": "From the first call to the final walkthrough, Alphex was outstanding. Transformed our living room completely — colors are perfect, finish is flawless. Will use again!",
+   "name": "Lisa Hernandez"
+  },
+  {
+   "text": "Best painting company in San Antonio! Got 4 quotes — Alphex was the most professional by far. Quality of work is top notch and the price was very fair.",
+   "name": "David Ruiz"
+  }
+ ],
+ "hours": [
+  "Mon–Sat: 8am – 6pm"
+ ],
+ "galleryTitle": "Homes we’ve painted.",
+ "notePlaceholder": "Inside or outside, how many rooms, a date you have in mind…",
+ "areas": [
+  "San Antonio",
+  "Remodeling"
+ ],
+ "gallery": [
+  {
+   "src": "img/photo-3.jpg",
+   "alt": "Dining room with deep blue walls and white wainscoting",
+   "size": "big"
+  },
+  {
+   "src": "img/photo-18.jpg",
+   "alt": "Kitchen with navy cabinets and blue tile backsplash"
+  },
+  {
+   "src": "img/photo-5.jpg",
+   "alt": "Dining room with fresh white walls and crown molding"
+  },
+  {
+   "src": "img/photo-6.jpg",
+   "alt": "Two-story entry with white walls and dark railings"
+  },
+  {
+   "src": "img/photo-16.jpg",
+   "alt": "Single-story house with gray roof and white exterior"
+  }
+ ],
+ "pitch": "site"
+}

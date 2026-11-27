@@ -1,0 +1,170 @@
+{
+ "kit": "detailing",
+ "trade": "Mobile car detailing",
+ "name": "Deep Detailing",
+ "legalName": "Deep Detailing",
+ "preview": true,
+ "placeId": "ChIJ54ciVjvhsWQRqUS5thkjoBc",
+ "title": "Deep Detailing | Mobile car detailing in Henderson, NV",
+ "description": "Mobile detailing at your door, 365 days a year. We bring our own water and power, so you don't need to provide anything. 5.0 on Google from 70 reviews.",
+ "brand": "#1670ff",
+ "brandHi": "#52c6ff",
+ "accent": "#8fd0ff",
+ "logo": null,
+ "logoChip": false,
+ "wordmark": {
+  "top": "Deep",
+  "bottom": "Detailing"
+ },
+ "phone": "(725) 333-4835",
+ "email": "businessoverlc@gmail.com",
+ "heroImage": "img/photo-8.jpg",
+ "heroAlt": "White Mercedes AMG sedan detailed in a driveway",
+ "heroPosition": "60% 60%",
+ "heroPositionPhone": "60% 50%",
+ "rating": {
+  "score": "5.0",
+  "count": 70,
+  "url": "https://maps.google.com/?cid=1702399252492797097"
+ },
+ "kicker": "Mobile car detailing · Henderson, NV",
+ "headline": "Showroom shine.<br><em>Wherever you are.</em>",
+ "intro": "Mobile detailing at your door, 365 days a year. We bring our own water and power, so you don't need to provide anything.",
+ "mobile": {
+  "title": "Your driveway is our shop.",
+  "intro": "We bring the detail to you, so your day keeps moving.",
+  "points": [
+   {
+    "name": "At your door",
+    "text": "We come to your home, office or hotel. Henderson, Las Vegas, Primm, Mesquite and Jean."
+   },
+   {
+    "name": "Fully equipped",
+    "text": "Our own water and power. You just give us access and space."
+   },
+   {
+    "name": "Works around you",
+    "text": "We operate 365 days a year. Same-day slots can be checked 24/7 on our booking site."
+   },
+   {
+    "name": "Easy to book",
+    "text": "Call 725-333-4835 or book online. Most details take about 2 to 3.5 hours."
+   }
+  ]
+ },
+ "servicesTitle": "Inside, outside, and every detail between.",
+ "servicesIntro": "Four services, one standard: attention to detail. Prices depend on your vehicle's size, condition and needs.",
+ "services": [
+  {
+   "name": "Silver Detail",
+   "text": "A premium maintenance detail: handwash, tires and wheel wells dressed, door jambs cleaned, interior vacuumed and wiped, windows cleaned.",
+   "price": "$100+"
+  },
+  {
+   "name": "Gold Detail",
+   "text": "The full detail. Everything in Silver, plus carpet extraction and steam cleaning of plastics.",
+   "price": "$250+"
+  },
+  {
+   "name": "Show-Shine Detail",
+   "text": "The ultimate exterior detail for neglected cars: clay bar, engine bay detail and a premium ceramic sealant.",
+   "price": "$175+"
+  },
+  {
+   "name": "Headlight Restoration",
+   "text": "Cloudy headlights brought back to life.",
+   "price": "$125"
+  },
+  {
+   "name": "Paint Enhancement",
+   "text": "An add-on service to bring up the finish of your paint.",
+   "price": "250+"
+  },
+  {
+   "name": "Metal Polishing",
+   "text": "Dull, oxidized metal restored on wheels, fuel tanks, steps, bumpers and bull bars."
+  }
+ ],
+ "also": [
+  {
+   "name": "Semi-trucks"
+  },
+  {
+   "name": "Box trucks"
+  },
+  {
+   "name": "Trailers"
+  },
+  {
+   "name": "Fleets"
+  },
+  {
+   "name": "Powersports"
+  }
+ ],
+ "alsoTitle": "We also detail",
+ "why": [
+  {
+   "name": "Every detail",
+   "text": "Courtesy, care and attention to every detail on every job."
+  },
+  {
+   "name": "Showroom finish",
+   "text": "Our goal is a showroom-quality finish at your doorstep, every time."
+  },
+  {
+   "name": "Licensed and insured",
+   "text": "Deep Detailing LLC is licensed and insured, and has served customers since 2023."
+  }
+ ],
+ "whyTitle": "The detail is in the name.",
+ "howTitle": "Book it. We show up. You drive off shining.",
+ "steps": [
+  {
+   "name": "Request a consultation",
+   "text": "Call or fill out the form. Consultations are free."
+  },
+  {
+   "name": "Get your quote",
+   "text": "We price by your vehicle's size, condition and needs."
+  },
+  {
+   "name": "Pick up your car",
+   "text": "Detailed, protected and ready for the big reveal."
+  }
+ ],
+ "contactTitle": "Book your detail.",
+ "footerLine": "Mobile car detailing in Henderson",
+ "reviews": [],
+ "hours": [
+  "Open 365 days a year"
+ ],
+ "galleryTitle": "Fresh off the driveway.",
+ "gallery": [
+  {
+   "src": "img/photo-1.jpg",
+   "alt": "Gray Mercedes SUV with LED lights under a carport",
+   "size": "big"
+  },
+  {
+   "src": "img/photo-9.jpg",
+   "alt": "Dark gray BMW sedan in a garage"
+  },
+  {
+   "src": "img/photo-2.jpg",
+   "alt": "Semi-truck with polished bull bar"
+  },
+  {
+   "src": "img/photo-5.jpg",
+   "alt": "Semi-truck covered in foam during a wash"
+  },
+  {
+   "src": "img/photo-4.jpg",
+   "alt": "Technician polishing a truck wheel"
+  }
+ ],
+ "areas": [
+  "Henderson"
+ ],
+ "pitch": "site"
+}

@@ -1,0 +1,9 @@
+- Listed as Boat detailing, but their site is about cars: built as mobile car detailing.
+- No logo found: the header shows the name only.
+- No hero photo: Claude found none of their photos usable.
+- Photo pitch: only 0 usable photos by Claude's choice, so no gallery; the email asks them for photos of their work.
+- Claude's notes: No reviews on site. No photos were provided, so none were used. No logo image was provided. Pet hair and mold carry an extra charge per the site. Prices are starting prices for cars; vehicle size changes the rate. Site mentions service areas that are not listed in the copy. Site copyright is 2014, so check that details are current.
+- No photos at all: the hero has no picture. Find photos by hand.
+- Only 0 gallery photos.
+- No reviews on the site: the page shows the Google rating only.
+- Hero is a licensed stock photo for the trade (credited on the page, see generator/assets/CREDITS.md), not their work: swap in their own photo once they send one.

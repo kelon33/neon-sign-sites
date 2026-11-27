@@ -1,0 +1,142 @@
+{
+ "kit": "painting",
+ "trade": "House painting",
+ "name": "Quality Touch Painting",
+ "legalName": "Quality Touch Painting",
+ "preview": true,
+ "placeId": "ChIJc8tTn2q45YgRLFWNxjUgxBY",
+ "title": "Quality Touch Painting | House painting in Jacksonville, FL",
+ "description": "Interior and exterior painting across Jacksonville and the Northeast Florida coast, built to hold up against heat, humidity and salt air. Both owners bid and oversee their own projects. 4.8 on Google from 51 reviews.",
+ "logo": null,
+ "logoChip": false,
+ "wordmark": {
+  "top": "Quality Touch",
+  "bottom": "Painting"
+ },
+ "phone": "(904) 801-9214",
+ "email": "admin@qtpinc.com",
+ "heroImage": "img/photo-9.jpg",
+ "heroAlt": "Shingle-sided waterfront home with white trim and pool",
+ "heroPosition": "60% 60%",
+ "heroPositionPhone": "60% 50%",
+ "rating": {
+  "score": "4.8",
+  "count": 51,
+  "url": "https://maps.google.com/?cid=1640471579606209836"
+ },
+ "kicker": "House painting · Jacksonville",
+ "headline": "Fresh paint.<br><em>Clean finish.</em>",
+ "intro": "Interior and exterior painting across Jacksonville and the Northeast Florida coast, built to hold up against heat, humidity and salt air. Both owners bid and oversee their own projects.",
+ "badges": [
+  "Free estimates",
+  "Homes and businesses"
+ ],
+ "highlights": null,
+ "servicesTitle": "Inside and out.",
+ "servicesIntro": "One room or a whole office building.",
+ "services": [
+  {
+   "name": "Interior Painting",
+   "text": "Meticulous prep and quality materials for pristine finishes in homes and commercial spaces."
+  },
+  {
+   "name": "Exterior Painting",
+   "text": "Careful preparation for finishes that last and lift curb appeal."
+  },
+  {
+   "name": "Cabinet & Furniture Painting",
+   "text": "A careful process and custom color matching to renew pieces you love."
+  },
+  {
+   "name": "Stucco & Brick Painting",
+   "text": "Durable masonry paints and thorough prep to protect against weather damage."
+  },
+  {
+   "name": "Deck & Fence Staining/Painting",
+   "text": "Detailed work that improves outdoor spaces and protects the structure."
+  },
+  {
+   "name": "Pressure Washing",
+   "text": "Removes grime and stains to extend the life of the surface."
+  }
+ ],
+ "also": [
+  {
+   "name": "Cabinet & furniture refinishing"
+  },
+  {
+   "name": "Wallpaper removal & wall prep"
+  },
+  {
+   "name": "Wood rot repair"
+  },
+  {
+   "name": "Door and window refinishing"
+  }
+ ],
+ "alsoTitle": "We also do:",
+ "promise": null,
+ "why": [
+  {
+   "name": "Owner-led on every job",
+   "text": "Both owners personally bid and oversee their projects, with a production manager on site daily and a foreman on each job."
+  },
+  {
+   "name": "Fully itemized estimates",
+   "text": "Labor hours, materials, and what is included and excluded. Retail estimates are guaranteed for 90 days."
+  },
+  {
+   "name": "Insured and certified",
+   "text": "Licensed, insured, PCA certified and an NEFBA member. Owners and production manager are OSHA certified."
+  }
+ ],
+ "whyTitle": "Why homeowners call us.",
+ "howTitle": "From estimate to final walk-through.",
+ "steps": [
+  {
+   "name": "Ask for a free estimate",
+   "text": "Call or use the form to tell us about your project."
+  },
+  {
+   "name": "Plan the job",
+   "text": "We go over the work, colors and timing with you."
+  },
+  {
+   "name": "Enjoy the new look",
+   "text": "We paint, and aim to finish on time and on budget."
+  }
+ ],
+ "contactTitle": "Ready for a fresh coat?",
+ "footerLine": "House painting in Jacksonville",
+ "reviews": [],
+ "hours": [
+  "Mon - Fri: 7:00 am - 3:30 pm",
+  "Sat - Sun: Closed"
+ ],
+ "galleryTitle": "Homes we’ve painted.",
+ "notePlaceholder": "Inside or outside, how many rooms, a date you have in mind…",
+ "gallery": [
+  {
+   "src": "img/photo-10.jpg",
+   "alt": "Cedar shake home with palm trees and a wide driveway",
+   "size": "big"
+  },
+  {
+   "src": "img/photo-2.jpg",
+   "alt": "Modern multi-story coastal home with palms and lawn"
+  },
+  {
+   "src": "img/photo-12.jpg",
+   "alt": "Quality Touch Painting trailer at a job site"
+  },
+  {
+   "src": "img/photo-5.jpg",
+   "alt": "Painter staining wood boards in the shop",
+   "size": "tall"
+  }
+ ],
+ "areas": [
+  "Jacksonville"
+ ],
+ "pitch": "site"
+}

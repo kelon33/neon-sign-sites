@@ -1,0 +1,4 @@
+- Details cars and boats (found by a boat search): the AI was told to show all their work.
+- Photo pitch: only 1 usable photo by Claude's choice, so no gallery; the email asks them for photos of their work.
+- Claude's notes: Only 2 photos used. Photos 3, 4 and 6 look like stock images (limo, RV lot, polishing close-up). Photos 2 and 5 are blank graphics. Site has placeholder reviews (John Doe) which were skipped. Boat price is a starting price only. Google rating 4.4 from 50 reviews.
+- Only 0 gallery photos.

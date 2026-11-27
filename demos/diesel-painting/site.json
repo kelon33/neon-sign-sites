@@ -1,0 +1,107 @@
+{
+ "kit": "painting",
+ "trade": "House painting",
+ "name": "Diesel Painting",
+ "legalName": "Diesel Painting",
+ "preview": true,
+ "placeId": "ChIJB34sb53AyIARy1LFJIZB87Q",
+ "title": "Diesel Painting | House painting in Las Vegas, NV",
+ "description": "Full-service residential and commercial painting in Las Vegas, run by Victor Garcia, a third generation painting contractor. Interior, exterior, cabinets and drywall, planned to your needs and budget. 4.8 on Google from 148 reviews.",
+ "logo": null,
+ "logoChip": false,
+ "wordmark": {
+  "top": "Diesel",
+  "bottom": "Painting"
+ },
+ "phone": "(702) 202-2646",
+ "email": "info@dieselpainting.com",
+ "heroImage": null,
+ "heroAlt": "",
+ "heroPosition": "60% 60%",
+ "heroPositionPhone": "60% 50%",
+ "rating": {
+  "score": "4.8",
+  "count": 148,
+  "url": "https://maps.google.com/?cid=13038837390566052555"
+ },
+ "kicker": "House painting · Las Vegas",
+ "headline": "Fresh paint.<br><em>Clean lines.</em>",
+ "intro": "Full-service residential and commercial painting in Las Vegas, run by Victor Garcia, a third generation painting contractor. Interior, exterior, cabinets and drywall, planned to your needs and budget.",
+ "badges": [
+  "Free estimates",
+  "Homes and businesses"
+ ],
+ "highlights": null,
+ "servicesTitle": "Inside and out.",
+ "servicesIntro": "One room or the whole house. Free estimates.",
+ "services": [
+  {
+   "name": "Interior Painting",
+   "text": "Custom-planned to your needs and budget, with free color samples and a mini color consultation included."
+  },
+  {
+   "name": "Exterior Painting",
+   "text": "Built for Las Vegas sun: high pressure cleaning, elastomeric caulking on windows and protection against UV fade and moisture."
+  },
+  {
+   "name": "Cabinet Refinishing",
+   "text": "A fresh coat of paint or stain that makes tired cabinets look new again."
+  },
+  {
+   "name": "Commercial Painting",
+   "text": "From a couple of accent walls to an entire commercial building."
+  },
+  {
+   "name": "Color Consultation",
+   "text": "Help choosing the right colors before the first brush touches the wall."
+  },
+  {
+   "name": "Drywall Repair",
+   "text": "Walls fixed and ready for a clean coat of paint."
+  }
+ ],
+ "also": [],
+ "alsoTitle": "We also do:",
+ "promise": null,
+ "why": [
+  {
+   "name": "25+ years in the trade",
+   "text": "Victor Garcia is a Las Vegas native and third generation painting contractor with over 25 years of experience."
+  },
+  {
+   "name": "High-quality products",
+   "text": "Good paint and personal service, from planning to painting."
+  },
+  {
+   "name": "5 year guarantee on exterior work",
+   "text": "Exterior packages include a 5 year guarantee. The company is licensed (#0071035) and bonded."
+  }
+ ],
+ "whyTitle": "Why Las Vegas homeowners choose us.",
+ "howTitle": "A fresh coat in three steps.",
+ "steps": [
+  {
+   "name": "Ask for a free estimate",
+   "text": "Call or use the form to tell us about your project."
+  },
+  {
+   "name": "Plan the job",
+   "text": "We go over the work, colors and timing with you."
+  },
+  {
+   "name": "Enjoy the new look",
+   "text": "We paint, and aim to finish on time and on budget."
+  }
+ ],
+ "contactTitle": "Request a free quote.",
+ "footerLine": "House painting in Las Vegas",
+ "reviews": [],
+ "hours": [],
+ "galleryTitle": "Homes we’ve painted.",
+ "notePlaceholder": "Inside or outside, how many rooms, a date you have in mind…",
+ "gallery": [],
+ "areas": [
+  "Las Vegas"
+ ],
+ "pitch": "photos"
+}

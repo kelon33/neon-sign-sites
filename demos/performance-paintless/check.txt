@@ -1,0 +1,8 @@
+- No logo found: the header shows the name only.
+- No hero photo: Claude found none of their photos usable.
+- Photo pitch: only 0 usable photos by Claude's choice, so no gallery; the email asks them for photos of their work.
+- Claude's notes: No reviews on site. Only photo is a logo graphic, so no hero or gallery photos used. No hours listed on site. Site mentions a warranty but gives no terms, so it is left out. The draft steps mention a loaner delivered to your home and master certified technicians, which the site does not say (it says ASE certified and a drive-in or drop-off); check these. Lubbock number (806) 230-3377 is from the site's locations list. Google 4.9 from 60 reviews not used in copy.
+- No photos at all: the hero has no picture. Find photos by hand.
+- Only 0 gallery photos.
+- No reviews on the site: the page shows the Google rating only.
+- Hero is a licensed stock photo for the trade (credited on the page, see generator/assets/CREDITS.md), not their work: swap in their own photo once they send one.

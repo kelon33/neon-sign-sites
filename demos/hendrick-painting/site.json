@@ -1,0 +1,79 @@
+{
+ "kit": "painting",
+ "trade": "House painting",
+ "name": "Hendrick Painting",
+ "legalName": "Hendrick Painting",
+ "preview": true,
+ "placeId": "ChIJNbUVkLdgXIYRMBVPB7J44nQ",
+ "title": "Hendrick Painting | House painting in San Antonio, TX",
+ "description": "Interior and exterior house painting in San Antonio. Call (210) 499-5400 for a free estimate. 4.8 on Google from 187 reviews.",
+ "logo": null,
+ "logoChip": false,
+ "wordmark": {
+  "top": "Hendrick",
+  "bottom": "Painting"
+ },
+ "phone": "(210) 499-5400",
+ "email": "john@doe.com",
+ "heroImage": null,
+ "heroAlt": "",
+ "heroPosition": "60% 60%",
+ "heroPositionPhone": "60% 50%",
+ "rating": {
+  "score": "4.8",
+  "count": 187,
+  "url": "https://maps.google.com/?cid=8422426959158383920"
+ },
+ "kicker": "House painting · San Antonio",
+ "headline": "Fresh paint.<br><em>Clean lines.</em>",
+ "intro": "Interior and exterior house painting in San Antonio. Call (210) 499-5400 for a free estimate.",
+ "badges": [],
+ "highlights": null,
+ "servicesTitle": "Inside and out.",
+ "servicesIntro": "One room or the whole house. Free estimates.",
+ "services": [
+  {
+   "name": "Interior painting",
+   "text": "Walls, ceilings and trim in the colors you choose."
+  },
+  {
+   "name": "Exterior painting",
+   "text": "Siding, trim and doors, prepped and painted."
+  },
+  {
+   "name": "Cabinets and trim",
+   "text": "Kitchen cabinets, doors and woodwork refreshed."
+  }
+ ],
+ "also": [],
+ "alsoTitle": "We also do:",
+ "promise": null,
+ "why": [],
+ "whyTitle": "Why San Antonio homeowners choose us.",
+ "howTitle": "A fresh coat in three steps.",
+ "steps": [
+  {
+   "name": "Ask for a free estimate",
+   "text": "Call or use the form to tell us about your project."
+  },
+  {
+   "name": "Plan the job",
+   "text": "We go over the work, colors and timing with you."
+  },
+  {
+   "name": "Enjoy the new look",
+   "text": "We paint, and aim to finish on time and on budget."
+  }
+ ],
+ "contactTitle": "Ready for a fresh coat?",
+ "footerLine": "House painting in San Antonio",
+ "reviews": [],
+ "hours": [],
+ "galleryTitle": "Homes we’ve painted.",
+ "notePlaceholder": "Inside or outside, how many rooms, a date you have in mind…",
+ "gallery": [],
+ "areas": [
+  "San Antonio"
+ ],
+ "pitch": "photos"
+}

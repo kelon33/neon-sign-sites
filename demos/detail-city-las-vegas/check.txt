@@ -1,0 +1,6 @@
+- Listed as Boat detailing, but their site is about cars: built as mobile car detailing.
+- No logo found: the header shows the name only.
+- Photo pitch: only 0 usable photos by Claude's choice, so no gallery; the email asks them for photos of their work.
+- Claude's notes: No reviews on site. No hours or prices listed. Site says the shop is at 3013 N Rancho Dr #101, not mobile, so the draft headline about bringing the shop to the driveway and the steps about arriving at home should be changed. The 'only detail shop in the area' claim was left out. Only 2 photos; photo 1 is cropped by a door frame and was left out. Hero photo is dark, so check it. Confirm the logo.
+- Only 0 gallery photos.
+- No reviews on the site: the page shows the Google rating only.

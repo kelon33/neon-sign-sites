@@ -1,0 +1,3 @@
+- Listed as Boat detailing, but their site is about cars: built as mobile car detailing.
+- Claude's notes: Site shows its own reviews widget saying 695 reviews, Google says 75; check. Reviews are on Google only. Site is mostly PPF, ceramic, wrap, and tint, not classic mobile detailing, and says pickup/drop-off, not mobile service, so mobile points are empty. Draft headline 'Wherever you are' and steps 'We come to you' do not match; they should be revised. Photo 7 has watermark logo, 9 and 10 are renders, 11 shows Meguiar's branding, 12 is dark, 22-24 look stock, so all were excluded. Prices: PPF full body from $4,500 and ceramic 2-step from $1,250 also on site.
+- Dropped review by Chris Corbin: not in their own pages (added by a script, likely a Google widget).

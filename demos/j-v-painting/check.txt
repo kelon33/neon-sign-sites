@@ -1,0 +1,7 @@
+- No logo found: the header shows the name only.
+- No hero photo: Claude found none of their photos usable.
+- Photo pitch: only 0 usable photos by Claude's choice, so no gallery; the email asks them for photos of their work.
+- Claude's notes: Both photos are color swatch fans (stock-looking), so none used. No real finished-work photos. Only one short testimonial, and it is signed by the owner, JV Perez, so confirm it is OK to show as a review. Site hours conflict: 9-5 in one place, Mon-Fri 8-6 in another. Used 8-6. Site also mentions 'will travel' with no details. Price list is placeholder text, so no prices. Site says 'second to none' and 'passion', which were avoided. Logo status unknown, none seen; confirm.
+- No photos at all: the hero has no picture. Find photos by hand.
+- Only 0 gallery photos.
+- Hero is a licensed stock photo for the trade (credited on the page, see generator/assets/CREDITS.md), not their work: swap in their own photo once they send one.

@@ -1,0 +1,7 @@
+- No hero photo: Claude found none of their photos usable.
+- Photo pitch: only 0 usable photos by Claude's choice, so no gallery; the email asks them for photos of their work.
+- Claude's notes: No reviews on site. Photos 1 and 2 are generic or stock-looking and photos 3-6 are stock-looking process shots, so none used; site says its own finished-repair photos are coming soon. Phone on site: 615-600-5998. The draft's mobile (we come to you) section does not fit: the site describes a shop visit, so mobilePoints is empty and the mobile copy should be removed. Draft step text mentions film options, which the site does not support. Google rating 4 from 8 reviews.
+- No photos at all: the hero has no picture. Find photos by hand.
+- Only 0 gallery photos.
+- No reviews on the site: the page shows the Google rating only.
+- Hero is a licensed stock photo for the trade (credited on the page, see generator/assets/CREDITS.md), not their work: swap in their own photo once they send one.

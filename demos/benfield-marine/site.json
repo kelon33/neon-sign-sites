@@ -1,0 +1,136 @@
+{
+ "kit": "detailing",
+ "trade": "Boat detailing",
+ "name": "Benfield Marine",
+ "legalName": "Benfield Marine",
+ "preview": true,
+ "placeId": "ChIJb3_tv0xDZIgRG9fDtZ1PGNo",
+ "title": "Benfield Marine | Boat detailing in Goodlettsville, TN",
+ "description": "Boat repair, maintenance and restoration in Goodlettsville, by technicians who find the problem and tell you straight. Dockside mobile service available: we'll come to you. 4.8 on Google from 79 reviews.",
+ "brand": "#1670ff",
+ "brandHi": "#52c6ff",
+ "accent": "#8fd0ff",
+ "logo": "logo.png",
+ "logoChip": false,
+ "wordmark": {
+  "top": "Benfield",
+  "bottom": "Marine"
+ },
+ "phone": "(615) 431-9376",
+ "email": "benfieldmarine@gmail.com",
+ "heroImage": "img/photo-2.jpg",
+ "heroAlt": "Benfield Marine truck at the ramp as a boat is launched on the lake",
+ "heroPosition": "60% 60%",
+ "heroPositionPhone": "60% 50%",
+ "rating": {
+  "score": "4.8",
+  "count": 79,
+  "url": "https://maps.google.com/?cid=15715398438487316251"
+ },
+ "kicker": "Boat detailing · Goodlettsville",
+ "headline": "Like the first day,<br><em>every day.</em>",
+ "intro": "Boat repair, maintenance and restoration in Goodlettsville, by technicians who find the problem and tell you straight. Dockside mobile service available: we'll come to you.",
+ "mobile": {
+  "title": "We come to your boat.",
+  "intro": "We bring the detail to you, so your day keeps moving.",
+  "points": [
+   {
+    "name": "Dockside service",
+    "text": "We come to your boat instead of you coming to us."
+   },
+   {
+    "name": "No hauling it in",
+    "text": "Skip the trip to the shop for routine work."
+   },
+   {
+    "name": "Easy to book",
+    "text": "Call 615-431-9376 or send the service request form."
+   }
+  ]
+ },
+ "servicesTitle": "Bow to stern.",
+ "servicesIntro": "Upkeep for like-new boats. Restoration for weathered ones. Protection to keep them that way.",
+ "services": [
+  {
+   "name": "Routine Maintenance",
+   "text": "Regular upkeep and repairs built to be fast and reliable, time after time."
+  },
+  {
+   "name": "Winterization",
+   "text": "Protect your boat through the cold months and avoid costly repairs."
+  },
+  {
+   "name": "Fiberglass & Gel Coat",
+   "text": "Repair and restoration work on your hull and finish."
+  },
+  {
+   "name": "Engine Overhaul",
+   "text": "Diagnosis and major engine work done right."
+  },
+  {
+   "name": "Wet Sounds Installations",
+   "text": "Audio systems installed on your boat."
+  },
+  {
+   "name": "Tower Installations",
+   "text": "Wake and ski towers fitted to your boat."
+  }
+ ],
+ "also": [
+  {
+   "name": "Diagnostics"
+  },
+  {
+   "name": "Electrical"
+  }
+ ],
+ "alsoTitle": "We also detail",
+ "why": [
+  {
+   "name": "Correct diagnosis",
+   "text": "They use advanced equipment to find the issue, spot developing problems and give recommendations."
+  },
+  {
+   "name": "We come to you",
+   "text": "Dockside mobile service is available around Middle Tennessee."
+  }
+ ],
+ "whyTitle": "What we give you that others don't.",
+ "howTitle": "Ready for the water in three steps.",
+ "steps": [
+  {
+   "name": "Call us",
+   "text": "Tell us what your boat needs: scratches, gouges, damage or a full detail."
+  },
+  {
+   "name": "Get an estimate",
+   "text": "We give you an accurate estimate. We work with many area marinas, or you can bring the boat to us."
+  },
+  {
+   "name": "Final check",
+   "text": "We go over the finished work with you before it leaves."
+  }
+ ],
+ "contactTitle": "Book your boat in.",
+ "footerLine": "Boat detailing in Goodlettsville",
+ "reviews": [],
+ "hours": [
+  "Mon - Fri: 9am - 6pm",
+  "Sat - Sun: Closed"
+ ],
+ "galleryTitle": "Fresh off the water.",
+ "vehicleTypes": [
+  "Boat",
+  "Pontoon",
+  "Yacht",
+  "Jet ski",
+  "Other"
+ ],
+ "modelPlaceholder": "e.g. Sea Ray 240, 24 ft",
+ "notePlaceholder": "Length, where it is docked or stored, what it needs…",
+ "gallery": [],
+ "areas": [
+  "Goodlettsville"
+ ],
+ "pitch": "photos"
+}

@@ -1,0 +1,113 @@
+{
+ "kit": "detailing",
+ "trade": "Boat detailing",
+ "name": "Central Tennessee Marine Service",
+ "legalName": "Central Tennessee Marine Service",
+ "preview": true,
+ "placeId": "ChIJo8F3kFlqZIgROk9kBvi5eUQ",
+ "title": "Central Tennessee Marine Service | Boat detailing in Hermitage, TN",
+ "description": "Boat service and detailing in Hermitage, inside and out. Your boat goes back on the water running and looking like new. 4.9 on Google from 29 reviews.",
+ "brand": "#1670ff",
+ "brandHi": "#52c6ff",
+ "accent": "#8fd0ff",
+ "logo": "logo.png",
+ "logoChip": false,
+ "wordmark": {
+  "top": "Central Tennessee",
+  "bottom": "Marine Service"
+ },
+ "phone": "(615) 509-7918",
+ "email": "centnmar@comcast.net",
+ "heroImage": "img/photo-1.jpg",
+ "heroAlt": "Crew aboard a MasterCraft wakeboard boat on the water",
+ "heroPosition": "60% 60%",
+ "heroPositionPhone": "60% 50%",
+ "rating": {
+  "score": "4.9",
+  "count": 29,
+  "url": "https://maps.google.com/?cid=4934179341671354170"
+ },
+ "kicker": "Boat detailing · Hermitage",
+ "headline": "Back on the water<br><em>looking new.</em>",
+ "intro": "Boat service and detailing in Hermitage, inside and out. Your boat goes back on the water running and looking like new.",
+ "mobile": null,
+ "servicesTitle": "Bow to stern.",
+ "servicesIntro": "Detailing, correction and coating for paint, fiberglass and gel coat.",
+ "services": [
+  {
+   "name": "Detailing - Inside and Out",
+   "text": "Your boat cleaned top to bottom, interior and exterior."
+  },
+  {
+   "name": "Gel Coat Repairs",
+   "text": "Damaged gel coat repaired so the finish looks right again."
+  },
+  {
+   "name": "Fiberglass Repairs",
+   "text": "Fiberglass damage fixed and the hull made whole."
+  },
+  {
+   "name": "Winterizations",
+   "text": "Your boat prepared for the cold months."
+  },
+  {
+   "name": "Engine Repairs - Major and Minor",
+   "text": "From small fixes to big jobs, done by trained technicians."
+  }
+ ],
+ "also": [],
+ "alsoTitle": "We also detail",
+ "why": [
+  {
+   "name": "One stop boat shop",
+   "text": "Repairs, detailing, installs and parts under one roof, for all your boating and marine needs."
+  },
+  {
+   "name": "Trained technicians",
+   "text": "Factory trained Mercruiser technician and a trained Indmar Service Center."
+  },
+  {
+   "name": "Quick, reliable service",
+   "text": "The goal is to get you back on the water fast, for recreational and performance boats."
+  }
+ ],
+ "whyTitle": "What we give you that others don't.",
+ "howTitle": "Ready for the water in three steps.",
+ "steps": [
+  {
+   "name": "Tell us about your boat",
+   "text": "Call or send the form with the vessel, the service and a few photos."
+  },
+  {
+   "name": "We set the plan",
+   "text": "One-time detail or a regular wash plan, your choice."
+  },
+  {
+   "name": "Back on the water",
+   "text": "You enjoy your boat. We handle the rest."
+  }
+ ],
+ "contactTitle": "Book your boat in.",
+ "footerLine": "Boat detailing in Hermitage",
+ "reviews": [],
+ "hours": [
+  "Mon–Fri 9:00am – 6:00pm",
+  "Sat 10:00am – 4:00pm",
+  "Sun Closed"
+ ],
+ "galleryTitle": "Fresh from the detail.",
+ "vehicleTypes": [
+  "Boat",
+  "Pontoon",
+  "Yacht",
+  "Jet ski",
+  "Other"
+ ],
+ "modelPlaceholder": "e.g. Sea Ray 240, 24 ft",
+ "notePlaceholder": "Length, where it is docked or stored, what it needs…",
+ "gallery": [],
+ "areas": [
+  "Hermitage"
+ ],
+ "pitch": "photos"
+}

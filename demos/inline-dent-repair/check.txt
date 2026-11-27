@@ -1,0 +1,2 @@
+- Claude's notes: No reviews on site (Google shows 5 from 22). No prices on site. Site mentions body shop, collision and paint in the footer, and a second Converse location, but these were left out of services. Photo 4 is a shop shot, not a bright outdoor one; check hero. Photos 16 and 7/8 are before shots. Site has no mobile service, so mobilePoints is empty. The site copy has odd leftover text (Dentcraft, Elimadent band ads), ignored.
+- No reviews on the site: the page shows the Google rating only.

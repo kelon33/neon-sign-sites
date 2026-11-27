@@ -1,0 +1,8 @@
+- Found by a search in Jacksonville, FL, but their address is in St. Augustine, FL: the site uses that. Check their service area.
+- No logo found: the header shows the name only.
+- No hero photo: Claude found none of their photos usable.
+- Photo pitch: only 0 usable photos by Claude's choice, so no gallery; the email asks them for photos of their work.
+- Claude's notes: No usable photos: photo 1 is a dark texture, photo 3 is a stock-looking black-and-white mechanics shot, so none used. Only one review on site (Denver collision manager). Services JSON had a typo risk, check the Hail Damage price field is empty. Site mentions a Jacksonville shop too and a footer credit to The Dent Slayer. Logo (photo 2) appears to be their own.
+- No photos at all: the hero has no picture. Find photos by hand.
+- Only 0 gallery photos.
+- Hero is a licensed stock photo for the trade (credited on the page, see generator/assets/CREDITS.md), not their work: swap in their own photo once they send one.

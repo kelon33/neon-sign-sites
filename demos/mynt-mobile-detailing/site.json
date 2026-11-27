@@ -1,0 +1,158 @@
+{
+ "kit": "detailing",
+ "trade": "Boat detailing",
+ "name": "Mynt Mobile Detailing",
+ "legalName": "Mynt Mobile Detailing",
+ "preview": true,
+ "placeId": "ChIJN4mNeGO5yIARxzLCMLmva1c",
+ "title": "Mynt Mobile Detailing | Boat detailing in Las Vegas, NV",
+ "description": "Mobile detailing across Las Vegas for cars, trucks, RVs, boats and more. We come to your home or work, and we do not leave until you approve. 4.4 on Google from 391 reviews.",
+ "brand": "#1670ff",
+ "brandHi": "#52c6ff",
+ "accent": "#8fd0ff",
+ "logo": "logo.png",
+ "logoChip": true,
+ "wordmark": {
+  "top": "Mynt",
+  "bottom": "Mobile Detailing"
+ },
+ "phone": "(702) 670-0793",
+ "email": "myntdetailing@gmail.com",
+ "heroImage": null,
+ "heroAlt": "",
+ "heroPosition": "60% 60%",
+ "heroPositionPhone": "60% 50%",
+ "rating": {
+  "score": "4.4",
+  "count": 391,
+  "url": "https://maps.google.com/?cid=6299321713729614535"
+ },
+ "kicker": "Boat detailing · Las Vegas",
+ "headline": "Like the first day,<br><em>every day.</em>",
+ "intro": "Mobile detailing across Las Vegas for cars, trucks, RVs, boats and more. We come to your home or work, and we do not leave until you approve.",
+ "mobile": {
+  "title": "We come to your boat.",
+  "intro": "We bring the detail to you, so your day keeps moving.",
+  "points": [
+   {
+    "name": "At your door",
+    "text": "We serve the entire Las Vegas area, border to border, at your home or work."
+   },
+   {
+    "name": "Open every day",
+    "text": "Monday through Sunday, 7am to 5pm."
+   },
+   {
+    "name": "Easy to book",
+    "text": "Book online in 2-3 clicks, or reach us by phone, text, video call, live chat or email."
+   },
+   {
+    "name": "Approved before we leave",
+    "text": "We stay until each client signs off on the work."
+   }
+  ]
+ },
+ "servicesTitle": "Bow to stern.",
+ "servicesIntro": "Upkeep for like-new boats. Restoration for weathered ones. Protection to keep them that way.",
+ "services": [
+  {
+   "name": "Detailing Packages",
+   "text": "Auto detailing and cleaning packages for sedans, trucks, SUVs, minivans, motorcycles, RVs, boats and more."
+  },
+  {
+   "name": "Ceramic Coating",
+   "text": "Interior, exterior and engine bay coatings in 1, 3, 6 and 10-year applications for a lasting gloss and protection."
+  },
+  {
+   "name": "Paint Correction",
+   "text": "Surface scratches, faded paint, bad clear coat and swirl marks corrected to bring the exterior back to like new."
+  },
+  {
+   "name": "Mobile Paint Repair",
+   "text": "Exterior and interior paint repair done at your home or work."
+  },
+  {
+   "name": "Headlight Restoration",
+   "text": "Haziness and yellowing from oxidation removed to bring headlights back to brand new condition."
+  },
+  {
+   "name": "Engine Bay Detail",
+   "text": "A deep clean, steam clean and detail of the engine bay."
+  }
+ ],
+ "also": [
+  {
+   "name": "Boats & Watercraft"
+  },
+  {
+   "name": "RVs & Campers"
+  },
+  {
+   "name": "Motorcycles"
+  },
+  {
+   "name": "Semi-Trucks"
+  },
+  {
+   "name": "Off Road Vehicles"
+  },
+  {
+   "name": "Limousines"
+  },
+  {
+   "name": "Fleets"
+  }
+ ],
+ "alsoTitle": "We also detail",
+ "why": [
+  {
+   "name": "Licensed, insured and bonded",
+   "text": "If something goes wrong, you are covered."
+  },
+  {
+   "name": "We serve family, not customers",
+   "text": "We build personal relationships and learn what each person needs from a detail."
+  },
+  {
+   "name": "Professional, every time",
+   "text": "We show up, communicate clearly and make up for any mistake."
+  }
+ ],
+ "whyTitle": "What we give you that others don't.",
+ "howTitle": "Back on the water in three steps.",
+ "steps": [
+  {
+   "name": "Call us",
+   "text": "Tell us what your boat needs: scratches, gouges, damage or a full detail."
+  },
+  {
+   "name": "Get an estimate",
+   "text": "We give you an accurate estimate. We work with many area marinas, or you can bring the boat to us."
+  },
+  {
+   "name": "Final check",
+   "text": "We go over the finished work with you before it leaves."
+  }
+ ],
+ "contactTitle": "Book your boat in.",
+ "footerLine": "Boat detailing in Las Vegas",
+ "reviews": [],
+ "hours": [
+  "Monday to Sunday: 7:00am to 5:00pm"
+ ],
+ "galleryTitle": "Fresh off the water.",
+ "vehicleTypes": [
+  "Boat",
+  "Pontoon",
+  "Yacht",
+  "Jet ski",
+  "Other"
+ ],
+ "modelPlaceholder": "e.g. Sea Ray 240, 24 ft",
+ "notePlaceholder": "Length, where it is docked or stored, what it needs…",
+ "gallery": [],
+ "areas": [
+  "Las Vegas"
+ ],
+ "pitch": "photos"
+}

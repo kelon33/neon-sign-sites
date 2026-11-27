@@ -1,0 +1,6 @@
+- Listed as Boat detailing, but their site is about cars: built as mobile car detailing.
+- No logo found: the header shows the name only.
+- Claude's notes: No logo image was visibly provided; check. Phone differs: site shows (702) 820-1587, Google shows (702) 530-6598. Site says 'certified' technicians, not used. Site mentions an 18-year-old owner in a review; not used. Add-on services have no prices. Reviews were light-trimmed only.
+- Dropped 6 reviews: a review widget (trustindex) on https://priorityonedetails.com/.
+- Only 5 gallery photos.
+- No reviews on the site: the page shows the Google rating only.

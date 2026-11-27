@@ -1,0 +1,158 @@
+{
+  "kit": "detailing",
+  "trade": "Mobile detailing",
+  "name": "The Hand Car Wash and Auto Detailing",
+  "legalName": "The Hand Car Wash and Auto Detailing",
+  "preview": true,
+  "placeId": "ChIJMfwFLtBmXIYRXQj1E7BCj2g",
+  "title": "The Hand Car Wash and Auto Detailing | Hand car wash in San Antonio, TX",
+  "description": "Hand washing and auto detailing in San Antonio since 2006. Cars, RVs and boats, done by hand and never run through a tunnel. 4.2 on Google from 408 reviews.",
+  "brand": "#1670ff",
+  "brandHi": "#52c6ff",
+  "accent": "#8fd0ff",
+  "logo": null,
+  "logoChip": false,
+  "wordmark": {
+    "top": "The Hand",
+    "bottom": "Car Wash"
+  },
+  "phone": "(210) 908-2491",
+  "email": "info@thehandcarwash.com",
+  "heroImage": "img/photo-3.jpg",
+  "heroAlt": "Black sports car hood beaded with water after a detail",
+  "heroPosition": "60% 60%",
+  "heroPositionPhone": "60% 50%",
+  "rating": {
+    "score": "4.2",
+    "count": 408,
+    "url": "https://maps.google.com/?cid=7534314025630632029"
+  },
+  "kicker": "Hand car wash · San Antonio",
+  "headline": "Like the first day,<br><em>every day.</em>",
+  "intro": "Hand washing and auto detailing in San Antonio since 2006. Cars, RVs and boats, done by hand and never run through a tunnel.",
+  "mobile": {
+    "title": "We come to your boat.",
+    "intro": "We bring the detail to you, so your day keeps moving.",
+    "points": [
+      {
+        "name": "We come to you",
+        "text": "Mobile detailing brings professional on-site care to your vehicle."
+      },
+      {
+        "name": "No tunnel, ever",
+        "text": "Every wash is done 100% by hand."
+      },
+      {
+        "name": "Inside and out",
+        "text": "Interior detailing, paint protection and ceramic coating are all on the menu."
+      },
+      {
+        "name": "Price confirmed first",
+        "text": "Your final price is confirmed before work begins."
+      }
+    ]
+  },
+  "servicesTitle": "Bow to stern.",
+  "servicesIntro": "Upkeep for like-new boats. Restoration for weathered ones. Protection to keep them that way.",
+  "services": [
+    {
+      "name": "Royal Hand Wash",
+      "text": "A 100% hand wash and hand dry with interior vacuum, windows, wheels and tire dressing.",
+      "price": "$50"
+    },
+    {
+      "name": "Big Kahuna Detail",
+      "text": "A complete interior detail with a premium hand wash, door jambs and windows.",
+      "price": "$239"
+    },
+    {
+      "name": "Big Kahuna Supreme",
+      "text": "Our ultimate detail, adding clay bar treatment, premium hand wax and an engine detail.",
+      "price": "$319"
+    },
+    {
+      "name": "Professional Ceramic Coating System",
+      "text": "Full exterior prep and clay bar, then a ceramic coat for gloss, water beading and UV protection.",
+      "price": "$399"
+    },
+    {
+      "name": "RV & Boat Detailing",
+      "text": "Professional detailing for RVs and boats, as well as cars."
+    },
+    {
+      "name": "Overspray Removal",
+      "text": "Overspray taken off your vehicle's finish."
+    }
+  ],
+  "also": [
+    {
+      "name": "RVs"
+    },
+    {
+      "name": "Fleets"
+    },
+    {
+      "name": "Dealerships"
+    },
+    {
+      "name": "Commercial vehicles"
+    },
+    {
+      "name": "Trucks and vans"
+    }
+  ],
+  "alsoTitle": "We also detail",
+  "why": [
+    {
+      "name": "100% hand washed",
+      "text": "Never a tunnel wash. Every vehicle is washed and dried by hand."
+    },
+    {
+      "name": "Family-owned since 2006",
+      "text": "Locally operated by an experienced San Antonio team for 20 years."
+    },
+    {
+      "name": "Straight pricing",
+      "text": "Starting prices are posted, and your final price is confirmed before work begins."
+    }
+  ],
+  "whyTitle": "Why boat owners call us.",
+  "howTitle": "Back on the water in three steps.",
+  "steps": [
+    {
+      "name": "Call us",
+      "text": "Tell us what your boat needs: scratches, gouges, damage or a full detail."
+    },
+    {
+      "name": "Get an estimate",
+      "text": "We give you an accurate estimate. We work with many area marinas, or you can bring the boat to us."
+    },
+    {
+      "name": "Final check",
+      "text": "We go over the finished work with you before it leaves."
+    }
+  ],
+  "contactTitle": "Get your free quote.",
+  "footerLine": "Hand car wash in San Antonio",
+  "reviews": [],
+  "hours": [
+    "Monday–Friday: 8:30 AM–4:30 PM",
+    "Saturday: 8:00 AM–4:00 PM",
+    "Sunday: Closed"
+  ],
+  "galleryTitle": "Fresh off the water.",
+  "vehicleTypes": [
+    "Boat",
+    "Pontoon",
+    "Yacht",
+    "Jet ski",
+    "Other"
+  ],
+  "modelPlaceholder": "e.g. Sea Ray 240, 24 ft",
+  "notePlaceholder": "Length, where it is docked or stored, what it needs…",
+  "gallery": [],
+  "areas": [
+    "San Antonio"
+  ],
+  "pitch": "photos"
+}

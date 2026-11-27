@@ -1,0 +1,88 @@
+{
+ "kit": "detailing",
+ "trade": "Boat detailing",
+ "name": "Sin City Mobile Detailing",
+ "legalName": "Sin City Mobile Detailing",
+ "preview": true,
+ "placeId": "ChIJFWagUuzQyIARkxjRkZNJjRg",
+ "title": "Sin City Mobile Detailing | Boat detailing in Henderson, NV",
+ "description": "Mobile detailing in Henderson, NV, rated 4.9 from 380 Google reviews. Boats, cars and other vehicles, cleaned and finished by hand. 4.9 on Google from 380 reviews.",
+ "brand": "#1670ff",
+ "brandHi": "#52c6ff",
+ "accent": "#8fd0ff",
+ "logo": null,
+ "logoChip": false,
+ "wordmark": {
+  "top": "Sin City",
+  "bottom": "Mobile Detailing"
+ },
+ "phone": "(702) 530-5743",
+ "email": "chenowith52@gmail.com",
+ "heroImage": null,
+ "heroAlt": "",
+ "heroPosition": "60% 60%",
+ "heroPositionPhone": "60% 50%",
+ "rating": {
+  "score": "4.9",
+  "count": 380,
+  "url": "https://maps.google.com/?cid=1769151126781892755"
+ },
+ "kicker": "Boat detailing · Henderson",
+ "headline": "Back on the water<br><em>looking new.</em>",
+ "intro": "Mobile detailing in Henderson, NV, rated 4.9 from 380 Google reviews. Boats, cars and other vehicles, cleaned and finished by hand.",
+ "mobile": null,
+ "servicesTitle": "Bow to stern.",
+ "servicesIntro": "One-time details, regular programs and long-lasting protection.",
+ "services": [
+  {
+   "name": "Boat detailing",
+   "text": "Boats cleaned, polished and protected so they look their best on the water."
+  },
+  {
+   "name": "Car detailing",
+   "text": "Cars cleaned inside and out by hand."
+  },
+  {
+   "name": "Mobile service",
+   "text": "Based in Henderson, NV. Call (702) 530-5743 to book."
+  }
+ ],
+ "also": [],
+ "alsoTitle": "We also detail",
+ "why": [],
+ "whyTitle": "What we give you that others don't.",
+ "howTitle": "Ready for the water in three steps.",
+ "steps": [
+  {
+   "name": "Tell us about your boat",
+   "text": "Call or send the form with what it needs."
+  },
+  {
+   "name": "We come to you",
+   "text": "Mobile service, based in Henderson."
+  },
+  {
+   "name": "Back on the water",
+   "text": "Clean, polished and protected."
+  }
+ ],
+ "contactTitle": "Book your boat in.",
+ "footerLine": "Boat detailing in Henderson",
+ "reviews": [],
+ "hours": [],
+ "galleryTitle": "Fresh off the water.",
+ "vehicleTypes": [
+  "Boat",
+  "Pontoon",
+  "Yacht",
+  "Jet ski",
+  "Other"
+ ],
+ "modelPlaceholder": "e.g. Sea Ray 240, 24 ft",
+ "notePlaceholder": "Length, where it is docked or stored, what it needs…",
+ "gallery": [],
+ "areas": [
+  "Henderson"
+ ],
+ "pitch": "photos"
+}

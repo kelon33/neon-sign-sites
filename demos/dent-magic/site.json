@@ -1,0 +1,98 @@
+{
+ "kit": "detailing",
+ "trade": "Paintless dent repair",
+ "name": "Dent Magic",
+ "legalName": "Dent Magic",
+ "preview": true,
+ "placeId": "ChIJb_eT12mHXIYRu7IaYqnMQCU",
+ "title": "Dent Magic | Paintless dent repair in Bulverde, TX",
+ "description": "Paintless dent repair in Bulverde. Small dents come out without touching the paint, and insurance approves the method. 4.2 on Google from 5 reviews.",
+ "brand": "#1670ff",
+ "brandHi": "#52c6ff",
+ "accent": "#8fd0ff",
+ "logo": null,
+ "logoChip": false,
+ "wordmark": {
+  "top": "Dent",
+  "bottom": "Magic"
+ },
+ "phone": "(830) 714-5664",
+ "email": "amei.bulverde@yahoo.com",
+ "heroImage": null,
+ "heroAlt": "",
+ "heroPosition": "60% 60%",
+ "heroPositionPhone": "60% 50%",
+ "rating": {
+  "score": "4.2",
+  "count": 5,
+  "url": "https://maps.google.com/?cid=2684370405780271803"
+ },
+ "kicker": "Paintless dent repair · Bulverde",
+ "headline": "Hail damage gone.<br><em>Factory paint stays.</em>",
+ "intro": "Paintless dent repair in Bulverde. Small dents come out without touching the paint, and insurance approves the method.",
+ "mobile": null,
+ "servicesTitle": "Every kind of dent.",
+ "servicesIntro": "Hail damage, everyday dents, and protective film, handled with the same hands-on care.",
+ "services": [
+  {
+   "name": "Paintless dent repair",
+   "text": "A proven method that removes small dents without affecting the paint, worked slowly by a skilled tech."
+  },
+  {
+   "name": "Auto body repair and paint",
+   "text": "Repairs for all types of collision damage, and all insurance companies are welcome."
+  },
+  {
+   "name": "Auto glass",
+   "text": "Windshield chip repair, or a full windshield replacement when the chip is larger than a quarter."
+  },
+  {
+   "name": "Door glass and regulator replacement",
+   "text": "Door glass and regulators replaced, with appointments by phone."
+  }
+ ],
+ "also": [],
+ "alsoTitle": "We also fix",
+ "why": [
+  {
+   "name": "A proven method",
+   "text": "Paintless dent repair dates back to the late 1980s and removes small dents without affecting the paint."
+  },
+  {
+   "name": "Quicker and less expensive",
+   "text": "Insurance approves PDR. It is quicker and costs less than traditional repairs."
+  },
+  {
+   "name": "Skilled hands",
+   "text": "It takes an experienced tech to remove dents. Like an artist, it takes time."
+  }
+ ],
+ "whyTitle": "The Dent Magic difference.",
+ "howTitle": "Dent-free in three steps.",
+ "steps": [
+  {
+   "name": "Send the details",
+   "text": "Call, or use the form with your year, make, model and photos of the damage."
+  },
+  {
+   "name": "Get an evaluation",
+   "text": "Bring the vehicle in and we look at the hail damage, dings or film options."
+  },
+  {
+   "name": "Drive it smooth",
+   "text": "We work the dents out and hand the vehicle back."
+  }
+ ],
+ "contactTitle": "Got a dent?",
+ "footerLine": "Paintless dent repair in Bulverde",
+ "reviews": [],
+ "hours": [],
+ "galleryTitle": "Dents gone, paint untouched.",
+ "notePlaceholder": "Where the dent is, how big, hail or a door ding…",
+ "ctaLabel": "Get an estimate",
+ "gallery": [],
+ "areas": [
+  "Bulverde"
+ ],
+ "pitch": "photos"
+}

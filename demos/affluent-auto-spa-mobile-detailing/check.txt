@@ -1,0 +1,9 @@
+- Listed as Boat detailing, but their site is about cars: built as mobile car detailing.
+- Dropped (not backed by their site): hours: Monday - Friday: 8:00 am - 6:00 pm
+- Dropped (not backed by their site): hours: Saturday: 8:00 am - 11:30 am (by appointment exception only)
+- Photo pitch: only 1 usable photo by Claude's choice, so no gallery; the email asks them for photos of their work.
+- Logo dropped: Claude saw it is not theirs (a badge, a client's or their web designer's). The header shows the name only.
+- Claude's notes: No finished-vehicle photos on site; hero is the branded van with a team member. Photo 9 is an AI-style graphic with car brand logos, left out. Logo image is a brand-badge strip (BMW, Ferrari etc.), not their logo. Site text says luxury and exotic focus. Prices left blank; $97 consultation fee is waived. Draft services replaced with the site's own services. Reviews: only 3 on site. Check that the service-card list contains no typo; prices are empty.
+- Dropped 3 reviews: a review widget (wprev) on https://affluentautospa.com/.
+- Only 0 gallery photos.
+- No reviews on the site: the page shows the Google rating only.

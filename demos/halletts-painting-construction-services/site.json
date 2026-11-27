@@ -1,0 +1,154 @@
+{
+ "kit": "painting",
+ "trade": "House painting",
+ "name": "Hallett's Painting & Construction Services",
+ "legalName": "Hallett's Painting & Construction Services",
+ "preview": true,
+ "placeId": "ChIJla80XHBM5IgRFez9EGtnTW4",
+ "title": "Hallett's Painting & Construction Services | House painting in Jacksonville, FL",
+ "description": "Interior and exterior painting for Jacksonville homes and commercial properties. One team handles the prep, the paint and the repairs. 5.0 on Google from 25 reviews.",
+ "logo": "logo.png",
+ "logoChip": true,
+ "wordmark": {
+  "top": "Hallett's",
+  "bottom": "Painting & Construction"
+ },
+ "phone": "(904) 651-7061",
+ "email": "hallettsremodeling1@gmail.com",
+ "heroImage": "img/photo-2.jpg",
+ "heroAlt": "Stucco home with tile roof and paver driveway under a rainbow",
+ "heroPosition": "60% 60%",
+ "heroPositionPhone": "60% 50%",
+ "rating": {
+  "score": "5.0",
+  "count": 25,
+  "url": "https://maps.google.com/?cid=7948122626923031573"
+ },
+ "kicker": "House painting · Jacksonville",
+ "headline": "We don't sell paint.<br><em>We sell transformation.</em>",
+ "intro": "Interior and exterior painting for Jacksonville homes and commercial properties. One team handles the prep, the paint and the repairs.",
+ "badges": [
+  "Free estimates",
+  "Family owned",
+  "Veteran owned",
+  "Homes and businesses"
+ ],
+ "highlights": null,
+ "servicesTitle": "Inside and out.",
+ "servicesIntro": "One room or the whole house. Every estimate is free and flat.",
+ "services": [
+  {
+   "name": "Interior Painting",
+   "text": "Walls, ceilings, trim and doors, with a smooth, clean finish and the work area protected."
+  },
+  {
+   "name": "Exterior Painting",
+   "text": "Stucco, siding, trim, doors and garage doors, prepped to hold up in Florida heat, rain and sun."
+  },
+  {
+   "name": "Staining and Refinishing",
+   "text": "Wood features, doors, staircases and cabinets restored where the old finish has worn."
+  },
+  {
+   "name": "Cabinet Painting and Detail Work",
+   "text": "Cabinet painting, touch-ups and patching that refresh a space without a full remodel."
+  },
+  {
+   "name": "Commercial Building Painting",
+   "text": "Offices, restaurants and retail centers painted on a schedule that limits disruption."
+  },
+  {
+   "name": "Pressure Washing and Waterproofing",
+   "text": "Exterior prep and protection, including block sealing, ahead of paint."
+  }
+ ],
+ "also": [
+  {
+   "name": "Restaurants"
+  },
+  {
+   "name": "Offices"
+  },
+  {
+   "name": "Retail spaces"
+  },
+  {
+   "name": "HOAs and apartment communities"
+  },
+  {
+   "name": "Drywall"
+  },
+  {
+   "name": "Kitchen and bathroom remodeling"
+  },
+  {
+   "name": "Emergency repairs"
+  }
+ ],
+ "alsoTitle": "We also do:",
+ "promise": null,
+ "why": [
+  {
+   "name": "Owners on every job",
+   "text": "You deal directly with company leaders from estimate to final walkthrough, not a subcontractor chain."
+  },
+  {
+   "name": "Free estimates, warranted work",
+   "text": "Transparent pricing, free estimates and fully warranted workmanship."
+  },
+  {
+   "name": "Clean job sites",
+   "text": "Strict cleanliness and respect for your home or business."
+  }
+ ],
+ "whyTitle": "Why Hallett's Painting & Construction Services.",
+ "howTitle": "A fresh coat in three steps.",
+ "steps": [
+  {
+   "name": "Call for a free estimate",
+   "text": "We look at the work, ask questions and give you a flat price."
+  },
+  {
+   "name": "We prep and paint",
+   "text": "We mask, scrape, caulk and prime, then paint. We buy all the supplies."
+  },
+  {
+   "name": "Pay when it is done",
+   "text": "On most jobs, you pay nothing until everything is completely finished."
+  }
+ ],
+ "contactTitle": "Ready for a fresh coat?",
+ "footerLine": "House painting in Jacksonville",
+ "reviews": [],
+ "hours": [],
+ "galleryTitle": "Homes we’ve painted.",
+ "notePlaceholder": "Inside or outside, how many rooms, a date you have in mind…",
+ "areas": [
+  "Jacksonville",
+  "Carpentry"
+ ],
+ "gallery": [
+  {
+   "src": "img/photo-3.jpg",
+   "alt": "Gray-green sided house with covered porch and green lawn",
+   "size": "big"
+  },
+  {
+   "src": "img/photo-5.jpg",
+   "alt": "Freshly painted restaurant exterior with scaffolding"
+  },
+  {
+   "src": "img/photo-7.jpg",
+   "alt": "Brick home with white porch railing and painted front door"
+  },
+  {
+   "src": "img/photo-6.jpg",
+   "alt": "Covered patio with stained wood ceiling and a worker"
+  },
+  {
+   "src": "img/photo-1.jpg",
+   "alt": "Restaurant exterior with stone entry and landscaping"
+  }
+ ],
+ "pitch": "site"
+}

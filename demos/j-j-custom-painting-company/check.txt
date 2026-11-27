@@ -1,0 +1,4 @@
+- Logo is dark on a transparent background: shown on a white chip. Check it reads well.
+- Claude's notes: Photos 4 and 7 look like stock and were left out. Photo 15 is a flyer and was left out. Photos 1 and 8 show Optum Care signage and photo 2 shows Southwest Medical signage on client buildings; check they are fine to show. Site says Sherwin Williams and Dunn Edwards are suppliers; not used. Draft badges said free estimates and homes and businesses, both supported. Site says 33 reviews, Google says 35.
+- Dropped 4 reviews: a review widget (trustindex) on https://www.j-jcustompainting.com/.
+- No reviews on the site: the page shows the Google rating only.

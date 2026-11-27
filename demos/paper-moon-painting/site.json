@@ -1,0 +1,153 @@
+{
+ "kit": "painting",
+ "trade": "House painting",
+ "name": "Paper Moon Painting",
+ "legalName": "Paper Moon Painting",
+ "preview": true,
+ "placeId": "ChIJq6qqqnpfXIYRytif93AMgOc",
+ "title": "Paper Moon Painting | House painting in San Antonio, TX",
+ "description": "Interior, exterior and cabinet painting across San Antonio, with careful prep and a free estimate. One team handles it from the first walkthrough to the last. 4.9 on Google from 271 reviews.",
+ "logo": "logo.png",
+ "logoChip": false,
+ "wordmark": {
+  "top": "Paper Moon",
+  "bottom": "Painting"
+ },
+ "phone": "(210) 620-7066",
+ "email": "team@papermoonpainting.com",
+ "heroImage": "img/photo-23.jpg",
+ "heroAlt": "White stucco home with a black front door and a clean green lawn",
+ "heroPosition": "60% 60%",
+ "heroPositionPhone": "60% 50%",
+ "rating": {
+  "score": "4.9",
+  "count": 271,
+  "url": "https://maps.google.com/?cid=16681346699110635722"
+ },
+ "kicker": "House painting · San Antonio",
+ "headline": "Clean walls.<br><em>Family-built finish.</em>",
+ "intro": "Interior, exterior and cabinet painting across San Antonio, with careful prep and a free estimate. One team handles it from the first walkthrough to the last.",
+ "badges": [
+  "Homes and businesses"
+ ],
+ "highlights": null,
+ "servicesTitle": "From the studs to the final coat.",
+ "servicesIntro": "One room or the whole house.",
+ "services": [
+  {
+   "name": "Interior Painting",
+   "text": "Walls, ceilings, doors, trim, baseboards and crown molding, from one room to the whole house."
+  },
+  {
+   "name": "Exterior Painting",
+   "text": "Whole-home repaints, siding, stucco, masonry, doors, shutters and trim, prepped for the Texas sun."
+  },
+  {
+   "name": "Cabinet Painting & Refinishing",
+   "text": "Sprayed lacquer gives kitchen and bath cabinets a smooth, furniture-quality finish."
+  },
+  {
+   "name": "Specialty Finishes",
+   "text": "Limewash, lime plaster, Roman clay and Venetian plaster, applied by hand."
+  },
+  {
+   "name": "Color Consulting",
+   "text": "Trained color consultants help you pick colors that suit your light, furnishings and style."
+  }
+ ],
+ "also": [
+  {
+   "name": "Sheetrock repairs"
+  },
+  {
+   "name": "Texture matching"
+  },
+  {
+   "name": "Free annual touch-up on eligible interior work"
+  },
+  {
+   "name": "Homes and businesses"
+  }
+ ],
+ "alsoTitle": "We also do:",
+ "promise": null,
+ "why": [
+  {
+   "name": "Our own painters",
+   "text": "Your crew is part of the Paper Moon team, not outside subcontractors."
+  },
+  {
+   "name": "Prep comes first",
+   "text": "Careful surface preparation comes before any paint goes on."
+  },
+  {
+   "name": "Free yearly touch-up",
+   "text": "We return once a year for a complimentary one-hour touch-up on eligible interior work."
+  }
+ ],
+ "whyTitle": "Why San Antonio homeowners choose us.",
+ "howTitle": "How a project works.",
+ "steps": [
+  {
+   "name": "Free estimate",
+   "text": "We evaluate your property, talk through colors and timing, and give you a detailed quote."
+  },
+  {
+   "name": "Prep and protect",
+   "text": "We sand, patch, prime and cover every surface before any paint goes on."
+  },
+  {
+   "name": "Paint and walk through",
+   "text": "We apply each coat with care, then inspect every detail with you."
+  }
+ ],
+ "contactTitle": "Ready for a fresh coat?",
+ "footerLine": "House painting in San Antonio",
+ "reviews": [],
+ "hours": [],
+ "galleryTitle": "Homes we’ve painted.",
+ "notePlaceholder": "Inside or outside, how many rooms, a date you have in mind…",
+ "gallery": [
+  {
+   "src": "img/photo-7.jpg",
+   "alt": "Painted white stucco home with a tile roof and arched entry",
+   "size": "big"
+  },
+  {
+   "src": "img/photo-22.jpg",
+   "alt": "Cream board-and-batten house with a front porch"
+  },
+  {
+   "src": "img/photo-24.jpg",
+   "alt": "Brick entry with white painted trim and a black front door"
+  },
+  {
+   "src": "img/photo-4.jpg",
+   "alt": "Kitchen with black and white painted cabinets and an island"
+  },
+  {
+   "src": "img/photo-3.jpg",
+   "alt": "White painted kitchen with a brass range hood"
+  },
+  {
+   "src": "img/photo-6.jpg",
+   "alt": "Bright kitchen with painted glass-front cabinets"
+  },
+  {
+   "src": "img/photo-15.jpg",
+   "alt": "Sunlit kitchen with tall ceilings and painted cabinets"
+  },
+  {
+   "src": "img/photo-18.jpg",
+   "alt": "Home bar with deep blue painted paneling"
+  },
+  {
+   "src": "img/photo-20.jpg",
+   "alt": "Blue-gray painted mudroom with built-in cubbies"
+  }
+ ],
+ "areas": [
+  "San Antonio"
+ ],
+ "pitch": "site"
+}

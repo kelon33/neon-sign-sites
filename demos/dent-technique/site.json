@@ -1,0 +1,146 @@
+{
+ "kit": "detailing",
+ "trade": "Paintless dent repair",
+ "name": "Dent Technique",
+ "legalName": "Dent Technique",
+ "preview": true,
+ "placeId": "ChIJd5qXuuTI2IcRa26NiEUXbNo",
+ "title": "Dent Technique | Paintless dent repair in Jacksonville, FL",
+ "description": "Paintless dent repair in Jacksonville, from a single ding to a hail storm. Locally owned, licensed and insured, and we work directly with all insurance companies. 5.0 on Google from 275 reviews.",
+ "brand": "#1670ff",
+ "brandHi": "#52c6ff",
+ "accent": "#8fd0ff",
+ "logo": "logo.png",
+ "logoChip": false,
+ "wordmark": {
+  "top": "Dent",
+  "bottom": "Technique"
+ },
+ "phone": "(904) 705-3464",
+ "email": "info@jaxdentremoval.com",
+ "heroImage": "img/photo-14.jpg",
+ "heroAlt": "Front of a white BMW M3 with a glossy finish",
+ "heroPosition": "60% 60%",
+ "heroPositionPhone": "60% 50%",
+ "rating": {
+  "score": "5.0",
+  "count": 275,
+  "url": "https://maps.google.com/?cid=15738980385164193387"
+ },
+ "kicker": "Paintless dent repair · Jacksonville",
+ "headline": "Hail damage gone.<br><em>Factory paint stays.</em>",
+ "intro": "Paintless dent repair in Jacksonville, from a single ding to a hail storm. Locally owned, licensed and insured, and we work directly with all insurance companies.",
+ "mobile": null,
+ "servicesTitle": "Every kind of dent.",
+ "servicesIntro": "From a single door ding to a full hail storm.",
+ "services": [
+  {
+   "name": "Paintless Dent Removal",
+   "text": "Minor to major dent removal for enthusiasts, dealerships and anyone who wants a vehicle looking pristine."
+  },
+  {
+   "name": "Hail Damage Repair",
+   "text": "Hail damage repaired and the vehicle brought back up to value without the need for a body shop."
+  },
+  {
+   "name": "Paint Protection Film",
+   "text": "Clear bra installation on all vehicles, using 3M Scotchgard Paint Protection Film."
+  },
+  {
+   "name": "Fleet and Dealership Services",
+   "text": "Dent repair for dealerships, service departments and body shops, with an accurate estimate up front."
+  }
+ ],
+ "also": [
+  {
+   "name": "Motorcycle gas tanks and fenders"
+  },
+  {
+   "name": "Dealerships"
+  },
+  {
+   "name": "Body shops"
+  },
+  {
+   "name": "Hail catastrophe support"
+  }
+ ],
+ "alsoTitle": "We also fix",
+ "why": [
+  {
+   "name": "Locally owned and operated",
+   "text": "A Jacksonville shop that supports the small businesses around it."
+  },
+  {
+   "name": "Licensed and insured",
+   "text": "PDR Nation certified, and we work directly with all insurance companies."
+  },
+  {
+   "name": "We guarantee our work",
+   "text": "100% guarantee on our work, plus a lifetime limited warranty."
+  }
+ ],
+ "whyTitle": "The Dent Technique difference.",
+ "howTitle": "Back to like new, step by step.",
+ "steps": [
+  {
+   "name": "Call or text",
+   "text": "Tell us about the damage. We explain the process and set up your rental car."
+  },
+  {
+   "name": "We handle the details",
+   "text": "We help with your insurance claim and can pick up your vehicle."
+  },
+  {
+   "name": "Drive it home",
+   "text": "We repair the damage, give it a mini-detail and deliver it back."
+  }
+ ],
+ "contactTitle": "Got hail damage?",
+ "footerLine": "Paintless dent repair in Jacksonville",
+ "reviews": [],
+ "hours": [],
+ "galleryTitle": "Dents gone, paint untouched.",
+ "notePlaceholder": "Where the dent is, how big, hail or a door ding…",
+ "ctaLabel": "Get an estimate",
+ "gallery": [
+  {
+   "src": "img/photo-12.jpg",
+   "alt": "Blue Tesla hood with a deep, clean shine",
+   "size": "big"
+  },
+  {
+   "src": "img/photo-13.jpg",
+   "alt": "White BMW M3 hood and fender in the shop"
+  },
+  {
+   "src": "img/photo-7.jpg",
+   "alt": "White Lexus hood after dent removal"
+  },
+  {
+   "src": "img/photo-6.jpg",
+   "alt": "Gray Mercedes liftgate after dent repair"
+  },
+  {
+   "src": "img/photo-16.jpg",
+   "alt": "Red car door after dent repair",
+   "size": "tall"
+  },
+  {
+   "src": "img/photo-9.jpg",
+   "alt": "Silver truck rear quarter panel after dent repair"
+  },
+  {
+   "src": "img/photo-15.jpg",
+   "alt": "Red car door with reflections showing the dent being worked"
+  },
+  {
+   "src": "img/photo-3.jpg",
+   "alt": "Technician working at a red Tesla in the shop"
+  }
+ ],
+ "areas": [
+  "Jacksonville"
+ ],
+ "pitch": "site"
+}

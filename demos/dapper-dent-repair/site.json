@@ -1,0 +1,100 @@
+{
+ "kit": "detailing",
+ "trade": "Paintless dent repair",
+ "name": "Dapper Dent Repair",
+ "legalName": "Dapper Dent Repair",
+ "preview": true,
+ "placeId": "ChIJKzUIBRmjZIgRevPgT8bm7LI",
+ "title": "Dapper Dent Repair | Paintless dent repair in Dickson, TN",
+ "description": "Paintless dent repair, hail damage, ceramic coating and wheel repair in Dickson. Dents come out from behind the panel, so your factory finish stays. 5.0 on Google from 269 reviews.",
+ "brand": "#1670ff",
+ "brandHi": "#52c6ff",
+ "accent": "#8fd0ff",
+ "logo": null,
+ "logoChip": false,
+ "wordmark": {
+  "top": "Dapper",
+  "bottom": "Dent Repair"
+ },
+ "phone": "(615) 682-0066",
+ "email": "dapperdentrepair@gmail.com\\",
+ "heroImage": "img/photo-11.jpg",
+ "heroAlt": "Technician inspecting a red Ferrari in the shop",
+ "heroPosition": "60% 60%",
+ "heroPositionPhone": "60% 50%",
+ "rating": {
+  "score": "5.0",
+  "count": 269,
+  "url": "https://maps.google.com/?cid=12892933572672942970"
+ },
+ "kicker": "Paintless dent repair · Dickson",
+ "headline": "Hail damage gone.<br><em>Hassle gone too.</em>",
+ "intro": "Paintless dent repair, hail damage, ceramic coating and wheel repair in Dickson. Dents come out from behind the panel, so your factory finish stays.",
+ "mobile": null,
+ "servicesTitle": "Every kind of dent.",
+ "servicesIntro": "From a single door ding to hail damage.",
+ "services": [
+  {
+   "name": "Paintless Dent Repair",
+   "text": "Specialized tools reshape the metal from the inside, so dings and small to medium dents go away without repainting."
+  },
+  {
+   "name": "Hail Damage Repair",
+   "text": "Hail dents removed with PDR, with an accurate estimate up front and direct work with your insurance company."
+  },
+  {
+   "name": "Ceramic Coating",
+   "text": "A protective coating that helps keep your car clean and guards it against dirt, sun and time."
+  },
+  {
+   "name": "Wheel Repair",
+   "text": "Scuffs erased from your wheels, plus custom color changes."
+  }
+ ],
+ "also": [],
+ "alsoTitle": "We also fix",
+ "why": [
+  {
+   "name": "Voted the best",
+   "text": "Three-time consecutive winner of the Best Auto Service Award in Dickson County, and 2023 Middle Tennessee's Best Auto Service Center."
+  },
+  {
+   "name": "Over two decades of experience",
+   "text": "Hands-on experience in paintless dent repair, ceramic coating and wheel repair."
+  },
+  {
+   "name": "Insurance handled",
+   "text": "We work directly with your insurance company on hail damage repair."
+  }
+ ],
+ "whyTitle": "The Dapper Dent Repair difference.",
+ "howTitle": "Back to like new in three steps.",
+ "steps": [
+  {
+   "name": "Schedule a free inspection",
+   "text": "Call, text or visit our shop."
+  },
+  {
+   "name": "We handle insurance",
+   "text": "We take care of the claim so you don't have to."
+  },
+  {
+   "name": "Drive away satisfied",
+   "text": "We repair the damage with paintless dent repair and you drive off happy."
+  }
+ ],
+ "contactTitle": "Got a dent?",
+ "footerLine": "Paintless dent repair in Dickson",
+ "reviews": [],
+ "hours": [
+  "Monday – Friday: 8:00am – 5:00pm"
+ ],
+ "galleryTitle": "Dents gone, paint untouched.",
+ "notePlaceholder": "Where the dent is, how big, hail or a door ding…",
+ "ctaLabel": "Get an estimate",
+ "gallery": [],
+ "areas": [
+  "Dickson"
+ ],
+ "pitch": "photos"
+}

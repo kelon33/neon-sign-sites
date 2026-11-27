@@ -1,0 +1,9 @@
+- No logo found: the header shows the name only.
+- No hero photo: Claude found none of their photos usable.
+- Photo pitch: only 0 usable photos by Claude's choice, so no gallery; the email asks them for photos of their work.
+- Claude's notes: Only photo is a text graphic/flyer, so no photos used. Site phone is 904-664-9088 but the given phone is (904) 664-1170; verify. Draft steps mention a free loaner car and master certified technicians, which the site text does not state; check. Reviewer names are 'Verified Google Customer'. Site claims luxury specialty, so the draft headline about hail may need review.
+- Dropped 5 reviews: reviews labelled "Google review" on https://appearance1stautomotive.com/.
+- No photos at all: the hero has no picture. Find photos by hand.
+- Only 0 gallery photos.
+- No reviews on the site: the page shows the Google rating only.
+- Hero is a licensed stock photo for the trade (credited on the page, see generator/assets/CREDITS.md), not their work: swap in their own photo once they send one.

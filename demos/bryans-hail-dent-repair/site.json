@@ -1,0 +1,98 @@
+{
+ "kit": "detailing",
+ "trade": "Paintless dent repair",
+ "name": "Bryan's Hail & Dent Repair",
+ "legalName": "Bryan's Hail & Dent Repair",
+ "preview": true,
+ "placeId": "ChIJuy54V0WVXIYRXo9GFwZyt3k",
+ "title": "Bryan's Hail & Dent Repair | Paintless dent repair in Spring Branch, TX",
+ "description": "Paintless dent repair from a small, family-owned Spring Branch shop. Bryan Lovato fixes your car's sheet metal by hand and keeps the factory finish. 5.0 on Google from 248 reviews.",
+ "brand": "#1670ff",
+ "brandHi": "#52c6ff",
+ "accent": "#8fd0ff",
+ "logo": null,
+ "logoChip": false,
+ "wordmark": {
+  "top": "Bryan's",
+  "bottom": "Hail & Dent Repair"
+ },
+ "phone": "(210) 275-9085",
+ "email": "brydentding@gmail.com",
+ "heroImage": "img/photo-5.jpg",
+ "heroAlt": "Technician working on a dent in the fender of a black car under a reflection board",
+ "heroPosition": "60% 60%",
+ "heroPositionPhone": "60% 50%",
+ "rating": {
+  "score": "5.0",
+  "count": 248,
+  "url": "https://maps.google.com/?cid=8770604169813200734"
+ },
+ "kicker": "Paintless dent repair · Spring Branch",
+ "headline": "Hail damage gone.<br><em>Hassle gone too.</em>",
+ "intro": "Paintless dent repair from a small, family-owned Spring Branch shop. Bryan Lovato fixes your car's sheet metal by hand and keeps the factory finish.",
+ "mobile": null,
+ "servicesTitle": "Every kind of dent.",
+ "servicesIntro": "From a single door ding to hail damage.",
+ "services": [
+  {
+   "name": "Paintless Dent Repair",
+   "text": "A professionally trained technician repairs dents and dings in your car's sheet metal without paintwork."
+  },
+  {
+   "name": "Hail Repair",
+   "text": "Hail damage repaired at the Spring Branch shop, and Bryan works with all insurances."
+  },
+  {
+   "name": "Deer Collisions",
+   "text": "Minor paintless collision repair done at the shop."
+  },
+  {
+   "name": "Free Estimates",
+   "text": "Estimates on dents and dings are complimentary with no obligation. Hail and insurance estimates are excluded."
+  }
+ ],
+ "also": [],
+ "alsoTitle": "We also fix",
+ "why": [
+  {
+   "name": "No paintwork",
+   "text": "Damage is repaired without paintwork, so the factory OEM finish stays."
+  },
+  {
+   "name": "Faster turnaround",
+   "text": "Quicker than a conventional body shop."
+  },
+  {
+   "name": "You know who you're hiring",
+   "text": "Bryan is the owner and the repair technician. His name is on the business so you have a direct line to the person doing the work."
+  }
+ ],
+ "whyTitle": "The Bryan's Hail & Dent Repair difference.",
+ "howTitle": "Back to like new in three steps.",
+ "steps": [
+  {
+   "name": "Call or text",
+   "text": "Tell us about the damage. We explain the process and set up your rental car."
+  },
+  {
+   "name": "We handle the details",
+   "text": "We help with your insurance claim and can pick up your vehicle."
+  },
+  {
+   "name": "Drive it home",
+   "text": "We repair the damage, give it a mini-detail and deliver it back."
+  }
+ ],
+ "contactTitle": "Got a dent?",
+ "footerLine": "Paintless dent repair in Spring Branch",
+ "reviews": [],
+ "hours": [],
+ "galleryTitle": "Dents gone, paint untouched.",
+ "notePlaceholder": "Where the dent is, how big, hail or a door ding…",
+ "ctaLabel": "Get an estimate",
+ "gallery": [],
+ "areas": [
+  "Spring Branch"
+ ],
+ "pitch": "photos"
+}

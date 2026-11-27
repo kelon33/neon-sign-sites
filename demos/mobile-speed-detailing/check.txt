@@ -1,0 +1,9 @@
+- Details cars and boats (found by a boat search): the AI was told to show all their work.
+- No hero photo: Claude found none of their photos usable.
+- Photo pitch: only 0 usable photos by Claude's choice, so no gallery; the email asks them for photos of their work.
+- Logo dropped: Claude saw it is not theirs (a badge, a client's or their web designer's). The header shows the name only.
+- Claude's notes: Site text had only link labels (Google, Email, Call/Text, Yelp), so no facts, reviews, hours or prices were available. Services are carried over from the draft and should be checked. Photo 1 is a Las Vegas Strip night skyline, not their work, so it is left out. The logo image is the Instagram logo, not the business's own. No usable photos. Mobile service was not confirmed by the site, so mobilePoints is empty.
+- No photos at all: the hero has no picture. Find photos by hand.
+- Only 0 gallery photos.
+- No reviews on the site: the page shows the Google rating only.
+- Hero is a licensed stock photo for the trade (credited on the page, see generator/assets/CREDITS.md), not their work: swap in their own photo once they send one.

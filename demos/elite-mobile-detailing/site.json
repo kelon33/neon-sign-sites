@@ -1,0 +1,150 @@
+{
+ "kit": "detailing",
+ "trade": "Mobile car detailing",
+ "name": "Elite Mobile Detailing",
+ "legalName": "Elite Mobile Detailing",
+ "preview": true,
+ "placeId": "ChIJOQJoHd5nZIgR1F_wKy7lRxM",
+ "title": "Elite Mobile Detailing | Mobile car detailing in Nashville, TN",
+ "description": "A professional detail at a personal price, and we come to you. Serving Nashville since 2005. 5.0 on Google from 35 reviews.",
+ "brand": "#1670ff",
+ "brandHi": "#52c6ff",
+ "accent": "#8fd0ff",
+ "logo": null,
+ "logoChip": false,
+ "wordmark": {
+  "top": "Elite Mobile",
+  "bottom": "Detailing"
+ },
+ "phone": "(615) 516-9713",
+ "email": "info@elitedetailingtn.com",
+ "heroImage": null,
+ "heroAlt": "",
+ "heroPosition": "60% 60%",
+ "heroPositionPhone": "60% 50%",
+ "rating": {
+  "score": "5.0",
+  "count": 35,
+  "url": "https://maps.google.com/?cid=1389330996535517140"
+ },
+ "kicker": "Mobile car detailing · Nashville, TN",
+ "headline": "Showroom shine,<br><em>at your driveway.</em>",
+ "intro": "A professional detail at a personal price, and we come to you. Serving Nashville since 2005.",
+ "mobile": {
+  "title": "Your driveway is our shop.",
+  "intro": "We bring the detail to you, so your day keeps moving.",
+  "points": [
+   {
+    "name": "We come to you",
+    "text": "Mobile service in Nashville and many areas beyond, including Brentwood, Franklin and Murfreesboro."
+   },
+   {
+    "name": "Quick turnaround",
+    "text": "Express details run 30 to 45 minutes. Full details take about 1.5 to 2 hours."
+   },
+   {
+    "name": "No hidden fees",
+    "text": "Rates are competitive and priced by vehicle size. Free estimates on request."
+   },
+   {
+    "name": "Easy to book",
+    "text": "Call (615) 516-9713 or book online."
+   }
+  ]
+ },
+ "servicesTitle": "Inside, outside, and everything that shines.",
+ "servicesIntro": "Prices start at the amounts shown and depend on vehicle size: small, medium or large.",
+ "services": [
+  {
+   "name": "Express Mini",
+   "text": "Hand wash, tires and rims, spray wax, windows, vacuum and dashboard in 30 to 45 minutes.",
+   "price": "From $70"
+  },
+  {
+   "name": "Interior Only \"Deep Cleaning\"",
+   "text": "Vacuum, shampoo carpet, seats and mats, condition leather, and clean door jambs and windows.",
+   "price": "From $150"
+  },
+  {
+   "name": "Steam Wax Exterior Only",
+   "text": "Hand wash, bug and tar removal, wax and tire dressing to keep paint glossy.",
+   "price": "From $140"
+  },
+  {
+   "name": "Elite Mini Detail",
+   "text": "A full interior and exterior clean that brings back that showroom-floor look.",
+   "price": "From $185"
+  },
+  {
+   "name": "Ultimate Elite \"Remove Swirl Marks\"",
+   "text": "Machine polish to remove swirl marks and leave a glossy exterior.",
+   "price": "From $215"
+  },
+  {
+   "name": "Extreme Elite \"The Works\"",
+   "text": "Clay, machine buff, oxidation restoration, engine cleaning and a full interior shampoo.",
+   "price": "From $305"
+  }
+ ],
+ "also": [
+  {
+   "name": "Window film and decal removal"
+  },
+  {
+   "name": "Ozone treatment"
+  },
+  {
+   "name": "Overspray removal"
+  },
+  {
+   "name": "Headlight restoration"
+  },
+  {
+   "name": "Custom packages"
+  },
+  {
+   "name": "Gift certificates"
+  }
+ ],
+ "alsoTitle": "Not just cars:",
+ "why": [
+  {
+   "name": "Since 2005",
+   "text": "Elite Detailing has been located in Nashville since 2005."
+  },
+  {
+   "name": "Personal attention",
+   "text": "Friendly, professional, courteous staff who tailor the work to your vehicle."
+  },
+  {
+   "name": "Straight pricing",
+   "text": "Competitive rates with no hidden fees, and a free estimate on request."
+  }
+ ],
+ "whyTitle": "The detail is in the name.",
+ "howTitle": "A clean vehicle in three steps.",
+ "steps": [
+  {
+   "name": "Book",
+   "text": "Book online or by phone and stay updated the whole way."
+  },
+  {
+   "name": "We detail",
+   "text": "Our experts inspect your vehicle and detail it with high-quality products and tools."
+  },
+  {
+   "name": "You approve",
+   "text": "Inspect the result, make sure you're satisfied, then pay."
+  }
+ ],
+ "contactTitle": "Book your detail.",
+ "footerLine": "Mobile car detailing in Nashville",
+ "reviews": [],
+ "hours": [],
+ "galleryTitle": "Fresh off the driveway.",
+ "gallery": [],
+ "areas": [
+  "Nashville"
+ ],
+ "pitch": "photos"
+}

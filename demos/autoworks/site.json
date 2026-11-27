@@ -1,0 +1,111 @@
+{
+ "kit": "detailing",
+ "trade": "Paintless dent repair",
+ "name": "Autoworks",
+ "legalName": "Autoworks",
+ "preview": true,
+ "placeId": "ChIJTyErgEhrZIgR8LSTUx0I9Ds",
+ "title": "Autoworks | Paintless dent repair in Nashville, TN",
+ "description": "Paintless dent repair in Nashville, from a shop on Lebanon Pike. Door dings, minor dents and hail damage, with a clear estimate before any work starts. 4.0 on Google from 8 reviews.",
+ "brand": "#1670ff",
+ "brandHi": "#52c6ff",
+ "accent": "#8fd0ff",
+ "logo": "logo.png",
+ "logoChip": false,
+ "wordmark": {
+  "top": "Autoworks",
+  "bottom": "Of Nashville"
+ },
+ "phone": "",
+ "email": "mytechmobilebiz@gmail.com",
+ "heroImage": null,
+ "heroAlt": "",
+ "heroPosition": "60% 60%",
+ "heroPositionPhone": "60% 50%",
+ "rating": {
+  "score": "4.0",
+  "count": 8,
+  "url": "https://maps.google.com/?cid=4320086864604411120"
+ },
+ "kicker": "Paintless dent repair · Nashville",
+ "headline": "Hail damage gone.<br><em>Hassle gone too.</em>",
+ "intro": "Paintless dent repair in Nashville, from a shop on Lebanon Pike. Door dings, minor dents and hail damage, with a clear estimate before any work starts.",
+ "mobile": null,
+ "servicesTitle": "Everything your car needs.",
+ "servicesIntro": "From a single door ding to a full hail storm.",
+ "services": [
+  {
+   "name": "Door Dings & Minor Dents",
+   "text": "Small dents and parking-lot dings, worked out so your vehicle looks right again."
+  },
+  {
+   "name": "Hail Damage Repair",
+   "text": "Storm damage assessed and repaired so the vehicle gets its appearance back."
+  },
+  {
+   "name": "Lease Return Dent Repair",
+   "text": "Dents fixed before you hand the vehicle back."
+  },
+  {
+   "name": "Scratch Repair",
+   "text": "Scratches removed to restore the finish."
+  },
+  {
+   "name": "Bumper Repair",
+   "text": "Damaged bumpers repaired and restored."
+  }
+ ],
+ "also": [
+  {
+   "name": "Fleets"
+  },
+  {
+   "name": "European vehicles"
+  }
+ ],
+ "alsoTitle": "We also fix",
+ "why": [
+  {
+   "name": "Clear estimates",
+   "text": "No surprises. Just honest answers."
+  },
+  {
+   "name": "Quality repairs",
+   "text": "They stand behind their work."
+  },
+  {
+   "name": "Fast turnaround",
+   "text": "Get back on the road sooner."
+  }
+ ],
+ "whyTitle": "Why Autoworks",
+ "howTitle": "Dent-free in three steps.",
+ "steps": [
+  {
+   "name": "Send the details",
+   "text": "Call, or use the form with your year, make, model and photos of the damage."
+  },
+  {
+   "name": "Get an evaluation",
+   "text": "Bring the vehicle in and we look at the hail damage, dings or film options."
+  },
+  {
+   "name": "Drive it smooth",
+   "text": "We work the dents out and hand the vehicle back."
+  }
+ ],
+ "contactTitle": "Hail damage? Call us.",
+ "footerLine": "Paintless dent repair in Nashville",
+ "reviews": [],
+ "hours": [
+  "Monday - Friday 8:00am - 6:00pm"
+ ],
+ "galleryTitle": "Dents gone, paint untouched.",
+ "notePlaceholder": "Where the dent is, how big, hail or a door ding…",
+ "ctaLabel": "Get an estimate",
+ "gallery": [],
+ "areas": [
+  "Nashville"
+ ],
+ "pitch": "photos"
+}

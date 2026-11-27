@@ -1,0 +1,10 @@
+- Found by a search in Las Vegas, NV, but their address is in Henderson, NV: the site uses that. Check their service area.
+- Details cars and boats (found by a boat search): the AI was told to show all their work.
+- No logo found: the header shows the name only.
+- No hero photo: Claude found none of their photos usable.
+- Photo pitch: only 0 usable photos by Claude's choice, so no gallery; the email asks them for photos of their work.
+- Claude's notes: Site text was a Cloudflare block page from clickfunnels.com, so no real site content was available. No reviews, prices, hours or service details from the site. Copy uses only the Google rating, phone and city given. No photos were viewed or usable, so none selected. No logo image seen, so logoIsTheirs defaults to true. Services are generic and need a human check against the real business.
+- No photos at all: the hero has no picture. Find photos by hand.
+- Only 0 gallery photos.
+- No reviews on the site: the page shows the Google rating only.
+- Hero is a licensed stock photo for the trade (credited on the page, see generator/assets/CREDITS.md), not their work: swap in their own photo once they send one.

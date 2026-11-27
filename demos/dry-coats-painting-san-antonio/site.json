@@ -1,0 +1,129 @@
+{
+ "kit": "painting",
+ "trade": "House painting",
+ "name": "Dry Coats Painting San Antonio",
+ "legalName": "Dry Coats Painting San Antonio",
+ "preview": true,
+ "placeId": "ChIJ70rrolP2XIYR3CSd8vsJI1w",
+ "title": "Dry Coats Painting San Antonio | House painting in San Antonio, TX",
+ "description": "Interior and exterior painting across San Antonio and Bexar County. Built on careful prep and a finish matched to South Texas sun. 4.9 on Google from 33 reviews.",
+ "logo": "logo.png",
+ "logoChip": false,
+ "wordmark": {
+  "top": "Dry Coats",
+  "bottom": "Painting"
+ },
+ "phone": "(210) 316-1325",
+ "email": "drycoats@gmail.com",
+ "heroImage": "img/photo-2.jpg",
+ "heroAlt": "Painter brushing white trim on a gray wall in a bright living room",
+ "heroPosition": "60% 60%",
+ "heroPositionPhone": "60% 50%",
+ "rating": {
+  "score": "4.9",
+  "count": 33,
+  "url": "https://maps.google.com/?cid=6639161253386069212"
+ },
+ "kicker": "House painting · San Antonio",
+ "headline": "Clean walls.<br><em>Family-built finish.</em>",
+ "intro": "Interior and exterior painting across San Antonio and Bexar County. Built on careful prep and a finish matched to South Texas sun.",
+ "badges": [
+  "Free estimates",
+  "Homes and businesses"
+ ],
+ "highlights": null,
+ "servicesTitle": "Inside and out.",
+ "servicesIntro": "One room or the whole house.",
+ "services": [
+  {
+   "name": "Interior Painting",
+   "text": "Whole-home repaints covering walls, ceilings, trim and doors, with drywall repair and texture matching done first."
+  },
+  {
+   "name": "Exterior Painting",
+   "text": "Stucco, brick, masonry and siding prepped, then coated with a system built for strong sun and UV."
+  },
+  {
+   "name": "Cabinet Painting & Refinishing",
+   "text": "Kitchen and bathroom cabinets sprayed with a durable enamel for a smooth factory finish."
+  },
+  {
+   "name": "Deck & Fence Staining",
+   "text": "Weathered wood cleaned and prepped, then stained or painted to hold up under South Texas sun."
+  },
+  {
+   "name": "Drywall Repair & Texture Matching",
+   "text": "Gouges, holes and water damage patched, and existing textures matched before the finish coat."
+  },
+  {
+   "name": "Epoxy & Garage Floor Coatings",
+   "text": "Epoxy, polyaspartic, flake and metallic floors installed over ground and prepared concrete."
+  }
+ ],
+ "also": [
+  {
+   "name": "Commercial painting"
+  },
+  {
+   "name": "Industrial painting"
+  },
+  {
+   "name": "Offices and retail"
+  },
+  {
+   "name": "Restaurants"
+  },
+  {
+   "name": "Apartments and HOAs"
+  },
+  {
+   "name": "Warehouses"
+  },
+  {
+   "name": "Patios and pool decks"
+  }
+ ],
+ "alsoTitle": "We also do:",
+ "promise": null,
+ "why": [
+  {
+   "name": "Prep comes first",
+   "text": "Every job starts with inspection, repair, cleaning and priming, so the finish bonds and lasts."
+  },
+  {
+   "name": "Built for South Texas",
+   "text": "Coatings are matched to the surface and to the sun, heat and UV that cause fading and chalking."
+  },
+  {
+   "name": "One contractor, whole job",
+   "text": "Drywall repair, cabinets, trim and walls are coordinated together, so scheduling stays simple."
+  }
+ ],
+ "whyTitle": "Why homeowners call us.",
+ "howTitle": "A fresh coat in three steps.",
+ "steps": [
+  {
+   "name": "Free estimate",
+   "text": "Tell us about the job. We look it over and give you a quote."
+  },
+  {
+   "name": "We do the work",
+   "text": "The crew arrives on schedule, and you get daily updates your way."
+  },
+  {
+   "name": "Final look",
+   "text": "We finish every detail so you are satisfied with the result."
+  }
+ ],
+ "contactTitle": "Ready for a fresh coat?",
+ "footerLine": "House painting in San Antonio",
+ "reviews": [],
+ "hours": [],
+ "galleryTitle": "Homes we’ve painted.",
+ "notePlaceholder": "Inside or outside, how many rooms, a date you have in mind…",
+ "gallery": [],
+ "areas": [
+  "San Antonio"
+ ],
+ "pitch": "photos"
+}

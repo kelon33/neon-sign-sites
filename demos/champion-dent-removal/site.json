@@ -1,0 +1,119 @@
+{
+ "kit": "detailing",
+ "trade": "Paintless dent repair",
+ "name": "Champion Dent Removal",
+ "legalName": "Champion Dent Removal",
+ "preview": true,
+ "placeId": "ChIJC9awLM3RyIARMjs4PYjm3uc",
+ "title": "Champion Dent Removal | Paintless dent repair in Henderson, NV",
+ "description": "Paintless dent repair that comes to your home or office in Henderson. Most repairs are done in one hour, and your factory paint stays untouched. 5.0 on Google from 221 reviews.",
+ "brand": "#1670ff",
+ "brandHi": "#52c6ff",
+ "accent": "#8fd0ff",
+ "logo": null,
+ "logoChip": false,
+ "wordmark": {
+  "top": "Champion",
+  "bottom": "Dent Removal"
+ },
+ "phone": "(702) 970-0909",
+ "email": "brent@championdentremoval.com",
+ "heroImage": "img/photo-4.jpg",
+ "heroAlt": "Red car with door and fender dents circled, and the smooth repaired panel below",
+ "heroPosition": "60% 60%",
+ "heroPositionPhone": "60% 50%",
+ "rating": {
+  "score": "5.0",
+  "count": 221,
+  "url": "https://maps.google.com/?cid=16708045140408154930"
+ },
+ "kicker": "Paintless dent repair · Henderson",
+ "headline": "Hail damage gone.<br><em>Hassle gone too.</em>",
+ "intro": "Paintless dent repair that comes to your home or office in Henderson. Most repairs are done in one hour, and your factory paint stays untouched.",
+ "mobile": {
+  "title": "We come to you. Then we bring it back.",
+  "intro": "We bring the detail to you, so your day keeps moving.",
+  "points": [
+   {
+    "name": "At your door",
+    "text": "Home or office, within about 20 miles of Henderson."
+   },
+   {
+    "name": "No drop-off",
+    "text": "No days in a body shop and no rental car."
+   },
+   {
+    "name": "Most repairs in one hour",
+    "text": "Quick work that fits around your day."
+   },
+   {
+    "name": "Easy to book",
+    "text": "Call, text or email for a free estimate."
+   }
+  ]
+ },
+ "servicesTitle": "Every kind of dent.",
+ "servicesIntro": "From a single door ding to a full hail storm.",
+ "services": [
+  {
+   "name": "Paintless Dent Repair",
+   "text": "Specialized tools push the dent out from behind, with no sanding, filler or repainting."
+  },
+  {
+   "name": "Door Dings",
+   "text": "Parking-lot dings and dents removed so your car looks right and sells for what it should."
+  },
+  {
+   "name": "Hail Damage",
+   "text": "Hail dents and body creases worked out while keeping the original finish."
+  },
+  {
+   "name": "Dealer Services",
+   "text": "Dent removal that lifts a unit's resale value, with accounts available for dealerships."
+  }
+ ],
+ "also": [],
+ "alsoTitle": "We also fix",
+ "why": [
+  {
+   "name": "Factory paint stays",
+   "text": "PDR needs no re-surfacing or repainting, so your warranty and resale value are not put at risk."
+  },
+  {
+   "name": "Family-owned since 2008",
+   "text": "Over 13 years of paintless dent repair across the Las Vegas Valley."
+  },
+  {
+   "name": "100% satisfaction",
+   "text": "They guarantee satisfaction with every repair."
+  }
+ ],
+ "whyTitle": "Champion Dent Removal difference.",
+ "howTitle": "Dent-free in three steps.",
+ "steps": [
+  {
+   "name": "Send the details",
+   "text": "Call, or use the form with your year, make, model and photos of the damage."
+  },
+  {
+   "name": "Get an evaluation",
+   "text": "Bring the vehicle in and we look at the hail damage, dings or film options."
+  },
+  {
+   "name": "Drive it smooth",
+   "text": "We work the dents out and hand the vehicle back."
+  }
+ ],
+ "contactTitle": "Got a dent?",
+ "footerLine": "Paintless dent repair in Henderson",
+ "reviews": [],
+ "hours": [],
+ "galleryTitle": "Dents gone, paint untouched.",
+ "notePlaceholder": "Where the dent is, how big, hail or a door ding…",
+ "ctaLabel": "Get an estimate",
+ "gallery": [],
+ "areas": [
+  "Henderson"
+ ],
+ "pitch": "photos"
+}

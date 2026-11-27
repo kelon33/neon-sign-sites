@@ -33,5 +33,1173 @@
    }
   ],
   "done": true
+ },
+ {
+  "id": "msgbatch_01KaY3WGFYUZd7PvnxDjD5Cp",
+  "created": "2026-11-27T17:25:31.737Z",
+  "map": {
+   "p0": "sin-city-mobile-detailing",
+   "p1": "cumberland-painting",
+   "p2": "maxcraft-mobile-detailing",
+   "p3": "next-door-painting",
+   "p4": "dent-technique",
+   "p5": "cal-pac-painting-of-nevada",
+   "p6": "bryans-hail-dent-repair",
+   "p7": "j-v-painting",
+   "p8": "champion-dent-removal",
+   "p9": "ship-shape-marine",
+   "p10": "dentcore-pdr",
+   "p11": "luxe-detailing-artists",
+   "p12": "tornado-mobile-detailing",
+   "p13": "mobile-speed-detailing",
+   "p14": "deep-detailing",
+   "p15": "north-nashville-collision",
+   "p16": "sprayworks-mobile-scratch-and-dent-repair",
+   "p17": "below-the-belt-services",
+   "p18": "elite-mobile-detailing",
+   "p19": "central-tennessee-marine-service",
+   "p20": "tx-marine-riggers",
+   "p21": "marine-detail-austin",
+   "p22": "inline-dent-repair",
+   "p23": "newwater-boatworks",
+   "p24": "autoworks",
+   "p25": "dent-magic",
+   "p26": "nashville-mobile-detail",
+   "p27": "that-1-painter-san-antonio",
+   "p28": "nexterra",
+   "p29": "pointer-painting",
+   "p30": "reflectionz-detail-las-vegas-ceramicpro",
+   "p31": "paper-moon-painting",
+   "p32": "touchstone-detailing",
+   "p33": "hendrick-painting",
+   "p34": "lvdetailer-mobile-car-detailing",
+   "p35": "new-direction-painting",
+   "p36": "the-hand-car-wash-and-auto-detailing",
+   "p37": "diesel-painting",
+   "p38": "mynt-mobile-detailing",
+   "p39": "jc-paint-and-more",
+   "p40": "c-s-paintless-dent-repair",
+   "p41": "quality-touch-painting",
+   "p42": "collision-san-antonio-auto-body-shop-bumper-repair-paintless-dent-removal",
+   "p43": "j-j-custom-painting-company",
+   "p44": "the-best-detail",
+   "p45": "dry-coats-painting-san-antonio",
+   "p46": "dapper-dent-repair",
+   "p47": "alphex-painting-remodeling",
+   "p48": "m-m-custom-painting",
+   "p49": "the-detail-code",
+   "p50": "colorwise-painting",
+   "p51": "detail-city-las-vegas",
+   "p52": "twin-buds-painting",
+   "p53": "all-out-paintless-dent-removal",
+   "p54": "atlantic-painting-renovations",
+   "p55": "childress-collision-center",
+   "p56": "deco-plus-painting",
+   "p57": "invision-pdr",
+   "p58": "halletts-painting-construction-services",
+   "p59": "appearance-1st-automotive",
+   "p60": "tiny-patch-paint-co",
+   "p61": "cargo-detailing-car-detailing-las-vegas",
+   "p62": "everlast-pro-painting",
+   "p63": "southern-painting",
+   "p64": "legacy-pdr-solutions",
+   "p65": "eastnashville-cb",
+   "p66": "steam-art",
+   "p67": "mobile-auto-spa",
+   "p68": "true-craft-paintless-dent-repair",
+   "p69": "smooth-a-dent",
+   "p70": "prime-time-pdr",
+   "p71": "texas-dents",
+   "p72": "aqualine-performance",
+   "p73": "priority-one-detailing",
+   "p74": "dent-dynasty",
+   "p75": "alpha-pro-detailing",
+   "p76": "tnt-water-sports",
+   "p77": "benfield-marine",
+   "p78": "collision-center",
+   "p79": "affluent-auto-spa-mobile-detailing",
+   "p80": "madhouse-detailing-customs",
+   "p81": "performance-paintless",
+   "p82": "r-j-extreme-mobile-car-wash",
+   "p83": "automobiles-for-tomorrow-auto-body-collision-repair",
+   "p84": "dent-titan-a-d-r"
+  },
+  "leads": [
+   {
+    "slug": "sin-city-mobile-detailing",
+    "name": "Sin City Mobile Detailing",
+    "kind": "weak site",
+    "trade": "Boat detailing",
+    "reviews": 380,
+    "website": "https://welcome.sincitydetailing.com/",
+    "reasons": [
+     "copyright 2021"
+    ],
+    "improvements": []
+   },
+   {
+    "slug": "cumberland-painting",
+    "name": "Cumberland Painting",
+    "kind": "weak site",
+    "trade": "House painting",
+    "reviews": 66,
+    "website": "https://www.cumberlandpainting.com/?utm_source=google&utm_medium=wix_google_business_profile&utm_campaign=16170557005440987487",
+    "reasons": [
+     "slow (4.3s)"
+    ],
+    "improvements": []
+   },
+   {
+    "slug": "maxcraft-mobile-detailing",
+    "name": "MaxCraft Mobile Detailing",
+    "kind": "weak site",
+    "trade": "Boat detailing",
+    "reviews": 366,
+    "website": "https://maxcraftdetailing.com/",
+    "reasons": [
+     "slow (4.5s)"
+    ],
+    "improvements": []
+   },
+   {
+    "slug": "next-door-painting",
+    "name": "Next Door Painting",
+    "kind": "weak site",
+    "trade": "House painting",
+    "reviews": 46,
+    "website": "https://www.nextdoorpainting.com/san-antonio/",
+    "reasons": [
+     "copyright 2020"
+    ],
+    "improvements": []
+   },
+   {
+    "slug": "dent-technique",
+    "name": "Dent Technique",
+    "kind": "weak site",
+    "trade": "Paintless dent repair",
+    "reviews": 275,
+    "website": "http://www.jaxdentremoval.com/",
+    "reasons": [
+     "copyright 2020"
+    ],
+    "improvements": []
+   },
+   {
+    "slug": "cal-pac-painting-of-nevada",
+    "name": "Cal Pac Painting of Nevada",
+    "kind": "weak site",
+    "trade": "House painting",
+    "reviews": 24,
+    "website": "http://www.calpac.us/",
+    "reasons": [
+     "no https",
+     "not mobile-friendly"
+    ],
+    "improvements": []
+   },
+   {
+    "slug": "bryans-hail-dent-repair",
+    "name": "Bryan's Hail & Dent Repair",
+    "kind": "weak site",
+    "trade": "Paintless dent repair",
+    "reviews": 248,
+    "website": "https://www.bryanshailanddent.com/",
+    "reasons": [
+     "copyright 2023"
+    ],
+    "improvements": []
+   },
+   {
+    "slug": "j-v-painting",
+    "name": "J.V. Painting Co.",
+    "kind": "weak site",
+    "trade": "House painting",
+    "reviews": 20,
+    "website": "https://jvpaintingco.com/",
+    "reasons": [
+     "GoDaddy site builder",
+     "copyright 2022"
+    ],
+    "improvements": []
+   },
+   {
+    "slug": "champion-dent-removal",
+    "name": "Champion Dent Removal",
+    "kind": "weak site",
+    "trade": "Paintless dent repair",
+    "reviews": 221,
+    "website": "https://www.championdentremoval.com/",
+    "reasons": [
+     "copyright 2022"
+    ],
+    "improvements": []
+   },
+   {
+    "slug": "ship-shape-marine",
+    "name": "Ship Shape Marine",
+    "kind": "weak site",
+    "trade": "Boat detailing",
+    "reviews": 178,
+    "website": "http://www.shipshapetn.com/",
+    "reasons": [
+     "no https"
+    ],
+    "improvements": []
+   },
+   {
+    "slug": "dentcore-pdr",
+    "name": "DENTCORE PDR LLC",
+    "kind": "weak site",
+    "trade": "Paintless dent repair",
+    "reviews": 174,
+    "website": "http://dentcorepdr.com/",
+    "reasons": [
+     "GoDaddy site builder",
+     "copyright 2019"
+    ],
+    "improvements": []
+   },
+   {
+    "slug": "luxe-detailing-artists",
+    "name": "Luxe Detailing Artists, LLC",
+    "kind": "weak site",
+    "trade": "Boat detailing",
+    "reviews": 111,
+    "website": "https://www.luxedetailingartists.com/",
+    "reasons": [
+     "Weebly"
+    ],
+    "improvements": []
+   },
+   {
+    "slug": "tornado-mobile-detailing",
+    "name": "Tornado Mobile Detailing LLC",
+    "kind": "weak site",
+    "trade": "Boat detailing",
+    "reviews": 111,
+    "website": "https://www.tornadomobiledetailing.com/",
+    "reasons": [
+     "slow (6.2s)"
+    ],
+    "improvements": []
+   },
+   {
+    "slug": "mobile-speed-detailing",
+    "name": "Mobile Speed Detailing LLC",
+    "kind": "weak site",
+    "trade": "Boat detailing",
+    "reviews": 97,
+    "website": "https://www.mobilespeeddetailing.com/",
+    "reasons": [
+     "almost empty"
+    ],
+    "improvements": []
+   },
+   {
+    "slug": "deep-detailing",
+    "name": "Deep Detailing LLC",
+    "kind": "weak site",
+    "trade": "Boat detailing",
+    "reviews": 70,
+    "website": "http://deepdetailingllc.net/",
+    "reasons": [
+     "no https"
+    ],
+    "improvements": []
+   },
+   {
+    "slug": "north-nashville-collision",
+    "name": "North Nashville Collision",
+    "kind": "weak site",
+    "trade": "Paintless dent repair",
+    "reviews": 68,
+    "website": "http://www.northnashvillecollision.com/",
+    "reasons": [
+     "GoDaddy site builder"
+    ],
+    "improvements": []
+   },
+   {
+    "slug": "sprayworks-mobile-scratch-and-dent-repair",
+    "name": "Sprayworks Mobile Scratch and Dent Repair",
+    "kind": "weak site",
+    "trade": "Paintless dent repair",
+    "reviews": 57,
+    "website": "https://nickspiers661.wixsite.com/autosprayworkslasveg",
+    "reasons": [
+     "copyright 2023",
+     "no domain of its own"
+    ],
+    "improvements": []
+   },
+   {
+    "slug": "below-the-belt-services",
+    "name": "Below the Belt Services",
+    "kind": "weak site",
+    "trade": "Boat detailing",
+    "reviews": 40,
+    "website": "https://www.belowthebeltservices.com/",
+    "reasons": [
+     "copyright 2020"
+    ],
+    "improvements": []
+   },
+   {
+    "slug": "elite-mobile-detailing",
+    "name": "Elite Mobile Detailing Inc.",
+    "kind": "weak site",
+    "trade": "Boat detailing",
+    "reviews": 35,
+    "website": "http://www.elitedetailingtn.com/",
+    "reasons": [
+     "no https",
+     "not mobile-friendly",
+     "copyright 2014"
+    ],
+    "improvements": []
+   },
+   {
+    "slug": "central-tennessee-marine-service",
+    "name": "Central Tennessee Marine Service",
+    "kind": "weak site",
+    "trade": "Boat detailing",
+    "reviews": 29,
+    "website": "http://www.centraltnmarineservice.com/",
+    "reasons": [
+     "no https",
+     "not mobile-friendly",
+     "almost empty"
+    ],
+    "improvements": []
+   },
+   {
+    "slug": "tx-marine-riggers",
+    "name": "TX Marine Riggers",
+    "kind": "weak site",
+    "trade": "Boat detailing",
+    "reviews": 24,
+    "website": "https://www.txmarineriggers.com/",
+    "reasons": [
+     "Weebly"
+    ],
+    "improvements": []
+   },
+   {
+    "slug": "marine-detail-austin",
+    "name": "Marine Detail Austin - Boat Detailing",
+    "kind": "weak site",
+    "trade": "Boat detailing",
+    "reviews": 23,
+    "website": "https://reverseprisms.wixsite.com/marinedetail",
+    "reasons": [
+     "copyright 2021",
+     "no domain of its own"
+    ],
+    "improvements": []
+   },
+   {
+    "slug": "inline-dent-repair",
+    "name": "Inline Dent Repair",
+    "kind": "weak site",
+    "trade": "Paintless dent repair",
+    "reviews": 22,
+    "website": "https://www.inlinedentrepair.com/",
+    "reasons": [
+     "GoDaddy site builder"
+    ],
+    "improvements": []
+   },
+   {
+    "slug": "newwater-boatworks",
+    "name": "NewWater Boatworks",
+    "kind": "weak site",
+    "trade": "Boat detailing",
+    "reviews": 12,
+    "website": "http://www.newwaterboatworks.com/",
+    "reasons": [
+     "copyright 2021"
+    ],
+    "improvements": []
+   },
+   {
+    "slug": "autoworks",
+    "name": "Autoworks of Nashville",
+    "kind": "weak site",
+    "trade": "Paintless dent repair",
+    "reviews": 8,
+    "website": "https://autoworkofnashville.com/",
+    "reasons": [
+     "slow (7.2s)"
+    ],
+    "improvements": []
+   },
+   {
+    "slug": "dent-magic",
+    "name": "Dent Magic",
+    "kind": "weak site",
+    "trade": "Paintless dent repair",
+    "reviews": 5,
+    "website": "http://automagicbodyrepair.com/",
+    "reasons": [
+     "GoDaddy site builder",
+     "copyright 2018"
+    ],
+    "improvements": []
+   },
+   {
+    "slug": "nashville-mobile-detail",
+    "name": "Nashville Mobile Detail",
+    "kind": "decent site",
+    "trade": "Boat detailing",
+    "reviews": 1144,
+    "website": "https://www.nashvillemobiledetail.com/",
+    "reasons": [],
+    "improvements": [
+     "no reviews on the site"
+    ]
+   },
+   {
+    "slug": "that-1-painter-san-antonio",
+    "name": "That 1 Painter San Antonio",
+    "kind": "decent site",
+    "trade": "House painting",
+    "reviews": 354,
+    "website": "https://that1painter.com/san-antonio/",
+    "reasons": [],
+    "improvements": [
+     "loads in 2.6s"
+    ]
+   },
+   {
+    "slug": "nexterra",
+    "name": "Nexterra",
+    "kind": "decent site",
+    "trade": "Paintless dent repair",
+    "reviews": 778,
+    "website": "https://www.nexterras.com/",
+    "reasons": [],
+    "improvements": [
+     "no quote or booking form"
+    ]
+   },
+   {
+    "slug": "pointer-painting",
+    "name": "Pointer Painting",
+    "kind": "decent site",
+    "trade": "House painting",
+    "reviews": 299,
+    "website": "https://pointerpainting.com/",
+    "reasons": [],
+    "improvements": [
+     "no reviews on the site",
+     "only 1 photo"
+    ]
+   },
+   {
+    "slug": "reflectionz-detail-las-vegas-ceramicpro",
+    "name": "Reflectionz Detail Las Vegas & CeramicPro",
+    "kind": "decent site",
+    "trade": "Boat detailing",
+    "reviews": 501,
+    "website": "https://www.reflectionzdetail.com/",
+    "reasons": [],
+    "improvements": [
+     "no quote or booking form"
+    ]
+   },
+   {
+    "slug": "paper-moon-painting",
+    "name": "Paper Moon Painting",
+    "kind": "decent site",
+    "trade": "House painting",
+    "reviews": 271,
+    "website": "https://papermoonpainting.com/",
+    "reasons": [],
+    "improvements": [
+     "no photos",
+     "loads in 2.7s"
+    ]
+   },
+   {
+    "slug": "touchstone-detailing",
+    "name": "Touchstone Detailing",
+    "kind": "decent site",
+    "trade": "Boat detailing",
+    "reviews": 450,
+    "website": "https://touchstonedetailing.com/",
+    "reasons": [],
+    "improvements": [
+     "loads in 2.5s"
+    ]
+   },
+   {
+    "slug": "hendrick-painting",
+    "name": "Hendrick Painting",
+    "kind": "decent site",
+    "trade": "House painting",
+    "reviews": 187,
+    "website": "https://www.hendrickpainting.com/?utm_campaign=gmb",
+    "reasons": [],
+    "improvements": [
+     "no reviews on the site"
+    ]
+   },
+   {
+    "slug": "lvdetailer-mobile-car-detailing",
+    "name": "LVDetailer Mobile Car Detailing",
+    "kind": "decent site",
+    "trade": "Boat detailing",
+    "reviews": 447,
+    "website": "https://www.lvdetailer.com/",
+    "reasons": [],
+    "improvements": [
+     "no quote or booking form"
+    ]
+   },
+   {
+    "slug": "new-direction-painting",
+    "name": "New Direction Painting",
+    "kind": "decent site",
+    "trade": "House painting",
+    "reviews": 170,
+    "website": "https://newdirectionpainting.com/?local=true",
+    "reasons": [],
+    "improvements": [
+     "no quote or booking form"
+    ]
+   },
+   {
+    "slug": "the-hand-car-wash-and-auto-detailing",
+    "name": "The Hand Car Wash and Auto Detailing",
+    "kind": "decent site",
+    "trade": "Boat detailing",
+    "reviews": 408,
+    "website": "https://thehandcarwash.com/",
+    "reasons": [],
+    "improvements": [
+     "only 1 photo"
+    ]
+   },
+   {
+    "slug": "diesel-painting",
+    "name": "Diesel Painting",
+    "kind": "decent site",
+    "trade": "House painting",
+    "reviews": 148,
+    "website": "http://www.dieselpainting.com/",
+    "reasons": [],
+    "improvements": [
+     "no reviews on the site"
+    ]
+   },
+   {
+    "slug": "mynt-mobile-detailing",
+    "name": "Mynt Mobile Detailing",
+    "kind": "decent site",
+    "trade": "Boat detailing",
+    "reviews": 391,
+    "website": "https://www.myntmobiledetailing.com/",
+    "reasons": [],
+    "improvements": [
+     "no tap-to-call link",
+     "no reviews on the site"
+    ]
+   },
+   {
+    "slug": "jc-paint-and-more",
+    "name": "JC Paint and More",
+    "kind": "decent site",
+    "trade": "House painting",
+    "reviews": 138,
+    "website": "https://sanantoniopaintanddrywallservices.com/",
+    "reasons": [],
+    "improvements": [
+     "no reviews on the site"
+    ]
+   },
+   {
+    "slug": "c-s-paintless-dent-repair",
+    "name": "C S Paintless Dent Repair",
+    "kind": "decent site",
+    "trade": "Paintless dent repair",
+    "reviews": 385,
+    "website": "http://cs-pdr.com/",
+    "reasons": [],
+    "improvements": [
+     "no tap-to-call link"
+    ]
+   },
+   {
+    "slug": "quality-touch-painting",
+    "name": "Quality Touch Painting Inc",
+    "kind": "decent site",
+    "trade": "House painting",
+    "reviews": 51,
+    "website": "https://www.qtpinc.com/",
+    "reasons": [],
+    "improvements": [
+     "no quote or booking form",
+     "no reviews on the site"
+    ]
+   },
+   {
+    "slug": "collision-san-antonio-auto-body-shop-bumper-repair-paintless-dent-removal",
+    "name": "Collision San Antonio Auto Body Shop-Bumper Repair & Paintless Dent Removal",
+    "kind": "decent site",
+    "trade": "Paintless dent repair",
+    "reviews": 383,
+    "website": "https://www.collisionsanantonio.com/?utm_source=google&utm_medium=organic&utm_campaign=gbp",
+    "reasons": [],
+    "improvements": [
+     "no quote or booking form"
+    ]
+   },
+   {
+    "slug": "j-j-custom-painting-company",
+    "name": "J&J Custom Painting Company LLC",
+    "kind": "decent site",
+    "trade": "House painting",
+    "reviews": 35,
+    "website": "https://www.j-jcustompainting.com/",
+    "reasons": [],
+    "improvements": [
+     "no tap-to-call link",
+     "loads in 3.8s"
+    ]
+   },
+   {
+    "slug": "the-best-detail",
+    "name": "The Best Detail",
+    "kind": "decent site",
+    "trade": "Boat detailing",
+    "reviews": 321,
+    "website": "http://www.thebestdetail.com/",
+    "reasons": [],
+    "improvements": [
+     "no photos",
+     "loads in 3.0s"
+    ]
+   },
+   {
+    "slug": "dry-coats-painting-san-antonio",
+    "name": "Dry Coats Painting San Antonio",
+    "kind": "decent site",
+    "trade": "House painting",
+    "reviews": 33,
+    "website": "http://www.drycoatspaintingsanantonio.com/",
+    "reasons": [],
+    "improvements": [
+     "no reviews on the site"
+    ]
+   },
+   {
+    "slug": "dapper-dent-repair",
+    "name": "Dapper Dent Repair",
+    "kind": "decent site",
+    "trade": "Paintless dent repair",
+    "reviews": 269,
+    "website": "https://dapperdentrepair.com/?utm_source=google&utm_medium=organic&utm_campaign=gbp-dickson-storefront",
+    "reasons": [],
+    "improvements": [
+     "no quote or booking form",
+     "no reviews on the site"
+    ]
+   },
+   {
+    "slug": "alphex-painting-remodeling",
+    "name": "Alphex Painting & Remodeling",
+    "kind": "decent site",
+    "trade": "House painting",
+    "reviews": 32,
+    "website": "https://alphexpainting.com/",
+    "reasons": [],
+    "improvements": [
+     "no meta description"
+    ]
+   },
+   {
+    "slug": "m-m-custom-painting",
+    "name": "M&M Custom Painting Inc.",
+    "kind": "decent site",
+    "trade": "House painting",
+    "reviews": 32,
+    "website": "http://www.mnmcustompainting.com/",
+    "reasons": [],
+    "improvements": [
+     "copyright 2024"
+    ]
+   },
+   {
+    "slug": "the-detail-code",
+    "name": "the Detail Code | Mobile Detailing",
+    "kind": "decent site",
+    "trade": "Boat detailing",
+    "reviews": 221,
+    "website": "http://thedetailcode.com/",
+    "reasons": [],
+    "improvements": [
+     "no tap-to-call link",
+     "only 1 photo"
+    ]
+   },
+   {
+    "slug": "colorwise-painting",
+    "name": "Colorwise Painting LLC",
+    "kind": "decent site",
+    "trade": "House painting",
+    "reviews": 31,
+    "website": "https://www.colorwisepaintco.com/",
+    "reasons": [],
+    "improvements": [
+     "no quote or booking form"
+    ]
+   },
+   {
+    "slug": "detail-city-las-vegas",
+    "name": "DETAIL CITY Las Vegas",
+    "kind": "decent site",
+    "trade": "Boat detailing",
+    "reviews": 220,
+    "website": "http://detailcitylv.com/",
+    "reasons": [],
+    "improvements": [
+     "no quote or booking form",
+     "no reviews on the site"
+    ]
+   },
+   {
+    "slug": "twin-buds-painting",
+    "name": "Twin Buds Painting",
+    "kind": "decent site",
+    "trade": "House painting",
+    "reviews": 29,
+    "website": "https://www.twinbudspainting.com/",
+    "reasons": [],
+    "improvements": [
+     "no tap-to-call link",
+     "no quote or booking form",
+     "no reviews on the site",
+     "no meta description"
+    ]
+   },
+   {
+    "slug": "all-out-paintless-dent-removal",
+    "name": "All Out Paintless Dent Removal",
+    "kind": "decent site",
+    "trade": "Paintless dent repair",
+    "reviews": 213,
+    "website": "https://www.alloutpdrjax.com/",
+    "reasons": [],
+    "improvements": [
+     "no tap-to-call link",
+     "no quote or booking form"
+    ]
+   },
+   {
+    "slug": "atlantic-painting-renovations",
+    "name": "Atlantic Painting & Renovations LLC",
+    "kind": "decent site",
+    "trade": "House painting",
+    "reviews": 29,
+    "website": "https://www.atlanticpaintingandrenovation.com/",
+    "reasons": [],
+    "improvements": [
+     "no reviews on the site"
+    ]
+   },
+   {
+    "slug": "childress-collision-center",
+    "name": "Childress Collision Center",
+    "kind": "decent site",
+    "trade": "Paintless dent repair",
+    "reviews": 213,
+    "website": "https://www.childresscollisioncenter.com/",
+    "reasons": [],
+    "improvements": [
+     "no quote or booking form",
+     "no reviews on the site"
+    ]
+   },
+   {
+    "slug": "deco-plus-painting",
+    "name": "Deco Plus Painting",
+    "kind": "decent site",
+    "trade": "House painting",
+    "reviews": 29,
+    "website": "http://www.decopluslv.com/",
+    "reasons": [],
+    "improvements": [
+     "no quote or booking form",
+     "no reviews on the site"
+    ]
+   },
+   {
+    "slug": "invision-pdr",
+    "name": "INVISION PDR LLC",
+    "kind": "decent site",
+    "trade": "Paintless dent repair",
+    "reviews": 180,
+    "website": "http://invisionpdr.com/?utm_source=google&utm_medium=wix_google_business_profile&utm_campaign=16903397941045537235",
+    "reasons": [],
+    "improvements": [
+     "no quote or booking form",
+     "no reviews on the site",
+     "copyright 2024"
+    ]
+   },
+   {
+    "slug": "halletts-painting-construction-services",
+    "name": "Hallett's Painting & Construction Services, LLC | Painters in Jacksonville FL",
+    "kind": "decent site",
+    "trade": "House painting",
+    "reviews": 25,
+    "website": "http://hpcservicesusa.com/",
+    "reasons": [],
+    "improvements": [
+     "no meta description",
+     "loads in 2.9s"
+    ]
+   },
+   {
+    "slug": "appearance-1st-automotive",
+    "name": "Appearance 1st Automotive",
+    "kind": "decent site",
+    "trade": "Paintless dent repair",
+    "reviews": 163,
+    "website": "https://appearance1stautomotive.com/",
+    "reasons": [],
+    "improvements": [
+     "no photos",
+     "copyright 2025"
+    ]
+   },
+   {
+    "slug": "tiny-patch-paint-co",
+    "name": "Tiny Patch Paint Co., LLC",
+    "kind": "decent site",
+    "trade": "House painting",
+    "reviews": 25,
+    "website": "http://tinypatchpaintco.com/",
+    "reasons": [],
+    "improvements": [
+     "no tap-to-call link",
+     "no reviews on the site",
+     "only 1 photo"
+    ]
+   },
+   {
+    "slug": "cargo-detailing-car-detailing-las-vegas",
+    "name": "Cargo Detailing Car Detailing Las Vegas",
+    "kind": "decent site",
+    "trade": "Boat detailing",
+    "reviews": 158,
+    "website": "https://cargomobiledetailing.com/?utm_campaign=gmb",
+    "reasons": [],
+    "improvements": [
+     "no quote or booking form"
+    ]
+   },
+   {
+    "slug": "everlast-pro-painting",
+    "name": "Everlast Pro Painting LLC",
+    "kind": "decent site",
+    "trade": "House painting",
+    "reviews": 20,
+    "website": "http://www.everlastpropainting.com/",
+    "reasons": [],
+    "improvements": [
+     "no tap-to-call link",
+     "no meta description",
+     "copyright 2025"
+    ]
+   },
+   {
+    "slug": "southern-painting",
+    "name": "Southern Painting - San Antonio East",
+    "kind": "decent site",
+    "trade": "House painting",
+    "reviews": 20,
+    "website": "http://southernpainting.com/san-antonio",
+    "reasons": [],
+    "improvements": [
+     "no reviews on the site"
+    ]
+   },
+   {
+    "slug": "legacy-pdr-solutions",
+    "name": "Legacy PDR Solutions",
+    "kind": "decent site",
+    "trade": "Paintless dent repair",
+    "reviews": 150,
+    "website": "https://www.legacypdrsolutions.com/",
+    "reasons": [],
+    "improvements": [
+     "no reviews on the site"
+    ]
+   },
+   {
+    "slug": "eastnashville-cb",
+    "name": "EastNashville CB LLC",
+    "kind": "decent site",
+    "trade": "House painting",
+    "reviews": 12,
+    "website": "https://www.eastnashvillecbpainting.com/",
+    "reasons": [],
+    "improvements": [
+     "no quote or booking form",
+     "no reviews on the site"
+    ]
+   },
+   {
+    "slug": "steam-art",
+    "name": "Steam Art LLC",
+    "kind": "decent site",
+    "trade": "Boat detailing",
+    "reviews": 148,
+    "website": "http://www.steamartusa.com/",
+    "reasons": [],
+    "improvements": [
+     "no tap-to-call link",
+     "no quote or booking form",
+     "no reviews on the site"
+    ]
+   },
+   {
+    "slug": "mobile-auto-spa",
+    "name": "Mobile Auto Spa",
+    "kind": "decent site",
+    "trade": "Boat detailing",
+    "reviews": 148,
+    "website": "https://www.themobileautospa.com/",
+    "reasons": [],
+    "improvements": [
+     "copyright 2025"
+    ]
+   },
+   {
+    "slug": "true-craft-paintless-dent-repair",
+    "name": "True Craft Paintless Dent Repair",
+    "kind": "decent site",
+    "trade": "Paintless dent repair",
+    "reviews": 143,
+    "website": "https://truecraftpdr.com/?utm_source=google&utm_medium=wix_google_business_profile&utm_campaign=15825293435786108574",
+    "reasons": [],
+    "improvements": [
+     "copyright 2025"
+    ]
+   },
+   {
+    "slug": "smooth-a-dent",
+    "name": "Smooth A Dent - paintless dent removal & training",
+    "kind": "decent site",
+    "trade": "Paintless dent repair",
+    "reviews": 138,
+    "website": "http://www.smoothadent.com/",
+    "reasons": [],
+    "improvements": [
+     "no quote or booking form"
+    ]
+   },
+   {
+    "slug": "prime-time-pdr",
+    "name": "Prime Time PDR",
+    "kind": "decent site",
+    "trade": "Paintless dent repair",
+    "reviews": 129,
+    "website": "https://primetimepdr.com/?utm_source=GMB&utm_medium=organic",
+    "reasons": [],
+    "improvements": [
+     "only 3 photos",
+     "copyright 2024"
+    ]
+   },
+   {
+    "slug": "texas-dents",
+    "name": "Texas Dents",
+    "kind": "decent site",
+    "trade": "Paintless dent repair",
+    "reviews": 108,
+    "website": "https://www.texasdents.com/",
+    "reasons": [],
+    "improvements": [
+     "only 1 photo"
+    ]
+   },
+   {
+    "slug": "aqualine-performance",
+    "name": "Aqualine Performance",
+    "kind": "decent site",
+    "trade": "Boat detailing",
+    "reviews": 98,
+    "website": "https://aqualineperf.com/?utm_source=google&utm_medium=organic&utm_campaign=gbp",
+    "reasons": [],
+    "improvements": [
+     "only 1 photo"
+    ]
+   },
+   {
+    "slug": "priority-one-detailing",
+    "name": "Priority One Detailing",
+    "kind": "decent site",
+    "trade": "Boat detailing",
+    "reviews": 97,
+    "website": "https://priorityonedetails.com/",
+    "reasons": [],
+    "improvements": [
+     "no quote or booking form"
+    ]
+   },
+   {
+    "slug": "dent-dynasty",
+    "name": "Dent Dynasty LLC",
+    "kind": "decent site",
+    "trade": "Paintless dent repair",
+    "reviews": 87,
+    "website": "https://dentdynastyllc.com/",
+    "reasons": [],
+    "improvements": [
+     "no reviews on the site",
+     "copyright 2025"
+    ]
+   },
+   {
+    "slug": "alpha-pro-detailing",
+    "name": "Alpha Pro Detailing LLC",
+    "kind": "decent site",
+    "trade": "Boat detailing",
+    "reviews": 83,
+    "website": "http://alphaprodetailinglv.com/",
+    "reasons": [],
+    "improvements": [
+     "no quote or booking form",
+     "no reviews on the site"
+    ]
+   },
+   {
+    "slug": "tnt-water-sports",
+    "name": "TNT Water Sports",
+    "kind": "decent site",
+    "trade": "Boat detailing",
+    "reviews": 81,
+    "website": "http://tntwatersports.com/?utm_source=google_my_business_listing&utm_medium=organic",
+    "reasons": [],
+    "improvements": [
+     "no reviews on the site"
+    ]
+   },
+   {
+    "slug": "benfield-marine",
+    "name": "Benfield Marine",
+    "kind": "decent site",
+    "trade": "Boat detailing",
+    "reviews": 79,
+    "website": "http://www.benfieldmarine.com/",
+    "reasons": [],
+    "improvements": [
+     "no quote or booking form",
+     "no reviews on the site"
+    ]
+   },
+   {
+    "slug": "collision-center",
+    "name": "Collision Center of Nashville",
+    "kind": "decent site",
+    "trade": "Paintless dent repair",
+    "reviews": 77,
+    "website": "https://www.martingroupcollisioncenters.com/collision-center-of-nashville",
+    "reasons": [],
+    "improvements": [
+     "no tap-to-call link",
+     "no quote or booking form",
+     "no reviews on the site",
+     "no meta description",
+     "copyright 2024"
+    ]
+   },
+   {
+    "slug": "affluent-auto-spa-mobile-detailing",
+    "name": "Affluent Auto Spa Mobile Detailing",
+    "kind": "decent site",
+    "trade": "Boat detailing",
+    "reviews": 76,
+    "website": "https://affluentautospa.com/",
+    "reasons": [],
+    "improvements": [
+     "no tap-to-call link",
+     "no quote or booking form"
+    ]
+   },
+   {
+    "slug": "madhouse-detailing-customs",
+    "name": "MADhouse Detailing & Customs",
+    "kind": "decent site",
+    "trade": "Boat detailing",
+    "reviews": 75,
+    "website": "http://www.madlv.com/",
+    "reasons": [],
+    "improvements": [
+     "no quote or booking form"
+    ]
+   },
+   {
+    "slug": "performance-paintless",
+    "name": "Performance Paintless",
+    "kind": "decent site",
+    "trade": "Paintless dent repair",
+    "reviews": 60,
+    "website": "https://www.performancepaintless.com/",
+    "reasons": [],
+    "improvements": [
+     "no reviews on the site",
+     "no photos"
+    ]
+   },
+   {
+    "slug": "r-j-extreme-mobile-car-wash",
+    "name": "R & J Extreme Mobile Car Wash LLC",
+    "kind": "decent site",
+    "trade": "Boat detailing",
+    "reviews": 50,
+    "website": "https://www.randjextrememobilecarwash.com/",
+    "reasons": [],
+    "improvements": [
+     "no quote or booking form",
+     "no reviews on the site"
+    ]
+   },
+   {
+    "slug": "automobiles-for-tomorrow-auto-body-collision-repair",
+    "name": "Automobiles For Tomorrow Auto Body & Collision Repair",
+    "kind": "decent site",
+    "trade": "Paintless dent repair",
+    "reviews": 46,
+    "website": "https://www.automobilesfortomorrow.com/booking-calendar/free-collision-estimate?referral=service_list_widget",
+    "reasons": [],
+    "improvements": [
+     "no tap-to-call link",
+     "no quote or booking form",
+     "no reviews on the site",
+     "only 2 photos",
+     "no meta description"
+    ]
+   },
+   {
+    "slug": "dent-titan-a-d-r",
+    "name": "DENT TITAN A.D.R. LLC",
+    "kind": "decent site",
+    "trade": "Paintless dent repair",
+    "reviews": 44,
+    "website": "http://www.denttitan.com/",
+    "reasons": [],
+    "improvements": [
+     "no quote or booking form",
+     "no reviews on the site",
+     "no meta description",
+     "loads in 3.3s"
+    ]
+   }
+  ],
+  "done": true
  }
 ]

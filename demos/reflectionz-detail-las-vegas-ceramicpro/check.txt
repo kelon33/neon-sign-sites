@@ -1,0 +1,10 @@
+- Listed as Boat detailing, but their site is about cars: built as mobile car detailing.
+- Logo is dark on a transparent background: shown on a white chip. Check it reads well.
+- Logo dropped: Claude saw it is not theirs (a badge, a client's or their web designer's). The header shows the name only.
+- Claude's notes: The site is not mobile detailing: it is a shop at 5445 S. Desert Point Dr., Unit B, with walk-ins welcome, so the mobile headline and points in the draft do not match the site and should be rewritten. Site rating is 4.7 from 1158 reviews, Google 4.8 from 501. Logo image is a black strip and is unusable. No prices on site. Photos 1 and 9 show a Ceramic Pro bottle. Photos 2, 7 have phone-number overlays and were left out. Photos 6, 8 and 10 look like stock and were left out. The Ceramic Coating special is 4 free washes with a purchase. Also offered: IGLA anti-theft, window tint, wraps, stereo and upholstery.
+- Dropped review by Artem F: not in their own pages (added by a script, likely a Google widget).
+- Dropped review by Noami C.: not in their own pages (added by a script, likely a Google widget).
+- Dropped review by Kyle T.: not in their own pages (added by a script, likely a Google widget).
+- Dropped review by Chevis: not in their own pages (added by a script, likely a Google widget).
+- Only 5 gallery photos.
+- No reviews on the site: the page shows the Google rating only.

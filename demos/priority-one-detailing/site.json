@@ -1,0 +1,164 @@
+{
+ "kit": "detailing",
+ "trade": "Mobile car detailing",
+ "name": "Priority One Detailing",
+ "legalName": "Priority One Detailing",
+ "preview": true,
+ "placeId": "ChIJteS4t4fp_IQRQanvuYoRFnU",
+ "title": "Priority One Detailing | Mobile car detailing in Las Vegas, NV",
+ "description": "Professional mobile detailing at your home, office or anywhere in the Valley. We bring the detail shop to you, so there are no lines and no waiting. 5.0 on Google from 97 reviews.",
+ "brand": "#1670ff",
+ "brandHi": "#52c6ff",
+ "accent": "#8fd0ff",
+ "logo": null,
+ "logoChip": false,
+ "wordmark": {
+  "top": "Priority One",
+  "bottom": "Detailing"
+ },
+ "phone": "(702) 530-6598",
+ "email": "priorityonedetails@gmail.com",
+ "heroImage": "img/photo-5.jpg",
+ "heroAlt": "Black Porsche Taycan detailed in a driveway",
+ "heroPosition": "60% 60%",
+ "heroPositionPhone": "60% 50%",
+ "rating": {
+  "score": "5.0",
+  "count": 97,
+  "url": "https://maps.google.com/?cid=8436950239447853377"
+ },
+ "kicker": "Mobile car detailing · Las Vegas, NV",
+ "headline": "Showroom shine.<br><em>Right in your driveway.</em>",
+ "intro": "Professional mobile detailing at your home, office or anywhere in the Valley. We bring the detail shop to you, so there are no lines and no waiting.",
+ "mobile": {
+  "title": "Your driveway is our shop.",
+  "intro": "We bring the detail to you, so your day keeps moving.",
+  "points": [
+   {
+    "name": "At your door",
+    "text": "Home, office or anywhere in the Valley."
+   },
+   {
+    "name": "No lines, no wasted gas",
+    "text": "We bring the detail shop straight to you."
+   },
+   {
+    "name": "Pay on the spot",
+    "text": "You inspect the results, and we handle payment right there."
+   },
+   {
+    "name": "Easy to book",
+    "text": "Book online or by phone. You get instant confirmation and live updates."
+   }
+  ]
+ },
+ "servicesTitle": "Inside, outside, and every detail between.",
+ "servicesIntro": "From a deep interior clean to multi-stage paint correction, with high-quality products for every surface.",
+ "services": [
+  {
+   "name": "Full Detail",
+   "text": "Our most popular package: interior and exterior together, finished with a 3-month paint sealant.",
+   "price": "Starting at $199.99"
+  },
+  {
+   "name": "Full Refresh Detail",
+   "text": "For vehicles that need extra attention: steam cleaning, shampoo and heated extraction, clay bar and a 6-month paint sealant.",
+   "price": "Starting at $499.99"
+  },
+  {
+   "name": "Interior Refresh",
+   "text": "Deep-cleans seats, carpets and every crevice so the cabin feels brand-new again."
+  },
+  {
+   "name": "Exterior Detail",
+   "text": "Hand wash, polish and paint protection, so the finish sparkles under the desert sun."
+  },
+  {
+   "name": "Paint Correction",
+   "text": "Takes out swirl marks, light scratches and oxidation from the Nevada sun."
+  },
+  {
+   "name": "Ceramic Coating",
+   "text": "Professional coating that locks in long-term protection for your finish."
+  }
+ ],
+ "also": [
+  {
+   "name": "Motorcycles"
+  },
+  {
+   "name": "Minivans"
+  },
+  {
+   "name": "Work trucks"
+  },
+  {
+   "name": "Luxury SUVs"
+  }
+ ],
+ "alsoTitle": "We also detail",
+ "why": [
+  {
+   "name": "Built for the desert",
+   "text": "Products and methods chosen to protect your vehicle from Nevada sun, blowing dust and everyday grime."
+  },
+  {
+   "name": "Honest pricing",
+   "text": "Packages are sized to your exact vehicle. No hidden fees, no upselling pressure."
+  },
+  {
+   "name": "Flexible plans",
+   "text": "Choose a one-time clean or regular maintenance."
+  }
+ ],
+ "whyTitle": "The detail is in the name.",
+ "howTitle": "Book it. We show up. You drive off shining.",
+ "steps": [
+  {
+   "name": "Tell us about your vehicle",
+   "text": "Call or send the form with your vehicle and the service you want."
+  },
+  {
+   "name": "We come to you",
+   "text": "We arrive with the equipment and products to do the job on site."
+  },
+  {
+   "name": "Take the keys back",
+   "text": "Your car is clean, restored and showroom-ready."
+  }
+ ],
+ "contactTitle": "Book your detail.",
+ "footerLine": "Mobile car detailing in Las Vegas",
+ "reviews": [],
+ "hours": [
+  "Mon–Sun: Open 24 Hours"
+ ],
+ "galleryTitle": "Fresh off the driveway.",
+ "gallery": [
+  {
+   "src": "img/photo-3.jpg",
+   "alt": "Red GMC Yukon Denali after detailing",
+   "size": "big"
+  },
+  {
+   "src": "img/photo-10.jpg",
+   "alt": "Glossy black Ferrari parked on the street"
+  },
+  {
+   "src": "img/photo-4.jpg",
+   "alt": "Black Ferrari with a deep shine"
+  },
+  {
+   "src": "img/photo-9.jpg",
+   "alt": "Gray Ford Super Duty truck after a detail"
+  },
+  {
+   "src": "img/photo-1.jpg",
+   "alt": "Audi covered in foam during a hand wash"
+  }
+ ],
+ "areas": [
+  "Las Vegas"
+ ],
+ "pitch": "site"
+}

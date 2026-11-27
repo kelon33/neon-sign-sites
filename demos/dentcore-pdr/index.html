@@ -1,0 +1,369 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>DENTCORE PDR | Paintless dent repair in Hendersonville, TN</title>
+<meta name="description" content="Paintless dent repair in Hendersonville. Dents, door dings and hail damage worked out with no paint and no body filler, with same day service. 5.0 on Google from 174 reviews.">
+<meta name="theme-color" content="#07090d">
+<meta name="robots" content="noindex, nofollow">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@100..125,500..800&family=Inter:wght@400;500;600&display=swap">
+<style>
+:root { --brand: #1670ff; --brand-hi: #52c6ff; --brand-lo: #0f4eb3; --accent: #8fd0ff;
+  --bg: #0d1118; --panel: #131923; --panel-2: #19212d; --brand-glow: #1670ff38; --line: rgba(255,255,255,.08); --ink: #eef2f8; --muted: #98a2b3;
+  --display: "Archivo", "Inter", system-ui, sans-serif; --sans: "Inter", system-ui, sans-serif; --ease: cubic-bezier(.22,.61,.36,1); }
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body { margin: 0; background: var(--bg); color: var(--ink); font: 400 17px/1.65 var(--sans); -webkit-font-smoothing: antialiased; }
+a { color: inherit; }
+img { display: block; max-width: 100%; }
+.wrap { max-width: 1180px; margin: 0 auto; padding: 0 24px; }
+h1, h2, h3 { margin: 0; }
+h1, h2 { font-family: var(--display); font-stretch: 118%; font-weight: 750; letter-spacing: -0.02em; line-height: 1.02; }
+h1 { font-size: clamp(2.6rem, 6.4vw, 5.3rem); }
+h2 { font-size: clamp(1.95rem, 4vw, 3.2rem); }
+h3 { font: 600 1.08rem/1.35 var(--sans); }
+p { margin: 0; }
+.eyebrow { font: 600 .74rem/1 var(--sans); letter-spacing: .2em; text-transform: uppercase; color: var(--accent); margin-bottom: 18px; }
+.muted { color: var(--muted); }
+
+/* Buttons: a glossy, freshly waxed finish. */
+.btn { position: relative; overflow: hidden; display: inline-flex; align-items: center; justify-content: center; gap: 10px; padding: 17px 28px; border-radius: 14px; border: 0; cursor: pointer;
+  font: 600 1rem/1 var(--sans); color: #fff; text-decoration: none; -webkit-tap-highlight-color: transparent; touch-action: manipulation;
+  background: linear-gradient(180deg, var(--brand-hi), var(--brand) 52%, var(--brand-lo));
+  box-shadow: inset 0 1px 0 rgba(255,255,255,.45), inset 0 -1px 0 rgba(0,0,0,.25), 0 12px 30px -10px #1670ffcc;
+  transition: transform .3s var(--ease), box-shadow .3s var(--ease); }
+.btn::after { content: ""; position: absolute; inset: -40% auto -40% -60%; width: 40%; transform: skewX(-20deg); pointer-events: none;
+  background: linear-gradient(90deg, transparent, rgba(255,255,255,.55), transparent); transition: left .7s var(--ease); left: -60%; }
+.btn.ghost { background: rgba(255,255,255,.06); box-shadow: inset 0 0 0 1px rgba(255,255,255,.22); backdrop-filter: blur(6px); }
+@media (hover: hover) and (pointer: fine) {
+  .btn:hover { transform: translateY(-1px); box-shadow: inset 0 1px 0 rgba(255,255,255,.5), 0 16px 40px -10px #1670ff; }
+  .btn:hover::after { left: 130%; }
+}
+.btn.shine::after { left: 130%; }
+.preview-bar { background: #000; color: #cfcbd6; font: 500 13px/1.4 var(--sans); text-align: center; padding: 9px 16px; border-bottom: 1px solid var(--line); }
+.preview-bar a { color: #ff7aa8; }
+
+/* Header */
+.top { position: absolute; left: 0; right: 0; z-index: 5; }
+.top .wrap { display: flex; align-items: center; justify-content: space-between; gap: 20px; height: 96px; }
+.logo { display: flex; align-items: center; gap: 12px; text-decoration: none; }
+.logo img { height: 50px; width: auto; filter: drop-shadow(0 4px 14px rgba(0,0,0,.5)); }
+/* A dark logo with no transparent background sits on a light chip ("logoChip"). */
+.logo img.chip { background: #fff; border-radius: 10px; padding: 5px 8px; filter: none; }
+.logo span { display: grid; line-height: 1; }
+.logo b { font: 800 1.32rem/1 var(--display); font-stretch: 125%; letter-spacing: .01em; text-transform: uppercase; }
+.logo small { font: 600 .64rem/1 var(--sans); letter-spacing: .32em; text-transform: uppercase; color: var(--muted); margin-top: 6px; }
+.top nav { display: flex; gap: 30px; }
+.top nav a { color: rgba(255,255,255,.78); text-decoration: none; font-size: .95rem; transition: color .2s; }
+.top nav a:hover { color: #fff; }
+.top .btn { padding: 13px 20px; font-size: .93rem; }
+
+/* Hero: their own best photo, darkened on the side the words sit. */
+.hero { position: relative; min-height: min(100vh, 860px); display: flex; align-items: flex-end; padding: 170px 0 90px; overflow: hidden; isolation: isolate; }
+.hero > img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: 60% 60%; z-index: -2; transform: scale(1.04); animation: settle 2.4s var(--ease) forwards; }
+.hero::before { content: ""; position: absolute; inset: 0; z-index: -1;
+  background: linear-gradient(90deg, rgba(7,9,13,.94) 0%, rgba(7,9,13,.78) 38%, rgba(7,9,13,.15) 75%), linear-gradient(180deg, rgba(7,9,13,.6), transparent 30%, transparent 62%, var(--bg)); }
+@keyframes settle { to { transform: scale(1); } }
+.hero h1 { max-width: 11em; }
+.hero h1 em { font-style: normal; background: linear-gradient(100deg, #fff 0%, #fff 40%, var(--accent) 50%, #fff 60%, #fff 100%); background-size: 250% 100%; background-position: 100% 0;
+  -webkit-background-clip: text; background-clip: text; color: transparent; animation: gloss 2.6s .5s var(--ease) forwards; }
+@keyframes gloss { to { background-position: 0 0; } }
+.hero .lead { font-size: 1.16rem; color: rgba(238,242,248,.82); max-width: 32em; margin-top: 24px; }
+.hero .actions { display: flex; flex-wrap: wrap; gap: 14px; margin-top: 34px; }
+.rating { display: inline-flex; align-items: center; gap: 10px; margin-top: 34px; text-decoration: none; padding: 10px 16px; border-radius: 999px; background: rgba(255,255,255,.07); box-shadow: inset 0 0 0 1px var(--line); backdrop-filter: blur(8px); font-size: .93rem; }
+.rating b { font-weight: 600; }
+.rating span { color: rgba(238,242,248,.75); }
+.stars { display: inline-flex; gap: 2px; }
+.stars svg { width: 16px; height: 16px; fill: #ffc24b; }
+
+/* Bands and sections */
+.section { padding: 110px 0; position: relative; }
+.head { display: grid; grid-template-columns: 1.1fr .9fr; gap: 48px; align-items: end; margin-bottom: 52px; }
+.head p { color: var(--muted); font-size: 1.07rem; }
+
+.points { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1px; background: var(--line); border: 1px solid var(--line); border-radius: 22px; overflow: hidden; }
+.point { background: var(--panel); padding: 30px 26px; }
+.point svg, .why svg { width: 30px; height: 30px; fill: none; stroke: var(--accent); stroke-width: 1.6; stroke-linecap: round; stroke-linejoin: round; margin-bottom: 18px; }
+.point p { color: var(--muted); font-size: .95rem; margin-top: 8px; }
+
+.services { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
+.service { position: relative; padding: 30px 28px 28px; border-radius: 20px; overflow: hidden;
+  background: linear-gradient(160deg, var(--panel-2), var(--panel) 60%); box-shadow: inset 0 0 0 1px var(--line); transition: transform .35s var(--ease), box-shadow .35s var(--ease); }
+.service::before { content: ""; position: absolute; inset: 0 0 auto; height: 1px; background: linear-gradient(90deg, transparent, rgba(255,255,255,.35), transparent); }
+.service .n { font: 700 .8rem/1 var(--display); font-stretch: 125%; color: var(--accent); letter-spacing: .1em; }
+.service h3 { margin-top: 16px; font-size: 1.16rem; }
+.service p { color: var(--muted); margin-top: 10px; font-size: .96rem; }
+.service .price { margin-top: 18px; font: 700 1.3rem/1 var(--display); font-stretch: 118%; }
+.service .price small { font: 500 .8rem var(--sans); color: var(--muted); margin-right: 6px; }
+@media (hover: hover) { .service:hover { transform: translateY(-4px); box-shadow: inset 0 0 0 1px #1670ff88, 0 24px 50px -30px #1670ff; } }
+.also { display: flex; flex-wrap: wrap; align-items: center; gap: 10px 12px; margin-top: 28px; color: var(--muted); }
+.also span.tag { color: var(--ink); background: var(--panel-2); box-shadow: inset 0 0 0 1px var(--line); border-radius: 999px; padding: 9px 16px; font-size: .93rem; }
+
+/* Gallery: the work, big. */
+.gallery { display: grid; grid-template-columns: repeat(4, 1fr); grid-auto-rows: 230px; gap: 12px; grid-auto-flow: dense; }
+.gallery button { padding: 0; border: 0; border-radius: 16px; overflow: hidden; cursor: zoom-in; background: var(--panel); position: relative; -webkit-tap-highlight-color: transparent; }
+/* "size": "big" (2×2) or "tall" (1×2) in site.json; one big and one tall with ten more fill four rows exactly. */
+.gallery .big { grid-column: span 2; grid-row: span 2; }
+.gallery .tall { grid-row: span 2; }
+.gallery img { width: 100%; height: 100%; object-fit: cover; transition: transform .8s var(--ease), filter .8s var(--ease); filter: saturate(1.05); }
+@media (hover: hover) { .gallery button:hover img { transform: scale(1.05); filter: saturate(1.15) brightness(1.05); } }
+dialog.lightbox { padding: 0; border: 0; background: transparent; max-width: min(94vw, 1100px); max-height: 92vh; }
+dialog.lightbox::backdrop { background: rgba(3,4,7,.9); backdrop-filter: blur(6px); }
+dialog.lightbox img { max-height: 88vh; width: auto; margin: auto; border-radius: 14px; }
+dialog.lightbox form { position: absolute; top: 10px; right: 10px; }
+dialog.lightbox form button { width: 44px; height: 44px; border-radius: 50%; border: 0; background: rgba(0,0,0,.6); color: #fff; font-size: 1.4rem; cursor: pointer; }
+
+/* Reviews */
+.reviews { display: grid; grid-auto-flow: column; grid-auto-columns: minmax(300px, 1fr); gap: 16px; overflow-x: auto; scroll-snap-type: x mandatory; padding-bottom: 14px; scrollbar-width: thin; scrollbar-color: #2a3242 transparent; }
+.review { scroll-snap-align: start; background: var(--panel); box-shadow: inset 0 0 0 1px var(--line); border-radius: 20px; padding: 28px; display: flex; flex-direction: column; gap: 16px; }
+.review p { font-size: 1.02rem; color: rgba(238,242,248,.9); flex: 1; }
+.review cite { font-style: normal; font-weight: 600; font-size: .92rem; }
+.review cite small { display: block; font-weight: 400; color: var(--muted); }
+
+.why { display: grid; grid-template-columns: repeat(3, 1fr); gap: 34px; }
+.why p { color: var(--muted); margin-top: 8px; font-size: .96rem; }
+
+.steps { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; counter-reset: s; }
+.step { padding-top: 22px; border-top: 1px solid rgba(255,255,255,.14); position: relative; }
+.step::before { content: ""; position: absolute; top: -1px; left: 0; width: 56px; height: 2px; background: linear-gradient(90deg, var(--accent), var(--brand)); }
+.step .n { font: 750 2.2rem/1 var(--display); font-stretch: 118%; color: rgba(255,255,255,.22); }
+.step h3 { margin-top: 12px; }
+.step p { color: var(--muted); margin-top: 8px; font-size: .96rem; }
+
+/* Booking */
+.book { padding: 110px 0; background: radial-gradient(ellipse at 15% 0%, #1670ff38, transparent 55%), var(--panel); border-top: 1px solid var(--line); }
+.book .grid { display: grid; grid-template-columns: .9fr 1.1fr; gap: 64px; }
+.book dl { margin: 34px 0 0; display: grid; gap: 20px; }
+.book dt { font-size: .76rem; letter-spacing: .16em; text-transform: uppercase; color: var(--muted); }
+.book dd { margin: 5px 0 0; font-size: 1.08rem; }
+.book dd a { text-decoration: none; }
+.areas { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 8px; }
+.areas span { background: rgba(255,255,255,.06); border-radius: 999px; padding: 6px 13px; font-size: .9rem; }
+.gift { display: inline-block; margin-top: 30px; color: var(--accent); text-decoration: none; font-weight: 600; }
+.gift:hover { text-decoration: underline; }
+form.booking { background: var(--bg); box-shadow: inset 0 0 0 1px var(--line), 0 40px 80px -40px #000; border-radius: 24px; padding: 34px; display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+form.booking h3 { grid-column: 1 / -1; font: 750 1.6rem/1.1 var(--display); font-stretch: 118%; margin-bottom: 4px; }
+form.booking label { display: grid; gap: 7px; font-size: .86rem; color: var(--muted); }
+form.booking .full { grid-column: 1 / -1; }
+form.booking input, form.booking select, form.booking textarea { width: 100%; border: 0; box-shadow: inset 0 0 0 1px rgba(255,255,255,.12); border-radius: 12px; padding: 14px; font: 400 1rem var(--sans); background: var(--panel-2); color: var(--ink); color-scheme: dark; transition: box-shadow .2s; }
+form.booking input:focus, form.booking select:focus, form.booking textarea:focus { outline: none; box-shadow: inset 0 0 0 1.5px var(--brand-hi); }
+form.booking textarea { min-height: 90px; resize: vertical; }
+form.booking .btn { grid-column: 1 / -1; margin-top: 6px; }
+.footer { border-top: 1px solid var(--line); color: var(--muted); padding: 28px 0; font-size: .9rem; }
+.footer .wrap { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 10px; }
+
+/* Phone: call and book always in reach */
+.dock { display: none; }
+:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; }
+@media (max-width: 900px) {
+  .top nav { display: none; }
+  .top .btn { display: none; }
+  .hero { min-height: 0; padding: 140px 0 70px; }
+  .hero::before { background: linear-gradient(180deg, rgba(7,9,13,.55) 0%, rgba(7,9,13,.35) 30%, rgba(7,9,13,.88) 62%, var(--bg) 100%); }
+  .hero > img { object-position: 60% 50%; }
+  .head, .book .grid { grid-template-columns: 1fr; gap: 20px; }
+  .points { grid-template-columns: 1fr 1fr; }
+  .point { padding: 22px 18px; }
+  .point svg { margin-bottom: 12px; }
+  .services, .why, .steps { grid-template-columns: 1fr; }
+  .why { gap: 26px; }
+  .gallery { grid-template-columns: 1fr 1fr; grid-auto-rows: 160px; gap: 8px; }
+  .reviews { grid-auto-columns: 84%; }
+  .section, .book { padding: 80px 0; }
+  form.booking { grid-template-columns: 1fr; padding: 24px; }
+  .dock { display: grid; transition: transform .45s var(--ease), opacity .45s var(--ease); grid-template-columns: 1fr 1fr; gap: 10px; position: fixed; left: 12px; right: 12px; bottom: 12px; z-index: 20; padding: 8px; border-radius: 20px; background: rgba(14,18,25,.82); backdrop-filter: blur(14px); box-shadow: inset 0 0 0 1px var(--line), 0 14px 34px -10px rgba(0,0,0,.7); }
+  .dock .btn { padding: 15px 10px; }
+  .dock.away { transform: translateY(130%); opacity: 0; pointer-events: none; }
+  body { padding-bottom: 86px; }
+}
+@media (max-width: 340px) { .points { grid-template-columns: 1fr; } }
+@media (max-width: 520px) {
+  .logo b { font-size: 1.12rem; }
+  .logo img { height: 42px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { animation: none !important; transition: none !important; }
+  .hero h1 em { background-position: 0 0; }
+  .hero > img { transform: none; }
+}
+
+/* RULE: no hard edges between sections. Wherever two colours meet, the change is a soft gradient. */
+.hero::after { content: ""; position: absolute; left: 0; right: 0; bottom: 0; height: 84px; z-index: -1; pointer-events: none; background: linear-gradient(180deg, transparent, var(--bg)); }
+.book { border-top: 0; background: linear-gradient(180deg, var(--bg), transparent 140px), radial-gradient(ellipse at 15% 0%, var(--brand-glow), transparent 55%), var(--panel); }
+.footer { background: linear-gradient(180deg, var(--panel), var(--bg)); border-top: 0; }
+
+/* RULE: the first screen reads as a whole page: headline, every hero button and the Google rating
+   visible without scrolling, on laptops, desktops and phones (npm run fold checks it). */
+:root:has(.preview-bar) { --bar: 36px; }
+@media (max-width: 600px) { .pv-for { display: none; } }
+.preview-bar { height: 36px; box-sizing: border-box; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+@media (min-width: 901px) {
+  .hero { min-height: calc(min(100vh, 860px) - var(--bar, 0px)); }
+}
+@media (min-width: 901px) and (max-height: 920px) {
+  .hero { padding-top: 112px; padding-bottom: 84px; }
+  .hero h1 { font-size: clamp(2.5rem, 8vh, 5.2rem); }
+  .hero .lead { margin-top: 16px; }
+  .hero .actions { margin-top: 24px; }
+  .badges { margin-top: 18px; }
+  .hero .rating { margin-top: 18px; }
+}
+@media (max-width: 900px) {
+  .hero { min-height: calc(100svh - var(--bar, 0px)); padding: 92px 0 58px; }
+  .hero h1 { font-size: clamp(1.9rem, min(10.2vw, 6svh), 3.3rem); }
+  .hero .eyebrow { margin-bottom: 10px; }
+  .hero .lead { font-size: 1rem; line-height: 1.5; margin-top: 12px; display: -webkit-box; -webkit-line-clamp: 4; -webkit-box-orient: vertical; overflow: hidden; }
+  .hero .actions { flex-wrap: nowrap; gap: 10px; margin-top: 18px; }
+  .hero .actions .btn { flex: 1 1 0; min-width: 0; justify-content: center; text-align: center; padding: 14px 10px; font-size: .88rem; white-space: nowrap; }
+  .badges { margin-top: 14px; gap: 6px 16px; font-size: .84rem; }
+  .hero .rating { margin-top: 16px; }
+}
+@media (max-width: 900px) and (max-height: 760px) {
+  .hero .lead { -webkit-line-clamp: 3; }
+  .badges { display: none; }
+}
+</style>
+</head>
+<body>
+<style>
+/* One line, a fixed 40px: the kits subtract --bar from the hero so the first screen still fits (npm run fold). */
+:root:has(.nss-bar) { --bar: 40px; }
+.nss-bar { background: #0b0b10; color: #e9e6ef; font: 500 13px/1.4 system-ui, -apple-system, sans-serif; display: flex; flex-wrap: nowrap; justify-content: center; align-items: center; gap: 14px; height: 40px; box-sizing: border-box; padding: 0 12px; text-align: center; white-space: nowrap; overflow: hidden; }
+.nss-bar > span { min-width: 0; overflow: hidden; text-overflow: ellipsis; }
+@media (max-width: 600px) { .nss-bar .nss-for, .nss-bar .nss-yet { display: none; } }
+.nss-bar a { color: #ff7aa8; }
+.nss-bar .nss-go { flex: none; color: #0b0b10; background: #ff4f8b; border-radius: 999px; padding: 5px 14px; font-weight: 700; text-decoration: none; white-space: nowrap; }
+.nss-end { background: #0b0b10; color: #f3f0e9; text-align: center; padding: 56px 20px 140px; font: 400 16px/1.5 system-ui, -apple-system, sans-serif; }
+.nss-end h2 { font: 600 1.6rem/1.2 system-ui, -apple-system, sans-serif; margin: 0 0 8px; color: #fff; }
+.nss-end p { color: #a9a6b2; margin: 0 auto 22px; max-width: 30em; }
+.nss-end .nss-opts { display: flex; flex-wrap: wrap; gap: 12px; justify-content: center; }
+.nss-end .nss-opts a { text-decoration: none; border-radius: 999px; padding: 14px 24px; font-weight: 700; }
+.nss-end .nss-main { background: #ff4f8b; color: #0b0b10; box-shadow: 0 10px 30px -8px rgba(255,79,139,.6); }
+.nss-end .nss-alt { color: #f3f0e9; box-shadow: inset 0 0 0 1px #3a3a4a; }
+.nss-end small { display: block; color: #8a8794; margin-top: 16px; font-size: 13px; }</style>
+<div class="nss-bar"><span>Preview <span class="nss-for">prepared for DENTCORE PDR </span>by <a href="https://neonsignsites.com/">Neon Sign Sites</a>.<span class="nss-yet"> Not the live site yet.</span></span><a class="nss-go" data-plan="monthly" href="https://neonsignsites.com/go?plan=monthly">Make it live</a></div>
+<header class="top">
+  <div class="wrap">
+    <a class="logo" href="#"><img src="logo.png" alt="" class="chip"><span><b>DentCORE</b><small>Paintless Dent Removal</small></span></a>
+    <nav aria-label="Main"><a href="#services">Services</a><a href="#book">Contact</a></nav>
+    <a class="btn" href="#book">Get an estimate</a>
+  </div>
+</header>
+
+<main>
+<section class="hero">
+  <img src="img/photo-2.jpg" alt="Blue SUV rear bumper and tailgate with a glossy finish" fetchpriority="high">
+  <div class="wrap">
+    <p class="eyebrow">Paintless dent repair · Hendersonville</p>
+    <h1>Hail damage gone.<br><em>Hassle gone too.</em></h1>
+    <p class="lead">Paintless dent repair in Hendersonville. Dents, door dings and hail damage worked out with no paint and no body filler, with same day service.</p>
+    <div class="actions">
+      <a class="btn" href="#book">Get an estimate</a>
+      <a class="btn ghost" href="tel:+16157624607">Call (615) 762-4607</a>
+    </div>
+    <a class="rating" href="https://maps.google.com/?cid=6480979292858698514" target="_blank" rel="noopener"><span class="stars" aria-label="5 stars"><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M10 1.6l2.6 5.3 5.8.8-4.2 4.1 1 5.8L10 14.9l-5.2 2.7 1-5.8L1.6 7.7l5.8-.8z"/></svg><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M10 1.6l2.6 5.3 5.8.8-4.2 4.1 1 5.8L10 14.9l-5.2 2.7 1-5.8L1.6 7.7l5.8-.8z"/></svg><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M10 1.6l2.6 5.3 5.8.8-4.2 4.1 1 5.8L10 14.9l-5.2 2.7 1-5.8L1.6 7.7l5.8-.8z"/></svg><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M10 1.6l2.6 5.3 5.8.8-4.2 4.1 1 5.8L10 14.9l-5.2 2.7 1-5.8L1.6 7.7l5.8-.8z"/></svg><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M10 1.6l2.6 5.3 5.8.8-4.2 4.1 1 5.8L10 14.9l-5.2 2.7 1-5.8L1.6 7.7l5.8-.8z"/></svg></span><b>5.0</b><span>174 Google reviews</span></a>
+  </div>
+</section>
+
+
+
+<section class="section" id="services">
+  <div class="wrap">
+    <div class="head"><div><p class="eyebrow">Services</p><h2>Every kind of dent.</h2></div><p>From a single door ding to a full hail storm.</p></div>
+    <div class="services">
+      <article class="service"><span class="n">01</span><h3>Dents and door dings</h3><p>Small dents pushed out from behind the panel, with no paint and no body filler.</p></article>
+      <article class="service"><span class="n">02</span><h3>Hail damage</h3><p>Hail dents on roofs, hoods and trunks repaired with specialized tools made for each panel.</p></article>
+      <article class="service"><span class="n">03</span><h3>Creases</h3><p>Creased metal worked back into shape from the inside out where we can reach it.</p></article>
+      <article class="service"><span class="n">04</span><h3>Glue pulling</h3><p>For spots with no access to the back of the panel, like roof rails, we pull the dent from the outside with weather-rated glue.</p></article>
+      <article class="service"><span class="n">05</span><h3>Plastic bumper repair</h3><p>Dents and damage in plastic bumpers repaired.</p></article>
+      <article class="service"><span class="n">06</span><h3>Severe body damage</h3><p>Heavier damage repaired, not just the small stuff.</p></article>
+    </div>
+    
+  </div>
+</section>
+
+
+
+
+
+<section class="section" style="padding-top:30px">
+  <div class="wrap">
+    <p class="eyebrow">Why DentCORE Paintless Dent Removal</p>
+    <h2 style="margin-bottom:46px;max-width:16em">The DENTCORE PDR difference.</h2>
+    <div class="why">
+      <div><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3s6 6.4 6 11a6 6 0 01-12 0c0-4.6 6-11 6-11z"/></svg><h3>Same day service</h3><p>Repairs are done within hours, not days or weeks.</p></div>
+      <div><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="9" cy="8" r="3.2"/><path d="M3 20c.6-3.4 3-5.4 6-5.4s5.4 2 6 5.4"/><path d="M16 4.8a3.2 3.2 0 010 6.4M18 14.8c1.7.7 2.8 2.6 3 5.2"/></svg><h3>23+ years of experience</h3><p>PDR takes years of training to perfect, and the site cites 23+ years of experience.</p></div>
+      <div><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3l8 3v6c0 4.6-3.4 8-8 9-4.6-1-8-4.4-8-9V6z"/><path d="M8.5 12l2.5 2.5 4.5-5"/></svg><h3>Price match</h3><p>DENTCORE says it will beat competitors' pricing, with a copy of the written estimate.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="how" style="padding-top:30px">
+  <div class="wrap">
+    <p class="eyebrow">How it works</p>
+    <h2 style="margin-bottom:46px">Dent-free in three steps.</h2>
+    <div class="steps">
+      <div class="step"><span class="n">01</span><h3>Send the details</h3><p>Call, or use the form with your year, make, model and photos of the damage.</p></div>
+      <div class="step"><span class="n">02</span><h3>Get an evaluation</h3><p>Bring the vehicle in and we look at the hail damage, dings or film options.</p></div>
+      <div class="step"><span class="n">03</span><h3>Drive it smooth</h3><p>We work the dents out and hand the vehicle back.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="book" id="book">
+  <div class="wrap grid">
+    <div>
+      <p class="eyebrow">Book</p>
+      <h2>Got a dent?</h2>
+      <dl>
+        <div><dt>Call or text</dt><dd><a href="tel:+16157624607">(615) 762-4607</a></dd></div>
+        <div><dt>Email</dt><dd><a href="mailto:info@dentcorepdr.com">info@dentcorepdr.com</a></dd></div>
+        
+        <div><dt>Where we go</dt><dd><div class="areas"><span>Hendersonville</span></div></dd></div>
+      </dl>
+      
+    </div>
+    <form class="booking" onsubmit="event.preventDefault(); this.querySelector('button').textContent='Thanks! We\'ll text you to confirm.';">
+      <h3>Request a booking</h3>
+      <label>Name <input name="name" autocomplete="name" required></label>
+      <label>Phone <input name="phone" type="tel" autocomplete="tel" required></label>
+      <label>Vehicle type <select name="vehicle"><option>Car</option><option>SUV or truck</option></select></label>
+      <label>Make and model <input name="model" placeholder="e.g. Toyota RAV4"></label>
+      <label class="full">Service <select name="service"><option>Dents and door dings</option><option>Hail damage</option><option>Creases</option><option>Glue pulling</option><option>Plastic bumper repair</option><option>Severe body damage</option><option>Not sure yet</option></select></label>
+      <label>Where should we come? <input name="address" autocomplete="street-address" placeholder="Address or neighborhood"></label>
+      <label>Preferred day <input name="date" type="date"></label>
+      <label class="full">Anything we should know? <textarea name="note" placeholder="Where the dent is, how big, hail or a door ding…"></textarea></label>
+      <button class="btn" type="submit">Request my booking</button>
+    </form>
+  </div>
+</section>
+</main>
+
+<footer class="footer"><div class="wrap"><span>© 2026 DENTCORE PDR</span><span>Paintless dent repair in Hendersonville</span></div></footer>
+<div class="dock away"><a class="btn ghost" href="tel:+16157624607">Call</a><a class="btn" href="#book">Get an estimate</a></div>
+<script>
+  // Gallery: a tap opens the photo large.
+  const box = document.querySelector('dialog.lightbox');
+  if (box) for (const b of document.querySelectorAll('.gallery button')) b.addEventListener('click', () => { box.querySelector('img').src = b.dataset.full; box.querySelector('img').alt = b.querySelector('img').alt; box.showModal(); });
+  box?.addEventListener('click', (e) => { if (e.target === box) box.close(); });
+  // The phone's call/book dock slides in once the hero's own buttons have scrolled away.
+  const dock = document.querySelector('.dock'), heroActions = document.querySelector('.hero .actions');
+  new IntersectionObserver(([e]) => dock.classList.toggle('away', e.isIntersecting)).observe(heroActions);
+  // On a phone there is no hover: the shine sweeps across a button when it is tapped.
+  for (const b of document.querySelectorAll('.btn')) b.addEventListener('pointerdown', (e) => {
+    if (e.pointerType === 'mouse') return;
+    b.classList.remove('shine'); void b.offsetWidth; b.classList.add('shine');
+    clearTimeout(b._t); b._t = setTimeout(() => b.classList.remove('shine'), 800);
+  });
+</script>
+<section class="nss-end" aria-label="Make this site live">
+  <h2>Like it? It can go live in a few days.</h2>
+  <p>On your own domain, with hosting and SSL included. Your email and everything else stay as they are.</p>
+  <div class="nss-opts"><a class="nss-main" data-plan="monthly" href="https://neonsignsites.com/go?plan=monthly">$0 first month</a><a class="nss-alt" data-plan="own" href="https://neonsignsites.com/go?plan=own">Own it for $299</a></div>
+  <small>Monthly: then $49/month, minimum 2 paid months after the free one. Own it: $299 once, hosting included the first year, then $49/year. Prepared by Neon Sign Sites.</small>
+</section>
+<script>(function(){var s=(location.pathname.match(/\/p\/([a-z0-9-]+)/)||[])[1];var n="DENTCORE PDR";document.querySelectorAll('a[data-plan]').forEach(function(a){var u=new URL(a.href);if(s)u.searchParams.set('site',s);u.searchParams.set('name',n);a.href=u.toString();});})();</script>
+</body>
+</html>

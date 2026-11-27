@@ -1,0 +1,13 @@
+- No hero photo: Claude found none of their photos usable.
+- Photo pitch: only 0 usable photos by Claude's choice, so no gallery; the email asks them for photos of their work.
+- Claude's notes: Only photos are two shots of the shop's lobby sign, no finished-work photos, so none used. Site shows 125 ratings vs 108 on Google. Site mentions a Dallas location; copy covers San Antonio only. Reviews are dated 2026 on the site. Site claims 25+ years of experience but established 2009; check wording.
+- Dropped review by Kenyon W: not in their own pages (added by a script, likely a Google widget).
+- Dropped review by Will G: not in their own pages (added by a script, likely a Google widget).
+- Dropped review by Daniel F: not in their own pages (added by a script, likely a Google widget).
+- Dropped review by Michael Z: not in their own pages (added by a script, likely a Google widget).
+- Dropped review by Josh S: not in their own pages (added by a script, likely a Google widget).
+- Dropped review by Jorge T: not in their own pages (added by a script, likely a Google widget).
+- No photos at all: the hero has no picture. Find photos by hand.
+- Only 0 gallery photos.
+- No reviews on the site: the page shows the Google rating only.
+- Hero is a licensed stock photo for the trade (credited on the page, see generator/assets/CREDITS.md), not their work: swap in their own photo once they send one.

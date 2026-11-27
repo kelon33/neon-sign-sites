@@ -1,0 +1,12 @@
+- Found by a search in San Antonio, TX, but their address is in Boerne, TX: the site uses that. Check their service area.
+- Logo is dark on a transparent background: shown on a white chip. Check it reads well.
+- No hero photo: Claude found none of their photos usable.
+- Photo pitch: only 1 usable photo by Claude's choice, so no gallery; the email asks them for photos of their work.
+- Claude's notes: Only photo 4 looks like real work; the others appear stock, so the hero is left empty. Site says 'certified' technicians and a 100% guarantee, left out. Site mentions free pick-up and delivery, which is not in the draft's mobile section, so mobilePoints is empty. Kerrville and Ingram locations conflict across pages. Check the logo, since it is dark on a transparent background.
+- Dropped review by Patrick Hundley: not in their own pages (added by a script, likely a Google widget).
+- Dropped review by Jeremy Schlesinger: not in their own pages (added by a script, likely a Google widget).
+- Dropped review by James Outlaw: not in their own pages (added by a script, likely a Google widget).
+- No photos at all: the hero has no picture. Find photos by hand.
+- Only 0 gallery photos.
+- No reviews on the site: the page shows the Google rating only.
+- Hero is a licensed stock photo for the trade (credited on the page, see generator/assets/CREDITS.md), not their work: swap in their own photo once they send one.

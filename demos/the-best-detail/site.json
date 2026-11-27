@@ -1,0 +1,163 @@
+{
+ "kit": "detailing",
+ "trade": "Mobile car detailing",
+ "name": "The Best Detail",
+ "legalName": "The Best Detail",
+ "preview": true,
+ "placeId": "ChIJMYtI__DFyIAREAyZsqBYBEs",
+ "title": "The Best Detail | Mobile car detailing in Las Vegas, NV",
+ "description": "Mobile detailing, ceramic coating, window tinting and paint protection film, done at your home or office anywhere in the Las Vegas Valley. Prefer the private studio? That works too. 4.7 on Google from 321 reviews.",
+ "brand": "#1670ff",
+ "brandHi": "#52c6ff",
+ "accent": "#8fd0ff",
+ "logo": "logo.png",
+ "logoChip": false,
+ "wordmark": {
+  "top": "The Best",
+  "bottom": "Detail"
+ },
+ "phone": "(702) 718-7214",
+ "email": "peter@thebestdetail.com",
+ "heroImage": "img/photo-3.jpg",
+ "heroAlt": "Matte black Audi SUV in a lit detailing studio",
+ "heroPosition": "60% 60%",
+ "heroPositionPhone": "60% 50%",
+ "rating": {
+  "score": "4.7",
+  "count": 321,
+  "url": "https://maps.google.com/?cid=5405542899965824016"
+ },
+ "kicker": "Mobile car detailing · Las Vegas, NV",
+ "headline": "Showroom shine,<br><em>at your driveway.</em>",
+ "intro": "Mobile detailing, ceramic coating, window tinting and paint protection film, done at your home or office anywhere in the Las Vegas Valley. Prefer the private studio? That works too.",
+ "mobile": {
+  "title": "Your driveway is our shop.",
+  "intro": "We bring the detail to you, so your day keeps moving.",
+  "points": [
+   {
+    "name": "At your door",
+    "text": "Home, office or wherever your car is, across the Las Vegas Valley."
+   },
+   {
+    "name": "No drop-off",
+    "text": "You never have to drive to us or wait around at a shop."
+   },
+   {
+    "name": "Same craftsmanship",
+    "text": "The same premium products and skill the studio is known for."
+   },
+   {
+    "name": "Studio if you want it",
+    "text": "Prefer a private studio visit? You can book that too."
+   }
+  ]
+ },
+ "servicesTitle": "Inside, outside, and everything that shines.",
+ "servicesIntro": "Prices start at the amounts shown and depend on vehicle size: small, medium or large.",
+ "services": [
+  {
+   "name": "Ceramic Coating",
+   "text": "A long-lasting protective coating that gives your paint a deep, head-turning shine.",
+   "price": "from $599"
+  },
+  {
+   "name": "Ceramic Window Tinting",
+   "text": "Premium XPEL PRIME XR PLUS ceramic film for heat rejection, UV protection and less glare, with no signal interference.",
+   "price": "from $395"
+  },
+  {
+   "name": "Paint Protection Film",
+   "text": "Thick, durable clear film that shields specific areas of your exterior and keeps the new look.",
+   "price": "from $1,299"
+  },
+  {
+   "name": "Color Change Vinyl Wraps",
+   "text": "Custom wraps that change and protect your paint, with detail-oriented work."
+  },
+  {
+   "name": "Mobile Auto Detailing",
+   "text": "Detailing that preserves the look of your vehicle for years."
+  },
+  {
+   "name": "Windshield Skin Protection",
+   "text": "Added protection for your windshield.",
+   "price": "from $600"
+  }
+ ],
+ "also": [],
+ "alsoTitle": "Not just cars:",
+ "why": [
+  {
+   "name": "Rated 4.7 on Google",
+   "text": "Hundreds of Google reviews from local customers."
+  },
+  {
+   "name": "Tesla know-how",
+   "text": "They have protected hundreds of Tesla vehicles over the past few years."
+  }
+ ],
+ "whyTitle": "The detail is in the name.",
+ "howTitle": "A clean vehicle in three steps.",
+ "steps": [
+  {
+   "name": "Book",
+   "text": "Book online or by phone and stay updated the whole way."
+  },
+  {
+   "name": "We detail",
+   "text": "Our experts inspect your vehicle and detail it with high-quality products and tools."
+  },
+  {
+   "name": "You approve",
+   "text": "Inspect the result, make sure you're satisfied, then pay."
+  }
+ ],
+ "contactTitle": "Book your detail.",
+ "footerLine": "Mobile car detailing in Las Vegas",
+ "reviews": [],
+ "hours": [],
+ "galleryTitle": "Fresh off the driveway.",
+ "gallery": [
+  {
+   "src": "img/photo-1.jpg",
+   "alt": "Black Lamborghini after detailing",
+   "size": "big"
+  },
+  {
+   "src": "img/photo-14.jpg",
+   "alt": "Red Audi R8, white Corvette and blue Mustang in the studio"
+  },
+  {
+   "src": "img/photo-10.jpg",
+   "alt": "Gray Lamborghini on a tiled studio floor"
+  },
+  {
+   "src": "img/photo-2.jpg",
+   "alt": "White Mercedes SUV with a glossy finish"
+  },
+  {
+   "src": "img/photo-9.jpg",
+   "alt": "Red Ford Raptor close-ups of grille and taillight"
+  },
+  {
+   "src": "img/photo-4.jpg",
+   "alt": "Lamborghini covered in foam during a wash"
+  },
+  {
+   "src": "img/photo-11.jpg",
+   "alt": "Black Audi sedan and sports car in the studio"
+  },
+  {
+   "src": "img/photo-5.jpg",
+   "alt": "Yellow Porsche GT2 from three angles"
+  },
+  {
+   "src": "img/photo-8.jpg",
+   "alt": "Black Tesla Model 3 parked outdoors"
+  }
+ ],
+ "areas": [
+  "Las Vegas"
+ ],
+ "pitch": "site"
+}

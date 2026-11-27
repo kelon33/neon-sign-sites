@@ -1,0 +1,129 @@
+{
+ "kit": "detailing",
+ "trade": "Mobile car detailing",
+ "name": "LVDetailer Mobile Car Detailing",
+ "legalName": "LVDetailer Mobile Car Detailing",
+ "preview": true,
+ "placeId": "ChIJU_WB6qw73kERuvaEQ6njzHg",
+ "title": "LVDetailer Mobile Car Detailing | Mobile car detailing in Las Vegas, NV",
+ "description": "Interior and exterior detailing at your home or workplace, anywhere in the Las Vegas Valley. We bring our own water and power, seven days a week. 5.0 on Google from 447 reviews.",
+ "brand": "#1670ff",
+ "brandHi": "#52c6ff",
+ "accent": "#8fd0ff",
+ "logo": "logo.png",
+ "logoChip": true,
+ "wordmark": {
+  "top": "LVDetailer",
+  "bottom": "Mobile Car Detailing"
+ },
+ "phone": "(702) 327-9810",
+ "email": "lvnvdetailer@gmail.com",
+ "heroImage": null,
+ "heroAlt": "",
+ "heroPosition": "60% 60%",
+ "heroPositionPhone": "60% 50%",
+ "rating": {
+  "score": "5.0",
+  "count": 447,
+  "url": "https://maps.google.com/?cid=8704582495922091706"
+ },
+ "kicker": "Mobile car detailing · Las Vegas, NV",
+ "headline": "Showroom shine.<br><em>Wherever you are.</em>",
+ "intro": "Interior and exterior detailing at your home or workplace, anywhere in the Las Vegas Valley. We bring our own water and power, seven days a week.",
+ "mobile": {
+  "title": "Your driveway is our shop.",
+  "intro": "We bring the detail to you, so your day keeps moving.",
+  "points": [
+   {
+    "name": "Self-contained rig",
+    "text": "We bring our own water, power and professional products. You just need room to open the doors."
+   },
+   {
+    "name": "Spot-free water",
+    "text": "We wash with deionized water, so Las Vegas hard water leaves no mineral spots."
+   },
+   {
+    "name": "Open seven days",
+    "text": "7 AM to 8 PM, every day. We usually call or text back within five minutes."
+   },
+   {
+    "name": "Inspect, then pay",
+    "text": "We walk the finished car with you. Pay by cash, Zelle or card."
+   }
+  ]
+ },
+ "servicesTitle": "Inside, outside, protected.",
+ "servicesIntro": "From a one-time clean to regular upkeep, pick the service that fits your vehicle.",
+ "services": [
+  {
+   "name": "Full Detail",
+   "text": "Interior and exterior in one visit: hand wash, tires, glass, vacuuming, wipe-down and air freshening, about 2 to 3 hours on site.",
+   "price": "$240"
+  },
+  {
+   "name": "Monthly Detailing",
+   "text": "A standing monthly visit that keeps the car clean year-round at a lower rate per visit, with a five-service minimum.",
+   "price": "$150"
+  },
+  {
+   "name": "Interior Detail",
+   "text": "Inside only: disinfected surfaces, vents blown out, thorough vacuuming, light shampooing and clean mats and trunk.",
+   "price": "$180"
+  },
+  {
+   "name": "Exterior Detail",
+   "text": "Outside only: hand wash, tires cleaned and shined, streak-free windows.",
+   "price": "$100"
+  },
+  {
+   "name": "Deep Interior Steam Cleaning",
+   "text": "Steam reaches every crevice, lifts stains, neutralizes odors and sanitizes the interior.",
+   "price": "$50"
+  },
+  {
+   "name": "Headlight Restoration",
+   "text": "An add-on for cloudy headlights, done at your appointment.",
+   "price": "$120"
+  }
+ ],
+ "also": [],
+ "alsoTitle": "We also detail",
+ "why": [
+  {
+   "name": "Same price everywhere",
+   "text": "Prices are the same at every address they serve, set by vehicle size."
+  },
+  {
+   "name": "Rated 5.0 on Google",
+   "text": "446 Google reviews from Las Vegas drivers."
+  }
+ ],
+ "whyTitle": "The detail is in the name.",
+ "howTitle": "Book it. We show up. You drive off shining.",
+ "steps": [
+  {
+   "name": "Tell us about your vehicle",
+   "text": "Call or send the form with your vehicle and the service you want."
+  },
+  {
+   "name": "We come to you",
+   "text": "We arrive with the equipment and products to do the job on site."
+  },
+  {
+   "name": "Take the keys back",
+   "text": "Your car is clean, restored and showroom-ready."
+  }
+ ],
+ "contactTitle": "Book your detail.",
+ "footerLine": "Mobile car detailing in Las Vegas",
+ "reviews": [],
+ "hours": [
+  "Monday to Sunday: 7:00 AM – 8:00 PM"
+ ],
+ "galleryTitle": "Fresh off the driveway.",
+ "gallery": [],
+ "areas": [
+  "Las Vegas"
+ ],
+ "pitch": "photos"
+}

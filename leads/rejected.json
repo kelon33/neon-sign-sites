@@ -1,1 +1,51 @@
-[]
+[
+ {
+  "placeId": "ChIJj4rx9PJVEqURzidat-HOjWk",
+  "name": "Cumberland Painting",
+  "slug": "cumberland-painting",
+  "reason": "placeholder email john@doe.com",
+  "date": "2026-11-27"
+ },
+ {
+  "placeId": "ChIJzTNrZV1pZIgRZMKFO2Sxp8k",
+  "name": "Pointer Painting",
+  "slug": "pointer-painting",
+  "reason": "placeholder email john@doe.com",
+  "date": "2026-11-27"
+ },
+ {
+  "placeId": "ChIJ2cBkRwJiXIYRXdDa9RglH-o",
+  "name": "Southern Painting",
+  "slug": "southern-painting",
+  "reason": "franchise page; email is a Constant Contact unsubscribe address",
+  "date": "2026-11-27"
+ },
+ {
+  "placeId": "ChIJsTaZfdb7XIYR4qWkQzF12uA",
+  "name": "NewWater Boatworks",
+  "slug": "newwater-boatworks",
+  "reason": "boat builder, not a detailer",
+  "date": "2026-11-27"
+ },
+ {
+  "placeId": "ChIJA5QuQ3qLXIYRbWp54MYXv-M",
+  "name": "Twin Buds Painting",
+  "slug": "twin-buds-painting",
+  "reason": "reconstruction company, not house painting",
+  "date": "2026-11-27"
+ },
+ {
+  "placeId": "ChIJAQAQxHxmZIgRkrmyBBClGAA",
+  "name": "Childress Collision Center",
+  "slug": "childress-collision-center",
+  "reason": "PDR referred to a partner, not done in-house",
+  "date": "2026-11-27"
+ },
+ {
+  "placeId": "ChIJy3OYBQWpRA8Rw84CqdvZSSU",
+  "name": "That 1 Painter San Antonio",
+  "slug": "that-1-painter-san-antonio",
+  "reason": "franchise (That 1 Painter)",
+  "date": "2026-11-27"
+ }
+]

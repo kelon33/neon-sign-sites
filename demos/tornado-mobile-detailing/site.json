@@ -1,0 +1,88 @@
+{
+ "kit": "detailing",
+ "trade": "Boat detailing",
+ "name": "Tornado Mobile Detailing",
+ "legalName": "Tornado Mobile Detailing",
+ "preview": true,
+ "placeId": "ChIJweDz2djfbAMROMdxkrOEJm8",
+ "title": "Tornado Mobile Detailing | Boat detailing in Las Vegas, NV",
+ "description": "Mobile detailing in Las Vegas for boats, cars and other vehicles. Rated 4.9 from 111 Google reviews. 4.9 on Google from 111 reviews.",
+ "brand": "#1670ff",
+ "brandHi": "#52c6ff",
+ "accent": "#8fd0ff",
+ "logo": null,
+ "logoChip": false,
+ "wordmark": {
+  "top": "Tornado",
+  "bottom": "Mobile Detailing"
+ },
+ "phone": "(725) 277-2583",
+ "email": "info@tornadomobiledetailing.com",
+ "heroImage": null,
+ "heroAlt": "",
+ "heroPosition": "60% 60%",
+ "heroPositionPhone": "60% 50%",
+ "rating": {
+  "score": "4.9",
+  "count": 111,
+  "url": "https://maps.google.com/?cid=8009234894115948344"
+ },
+ "kicker": "Boat detailing · Las Vegas",
+ "headline": "Lake day ready.<br><em>Every day.</em>",
+ "intro": "Mobile detailing in Las Vegas for boats, cars and other vehicles. Rated 4.9 from 111 Google reviews.",
+ "mobile": null,
+ "servicesTitle": "Bow to stern.",
+ "servicesIntro": "From a wash and wax to full restoration, teak and ceramic coating.",
+ "services": [
+  {
+   "name": "Wash and wax",
+   "text": "Hull and deck washed, then waxed for shine and protection."
+  },
+  {
+   "name": "Oxidation removal",
+   "text": "Chalky, faded gelcoat compounded and polished back."
+  },
+  {
+   "name": "Interior and upholstery",
+   "text": "Seats, carpet and vinyl cleaned and treated."
+  }
+ ],
+ "also": [],
+ "alsoTitle": "We also detail",
+ "why": [],
+ "whyTitle": "Why boat owners call us.",
+ "howTitle": "Back on the water in three steps.",
+ "steps": [
+  {
+   "name": "Request a quote",
+   "text": "Call or send photos of your vehicle for a recommendation and estimate."
+  },
+  {
+   "name": "Schedule",
+   "text": "Pick a time at your home, office, apartment or marina."
+  },
+  {
+   "name": "We detail on site",
+   "text": "We arrive fully equipped and complete the service where it sits."
+  }
+ ],
+ "contactTitle": "Book your boat in.",
+ "footerLine": "Boat detailing in Las Vegas",
+ "reviews": [],
+ "hours": [],
+ "galleryTitle": "Fresh off the water.",
+ "vehicleTypes": [
+  "Boat",
+  "Pontoon",
+  "Yacht",
+  "Jet ski",
+  "Other"
+ ],
+ "modelPlaceholder": "e.g. Sea Ray 240, 24 ft",
+ "notePlaceholder": "Length, where it is docked or stored, what it needs…",
+ "gallery": [],
+ "areas": [
+  "Las Vegas"
+ ],
+ "pitch": "photos"
+}

@@ -1,0 +1,8 @@
+- No logo found: the header shows the name only.
+- No hero photo: Claude found none of their photos usable.
+- Photo pitch: only 0 usable photos by Claude's choice, so no gallery; the email asks them for photos of their work.
+- Claude's notes: No reviews on site. No usable photos: photos 2-6 and 8 are stock or rendered images, photo 7 looks like a stock house shot. Photo 1 is the logo (black on dark, check it displays on a light background). Fixed: services price fields should all be empty. Site mentions a trim/fascia repainting deal for HOAs with no price, left out of cards. Draft says 'Homes and businesses' which is supported.
+- No photos at all: the hero has no picture. Find photos by hand.
+- Only 0 gallery photos.
+- No reviews on the site: the page shows the Google rating only.
+- Hero is a licensed stock photo for the trade (credited on the page, see generator/assets/CREDITS.md), not their work: swap in their own photo once they send one.

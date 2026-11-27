@@ -1,0 +1,90 @@
+{
+ "kit": "detailing",
+ "trade": "Paintless dent repair",
+ "name": "C S Paintless Dent Repair",
+ "legalName": "C S Paintless Dent Repair",
+ "preview": true,
+ "placeId": "ChIJ7ZezTPRnXIYRpTAfZRhi0TE",
+ "title": "C S Paintless Dent Repair | Paintless dent repair in San Antonio, TX",
+ "description": "Paintless dent repair in San Antonio, from door dings to hail damage. We restore the panel and keep your factory finish, with no paint or body filler. 5.0 on Google from 385 reviews.",
+ "brand": "#1670ff",
+ "brandHi": "#52c6ff",
+ "accent": "#8fd0ff",
+ "logo": "logo.png",
+ "logoChip": true,
+ "wordmark": {
+  "top": "C S Paintless",
+  "bottom": "Dent Repair"
+ },
+ "phone": "(210) 860-6287",
+ "email": "cspaintless@gmail.com",
+ "heroImage": null,
+ "heroAlt": "",
+ "heroPosition": "60% 60%",
+ "heroPositionPhone": "60% 50%",
+ "rating": {
+  "score": "5.0",
+  "count": 385,
+  "url": "https://maps.google.com/?cid=3589758234906276005"
+ },
+ "kicker": "Paintless dent repair · San Antonio",
+ "headline": "Hail damage gone.<br><em>Paint untouched.</em>",
+ "intro": "Paintless dent repair in San Antonio, from door dings to hail damage. We restore the panel and keep your factory finish, with no paint or body filler.",
+ "mobile": null,
+ "servicesTitle": "Everything your car needs.",
+ "servicesIntro": "One team handles the repair, the claim and the rental.",
+ "services": [
+  {
+   "name": "Door dings",
+   "text": "Small dents and dings removed without paint or body filler."
+  },
+  {
+   "name": "Hail damage",
+   "text": "Storm damage repaired while the factory finish stays in place."
+  },
+  {
+   "name": "Minor dents",
+   "text": "Dents and body imperfections worked out with precise techniques."
+  }
+ ],
+ "also": [],
+ "alsoTitle": "We also fix",
+ "why": [
+  {
+   "name": "25+ years, family owned",
+   "text": "Chris Salinas, a master technician, started the shop. His wife Crystal runs operations."
+  },
+  {
+   "name": "No repaint, no mismatch",
+   "text": "The site backs every repair with a 100% paint match guarantee, since no repainting is needed."
+  }
+ ],
+ "whyTitle": "The C S Paintless Dent Repair difference.",
+ "howTitle": "Dent-free in three steps.",
+ "steps": [
+  {
+   "name": "Send the details",
+   "text": "Call, or use the form with your year, make, model and photos of the damage."
+  },
+  {
+   "name": "Get an evaluation",
+   "text": "Bring the vehicle in and we look at the hail damage, dings or film options."
+  },
+  {
+   "name": "Drive it smooth",
+   "text": "We work the dents out and hand the vehicle back."
+  }
+ ],
+ "contactTitle": "Hail damage? Call us.",
+ "footerLine": "Paintless dent repair in San Antonio",
+ "reviews": [],
+ "hours": [],
+ "galleryTitle": "Dents gone, paint untouched.",
+ "notePlaceholder": "Where the dent is, how big, hail or a door ding…",
+ "ctaLabel": "Get an estimate",
+ "gallery": [],
+ "areas": [
+  "San Antonio"
+ ],
+ "pitch": "photos"
+}

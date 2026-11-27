@@ -1,0 +1,9 @@
+- Details cars and boats (found by a boat search): the AI was told to show all their work.
+- No logo found: the header shows the name only.
+- No hero photo: Claude found none of their photos usable.
+- Photo pitch: only 0 usable photos by Claude's choice, so no gallery; the email asks them for photos of their work.
+- Claude's notes: Site text was only a verification page, so there were no services, prices, hours, reviews or claims to use. Services, mobilePoints, why and reviews are left empty and need to be filled from the real site or a call. No photos were visible to me, so no hero or gallery photos were chosen. Logo ownership could not be checked, so logoIsTheirs is a guess. Intro uses only the Google rating and the note that they detail boats, cars and other vehicles.
+- No photos at all: the hero has no picture. Find photos by hand.
+- Only 0 gallery photos.
+- No reviews on the site: the page shows the Google rating only.
+- Hero is a licensed stock photo for the trade (credited on the page, see generator/assets/CREDITS.md), not their work: swap in their own photo once they send one.

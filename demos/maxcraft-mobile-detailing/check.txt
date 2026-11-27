@@ -1,0 +1,9 @@
+- Listed as Boat detailing, but their site is about cars: built as mobile car detailing.
+- No hero photo: Claude found none of their photos usable.
+- Photo pitch: only 0 usable photos by Claude's choice, so no gallery; the email asks them for photos of their work.
+- Claude's notes: Only one photo, a video-thumbnail graphic with text overlay, so none used. Site text calls the tech Jemitri, Jemetri, Demitri and Jemitry; Max is named as owner. Reviews quoted word for word, including typos. Headline and other pre-written fields were not asked for. Site mentions a BBB badge but no rating. Service area towns left out of copy as instructed.
+- Dropped 6 reviews: a review widget (ti-widget) on https://maxcraftdetailing.com/.
+- No photos at all: the hero has no picture. Find photos by hand.
+- Only 0 gallery photos.
+- No reviews on the site: the page shows the Google rating only.
+- Hero is a licensed stock photo for the trade (credited on the page, see generator/assets/CREDITS.md), not their work: swap in their own photo once they send one.

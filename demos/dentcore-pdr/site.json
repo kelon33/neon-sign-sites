@@ -1,0 +1,106 @@
+{
+ "kit": "detailing",
+ "trade": "Paintless dent repair",
+ "name": "DENTCORE PDR",
+ "legalName": "DENTCORE PDR",
+ "preview": true,
+ "placeId": "ChIJ1X71l1I5ZIgREkuBQ1QQ8Vk",
+ "title": "DENTCORE PDR | Paintless dent repair in Hendersonville, TN",
+ "description": "Paintless dent repair in Hendersonville. Dents, door dings and hail damage worked out with no paint and no body filler, with same day service. 5.0 on Google from 174 reviews.",
+ "brand": "#1670ff",
+ "brandHi": "#52c6ff",
+ "accent": "#8fd0ff",
+ "logo": "logo.png",
+ "logoChip": true,
+ "wordmark": {
+  "top": "DentCORE",
+  "bottom": "Paintless Dent Removal"
+ },
+ "phone": "(615) 762-4607",
+ "email": "info@dentcorepdr.com",
+ "heroImage": "img/photo-2.jpg",
+ "heroAlt": "Blue SUV rear bumper and tailgate with a glossy finish",
+ "heroPosition": "60% 60%",
+ "heroPositionPhone": "60% 50%",
+ "rating": {
+  "score": "5.0",
+  "count": 174,
+  "url": "https://maps.google.com/?cid=6480979292858698514"
+ },
+ "kicker": "Paintless dent repair · Hendersonville",
+ "headline": "Hail damage gone.<br><em>Hassle gone too.</em>",
+ "intro": "Paintless dent repair in Hendersonville. Dents, door dings and hail damage worked out with no paint and no body filler, with same day service.",
+ "mobile": null,
+ "servicesTitle": "Every kind of dent.",
+ "servicesIntro": "From a single door ding to a full hail storm.",
+ "services": [
+  {
+   "name": "Dents and door dings",
+   "text": "Small dents pushed out from behind the panel, with no paint and no body filler."
+  },
+  {
+   "name": "Hail damage",
+   "text": "Hail dents on roofs, hoods and trunks repaired with specialized tools made for each panel."
+  },
+  {
+   "name": "Creases",
+   "text": "Creased metal worked back into shape from the inside out where we can reach it."
+  },
+  {
+   "name": "Glue pulling",
+   "text": "For spots with no access to the back of the panel, like roof rails, we pull the dent from the outside with weather-rated glue."
+  },
+  {
+   "name": "Plastic bumper repair",
+   "text": "Dents and damage in plastic bumpers repaired."
+  },
+  {
+   "name": "Severe body damage",
+   "text": "Heavier damage repaired, not just the small stuff."
+  }
+ ],
+ "also": [],
+ "alsoTitle": "We also fix",
+ "why": [
+  {
+   "name": "Same day service",
+   "text": "Repairs are done within hours, not days or weeks."
+  },
+  {
+   "name": "23+ years of experience",
+   "text": "PDR takes years of training to perfect, and the site cites 23+ years of experience."
+  },
+  {
+   "name": "Price match",
+   "text": "DENTCORE says it will beat competitors' pricing, with a copy of the written estimate."
+  }
+ ],
+ "whyTitle": "The DENTCORE PDR difference.",
+ "howTitle": "Dent-free in three steps.",
+ "steps": [
+  {
+   "name": "Send the details",
+   "text": "Call, or use the form with your year, make, model and photos of the damage."
+  },
+  {
+   "name": "Get an evaluation",
+   "text": "Bring the vehicle in and we look at the hail damage, dings or film options."
+  },
+  {
+   "name": "Drive it smooth",
+   "text": "We work the dents out and hand the vehicle back."
+  }
+ ],
+ "contactTitle": "Got a dent?",
+ "footerLine": "Paintless dent repair in Hendersonville",
+ "reviews": [],
+ "hours": [],
+ "galleryTitle": "Dents gone, paint untouched.",
+ "notePlaceholder": "Where the dent is, how big, hail or a door ding…",
+ "ctaLabel": "Get an estimate",
+ "gallery": [],
+ "areas": [
+  "Hendersonville"
+ ],
+ "pitch": "photos"
+}

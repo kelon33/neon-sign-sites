@@ -1,0 +1,136 @@
+{
+ "kit": "detailing",
+ "trade": "Paintless dent repair",
+ "name": "Inline Dent Repair",
+ "legalName": "Inline Dent Repair",
+ "preview": true,
+ "placeId": "ChIJt47f7zGLXIYRvKvLyWqHoLI",
+ "title": "Inline Dent Repair | Paintless dent repair in San Antonio, TX",
+ "description": "Paintless dent repair in San Antonio. We reshape dents, dings and hail damage from behind the panel, so the factory paint and your vehicle's value stay put. 5.0 on Google from 22 reviews.",
+ "brand": "#1670ff",
+ "brandHi": "#52c6ff",
+ "accent": "#8fd0ff",
+ "logo": "logo.png",
+ "logoChip": false,
+ "wordmark": {
+  "top": "Inline",
+  "bottom": "Dent Repair"
+ },
+ "phone": "(210) 935-2826",
+ "email": "inlinedentrepair@gmail.com",
+ "heroImage": "img/photo-4.jpg",
+ "heroAlt": "White Porsche 911 in the shop under a dent-reading light",
+ "heroPosition": "60% 60%",
+ "heroPositionPhone": "60% 50%",
+ "rating": {
+  "score": "5.0",
+  "count": 22,
+  "url": "https://maps.google.com/?cid=12871436627746728892"
+ },
+ "kicker": "Paintless dent repair · San Antonio",
+ "headline": "Hail damage gone.<br><em>Paint untouched.</em>",
+ "intro": "Paintless dent repair in San Antonio. We reshape dents, dings and hail damage from behind the panel, so the factory paint and your vehicle's value stay put.",
+ "mobile": null,
+ "servicesTitle": "Every kind of dent.",
+ "servicesIntro": "One team handles the repair, the claim and the rental.",
+ "services": [
+  {
+   "name": "Paintless dent repair",
+   "text": "Dents and dings reshaped from behind the panel with specialized tools, with no fillers, sanding or repainting."
+  },
+  {
+   "name": "Hail repair",
+   "text": "Multiple small storm dents worked out panel by panel, most repairs finished within hours or days."
+  },
+  {
+   "name": "Severe damage repair",
+   "text": "Where a dent is too serious for PDR alone, we combine it with traditional repairs."
+  },
+  {
+   "name": "Custom repair solutions",
+   "text": "Tell us about unusual damage and we work out the best fix for your vehicle."
+  }
+ ],
+ "also": [],
+ "alsoTitle": "We also fix",
+ "why": [
+  {
+   "name": "Factory paint stays",
+   "text": "Reshaping the metal from behind preserves your original paint and your vehicle's value."
+  },
+  {
+   "name": "Faster and cheaper",
+   "text": "No fillers, sanding or repainting means lower costs and less time in the shop."
+  },
+  {
+   "name": "Skilled technicians",
+   "text": "Technicians assess each damaged area and restore it with precision and attention to detail."
+  }
+ ],
+ "whyTitle": "Why Inline Dent Repair",
+ "howTitle": "Back to like new, step by step.",
+ "steps": [
+  {
+   "name": "Send the details",
+   "text": "Call, or use the form with your year, make, model and photos of the damage."
+  },
+  {
+   "name": "Get an evaluation",
+   "text": "Bring the vehicle in and we look at the hail damage, dings or film options."
+  },
+  {
+   "name": "Drive it smooth",
+   "text": "We work the dents out and hand the vehicle back."
+  }
+ ],
+ "contactTitle": "Got hail damage?",
+ "footerLine": "Paintless dent repair in San Antonio",
+ "reviews": [],
+ "hours": [
+  "Monday to Friday, 9 AM - 6 PM",
+  "Saturday by appointment"
+ ],
+ "galleryTitle": "Dents gone, paint untouched.",
+ "notePlaceholder": "Where the dent is, how big, hail or a door ding…",
+ "ctaLabel": "Get an estimate",
+ "gallery": [
+  {
+   "src": "img/photo-19.jpg",
+   "alt": "Dark hood with hail dents circled and reflected by a PDR light",
+   "size": "big"
+  },
+  {
+   "src": "img/photo-24.jpg",
+   "alt": "Dark teal sedan with a smooth finish after repair"
+  },
+  {
+   "src": "img/photo-22.jpg",
+   "alt": "Dark blue sedan with a clean, glossy side panel"
+  },
+  {
+   "src": "img/photo-17.jpg",
+   "alt": "Van roof in the shop with straight, smooth panel lines"
+  },
+  {
+   "src": "img/photo-21.jpg",
+   "alt": "Dark SUV with hail dents marked for repair",
+   "size": "tall"
+  },
+  {
+   "src": "img/photo-9.jpg",
+   "alt": "White truck rear fender after dent repair"
+  },
+  {
+   "src": "img/photo-16.jpg",
+   "alt": "Roof showing hail damage before repair"
+  },
+  {
+   "src": "img/photo-11.jpg",
+   "alt": "Blue-gray minivan parked outside after service"
+  }
+ ],
+ "areas": [
+  "San Antonio"
+ ],
+ "pitch": "site"
+}

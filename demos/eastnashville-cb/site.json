@@ -1,0 +1,134 @@
+{
+ "kit": "painting",
+ "trade": "House painting",
+ "name": "EastNashville CB",
+ "legalName": "EastNashville CB",
+ "preview": true,
+ "placeId": "ChIJp9XANadnZIgRPJ8CE7_B0HM",
+ "title": "EastNashville CB | House painting in Nashville, TN",
+ "description": "Interior and exterior house painting, plus wallpaper, epoxy garage floors and handyman work. Call (317) 986-3133 to book. 5.0 on Google from 12 reviews.",
+ "logo": "logo.png",
+ "logoChip": true,
+ "wordmark": {
+  "top": "East Nashville",
+  "bottom": "CB Painting"
+ },
+ "phone": "(317) 986-3133",
+ "email": "eastnashvillecb@gmail.com",
+ "heroImage": "img/photo-2.jpg",
+ "heroAlt": "Two-story home with a freshly painted light exterior and green lawn",
+ "heroPosition": "60% 60%",
+ "heroPositionPhone": "60% 50%",
+ "rating": {
+  "score": "5.0",
+  "count": 12,
+  "url": "https://maps.google.com/?cid=8345383135919382332"
+ },
+ "kicker": "House painting · Nashville",
+ "headline": "Fresh paint.<br><em>Done by family.</em>",
+ "intro": "Interior and exterior house painting, plus wallpaper, epoxy garage floors and handyman work. Call (317) 986-3133 to book.",
+ "badges": [],
+ "highlights": null,
+ "servicesTitle": "Inside and out.",
+ "servicesIntro": "One room or the whole house. Custom bids, no guesswork.",
+ "services": [
+  {
+   "name": "Interior painting",
+   "text": "Careful prep and clean application, for one room or the whole home."
+  },
+  {
+   "name": "Exterior painting",
+   "text": "Siding to trim, with finishes built to hold up to the weather."
+  },
+  {
+   "name": "Wallpaper installation and removal",
+   "text": "Add pattern and texture, or strip old paper before a fresh paint job."
+  },
+  {
+   "name": "Epoxy garage coating",
+   "text": "A tough garage floor surface that handles foot traffic, spills and stains."
+  },
+  {
+   "name": "Cleaning services",
+   "text": "House, Airbnb, commercial and office cleaning."
+  }
+ ],
+ "also": [
+  {
+   "name": "Handyman services and repairs"
+  },
+  {
+   "name": "Drywall"
+  },
+  {
+   "name": "Trim installation"
+  },
+  {
+   "name": "Flooring"
+  },
+  {
+   "name": "Book shelf making"
+  }
+ ],
+ "alsoTitle": "We also do:",
+ "promise": null,
+ "why": [
+  {
+   "name": "Built to last",
+   "text": "Exterior work focuses on weather resistance and long-lasting finishes."
+  },
+  {
+   "name": "One call covers more",
+   "text": "Painting, repairs and handyman work from one team, no task too small."
+  }
+ ],
+ "whyTitle": "Why homeowners call us.",
+ "howTitle": "A fresh coat in three steps.",
+ "steps": [
+  {
+   "name": "Free consultation",
+   "text": "Tell us what you need. We talk through the scope and give you a free quote."
+  },
+  {
+   "name": "Plan and schedule",
+   "text": "We agree on the details and set the work with clear communication."
+  },
+  {
+   "name": "Paint and walkthrough",
+   "text": "Our team does the work, then walks the finished job with you."
+  }
+ ],
+ "contactTitle": "Ready for a fresh coat?",
+ "footerLine": "House painting in Nashville",
+ "reviews": [],
+ "hours": [],
+ "galleryTitle": "Homes we’ve painted.",
+ "notePlaceholder": "Inside or outside, how many rooms, a date you have in mind…",
+ "gallery": [
+  {
+   "src": "img/photo-7.jpg",
+   "alt": "Kitchen with white cabinets, island and pendant lights",
+   "size": "big"
+  },
+  {
+   "src": "img/photo-1.jpg",
+   "alt": "New white-painted house exterior with a ladder against the wall"
+  },
+  {
+   "src": "img/photo-5.jpg",
+   "alt": "Bedroom painted blue with white trim and crown molding"
+  },
+  {
+   "src": "img/photo-3.jpg",
+   "alt": "Restaurant interior with freshly painted walls and floor covered in plastic sheeting"
+  },
+  {
+   "src": "img/photo-8.jpg",
+   "alt": "Living room with blue sofa, yellow chair and spiral staircase"
+  }
+ ],
+ "areas": [
+  "Nashville"
+ ],
+ "pitch": "site"
+}

@@ -1,0 +1,121 @@
+{
+ "kit": "detailing",
+ "trade": "Paintless dent repair",
+ "name": "INVISION PDR",
+ "legalName": "INVISION PDR",
+ "preview": true,
+ "placeId": "ChIJT1FFCQHV5YgRjAQ4xMgzZp4",
+ "title": "INVISION PDR | Paintless dent repair in St. Augustine, FL",
+ "description": "Mobile paintless dent repair in St. Augustine for door dings, creases and hail damage. We push the dent out from behind, so your factory finish stays. 5.0 on Google from 180 reviews.",
+ "brand": "#1670ff",
+ "brandHi": "#52c6ff",
+ "accent": "#8fd0ff",
+ "logo": "logo.png",
+ "logoChip": true,
+ "wordmark": {
+  "top": "INVISION",
+  "bottom": "PDR"
+ },
+ "phone": "(904) 439-1168",
+ "email": "ericjacobson79@gmail.com",
+ "heroImage": "img/photo-1.jpg",
+ "heroAlt": "Technician working a dent out of a car door with a PDR tool",
+ "heroPosition": "60% 60%",
+ "heroPositionPhone": "60% 50%",
+ "rating": {
+  "score": "5.0",
+  "count": 180,
+  "url": "https://maps.google.com/?cid=11413867242995582092"
+ },
+ "kicker": "Paintless dent repair · St. Augustine",
+ "headline": "Your car's dents.<br><em>Gone. Paint untouched.</em>",
+ "intro": "Mobile paintless dent repair in St. Augustine for door dings, creases and hail damage. We push the dent out from behind, so your factory finish stays.",
+ "mobile": {
+  "title": "Your driveway is our shop.",
+  "intro": "Our fully equipped mobile units come to your home or office across DFW, so your day keeps moving.",
+  "points": [
+   {
+    "name": "We come to you",
+    "text": "Repairs happen in your driveway, so you never leave home."
+   },
+   {
+    "name": "Quick turnarounds",
+    "text": "Paintless repair is faster than a traditional body shop."
+   },
+   {
+    "name": "No mismatched paint",
+    "text": "No sanding, filler or repainting, so the original finish stays."
+   },
+   {
+    "name": "Easy quotes",
+    "text": "Text photos of the dents to 904-439-1168 for a quick quote."
+   }
+  ]
+ },
+ "servicesTitle": "Every kind of dent.",
+ "servicesIntro": "From a single door ding to a full hail storm.",
+ "services": [
+  {
+   "name": "Door Dings",
+   "text": "Small dents removed without sanding, body filler or paint."
+  },
+  {
+   "name": "Hail Damage",
+   "text": "Auto hail damage repaired with paintless methods that keep your factory finish."
+  },
+  {
+   "name": "Minor & Large Dents",
+   "text": "Dents of many sizes worked out to bring the panel back to its pre-damaged look."
+  },
+  {
+   "name": "Creases",
+   "text": "Creased panels restored without repainting."
+  }
+ ],
+ "also": [],
+ "alsoTitle": "We also fix",
+ "why": [
+  {
+   "name": "Pushing dents since 2001",
+   "text": "Over 20 years of experience on all makes and models."
+  },
+  {
+   "name": "Certified",
+   "text": "ARC Certified PDR and hail repair, and Hybrid & Electric Vehicle certified."
+  },
+  {
+   "name": "A fraction of the cost",
+   "text": "Dents can often be fixed for far less than a conventional body shop repair."
+  }
+ ],
+ "whyTitle": "INVISION PDR difference.",
+ "howTitle": "Dent-free in three steps.",
+ "steps": [
+  {
+   "name": "Send the details",
+   "text": "Call, or use the form with your year, make, model and photos of the damage."
+  },
+  {
+   "name": "Get an evaluation",
+   "text": "Bring the vehicle in and we look at the hail damage, dings or film options."
+  },
+  {
+   "name": "Drive it smooth",
+   "text": "We work the dents out and hand the vehicle back."
+  }
+ ],
+ "contactTitle": "Got hail damage?",
+ "footerLine": "Paintless dent repair in St. Augustine",
+ "reviews": [],
+ "hours": [
+  "Monday – Saturday: 7:30am – 7:00pm"
+ ],
+ "galleryTitle": "Dents gone, paint untouched.",
+ "notePlaceholder": "Where the dent is, how big, hail or a door ding…",
+ "ctaLabel": "Get an estimate",
+ "gallery": [],
+ "areas": [
+  "St. Augustine"
+ ],
+ "pitch": "photos"
+}

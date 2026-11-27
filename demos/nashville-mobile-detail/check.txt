@@ -1,0 +1,9 @@
+- Listed as Boat detailing, but their site is about cars: built as mobile car detailing.
+- Logo is dark on a transparent background: shown on a white chip. Check it reads well.
+- Dropped (not backed by their site): review: Great experience! He was friendly and my car looked wonderfu
+- Dropped (not backed by their site): intro: Family-owned mobile detailing, rated 4.9 on Google by more than 1,100 customers. We come to your home or office around Nashville and leave your car looking new.
+- Logo dropped: Claude saw it is not theirs (a badge, a client's or their web designer's). The header shows the name only.
+- Claude's notes: The photos look like stock images, so check them. Photo 10 is their logo but is not the supplied Logo image, which is blank black. No hours on site. Site mentions 10% promo code and memberships, with no prices. Photo 6 is the hero but is not landscape or especially bright. Mobile service is implied by reviews and the same-day text. Review dates were dropped.
+- Dropped 5 reviews: a review widget (elfsight) on https://www.nashvillemobiledetail.com/.
+- Only 5 gallery photos.
+- No reviews on the site: the page shows the Google rating only.

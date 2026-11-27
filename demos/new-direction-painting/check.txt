@@ -1,0 +1,9 @@
+- Found by a search in Nashville, TN, but their address is in Franklin, TN: the site uses that. Check their service area.
+- Claude's notes: Draft headline and steps kept per library. Site text lists Franklin, Brentwood, Nashville as service areas; not used in copy. Site claims like awards, 12+ years and project costs were left out. Phone on site (615) 912-2345 differs from the given (615) 592-4848; check. No hours on site. Photos 19-24 are commercial or prep shots and were left out.
+- Dropped review by Lexi Cummings: not in their own pages (added by a script, likely a Google widget).
+- Dropped review by Yves Munger: not in their own pages (added by a script, likely a Google widget).
+- Dropped review by Kim Smith: not in their own pages (added by a script, likely a Google widget).
+- Dropped review by Diane Kinney: not in their own pages (added by a script, likely a Google widget).
+- Dropped review by Samantha Fiedler: not in their own pages (added by a script, likely a Google widget).
+- Dropped review by Anthony DeWesee: not in their own pages (added by a script, likely a Google widget).
+- No reviews on the site: the page shows the Google rating only.

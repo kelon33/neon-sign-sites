@@ -1,0 +1,186 @@
+{
+  "kit": "detailing",
+  "trade": "Mobile detailing",
+  "name": "R & J Extreme Mobile Car Wash",
+  "legalName": "R & J Extreme Mobile Car Wash",
+  "preview": true,
+  "placeId": "ChIJ2_iKoyrByIARbHpJCQh9Olw",
+  "title": "R & J Extreme Mobile Car Wash | Mobile car wash in Las Vegas, NV",
+  "description": "Mobile car and boat detailing in Las Vegas. We bring the wash to your driveway, dock or lot and get every detail by hand. 4.4 on Google from 50 reviews.",
+  "brand": "#1670ff",
+  "brandHi": "#52c6ff",
+  "accent": "#8fd0ff",
+  "logo": "logo.png",
+  "logoChip": true,
+  "wordmark": {
+    "top": "R & J Extreme",
+    "bottom": "Mobile Car Wash"
+  },
+  "phone": "(702) 800-9447",
+  "email": "ranjextreme@gmail.com",
+  "heroImage": "img/photo-7.jpg",
+  "heroAlt": "Black GMC SUV with black wheels parked at a storage lot during a mobile detail",
+  "heroPosition": "60% 60%",
+  "heroPositionPhone": "60% 50%",
+  "rating": {
+    "score": "4.4",
+    "count": 50,
+    "url": "https://maps.google.com/?cid=6645761673607608940"
+  },
+  "kicker": "Mobile car wash · Las Vegas",
+  "headline": "Showroom shine.<br><em>Mirror finish.</em>",
+  "intro": "Mobile car and boat detailing in Las Vegas. We bring the wash to your driveway, dock or lot and get every detail by hand.",
+  "mobile": {
+    "title": "We come to your boat.",
+    "intro": "Mobile service means your boat gets cared for right where it sits, with no haul to a shop.",
+    "points": [
+      {
+        "name": "At your place",
+        "text": "We come to your home or location in Las Vegas, Henderson, Boulder City and North Las Vegas."
+      },
+      {
+        "name": "No shop run",
+        "text": "No drop-off and no pickup. One customer did the job right in their driveway."
+      },
+      {
+        "name": "Inside and out",
+        "text": "Interior vacuum and wipe-down, wheels, windows and paint, all handled on site."
+      },
+      {
+        "name": "Open every day",
+        "text": "Monday to Sunday, 8:00 am to 5:00 pm. Call (702) 800-9447 to book."
+      }
+    ]
+  },
+  "servicesTitle": "Bow to stern.",
+  "servicesIntro": "From regular washes to full restoration, priced and planned around your boat.",
+  "services": [
+    {
+      "name": "Boats",
+      "text": "Boat cleaning and detailing, sized to your vessel.",
+      "price": "Starting at $125+ (size-based)"
+    },
+    {
+      "name": "R & J Famous Butter Wash",
+      "text": "Wax foam soap, bug and iron remover, wheels and tires, full interior vacuum and wipe-down, windows inside and out.",
+      "price": "$50"
+    },
+    {
+      "name": "R & J's Full Inside Detail",
+      "text": "Sanitized door pockets, vacuumed carpets and seats, cleaned headliner and vents, detailed dash and console.",
+      "price": "$75.00"
+    },
+    {
+      "name": "Clay Bar Cleaning with Sealant",
+      "text": "Clay treatment leaves paint smooth, then a sealant adds UV and water protection for up to 60 days.",
+      "price": "$90.00"
+    },
+    {
+      "name": "Car or Sedan New Look Package",
+      "text": "Full inside detail, plastic trim renewal, headlight renewal and an engine bay wash.",
+      "price": "$185.00"
+    },
+    {
+      "name": "Ceramic Coating",
+      "text": "Long-lasting protection against scratches, UV rays and chemical contaminants, up to 3 years."
+    }
+  ],
+  "also": [
+    {
+      "name": "Cars"
+    },
+    {
+      "name": "Trucks"
+    },
+    {
+      "name": "SUVs"
+    },
+    {
+      "name": "Vans"
+    },
+    {
+      "name": "RVs"
+    },
+    {
+      "name": "Limousines"
+    },
+    {
+      "name": "Semi trucks"
+    },
+    {
+      "name": "Sprinter vans"
+    },
+    {
+      "name": "Box and food trucks"
+    }
+  ],
+  "alsoTitle": "We also detail",
+  "why": [
+    {
+      "name": "Locally owned and operated",
+      "text": "A family-operated Las Vegas business."
+    },
+    {
+      "name": "Quality and convenience",
+      "text": "Professional care right at your location."
+    },
+    {
+      "name": "Competitive rates",
+      "text": "Clear prices, listed up front for cars, trucks, boats and RVs."
+    }
+  ],
+  "whyTitle": "Why boat owners call us.",
+  "howTitle": "Ready for the water in three steps.",
+  "steps": [
+    {
+      "name": "Tell us about your boat",
+      "text": "Call or send the form with the vessel and what you need."
+    },
+    {
+      "name": "We assess and plan",
+      "text": "We inspect the surface and set the right correction and protection."
+    },
+    {
+      "name": "Back on the water",
+      "text": "Your boat returns with deep gloss and lasting protection."
+    }
+  ],
+  "contactTitle": "Book your boat in.",
+  "footerLine": "Mobile car wash in Las Vegas",
+  "reviews": [
+    {
+      "text": "Randy Always does an awesome job and is very methodical when cleaning my baby and that’s why I like using him. Gets every detail and goes above and beyond.",
+      "name": "Shawn S."
+    },
+    {
+      "text": "Had my 20 year old SUV that was filled with dog hair and tough dirt all over the interior. Randy made it look brand new again! I’ve never seen the car so clean before! … It was worth every penny! And very well priced, especially for him to drive over to my house and do the job right in my driveway!",
+      "name": "Yadriel D"
+    },
+    {
+      "text": "Randy did an amazing job on my dirty Jeep. The interior looks and smells amazing! Price was also very reasonable! Thank you again!",
+      "name": "Monique D."
+    },
+    {
+      "text": "Randy did an excellent job on my car. I’ve had the car for six months and this was the first time I actually got it washed. Randy has it looking like new again.",
+      "name": "Patricia S."
+    }
+  ],
+  "hours": [
+    "Mon - Sun: 8:00 am - 5:00 pm"
+  ],
+  "galleryTitle": "Fresh from the detail.",
+  "vehicleTypes": [
+    "Boat",
+    "Pontoon",
+    "Yacht",
+    "Jet ski",
+    "Other"
+  ],
+  "modelPlaceholder": "e.g. Sea Ray 240, 24 ft",
+  "notePlaceholder": "Length, where it is docked or stored, what it needs…",
+  "gallery": [],
+  "areas": [
+    "Las Vegas"
+  ],
+  "pitch": "photos"
+}

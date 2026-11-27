@@ -1,0 +1,92 @@
+{
+ "kit": "detailing",
+ "trade": "Mobile car detailing",
+ "name": "DETAIL CITY Las Vegas",
+ "legalName": "DETAIL CITY Las Vegas",
+ "preview": true,
+ "placeId": "ChIJyUxF8GX_j4AR7yYeXotR0qY",
+ "title": "DETAIL CITY Las Vegas | Car detailing in Las Vegas, NV",
+ "description": "Detailing in Las Vegas since 2019, built on quality and value. From a full detail to ICON ROCKLEAR paint coatings, after thousands of vehicles. 4.9 on Google from 220 reviews.",
+ "brand": "#1670ff",
+ "brandHi": "#52c6ff",
+ "accent": "#8fd0ff",
+ "logo": null,
+ "logoChip": false,
+ "wordmark": {
+  "top": "Detail City",
+  "bottom": "Las Vegas"
+ },
+ "phone": "(725) 277-5404",
+ "email": "detailcityautospa@gmail.com",
+ "heroImage": "img/photo-2.jpg",
+ "heroAlt": "Black Ford Raptor truck in the Detail City shop",
+ "heroPosition": "60% 60%",
+ "heroPositionPhone": "60% 50%",
+ "rating": {
+  "score": "4.9",
+  "count": 220,
+  "url": "https://maps.google.com/?cid=12020760014426613487"
+ },
+ "kicker": "Car detailing · Las Vegas, NV",
+ "headline": "We bring the shop<br><em>to your driveway.</em>",
+ "intro": "Detailing in Las Vegas since 2019, built on quality and value. From a full detail to ICON ROCKLEAR paint coatings, after thousands of vehicles.",
+ "mobile": null,
+ "servicesTitle": "Inside, outside, and everything that shines.",
+ "servicesIntro": "From a one-time clean to regular upkeep, pick the service that fits your vehicle.",
+ "services": [
+  {
+   "name": "Interior & exterior detailing",
+   "text": "A complete detail, top to bottom: wash, wheels, glass, vacuum and wipe-down."
+  },
+  {
+   "name": "Interior detailing",
+   "text": "Seats, carpets, dash and every crevice, vacuumed, cleaned and dressed."
+  },
+  {
+   "name": "Exterior detailing",
+   "text": "A careful hand wash, wheels and tires, glass and a protective finish."
+  }
+ ],
+ "also": [],
+ "alsoTitle": "Not just cars:",
+ "why": [
+  {
+   "name": "Thousands of vehicles detailed",
+   "text": "Experience behind every job, since 2019."
+  },
+  {
+   "name": "Focused on value",
+   "text": "We limited our services to the ones we do best, so quality and price stay in balance."
+  },
+  {
+   "name": "Rated 4.9 on Google",
+   "text": "220 reviews from Las Vegas customers."
+  }
+ ],
+ "whyTitle": "The detail is in the name.",
+ "howTitle": "Book it. We show up. You drive off shining.",
+ "steps": [
+  {
+   "name": "Tell us about your car",
+   "text": "Call, text or send the form: your vehicle, the service and where it's parked."
+  },
+  {
+   "name": "We pull up",
+   "text": "We arrive on time at your home or office, with everything we need."
+  },
+  {
+   "name": "You get the keys back",
+   "text": "To a car that looks, and smells, brand new."
+  }
+ ],
+ "contactTitle": "Book your detail.",
+ "footerLine": "Car detailing in Las Vegas",
+ "reviews": [],
+ "hours": [],
+ "galleryTitle": "Fresh off the driveway.",
+ "gallery": [],
+ "areas": [
+  "Las Vegas"
+ ],
+ "pitch": "photos"
+}

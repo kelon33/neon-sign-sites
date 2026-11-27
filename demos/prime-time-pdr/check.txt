@@ -1,0 +1,9 @@
+- Dropped (not backed by their site): review: The guys here were fantastic. Going local is always a plus. 
+- No hero photo: Claude found none of their photos usable.
+- Photo pitch: only 0 usable photos by Claude's choice, so no gallery; the email asks them for photos of their work.
+- Claude's notes: Only one photo, a close-up of a marked dent on a panel (before-type shot), so none used. Phone differs: site shows 210-871-0222, brief says (210) 823-2547; confirm. Site says 100+ Google reviews, brief says 129. Draft's mobile service (comes to you) is not on the site; the site offers free pick-up and drop-off, so mobilePoints left empty. Site says 'since 2009' plus 10 earlier years; the 'over ten years' claim is inconsistent, so no year count used in copy. Reviewer quote for Francisco G. lightly corrected 'got get' to 'go get'; verify.
+- Dropped 2 reviews: a review widget (wprev) on https://www.primetimepdr.com/.
+- No photos at all: the hero has no picture. Find photos by hand.
+- Only 0 gallery photos.
+- No reviews on the site: the page shows the Google rating only.
+- Hero is a licensed stock photo for the trade (credited on the page, see generator/assets/CREDITS.md), not their work: swap in their own photo once they send one.

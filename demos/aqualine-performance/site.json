@@ -1,0 +1,178 @@
+{
+  "kit": "detailing",
+  "trade": "Mobile detailing",
+  "name": "Aqualine Performance",
+  "legalName": "Aqualine Performance",
+  "preview": true,
+  "placeId": "ChIJlWmXYzDan2kRiCHVEDFLoCg",
+  "title": "Aqualine Performance | Mobile detailing in Henderson, NV",
+  "description": "Mobile detailing, ceramic coating and paint protection film, based in Henderson. We come to your driveway, garage, slip or hangar. 5.0 on Google from 98 reviews.",
+  "brand": "#1670ff",
+  "brandHi": "#52c6ff",
+  "accent": "#8fd0ff",
+  "logo": "logo.png",
+  "logoChip": false,
+  "wordmark": {
+    "top": "Aqualine",
+    "bottom": "Performance"
+  },
+  "phone": "(702) 831-0641",
+  "email": "info@aqualineperf.com",
+  "heroImage": "img/photo-3.jpg",
+  "heroAlt": "Dark sports car covered in foam and water spray during a wash",
+  "heroPosition": "60% 60%",
+  "heroPositionPhone": "60% 50%",
+  "rating": {
+    "score": "5.0",
+    "count": 98,
+    "url": "https://maps.google.com/?cid=2927422431898706312"
+  },
+  "kicker": "Mobile detailing · Henderson",
+  "headline": "Showroom shine.<br><em>Every day.</em>",
+  "intro": "Mobile detailing, ceramic coating and paint protection film, based in Henderson. We come to your driveway, garage, slip or hangar.",
+  "mobile": {
+    "title": "We bring the detail to your dock.",
+    "intro": "We bring the detail to you, so your day keeps moving.",
+    "points": [
+      {
+        "name": "We come to you",
+        "text": "Home, office, garage, slip or hangar across the Las Vegas Valley."
+      },
+      {
+        "name": "No lost day",
+        "text": "You don't drop off a vehicle or wait on a ride back."
+      },
+      {
+        "name": "Your schedule",
+        "text": "One client has them back every 2 weeks for both vehicles, and they work around last-minute changes."
+      },
+      {
+        "name": "Easy to book",
+        "text": "Call, text or use the booking form for a quote with no hidden fees."
+      }
+    ]
+  },
+  "servicesTitle": "Waterline up.",
+  "servicesIntro": "From a wash and wax to full restoration, teak and ceramic coating.",
+  "services": [
+    {
+      "name": "Mobile Detailing",
+      "text": "Four packages, from a quick CEA Detail to the Elite Detail, inside and out at your location.",
+      "price": "From $190"
+    },
+    {
+      "name": "Paint Correction",
+      "text": "Machine polishing that removes swirl marks, wash scratches, water etching and sun haze.",
+      "price": "$349–$1,899"
+    },
+    {
+      "name": "Interior Detailing",
+      "text": "Seats, carpet, mats, glass and cabin cleaned by package.",
+      "price": "$190–$899"
+    },
+    {
+      "name": "Ceramic Coating",
+      "text": "Blask coatings in 3, 5 and 10 year tiers, with manufacturer warranties.",
+      "price": "From $1,199"
+    },
+    {
+      "name": "Paint Protection Film",
+      "text": "Self-healing film that takes rock chips and scratches instead of your paint.",
+      "price": "From $900"
+    },
+    {
+      "name": "Marine Detailing",
+      "text": "Detailing for boats used on Lake Mead, Lake Mohave and Lake Havasu, done where the boat is kept."
+    }
+  ],
+  "also": [
+    {
+      "name": "Cars"
+    },
+    {
+      "name": "Trucks and SUVs"
+    },
+    {
+      "name": "Motorcycles"
+    },
+    {
+      "name": "Private aircraft"
+    },
+    {
+      "name": "Commercial fleets"
+    }
+  ],
+  "alsoTitle": "We also detail",
+  "why": [
+    {
+      "name": "Rated 5.0 on Google",
+      "text": "A perfect 5.0 across 98 Google reviews."
+    },
+    {
+      "name": "Clear quotes",
+      "text": "Written quotes with no hidden fees, explained before any work starts."
+    },
+    {
+      "name": "Built for the desert",
+      "text": "Coatings tested against Las Vegas heat, UV and alkaline dust, with manufacturer warranties."
+    }
+  ],
+  "whyTitle": "What we give you that others don't.",
+  "howTitle": "Ready for the water in three steps.",
+  "steps": [
+    {
+      "name": "Request a quote",
+      "text": "Call or send photos of your vehicle for a recommendation and estimate."
+    },
+    {
+      "name": "Schedule",
+      "text": "Pick a time at your home, office, apartment or marina."
+    },
+    {
+      "name": "We detail on site",
+      "text": "We arrive fully equipped and complete the service where it sits."
+    }
+  ],
+  "contactTitle": "Book your boat in.",
+  "footerLine": "Mobile detailing in Henderson",
+  "reviews": [
+    {
+      "text": "Shawn and his team did such a good job on my 2009 BMW 335i. I had both the interior and exterior worked. Both look showroom new! I would recommend Aqualine Performance to anyone who demands a detailed, top notch job.",
+      "name": "David L."
+    },
+    {
+      "text": "Great work, Shawn and his team really did a great job, they did a paint correction on my BMW 535i 2010, it came out really good and the interior details are amazing all inside and out, great job!",
+      "name": "Carlos R."
+    },
+    {
+      "text": "Shawn and Joseph were fantastic. They arrived early and put an impressive amount of effort into cleaning my Yukon. They were able to get dog hair and food crumbs out of all kinds of cracks and crevices. My Yukon looks amazing!",
+      "name": "Sarah K."
+    },
+    {
+      "text": "They did such a great job I have them come every 2 weeks for both my vehicles! They will work around your schedule when last minute issues arise!",
+      "name": "Michael B."
+    },
+    {
+      "text": "Shawn came down and washed and waxed my car personally after working an 8hr+ shift at a different job. Not only did he detail my vehicle and leave it spotless, he also found a code reader and read the check engine light.",
+      "name": "Ian Dinsmore"
+    }
+  ],
+  "hours": [
+    "Mon–Sat: 8AM–6PM"
+  ],
+  "galleryTitle": "Fresh off the water.",
+  "vehicleTypes": [
+    "Boat",
+    "Pontoon",
+    "Yacht",
+    "Jet ski",
+    "Other"
+  ],
+  "modelPlaceholder": "e.g. Sea Ray 240, 24 ft",
+  "notePlaceholder": "Length, where it is docked or stored, what it needs…",
+  "gallery": [],
+  "areas": [
+    "Henderson"
+  ],
+  "pitch": "photos"
+}

@@ -1,0 +1,5 @@
+- Listed as Boat detailing, but their site is about cars: built as mobile car detailing.
+- No logo found: the header shows the name only.
+- Claude's notes: No logo image was marked separately; Photo 2 is their logo graphic and is excluded from the gallery. Site says '300+ 5-Star Reviews' and 'Since 2008' but Google shows 450 reviews; left out. Site text is cut off at the carpet replacement service. Photos 17 and 7 look stock or staged and were skipped. Prices vary by vehicle size; only 'starting at' is shown. The site mentions both mobile and shop service, so check the draft's mobile-only tone. Hours listed as Mon-Sun 6 AM to 6 PM.
+- Dropped 6 reviews: a review widget (elfsight) on https://touchstonedetailing.com/.
+- No reviews on the site: the page shows the Google rating only.

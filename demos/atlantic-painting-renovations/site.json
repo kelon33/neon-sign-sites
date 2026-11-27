@@ -1,0 +1,126 @@
+{
+ "kit": "painting",
+ "trade": "House painting",
+ "name": "Atlantic Painting & Renovations",
+ "legalName": "Atlantic Painting & Renovations",
+ "preview": true,
+ "placeId": "ChIJMUpXNMev5YgRLfkqFNs6Inw",
+ "title": "Atlantic Painting & Renovations | House painting in Jacksonville Beach, FL",
+ "description": "Interior and exterior painting for homes and businesses in Jacksonville, St. Augustine and the St. Johns area. Drywall repair, pressure washing and remodeling too. 5.0 on Google from 29 reviews.",
+ "logo": null,
+ "logoChip": false,
+ "wordmark": {
+  "top": "Atlantic",
+  "bottom": "Painting & Renovations"
+ },
+ "phone": "(904) 316-5647",
+ "email": "info@apandr.com",
+ "heroImage": null,
+ "heroAlt": "",
+ "heroPosition": "60% 60%",
+ "heroPositionPhone": "60% 50%",
+ "rating": {
+  "score": "5.0",
+  "count": 29,
+  "url": "https://maps.google.com/?cid=8944776522521835821"
+ },
+ "kicker": "House painting · Jacksonville Beach",
+ "headline": "Fresh paint.<br><em>Clean lines.</em>",
+ "intro": "Interior and exterior painting for homes and businesses in Jacksonville, St. Augustine and the St. Johns area. Drywall repair, pressure washing and remodeling too.",
+ "badges": [
+  "Free estimates",
+  "Homes and businesses"
+ ],
+ "highlights": null,
+ "servicesTitle": "Inside and out.",
+ "servicesIntro": "One room or the whole house. Free estimates.",
+ "services": [
+  {
+   "name": "Interior painting",
+   "text": "Commercial and residential rooms, repaired and prepped, then painted."
+  },
+  {
+   "name": "Exterior painting",
+   "text": "Commercial and residential exteriors, prepped for a lasting topcoat."
+  },
+  {
+   "name": "Stucco painting",
+   "text": "Stucco surfaces repaired and painted."
+  },
+  {
+   "name": "Drywall repair",
+   "text": "Damage fixed and the surface readied for the topcoat."
+  },
+  {
+   "name": "Pressure washing",
+   "text": "Surfaces cleaned before the work begins or on their own."
+  },
+  {
+   "name": "Floor coating",
+   "text": "Coatings for floors, for homes and businesses."
+  }
+ ],
+ "also": [
+  {
+   "name": "Water proofing"
+  },
+  {
+   "name": "Fire proofing"
+  },
+  {
+   "name": "Electrostatic painting"
+  },
+  {
+   "name": "Tile and floor installation"
+  },
+  {
+   "name": "Wiring"
+  },
+  {
+   "name": "Full remodeling"
+  }
+ ],
+ "alsoTitle": "We also do:",
+ "promise": null,
+ "why": [
+  {
+   "name": "25 years of experience",
+   "text": "A locally owned and operated team with 25 years in painting and home restoration."
+  },
+  {
+   "name": "Fair, transparent pricing",
+   "text": "No hidden fees, just honest, competitive rates."
+  },
+  {
+   "name": "Timely and reliable",
+   "text": "They respect your time and work to finish efficiently. They guarantee their work."
+  }
+ ],
+ "whyTitle": "Why homeowners call us.",
+ "howTitle": "A fresh coat in three steps.",
+ "steps": [
+  {
+   "name": "Ask for a free estimate",
+   "text": "Call or use the form to tell us about your project."
+  },
+  {
+   "name": "Plan the job",
+   "text": "We go over the work, colors and timing with you."
+  },
+  {
+   "name": "Enjoy the new look",
+   "text": "We paint, and aim to finish on time and on budget."
+  }
+ ],
+ "contactTitle": "Ready for a fresh coat?",
+ "footerLine": "House painting in Jacksonville Beach",
+ "reviews": [],
+ "hours": [],
+ "galleryTitle": "Homes we’ve painted.",
+ "notePlaceholder": "Inside or outside, how many rooms, a date you have in mind…",
+ "gallery": [],
+ "areas": [
+  "Jacksonville Beach"
+ ],
+ "pitch": "photos"
+}

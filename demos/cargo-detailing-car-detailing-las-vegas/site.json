@@ -1,0 +1,161 @@
+{
+ "kit": "detailing",
+ "trade": "Mobile car detailing",
+ "name": "Cargo Detailing Car Detailing Las Vegas",
+ "legalName": "Cargo Detailing Car Detailing Las Vegas",
+ "preview": true,
+ "placeId": "ChIJwXIixR-RrkARH8KAf5kFCsA",
+ "title": "Cargo Detailing Car Detailing Las Vegas | Mobile car detailing in Las Vegas, NV",
+ "description": "Professional mobile detailing at your home or workplace, anywhere around the Las Vegas Valley. No drop-off, no waiting room. Just a car that looks and feels new. 4.9 on Google from 158 reviews.",
+ "brand": "#1670ff",
+ "brandHi": "#52c6ff",
+ "accent": "#8fd0ff",
+ "logo": "logo.png",
+ "logoChip": false,
+ "wordmark": {
+  "top": "Cargo",
+  "bottom": "Detailing"
+ },
+ "phone": "(702) 832-4108",
+ "email": "cargodetailing@gmail.com",
+ "heroImage": "img/photo-4.jpg",
+ "heroAlt": "Black Ford Mustang with a clean finish parked on a Las Vegas street",
+ "heroPosition": "60% 60%",
+ "heroPositionPhone": "60% 50%",
+ "rating": {
+  "score": "4.9",
+  "count": 158,
+  "url": "https://maps.google.com/?cid=13837878961876550175"
+ },
+ "kicker": "Mobile car detailing · Las Vegas, NV",
+ "headline": "We bring the shop<br><em>to your driveway.</em>",
+ "intro": "Professional mobile detailing at your home or workplace, anywhere around the Las Vegas Valley. No drop-off, no waiting room. Just a car that looks and feels new.",
+ "mobile": {
+  "title": "We come to you.",
+  "intro": "Mobile service means your car gets a full detail right where it sits. All we need is your home's power and water.",
+  "points": [
+   {
+    "name": "At your door",
+    "text": "Home, apartment or office across the Las Vegas Valley."
+   },
+   {
+    "name": "No time lost",
+    "text": "No shop drop-off, no arranging a ride, no waiting around."
+   },
+   {
+    "name": "Everything on board",
+    "text": "Our technicians bring what they need to clean your car where it's parked."
+   },
+   {
+    "name": "Book anytime",
+    "text": "Schedule online 24/7, or call for a quote."
+   }
+  ]
+ },
+ "servicesTitle": "Inside, outside, and everything that shines.",
+ "servicesIntro": "From a deep interior clean to multi-stage paint correction, with high-quality products for every surface.",
+ "services": [
+  {
+   "name": "Interior Detail",
+   "text": "A deep clean of every seat, surface and crevice, with vacuum, wipe-down, streak-free glass and clean door jambs.",
+   "price": "Starting at $132"
+  },
+  {
+   "name": "Full Detail",
+   "text": "Our complete inside-and-out package, finished with a 3 month paint sealant.",
+   "price": "Starting at $207.90"
+  },
+  {
+   "name": "Exterior Detail",
+   "text": "Hand wash, foam bath, clay and seal to remove grime, smooth the paint and add shine.",
+   "price": "Starting at $159.50"
+  },
+  {
+   "name": "Paint Correction",
+   "text": "Reduces swirl marks and heavier paint defects."
+  },
+  {
+   "name": "Ceramic Coating",
+   "text": "Longer-term protection for your paint."
+  }
+ ],
+ "also": [
+  {
+   "name": "Fleets"
+  },
+  {
+   "name": "Sedans"
+  },
+  {
+   "name": "SUVs"
+  },
+  {
+   "name": "Trucks"
+  }
+ ],
+ "alsoTitle": "Not just cars:",
+ "why": [
+  {
+   "name": "Hands-on founder",
+   "text": "Carlos Gonzalez still details vehicles himself, alongside the trained team."
+  },
+  {
+   "name": "Rated 4.9 on Google",
+   "text": "More than 150 Google reviews from Las Vegas drivers."
+  },
+  {
+   "name": "Pro-grade, non-toxic products",
+   "text": "Chosen to care for you, your car and the environment."
+  }
+ ],
+ "whyTitle": "The detail is in the name.",
+ "howTitle": "Book it. We show up. You drive off shining.",
+ "steps": [
+  {
+   "name": "Tell us about your car",
+   "text": "Call, text or send the form: your vehicle, the service and where it's parked."
+  },
+  {
+   "name": "We pull up",
+   "text": "We arrive on time at your home or office, with everything we need."
+  },
+  {
+   "name": "You get the keys back",
+   "text": "To a car that looks, and smells, brand new."
+  }
+ ],
+ "contactTitle": "Book your detail.",
+ "footerLine": "Mobile car detailing in Las Vegas",
+ "reviews": [],
+ "hours": [
+  "Mon–Sun: Open 24 Hours"
+ ],
+ "galleryTitle": "Fresh off the driveway.",
+ "gallery": [
+  {
+   "src": "img/photo-2.jpg",
+   "alt": "Glossy black Hyundai Elantra after detailing",
+   "size": "big"
+  },
+  {
+   "src": "img/photo-7.jpg",
+   "alt": "Gray Audi SUV cleaned in a driveway"
+  },
+  {
+   "src": "img/photo-8.jpg",
+   "alt": "White BMW coupe detailed at a home"
+  },
+  {
+   "src": "img/photo-5.jpg",
+   "alt": "Black Ford pickup with a deep shine"
+  },
+  {
+   "src": "img/photo-3.jpg",
+   "alt": "Clean interior of an orange Nissan with black leather seats"
+  }
+ ],
+ "areas": [
+  "Las Vegas"
+ ],
+ "pitch": "site"
+}

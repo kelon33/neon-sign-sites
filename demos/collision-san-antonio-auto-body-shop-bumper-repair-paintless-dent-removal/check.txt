@@ -1,0 +1,9 @@
+- No logo found: the header shows the name only.
+- No hero photo: Claude found none of their photos usable.
+- Photo pitch: only 0 usable photos by Claude's choice, so no gallery; the email asks them for photos of their work.
+- Claude's notes: All provided photos look like stock (BMW/Mustang renders, polishing, wrench thumbs-up, man on phone). Photo 7 is the real shop but has a logo overlay and is portrait, so it was left out. Preview has no photos. Phone differs: site says (210) 404-7115, brief says (210) 779-9000; verify. Business name on site is Collision San Antonio. Kit is detailing but this is a body shop, so mobile points are empty and the draft's mobile section should be dropped. Site claims (20+ years, ICAR/EPA certified, 30-50% cheaper) were left out of the copy except where stated; the $700 deductible saving is quoted from the site.
+- Dropped 6 reviews: reviews labelled "Google review" on https://www.collisionsanantonio.com/testimonials-2/.
+- No photos at all: the hero has no picture. Find photos by hand.
+- Only 0 gallery photos.
+- No reviews on the site: the page shows the Google rating only.
+- Hero is a licensed stock photo for the trade (credited on the page, see generator/assets/CREDITS.md), not their work: swap in their own photo once they send one.

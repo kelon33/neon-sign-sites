@@ -1,0 +1,102 @@
+{
+ "kit": "detailing",
+ "trade": "Paintless dent repair",
+ "name": "Performance Paintless",
+ "legalName": "Performance Paintless",
+ "preview": true,
+ "placeId": "ChIJMe35i6tz_oYRkw3E8NB4z94",
+ "title": "Performance Paintless | Paintless dent repair in Lubbock, TX",
+ "description": "Paintless dent repair in Lubbock, backed by a team trusted since 1995. Dents come out without sanding, filler or repainting, so your factory finish stays. 4.9 on Google from 60 reviews.",
+ "brand": "#1670ff",
+ "brandHi": "#52c6ff",
+ "accent": "#8fd0ff",
+ "logo": null,
+ "logoChip": false,
+ "wordmark": {
+  "top": "Performance",
+  "bottom": "Paintless"
+ },
+ "phone": "(806) 230-3377",
+ "email": "info@performancepaintless.com",
+ "heroImage": null,
+ "heroAlt": "",
+ "heroPosition": "60% 60%",
+ "heroPositionPhone": "60% 50%",
+ "rating": {
+  "score": "4.9",
+  "count": 60,
+  "url": "https://maps.google.com/?cid=16055184035387018643"
+ },
+ "kicker": "Paintless dent repair · Lubbock",
+ "headline": "Hail damage gone.<br><em>Hassle gone too.</em>",
+ "intro": "Paintless dent repair in Lubbock, backed by a team trusted since 1995. Dents come out without sanding, filler or repainting, so your factory finish stays.",
+ "mobile": null,
+ "servicesTitle": "Everything your car needs.",
+ "servicesIntro": "From a single door ding to hail damage.",
+ "services": [
+  {
+   "name": "Hail damage repair",
+   "text": "One of our core specialties, restoring vehicles after storms without touching the factory paint."
+  },
+  {
+   "name": "Door dings and dents",
+   "text": "Minor dings pushed out with precision tools, with no sanding, filler or repainting."
+  },
+  {
+   "name": "Insurance assistance",
+   "text": "We work directly with your insurance company on the claim, inspection and paperwork."
+  },
+  {
+   "name": "Deductible assistance",
+   "text": "We work with you to find ways to ease the out-of-pocket cost of the repair."
+  },
+  {
+   "name": "Free loaner vehicles",
+   "text": "Complimentary loaners are available first-come, first-served while your car is in the shop."
+  }
+ ],
+ "also": [],
+ "alsoTitle": "We also fix",
+ "why": [
+  {
+   "name": "Since 1995",
+   "text": "Established August 11th, 1995, with thousands of vehicles restored."
+  },
+  {
+   "name": "ASE certified technicians",
+   "text": "Our technicians are ASE certified and trained on the latest methods."
+  },
+  {
+   "name": "Walk-ins welcome",
+   "text": "Stop by during business hours for a free assessment, or schedule online or by phone."
+  }
+ ],
+ "whyTitle": "Performance Paintless difference.",
+ "howTitle": "Back to like new in three steps.",
+ "steps": [
+  {
+   "name": "Book a free inspection",
+   "text": "The owner or a team member comes out to inspect the damage, and a free loaner car is delivered to your home or work."
+  },
+  {
+   "name": "We work with your insurance",
+   "text": "We submit photos and an estimate so your insurance can approve the repair."
+  },
+  {
+   "name": "Pick up your vehicle",
+   "text": "Our master certified technicians repair it. You collect a freshly detailed, dent free vehicle."
+  }
+ ],
+ "contactTitle": "Hail damage? Call us.",
+ "footerLine": "Paintless dent repair in Lubbock",
+ "reviews": [],
+ "hours": [],
+ "galleryTitle": "Dents gone, paint untouched.",
+ "notePlaceholder": "Where the dent is, how big, hail or a door ding…",
+ "ctaLabel": "Get an estimate",
+ "gallery": [],
+ "areas": [
+  "Lubbock"
+ ],
+ "pitch": "photos"
+}

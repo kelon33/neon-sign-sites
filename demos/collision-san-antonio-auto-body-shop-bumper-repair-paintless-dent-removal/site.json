@@ -1,0 +1,106 @@
+{
+ "kit": "detailing",
+ "trade": "Paintless dent repair",
+ "name": "Collision San Antonio Auto Body Shop-Bumper Repair & Paintless Dent Removal",
+ "legalName": "Collision San Antonio Auto Body Shop-Bumper Repair & Paintless Dent Removal",
+ "preview": true,
+ "placeId": "ChIJN7KJcjBgXIYRkA_GaAyh9C0",
+ "title": "Collision San Antonio Auto Body Shop-Bumper Repair & Paintless Dent Removal | Paintless dent repair in San Antonio, TX",
+ "description": "Auto body and paintless dent repair in San Antonio. Door dings, minor creases and hail damage, fixed by technicians who work on all makes and models. 4.5 on Google from 383 reviews.",
+ "brand": "#1670ff",
+ "brandHi": "#52c6ff",
+ "accent": "#8fd0ff",
+ "logo": null,
+ "logoChip": false,
+ "wordmark": {
+  "top": "Collision",
+  "bottom": "San Antonio"
+ },
+ "phone": "(210) 779-9000",
+ "email": "mchacon@collisionsanantonio.com",
+ "heroImage": null,
+ "heroAlt": "",
+ "heroPosition": "60% 60%",
+ "heroPositionPhone": "60% 50%",
+ "rating": {
+  "score": "4.5",
+  "count": 383,
+  "url": "https://maps.google.com/?cid=3311448700693647248"
+ },
+ "kicker": "Paintless dent repair · San Antonio",
+ "headline": "Your car's dents.<br><em>Gone. Paint untouched.</em>",
+ "intro": "Auto body and paintless dent repair in San Antonio. Door dings, minor creases and hail damage, fixed by technicians who work on all makes and models.",
+ "mobile": null,
+ "servicesTitle": "Every kind of dent.",
+ "servicesIntro": "From a single door ding to a full hail storm.",
+ "services": [
+  {
+   "name": "Paintless Dent Removal (PDR)",
+   "text": "The go-to fix for hail damage, door dings, minor creases and minor plastic bumper indentations."
+  },
+  {
+   "name": "Hail Damage Repair",
+   "text": "Paintless hail repair is the fastest, most cost-efficient way to restore your vehicle to pre-loss condition."
+  },
+  {
+   "name": "Scratch And Dent Repair",
+   "text": "Affordable, reliable repair for dents and scratches on your vehicle."
+  },
+  {
+   "name": "Bumper Repair",
+   "text": "If a bumper is damaged beyond repair, we stock replacement bumpers for all makes and models."
+  },
+  {
+   "name": "Collision Repair",
+   "text": "Full-service body repair for the bigger hits."
+  }
+ ],
+ "also": [],
+ "alsoTitle": "We also fix",
+ "why": [
+  {
+   "name": "Same day on minor repairs",
+   "text": "Same day service for minor repairs and bumper replacement. No appointment needed for a free estimate."
+  },
+  {
+   "name": "Lifetime warranty on labor",
+   "text": "Our labor is backed for as long as you own your vehicle. Parts carry the manufacturer's parts warranty."
+  },
+  {
+   "name": "Insurance help",
+   "text": "We work with all insurance companies, and our deductible discount program can save you up to $700."
+  }
+ ],
+ "whyTitle": "The Collision San Antonio Auto Body Shop-Bumper Repair & Paintless Dent Removal difference.",
+ "howTitle": "Back to like new in three steps.",
+ "steps": [
+  {
+   "name": "Send the details",
+   "text": "Call, or use the form with your year, make, model and photos of the damage."
+  },
+  {
+   "name": "Get an evaluation",
+   "text": "Bring the vehicle in and we look at the hail damage, dings or film options."
+  },
+  {
+   "name": "Drive it smooth",
+   "text": "We work the dents out and hand the vehicle back."
+  }
+ ],
+ "contactTitle": "Got a dent?",
+ "footerLine": "Paintless dent repair in San Antonio",
+ "reviews": [],
+ "hours": [
+  "Mon–Fri: 8:00am – 6:00pm",
+  "Sat: 9:00am – 1:00pm",
+  "Night Drop Available"
+ ],
+ "galleryTitle": "Dents gone, paint untouched.",
+ "notePlaceholder": "Where the dent is, how big, hail or a door ding…",
+ "ctaLabel": "Get an estimate",
+ "gallery": [],
+ "areas": [
+  "San Antonio"
+ ],
+ "pitch": "photos"
+}

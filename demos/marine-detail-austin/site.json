@@ -1,0 +1,130 @@
+{
+ "kit": "detailing",
+ "trade": "Boat detailing",
+ "name": "Marine Detail Austin",
+ "legalName": "Marine Detail Austin",
+ "preview": true,
+ "placeId": "ChIJz7m5PRq2RIYR4lLQBN0z28k",
+ "title": "Marine Detail Austin | Boat detailing in San Antonio, TX",
+ "description": "Mobile boat detailing from Daniel, owner and operator, with 20 years of experience detailing boats. He comes to your boat and takes the time to get it right. 5.0 on Google from 23 reviews.",
+ "brand": "#1670ff",
+ "brandHi": "#52c6ff",
+ "accent": "#8fd0ff",
+ "logo": null,
+ "logoChip": false,
+ "wordmark": {
+  "top": "Marine Detail",
+  "bottom": "Austin"
+ },
+ "phone": "(512) 825-6491",
+ "email": "reverseprisms@gmail.com",
+ "heroImage": null,
+ "heroAlt": "",
+ "heroPosition": "60% 60%",
+ "heroPositionPhone": "60% 50%",
+ "rating": {
+  "score": "5.0",
+  "count": 23,
+  "url": "https://maps.google.com/?cid=14545276445884699362"
+ },
+ "kicker": "Boat detailing · San Antonio",
+ "headline": "Back on the water<br><em>looking new.</em>",
+ "intro": "Mobile boat detailing from Daniel, owner and operator, with 20 years of experience detailing boats. He comes to your boat and takes the time to get it right.",
+ "mobile": {
+  "title": "Your boat, your spot.",
+  "intro": "We bring the detail to you, so your day keeps moving.",
+  "points": [
+   {
+    "name": "We come to your boat",
+    "text": "Daniel brings the detail to your boat, so you don't have to move it."
+   },
+   {
+    "name": "Time to do it right",
+    "text": "He spends the time necessary to get the best results."
+   },
+   {
+    "name": "You deal with the owner",
+    "text": "When you call, you talk to Daniel, who runs the business and does the work."
+   }
+  ]
+ },
+ "servicesTitle": "Bow to stern.",
+ "servicesIntro": "Detailing, correction and coating for paint, fiberglass and gel coat.",
+ "services": [
+  {
+   "name": "Regular wash programs",
+   "text": "Ongoing washes to keep your boat clean through the season."
+  },
+  {
+   "name": "Full interior and exterior cleaning",
+   "text": "A complete clean inside and out, finished with a coat of wax."
+  },
+  {
+   "name": "Hard water removal",
+   "text": "A treatment that clears hard water spots from your boat."
+  },
+  {
+   "name": "Scuff removal",
+   "text": "Scuffs taken off so surfaces look clean again."
+  },
+  {
+   "name": "Scratch removal",
+   "text": "Restoration compound and wax to remove scratches."
+  }
+ ],
+ "also": [
+  {
+   "name": "Auto detailing"
+  }
+ ],
+ "alsoTitle": "We also detail",
+ "why": [
+  {
+   "name": "20 years on boats",
+   "text": "Daniel has 20 years of experience detailing boats in Austin and the surrounding area."
+  },
+  {
+   "name": "Owner on every job",
+   "text": "You deal with Daniel, the owner and operator, from the first call."
+  },
+  {
+   "name": "Mobile service",
+   "text": "He comes to your boat and spends the time the job needs."
+  }
+ ],
+ "whyTitle": "What we give you that others don't.",
+ "howTitle": "Ready for the water in three steps.",
+ "steps": [
+  {
+   "name": "Tell us about your boat",
+   "text": "Call or send the form with the vessel, the service and a few photos."
+  },
+  {
+   "name": "We set the plan",
+   "text": "One-time detail or a regular wash plan, your choice."
+  },
+  {
+   "name": "Back on the water",
+   "text": "You enjoy your boat. We handle the rest."
+  }
+ ],
+ "contactTitle": "Book your boat in.",
+ "footerLine": "Boat detailing in San Antonio",
+ "reviews": [],
+ "hours": [],
+ "galleryTitle": "Fresh off the water.",
+ "vehicleTypes": [
+  "Boat",
+  "Pontoon",
+  "Yacht",
+  "Jet ski",
+  "Other"
+ ],
+ "modelPlaceholder": "e.g. Sea Ray 240, 24 ft",
+ "notePlaceholder": "Length, where it is docked or stored, what it needs…",
+ "gallery": [],
+ "areas": [
+  "San Antonio"
+ ],
+ "pitch": "photos"
+}

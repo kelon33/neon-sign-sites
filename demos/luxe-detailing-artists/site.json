@@ -1,0 +1,145 @@
+{
+ "kit": "detailing",
+ "trade": "Mobile car detailing",
+ "name": "Luxe Detailing Artists",
+ "legalName": "Luxe Detailing Artists",
+ "preview": true,
+ "placeId": "ChIJ9QOG0p0_ZIgRzg6mbpb7pjE",
+ "title": "Luxe Detailing Artists | Mobile car detailing in Mt. Juliet, TN",
+ "description": "A privately owned detailing and vehicle protection shop on Lebanon Rd in Mt. Juliet. Careful prep, proven products and work that makes your car look new again. 4.8 on Google from 111 reviews.",
+ "brand": "#1670ff",
+ "brandHi": "#52c6ff",
+ "accent": "#8fd0ff",
+ "logo": null,
+ "logoChip": false,
+ "wordmark": {
+  "top": "Luxe",
+  "bottom": "Detailing Artists"
+ },
+ "phone": "(615) 560-8166",
+ "email": "luxedetailingartists@hotmail.com",
+ "heroImage": null,
+ "heroAlt": "",
+ "heroPosition": "60% 60%",
+ "heroPositionPhone": "60% 50%",
+ "rating": {
+  "score": "4.8",
+  "count": 111,
+  "url": "https://maps.google.com/?cid=3577823577512480462"
+ },
+ "kicker": "Mobile car detailing · Mt. Juliet, TN",
+ "headline": "Showroom shine.<br><em>Right in your driveway.</em>",
+ "intro": "A privately owned detailing and vehicle protection shop on Lebanon Rd in Mt. Juliet. Careful prep, proven products and work that makes your car look new again.",
+ "mobile": null,
+ "servicesTitle": "Three details. One clear price each.",
+ "servicesIntro": "From a one-time clean to regular upkeep, pick the service that fits your vehicle.",
+ "services": [
+  {
+   "name": "Interior Auto Detailing",
+   "text": "A deep clean that blows out cracks and crevices, wipes hard surfaces, vacuums seats and carpets, lightly shampoos mats and cleans interior glass."
+  },
+  {
+   "name": "Exterior Auto Detailing",
+   "text": "Degreased wheel wells and tires, rim cleaning, foam cannon wash, clay bar, then dried, dressed and waxed."
+  },
+  {
+   "name": "Ceramic Coating",
+   "text": "A durable, hydrophobic layer that shields paint from UV rays and road grime, with a deep gloss that is easier to clean."
+  },
+  {
+   "name": "Window Tinting",
+   "text": "Tint that cools the cabin, cuts heat and glare, blocks UV and adds privacy, in shades that meet Tennessee requirements."
+  },
+  {
+   "name": "Paint Protection Film",
+   "text": "Clear film on the hood, bumper, mirrors and fenders that guards against rock chips and scratches."
+  },
+  {
+   "name": "Windshield Protection Film",
+   "text": "A clear, durable layer that helps protect your windshield from rock chips, cracks and road debris."
+  }
+ ],
+ "also": [
+  {
+   "name": "RVs"
+  },
+  {
+   "name": "Semi trucks"
+  },
+  {
+   "name": "Marine tinting"
+  },
+  {
+   "name": "Homes"
+  },
+  {
+   "name": "Commercial buildings"
+  }
+ ],
+ "alsoTitle": "Not just cars:",
+ "why": [
+  {
+   "name": "Local, friendly experts",
+   "text": "The team cares about your car like it is their own."
+  },
+  {
+   "name": "Honest quotes, fast service",
+   "text": "Upfront pricing and prompt work without cutting corners."
+  },
+  {
+   "name": "Years of experience",
+   "text": "More than 15 years in the industry, and every vehicle gets extra care."
+  }
+ ],
+ "whyTitle": "The detail is in the name.",
+ "howTitle": "Book it. We show up. You drive off shining.",
+ "steps": [
+  {
+   "name": "Tell us about your vehicle",
+   "text": "Call or send the form with your vehicle and the service you want."
+  },
+  {
+   "name": "We come to you",
+   "text": "We arrive with the equipment and products to do the job on site."
+  },
+  {
+   "name": "Take the keys back",
+   "text": "Your car is clean, restored and showroom-ready."
+  }
+ ],
+ "contactTitle": "Book your consultation.",
+ "footerLine": "Mobile car detailing in Mt. Juliet",
+ "reviews": [
+  {
+   "text": "First of all I was very impressed with the professionalism and friendliness when I called and walked in the door. My husband and I purchased a 2007 used vehicle that has cloth cream colored seats. The seats and carpet were so stained that I didn't think it would ever come clean or the headlights since they were completely fogged up. When I came to pick up the car I was shocked. It didn't look like the same car I dropped off. Absolutely worth every penny.",
+   "name": "Mary Hamblen"
+  },
+  {
+   "text": "Unbelievable!! I had a scratch in clear coat that ran down the entire side of my Porsche. Andy felt he could get 40% - 60% improvement. When I picked it up, the scratch was completely gone! My car looks better than the day it rolled off the showroom.",
+   "name": "Steve Thomas"
+  },
+  {
+   "text": "Bottom line best detail shop! Professional service and quality workmanship they took a 2014 Silverado and turned it into a showroom vehicle, I have already scheduled my other vehicles for detailing. Impressive!",
+   "name": "Michael Shoemake"
+  },
+  {
+   "text": "We had our office tinted and are so happy with how it turned out! It has made it so much cooler in here and is providing the perfect amount of privacy for the business. The employees were very kind and considerate, tried to stay quiet and cleaned up after themselves.",
+   "name": "Eden Waggoner"
+  },
+  {
+   "text": "They did a great job with my 2023 Toyota tundra. I’m really happy with the outcome and the price was very reasonable. I was in and out in less than 30 minutes.",
+   "name": "Michael Hartlein"
+  }
+ ],
+ "hours": [
+  "Mon–Fri: 7:00 am – 4:00 pm",
+  "Sat: 7:00 am – 12:00 pm",
+  "Sun: Closed"
+ ],
+ "galleryTitle": "Fresh off the driveway.",
+ "gallery": [],
+ "areas": [
+  "Mt. Juliet"
+ ],
+ "pitch": "photos"
+}

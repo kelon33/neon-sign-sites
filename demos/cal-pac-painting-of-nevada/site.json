@@ -1,0 +1,125 @@
+{
+ "kit": "painting",
+ "trade": "House painting",
+ "name": "Cal Pac Painting of Nevada",
+ "legalName": "Cal Pac Painting of Nevada",
+ "preview": true,
+ "placeId": "ChIJz6c1D5rDyIAR7w2wdjp63Yo",
+ "title": "Cal Pac Painting of Nevada | House painting in Las Vegas, NV",
+ "description": "Interior and exterior house painting in Las Vegas, from a crew that has painted in the valley since 1991. Call for a complimentary consultation. 5.0 on Google from 24 reviews.",
+ "logo": "logo.png",
+ "logoChip": false,
+ "wordmark": {
+  "top": "Cal Pac",
+  "bottom": "Painting of Nevada"
+ },
+ "phone": "(702) 383-5144",
+ "email": "calpacpaintingnv@calpac.us",
+ "heroImage": null,
+ "heroAlt": "",
+ "heroPosition": "60% 60%",
+ "heroPositionPhone": "60% 50%",
+ "rating": {
+  "score": "5.0",
+  "count": 24,
+  "url": "https://maps.google.com/?cid=10006288338605051375"
+ },
+ "kicker": "House painting · Las Vegas",
+ "headline": "Fresh paint.<br><em>Clean lines.</em>",
+ "intro": "Interior and exterior house painting in Las Vegas, from a crew that has painted in the valley since 1991. Call for a complimentary consultation.",
+ "badges": [
+  "Homes and businesses"
+ ],
+ "highlights": null,
+ "servicesTitle": "Inside and out.",
+ "servicesIntro": "One room or the whole house. Free estimates.",
+ "services": [
+  {
+   "name": "Residential painting",
+   "text": "Repainting your house, inside and out, with the color help to get it right."
+  },
+  {
+   "name": "Wood restoration",
+   "text": "Wood repair and refinishing before the first coat goes on."
+  },
+  {
+   "name": "Surface prep",
+   "text": "Old caulking removed, spackling and sanding done so the finish lasts."
+  },
+  {
+   "name": "Metal refinishing",
+   "text": "Metal surfaces refinished with the same care as the walls."
+  }
+ ],
+ "also": [
+  {
+   "name": "Commercial buildings"
+  },
+  {
+   "name": "Apartment complexes"
+  },
+  {
+   "name": "General contractors"
+  }
+ ],
+ "alsoTitle": "We also do:",
+ "promise": null,
+ "why": [
+  {
+   "name": "Experience",
+   "text": "Founded in California in 1971, in the Las Vegas valley since 1991, and incorporated in Nevada in 1996."
+  },
+  {
+   "name": "Careful prep",
+   "text": "Customers point to the prep work, the clean job sites and the care taken with furniture and carpet."
+  },
+  {
+   "name": "On time",
+   "text": "Reviewers say the crew shows up when promised and finishes on schedule."
+  }
+ ],
+ "whyTitle": "Why homeowners call us.",
+ "howTitle": "A fresh coat in three steps.",
+ "steps": [
+  {
+   "name": "Free consultation",
+   "text": "Tell us what you need. We talk through the scope and give you a free quote."
+  },
+  {
+   "name": "Plan and schedule",
+   "text": "We agree on the details and set the work with clear communication."
+  },
+  {
+   "name": "Paint and walkthrough",
+   "text": "Our team does the work, then walks the finished job with you."
+  }
+ ],
+ "contactTitle": "Ready for a fresh coat?",
+ "footerLine": "House painting in Las Vegas",
+ "reviews": [
+  {
+   "text": "Just wanted to share my thoughts re: my house recently being painted by Cal-Pac Painting.  I was incredibly pleased with the pricing, professionalism, their timeliness in execution and quality of their workmanship. They personally helped me narrow down the perfect paint color and it looks absolutely beautiful.",
+   "name": "Lisa Stevens"
+  },
+  {
+   "text": "All wood restoration, removal of old caulking, spackling and sanding were executed in a timely manner  with great expertise.  Any and all touch-up work was done immediately upon notice; and, there was never any griping or complaining from you or your men.",
+   "name": "Gary S Marrone MD JD"
+  },
+  {
+   "text": "I was amazed at how meticulous they were in the preparation and care in making that not a piece of furniture or carpet was harmed. Each room was painted exactly to my specifications.",
+   "name": "Sharon Beesley"
+  },
+  {
+   "text": "Evangelino was awesome and early, which is my favorite thing ever! The two rooms look fantastic! Thank you again!",
+   "name": "Jennifer Lewis"
+  }
+ ],
+ "hours": [],
+ "galleryTitle": "Homes we’ve painted.",
+ "notePlaceholder": "Inside or outside, how many rooms, a date you have in mind…",
+ "gallery": [],
+ "areas": [
+  "Las Vegas"
+ ],
+ "pitch": "photos"
+}

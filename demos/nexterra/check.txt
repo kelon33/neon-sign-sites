@@ -1,0 +1,7 @@
+- Logo is dark on a transparent background: shown on a white chip. Check it reads well.
+- Photo pitch: only 3 usable photos by Claude's choice, so no gallery; the email asks them for photos of their work.
+- Logo dropped: Claude saw it is not theirs (a badge, a client's or their web designer's). The header shows the name only.
+- Claude's notes: Logo image is the NABC logo, not Nexterra's. Site is hail-focused and national; no prices listed. Draft says DFW, which the site does not support. Some reviews mention Texas and Austin, so check local relevance. Review counts differ (778 Google, 1,133 on site). Photo 3 shows a clipboard with logo but was left out as weak.
+- Dropped 6 reviews: a review widget (trustindex) on https://nexterras.com/.
+- Only 0 gallery photos.
+- No reviews on the site: the page shows the Google rating only.

@@ -1,0 +1,8 @@
+- Dropped (not backed by their site): why (a note about the site, not copy): Same-day turnaround The site says most repairs are completed the same day.
+- No hero photo: Claude found none of their photos usable.
+- Photo pitch: only 0 usable photos by Claude's choice, so no gallery; the email asks them for photos of their work.
+- Claude's notes: No reviews on site. Both photos look like stock (a clean black sedan and a close-up of a silver car's door handle), so none were used. Hours are not on the site. The draft's mobile section and 'bring the vehicle in' step conflict; the site only says mobile service options are available, so mobilePoints is empty. Site footer shows a 2035 copyright and placeholder text, check details with the owner.
+- No photos at all: the hero has no picture. Find photos by hand.
+- Only 0 gallery photos.
+- No reviews on the site: the page shows the Google rating only.
+- Hero is a licensed stock photo for the trade (credited on the page, see generator/assets/CREDITS.md), not their work: swap in their own photo once they send one.

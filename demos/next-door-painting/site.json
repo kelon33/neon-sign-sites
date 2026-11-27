@@ -1,0 +1,153 @@
+{
+ "kit": "painting",
+ "trade": "House painting",
+ "name": "Next Door Painting",
+ "legalName": "Next Door Painting",
+ "preview": true,
+ "placeId": "ChIJEQASoqxYXIYRqZJAd8620w0",
+ "title": "Next Door Painting | House painting in San Antonio, TX",
+ "description": "Residential and commercial painters in San Antonio. We prep right, work on consecutive days and clean up every night. 4.7 on Google from 46 reviews.",
+ "logo": null,
+ "logoChip": false,
+ "wordmark": {
+  "top": "Next Door",
+  "bottom": "Painting"
+ },
+ "phone": "(210) 529-8696",
+ "email": "info@nextdoorpainting.com",
+ "heroImage": "img/photo-10.jpg",
+ "heroAlt": "Two-story house painted green with white trim and red accents",
+ "heroPosition": "60% 60%",
+ "heroPositionPhone": "60% 50%",
+ "rating": {
+  "score": "4.7",
+  "count": 46,
+  "url": "https://maps.google.com/?cid=996340940459250345"
+ },
+ "kicker": "House painting · San Antonio",
+ "headline": "Clean walls.<br><em>Family-built finish.</em>",
+ "intro": "Residential and commercial painters in San Antonio. We prep right, work on consecutive days and clean up every night.",
+ "badges": [
+  "Free estimates",
+  "Homes and businesses"
+ ],
+ "highlights": null,
+ "servicesTitle": "Inside and out.",
+ "servicesIntro": "One room or the whole house.",
+ "services": [
+  {
+   "name": "Residential Painting",
+   "text": "Interior and exterior painting for your home, from one room to the whole house."
+  },
+  {
+   "name": "Commercial Painting",
+   "text": "Multi-family communities, shopping centers and industrial properties, painted with quality and care."
+  },
+  {
+   "name": "Small Jobs Program",
+   "text": "An affordable program for hallways, closets and bathrooms."
+  },
+  {
+   "name": "Cabinets and Decks",
+   "text": "Kitchen cabinets and wood decks refinished."
+  },
+  {
+   "name": "Garage Epoxy Floors",
+   "text": "Epoxy floor coating that turns a bare garage slab into a clean, finished floor."
+  },
+  {
+   "name": "Exterior Prep Work",
+   "text": "Power wash, scrape, sand, caulk and prime before any paint goes on."
+  }
+ ],
+ "also": [
+  {
+   "name": "Carpentry"
+  },
+  {
+   "name": "Concrete"
+  },
+  {
+   "name": "Popcorn ceiling removal"
+  },
+  {
+   "name": "Wallpaper removal"
+  }
+ ],
+ "alsoTitle": "We also do:",
+ "promise": null,
+ "why": [
+  {
+   "name": "Experience",
+   "text": "Over 15 years in residential and commercial painting, with extensive training for every painter."
+  },
+  {
+   "name": "Price commitment",
+   "text": "Your price is honored from start to finish. No surprises at the end of the job."
+  },
+  {
+   "name": "Written guarantee",
+   "text": "Every job comes with a written guarantee, and a nightly clean up and walk around."
+  }
+ ],
+ "whyTitle": "Why homeowners call us.",
+ "howTitle": "A fresh coat in three steps.",
+ "steps": [
+  {
+   "name": "Free estimate",
+   "text": "Tell us about the job. We look it over and give you a quote."
+  },
+  {
+   "name": "We do the work",
+   "text": "The crew arrives on schedule, and you get daily updates your way."
+  },
+  {
+   "name": "Final look",
+   "text": "We finish every detail so you are satisfied with the result."
+  }
+ ],
+ "contactTitle": "Ready for a fresh coat?",
+ "footerLine": "House painting in San Antonio",
+ "reviews": [
+  {
+   "text": "Highly professional! Neat and efficient, Next Door Painting uses high quality materials and does very good work. I would not hesitate to use them again. (Next Door Painting painted the exterior of our house and also did some minor carpentry.) The owner is a pleasure to work with.",
+   "name": "Billy Samuels"
+  },
+  {
+   "text": "Great Work and Affordable‎ I had Next Door Painting paint my whole house. I am more than pleased with their work. They are pros. Quality of work is very high and they finished within the time frame I wanted. I will be using them again in a couple weeks to paint my office. Highly Recommended.",
+   "name": "Juan Martinez"
+  }
+ ],
+ "hours": [
+  "Monday - Sunday: 7 a.m. - 7 p.m."
+ ],
+ "galleryTitle": "Homes we’ve painted.",
+ "notePlaceholder": "Inside or outside, how many rooms, a date you have in mind…",
+ "gallery": [
+  {
+   "src": "img/photo-8.jpg",
+   "alt": "Ranch house repainted in coral with white trim",
+   "size": "big"
+  },
+  {
+   "src": "img/photo-16.jpg",
+   "alt": "Refinished wood deck with stained rails"
+  },
+  {
+   "src": "img/photo-14.jpg",
+   "alt": "Garage with fresh epoxy floor and painted walls"
+  },
+  {
+   "src": "img/photo-12.jpg",
+   "alt": "Kitchen with freshly painted white cabinets"
+  },
+  {
+   "src": "img/photo-18.jpg",
+   "alt": "Two-story house with fresh white exterior paint"
+  }
+ ],
+ "areas": [
+  "San Antonio"
+ ],
+ "pitch": "site"
+}

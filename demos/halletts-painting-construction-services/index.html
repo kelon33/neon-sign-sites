@@ -1,0 +1,389 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Hallett's Painting &amp; Construction Services | House painting in Jacksonville, FL</title>
+<meta name="description" content="Interior and exterior painting for Jacksonville homes and commercial properties. One team handles the prep, the paint and the repairs. 5.0 on Google from 25 reviews.">
+<meta name="theme-color" content="#1b2a3a">
+<meta name="robots" content="noindex, nofollow">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Inter:wght@400;500;600&display=swap">
+<style>
+/* Real grass greens, whatever the brand colour: lawns should look like lawns. */
+:root { --grass: #4a9a3a; --grass-hi: #7cc85a; --grass-lo: #2f7428; --stripe-a: #4f9d3f; --stripe-b: #448d36;
+  --deep: #163d1b; --deeper: #0f2c13; --sun: #f4c542; --mint: #dfe8d2;
+  --bg: #eaeee0; --panel: #f6f8ef; --ink: #17240f; --muted: #56614c; --line: #d6dcc6;
+  --serif: "Fraunces", Georgia, serif; --sans: "Inter", system-ui, sans-serif; --ease: cubic-bezier(.22,.61,.36,1); }
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body { margin: 0; background: var(--bg); color: var(--ink); font: 400 17px/1.65 var(--sans); -webkit-font-smoothing: antialiased; }
+a { color: inherit; }
+img { display: block; max-width: 100%; }
+.wrap { max-width: 1180px; margin: 0 auto; padding: 0 24px; }
+h1, h2, h3 { margin: 0; }
+h1, h2 { font-family: var(--serif); font-weight: 600; letter-spacing: -0.02em; line-height: 1.03; }
+h1 { font-size: clamp(2.7rem, 6.4vw, 5.2rem); }
+h2 { font-size: clamp(2rem, 4vw, 3.2rem); }
+h3 { font: 600 1.08rem/1.35 var(--sans); }
+p { margin: 0; }
+.eyebrow { font: 600 .74rem/1 var(--sans); letter-spacing: .2em; text-transform: uppercase; color: var(--grass-lo); margin-bottom: 18px; }
+/* Their photos with a little more life: greens a touch greener, never fake. */
+.photo { filter: saturate(1.18) contrast(1.04) brightness(1.02); }
+
+/* Buttons: fresh-cut green with a soft sheen that sweeps across on hover or tap. */
+.btn { position: relative; overflow: hidden; display: inline-flex; align-items: center; justify-content: center; gap: 10px; padding: 17px 28px; border-radius: 999px; border: 0; cursor: pointer;
+  font: 600 1rem/1 var(--sans); color: #fff; text-decoration: none; -webkit-tap-highlight-color: transparent; touch-action: manipulation;
+  background: linear-gradient(180deg, var(--grass-hi), var(--grass) 50%, var(--grass-lo));
+  box-shadow: inset 0 1px 0 rgba(255,255,255,.45), inset 0 -1px 0 rgba(0,0,0,.18), 0 12px 28px -12px rgba(47,116,40,.85);
+  transition: transform .3s var(--ease), box-shadow .3s var(--ease); }
+.btn::after { content: ""; position: absolute; inset: -40% auto -40% -60%; width: 40%; transform: skewX(-20deg); pointer-events: none; left: -60%;
+  background: linear-gradient(90deg, transparent, rgba(255,255,255,.5), transparent); transition: left .7s var(--ease); }
+.btn.light { background: rgba(255,255,255,.12); box-shadow: inset 0 0 0 1.5px rgba(255,255,255,.6); backdrop-filter: blur(6px); }
+.btn.sun { background: linear-gradient(180deg, #ffe08a, var(--sun) 55%, #e2ad22); color: var(--deeper); box-shadow: inset 0 1px 0 rgba(255,255,255,.6), 0 12px 28px -12px rgba(226,173,34,.9); }
+@media (hover: hover) and (pointer: fine) {
+  .btn:hover { transform: translateY(-1px); }
+  .btn:hover::after { left: 130%; }
+}
+.btn.shine::after { left: 130%; }
+.preview-bar { background: #0b0b10; color: #cfcbd6; font: 500 13px/1.4 var(--sans); text-align: center; padding: 9px 16px; }
+.preview-bar a { color: #ff7aa8; }
+
+/* Header, over the hero */
+.top { position: absolute; left: 0; right: 0; z-index: 5; }
+.top .wrap { display: flex; align-items: center; justify-content: space-between; gap: 20px; height: 96px; }
+.logo { display: flex; align-items: center; gap: 12px; text-decoration: none; color: #fff; }
+.logo img { height: 52px; width: auto; filter: drop-shadow(0 4px 14px rgba(0,0,0,.35)); }
+.logo img.chip { background: #fff; border-radius: 12px; padding: 5px 8px; filter: none; }
+.logo span { display: grid; line-height: 1; }
+.logo b { font: 600 1.4rem/1 var(--serif); }
+.logo small { font: 600 .64rem/1 var(--sans); letter-spacing: .28em; text-transform: uppercase; color: rgba(255,255,255,.75); margin-top: 7px; }
+.top nav { display: flex; gap: 30px; }
+.top nav a { color: rgba(255,255,255,.85); text-decoration: none; font-size: .95rem; }
+.top nav a:hover { color: #fff; }
+.top .btn { padding: 13px 22px; font-size: .93rem; }
+
+/* Hero: their photo under a deep-green veil, or freshly mowed stripes when there is none. */
+.hero { position: relative; color: #fff; min-height: min(100vh, 860px); display: flex; align-items: flex-end; padding: 170px 0 96px; overflow: hidden; isolation: isolate;
+  background: radial-gradient(ellipse at 78% 0%, rgba(255,255,255,.18), transparent 55%), repeating-linear-gradient(100deg, var(--stripe-a) 0 120px, var(--stripe-b) 120px 240px); }
+.hero > img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: 60% 60%; z-index: -2; transform: scale(1.04); animation: settle 2.4s var(--ease) forwards; }
+.hero::before { content: ""; position: absolute; inset: 0; z-index: -1;
+  background: linear-gradient(90deg, rgba(15,44,19,.9) 0%, rgba(15,44,19,.7) 40%, rgba(15,44,19,.1) 78%), linear-gradient(180deg, rgba(15,44,19,.55), transparent 30%); }
+@keyframes settle { to { transform: scale(1); } }
+.hero h1 { max-width: 12em; }
+.hero h1 em { font-style: italic; color: #d9f5b5; }
+.hero .eyebrow { color: #d9f5b5; }
+.hero .lead { font-size: 1.16rem; color: rgba(255,255,255,.88); max-width: 32em; margin-top: 24px; }
+.hero .actions { display: flex; flex-wrap: wrap; gap: 14px; margin-top: 34px; }
+.badges { display: flex; flex-wrap: wrap; gap: 10px 24px; margin-top: 30px; color: rgba(255,255,255,.9); font-size: .93rem; }
+.badges span::before { content: "✓"; color: var(--sun); margin-right: 8px; font-weight: 700; }
+.rating { display: inline-flex; align-items: center; gap: 10px; margin-top: 30px; text-decoration: none; padding: 10px 16px; border-radius: 999px; background: rgba(255,255,255,.14); box-shadow: inset 0 0 0 1px rgba(255,255,255,.25); backdrop-filter: blur(8px); font-size: .93rem; color: #fff; }
+.rating b { font-weight: 600; }
+.rating span { opacity: .85; }
+.stars { display: inline-flex; gap: 2px; }
+.stars svg { width: 16px; height: 16px; fill: #f4b51e; }
+
+/* Sections */
+.section { padding: 104px 0; }
+.section.tint { background: var(--mint); }
+.head { display: grid; grid-template-columns: 1.1fr .9fr; gap: 48px; align-items: end; margin-bottom: 50px; }
+.head p { color: var(--muted); font-size: 1.07rem; }
+.points { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; }
+.point { background: var(--panel); border: 1px solid var(--line); border-radius: 20px; padding: 28px 24px; }
+.point svg, .why svg { width: 30px; height: 30px; fill: none; stroke: var(--grass); stroke-width: 1.7; stroke-linecap: round; stroke-linejoin: round; margin-bottom: 16px; }
+.point p { color: var(--muted); font-size: .95rem; margin-top: 8px; }
+
+.services { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
+.service { background: var(--panel); border: 1px solid var(--line); border-radius: 22px; padding: 30px 28px; position: relative; overflow: hidden; transition: transform .35s var(--ease), box-shadow .35s var(--ease); }
+.service::before { content: ""; position: absolute; left: 0; right: 0; top: 0; height: 5px; background: repeating-linear-gradient(100deg, var(--stripe-a) 0 22px, var(--stripe-b) 22px 44px); }
+.service .n { font: 600 1.6rem/1 var(--serif); color: var(--grass); }
+.service h3 { margin-top: 14px; font-size: 1.14rem; }
+.service p { color: var(--muted); margin-top: 10px; font-size: .96rem; }
+.service .price { margin-top: 16px; font: 600 1.3rem/1 var(--serif); color: var(--ink); }
+.service .price small { font: 500 .8rem var(--sans); color: var(--muted); margin-right: 6px; }
+@media (hover: hover) { .service:hover { transform: translateY(-4px); box-shadow: 0 22px 44px -28px rgba(23,61,27,.45); } }
+.also { display: flex; flex-wrap: wrap; align-items: center; gap: 10px 12px; margin-top: 26px; color: var(--muted); }
+.also .tag { color: var(--deep); background: var(--mint); border-radius: 999px; padding: 9px 16px; font-size: .93rem; font-weight: 500; }
+
+/* A promise on a freshly mowed band */
+.promise { color: #fff; padding: 96px 0; background: linear-gradient(180deg, rgba(0,0,0,.05), rgba(0,0,0,.25)), repeating-linear-gradient(100deg, var(--stripe-a) 0 120px, var(--stripe-b) 120px 240px); }
+.promise p { font: 500 clamp(1.8rem, 3.6vw, 2.8rem)/1.22 var(--serif); max-width: 22em; text-shadow: 0 2px 20px rgba(0,0,0,.2); }
+.promise em { color: #fff3c4; }
+
+.gallery { display: grid; grid-template-columns: repeat(4, 1fr); grid-auto-rows: 230px; gap: 12px; grid-auto-flow: dense; }
+.gallery button { padding: 0; border: 0; border-radius: 18px; overflow: hidden; cursor: zoom-in; background: var(--mint); -webkit-tap-highlight-color: transparent; }
+.gallery .big { grid-column: span 2; grid-row: span 2; }
+.gallery .tall { grid-row: span 2; }
+.gallery img { width: 100%; height: 100%; object-fit: cover; transition: transform .8s var(--ease); }
+@media (hover: hover) { .gallery button:hover img { transform: scale(1.05); } }
+dialog.lightbox { padding: 0; border: 0; background: transparent; max-width: min(94vw, 1100px); max-height: 92vh; }
+dialog.lightbox::backdrop { background: rgba(8,22,10,.9); backdrop-filter: blur(6px); }
+dialog.lightbox img { max-height: 88vh; width: auto; margin: auto; border-radius: 14px; }
+dialog.lightbox form { position: absolute; top: 10px; right: 10px; }
+dialog.lightbox form button { width: 44px; height: 44px; border-radius: 50%; border: 0; background: rgba(0,0,0,.55); color: #fff; font-size: 1.4rem; cursor: pointer; }
+
+.reviews { display: grid; grid-auto-flow: column; grid-auto-columns: minmax(300px, 1fr); gap: 16px; overflow-x: auto; scroll-snap-type: x mandatory; padding-bottom: 14px; }
+.review { scroll-snap-align: start; margin: 0; background: var(--panel); border: 1px solid var(--line); border-radius: 22px; padding: 28px; display: flex; flex-direction: column; gap: 16px; }
+.review p { font-size: 1.02rem; flex: 1; }
+.review cite { font-style: normal; font-weight: 600; font-size: .92rem; }
+.review cite small { display: block; font-weight: 400; color: var(--muted); }
+.section .rating { color: var(--ink); background: var(--panel); box-shadow: inset 0 0 0 1px var(--line); margin: 0; }
+
+.why { display: grid; grid-template-columns: repeat(3, 1fr); gap: 34px; }
+.why p { color: var(--muted); margin-top: 8px; font-size: .96rem; }
+.steps { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; }
+.step { border-top: 2px solid var(--grass); padding-top: 22px; }
+.step .n { font: 600 2.3rem/1 var(--serif); color: var(--grass); }
+.step h3 { margin-top: 12px; }
+.step p { color: var(--muted); margin-top: 8px; font-size: .96rem; }
+
+/* Quote */
+.quote { background: radial-gradient(ellipse at 10% 0%, rgba(124,200,90,.25), transparent 55%), var(--deep); color: #fff; padding: 104px 0; }
+.quote .grid { display: grid; grid-template-columns: .9fr 1.1fr; gap: 64px; }
+.quote .eyebrow { color: #b9e59a; }
+.quote dl { margin: 34px 0 0; display: grid; gap: 20px; }
+.quote dt { font-size: .76rem; letter-spacing: .16em; text-transform: uppercase; color: rgba(255,255,255,.6); }
+.quote dd { margin: 5px 0 0; font-size: 1.08rem; }
+.quote dd a { text-decoration: none; }
+.areas { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 8px; }
+.areas span { background: rgba(255,255,255,.1); border-radius: 999px; padding: 6px 13px; font-size: .9rem; }
+form.booking { background: #fff; color: var(--ink); border-radius: 26px; padding: 34px; display: grid; grid-template-columns: 1fr 1fr; gap: 14px; box-shadow: 0 40px 80px -40px rgba(0,0,0,.6); }
+form.booking h3 { grid-column: 1 / -1; font: 600 1.7rem/1.1 var(--serif); margin-bottom: 4px; }
+form.booking label { display: grid; gap: 7px; font-size: .86rem; color: var(--muted); }
+form.booking .full { grid-column: 1 / -1; }
+form.booking input, form.booking select, form.booking textarea { width: 100%; border: 1px solid var(--line); border-radius: 12px; padding: 14px; font: 400 1rem var(--sans); background: var(--bg); color: var(--ink); }
+form.booking input:focus, form.booking select:focus, form.booking textarea:focus { outline: none; border-color: var(--grass); box-shadow: 0 0 0 3px rgba(74,154,58,.2); }
+form.booking textarea { min-height: 90px; resize: vertical; }
+form.booking .btn { grid-column: 1 / -1; margin-top: 6px; }
+.footer { background: var(--deeper); color: rgba(255,255,255,.65); padding: 28px 0; font-size: .9rem; }
+.footer .wrap { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 10px; }
+
+.dock { display: none; }
+:focus-visible { outline: 2px solid var(--sun); outline-offset: 3px; }
+@media (max-width: 900px) {
+  .top nav, .top .btn { display: none; }
+  .hero { min-height: 0; padding: 140px 0 70px; }
+  .hero::before { background: linear-gradient(180deg, rgba(15,44,19,.55) 0%, rgba(15,44,19,.35) 30%, rgba(15,44,19,.88) 66%, rgba(15,44,19,.96) 100%); }
+  .hero > img { object-position: 60% 50%; }
+  .head, .quote .grid { grid-template-columns: 1fr; gap: 20px; }
+  .points { grid-template-columns: 1fr 1fr; gap: 10px; }
+  .point { padding: 22px 18px; }
+  .services, .why, .steps { grid-template-columns: 1fr; }
+  .gallery { grid-template-columns: 1fr 1fr; grid-auto-rows: 160px; gap: 8px; }
+  .reviews { grid-auto-columns: 84%; }
+  .section, .quote, .promise { padding: 78px 0; }
+  form.booking { grid-template-columns: 1fr; padding: 24px; }
+  .dock { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; position: fixed; left: 12px; right: 12px; bottom: 12px; z-index: 20; padding: 8px; border-radius: 999px; background: rgba(255,255,255,.88); backdrop-filter: blur(14px); box-shadow: 0 14px 34px -12px rgba(15,44,19,.5); transition: transform .45s var(--ease), opacity .45s var(--ease); }
+  .dock .btn { padding: 15px 10px; }
+  .dock .btn.call { background: var(--mint); color: var(--deep); box-shadow: none; }
+  .dock.away { transform: translateY(130%); opacity: 0; pointer-events: none; }
+  body { padding-bottom: 86px; }
+}
+@media (max-width: 340px) { .points { grid-template-columns: 1fr; } }
+@media (max-width: 520px) { .logo b { font-size: 1.15rem; } .logo img { height: 44px; } }
+@media (prefers-reduced-motion: reduce) { *, *::before, *::after { animation: none !important; transition: none !important; } .hero > img { transform: none; } }
+
+/* RULE: no hard edges between sections. Wherever two colours meet, the change is a soft gradient. */
+.hero::after { content: ""; position: absolute; left: 0; right: 0; bottom: 0; height: 84px; z-index: -1; pointer-events: none; background: linear-gradient(180deg, transparent, var(--bg)); }
+.promise, .quote { position: relative; overflow: hidden; }
+.promise > .wrap, .quote > .wrap { position: relative; z-index: 1; }
+.promise::before, .promise::after, .quote::before { content: ""; position: absolute; left: 0; right: 0; height: 72px; pointer-events: none; z-index: 0; }
+.promise::before, .quote::before { top: 0; background: linear-gradient(180deg, var(--bg), transparent); }
+.promise::after { bottom: 0; background: linear-gradient(0deg, var(--bg), transparent); }
+.quote { background: linear-gradient(180deg, transparent 72%, var(--deeper)), radial-gradient(ellipse at 10% 10%, rgba(255,255,255,.07), transparent 55%), var(--deep); }
+.section.tint { background: linear-gradient(180deg, var(--bg), var(--mint) 110px, var(--mint) calc(100% - 110px), var(--bg)); }
+.footer { background: var(--deeper); }
+
+/* RULE: the first screen reads as a whole page: headline, every hero button and the Google rating
+   visible without scrolling, on laptops, desktops and phones (npm run fold checks it). */
+:root:has(.preview-bar) { --bar: 36px; }
+@media (max-width: 600px) { .pv-for { display: none; } }
+.preview-bar { height: 36px; box-sizing: border-box; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+@media (min-width: 901px) {
+  .hero { min-height: calc(min(100vh, 860px) - var(--bar, 0px)); }
+}
+@media (min-width: 901px) and (max-height: 920px) {
+  .hero { padding-top: 112px; padding-bottom: 84px; }
+  .hero h1 { font-size: clamp(2.5rem, 8vh, 5.2rem); }
+  .hero .lead { margin-top: 16px; }
+  .hero .actions { margin-top: 24px; }
+  .badges { margin-top: 18px; }
+  .hero .rating { margin-top: 18px; }
+}
+@media (max-width: 900px) {
+  .hero { min-height: calc(100svh - var(--bar, 0px)); padding: 92px 0 58px; }
+  .hero h1 { font-size: clamp(1.9rem, min(10.2vw, 6svh), 3.3rem); }
+  .hero .eyebrow { margin-bottom: 10px; }
+  .hero .lead { font-size: 1rem; line-height: 1.5; margin-top: 12px; display: -webkit-box; -webkit-line-clamp: 4; -webkit-box-orient: vertical; overflow: hidden; }
+  .hero .actions { flex-wrap: nowrap; gap: 10px; margin-top: 18px; }
+  .hero .actions .btn { flex: 1 1 0; min-width: 0; justify-content: center; text-align: center; padding: 14px 10px; font-size: .88rem; white-space: nowrap; }
+  .badges { margin-top: 14px; gap: 6px 16px; font-size: .84rem; }
+  .hero .rating { margin-top: 16px; }
+}
+@media (max-width: 900px) and (max-height: 760px) {
+  .hero .lead { -webkit-line-clamp: 3; }
+  .badges { display: none; }
+}
+
+/* House painting: navy and warm gold over the lawn layout. */
+:root { --grass: #2f5d8a; --grass-hi: #6ea3d6; --grass-lo: #23476b; --stripe-a: #2f5784; --stripe-b: #294e77;
+  --deep: #1b2a3a; --deeper: #121d29; --sun: #f2b33d; --mint: #e0e5eb;
+  --bg: #ebe8e1; --panel: #f6f4ef; --ink: #1a2330; --muted: #58616d; --line: #dbd6cc; }
+.photo { filter: none; }
+.hero::before { background: linear-gradient(90deg, rgba(18,29,41,.9) 0%, rgba(18,29,41,.7) 40%, rgba(18,29,41,.1) 78%), linear-gradient(180deg, rgba(18,29,41,.55), transparent 30%); }
+.hero h1 em, .hero .eyebrow { color: #ffe1a8; }
+@media (hover: hover) { .service:hover { box-shadow: 0 22px 44px -28px rgba(27,42,58,.45); } }
+dialog.lightbox::backdrop { background: rgba(12,19,28,.9); }
+</style>
+</head>
+<body>
+<style>
+/* One line, a fixed 40px: the kits subtract --bar from the hero so the first screen still fits (npm run fold). */
+:root:has(.nss-bar) { --bar: 40px; }
+.nss-bar { background: #0b0b10; color: #e9e6ef; font: 500 13px/1.4 system-ui, -apple-system, sans-serif; display: flex; flex-wrap: nowrap; justify-content: center; align-items: center; gap: 14px; height: 40px; box-sizing: border-box; padding: 0 12px; text-align: center; white-space: nowrap; overflow: hidden; }
+.nss-bar > span { min-width: 0; overflow: hidden; text-overflow: ellipsis; }
+@media (max-width: 600px) { .nss-bar .nss-for, .nss-bar .nss-yet { display: none; } }
+.nss-bar a { color: #ff7aa8; }
+.nss-bar .nss-go { flex: none; color: #0b0b10; background: #ff4f8b; border-radius: 999px; padding: 5px 14px; font-weight: 700; text-decoration: none; white-space: nowrap; }
+.nss-end { background: #0b0b10; color: #f3f0e9; text-align: center; padding: 56px 20px 140px; font: 400 16px/1.5 system-ui, -apple-system, sans-serif; }
+.nss-end h2 { font: 600 1.6rem/1.2 system-ui, -apple-system, sans-serif; margin: 0 0 8px; color: #fff; }
+.nss-end p { color: #a9a6b2; margin: 0 auto 22px; max-width: 30em; }
+.nss-end .nss-opts { display: flex; flex-wrap: wrap; gap: 12px; justify-content: center; }
+.nss-end .nss-opts a { text-decoration: none; border-radius: 999px; padding: 14px 24px; font-weight: 700; }
+.nss-end .nss-main { background: #ff4f8b; color: #0b0b10; box-shadow: 0 10px 30px -8px rgba(255,79,139,.6); }
+.nss-end .nss-alt { color: #f3f0e9; box-shadow: inset 0 0 0 1px #3a3a4a; }
+.nss-end small { display: block; color: #8a8794; margin-top: 16px; font-size: 13px; }</style>
+<div class="nss-bar"><span>Preview <span class="nss-for">prepared for Hallett's Painting &amp; Construction Services </span>by <a href="https://neonsignsites.com/">Neon Sign Sites</a>.<span class="nss-yet"> Not the live site yet.</span></span><a class="nss-go" data-plan="monthly" href="https://neonsignsites.com/go?plan=monthly">Make it live</a></div>
+<header class="top">
+  <div class="wrap">
+    <a class="logo" href="#"><img src="logo.png" alt="" class="chip"><span><b>Hallett's</b><small>Painting &amp; Construction</small></span></a>
+    <nav aria-label="Main"><a href="#services">Services</a><a href="#work">Our work</a><a href="#quote">Contact</a></nav>
+    <a class="btn" href="#quote">Free quote</a>
+  </div>
+</header>
+
+<main>
+<section class="hero">
+  <img class="photo" src="img/photo-2.jpg" alt="Stucco home with tile roof and paver driveway under a rainbow" fetchpriority="high">
+  <div class="wrap">
+    <p class="eyebrow">House painting · Jacksonville</p>
+    <h1>We don't sell paint.<br><em>We sell transformation.</em></h1>
+    <p class="lead">Interior and exterior painting for Jacksonville homes and commercial properties. One team handles the prep, the paint and the repairs.</p>
+    <div class="actions">
+      <a class="btn sun" href="#quote">Get a free quote</a>
+      <a class="btn light" href="tel:+19046517061">Call (904) 651-7061</a>
+    </div>
+    <div class="badges"><span>Free estimates</span><span>Family owned</span><span>Veteran owned</span><span>Homes and businesses</span></div>
+    <a class="rating" href="https://maps.google.com/?cid=7948122626923031573" target="_blank" rel="noopener"><span class="stars" aria-label="5 stars"><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M10 1.6l2.6 5.3 5.8.8-4.2 4.1 1 5.8L10 14.9l-5.2 2.7 1-5.8L1.6 7.7l5.8-.8z"/></svg><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M10 1.6l2.6 5.3 5.8.8-4.2 4.1 1 5.8L10 14.9l-5.2 2.7 1-5.8L1.6 7.7l5.8-.8z"/></svg><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M10 1.6l2.6 5.3 5.8.8-4.2 4.1 1 5.8L10 14.9l-5.2 2.7 1-5.8L1.6 7.7l5.8-.8z"/></svg><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M10 1.6l2.6 5.3 5.8.8-4.2 4.1 1 5.8L10 14.9l-5.2 2.7 1-5.8L1.6 7.7l5.8-.8z"/></svg><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M10 1.6l2.6 5.3 5.8.8-4.2 4.1 1 5.8L10 14.9l-5.2 2.7 1-5.8L1.6 7.7l5.8-.8z"/></svg></span><b>5.0</b><span>25 Google reviews</span></a>
+  </div>
+</section>
+
+
+
+<section class="section" id="services">
+  <div class="wrap">
+    <div class="head"><div><p class="eyebrow">Services</p><h2>Inside and out.</h2></div><p>One room or the whole house. Every estimate is free and flat.</p></div>
+    <div class="services">
+      <article class="service"><span class="n">01</span><h3>Interior Painting</h3><p>Walls, ceilings, trim and doors, with a smooth, clean finish and the work area protected.</p></article>
+      <article class="service"><span class="n">02</span><h3>Exterior Painting</h3><p>Stucco, siding, trim, doors and garage doors, prepped to hold up in Florida heat, rain and sun.</p></article>
+      <article class="service"><span class="n">03</span><h3>Staining and Refinishing</h3><p>Wood features, doors, staircases and cabinets restored where the old finish has worn.</p></article>
+      <article class="service"><span class="n">04</span><h3>Cabinet Painting and Detail Work</h3><p>Cabinet painting, touch-ups and patching that refresh a space without a full remodel.</p></article>
+      <article class="service"><span class="n">05</span><h3>Commercial Building Painting</h3><p>Offices, restaurants and retail centers painted on a schedule that limits disruption.</p></article>
+      <article class="service"><span class="n">06</span><h3>Pressure Washing and Waterproofing</h3><p>Exterior prep and protection, including block sealing, ahead of paint.</p></article>
+    </div>
+    <div class="also"><span>We also do:</span><span class="tag">Restaurants</span><span class="tag">Offices</span><span class="tag">Retail spaces</span><span class="tag">HOAs and apartment communities</span><span class="tag">Drywall</span><span class="tag">Kitchen and bathroom remodeling</span><span class="tag">Emergency repairs</span></div>
+  </div>
+</section>
+
+
+
+<section class="section" id="work">
+  <div class="wrap">
+    <div class="head"><div><p class="eyebrow">Our work</p><h2>Homes we’ve painted.</h2></div><p></p></div>
+    <div class="gallery">
+      <button type="button" class="big" data-full="img/photo-3.jpg" aria-label="View larger: Gray-green sided house with covered porch and green lawn"><img class="photo" src="img/photo-3.jpg" alt="Gray-green sided house with covered porch and green lawn" loading="lazy"></button>
+      <button type="button" data-full="img/photo-5.jpg" aria-label="View larger: Freshly painted restaurant exterior with scaffolding"><img class="photo" src="img/photo-5.jpg" alt="Freshly painted restaurant exterior with scaffolding" loading="lazy"></button>
+      <button type="button" data-full="img/photo-7.jpg" aria-label="View larger: Brick home with white porch railing and painted front door"><img class="photo" src="img/photo-7.jpg" alt="Brick home with white porch railing and painted front door" loading="lazy"></button>
+      <button type="button" data-full="img/photo-6.jpg" aria-label="View larger: Covered patio with stained wood ceiling and a worker"><img class="photo" src="img/photo-6.jpg" alt="Covered patio with stained wood ceiling and a worker" loading="lazy"></button>
+      <button type="button" data-full="img/photo-1.jpg" aria-label="View larger: Restaurant exterior with stone entry and landscaping"><img class="photo" src="img/photo-1.jpg" alt="Restaurant exterior with stone entry and landscaping" loading="lazy"></button>
+    </div>
+  </div>
+  <dialog class="lightbox" aria-label="Photo"><form method="dialog"><button aria-label="Close">×</button></form><img class="photo" alt=""></dialog>
+</section>
+
+
+
+<section class="section">
+  <div class="wrap">
+    <p class="eyebrow">Why Hallett's Painting &amp; Construction</p>
+    <h2 style="margin-bottom:46px;max-width:16em">Why Hallett's Painting &amp; Construction Services.</h2>
+    <div class="why">
+      <div><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3l8 3v6c0 4.6-3.4 8-8 9-4.6-1-8-4.4-8-9V6z"/><path d="M8.5 12l2.5 2.5 4.5-5"/></svg><h3>Owners on every job</h3><p>You deal directly with company leaders from estimate to final walkthrough, not a subcontractor chain.</p></div>
+      <div><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 22s7-6.2 7-12a7 7 0 10-14 0c0 5.8 7 12 7 12z"/><circle cx="12" cy="10" r="2.6"/></svg><h3>Free estimates, warranted work</h3><p>Transparent pricing, free estimates and fully warranted workmanship.</p></div>
+      <div><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20c4-1 6-5 6-10M10 20c0-6 3-10 10-12M14 20c1-4 3-6 6-7"/></svg><h3>Clean job sites</h3><p>Strict cleanliness and respect for your home or business.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="section tint" id="how">
+  <div class="wrap">
+    <p class="eyebrow">How it works</p>
+    <h2 style="margin-bottom:46px">A fresh coat in three steps.</h2>
+    <div class="steps">
+      <div class="step"><span class="n">01</span><h3>Call for a free estimate</h3><p>We look at the work, ask questions and give you a flat price.</p></div>
+      <div class="step"><span class="n">02</span><h3>We prep and paint</h3><p>We mask, scrape, caulk and prime, then paint. We buy all the supplies.</p></div>
+      <div class="step"><span class="n">03</span><h3>Pay when it is done</h3><p>On most jobs, you pay nothing until everything is completely finished.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="quote" id="quote">
+  <div class="wrap grid">
+    <div>
+      <p class="eyebrow">Free quote</p>
+      <h2>Ready for a fresh coat?</h2>
+      <dl>
+        <div><dt>Call</dt><dd><a href="tel:+19046517061">(904) 651-7061</a></dd></div>
+        <div><dt>Email</dt><dd><a href="mailto:hallettsremodeling1@gmail.com">hallettsremodeling1@gmail.com</a></dd></div>
+        
+        
+        <div><dt>Where we work</dt><dd><div class="areas"><span>Jacksonville</span><span>Carpentry</span></div></dd></div>
+      </dl>
+    </div>
+    <form class="booking" onsubmit="event.preventDefault(); this.querySelector('button').textContent='Thanks! We\'ll be in touch.';">
+      <h3>Get your free quote</h3>
+      <label>Name <input name="name" autocomplete="name" required></label>
+      <label>Phone <input name="phone" type="tel" autocomplete="tel" required></label>
+      <label>Service <select name="service"><option>Interior Painting</option><option>Exterior Painting</option><option>Staining and Refinishing</option><option>Cabinet Painting and Detail Work</option><option>Commercial Building Painting</option><option>Pressure Washing and Waterproofing</option><option>Not sure yet</option></select></label>
+      <label>Property <select name="property"><option>Home</option><option>Business</option></select></label>
+      <label class="full">Address or neighborhood <input name="address" autocomplete="street-address"></label>
+      <label class="full">Anything we should know? <textarea name="note" placeholder="Inside or outside, how many rooms, a date you have in mind…"></textarea></label>
+      <button class="btn" type="submit">Request my free quote</button>
+    </form>
+  </div>
+</section>
+</main>
+
+<footer class="footer"><div class="wrap"><span>© 2026 Hallett's Painting &amp; Construction Services</span><span>House painting in Jacksonville</span></div></footer>
+<div class="dock away"><a class="btn call" href="tel:+19046517061">Call</a><a class="btn" href="#quote">Free quote</a></div>
+<script>
+  const box = document.querySelector('dialog.lightbox');
+  if (box) for (const b of document.querySelectorAll('.gallery button')) b.addEventListener('click', () => { box.querySelector('img').src = b.dataset.full; box.querySelector('img').alt = b.querySelector('img').alt; box.showModal(); });
+  box?.addEventListener('click', (e) => { if (e.target === box) box.close(); });
+  const dock = document.querySelector('.dock'), heroActions = document.querySelector('.hero .actions');
+  new IntersectionObserver(([e]) => dock.classList.toggle('away', e.isIntersecting)).observe(heroActions);
+  for (const b of document.querySelectorAll('.btn')) b.addEventListener('pointerdown', (e) => {
+    if (e.pointerType === 'mouse') return;
+    b.classList.remove('shine'); void b.offsetWidth; b.classList.add('shine');
+    clearTimeout(b._t); b._t = setTimeout(() => b.classList.remove('shine'), 800);
+  });
+</script>
+<section class="nss-end" aria-label="Make this site live">
+  <h2>Like it? It can go live in a few days.</h2>
+  <p>On your own domain, with hosting and SSL included. Your email and everything else stay as they are.</p>
+  <div class="nss-opts"><a class="nss-main" data-plan="monthly" href="https://neonsignsites.com/go?plan=monthly">$0 first month</a><a class="nss-alt" data-plan="own" href="https://neonsignsites.com/go?plan=own">Own it for $299</a></div>
+  <small>Monthly: then $49/month, minimum 2 paid months after the free one. Own it: $299 once, hosting included the first year, then $49/year. Prepared by Neon Sign Sites.</small>
+</section>
+<script>(function(){var s=(location.pathname.match(/\/p\/([a-z0-9-]+)/)||[])[1];var n="Hallett's Painting & Construction Services";document.querySelectorAll('a[data-plan]').forEach(function(a){var u=new URL(a.href);if(s)u.searchParams.set('site',s);u.searchParams.set('name',n);a.href=u.toString();});})();</script>
+</body>
+</html>
