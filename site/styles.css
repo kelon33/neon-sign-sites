@@ -325,3 +325,16 @@ details[open] p { animation: faq-in .35s ease both; }
 .reveal-on main > section:not(.hero) > .wrap { opacity: 0; transform: translateY(28px); transition: opacity .6s ease, transform .6s cubic-bezier(.22,.61,.36,1); }
 .reveal-on main > section.is-above:not(.hero) > .wrap { transform: translateY(-28px); }
 .reveal-on main > section.is-in > .wrap { opacity: 1; transform: none; }
+
+/* Phones only: a slim bottom bar with the two actions once the hero has scrolled away (index.html, #mbar). */
+.mbar { display: none; }
+@media (max-width: 760px) {
+  .mbar { display: flex; gap: 10px; align-items: center; position: fixed; left: 0; right: 0; bottom: 0; z-index: 20;
+    padding: 10px 16px calc(10px + env(safe-area-inset-bottom)); background: rgba(11,11,16,.88); backdrop-filter: blur(12px);
+    border-top: 1px solid var(--line); transform: translateY(110%); transition: transform .3s ease; }
+  .mbar.on { transform: none; }
+  .mbar .btn { flex: 1; text-align: center; padding: 14px 16px; }
+  .mbar-call { display: inline-flex; align-items: center; gap: 6px; color: var(--fg); text-decoration: none; font-weight: 600; padding: 12px 16px;
+    border: 1px solid var(--line); border-radius: 999px; }
+}
+@media (max-width: 760px) and (prefers-reduced-motion: reduce) { .mbar { transition: none; } }

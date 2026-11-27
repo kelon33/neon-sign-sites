@@ -117,7 +117,7 @@
     <div class="wrap">
       <p>Built for the businesses that keep neighborhoods running</p>
       <ul>
-        <li>Lawn care</li><li>Landscaping</li><li>Mobile detailing</li><li>Tree service</li><li>House cleaning</li><li>Junk removal</li>
+        <li>Lawn care</li><li>Landscaping</li><li>Mobile detailing</li><li>Boat detailing</li><li>Dent repair</li><li>House painting</li><li>Christmas lights</li>
       </ul>
     </div>
   </section>
@@ -322,6 +322,27 @@
       item._anim.onfinish = () => { if (!opening) item.open = false; item.style.overflow = ''; item._anim = null; };
     });
   }
+</script>
+<!-- Phones: once the hero is gone, a slim bar keeps the two actions in reach (hidden over the form and footer). -->
+<div class="mbar" id="mbar" aria-hidden="true">
+  <a class="btn" href="#start" tabindex="-1">Get your free preview</a>
+  <a class="mbar-call" href="tel:+18884441847" tabindex="-1" aria-label="Call (888) 444-1847"><svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path fill="currentColor" d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25c1.1.37 2.3.57 3.6.57a1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1z"/></svg>Call</a>
+</div>
+<script>
+  (function () {
+    const bar = document.getElementById('mbar');
+    const hero = document.querySelector('.hero'), form = document.getElementById('start'), foot = document.querySelector('.footer');
+    if (!bar || !hero || !('IntersectionObserver' in window)) return;
+    const seen = new Set();
+    const io = new IntersectionObserver((entries) => {
+      for (const e of entries) e.isIntersecting ? seen.add(e.target) : seen.delete(e.target);
+      const show = seen.size === 0; // hero, form and footer all out of view
+      bar.classList.toggle('on', show);
+      bar.setAttribute('aria-hidden', show ? 'false' : 'true');
+      for (const a of bar.querySelectorAll('a')) a.tabIndex = show ? 0 : -1;
+    }, { threshold: 0 });
+    for (const el of [hero, form, foot]) if (el) io.observe(el);
+  })();
 </script>
 </body>
 </html>
