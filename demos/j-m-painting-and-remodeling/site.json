@@ -1,0 +1,148 @@
+{
+  "kit": "painting",
+  "trade": "House painting",
+  "name": "J & M Painting and Remodeling",
+  "legalName": "J & M Painting and Remodeling",
+  "preview": true,
+  "placeId": "ChIJs1ARqdODT4YROLTZmbRPCdI",
+  "title": "J & M Painting and Remodeling | House painting and remodeling in Waco, TX",
+  "description": "Interior and exterior painting, drywall, trim and remodeling in and around Waco. Marvin and his crew show up on time and finish the job right. 5.0 on Google from 10 reviews.",
+  "logo": "logo.png",
+  "logoChip": false,
+  "wordmark": {
+    "top": "J & M Painting",
+    "bottom": "and Remodeling"
+  },
+  "phone": "(254) 495-2297",
+  "email": "jmpaintingwacotexas@gmail.com",
+  "heroImage": "img/photo-4.jpg",
+  "heroAlt": "New white board-and-batten house with a covered front porch",
+  "heroPosition": "60% 60%",
+  "heroPositionPhone": "60% 50%",
+  "rating": {
+    "score": "5.0",
+    "count": 10,
+    "url": "https://maps.google.com/?cid=15134715659849151544"
+  },
+  "kicker": "House painting and remodeling · Waco, TX",
+  "headline": "Fresh paint.<br><em>Honest work.</em>",
+  "intro": "Interior and exterior painting, drywall, trim and remodeling in and around Waco. Marvin and his crew show up on time and finish the job right.",
+  "badges": [
+    "Free estimates"
+  ],
+  "highlights": {
+    "title": "Why neighbors call J & M.",
+    "intro": "Painting is only part of it. The crew keeps you in the loop and works until the job is right.",
+    "points": [
+      {
+        "name": "Daily updates",
+        "text": "Progress updates every day, by text, phone, email or in person."
+      },
+      {
+        "name": "On time",
+        "text": "The crew shows up when it says it will."
+      },
+      {
+        "name": "Honest estimates",
+        "text": "Free estimates, so you know the price before work starts."
+      },
+      {
+        "name": "Careful finish",
+        "text": "The crew keeps working until the job is right."
+      }
+    ]
+  },
+  "servicesTitle": "Inside and out.",
+  "servicesIntro": "Big job or small, painting or remodeling.",
+  "services": [
+    {
+      "name": "Exterior painting",
+      "text": "Siding, trim and outside details, repaired and repainted."
+    },
+    {
+      "name": "Interior painting",
+      "text": "Walls and ceilings painted clean and even."
+    },
+    {
+      "name": "Doors & trim",
+      "text": "Doors and woodwork refreshed to look sharp."
+    },
+    {
+      "name": "Drywall & texture",
+      "text": "Drywall repair and texture, ready for paint."
+    },
+    {
+      "name": "Bath remodeling",
+      "text": "Bathroom updates finished with care."
+    },
+    {
+      "name": "Power washing",
+      "text": "Surfaces cleaned before they are painted or to freshen them up."
+    }
+  ],
+  "also": [
+    {
+      "name": "Ceilings"
+    },
+    {
+      "name": "Walls"
+    },
+    {
+      "name": "Flooring"
+    },
+    {
+      "name": "Home remodeling"
+    },
+    {
+      "name": "Home demolition and clean up"
+    },
+    {
+      "name": "New house move-in cleaning"
+    }
+  ],
+  "alsoTitle": "We also do:",
+  "promise": null,
+  "why": [
+    {
+      "name": "A seasoned crew",
+      "text": "Big jobs and small ones, painting and remodeling, handled by the same team."
+    },
+    {
+      "name": "Free estimates",
+      "text": "Know the cost before any work starts."
+    },
+    {
+      "name": "We cover 60 miles",
+      "text": "Based in Waco, and we travel to you."
+    }
+  ],
+  "whyTitle": "Why homeowners call us.",
+  "howTitle": "A fresh coat in three steps.",
+  "steps": [
+    {
+      "name": "Free estimate",
+      "text": "Tell us about the job. We look it over and give you a quote."
+    },
+    {
+      "name": "We do the work",
+      "text": "The crew arrives on schedule, and you get daily updates your way."
+    },
+    {
+      "name": "Final look",
+      "text": "We finish every detail so you are satisfied with the result."
+    }
+  ],
+  "contactTitle": "Ready for a fresh coat?",
+  "footerLine": "House painting and remodeling in Waco, TX",
+  "reviews": [],
+  "hours": [
+    "Mon–Sat: 8am–5pm"
+  ],
+  "galleryTitle": "Homes we’ve painted.",
+  "notePlaceholder": "Inside or outside, how many rooms, a date you have in mind…",
+  "gallery": [],
+  "areas": [
+    "Waco"
+  ],
+  "pitch": "photos"
+}
