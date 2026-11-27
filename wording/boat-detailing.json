@@ -54,6 +54,31 @@
      "text": "Clean, polished and protected."
     }
    ]
+  },
+  {
+   "from": "toms-detailing-llc",
+   "headline": "Back on the water<br><em>looking new.</em>",
+   "servicesTitle": "Bow to stern.",
+   "servicesIntro": "Regular upkeep, deep restoration and long-lasting protection, all with professional products used every day by the team.",
+   "howTitle": "Ready for the water in three steps.",
+   "contactTitle": "Book your boat in.",
+   "galleryTitle": "Fresh off the water.",
+   "alsoTitle": "We also detail",
+   "sectionTitle": "Your boat, your spot.",
+   "steps": [
+    {
+     "name": "Tell us about your boat",
+     "text": "Call or send the form with the vessel, the service and a few photos."
+    },
+    {
+     "name": "We set the plan",
+     "text": "One-time detail or a regular wash plan, your choice."
+    },
+    {
+     "name": "Back on the water",
+     "text": "You enjoy your boat. We handle the rest."
+    }
+   ]
   }
  ]
 }

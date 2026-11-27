@@ -3,6 +3,15 @@
  "about": "General wording from reviewed previews (npm run wording). {name} and {town} are filled in per business.",
  "entries": [
   {
+   "from": "a-s-dent-shop",
+   "headline": "Hail damage gone.<br><em>Factory paint stays.</em>",
+   "servicesIntro": "From a single door ding to a full hail storm.",
+   "whyTitle": "The {name} difference.",
+   "howTitle": "Back to like new in three steps.",
+   "galleryTitle": "Dents gone, paint untouched.",
+   "alsoTitle": "We also fix"
+  },
+  {
    "from": "dentlogic-paintless-dent-repair",
    "headline": "Hail damage gone.<br><em>Hassle gone too.</em>",
    "servicesTitle": "Everything your car needs.",

@@ -6,7 +6,6 @@
    "from": "cen-tex-lighting-and-events",
    "servicesTitle": "Lighting and rentals, done for you.",
    "servicesIntro": "From holiday lights to milestone celebrations.",
-   "whyTitle": "Why Cen-Tex",
    "howTitle": "Lit up in three steps.",
    "contactTitle": "Ready for a quote?",
    "galleryTitle": "Homes we light up.",
@@ -49,6 +48,32 @@
     {
      "name": "We hang them",
      "text": "We install, maintain and take them down in January."
+    }
+   ]
+  },
+  {
+   "from": "texas-light-crew",
+   "headline": "We hang the lights.<br><em>You enjoy the holidays.</em>",
+   "servicesTitle": "Lighting, done for you.",
+   "servicesIntro": "Custom commercial grade lights, installed, maintained and taken down.",
+   "whyTitle": "Why {name}",
+   "howTitle": "Lit up in three steps.",
+   "contactTitle": "Ready for a quote?",
+   "alsoTitle": "We also do:",
+   "sectionTitle": "Why neighbors call us",
+   "sectionIntro": "Clean, safe installs by people you can trust on your roof.",
+   "steps": [
+    {
+     "name": "Get a free quote",
+     "text": "Fill out the form and send photos of everywhere you want lights."
+    },
+    {
+     "name": "Approve your mock-up",
+     "text": "We send a quote with a mock-up. Ask for any changes you like."
+    },
+    {
+     "name": "We install and take down",
+     "text": "We schedule your install, then take the lights down after the holidays."
     }
    ]
   }

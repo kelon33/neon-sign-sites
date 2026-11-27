@@ -3,6 +3,17 @@
  "about": "General wording from reviewed previews (npm run wording). {name} and {town} are filled in per business.",
  "entries": [
   {
+   "from": "brush-bros-painting",
+   "headline": "The painter you hire<br><em>is the painter who shows up.</em>",
+   "servicesTitle": "Inside and out.",
+   "servicesIntro": "Homes and businesses across {town} and the South Plains. Every project quoted free.",
+   "whyTitle": "Why homeowners call us.",
+   "howTitle": "A fresh coat in three steps.",
+   "contactTitle": "Ready for a fresh coat?",
+   "galleryTitle": "Homes we’ve painted.",
+   "alsoTitle": "We also do:"
+  },
+  {
    "from": "elegance-home-painting",
    "headline": "Fresh paint.<br><em>Clean lines.</em>",
    "servicesTitle": "Inside and out.",
@@ -14,11 +25,61 @@
    "alsoTitle": "We also do:"
   },
   {
+   "from": "pro-tech-painting-and-drywall",
+   "headline": "Fresh paint.<br><em>Clean finish.</em>",
+   "servicesTitle": "Inside and out.",
+   "servicesIntro": "One room or the whole house. Custom bids, no guesswork.",
+   "howTitle": "A fresh coat in three steps.",
+   "contactTitle": "Ready for a fresh coat?",
+   "galleryTitle": "Homes we’ve painted.",
+   "alsoTitle": "We also do:",
+   "sectionTitle": "Why {town} neighbors call us.",
+   "sectionIntro": "Homeowners across the South Plains hire us for the same few things.",
+   "steps": [
+    {
+     "name": "On-site estimate",
+     "text": "We visit your home and give you a detailed bid based on the scope of work."
+    },
+    {
+     "name": "Approve and choose colors",
+     "text": "Approve the bid, then pick colors with our guidance while we schedule the job."
+    },
+    {
+     "name": "Prep, paint, finish",
+     "text": "We protect your floors and furniture, paint, and leave your space clean."
+    }
+   ]
+  },
+  {
+   "from": "ramos-painting-pvm",
+   "headline": "We don't sell paint.<br><em>We sell transformation.</em>",
+   "servicesTitle": "Inside and out.",
+   "servicesIntro": "One room, a custom home or a commercial space.",
+   "whyTitle": "Why {name}.",
+   "howTitle": "From estimate to final walkthrough.",
+   "contactTitle": "Ready to transform your space?",
+   "galleryTitle": "Homes we’ve painted.",
+   "alsoTitle": "We also do:",
+   "steps": [
+    {
+     "name": "Free estimate",
+     "text": "We evaluate your property, talk through colors and timing, and give you a detailed quote."
+    },
+    {
+     "name": "Prep and protect",
+     "text": "We sand, patch, prime and cover every surface before any paint goes on."
+    },
+    {
+     "name": "Paint and walk through",
+     "text": "We apply each coat with care, then inspect every detail with you."
+    }
+   ]
+  },
+  {
    "from": "rays-painting-pressure-washing-services",
    "headline": "Fresh paint.<br><em>Honest work.</em>",
    "servicesTitle": "Inside and out.",
    "servicesIntro": "One room or the whole house. Free estimates.",
-   "whyTitle": "Why Ray's.",
    "howTitle": "A fresh coat in three steps.",
    "contactTitle": "Ready for a fresh coat?",
    "galleryTitle": "Homes we’ve painted.",
@@ -37,6 +98,15 @@
      "text": "We paint, and aim to finish on time and on budget."
     }
    ]
+  },
+  {
+   "from": "top-notch-painting",
+   "servicesTitle": "Inside and out.",
+   "servicesIntro": "One room or a whole office building.",
+   "howTitle": "A fresh coat in three steps.",
+   "contactTitle": "Ready for a fresh coat?",
+   "galleryTitle": "Homes we’ve painted.",
+   "alsoTitle": "We also do:"
   }
  ]
 }
