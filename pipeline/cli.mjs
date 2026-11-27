@@ -186,6 +186,7 @@ async function main() {
       ...copy, gallery, areas: copy.areas ?? [lead.city.replace(/,\s*[A-Z]{2}$/, '')],
       pitch: gallery.length ? 'site' : 'photos', // photos: no gallery, the email asks for job photos
     };
+    if (kit !== 'holiday' && !data.heroImage) checks.push('Hero is a licensed stock photo for the trade (credited on the page, see generator/assets/CREDITS.md), not their work: swap in their own photo once they send one.');
     if (kit === 'holiday' && !data.heroImage) checks.push('Hero is the holiday kit\'s licensed stock photo of lit trees (credited on the page), not their work: say so if they ask, and swap in their own photo once they send one.');
     await writeFile(path.join(out, 'site.json'), JSON.stringify(data, null, 1));
     const html = renderSite(data);

@@ -2,3 +2,4 @@
 - Only 5 gallery photos.
 - No postal address yet (config.json sender.address): required by law before sending.
 - Review (session): Hero photo removed (a before/after collage whose labels collided with the headline); the collages stay in the gallery. Boat form and wording checked.
+- Hero is a licensed stock photo for the trade (credited on the page, see generator/assets/CREDITS.md), not their work: swap in their own photo once they send one.

@@ -5,3 +5,4 @@
 - No reviews on the site: the page shows the Google rating only.
 - No postal address yet (config.json sender.address): required by law before sending.
 - Review (session): Hero photo removed (Claude flagged it as probably stock, not their work). Photo pitch. No reviews on their site, so the page shows the Google rating only.
+- Hero is a licensed stock photo for the trade (credited on the page, see generator/assets/CREDITS.md), not their work: swap in their own photo once they send one.

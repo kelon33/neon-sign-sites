@@ -7,3 +7,4 @@
 - No reviews on the site: the page shows the Google rating only.
 - No postal address yet (config.json sender.address): required by law before sending.
 - Review (session): Photo pitch, rebuilt. City set from their address (Crowley, TX); button 'Get an estimate'. Owner's email is taylor@ on their site; Google's lead email used.
+- Hero is a licensed stock photo for the trade (credited on the page, see generator/assets/CREDITS.md), not their work: swap in their own photo once they send one.
