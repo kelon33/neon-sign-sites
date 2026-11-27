@@ -1,0 +1,8 @@
+- No logo found: the header shows the name only.
+- No hero photo: Claude found none of their photos usable.
+- Photo pitch: only 0 usable photos by Claude's choice, so no gallery; the email asks them for photos of their work.
+- Claude's notes: No photos were visible to me, so none were selected; choose hero and gallery manually. No reviews on site text (4.8 from 26 on Google). Insurance is stated on the site; details not given. No hours or prices on site.
+- No photos at all: the hero has no picture. Find photos by hand.
+- Only 0 gallery photos.
+- No reviews on the site: the page shows the Google rating only.
+- Review (session): Their site embeds its photos inline (base64), so none were picked up: plain navy hero, photo pitch (email asks for 5 or 6 job photos). Reads well without photos. Trust lines (owner does the work, insured, no subcontractors) are on their site.
