@@ -38,7 +38,7 @@ export function previewEnd(d, esc) {
   <h2>Like it? It can go live in a few days.</h2>
   <p>On your own domain, with hosting and SSL included. Your email and everything else stay as they are.</p>
   <div class="nss-opts"><a class="nss-main" data-plan="monthly" href="${GO}?plan=monthly">$0 first month</a><a class="nss-alt" data-plan="own" href="${GO}?plan=own">Own it for $299</a></div>
-  <small>Monthly: then $49/month, minimum 2 paid months after the free one. Own it: $299 once, hosting included the first year, then $49/year. Prepared by Neon Sign Sites.</small>
+  <small>Monthly: then $49/month, minimum 2 paid months after the free one. Own it: $299 once, hosting included the first year, then about $4/month, billed yearly ($49). Prepared by Neon Sign Sites.</small>
 </section>
 <script>(function(){var s=(location.pathname.match(/\\/p\\/([a-z0-9-]+)/)||[])[1];var n=${JSON.stringify(String(d.name ?? '')).replace(/</g, '\\u003c')};document.querySelectorAll('a[data-plan]').forEach(function(a){var u=new URL(a.href);if(s)u.searchParams.set('site',s);u.searchParams.set('name',n);a.href=u.toString();});})();</script>`;
 }
