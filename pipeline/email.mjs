@@ -41,12 +41,13 @@ export function weakness(reasons = []) {
 export const OFFER = 'your first month is free, then $49 a month with hosting and edits included (minimum 2 paid months after the free one, then cancel anytime). Or own it outright for $299, with the first year of hosting included, then $49 a year.';
 
 export function signature(sender) {
-  return [sender.name, 'Neon Sign Sites', sender.phone, sender.address ?? '[POSTAL ADDRESS: required before sending]'].filter(Boolean).join('\n');
+  const call = sender.phone ? `Rather talk it through? Call me at ${sender.phone}.\n\n` : '';
+  return call + [sender.name, 'Neon Sign Sites', sender.phone, sender.address ?? '[POSTAL ADDRESS: required before sending]'].filter(Boolean).join('\n');
 }
 
 /** Puts the current signature into a saved draft, so drafts written before a change (address, phone) stay current. */
 export function refreshSignature(text, sender) {
-  return text.replace(/\n\n[^\n]+\nNeon Sign Sites\n[\s\S]*?\n\nNot interested\?/, `\n\n${signature(sender)}\n\nNot interested?`);
+  return text.replace(/\n\n(?:Rather talk it through\?[^\n]*\n\n)?[^\n]+\nNeon Sign Sites\n[\s\S]*?\n\nNot interested\?/, `\n\n${signature(sender)}\n\nNot interested?`);
 }
 
 export function draftEmail({ lead, link, sender, used = { photos: true, reviews: true }, pitch = 'site' }) {

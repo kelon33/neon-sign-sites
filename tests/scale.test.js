@@ -122,10 +122,11 @@ test('the wording library keeps only general lines, and reuses them without carr
 test('the signature carries the phone and address, and old drafts get the current one', async () => {
   const { signature, refreshSignature } = await import('../pipeline/email.mjs');
   const sender = { name: 'Alon Katz', phone: '(888) 444-1847', address: '6421 N. Florida Ave, Suite D-1009, Tampa, FL 33604' };
-  assert.equal(signature(sender), 'Alon Katz\nNeon Sign Sites\n(888) 444-1847\n6421 N. Florida Ave, Suite D-1009, Tampa, FL 33604');
+  assert.equal(signature(sender), 'Rather talk it through? Call me at (888) 444-1847.\n\nAlon Katz\nNeon Sign Sites\n(888) 444-1847\n6421 N. Florida Ave, Suite D-1009, Tampa, FL 33604');
   const old = 'To: a@b.com\nSubject: S\n\nHi,\n\nBody.\n\nAlon Katz\nNeon Sign Sites\n[POSTAL ADDRESS: required before sending]\n\nNot interested? Reply "no" and I won\'t email you again.\n';
   const now = refreshSignature(old, sender);
-  assert.ok(now.includes('Body.\n\nAlon Katz\nNeon Sign Sites\n(888) 444-1847\n6421 N.'));
+  assert.ok(now.includes('Body.\n\nRather talk it through? Call me at (888) 444-1847.\n\nAlon Katz\nNeon Sign Sites\n(888) 444-1847\n6421 N.'));
+  assert.equal(refreshSignature(now, sender), now); // refreshing twice changes nothing
   assert.ok(!now.includes('POSTAL ADDRESS'));
   assert.ok(now.endsWith('won\'t email you again.\n'));
 });

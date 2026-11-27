@@ -47,3 +47,18 @@ test('replies: a clear no is an opt-out, bounces are bounces, the rest are repli
   assert.equal(kind({ from: 'bob@x.com', subject: 'Re: x', text: 'Looks great! How does the monthly plan work?' }), 'reply');
   assert.equal(kind({ from: 'bob@x.com', subject: 'Re: x', text: 'No way, this looks amazing. Call me.' }), 'reply');
 });
+
+test('timing: state from the preview, its time zone, and the 8:00-17:00 local window', async () => {
+  const { stateOf, zoneOf, windowState } = await import('../pipeline/timing.mjs');
+  assert.equal(stateOf({ title: "Ziggi's Landscaping | Landscaping & lawn care in Tampa, FL" }), 'FL');
+  assert.equal(stateOf({ kicker: 'Paintless dent repair · Crowley, TX' }), 'TX');
+  assert.equal(stateOf({ title: 'No state here' }), null);
+  assert.equal(zoneOf('AZ'), 'America/Phoenix');
+  assert.equal(zoneOf(null), 'America/New_York');
+  // Wednesday 2026-12-02 at 13:30 UTC = 8:30 in New York, 7:30 in Chicago.
+  const at = new Date('2026-12-02T13:30:00Z');
+  assert.equal(windowState('America/New_York', at), 'now');
+  assert.equal(windowState('America/Chicago', at), 'wait');
+  assert.equal(windowState('America/New_York', new Date('2026-12-02T23:00:00Z')), 'late'); // 18:00 New York
+  assert.equal(windowState('America/New_York', new Date('2026-12-05T13:30:00Z')), 'wait'); // Saturday 8:30: opens at 9
+});

@@ -16,6 +16,7 @@ import { fileURLToPath } from 'node:url';
 import { blocked } from './dnc.mjs';
 import { JUNK_EMAIL } from './find.mjs';
 import { refreshSignature } from './email.mjs';
+import { stateOf, zoneOf } from './timing.mjs';
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const SENT = path.join(root, 'leads', 'sent.json');
@@ -66,7 +67,7 @@ async function readyPreviews() {
     const to = mail?.match(/^To: *(\S+@\S+)/m)?.[1];
     if (!to) continue;
     const site = await json(path.join(root, 'demos', slug, 'site.json'), {});
-    out.push({ slug, to, name: site.name ?? slug, text: mail, lead: { email: to, name: site.name, website: site.website } });
+    out.push({ slug, to, name: site.name ?? slug, state: stateOf(site), text: mail, lead: { email: to, name: site.name, website: site.website } });
   }
   return out;
 }
@@ -117,8 +118,8 @@ async function main() {
       const link = o.text.match(/https:\/\/neonsignsites\.com\/p\/[^\s]+/)?.[0];
       const up = link ? await live(link) : null;
       const n = emails.length + 1;
-      emails.push({ n, slug: o.slug, name: o.name, to: o.to, from: o.from, text: o.text.trim() + '\n', link, linkLive: up });
-      lines.push(`## ${n}. ${o.name} → ${o.to} (from ${o.from})`, '', up === false ? '**The preview link does not open yet (not on main?). It will not be sent.**\n' : '', '```', o.text.trim(), '```', '');
+      emails.push({ n, slug: o.slug, name: o.name, to: o.to, from: o.from, state: o.state, tz: zoneOf(o.state), text: o.text.trim() + '\n', link, linkLive: up });
+      lines.push(`## ${n}. ${o.name} → ${o.to} (from ${o.from}; ${o.state ?? '?'}, sent from 8:00 their time)`, '', up === false ? '**The preview link does not open yet (not on main?). It will not be sent.**\n' : '', '```', o.text.trim(), '```', '');
     }
     if (skipped.length) lines.push('Left out:', ...skipped.map((s) => `- ${s}`), '');
     await mkdir(path.join(root, 'outbox'), { recursive: true });
