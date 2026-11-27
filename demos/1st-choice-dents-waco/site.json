@@ -1,0 +1,129 @@
+{
+  "kit": "detailing",
+  "trade": "Paintless dent repair",
+  "name": "1st Choice Dents Waco",
+  "legalName": "1st Choice Dents Waco",
+  "preview": true,
+  "placeId": "ChIJCZT_KmSDT4YRY5vFBllrEoM",
+  "title": "1st Choice Dents Waco | Paintless dent repair in Waco, TX",
+  "description": "Paintless dent repair for dents, dings, creases and hail damage on all makes and models. Every repair comes with a Lifetime Warranty. 5.0 on Google from 127 reviews.",
+  "brand": "#1670ff",
+  "brandHi": "#52c6ff",
+  "accent": "#8fd0ff",
+  "logo": null,
+  "logoChip": false,
+  "wordmark": {
+    "top": "1st Choice",
+    "bottom": "Dents Waco"
+  },
+  "phone": "(254) 265-2529",
+  "email": "firstchoicedents@yahoo.com",
+  "heroImage": "img/photo-6.jpg",
+  "heroAlt": "White Chevrolet pickup fender with the dent repaired",
+  "heroPosition": "60% 60%",
+  "heroPositionPhone": "60% 50%",
+  "rating": {
+    "score": "5.0",
+    "count": 127,
+    "url": "https://maps.google.com/?cid=9444729398659226467"
+  },
+  "kicker": "Paintless dent repair · Waco",
+  "headline": "Hail damage gone.<br><em>Paint untouched.</em>",
+  "intro": "Paintless dent repair for dents, dings, creases and hail damage on all makes and models. Every repair comes with a Lifetime Warranty.",
+  "mobile": null,
+  "servicesTitle": "Every kind of dent.",
+  "servicesIntro": "From a single door ding to a full hail storm. No job too big or too small.",
+  "services": [
+    {
+      "name": "Hail damage",
+      "text": "Our specialty. No amount of dents is too many."
+    },
+    {
+      "name": "Door dings",
+      "text": "That parking-lot dent gets pushed out and your car comes back to tip-top shape."
+    },
+    {
+      "name": "Creases",
+      "text": "Most creases can be repaired with the paintless process."
+    },
+    {
+      "name": "Insurance claims",
+      "text": "We walk you through the claim process."
+    }
+  ],
+  "also": [
+    {
+      "name": "Trucks"
+    },
+    {
+      "name": "SUVs"
+    }
+  ],
+  "alsoTitle": "We also fix",
+  "why": [
+    {
+      "name": "15+ years of experience",
+      "text": "A knowledgeable team that explains the work and does it right."
+    },
+    {
+      "name": "Lifetime Warranty",
+      "text": "Every repair is covered. Your satisfaction is guaranteed."
+    },
+    {
+      "name": "Faster and cheaper than a body shop",
+      "text": "PDR saves you time and money over traditional auto body repair."
+    }
+  ],
+  "whyTitle": "The 1st Choice Dents difference.",
+  "howTitle": "Dent-free in three steps.",
+  "steps": [
+    {
+      "name": "Call or text",
+      "text": "Send a photo of the damage for a more accurate free estimate."
+    },
+    {
+      "name": "Bring it in",
+      "text": "Drop it at our Waco shop on 900 Wooded Acres Dr. We help with your insurance claim."
+    },
+    {
+      "name": "Drive it home",
+      "text": "We fix the dent fast and get you back on the road."
+    }
+  ],
+  "contactTitle": "Got a dent?",
+  "footerLine": "Paintless dent repair in Waco, serving Central Texas",
+  "reviews": [],
+  "hours": [
+    "Mon-Fri: 8am-5pm"
+  ],
+  "galleryTitle": "Dents gone, paint untouched.",
+  "notePlaceholder": "Where the dent is, how big, hail or a door ding…",
+  "ctaLabel": "Get an estimate",
+  "gallery": [
+    {
+      "src": "img/photo-4.jpg",
+      "alt": "Dent repair lights reflecting on a black panel",
+      "size": "big"
+    },
+    {
+      "src": "img/photo-9.jpg",
+      "alt": "Technician working on a hood marked for hail dents"
+    },
+    {
+      "src": "img/photo-1.jpg",
+      "alt": "Technician working on a white pickup inside the shop"
+    },
+    {
+      "src": "img/photo-2.jpg",
+      "alt": "Two technicians working at an open SUV hatch"
+    },
+    {
+      "src": "img/photo-7.jpg",
+      "alt": "Vehicles being repaired in the shop"
+    }
+  ],
+  "areas": [
+    "Waco"
+  ],
+  "pitch": "site"
+}
