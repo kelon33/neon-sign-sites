@@ -136,6 +136,7 @@ a.open:hover { background: rgba(255,79,139,.12); text-decoration: none; } a:hove
   <div><h2>Hot leads</h2><div class="card">${hot.length ? hot.map((r) => `<div class="lead">${preview(r.slug)} <span class="tag ${esc(r.status)}">${esc(label[r.status])}</span> <a class="open" href="/p/${esc(r.slug)}/" target="_blank" rel="noopener">Preview ↗</a><small>${esc(r.last?.from ?? '')} → ${esc(r.last?.box ?? '')} · ${esc(day(r.last?.date))}</small>${quote(r.last)}</div>`).join('') : '<p class="muted">No replies or "Make it live" yet. They appear here within 2 hours, and you get a notification.</p>'}</div></div>
   <div><h2>Emails per day</h2><div class="card">${days.length ? `<div class="bars">${days.map((d) => `<div style="height:${Math.round((100 * perDay[d]) / max)}%"><span>${perDay[d]}</span></div>`).join('')}</div><div class="bars-x">${days.map((d) => `<span>${esc(d.slice(5))}</span>`).join('')}</div>` : '<p class="muted">Nothing sent yet.</p>'}
   <h2 style="margin-top:22px">Subject test</h2>${ab.map((x) => `<p>${x.v === 'A' ? '<b>A</b> "Name – new website (preview)"' : '<b>B</b> "Quick question about their-site.com"'}<br><span class="muted">${x.r} replies of ${x.n} sent (${x.pct}%)</span></p>`).join('')}
+  <p class="muted" id="hooks-status"></p>
   <p class="muted">Said no: ${count('no')} · Bounced: ${count('bounced')} · Do-not-contact list: ${dnc.length}<br>Google Places this month: ${esc(places)} of ${esc(cap)} requests</p></div></div>
 </div>
 
@@ -180,6 +181,12 @@ fetch('/dashboard/api/events', { credentials: 'same-origin' }).then((r) => r.jso
     document.getElementById('k-rev-l').textContent = 'Revenue this month · $' + Math.round(sum(pays)) + ' total · ' + active + ' monthly plan' + (active === 1 ? '' : 's') + ' active';
   }
   document.getElementById('k-hot').textContent = document.querySelectorAll('tr[data-slug] .tag.hot-reply, tr[data-slug] .tag.hot-form').length;
+  const hs = [];
+  for (const [name, label] of [['quo', 'Quo (calls)'], ['paypal', 'PayPal']]) {
+    const x = (ev.x || {})[name];
+    hs.push(label + ': ' + (x ? 'last delivery ' + when(x.at) + ', ' + x.result + (x.type ? ' (' + x.type + ')' : '') + (x.result !== 'accepted' && x.headers ? ' [' + x.headers + ']' : '') : 'nothing received yet'));
+  }
+  document.getElementById('hooks-status').innerHTML = hs.join('<br>');
   document.getElementById('k-warm').textContent = warm;
   document.getElementById('k-cold').textContent = cold;
 }).catch(() => { document.getElementById('k-warm').textContent = '?'; });

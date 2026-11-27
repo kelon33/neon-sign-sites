@@ -47,6 +47,14 @@ export async function standardSignatureOk(headers, body, secret) {
   return sigs.split(' ').some((entry) => entry.split(',')[1] === mac);
 }
 
+/** The last delivery from a webhook, for the dashboard's status line (no secrets, no message content). */
+async function diag(env, name, result, request, type = null) {
+  try {
+    const headers = [...request.headers.keys()].filter((h) => /sig|webhook|svix|openphone|quo|paypal/i.test(h)).join(' ');
+    await env.EVENTS.put(`x:${name}`, '', { metadata: { at: new Date().toISOString(), result, type, headers: headers.slice(0, 300) } });
+  } catch {}
+}
+
 export async function quoHook(request, env) {
   if (!env.QUO_WEBHOOK_SECRET || !env.EVENTS) return new Response('Not configured', { status: 503 });
   const body = await request.text();
@@ -54,9 +62,11 @@ export async function quoHook(request, env) {
   const ok = secret.startsWith('whsec_') || request.headers.get('webhook-signature') || request.headers.get('svix-signature')
     ? await standardSignatureOk(request.headers, body, secret)
     : await quoSignatureOk(request.headers.get('openphone-signature') ?? request.headers.get('quo-signature'), body, secret);
-  if (!ok) return new Response('Bad signature', { status: 401 });
+  let type = '';
+  try { const e = JSON.parse(body); type = String(e.type ?? e.object?.type ?? '').slice(0, 60); } catch {}
+  if (!ok) { await diag(env, 'quo', 'bad signature', request, type); return new Response('Bad signature', { status: 401 }); }
+  await diag(env, 'quo', 'accepted', request, type);
   const ev = JSON.parse(body);
-  const type = ev.type ?? ev.object?.type ?? '';
   const o = ev.data?.object ?? ev.object?.data?.object ?? {};
   const theirs = digits(o.direction === 'outgoing' ? (Array.isArray(o.to) ? o.to[0] : o.to) : o.from);
   if (!theirs) return new Response('ok');
