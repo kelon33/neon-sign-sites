@@ -77,6 +77,10 @@ async function main() {
     if (kit === 'detailing' && /boat/i.test(lead.trade) && vehicleFocus(text) === 'cars') {
       checks.push(`Listed as ${lead.trade}, but their site is about cars: built as mobile car detailing.`);
       lead.trade = 'Mobile car detailing';
+    } else if (kit === 'detailing' && /boat/i.test(lead.trade) && vehicleFocus(text) === 'both') {
+      // Cars and boats (often more cars): the preview shows the work they do, not only the boats.
+      lead.note = 'We found them by searching for boat detailing, but they detail cars and other vehicles too. Show the work they actually do: their real photos of any vehicle are good gallery and hero photos, and their car services belong in the services.';
+      checks.push('Details cars and boats (found by a boat search): the AI was told to show all their work.');
     }
 
     // 2. Photos and logo.

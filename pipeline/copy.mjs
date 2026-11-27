@@ -333,7 +333,7 @@ export async function sharpen({ kit, lead, text, draft, thumbs, model = 'claude-
   if (!apiKey) return null;
   const { default: Anthropic } = await import('@anthropic-ai/sdk');
   const client = new Anthropic({ apiKey });
-  const facts = `Business: ${lead.name}\nTrade: ${lead.trade}\nCity: ${lead.city}\nGoogle rating: ${lead.rating} from ${lead.reviews} reviews\nPhone: ${lead.phone}`;
+  const facts = `Business: ${lead.name}\nTrade: ${lead.trade}\nCity: ${lead.city}\nGoogle rating: ${lead.rating} from ${lead.reviews} reviews\nPhone: ${lead.phone}${lead.note ? `\nNote: ${lead.note}` : ''}`;
   const content = [
     { type: 'text', text: `${facts}\n\nKit: ${kit}\n\n${only ? `The headline, section titles and steps are already written (from our library of reviewed sites); write only the fields asked for. The draft, for its voice:` : 'Our ready-made draft (improve on it; keep its structure):'}\n${JSON.stringify(draft)}\n\nTheir current website text:\n<site>\n${text.slice(0, 24000)}\n</site>\n\nTheir photos follow, numbered from 1.` },
     ...thumbs.flatMap((b64, i) => [{ type: 'text', text: `Photo ${i + 1}` }, { type: 'image', source: { type: 'base64', media_type: 'image/jpeg', data: b64 } }]),
