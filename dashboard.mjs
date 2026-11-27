@@ -162,10 +162,12 @@ fetch('/dashboard/api/events', { credentials: 'same-origin' }).then((r) => r.jso
   // Calls and texts (Quo), matched to a business by phone number.
   const PHONES = ${JSON.stringify(phones)};
   const unknown = [];
+  // A number that rang but has no completed call yet still counts as a call ("rang, not answered").
+  for (const [num, m] of Object.entries(ev.r || {})) if (!(ev.c || {})[num]) { ev.c = ev.c || {}; ev.c[num] = { c: m.c, l: m.l, rang: true }; }
   for (const [num, kind] of [...Object.keys(ev.c || {}).map((n) => [n, 'c']), ...Object.keys(ev.s || {}).map((n) => [n, 's'])]) {
     const slug = PHONES[num], m = ev[kind][num];
     const tr = slug && document.querySelector('tr[data-slug="' + slug + '"]');
-    const text = kind === 'c' ? (m.c + ' call' + (m.c > 1 ? 's' : '') + (m.vm ? ', ' + m.vm + ' voicemail' : '') + (m.missed ? ', ' + m.missed + ' missed' : '')) : (m.c + ' text' + (m.c > 1 ? 's' : ''));
+    const text = kind === 'c' ? (m.rang ? 'rang ' + m.c + '× (not answered)' : m.c + ' call' + (m.c > 1 ? 's' : '') + (m.vm ? ', ' + m.vm + ' voicemail' : '') + (m.missed ? ', ' + m.missed + ' missed' : '')) : (m.c + ' text' + (m.c > 1 ? 's' : ''));
     if (!tr) { unknown.push('(' + num.slice(0, 3) + ') ' + num.slice(3, 6) + '-' + num.slice(6) + ': ' + text + ', last ' + when(m.l)); continue; }
     const cell = tr.querySelector('.calls');
     cell.innerHTML = (cell.textContent === '–' ? '' : cell.innerHTML + '<br>') + text + ' <small>last ' + when(m.l) + '</small>';

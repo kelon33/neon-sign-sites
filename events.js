@@ -31,7 +31,7 @@ export async function record(env, kind, slug, extra = {}) {
 
 /** Everything, for the dashboard: { p: { slug: meta }, g: {...}, m: {...} }. */
 export async function allEvents(env) {
-  const out = { p: {}, g: {}, m: {}, c: {}, s: {}, $: {}, S: {}, x: {} };
+  const out = { p: {}, g: {}, m: {}, c: {}, r: {}, s: {}, $: {}, S: {}, x: {} };
   if (!env.EVENTS) return out;
   let cursor;
   do {

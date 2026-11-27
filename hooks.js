@@ -6,7 +6,7 @@
 //   POST /hooks/paypal  PayPal: subscriptions and payments. Checked with PayPal's verify-webhook-signature API,
 //                       using Worker secrets PAYPAL_CLIENT_ID, PAYPAL_SECRET and PAYPAL_WEBHOOK_ID.
 // Without its secret a hook refuses everything (503), so nothing unverified is ever stored.
-// KV keys: c:<10-digit number> calls (metadata c, f, l, vm, missed, in), s:<number> texts (c, f, l, last),
+// KV keys: c:<10-digit number> completed calls (metadata c, f, l, vm, missed, in), r:<number> incoming rings (c, f, l), s:<number> texts (c, f, l, last),
 //          $:<event id> payments (type, amt, cur, slug, sub, at), S:<subscription id> subscriptions (status, slug, at).
 
 const digits = (n) => String(n ?? '').replace(/\D/g, '').slice(-10);
@@ -74,6 +74,9 @@ export async function quoHook(request, env) {
   if (type.startsWith('call.completed') || type === 'call.completed') {
     const missed = ['no-answer', 'missed', 'busy', 'canceled', 'failed'].includes(o.status) || !o.answeredAt;
     await bump(env, `c:${theirs}`, { last: o.direction ?? 'incoming' }, { vm: o.voicemail ? 1 : 0, missed: missed ? 1 : 0, in: o.direction === 'outgoing' ? 0 : 1 });
+  } else if (type === 'call.ringing') {
+    // Every incoming call, answered or not (a call hung up while ringing may never be "completed").
+    if (o.direction !== 'outgoing') await bump(env, `r:${theirs}`, {});
   } else if (type === 'message.received') {
     await bump(env, `s:${theirs}`, { last: String(o.text ?? o.body ?? '').slice(0, 160) });
   }
