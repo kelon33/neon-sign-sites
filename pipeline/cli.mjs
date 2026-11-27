@@ -90,7 +90,7 @@ async function main() {
     else if (logo.dark && logo.transparent) checks.push('Logo is dark on a transparent background: shown on a white chip. Check it reads well.');
 
     // 3. Words: the kit's, then sharper ones from Claude when available.
-    let copy = tradeCopy(lead.trade, (kit === 'lawn' ? lawnCopy : detailingCopy)({ name: lead.name, city: lead.city, text }), lead.city);
+    let copy = tradeCopy(lead.trade, (kit === 'detailing' ? detailingCopy : lawnCopy)({ name: lead.name, city: lead.city, text }), lead.city);
     // A preview already polished by hand keeps its wording (--fresh starts over); only the photos,
     // logo and rating are refreshed.
     const existingFile = path.join(out, 'site.json');
@@ -118,7 +118,7 @@ async function main() {
       const merged = {
         ...copy,
         kicker: r.kicker, headline: r.headline, intro: r.intro,
-        ...(kit === 'lawn' ? { highlights: points } : { mobile: points }),
+        ...(kit === 'detailing' ? { mobile: points } : { highlights: points }),
         servicesTitle: r.servicesTitle, servicesIntro: r.servicesIntro,
         services: r.services.map((s) => ({ name: s.name, text: s.text, ...(s.price ? { price: s.price } : {}) })),
         also: r.also.map((n) => ({ name: n })),
@@ -151,7 +151,7 @@ async function main() {
 
     // 4. Gallery with no holes; the tall slot goes to a portrait photo when there is one.
     const plan = galleryPlan(order.length);
-    let gallery = order.slice(0, plan.count).map((i) => ({ src: photos[i].rel, alt: alts[i] || photos[i].alt || `${kit === 'lawn' ? 'Yard work' : 'Detailing work'} by ${lead.name}` }));
+    let gallery = order.slice(0, plan.count).map((i) => ({ src: photos[i].rel, alt: alts[i] || photos[i].alt || `${{ lawn: 'Yard work', detailing: 'Detailing work', painting: 'Painting work' }[kit] ?? 'Work'} by ${lead.name}` }));
     if (gallery.length) {
       gallery[0].size = 'big';
       if (plan.tall) {

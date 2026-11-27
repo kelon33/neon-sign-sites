@@ -30,7 +30,7 @@ export function renderDetailing(d) {
   const accent = d.accent ?? '#8fd0ff';
   const preview = d.preview ? `<div class="preview-bar">Preview prepared for ${esc(d.name)} by <a href="https://neonsignsites.com/">Neon Sign Sites</a>. Not the live site.</div>` : '';
   const rating = d.rating ? `<a class="rating" href="${esc(d.rating.url)}" target="_blank" rel="noopener">${stars}<b>${esc(d.rating.score)}</b><span>${esc(d.rating.count)} Google reviews</span></a>` : '';
-  const vehicleTypes = ['Car', 'SUV or truck', ...(d.also ?? []).map((a) => a.name)];
+  const vehicleTypes = d.vehicleTypes ?? ['Car', 'SUV or truck', ...(d.also ?? []).map((a) => a.name)];
   return `<!doctype html>
 <html lang="en">
 <head>
@@ -324,7 +324,7 @@ ${d.why?.length ? `<section class="section" style="padding-top:30px">
       <label>Name <input name="name" autocomplete="name" required></label>
       <label>Phone <input name="phone" type="tel" autocomplete="tel" required></label>
       <label>Vehicle type <select name="vehicle">${vehicleTypes.map((v) => `<option>${esc(v)}</option>`).join('')}</select></label>
-      <label>Make and model <input name="model" placeholder="e.g. Toyota RAV4"></label>
+      <label>Make and model <input name="model" placeholder="${esc(d.modelPlaceholder ?? 'e.g. Toyota RAV4')}"></label>
       <label class="full">Service <select name="service">${d.services.map((s) => `<option>${esc(s.name)}</option>`).join('')}<option>Not sure yet</option></select></label>
       <label>Where should we come? <input name="address" autocomplete="street-address" placeholder="Address or neighborhood"></label>
       <label>Preferred day <input name="date" type="date"></label>

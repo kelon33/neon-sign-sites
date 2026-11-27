@@ -85,3 +85,21 @@ test('the photo pitch: no gallery, and the email asks for job photos instead of 
   const normal = draftEmail({ lead, link: 'L', sender: { name: 'A' } }).body;
   assert.doesNotMatch(normal, /Send me 5 or 6 photos/);
 });
+
+test('house painting and boat detailing: their own design or wording, no lawn or car leftovers', async () => {
+  const { kitFor, tradeCopy, lawnCopy, detailingCopy } = await import('../pipeline/copy.mjs');
+  const { renderSite } = await import('../generator/render.mjs');
+  assert.equal(kitFor('House painting'), 'painting');
+  assert.equal(kitFor('Paintless dent repair'), 'detailing');
+  assert.equal(kitFor('Boat detailing'), 'detailing');
+  const visible = (h) => h.replace(/<style[\s\S]*?<\/style>/g, '');
+  const paint = tradeCopy('House painting', lawnCopy({ name: 'Brush Co', city: 'Lubbock, TX', text: '' }), 'Lubbock, TX');
+  const html = renderSite({ kit: 'painting', name: 'Brush Co', phone: '1', email: 'a@b.com', gallery: [{ src: 'img/a.jpg', alt: 'a', size: 'big' }], areas: ['Lubbock'], ...paint });
+  assert.doesNotMatch(visible(html), /mow|yard|lawn|grass/i);
+  assert.match(html, /Homes we’ve painted/);
+  assert.match(html, /theme-color" content="#1b2a3a"/);
+  const boat = tradeCopy('Boat detailing', detailingCopy({ name: 'Hull Co', city: 'Sarasota, FL', text: '' }), 'Sarasota, FL');
+  const html2 = renderSite({ kit: 'detailing', name: 'Hull Co', phone: '1', email: 'a@b.com', gallery: [{ src: 'img/a.jpg', alt: 'a', size: 'big' }], areas: ['Sarasota'], ...boat });
+  assert.match(html2, /<option>Pontoon<\/option>/);
+  assert.doesNotMatch(visible(html2), /Toyota|pet hair|SUV or truck/i);
+});

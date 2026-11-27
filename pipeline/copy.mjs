@@ -39,6 +39,7 @@ export const LAWN_SERVICES = [
 export function kitFor(trade) {
   if (/detail|car wash|auto spa|dent repair/i.test(trade ?? '')) return 'detailing';
   if (/lawn|landscap|yard|mow|christmas light|holiday light/i.test(trade ?? '')) return 'lawn';
+  if (/house paint|painter|painting/i.test(trade ?? '')) return 'painting';
   return null;
 }
 
@@ -65,6 +66,47 @@ const TRADE_WORDS = [
     ],
     contactTitle: 'Got a dent?', footerLine: `Paintless dent repair in ${town}`,
     notePlaceholder: 'Where the dent is, how big, hail or a door ding…', ctaLabel: 'Get an estimate',
+  })],
+  [/boat detail|marine detail/i, (town) => ({
+    kicker: `Boat detailing · ${town}`,
+    headline: 'Back on the water<br><em>looking new.</em>',
+    intro: `Boat detailing in ${town}: hulls, decks and interiors cleaned, polished and protected.`,
+    servicesTitle: 'Bow to stern.', servicesIntro: 'From a wash and wax to bringing back faded gelcoat.',
+    services: [
+      { name: 'Wash and wax', text: 'Hull and deck washed, then waxed for shine and protection.' },
+      { name: 'Oxidation removal', text: 'Chalky, faded gelcoat compounded and polished back.' },
+      { name: 'Interior and upholstery', text: 'Seats, carpet and vinyl cleaned and treated.' },
+    ],
+    alsoTitle: 'We also detail', galleryTitle: 'Fresh off the water.',
+    howTitle: 'Ready for the water in three steps.',
+    steps: [
+      { name: 'Tell us about your boat', text: 'Call, text or use the form with its size and where it is.' },
+      { name: 'We come to it', text: 'At the dock, the ramp or your driveway.' },
+      { name: 'Back on the water', text: 'Clean, polished and protected.' },
+    ],
+    contactTitle: 'Book your boat in.', footerLine: `Boat detailing in ${town}`,
+    vehicleTypes: ['Boat', 'Pontoon', 'Yacht', 'Jet ski', 'Other'], modelPlaceholder: 'e.g. Sea Ray 240, 24 ft',
+    notePlaceholder: 'Length, where it is docked or stored, what it needs…',
+  })],
+  [/house paint|painter|painting/i, (town) => ({
+    kicker: `House painting · ${town}`,
+    headline: 'Fresh paint.<br><em>Clean lines.</em>',
+    intro: `Interior and exterior house painting in ${town}: walls, trim, cabinets and siding.`,
+    servicesTitle: 'Inside and out.', servicesIntro: 'One room or the whole house.',
+    services: [
+      { name: 'Interior painting', text: 'Walls, ceilings and trim in the colors you choose.' },
+      { name: 'Exterior painting', text: 'Siding, trim and doors, prepped and painted.' },
+      { name: 'Cabinets and trim', text: 'Kitchen cabinets, doors and woodwork refreshed.' },
+    ],
+    promise: null, galleryTitle: 'Homes we\u2019ve painted.',
+    howTitle: 'A fresh coat in three steps.',
+    steps: [
+      { name: 'Ask for a quote', text: 'Tell us about the job by phone or with the form below.' },
+      { name: 'Pick your colors', text: 'We look at the job and go over colors and timing with you.' },
+      { name: 'Enjoy the new look', text: 'We paint. You enjoy a fresh-looking home.' },
+    ],
+    contactTitle: 'Ready for a fresh coat?', footerLine: `House painting in ${town}`,
+    notePlaceholder: 'Inside or outside, how many rooms, a date you have in mind…',
   })],
   [/christmas light|holiday light/i, (town) => ({
     kicker: `Christmas light installation · ${town}`,
