@@ -82,7 +82,7 @@ a, button { -webkit-tap-highlight-color: transparent; }
 .nav nav a:hover { color: var(--fg); }
 
 /* Hero */
-.hero { position: relative; overflow-x: clip; padding: 72px 0 110px; } /* glows may spill down into the next section, so there is no hard edge */
+.hero { position: relative; overflow-x: clip; padding: 72px 0 64px; } /* glows may spill down into the next section, so there is no hard edge */
 .hero::before { content: ""; position: absolute; inset: -20% -10% auto auto; width: 720px; height: 720px; background: radial-gradient(closest-side, rgba(255,79,139,.20), transparent 70%); pointer-events: none; }
 .hero::after { content: ""; position: absolute; left: -200px; bottom: -300px; width: 700px; height: 700px; background: radial-gradient(closest-side, rgba(255,210,122,.10), transparent 70%); pointer-events: none; }
 .hero-grid { position: relative; display: grid; grid-template-columns: 1.15fr .85fr; gap: 64px; align-items: center; }
@@ -168,7 +168,7 @@ a, button { -webkit-tap-highlight-color: transparent; }
 .trades li { font: 400 1.35rem/1 var(--serif); font-style: italic; color: var(--fg); }
 
 /* Blocks */
-.block { padding: 120px 0; }
+.block { padding: 72px 0; }
 /* Alternate sections blend in and out of the page colour: no visible band edges. */
 .block.alt { background: linear-gradient(180deg, var(--bg) 0%, var(--bg-2) 22%, var(--bg-2) 78%, var(--bg) 100%); }
 .two { display: grid; grid-template-columns: 1fr 1fr; gap: 64px; align-items: start; }
@@ -228,7 +228,7 @@ details[open] p { animation: faq-in .35s ease both; }
 @media (prefers-reduced-motion: reduce) { summary::after, details[open] p { transition: none; animation: none; } }
 
 /* Call to action */
-.cta { padding: 120px 0 130px; text-align: center; background: radial-gradient(ellipse 70% 55% at 50% 30%, rgba(255,79,139,.13), transparent 75%); }
+.cta { padding: 72px 0 84px; text-align: center; background: radial-gradient(ellipse 70% 55% at 50% 30%, rgba(255,79,139,.13), transparent 75%); }
 .cta img { margin-bottom: 26px; }
 .cta > .wrap > p { color: var(--muted); margin-top: 16px; font-size: 1.1rem; }
 .form { margin: 40px auto 0; max-width: 520px; display: grid; gap: 14px; text-align: left; }
@@ -262,12 +262,12 @@ details[open] p { animation: faq-in .35s ease both; }
   .brand-name { font-size: 1.18rem; }
   .nav .brand img { width: 46px; height: auto; }
   .show-sm { display: inline; }
-  .hero { padding: 64px 0 80px; }
+  .hero { padding: 64px 0 48px; }
   .hero-grid, .two { grid-template-columns: 1fr; gap: 48px; }
   .steps, .features { grid-template-columns: 1fr; }
   .plans { grid-template-columns: 1fr; }
   .plan-card { padding: 32px 26px; }
-  .block { padding: 84px 0; }
+  .block { padding: 52px 0; }
   .trades .wrap { justify-content: flex-start; }
 }
 
