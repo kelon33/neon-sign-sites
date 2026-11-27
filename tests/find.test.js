@@ -102,7 +102,7 @@ test('working sites with clear gaps are a separate "decent site" category; no ga
 test('each trade has its main phrase first, and every phrase fits a site kit', async () => {
   assert.equal(TRADES.lawn.queries[0], 'lawn care service');
   assert.equal(TRADES.detailing.queries[0], 'mobile car detailing');
-  for (const t of Object.values(TRADES).filter((t) => !t.test)) assert.ok(t.queries.length >= 3);
+  for (const t of Object.values(TRADES).filter((t) => !t.test)) assert.ok(t.queries.length >= (t.kit ? 1 : 3));
   // Test trades are searched but never built (npm run batch skips them) until promoted.
   const { pick } = await import('../pipeline/batch.mjs');
   for (const t of Object.values(TRADES).filter((t) => t.test))

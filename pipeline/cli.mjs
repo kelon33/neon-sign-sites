@@ -13,7 +13,7 @@ import { createRequire } from 'node:module';
 const { chromium } = createRequire(import.meta.url)('playwright');
 import { scrapeSite } from './scrape.mjs';
 import { photoCandidates, logoCandidate, galleryPlan, saveImage, thumbnail, pickHero } from './photos.mjs';
-import { kitFor, detailingCopy, lawnCopy, sharpen, anthropicKey, verify, cleanName, splitWordmark } from './copy.mjs';
+import { kitFor, detailingCopy, lawnCopy, tradeCopy, sharpen, anthropicKey, verify, cleanName, splitWordmark } from './copy.mjs';
 import { draftEmail } from './email.mjs';
 import { blocked } from './dnc.mjs';
 import { renderSite } from '../generator/render.mjs';
@@ -83,7 +83,7 @@ async function main() {
     else if (logo.dark && logo.transparent) checks.push('Logo is dark on a transparent background: shown on a white chip. Check it reads well.');
 
     // 3. Words: the kit's, then sharper ones from Claude when available.
-    let copy = (kit === 'lawn' ? lawnCopy : detailingCopy)({ name: lead.name, city: lead.city, text });
+    let copy = tradeCopy(lead.trade, (kit === 'lawn' ? lawnCopy : detailingCopy)({ name: lead.name, city: lead.city, text }), lead.city);
     // A preview already polished by hand keeps its wording (--fresh starts over); only the photos,
     // logo and rating are refreshed.
     const existingFile = path.join(out, 'site.json');

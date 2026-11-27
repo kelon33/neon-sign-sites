@@ -37,9 +37,62 @@ export const LAWN_SERVICES = [
 ];
 
 export function kitFor(trade) {
-  if (/detail|car wash|auto spa/i.test(trade ?? '')) return 'detailing';
-  if (/lawn|landscap|yard|mow/i.test(trade ?? '')) return 'lawn';
+  if (/detail|car wash|auto spa|dent repair/i.test(trade ?? '')) return 'detailing';
+  if (/lawn|landscap|yard|mow|christmas light|holiday light/i.test(trade ?? '')) return 'lawn';
   return null;
+}
+
+// Trades that borrow a kit: their own default wording, so a dent-repair preview never says "pet hair"
+// and a Christmas-light preview never says "We don't just mow". Defaults only: the AI rewrites most of
+// it from their site, and these make no claims.
+const TRADE_WORDS = [
+  [/dent repair/i, (town) => ({
+    kicker: `Paintless dent repair · ${town}`,
+    headline: 'Dents out.<br><em>Paint untouched.</em>',
+    intro: `Paintless dent repair in ${town}: door dings, creases and hail damage pushed out from behind, so the factory paint stays.`,
+    servicesTitle: 'Every kind of dent.', servicesIntro: 'From a single door ding to a hail-covered roof.',
+    services: [
+      { name: 'Door dings', text: 'Small parking-lot dents pushed out without paint or filler.' },
+      { name: 'Hail damage', text: 'Roofs, hoods and trunks restored after a storm.' },
+      { name: 'Creases and larger dents', text: 'Worked out from behind the panel where the metal allows.' },
+    ],
+    alsoTitle: 'We also fix', galleryTitle: 'Dents gone, paint untouched.',
+    howTitle: 'Dent-free in three steps.',
+    steps: [
+      { name: 'Send a photo', text: 'Call, text or use the form with a photo of the dent.' },
+      { name: 'Get a price', text: 'We look at the damage and tell you what it takes.' },
+      { name: 'Drive it smooth', text: 'We work the dent out and hand the car back.' },
+    ],
+    contactTitle: 'Got a dent?', footerLine: `Paintless dent repair in ${town}`,
+    notePlaceholder: 'Where the dent is, how big, hail or a door ding…',
+  })],
+  [/christmas light|holiday light/i, (town) => ({
+    kicker: `Christmas light installation · ${town}`,
+    headline: 'Your house,<br><em>lit up right.</em>',
+    intro: `Christmas and holiday lights in ${town}, hung straight and safely, so you don't have to climb a ladder.`,
+    badges: [], servicesTitle: 'Lights, done for you.', servicesIntro: 'Rooflines, trees and everything in between.',
+    services: [
+      { name: 'Roofline lighting', text: 'Clean, straight lines along the roof and gutters.' },
+      { name: 'Trees and bushes', text: 'Trunks, branches and shrubs wrapped in light.' },
+      { name: 'Custom designs', text: 'A look planned around your house.' },
+    ],
+    promise: null, galleryTitle: 'Homes we light up.',
+    howTitle: 'Lit up in three steps.',
+    steps: [
+      { name: 'Ask for a quote', text: 'Tell us about your house by phone or with the form below.' },
+      { name: 'Pick your design', text: 'Choose the lights and where they go.' },
+      { name: 'Flip the switch', text: 'We hang them. You enjoy the season.' },
+    ],
+    contactTitle: 'Ready to light it up?', footerLine: `Christmas light installation in ${town}`,
+    notePlaceholder: 'Roofline length, trees, a date you want them up…',
+  })],
+];
+
+/** The kit wording, with a borrowing trade's own defaults on top. */
+export function tradeCopy(trade, copy, city) {
+  const town = city?.replace(/,\s*[A-Z]{2}$/, '') ?? '';
+  const own = TRADE_WORDS.find(([re]) => re.test(trade ?? ''));
+  return own ? { ...copy, ...own[1](town) } : copy;
 }
 
 /** Ready-made detailing wording, filled with what the site says it offers. */

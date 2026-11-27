@@ -328,7 +328,7 @@ ${d.why?.length ? `<section class="section" style="padding-top:30px">
       <label class="full">Service <select name="service">${d.services.map((s) => `<option>${esc(s.name)}</option>`).join('')}<option>Not sure yet</option></select></label>
       <label>Where should we come? <input name="address" autocomplete="street-address" placeholder="Address or neighborhood"></label>
       <label>Preferred day <input name="date" type="date"></label>
-      <label class="full">Anything we should know? <textarea name="note" placeholder="Pet hair, stains, oxidized paint…"></textarea></label>
+      <label class="full">Anything we should know? <textarea name="note" placeholder="${esc(d.notePlaceholder ?? 'Pet hair, stains, oxidized paint…')}"></textarea></label>
       <button class="btn" type="submit">Request my booking</button>
     </form>
   </div>
