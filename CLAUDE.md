@@ -63,6 +63,10 @@ Notify Alon (push notification, or a message meant for him) **only** when:
 - the day's sending list is ready for his approval (`outbox/<date>.md`), or
 - he is actively working with that chat right now (answer him as usual).
 Everything else runs silently and goes into the handoff files: lead searches (as long as they stay within the Places budget; going over it, or about to, is the exception: say so), site checks, preview builds and reviews, batches, commits, routine morning open-items posts (post them only when an approval is waiting). Errors that block the day's sending list count as part of that list: mention them with it.
+Two exceptions Alon wants kept (2026-11-27): a push when a prospect replies (with the suggested answer), and the nightly "Saved. You can type /clear in this chat now."
+
+## Rule: every hand fix becomes a script fix (Alon, 2026-11-27)
+After each review, whatever was fixed or rejected by hand goes into `docs/review-lessons.md`: what was wrong, how many previews, the cause in the pipeline, and the script change that stops it (or why it can't be automated yet). Make the change in the same session when it is small (a filter, a list entry, a check); otherwise it is an open item in the handoff. The goal is a review with nothing to fix by hand.
 
 ## Rule: spend Claude usage carefully (Alon, 2026-11-27)
 The chats' own work counts against Alon's Claude plan; the preview AI step counts against API credits. Both are kept low:
