@@ -1,0 +1,132 @@
+{
+  "kit": "detailing",
+  "trade": "Boat detailing",
+  "name": "Detail M.D.",
+  "legalName": "Detail M.D.",
+  "preview": true,
+  "placeId": "ChIJWVXw0SRHw4gR6F-jFhJ53KU",
+  "title": "Detail M.D. | Boat detailing in Sarasota, FL",
+  "description": "Ceramic coating, gelcoat correction and full restoration for yachts and boats in Sarasota. Done right the first time. 5.0 on Google from 153 reviews.",
+  "brand": "#1670ff",
+  "brandHi": "#52c6ff",
+  "accent": "#8fd0ff",
+  "logo": "logo.png",
+  "logoChip": false,
+  "wordmark": {
+    "top": "Detail M.D."
+  },
+  "phone": "(941) 400-1656",
+  "email": "detailmd941@gmail.com",
+  "heroImage": "img/photo-2.jpg",
+  "heroAlt": "Four team members standing on the deck of a yacht with an American flag",
+  "heroPosition": "60% 60%",
+  "heroPositionPhone": "60% 50%",
+  "rating": {
+    "score": "5.0",
+    "count": 153,
+    "url": "https://maps.google.com/?cid=11951560629730631656"
+  },
+  "kicker": "Boat detailing · Sarasota",
+  "headline": "Offshore-ready.<br><em>Mirror finish.</em>",
+  "intro": "Ceramic coating, gelcoat correction and full restoration for yachts and boats in Sarasota. Done right the first time.",
+  "mobile": null,
+  "servicesTitle": "Bow to stern.",
+  "servicesIntro": "Restoration for weathered boats. Protection to keep every boat looking new.",
+  "services": [
+    {
+      "name": "Detailing & Restoration",
+      "text": "Oxidation and chalky gelcoat corrected in multiple stages until the finish is clear and deep."
+    },
+    {
+      "name": "Ceramic Coating",
+      "text": "Marine-grade coating applied to every surface for lasting gloss and easier upkeep."
+    },
+    {
+      "name": "Hull Pro",
+      "text": "Hull care for boats that spend their life on the water."
+    },
+    {
+      "name": "Maintenance Plans",
+      "text": "Regular care to keep your finish protected after the first detail."
+    }
+  ],
+  "also": [
+    {
+      "name": "Cars and trucks"
+    },
+    {
+      "name": "Paint correction"
+    },
+    {
+      "name": "Paint protection film"
+    }
+  ],
+  "alsoTitle": "We also detail",
+  "why": [
+    {
+      "name": "Done right the first time",
+      "text": "We have fixed ceramic coatings by other companies that failed from poor prep."
+    },
+    {
+      "name": "Referred by yacht dealers",
+      "text": "Yellowfin Yachts and Galati Yacht Sales send their clients to us."
+    },
+    {
+      "name": "Fast, direct communication",
+      "text": "Clients say Jameson takes their call or text right away."
+    }
+  ],
+  "whyTitle": "Why boat owners call us.",
+  "howTitle": "Back on the water in three steps.",
+  "steps": [
+    {
+      "name": "Tell us about your boat",
+      "text": "Call or send the form with the vessel and what you need."
+    },
+    {
+      "name": "We assess and plan",
+      "text": "We inspect the surface and set the right correction and protection."
+    },
+    {
+      "name": "Back on the water",
+      "text": "Your boat returns with deep gloss and lasting protection."
+    }
+  ],
+  "contactTitle": "Book your boat in.",
+  "footerLine": "Boat detailing in Sarasota",
+  "reviews": [
+    {
+      "text": "I recently had a 42' Yellowfin custom built. Once completed I had Jameson's team at Detail MD ceramic coat the entire boat both inside and out. It truly took the boat to the next level. I can't express how well the finish turned out and what a pleasure it was to work with them. I occasionally have a question regarding continued care and maintenance and Jameson immediately takes my call or texts. These are the only guys I will use going forward!",
+      "name": "Chris Cline"
+    },
+    {
+      "text": "Jameson, Ethan and their crew are the BEST, hands down! Not only is their work amazing and efficient, they have 5 star communication! Detail M. D. has been coming to our house for 2 years to detail our cars and we are so grateful for them! 10/10",
+      "name": "Maggie McDermit"
+    },
+    {
+      "text": "My car is 4 years old I thought it looked good but after the Ceramic Coating by Detail M.D. it looks like it was just taken out of the show room. Excellent product and application but more importantly OUTSTANDING customer service.",
+      "name": "Richard Giardelli"
+    }
+  ],
+  "hours": [
+    "Mon–Fri 8:00AM–6:00PM",
+    "Sat 9AM–2PM",
+    "Sun Closed",
+    "Shop by appointment only"
+  ],
+  "galleryTitle": "Fresh off the water.",
+  "vehicleTypes": [
+    "Boat",
+    "Pontoon",
+    "Yacht",
+    "Jet ski",
+    "Other"
+  ],
+  "modelPlaceholder": "e.g. Sea Ray 240, 24 ft",
+  "notePlaceholder": "Length, where it is docked or stored, what it needs…",
+  "gallery": [],
+  "areas": [
+    "Sarasota"
+  ],
+  "pitch": "photos"
+}
