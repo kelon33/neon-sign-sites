@@ -11,7 +11,7 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@100..125,500..800&family=Inter:wght@400;500;600&display=swap">
 <style>
 :root { --brand: #1670ff; --brand-hi: #52c6ff; --brand-lo: #0f4eb3; --accent: #8fd0ff;
-  --bg: #07090d; --panel: #0e1219; --panel-2: #131824; --line: rgba(255,255,255,.08); --ink: #eef2f8; --muted: #98a2b3;
+  --bg: #0d1118; --panel: #131923; --panel-2: #19212d; --brand-glow: #1670ff38; --line: rgba(255,255,255,.08); --ink: #eef2f8; --muted: #98a2b3;
   --display: "Archivo", "Inter", system-ui, sans-serif; --sans: "Inter", system-ui, sans-serif; --ease: cubic-bezier(.22,.61,.36,1); }
 * { box-sizing: border-box; }
 html { scroll-behavior: smooth; }
@@ -189,6 +189,11 @@ form.booking .btn { grid-column: 1 / -1; margin-top: 6px; }
   .hero > img { transform: none; }
 }
 
+/* RULE: no hard edges between sections. Wherever two colours meet, the change is a soft gradient. */
+.hero::after { content: ""; position: absolute; left: 0; right: 0; bottom: 0; height: 84px; z-index: -1; pointer-events: none; background: linear-gradient(180deg, transparent, var(--bg)); }
+.book { border-top: 0; background: linear-gradient(180deg, var(--bg), transparent 140px), radial-gradient(ellipse at 15% 0%, var(--brand-glow), transparent 55%), var(--panel); }
+.footer { background: linear-gradient(180deg, var(--panel), var(--bg)); border-top: 0; }
+
 /* RULE: the first screen reads as a whole page: headline, every hero button and the Google rating
    visible without scrolling, on laptops, desktops and phones (npm run fold checks it). */
 :root:has(.preview-bar) { --bar: 36px; }
@@ -198,7 +203,7 @@ form.booking .btn { grid-column: 1 / -1; margin-top: 6px; }
   .hero { min-height: calc(min(100vh, 860px) - var(--bar, 0px)); }
 }
 @media (min-width: 901px) and (max-height: 920px) {
-  .hero { padding-top: 116px; padding-bottom: 52px; }
+  .hero { padding-top: 112px; padding-bottom: 84px; }
   .hero h1 { font-size: clamp(2.5rem, 8vh, 5.2rem); }
   .hero .lead { margin-top: 16px; }
   .hero .actions { margin-top: 24px; }
@@ -206,7 +211,7 @@ form.booking .btn { grid-column: 1 / -1; margin-top: 6px; }
   .hero .rating { margin-top: 18px; }
 }
 @media (max-width: 900px) {
-  .hero { min-height: calc(100svh - var(--bar, 0px)); padding: 96px 0 26px; }
+  .hero { min-height: calc(100svh - var(--bar, 0px)); padding: 92px 0 58px; }
   .hero h1 { font-size: clamp(1.9rem, min(10.2vw, 6svh), 3.3rem); }
   .hero .eyebrow { margin-bottom: 10px; }
   .hero .lead { font-size: 1rem; line-height: 1.5; margin-top: 12px; display: -webkit-box; -webkit-line-clamp: 4; -webkit-box-orient: vertical; overflow: hidden; }

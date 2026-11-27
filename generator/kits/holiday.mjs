@@ -16,8 +16,8 @@ const CREDIT_URL = 'https://commons.wikimedia.org/wiki/File:Glowing_Christmas_Tr
 const CSS = `
 /* Holiday lighting: pine, berry red, warm gold. */
 :root { --grass: #b3122e; --grass-hi: #ff5a6e; --grass-lo: #8d0f25; --stripe-a: #b3122e; --stripe-b: #f5efe6;
-  --deep: #0c2d1f; --deeper: #071c13; --sun: #f5c04a; --mint: #f6eee4;
-  --bg: #fbf7f0; --panel: #ffffff; --ink: #1d1a17; --muted: #6a6158; --line: #ece2d4; }
+  --deep: #0c2d1f; --deeper: #071c13; --sun: #f5c04a; --mint: #e7dccb;
+  --bg: #efe7da; --panel: #f9f4ec; --ink: #1d1a17; --muted: #665d53; --line: #e0d3bf; }
 .photo, .hero > img { filter: none; }
 .hero { background: #071225; }
 .hero::before { background: linear-gradient(90deg, rgba(5,14,24,.86) 0%, rgba(5,14,24,.6) 42%, rgba(5,14,24,.1) 80%), linear-gradient(180deg, rgba(5,14,24,.55), transparent 35%); }

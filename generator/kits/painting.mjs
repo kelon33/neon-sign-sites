@@ -9,8 +9,8 @@ import { renderLawn } from './lawn.mjs';
 const CSS = `
 /* House painting: navy and warm gold over the lawn layout. */
 :root { --grass: #2f5d8a; --grass-hi: #6ea3d6; --grass-lo: #23476b; --stripe-a: #2f5784; --stripe-b: #294e77;
-  --deep: #1b2a3a; --deeper: #121d29; --sun: #f2b33d; --mint: #eef2f7;
-  --bg: #faf8f4; --panel: #ffffff; --ink: #1a2330; --muted: #5d6672; --line: #e6e2d9; }
+  --deep: #1b2a3a; --deeper: #121d29; --sun: #f2b33d; --mint: #e0e5eb;
+  --bg: #ebe8e1; --panel: #f6f4ef; --ink: #1a2330; --muted: #58616d; --line: #dbd6cc; }
 .photo { filter: none; }
 .hero::before { background: linear-gradient(90deg, rgba(18,29,41,.9) 0%, rgba(18,29,41,.7) 40%, rgba(18,29,41,.1) 78%), linear-gradient(180deg, rgba(18,29,41,.55), transparent 30%); }
 .hero h1 em, .hero .eyebrow { color: #ffe1a8; }

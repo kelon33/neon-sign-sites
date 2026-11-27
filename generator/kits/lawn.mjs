@@ -40,8 +40,8 @@ ${d.preview ? '<meta name="robots" content="noindex, nofollow">' : ''}
 <style>
 /* Real grass greens, whatever the brand colour: lawns should look like lawns. */
 :root { --grass: #4a9a3a; --grass-hi: #7cc85a; --grass-lo: #2f7428; --stripe-a: #4f9d3f; --stripe-b: #448d36;
-  --deep: #163d1b; --deeper: #0f2c13; --sun: #f4c542; --mint: #e9f4df;
-  --bg: #f7f8f1; --panel: #ffffff; --ink: #17240f; --muted: #5b6752; --line: #e1e6d3;
+  --deep: #163d1b; --deeper: #0f2c13; --sun: #f4c542; --mint: #dfe8d2;
+  --bg: #eaeee0; --panel: #f6f8ef; --ink: #17240f; --muted: #56614c; --line: #d6dcc6;
   --serif: "Fraunces", Georgia, serif; --sans: "Inter", system-ui, sans-serif; --ease: cubic-bezier(.22,.61,.36,1); }
 * { box-sizing: border-box; }
 html { scroll-behavior: smooth; }
@@ -213,6 +213,17 @@ form.booking .btn { grid-column: 1 / -1; margin-top: 6px; }
 @media (max-width: 520px) { .logo b { font-size: 1.15rem; } .logo img { height: 44px; } }
 @media (prefers-reduced-motion: reduce) { *, *::before, *::after { animation: none !important; transition: none !important; } .hero > img { transform: none; } }
 
+/* RULE: no hard edges between sections. Wherever two colours meet, the change is a soft gradient. */
+.hero::after { content: ""; position: absolute; left: 0; right: 0; bottom: 0; height: 84px; z-index: -1; pointer-events: none; background: linear-gradient(180deg, transparent, var(--bg)); }
+.promise, .quote { position: relative; overflow: hidden; }
+.promise > .wrap, .quote > .wrap { position: relative; z-index: 1; }
+.promise::before, .promise::after, .quote::before { content: ""; position: absolute; left: 0; right: 0; height: 72px; pointer-events: none; z-index: 0; }
+.promise::before, .quote::before { top: 0; background: linear-gradient(180deg, var(--bg), transparent); }
+.promise::after { bottom: 0; background: linear-gradient(0deg, var(--bg), transparent); }
+.quote { background: linear-gradient(180deg, transparent 72%, var(--deeper)), radial-gradient(ellipse at 10% 10%, rgba(255,255,255,.07), transparent 55%), var(--deep); }
+.section.tint { background: linear-gradient(180deg, var(--bg), var(--mint) 110px, var(--mint) calc(100% - 110px), var(--bg)); }
+.footer { background: var(--deeper); }
+
 /* RULE: the first screen reads as a whole page: headline, every hero button and the Google rating
    visible without scrolling, on laptops, desktops and phones (npm run fold checks it). */
 :root:has(.preview-bar) { --bar: 36px; }
@@ -222,7 +233,7 @@ form.booking .btn { grid-column: 1 / -1; margin-top: 6px; }
   .hero { min-height: calc(min(100vh, 860px) - var(--bar, 0px)); }
 }
 @media (min-width: 901px) and (max-height: 920px) {
-  .hero { padding-top: 116px; padding-bottom: 52px; }
+  .hero { padding-top: 112px; padding-bottom: 84px; }
   .hero h1 { font-size: clamp(2.5rem, 8vh, 5.2rem); }
   .hero .lead { margin-top: 16px; }
   .hero .actions { margin-top: 24px; }
@@ -230,7 +241,7 @@ form.booking .btn { grid-column: 1 / -1; margin-top: 6px; }
   .hero .rating { margin-top: 18px; }
 }
 @media (max-width: 900px) {
-  .hero { min-height: calc(100svh - var(--bar, 0px)); padding: 96px 0 26px; }
+  .hero { min-height: calc(100svh - var(--bar, 0px)); padding: 92px 0 58px; }
   .hero h1 { font-size: clamp(1.9rem, min(10.2vw, 6svh), 3.3rem); }
   .hero .eyebrow { margin-bottom: 10px; }
   .hero .lead { font-size: 1rem; line-height: 1.5; margin-top: 12px; display: -webkit-box; -webkit-line-clamp: 4; -webkit-box-orient: vertical; overflow: hidden; }
