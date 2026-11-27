@@ -67,7 +67,7 @@ test('borrowing trades get a kit and their own default wording, with no lawn or 
   assert.equal(lights.promise, null);
   assert.match(lights.kicker, /Christmas light installation · Waco/);
   const html = renderSite({ kit: 'holiday', name: 'Glow Co', phone: '1', email: 'a@b.com', gallery: [], areas: ['Waco'], ...lights });
-  assert.doesNotMatch(html.replace(/<style[\s\S]*?<\/style>/g, ''), /mow|Yard size|Yards we take care/i); // CSS comments aside
+  assert.doesNotMatch(html.replace(/<style[\s\S]*?<\/style>/g, '').replace(/data:image[^"']*/g, ''), /mow|Yard size|Yards we take care/i); // CSS comments and the embedded photo aside
   const dent = tradeCopy('Paintless dent repair', detailingCopy({ name: 'Dent Pro', city: 'Waco, TX', text: '' }), 'Waco, TX');
   const html2 = renderSite({ kit: 'detailing', name: 'Dent Pro', phone: '1', email: 'a@b.com', gallery: [{ src: 'img/a.jpg', alt: 'a', size: 'big' }], areas: ['Waco'], ...dent });
   assert.doesNotMatch(html2, /pet hair|oxidized|Fresh off the driveway/i);
@@ -102,4 +102,18 @@ test('house painting and boat detailing: their own design or wording, no lawn or
   const html2 = renderSite({ kit: 'detailing', name: 'Hull Co', phone: '1', email: 'a@b.com', gallery: [{ src: 'img/a.jpg', alt: 'a', size: 'big' }], areas: ['Sarasota'], ...boat });
   assert.match(html2, /<option>Pontoon<\/option>/);
   assert.doesNotMatch(visible(html2), /Toyota|pet hair|SUV or truck/i);
+});
+
+test('the wording library keeps only general lines, and reuses them without carrying claims across', async () => {
+  const { harvestOne, fromLibrary, generalize } = await import('../pipeline/wording.mjs');
+  assert.equal(generalize('Call (512) 555-0100 today', { name: 'X', town: 'Austin' }), null);
+  assert.equal(generalize('Why Austin calls Dewey Lawns', { name: 'Dewey Lawns', town: 'Austin' }), 'Why {town} calls {name}');
+  assert.equal(generalize('Dewey handles every job', { name: 'Dewey Lawns', town: 'Austin' }), null);
+  const entry = harvestOne({ name: 'Dewey Lawns', areas: ['Austin'], headline: 'Your weekend back.', howTitle: 'Fully guaranteed in three steps.', whyTitle: 'Why Austin trusts Dewey Lawns',
+    steps: [{ name: 'Book', text: 'Online in a minute.' }, { name: 'We mow', text: 'On your day.' }, { name: 'Relax', text: 'Done.' }] });
+  assert.equal(entry.whyTitle, 'Why {town} trusts {name}');
+  const out = fromLibrary({ headline: 'x', howTitle: 'default', steps: [] }, [entry], { name: 'Goat Lawns', town: 'Waco', text: 'We mow lawns in Waco.' });
+  assert.equal(out.whyTitle, 'Why Waco trusts Goat Lawns');
+  assert.equal(out.howTitle, 'default'); // "guaranteed" is not on Goat's site
+  assert.equal(out.steps.length, 3);
 });

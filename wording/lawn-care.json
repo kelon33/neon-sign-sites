@@ -1,0 +1,193 @@
+{
+ "trade": "Lawn care",
+ "about": "General wording from reviewed previews (npm run wording). {name} and {town} are filled in per business.",
+ "entries": [
+  {
+   "from": "austins-lawn-enforcement",
+   "headline": "Land cleared. Sod laid.<br><em>Yard transformed.</em>",
+   "servicesTitle": "From bare dirt to finished yard.",
+   "servicesIntro": "One crew for clearing, grading, sod and landscaping, for homes and businesses.",
+   "whyTitle": "Why {town} homeowners hire us",
+   "howTitle": "A free quote in three steps.",
+   "contactTitle": "Ready to get started?",
+   "alsoTitle": "We also do:",
+   "sectionTitle": "Why {town} neighbors call us",
+   "sectionIntro": "Clear communication, fair prices and a crew that shows up when it says it will.",
+   "steps": [
+    {
+     "name": "Send us a text",
+     "text": "Tell us about your yard by text."
+    },
+    {
+     "name": "Chat on the phone",
+     "text": "We talk through what you need."
+    },
+    {
+     "name": "Receive a quote",
+     "text": "You get a free quote for the work."
+    }
+   ]
+  },
+  {
+   "from": "dewey-lawns",
+   "headline": "Your weekend back.<br><em>Your lawn, handled.</em>",
+   "servicesTitle": "Everything your lawn needs, on schedule.",
+   "servicesIntro": "Recurring care or a seasonal cleanup. No contracts, no hidden pricing.",
+   "whyTitle": "Why {town} homeowners trust {name}.",
+   "howTitle": "A better lawn in three steps.",
+   "contactTitle": "Ready for a lawn you don't have to think about?",
+   "alsoTitle": "We also do:",
+   "sectionIntro": "We're a customer service company that just happens to do lawn care."
+  },
+  {
+   "from": "dirty-turf",
+   "headline": "That pet smell<br><em>doesn't stand a chance.</em>",
+   "servicesIntro": "Deep cleaning is our specialty. We also repair, install and restore the surfaces around it.",
+   "whyTitle": "Why Arizona calls {name}",
+   "alsoTitle": "We also do:"
+  },
+  {
+   "from": "evergreen-outdoor-services",
+   "headline": "A lawn the whole street<br><em>notices.</em>",
+   "servicesTitle": "Everything your yard needs, in one call.",
+   "servicesIntro": "Regular care or a one-time transformation, done by one team.",
+   "howTitle": "A better lawn in three easy steps.",
+   "contactTitle": "Ready for a better lawn?",
+   "alsoTitle": "We also do:",
+   "steps": [
+    {
+     "name": "Ask for a quote",
+     "text": "Tell us about your yard by phone or with the form below."
+    },
+    {
+     "name": "We take a look",
+     "text": "We look at your lawn and beds and suggest a plan that fits."
+    },
+    {
+     "name": "Enjoy the view",
+     "text": "We get to work on your schedule. You get your weekends back."
+    }
+   ]
+  },
+  {
+   "from": "goat-lawn-services",
+   "headline": "A lawn the whole street<br><em>notices.</em>",
+   "servicesTitle": "Everything your yard needs, in one call.",
+   "servicesIntro": "Regular care or a one-time project, handled by one local team.",
+   "howTitle": "A better lawn in three easy steps.",
+   "contactTitle": "Ready for a better lawn?",
+   "alsoTitle": "We also do:",
+   "sectionIntro": "Simple mowing, set up in minutes, with a crew that shows up on the same day each week.",
+   "steps": [
+    {
+     "name": "Ask for a free quote",
+     "text": "Call or send the form and tell us about your yard."
+    },
+    {
+     "name": "Pick your plan",
+     "text": "Choose weekly or biweekly service, or a one-time project."
+    },
+    {
+     "name": "Enjoy the view",
+     "text": "We come on your assigned day. You get your weekend back."
+    }
+   ]
+  },
+  {
+   "from": "lawn-sculptures",
+   "headline": "The art<br>of the lawn.",
+   "servicesTitle": "Everything your yard needs, done with care.",
+   "servicesIntro": "Weekly care or a one-time transformation: one team, one call, and a yard that looks sculpted, not just mowed.",
+   "howTitle": "A better lawn in three easy steps.",
+   "contactTitle": "Ready for a better lawn?",
+   "alsoTitle": "We also do:",
+   "steps": [
+    {
+     "name": "Ask for a free quote",
+     "text": "Tell us about your yard by phone or with the form below."
+    },
+    {
+     "name": "We walk the property",
+     "text": "We look at your lawn, beds and trees and recommend a plan that fits."
+    },
+    {
+     "name": "Enjoy the view",
+     "text": "We get to work on your schedule. You get your weekends back."
+    }
+   ]
+  },
+  {
+   "from": "merion-landscape-services",
+   "headline": "A lawn the whole street<br><em>notices.</em>",
+   "servicesTitle": "Everything your yard needs, in one call.",
+   "servicesIntro": "Regular care or a one-time transformation, done by one team.",
+   "howTitle": "A better lawn in three easy steps.",
+   "contactTitle": "Ready for a better lawn?",
+   "alsoTitle": "We also do:",
+   "steps": [
+    {
+     "name": "Ask for a quote",
+     "text": "Tell us about your yard by phone or with the form below."
+    },
+    {
+     "name": "We take a look",
+     "text": "We look at your lawn and beds and suggest a plan that fits."
+    },
+    {
+     "name": "Enjoy the view",
+     "text": "We get to work on your schedule. You get your weekends back."
+    }
+   ]
+  },
+  {
+   "from": "zazu-landscaping",
+   "headline": "Your yard, handled.<br><em>Every single visit.</em>",
+   "servicesTitle": "Everything your yard needs, from one team.",
+   "servicesIntro": "Regular care or a one-time reset. Final pricing is always confirmed after a site visit.",
+   "howTitle": "Yard freedom in three steps.",
+   "contactTitle": "Ready for a yard you don't have to manage?",
+   "alsoTitle": "We also do:",
+   "sectionIntro": "Reliable yard care is hard to find. Here is what clients say sets us apart.",
+   "steps": [
+    {
+     "name": "Ask for a free estimate",
+     "text": "Call, text or use the form with your property and the service you need."
+    },
+    {
+     "name": "We walk the site",
+     "text": "We look at your yard and confirm pricing after a site visit."
+    },
+    {
+     "name": "We handle it",
+     "text": "Your yard stays clean, healthy and cared for. You get your time back."
+    }
+   ]
+  },
+  {
+   "from": "ziggis-landscaping",
+   "headline": "Landscapes built right.<br><em>Kept that way.</em>",
+   "servicesTitle": "Everything your yard needs, from one team.",
+   "servicesIntro": "A full makeover or steady upkeep, for homes and businesses.",
+   "whyTitle": "Why Ziggi's",
+   "howTitle": "From first call to finished yard.",
+   "contactTitle": "Ready to transform your outdoors?",
+   "alsoTitle": "We also do:",
+   "sectionTitle": "Why {town} neighbors call Ziggi's",
+   "sectionIntro": "Design, installation, irrigation, lighting and upkeep from one company.",
+   "steps": [
+    {
+     "name": "Tell us your plan",
+     "text": "Call or send the form with your project, timeline and budget."
+    },
+    {
+     "name": "Get a plan",
+     "text": "We assess the property and share a design for your approval."
+    },
+    {
+     "name": "We build it",
+     "text": "Our crew installs it and walks it through with you at the end."
+    }
+   ]
+  }
+ ]
+}

@@ -91,6 +91,11 @@ async function main() {
 
     // 3. Words: the kit's, then sharper ones from Claude when available.
     let copy = tradeCopy(lead.trade, (kit === 'detailing' ? detailingCopy : lawnCopy)({ name: lead.name, city: lead.city, text }), lead.city);
+    // Proven general wording from reviewed previews of the same trade (wording/), over the defaults:
+    // the AI improves on it, and --no-ai uses it as is. Facts still come only from their own site.
+    const { library, fromLibrary } = await import('./wording.mjs');
+    const lib = await library(lead.trade);
+    if (lib.length) copy = fromLibrary(copy, lib, { name: lead.name, town: lead.city.replace(/,\s*[A-Z]{2}$/, ''), text });
     // A preview already polished by hand keeps its wording (--fresh starts over); only the photos,
     // logo and rating are refreshed.
     const existingFile = path.join(out, 'site.json');
@@ -168,7 +173,7 @@ async function main() {
     const email = lead.email || site.emails[0] || '';
     const data = {
       ...(existing ?? {}),
-      kit, name: existing?.name ?? lead.name, legalName: copy.legalName ?? lead.name, preview: true, placeId: lead.placeId,
+      kit, trade: lead.trade, name: existing?.name ?? lead.name, legalName: copy.legalName ?? lead.name, preview: true, placeId: lead.placeId,
       title: copy.title ?? `${lead.name} | ${copy.kicker.split(' · ')[0]} in ${lead.city}`,
       description: copy.description ?? `${copy.intro} ${lead.rating ? `${lead.rating.toFixed(1)} on Google from ${lead.reviews} reviews.` : ''}`.trim(),
       ...(kit === 'detailing' ? { brand: '#1670ff', brandHi: '#52c6ff', accent: '#8fd0ff' } : {}),
@@ -181,6 +186,7 @@ async function main() {
       ...copy, gallery, areas: copy.areas ?? [lead.city.replace(/,\s*[A-Z]{2}$/, '')],
       pitch: gallery.length ? 'site' : 'photos', // photos: no gallery, the email asks for job photos
     };
+    if (kit === 'holiday' && !data.heroImage) checks.push('Hero is the holiday kit\'s licensed stock photo of lit trees (credited on the page), not their work: say so if they ask, and swap in their own photo once they send one.');
     await writeFile(path.join(out, 'site.json'), JSON.stringify(data, null, 1));
     const html = renderSite(data);
     await writeFile(path.join(out, 'index.html'), html);
