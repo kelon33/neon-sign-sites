@@ -3449,5 +3449,70 @@
    "does not load"
   ],
   "email": ""
+ },
+ {
+  "placeId": "ChIJWRlWaNsxW4YRvP5pjplm8cI",
+  "name": "Boat Beautiful Mobile Boat Detailing",
+  "website": "https://boatbeautiful.com/?utm_source=google&utm_medium=organic&utm_campaign=gbp",
+  "address": "2009 Ranch Rd 620 N Ste 410, Austin, TX 78734",
+  "phone": "(512) 963-3290",
+  "rating": 4.8,
+  "reviews": 187,
+  "mapsUrl": "https://maps.google.com/?cid=14047121522450628284&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+  "trade": "Boat detailing",
+  "city": "Waco, TX",
+  "kind": "not checked"
+ },
+ {
+  "placeId": "ChIJ8R1SE5alToYRyuZtFu2y_XY",
+  "name": "Dent Guy Inc. Paintless Dent Repair",
+  "website": "https://www.dentguypdr.net/",
+  "address": "5330 Rochell Rd, Rockwall, TX 75032",
+  "phone": "(214) 537-9011",
+  "rating": 5,
+  "reviews": 113,
+  "mapsUrl": "https://maps.google.com/?cid=8574205996936586954&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+  "trade": "Paintless dent repair",
+  "city": "Waco, TX",
+  "kind": "not checked"
+ },
+ {
+  "placeId": "ChIJ7SUBpbmDT4YRsfOQYafdA3Q",
+  "name": "JJ’s TINT",
+  "website": "https://jjstintwaco.com/",
+  "address": "2601 W Waco Dr, Waco, TX 76707",
+  "phone": "(254) 424-1997",
+  "rating": 4.9,
+  "reviews": 278,
+  "mapsUrl": "https://maps.google.com/?cid=8359769044295938993&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+  "trade": "Windshield chip repair",
+  "city": "Waco, TX",
+  "kind": "not checked"
+ },
+ {
+  "placeId": "ChIJ62eTanGHT4YRkO3C31h3bjk",
+  "name": "Mobile fix",
+  "website": "https://mobilefixllc.com/richland-mall/",
+  "address": "6001 W Waco Dr, Waco, TX 76710",
+  "phone": "(254) 400-1474",
+  "rating": 5,
+  "reviews": 148,
+  "mapsUrl": "https://maps.google.com/?cid=4138376331194985872&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+  "trade": "Windshield chip repair",
+  "city": "Waco, TX",
+  "kind": "not checked"
+ },
+ {
+  "placeId": "ChIJlV-sjAODT4YRP8HE5lIxZzw",
+  "name": "Cen-Tex Mobile Automotive",
+  "website": "https://www.centexautomotive.com/",
+  "address": "5900 Franklin Av Service Rd Ste 23, Waco, TX 76710",
+  "phone": "(254) 420-6478",
+  "rating": 3.4,
+  "reviews": 90,
+  "mapsUrl": "https://maps.google.com/?cid=4352501797005607231&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+  "trade": "Windshield chip repair",
+  "city": "Waco, TX",
+  "kind": "not checked"
  }
 ]

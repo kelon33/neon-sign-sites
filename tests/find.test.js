@@ -1,7 +1,7 @@
 import test from 'node:test';
 import { kitFor } from '../pipeline/copy.mjs';
 import assert from 'node:assert/strict';
-import { FIELD_MASK, skipReason, worthNextPage, pickEmail, weaknesses, toLead, cost, networkLooksBlocked, multiLocation, onePerWebsite, improvements, siteKind, TRADES } from '../pipeline/find.mjs';
+import { FIELD_MASK, skipReason, noSiteReason, worthNextPage, pickEmail, weaknesses, toLead, cost, networkLooksBlocked, multiLocation, onePerWebsite, improvements, siteKind, TRADES } from '../pipeline/find.mjs';
 
 const place = (o = {}) => ({ id: 'p1', displayName: { text: 'Joe’s Lawn Care' }, websiteUri: 'https://joeslawn.com/', userRatingCount: 40, businessStatus: 'OPERATIONAL', ...o });
 
@@ -122,4 +122,16 @@ test('lead files are sorted weak, decent, strong, and the readable copy has one 
   assert.ok(at('## Weak sites') > 0 && at('## Weak sites') < at('## Decent sites') && at('## Decent sites') < at('## Strong sites'));
   assert.match(md, /\| Pool cleaning \| 2 \| 1 \| 1 \| 1 \| 1 \| 6 \|/);
   assert.match(md, /\*\*w1\*\*.*slow/);
+});
+
+test('noSiteReason keeps businesses with no site of their own, enough reviews, not chains', () => {
+  const p = (o = {}) => ({ id: 'x', displayName: { text: "Joe's Stump Grinding" }, userRatingCount: 12, businessStatus: 'OPERATIONAL', ...o });
+  assert.equal(noSiteReason(p()), 'no website');
+  assert.equal(noSiteReason(p({ websiteUri: 'https://www.facebook.com/joestumps' })), 'social or booking page only');
+  assert.equal(noSiteReason(p({ websiteUri: 'https://joestumps.com/' })), null);
+  assert.equal(noSiteReason(p({ userRatingCount: 3 })), null);
+  assert.equal(noSiteReason(p({ userRatingCount: 3 }), { minReviews: 3 }), 'no website');
+  assert.equal(noSiteReason(p({ businessStatus: 'CLOSED_PERMANENTLY' })), null);
+  assert.equal(noSiteReason(p({ displayName: { text: 'Lawn Doctor of Waco' } })), null);
+  assert.equal(noSiteReason(p(), { known: new Set(['x']) }), null);
 });

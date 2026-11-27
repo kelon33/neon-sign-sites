@@ -2,7 +2,7 @@
  "about": "Google Places requests, counted by pipeline/find.mjs. Commit this file: it is the only record across sessions.",
  "months": {
   "2026-11": {
-   "requests": 25
+   "requests": 38
   }
  },
  "queries": {
