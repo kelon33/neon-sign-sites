@@ -1,0 +1,134 @@
+{
+  "kit": "holiday",
+  "trade": "Christmas light installation",
+  "name": "Lighting by GGA",
+  "legalName": "Lighting by GGA",
+  "preview": true,
+  "placeId": "ChIJ-yFp7qSGT4YRl46ZHQgSS1Y",
+  "title": "Lighting by GGA | Custom lighting in Waco, TX",
+  "description": "Christmas, permanent, landscape and event lighting for homes and businesses across Central Texas and Dallas-Fort Worth. We handle the design and the install, start to finish. 4.8 on Google from 50 reviews.",
+  "logo": "logo.png",
+  "logoChip": false,
+  "wordmark": {
+    "top": "Lighting by GGA"
+  },
+  "phone": "(254) 666-6242",
+  "email": "info@lightingbygga.com",
+  "heroImage": "img/photo-5.jpg",
+  "heroAlt": "Stone home with roofline lights and lit trees at dusk",
+  "heroPosition": "60% 60%",
+  "heroPositionPhone": "60% 50%",
+  "rating": {
+    "score": "4.8",
+    "count": 50,
+    "url": "https://maps.google.com/?cid=6218083536580742807"
+  },
+  "kicker": "Custom lighting · Waco and Central Texas",
+  "headline": "Custom lighting, designed and installed.<br><em>Results you'll love for years.</em>",
+  "intro": "Christmas, permanent, landscape and event lighting for homes and businesses across Central Texas and Dallas-Fort Worth. We handle the design and the install, start to finish.",
+  "badges": [],
+  "highlights": null,
+  "servicesTitle": "Lighting for every season.",
+  "servicesIntro": "Short-term or long-term, we design it and install it for you.",
+  "services": [
+    {
+      "name": "Christmas Lighting",
+      "text": "A professional holiday service. Skip the ladders and the tangled lights."
+    },
+    {
+      "name": "Permanent Lighting",
+      "text": "Track lighting with programmable colors, patterns, schedules and animations, built for year-round use."
+    },
+    {
+      "name": "Landscape Lighting",
+      "text": "Lights that brighten pathways, gardens, trees and outdoor living spaces, and add curb appeal."
+    },
+    {
+      "name": "Event Lighting",
+      "text": "Event and wedding lighting that makes a memorable guest experience, indoors or outdoors."
+    },
+    {
+      "name": "Commercial Lighting",
+      "text": "Professional lighting for businesses and venues of every size."
+    }
+  ],
+  "also": [
+    {
+      "name": "Weddings"
+    },
+    {
+      "name": "Homes"
+    },
+    {
+      "name": "Businesses"
+    },
+    {
+      "name": "Venues"
+    }
+  ],
+  "alsoTitle": "We also do:",
+  "promise": null,
+  "why": [
+    {
+      "name": "25 years of experience",
+      "text": "A local Central Texas company with over 25 years in lighting."
+    },
+    {
+      "name": "Trained and insured",
+      "text": "Our installers are fully insured and highly trained, so you skip the roof, the ladder and the electrical work."
+    },
+    {
+      "name": "Behind Wild Lights",
+      "text": "We handle the holiday lighting and decorations for Wild Lights at Cameron Park Zoo each year."
+    }
+  ],
+  "whyTitle": "Why Lighting by GGA",
+  "howTitle": "Lit up in three steps.",
+  "steps": [
+    {
+      "name": "Get a free estimate",
+      "text": "Call or fill out the quote form and tell us what lighting you want."
+    },
+    {
+      "name": "We design it",
+      "text": "We plan a look that fits your home or business."
+    },
+    {
+      "name": "We install it",
+      "text": "Our team handles every step. You enjoy the result."
+    }
+  ],
+  "contactTitle": "Ready for a free estimate?",
+  "footerLine": "Custom lighting in Waco and Central Texas",
+  "reviews": [],
+  "hours": [],
+  "galleryTitle": "Homes we light up.",
+  "notePlaceholder": "Roofline length, trees, a date you want them up…",
+  "gallery": [
+    {
+      "src": "img/photo-7.jpg",
+      "alt": "White farmhouse with lights along the roofline at night",
+      "size": "big"
+    },
+    {
+      "src": "img/photo-8.jpg",
+      "alt": "Modern home with lights along the roof edges at night"
+    },
+    {
+      "src": "img/photo-3.jpg",
+      "alt": "Holiday lights and a lit tree at a Waco venue"
+    },
+    {
+      "src": "img/photo-2.jpg",
+      "alt": "Installer working on a roofline"
+    },
+    {
+      "src": "img/photo-1.jpg",
+      "alt": "Craftsman house outlined in green lights at dusk"
+    }
+  ],
+  "areas": [
+    "Waco"
+  ],
+  "pitch": "site"
+}
