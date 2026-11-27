@@ -1,0 +1,4 @@
+- Claude's notes: Photos 1 and 3 have a logo overlay and look like stock images, so they were left out. Photos 2, 4 and 5 look like stock interiors; confirm they are Ray's work or swap them. Only 3 review snippets on site, 2 truncated, so only one is used in full. Site says licensed and insured and free estimates; draft badges kept out of the schema. Review dates on site look wrong (2026).
+- Only 4 gallery photos.
+- No postal address yet (config.json sender.address): required by law before sending.
+- Review (session): Gallery removed: photo 5 is a 3D render and photos 2 and 4 the same kitchen, so only 3 real job photos: photo pitch. Hero is their own house photo with ladders. Name is Google's long one ('Ray's Painting & Pressure Washing Services'); consider 'Ray's Painting' (their logo).

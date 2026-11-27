@@ -1,0 +1,170 @@
+{
+ "kit": "detailing",
+ "name": "Mavinate",
+ "legalName": "Mavinate",
+ "preview": true,
+ "placeId": "ChIJB-dM8cN454gRb4z1XWAjLTY",
+ "title": "Mavinate | Boat detailing in Jacksonville, FL",
+ "description": "Mavinate cleans, restores and protects boats in Jacksonville. We come to you, and we treat your boat like our own. 5.0 on Google from 24 reviews.",
+ "brand": "#1670ff",
+ "brandHi": "#52c6ff",
+ "accent": "#8fd0ff",
+ "logo": "logo.png",
+ "logoChip": true,
+ "wordmark": {
+  "top": "Mavinate",
+  "bottom": "Boat Care"
+ },
+ "phone": "(386) 566-6483",
+ "email": "ben@mavinated.com",
+ "heroImage": null,
+ "heroAlt": "",
+ "heroPosition": "60% 60%",
+ "heroPositionPhone": "60% 50%",
+ "rating": {
+  "score": "5.0",
+  "count": 24,
+  "url": "https://maps.google.com/?cid=3903815348800293999"
+ },
+ "kicker": "Boat detailing · Jacksonville",
+ "headline": "Back on the water<br><em>looking new.</em>",
+ "intro": "Mavinate cleans, restores and protects boats in Jacksonville. We come to you, and we treat your boat like our own.",
+ "mobile": {
+  "title": "We bring the detail to you.",
+  "intro": "Mavinate is based in Jacksonville and works on a mobile basis.",
+  "points": [
+   {
+    "name": "Mobile service",
+    "text": "We provide our services on a mobile basis, so your boat does not have to go anywhere."
+   },
+   {
+    "name": "Clear communication",
+    "text": "Excellent communication from the first call to the finished job."
+   },
+   {
+    "name": "Careful work",
+    "text": "Extreme attention to detail, no matter which service you pick."
+   },
+   {
+    "name": "Safer products",
+    "text": "Top quality products that are safest for the environment."
+   }
+  ]
+ },
+ "servicesTitle": "Bow to stern.",
+ "servicesIntro": "Upkeep for like-new boats. Restoration for weathered ones. Protection to keep them that way.",
+ "services": [
+  {
+   "name": "Simple washdowns",
+   "text": "A clean boat, done right, whenever it needs a refresh."
+  },
+  {
+   "name": "Monthly maintenance detailing",
+   "text": "Regular detailing that keeps a like-new boat looking that way."
+  },
+  {
+   "name": "Boat waxing and polymer sealants",
+   "text": "Traditional wax or a durable polymer sealant for shine and protection."
+  },
+  {
+   "name": "Intensive buffing and polishing",
+   "text": "Weathered, dull surfaces buffed and polished back to gloss."
+  },
+  {
+   "name": "Mold, mildew, rust and tannin stain removal",
+   "text": "Stains lifted from surfaces that have taken a beating."
+  },
+  {
+   "name": "Multi-year gel coat protection",
+   "text": "Long-term protection for your gel coat, plus anti-corrosion coating for metal."
+  }
+ ],
+ "also": [
+  {
+   "name": "Metal polishing"
+  },
+  {
+   "name": "Anti-corrosion metal coating"
+  },
+  {
+   "name": "Gel coat restoration coating"
+  }
+ ],
+ "alsoTitle": "We also detail",
+ "why": [
+  {
+   "name": "Care like it's our own",
+   "text": "We treat your boat the way we would treat ours."
+  },
+  {
+   "name": "Extreme attention to detail",
+   "text": "The same focus on every service you select."
+  },
+  {
+   "name": "Surface expertise",
+   "text": "Our founder came from commercial and industrial surface restoration in 2007, with deep knowledge of chemistry, polymers and abrasives."
+  }
+ ],
+ "whyTitle": "What we give you that others don't.",
+ "howTitle": "Ready for the water in three steps.",
+ "steps": [
+  {
+   "name": "Tell us about your boat",
+   "text": "Call or send the form with what it needs."
+  },
+  {
+   "name": "We come to you",
+   "text": "Mobile service, based in Jacksonville."
+  },
+  {
+   "name": "Back on the water",
+   "text": "Clean, polished and protected."
+  }
+ ],
+ "contactTitle": "Book your boat in.",
+ "footerLine": "Boat detailing in Jacksonville, FL",
+ "reviews": [
+  {
+   "text": "That gloss boss!! This guy is amazing!! We heard of this company through a friend of ours and it was the best thing we’ve done to our boat thus far! Our boat is so shiny and looks BRAND new!!!!",
+   "name": "Ashley"
+  }
+ ],
+ "hours": [],
+ "galleryTitle": "Fresh off the water.",
+ "vehicleTypes": [
+  "Boat",
+  "Pontoon",
+  "Yacht",
+  "Jet ski",
+  "Other"
+ ],
+ "modelPlaceholder": "e.g. Sea Ray 240, 24 ft",
+ "notePlaceholder": "Length, where it is docked or stored, what it needs…",
+ "gallery": [
+  {
+   "src": "img/photo-4.jpg",
+   "alt": "Pontoon tube before and after polishing",
+   "size": "big"
+  },
+  {
+   "src": "img/photo-3.jpg",
+   "alt": "Boat bow on a trailer before and after detailing"
+  },
+  {
+   "src": "img/photo-1.jpg",
+   "alt": "White yacht seating before and after detailing"
+  },
+  {
+   "src": "img/photo-6.jpg",
+   "alt": "White gelcoat before and after polishing"
+  },
+  {
+   "src": "img/photo-7.jpg",
+   "alt": "Hull side before and after, reflecting trees"
+  }
+ ],
+ "areas": [
+  "Jacksonville"
+ ],
+ "pitch": "site"
+}

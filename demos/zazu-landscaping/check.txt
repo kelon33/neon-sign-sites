@@ -1,0 +1,4 @@
+- Claude's notes: Phone differs: site shows 737-339-8988, brief gave (737) 257-5655; confirm. Site says 70+ reviews in one place and 79 in another. Photo 4 looks like stock and was skipped. Prices not given on cards; pricing guide ranges left out. Maps, mascot and gradient skipped.
+- Only 5 gallery photos.
+- No postal address yet (config.json sender.address): required by law before sending.
+- Review (session): Phone: Google lists (737) 257-5655 (used), their site shows (737) 339-8988. Ask which before sending.

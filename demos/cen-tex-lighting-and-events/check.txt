@@ -1,0 +1,7 @@
+- Found by a search in Waco, TX, but their address is in Hewitt, TX: the site uses that. Check their service area.
+- Logo is dark on a transparent background: shown on a white chip. Check it reads well.
+- Photo pitch: only 0 usable photos by Claude's choice, so no gallery; the email asks them for photos of their work.
+- Claude's notes: Only 2 photos, and they are near-duplicates, so only one is used. Site gives no prices or hours. Reviews on the site are cut off by the site itself. Services are inferred from nav (Christmas, Tents) and text; confirm the list. Fixed a typo risk: check the first service's price field.
+- Only 0 gallery photos.
+- No postal address yet (config.json sender.address): required by law before sending.
+- Review (session): Photo pitch, rebuilt. Hero is their own event photo. Reviews are cut off on their own site.

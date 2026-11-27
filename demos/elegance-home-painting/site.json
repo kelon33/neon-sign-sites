@@ -1,0 +1,122 @@
+{
+ "kit": "painting",
+ "name": "Elegance Home Painting",
+ "legalName": "Elegance Home Painting",
+ "preview": true,
+ "placeId": "ChIJOWwPJHy15YgRPe70xZFXzgQ",
+ "title": "Elegance Home Painting | House painting in Ponte Vedra Beach, FL",
+ "description": "Interior and exterior house painting for homes in Ponte Vedra, Nocatee and the Greater Jacksonville area. Family owned and operated since 1997. 4.9 on Google from 219 reviews.",
+ "logo": "logo.png",
+ "logoChip": true,
+ "wordmark": {
+  "top": "Elegance",
+  "bottom": "Home Painting"
+ },
+ "phone": "(904) 465-2995",
+ "email": "contact@elegancehomepainting.com",
+ "heroImage": "img/photo-2.jpg",
+ "heroAlt": "Freshly painted yellow stucco home with an arched entry and green lawn",
+ "heroPosition": "60% 60%",
+ "heroPositionPhone": "60% 50%",
+ "rating": {
+  "score": "4.9",
+  "count": 219,
+  "url": "https://maps.google.com/?cid=346310504957144637"
+ },
+ "kicker": "House painting · Ponte Vedra Beach",
+ "headline": "Fresh paint.<br><em>Clean lines.</em>",
+ "intro": "Interior and exterior house painting for homes in Ponte Vedra, Nocatee and the Greater Jacksonville area. Family owned and operated since 1997.",
+ "badges": [
+  "Family owned"
+ ],
+ "highlights": null,
+ "servicesTitle": "Inside and out.",
+ "servicesIntro": "One room or the whole house.",
+ "services": [
+  {
+   "name": "Interior painting",
+   "text": "Two coats of paint on every job, with paint and materials included.",
+   "price": "As low as $199 a room with coupon"
+  },
+  {
+   "name": "Pressure washing",
+   "text": "Surface cleaning that comes standard with every exterior paint job."
+  },
+  {
+   "name": "Garage floor painting",
+   "text": "A fresh painted finish for your garage floor."
+  },
+  {
+   "name": "Pool deck painting",
+   "text": "Painted pool decks, done by the same crew that paints your home."
+  }
+ ],
+ "also": [
+  {
+   "name": "Benjamin Moore paint"
+  },
+  {
+   "name": "Sherwin Williams paint"
+  }
+ ],
+ "alsoTitle": "We also do:",
+ "promise": null,
+ "why": [
+  {
+   "name": "Written guarantee",
+   "text": "Every completed service comes with a written guarantee."
+  },
+  {
+   "name": "Warranty",
+   "text": "Standard one year warranty on exterior work, with an optional five year warranty."
+  },
+  {
+   "name": "Proper prep",
+   "text": "Customers say no shortcuts were taken on surface preparation."
+  }
+ ],
+ "whyTitle": "Why homeowners call us.",
+ "howTitle": "A fresh coat in three steps.",
+ "steps": [
+  {
+   "name": "Ask for a quote",
+   "text": "Tell us about the job by phone or with the form below."
+  },
+  {
+   "name": "Pick your colors",
+   "text": "We look at the job and go over colors and timing with you."
+  },
+  {
+   "name": "Enjoy the new look",
+   "text": "We paint. You enjoy a fresh-looking home."
+  }
+ ],
+ "contactTitle": "Ready for a fresh coat?",
+ "footerLine": "House painting in Ponte Vedra Beach",
+ "reviews": [
+  {
+   "text": "The owner Mick Boneta achieved the level of quality I demanded of him. He did proper surface preparation and no short cuts were taken.",
+   "name": "Collin"
+  },
+  {
+   "text": "Elegance Home Painting completed our painting on time and under budget! Not to mention the results were fabulous.",
+   "name": "Perry and Angela Arnold"
+  },
+  {
+   "text": "Elegance Home Painting understood that they were guests in our home and our property. They treated our home and furnishings with respect and care...",
+   "name": "Diana Thomas"
+  },
+  {
+   "text": "The quality and craftsmanship of your work shows from every viewing angle.",
+   "name": "Carmen and Ralph"
+  }
+ ],
+ "hours": [],
+ "galleryTitle": "Homes we’ve painted.",
+ "notePlaceholder": "Inside or outside, how many rooms, a date you have in mind…",
+ "gallery": [],
+ "areas": [
+  "Ponte Vedra Beach"
+ ],
+ "pitch": "photos"
+}

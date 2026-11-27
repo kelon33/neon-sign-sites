@@ -31,7 +31,7 @@ export function renderDetailing(d) {
   const preview = d.preview ? previewTop(d, esc) : '';
   const previewClose = d.preview ? previewEnd(d, esc) : '';
   const rating = d.rating ? `<a class="rating" href="${esc(d.rating.url)}" target="_blank" rel="noopener">${stars}<b>${esc(d.rating.score)}</b><span>${esc(d.rating.count)} Google reviews</span></a>` : '';
-  const vehicleTypes = ['Car', 'SUV or truck', ...(d.also ?? []).map((a) => a.name)];
+  const vehicleTypes = d.vehicleTypes ?? ['Car', 'SUV or truck', ...(d.also ?? []).map((a) => a.name)];
   return `<!doctype html>
 <html lang="en">
 <head>
@@ -222,6 +222,37 @@ form.booking .btn { grid-column: 1 / -1; margin-top: 6px; }
   .hero h1 em { background-position: 0 0; }
   .hero > img { transform: none; }
 }
+
+/* RULE: the first screen reads as a whole page: headline, every hero button and the Google rating
+   visible without scrolling, on laptops, desktops and phones (npm run fold checks it). */
+:root:has(.preview-bar) { --bar: 36px; }
+@media (max-width: 600px) { .pv-for { display: none; } }
+.preview-bar { height: 36px; box-sizing: border-box; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+@media (min-width: 901px) {
+  .hero { min-height: calc(min(100vh, 860px) - var(--bar, 0px)); }
+}
+@media (min-width: 901px) and (max-height: 920px) {
+  .hero { padding-top: 116px; padding-bottom: 52px; }
+  .hero h1 { font-size: clamp(2.5rem, 8vh, 5.2rem); }
+  .hero .lead { margin-top: 16px; }
+  .hero .actions { margin-top: 24px; }
+  .badges { margin-top: 18px; }
+  .hero .rating { margin-top: 18px; }
+}
+@media (max-width: 900px) {
+  .hero { min-height: calc(100svh - var(--bar, 0px)); padding: 96px 0 26px; }
+  .hero h1 { font-size: clamp(1.9rem, min(10.2vw, 6svh), 3.3rem); }
+  .hero .eyebrow { margin-bottom: 10px; }
+  .hero .lead { font-size: 1rem; line-height: 1.5; margin-top: 12px; display: -webkit-box; -webkit-line-clamp: 4; -webkit-box-orient: vertical; overflow: hidden; }
+  .hero .actions { flex-wrap: nowrap; gap: 10px; margin-top: 18px; }
+  .hero .actions .btn { flex: 1 1 0; min-width: 0; justify-content: center; text-align: center; padding: 14px 10px; font-size: .88rem; white-space: nowrap; }
+  .badges { margin-top: 14px; gap: 6px 16px; font-size: .84rem; }
+  .hero .rating { margin-top: 16px; }
+}
+@media (max-width: 900px) and (max-height: 760px) {
+  .hero .lead { -webkit-line-clamp: 3; }
+  .badges { display: none; }
+}
 </style>
 </head>
 <body>
@@ -230,7 +261,7 @@ ${preview}
   <div class="wrap">
     <a class="logo" href="#">${d.logo ? `<img src="${esc(d.logo)}" alt=""${d.logoChip ? ' class="chip"' : ''}>` : ''}<span><b>${esc(d.wordmark?.top ?? d.name)}</b>${d.wordmark?.bottom ? `<small>${esc(d.wordmark.bottom)}</small>` : ''}</span></a>
     <nav aria-label="Main"><a href="#services">Services</a>${d.gallery?.length ? '<a href="#work">Our work</a>' : ''}${d.reviews?.length ? '<a href="#reviews">Reviews</a>' : ''}<a href="#book">Contact</a></nav>
-    <a class="btn" href="#book">Book a detail</a>
+    <a class="btn" href="#book">${esc(d.ctaLabel ?? 'Book a detail')}</a>
   </div>
 </header>
 
@@ -242,7 +273,7 @@ ${preview}
     <h1>${d.headline}</h1>
     <p class="lead">${esc(d.intro)}</p>
     <div class="actions">
-      <a class="btn" href="#book">Book a detail</a>
+      <a class="btn" href="#book">${esc(d.ctaLabel ?? 'Book a detail')}</a>
       <a class="btn ghost" href="${tel(d.phone)}">Call ${esc(d.phone)}</a>
     </div>
     ${rating}
@@ -325,11 +356,11 @@ ${d.why?.length ? `<section class="section" style="padding-top:30px">
       <label>Name <input name="name" autocomplete="name" required></label>
       <label>Phone <input name="phone" type="tel" autocomplete="tel" required></label>
       <label>Vehicle type <select name="vehicle">${vehicleTypes.map((v) => `<option>${esc(v)}</option>`).join('')}</select></label>
-      <label>Make and model <input name="model" placeholder="e.g. Toyota RAV4"></label>
+      <label>Make and model <input name="model" placeholder="${esc(d.modelPlaceholder ?? 'e.g. Toyota RAV4')}"></label>
       <label class="full">Service <select name="service">${d.services.map((s) => `<option>${esc(s.name)}</option>`).join('')}<option>Not sure yet</option></select></label>
       <label>Where should we come? <input name="address" autocomplete="street-address" placeholder="Address or neighborhood"></label>
       <label>Preferred day <input name="date" type="date"></label>
-      <label class="full">Anything we should know? <textarea name="note" placeholder="Pet hair, stains, oxidized paint…"></textarea></label>
+      <label class="full">Anything we should know? <textarea name="note" placeholder="${esc(d.notePlaceholder ?? 'Pet hair, stains, oxidized paint…')}"></textarea></label>
       <button class="btn" type="submit">Request my booking</button>
     </form>
   </div>
@@ -337,7 +368,7 @@ ${d.why?.length ? `<section class="section" style="padding-top:30px">
 </main>
 
 <footer class="footer"><div class="wrap"><span>© ${new Date().getFullYear()} ${esc(d.legalName ?? d.name)}</span><span>${esc(d.footerLine ?? '')}</span></div></footer>
-<div class="dock away"><a class="btn ghost" href="${tel(d.phone)}">Call</a><a class="btn" href="#book">Book a detail</a></div>
+<div class="dock away"><a class="btn ghost" href="${tel(d.phone)}">Call</a><a class="btn" href="#book">${esc(d.ctaLabel ?? 'Book a detail')}</a></div>
 <script>
   // Gallery: a tap opens the photo large.
   const box = document.querySelector('dialog.lightbox');

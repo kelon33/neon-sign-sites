@@ -1,0 +1,4 @@
+- Claude's notes: Site gives no service prices except a $150 hourly rate for commercial extras (left out). Photos 4 and 10 skipped (stock-looking, capitol). Photos 3, 5 and 9 look possibly stock or AI-made; check they show real work. Site reviews are repeated many times; six distinct ones used. 'Insured' and guarantee claims come from the site. Service areas not listed in copy.
+- Only 5 gallery photos.
+- No postal address yet (config.json sender.address): required by law before sending.
+- Review (session): Good. Real job photos (crew in Dewey Lawns shirt). Claims checked against their site (Eagle Scout's Honor guarantee, insured, founder and ALS donation). Pitch: decent site, no tap-to-call link.

@@ -1,0 +1,6 @@
+- Claude's notes: Phone differs: user gave (602) 428-6263, site shows (602) 755-8432. Site covers artificial turf only, not mowing; the draft's lawn services were dropped. Site also serves Las Vegas. Photos 3, 5 and 8 skipped (illustration, stock-looking, text overlay). Some photos look stock or AI-generated, so check. 20% first-clean offer not used.
+- Only 5 gallery photos.
+- No postal address yet (config.json sender.address): required by law before sending.
+- Review (session): Phone set to (602) 755-8432, the only number on their own site (Google lists (602) 428-6263, likely call tracking). Removed "Licensed & insured" (not on their site) and "You hear back in minutes". Replaced the kit's "We don't just mow" band (they clean artificial turf). Checked on their site: family-owned, 30+ years, 650+ CFM, warranty up to 100 days, from $140, free quote.
+- They mainly clean artificial turf, a niche within lawn care. The gallery photos are a mix of real jobs and lifestyle shots (dogs); check them.
+- Review (2026-11-27): reviews removed. They were Google review texts shown on their site through a Trustindex widget (CLAUDE.md: never copy Google review texts). The page shows the Google rating only; the email says 'photos and services'.

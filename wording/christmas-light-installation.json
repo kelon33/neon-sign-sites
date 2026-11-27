@@ -1,0 +1,56 @@
+{
+ "trade": "Christmas light installation",
+ "about": "General wording from reviewed previews (npm run wording). {name} and {town} are filled in per business.",
+ "entries": [
+  {
+   "from": "cen-tex-lighting-and-events",
+   "servicesTitle": "Lighting and rentals, done for you.",
+   "servicesIntro": "From holiday lights to milestone celebrations.",
+   "whyTitle": "Why Cen-Tex",
+   "howTitle": "Lit up in three steps.",
+   "contactTitle": "Ready for a quote?",
+   "galleryTitle": "Homes we light up.",
+   "alsoTitle": "We also do:",
+   "steps": [
+    {
+     "name": "Ask for a quote",
+     "text": "Call or use the quote form and tell us what you have in mind."
+    },
+    {
+     "name": "Plan the details",
+     "text": "We plan the lighting and rentals with you."
+    },
+    {
+     "name": "Enjoy the moment",
+     "text": "We handle the setup. You enjoy the celebration."
+    }
+   ]
+  },
+  {
+   "from": "happy-lighting-tx",
+   "headline": "We hang the lights.<br><em>You enjoy the holidays.</em>",
+   "servicesTitle": "Lights, done for you.",
+   "servicesIntro": "Design, installation, maintenance and removal, all in one service.",
+   "howTitle": "Lit up in three steps.",
+   "contactTitle": "Ready to light it up?",
+   "galleryTitle": "Homes we light up.",
+   "alsoTitle": "We also do:",
+   "sectionTitle": "Why {town} neighbors call us",
+   "sectionIntro": "One crew from first strand to last box in storage.",
+   "steps": [
+    {
+     "name": "Get a free quote",
+     "text": "Call or send the form. Tell us about your home or business."
+    },
+    {
+     "name": "Pick your design",
+     "text": "Choose warm white or color, and where the lights go."
+    },
+    {
+     "name": "We hang them",
+     "text": "We install, maintain and take them down in January."
+    }
+   ]
+  }
+ ]
+}

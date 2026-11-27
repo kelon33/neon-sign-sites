@@ -1,0 +1,3 @@
+- Claude's notes: Site text is cut off in places. Reviews copied from the site. Phone differs: given (512) 225-4709, site shows +15124886278. Site says land clearing, but the draft's mowing and irrigation services are not on the site, so they were removed. Photo 9 is a logo, 12 is a nursery, 11 and 13 are unclear. Hours are Mon-Fri 9-5.
+- No postal address yet (config.json sender.address): required by law before sending.
+- Review (session): Good. Phone: Google lists (512) 225-4709 (used), their site shows (512) 488-6278: ask which. Veteran owned, family owned, insured are on their site. Name is lower-case on Google ('Austin's lawn enforcement'): consider 'Austin's Lawn Enforcement'.

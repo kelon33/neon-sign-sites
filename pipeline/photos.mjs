@@ -53,14 +53,14 @@ async function shrinkInPage({ dataUrl, max, logo }) {
   img.src = dataUrl;
   await img.decode();
   let { naturalWidth: w, naturalHeight: h } = img;
-  const canvas = document.createElement('canvas');
+  const canvas = document.createElementNS('http://www.w3.org/1999/xhtml', 'canvas');
   const ctx = canvas.getContext('2d', { willReadFrequently: true });
   canvas.width = w; canvas.height = h;
   ctx.drawImage(img, 0, 0);
   let sx = 0, sy = 0, sw = w, sh = h, transparent = false, dark = false, bright = 0;
   if (!logo) {
     // Average brightness of a small copy: dark interior shots make a poor hero.
-    const t = document.createElement('canvas'); t.width = 32; t.height = 32;
+    const t = document.createElementNS('http://www.w3.org/1999/xhtml', 'canvas'); t.width = 32; t.height = 32;
     const tc = t.getContext('2d'); tc.drawImage(img, 0, 0, 32, 32);
     const px = tc.getImageData(0, 0, 32, 32).data;
     for (let i = 0; i < px.length; i += 4) bright += 0.2126 * px[i] + 0.7152 * px[i + 1] + 0.0722 * px[i + 2];
@@ -79,7 +79,7 @@ async function shrinkInPage({ dataUrl, max, logo }) {
     dark = n > 0 && lum / n < 90;
   }
   const scale = Math.min(1, max / Math.max(sw, sh));
-  const out = document.createElement('canvas');
+  const out = document.createElementNS('http://www.w3.org/1999/xhtml', 'canvas');
   out.width = Math.round(sw * scale); out.height = Math.round(sh * scale);
   const octx = out.getContext('2d');
   octx.imageSmoothingQuality = 'high';

@@ -37,9 +37,105 @@ export const LAWN_SERVICES = [
 ];
 
 export function kitFor(trade) {
-  if (/detail|car wash|auto spa/i.test(trade ?? '')) return 'detailing';
+  if (/detail|car wash|auto spa|dent repair/i.test(trade ?? '')) return 'detailing';
+  if (/christmas light|holiday light/i.test(trade ?? '')) return 'holiday';
   if (/lawn|landscap|yard|mow/i.test(trade ?? '')) return 'lawn';
+  if (/house paint|painter|painting/i.test(trade ?? '')) return 'painting';
   return null;
+}
+
+// Trades that borrow a kit: their own default wording, so a dent-repair preview never says "pet hair"
+// and a Christmas-light preview never says "We don't just mow". Defaults only: the AI rewrites most of
+// it from their site, and these make no claims.
+const TRADE_WORDS = [
+  [/dent repair/i, (town) => ({
+    kicker: `Paintless dent repair · ${town}`,
+    headline: 'Dents out.<br><em>Paint untouched.</em>',
+    intro: `Paintless dent repair in ${town}: door dings, creases and hail damage pushed out from behind, so the factory paint stays.`,
+    servicesTitle: 'Every kind of dent.', servicesIntro: 'From a single door ding to a hail-covered roof.',
+    services: [
+      { name: 'Door dings', text: 'Small parking-lot dents pushed out without paint or filler.' },
+      { name: 'Hail damage', text: 'Roofs, hoods and trunks restored after a storm.' },
+      { name: 'Creases and larger dents', text: 'Worked out from behind the panel where the metal allows.' },
+    ],
+    alsoTitle: 'We also fix', galleryTitle: 'Dents gone, paint untouched.',
+    howTitle: 'Dent-free in three steps.',
+    steps: [
+      { name: 'Send a photo', text: 'Call, text or use the form with a photo of the dent.' },
+      { name: 'Get a price', text: 'We look at the damage and tell you what it takes.' },
+      { name: 'Drive it smooth', text: 'We work the dent out and hand the car back.' },
+    ],
+    contactTitle: 'Got a dent?', footerLine: `Paintless dent repair in ${town}`,
+    notePlaceholder: 'Where the dent is, how big, hail or a door ding…', ctaLabel: 'Get an estimate',
+  })],
+  [/boat detail|marine detail/i, (town) => ({
+    kicker: `Boat detailing · ${town}`,
+    headline: 'Back on the water<br><em>looking new.</em>',
+    intro: `Boat detailing in ${town}: hulls, decks and interiors cleaned, polished and protected.`,
+    servicesTitle: 'Bow to stern.', servicesIntro: 'From a wash and wax to bringing back faded gelcoat.',
+    services: [
+      { name: 'Wash and wax', text: 'Hull and deck washed, then waxed for shine and protection.' },
+      { name: 'Oxidation removal', text: 'Chalky, faded gelcoat compounded and polished back.' },
+      { name: 'Interior and upholstery', text: 'Seats, carpet and vinyl cleaned and treated.' },
+    ],
+    alsoTitle: 'We also detail', galleryTitle: 'Fresh off the water.',
+    howTitle: 'Ready for the water in three steps.',
+    steps: [
+      { name: 'Tell us about your boat', text: 'Call, text or use the form with its size and where it is.' },
+      { name: 'We come to it', text: 'At the dock, the ramp or your driveway.' },
+      { name: 'Back on the water', text: 'Clean, polished and protected.' },
+    ],
+    contactTitle: 'Book your boat in.', footerLine: `Boat detailing in ${town}`,
+    vehicleTypes: ['Boat', 'Pontoon', 'Yacht', 'Jet ski', 'Other'], modelPlaceholder: 'e.g. Sea Ray 240, 24 ft',
+    notePlaceholder: 'Length, where it is docked or stored, what it needs…',
+  })],
+  [/house paint|painter|painting/i, (town) => ({
+    kicker: `House painting · ${town}`,
+    headline: 'Fresh paint.<br><em>Clean lines.</em>',
+    intro: `Interior and exterior house painting in ${town}: walls, trim, cabinets and siding.`,
+    servicesTitle: 'Inside and out.', servicesIntro: 'One room or the whole house.',
+    services: [
+      { name: 'Interior painting', text: 'Walls, ceilings and trim in the colors you choose.' },
+      { name: 'Exterior painting', text: 'Siding, trim and doors, prepped and painted.' },
+      { name: 'Cabinets and trim', text: 'Kitchen cabinets, doors and woodwork refreshed.' },
+    ],
+    promise: null, galleryTitle: 'Homes we\u2019ve painted.',
+    howTitle: 'A fresh coat in three steps.',
+    steps: [
+      { name: 'Ask for a quote', text: 'Tell us about the job by phone or with the form below.' },
+      { name: 'Pick your colors', text: 'We look at the job and go over colors and timing with you.' },
+      { name: 'Enjoy the new look', text: 'We paint. You enjoy a fresh-looking home.' },
+    ],
+    contactTitle: 'Ready for a fresh coat?', footerLine: `House painting in ${town}`,
+    notePlaceholder: 'Inside or outside, how many rooms, a date you have in mind…',
+  })],
+  [/christmas light|holiday light/i, (town) => ({
+    kicker: `Christmas light installation · ${town}`,
+    headline: 'Your house,<br><em>lit up right.</em>',
+    intro: `Christmas and holiday lights in ${town}, hung straight and safely, so you don't have to climb a ladder.`,
+    badges: [], servicesTitle: 'Lights, done for you.', servicesIntro: 'Rooflines, trees and everything in between.',
+    services: [
+      { name: 'Roofline lighting', text: 'Clean, straight lines along the roof and gutters.' },
+      { name: 'Trees and bushes', text: 'Trunks, branches and shrubs wrapped in light.' },
+      { name: 'Custom designs', text: 'A look planned around your house.' },
+    ],
+    promise: null, galleryTitle: 'Homes we light up.',
+    howTitle: 'Lit up in three steps.',
+    steps: [
+      { name: 'Ask for a quote', text: 'Tell us about your house by phone or with the form below.' },
+      { name: 'Pick your design', text: 'Choose the lights and where they go.' },
+      { name: 'Flip the switch', text: 'We hang them. You enjoy the season.' },
+    ],
+    contactTitle: 'Ready to light it up?', footerLine: `Christmas light installation in ${town}`,
+    notePlaceholder: 'Roofline length, trees, a date you want them up…',
+  })],
+];
+
+/** The kit wording, with a borrowing trade's own defaults on top. */
+export function tradeCopy(trade, copy, city) {
+  const town = city?.replace(/,\s*[A-Z]{2}$/, '') ?? '';
+  const own = TRADE_WORDS.find(([re]) => re.test(trade ?? ''));
+  return own ? { ...copy, ...own[1](town) } : copy;
 }
 
 /** Ready-made detailing wording, filled with what the site says it offers. */
@@ -74,7 +170,7 @@ export function detailingCopy({ name, city, text }) {
     alsoTitle: 'Not just cars:',
     why: [],
     whyTitle: '',
-    howTitle: 'Booked in a minute. Shining by tonight.',
+    howTitle: 'Book it. We show up. You drive off shining.',
     steps: [
       { name: 'Tell us about your car', text: 'Call, text or send the form: your vehicle, the service and where it is.' },
       { name: mobile ? 'We pull up' : 'Bring it in', text: mobile ? 'We arrive at your home or office with everything we need.' : 'Drop it off at a time that suits you.' },
@@ -133,13 +229,40 @@ const norm = (s) => String(s ?? '').toLowerCase().replace(/[’‘]/g, "'").repl
  * Keeps only what the business itself said: reviews must appear word for word on their site,
  * and every number in the new wording must appear in their site text or Google facts.
  */
+// Trust claims a draft may only make when their own site makes them: [claim in our copy, what the
+// site must say]. The AI wording added these unasked ("Licensed & insured", "no subcontractors",
+// "Ray does the work himself"), and they are the claims a business owner would object to.
+export const CLAIMS = [
+  [/licen[sc]ed/i, /licen[sc]/i], [/\binsured\b|insurance/i, /insur/i], [/\bbonded\b/i, /\bbonded\b/i],
+  [/certified|certification/i, /certif/i], [/guarantee/i, /guarantee/i], [/warrant(y|ies)/i, /warrant/i],
+  [/family[- ]owned|family[- ]run/i, /family/i], [/veteran/i, /veteran/i], [/woman[- ]owned|minority[- ]owned/i, /woman|women|minority/i],
+  [/owner[- ](operated|run|led)|owners? (are|is) (personally|on site)|\b(himself|herself)\b/i, /owner|himself|herself|founder|founded/i],
+  [/subcontract/i, /subcontract/i], [/in[- ]house/i, /in[- ]house/i], [/cookie[- ]cutter/i, /cookie[- ]cutter/i],
+  [/same[- ]day/i, /same[- ]day/i], [/24\/7|24 hours|around the clock/i, /24\/7|24 hours|24-hour|around the clock/i],
+  [/eco[- ]friendly|environmentally/i, /eco|environment|green products/i], [/award/i, /award/i],
+];
+// Notes the AI wrote to itself that leaked into the copy ("The site lists every day as open 24 hours").
+const META = /\b(the|their) (website|brief|draft)\b|\bthe site (says|lists|shows|promises|mentions|states)\b|\b(user|brief) (gave|says)\b/i;
+
+/** Why a piece of copy makes a claim their site does not, or null. */
+export function unbackedClaim(s, source) {
+  if (META.test(s)) return 'a note about the site, not copy';
+  for (const [claim, need] of CLAIMS) if (claim.test(s) && !need.test(source)) return `claim not on their site (${s.match(claim)[0]})`;
+  return null;
+}
+
 export function verify(copy, { text, facts }) {
   const source = norm(`${text} ${facts}`);
   // Whole numbers only: "15" must not pass because a review mentions an "F150".
   const has = (n) => new RegExp(`(^|[^\\d])${n.replace(/[.,]/g, '\\$&')}(?![\\d])`).test(source);
   const numbersOk = (s) => [...String(s).matchAll(/\d[\d,.]*/g)].every((m) => has(m[0].replace(/[.,]$/, '')));
   const dropped = [];
-  const keep = (label, s) => { if (numbersOk(s)) return true; dropped.push(`${label}: ${s}`); return false; };
+  const keep = (label, s) => {
+    const claim = unbackedClaim(s, `${text} ${facts}`);
+    if (numbersOk(s) && !claim) return true;
+    dropped.push(`${label}${claim ? ` (${claim})` : ''}: ${s}`);
+    return false;
+  };
   const out = structuredClone(copy);
   out.reviews = (out.reviews ?? []).filter((r) => {
     const snippets = r.text.split(/\s*(?:…|\.\.\.)\s*/).filter(Boolean);

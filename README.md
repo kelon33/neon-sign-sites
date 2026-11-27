@@ -8,7 +8,7 @@ Modern websites for US local service businesses, offered by email with a free pr
 | `generator/` | Builds a customer site from `site.json`; one kit per trade (`kits/lawn.mjs`, `kits/detailing.mjs`) |
 | `pipeline/` | `npm run lead -- --lead "<name>"`: their site → photos, wording, preview, email draft, check list |
 | `demos/<slug>/` | Previews, published at `neonsignsites.com/p/<slug>/` (never indexed) |
-| `leads/` | Lead research (Google Places) |
+| `leads/` | Lead research (Google Places): `npm run find -- --trade lawn --city "Austin, TX"` (budget-capped, see CLAUDE.md) |
 
 Publishing: Cloudflare Workers Builds runs `node deploy.mjs --dry` and `npx wrangler deploy` on every push to `main`; `wrangler.jsonc` serves `dist/` as static files.
 

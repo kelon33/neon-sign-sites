@@ -1,0 +1,6 @@
+- Logo is dark on a transparent background: shown on a white chip. Check it reads well.
+- Claude's notes: Site gives phone 817-728-9500, but the brief says (903) 624-2473 (trailer photo shows 903 number); confirm which to use. Google rating differs (site 5.0, brief 4.9 from 60). No reviews in site text. No prices stated. Lifetime warranty, BBB A+ and CARFAX claims were left out because of footnotes and conditions; confirm before adding. Site is DFW-based and the draft said Waco; confirm the city. Photos 7-10 are close-ups of dents, likely before shots.
+- No reviews on the site: the page shows the Google rating only.
+- No postal address yet (config.json sender.address): required by law before sending.
+- Review (session): Found by the Waco search, but they are in Venus/Mansfield (DFW): areas set to Venus, Mansfield, Dallas–Fort Worth (the pipeline now takes the city from the address). Button says 'Get an estimate'. Phone: Google (903) 624-2473 (used; also on their trailer), their site (817) 728-9500: ask which. Email now names the weakness (no https).
+- Renamed from Google's 'Paintless Dr Mobile Hail Dent Removal Repair' to 'Paintless DR' (their logo); link is /p/paintless-dr/.

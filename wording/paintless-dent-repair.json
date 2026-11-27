@@ -1,0 +1,43 @@
+{
+ "trade": "Paintless dent repair",
+ "about": "General wording from reviewed previews (npm run wording). {name} and {town} are filled in per business.",
+ "entries": [
+  {
+   "from": "dentlogic-paintless-dent-repair",
+   "headline": "Hail damage gone.<br><em>Hassle gone too.</em>",
+   "servicesTitle": "Everything your car needs.",
+   "howTitle": "Back to like new in three steps.",
+   "contactTitle": "Hail damage? Call us.",
+   "galleryTitle": "Dents gone, paint untouched.",
+   "alsoTitle": "We also fix",
+   "sectionTitle": "We come to you. Then we bring it back.",
+   "steps": [
+    {
+     "name": "Call or text",
+     "text": "Tell us about the damage. We explain the process and set up your rental car."
+    },
+    {
+     "name": "We handle the details",
+     "text": "We help with your insurance claim and can pick up your vehicle."
+    },
+    {
+     "name": "Drive it home",
+     "text": "We repair the damage, give it a mini-detail and deliver it back."
+    }
+   ]
+  },
+  {
+   "from": "paintless-dr",
+   "headline": "Your car's dents.<br><em>Gone. Paint untouched.</em>",
+   "servicesTitle": "Every kind of dent.",
+   "servicesIntro": "From a single door ding to hail damage.",
+   "whyTitle": "The {name} difference.",
+   "howTitle": "Dent-free in three steps.",
+   "contactTitle": "Got a dent?",
+   "galleryTitle": "Dents gone, paint untouched.",
+   "alsoTitle": "We also fix",
+   "sectionTitle": "Your driveway is our shop.",
+   "sectionIntro": "Our fully equipped mobile units come to your home or office across DFW, so your day keeps moving."
+  }
+ ]
+}

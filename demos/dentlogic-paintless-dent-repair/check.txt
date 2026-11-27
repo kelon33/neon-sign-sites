@@ -1,0 +1,9 @@
+- Found by a search in Waco, TX, but their address is in Crowley, TX: the site uses that. Check their service area.
+- No hero photo: Claude found none of their photos usable.
+- Photo pitch: only 0 usable photos by Claude's choice, so no gallery; the email asks them for photos of their work.
+- Claude's notes: No reviews on site (Google shows 5 stars from 578 reviews). Both photos are logo graphics with text, so none used; real before/after photos are needed. Site gives no prices. Address: 618 W Cleburne Rd, Suite 620, Crowley, TX 76036. Email: taylor@dentlogictx.com. Draft's door dings and creases claims are not on the site, so they were removed.
+- No photos at all: the hero has no picture. Find photos by hand.
+- Only 0 gallery photos.
+- No reviews on the site: the page shows the Google rating only.
+- No postal address yet (config.json sender.address): required by law before sending.
+- Review (session): Photo pitch, rebuilt. City set from their address (Crowley, TX); button 'Get an estimate'. Owner's email is taylor@ on their site; Google's lead email used.

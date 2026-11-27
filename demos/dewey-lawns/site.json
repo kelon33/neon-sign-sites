@@ -1,0 +1,184 @@
+{
+ "kit": "lawn",
+ "name": "Dewey Lawns",
+ "legalName": "Dewey Lawns",
+ "preview": true,
+ "placeId": "ChIJK1upxcGE1S0R1vTEIPrGMUg",
+ "title": "Dewey Lawns | Lawn care in Austin, TX",
+ "description": "Book online in 60 seconds and see your price right away. We show up on your scheduled day and leave the lawn manicured. Homes and businesses across Austin. 4.9 on Google from 230 reviews.",
+ "logo": "logo.png",
+ "logoChip": false,
+ "wordmark": {
+  "top": "Dewey",
+  "bottom": "Lawns"
+ },
+ "phone": "(512) 355-0994",
+ "email": "holler@deweylawns.com",
+ "heroImage": "img/photo-3.jpg",
+ "heroAlt": "Lush mowed lawn curving along a flagstone path",
+ "heroPosition": "60% 60%",
+ "heroPositionPhone": "60% 50%",
+ "rating": {
+  "score": "4.9",
+  "count": 230,
+  "url": "https://maps.google.com/?cid=5202157822183535830"
+ },
+ "kicker": "Lawn care · Austin, TX",
+ "headline": "Your weekend back.<br><em>Your lawn, handled.</em>",
+ "intro": "Book online in 60 seconds and see your price right away. We show up on your scheduled day and leave the lawn manicured. Homes and businesses across Austin.",
+ "badges": [
+  "Homes and businesses"
+ ],
+ "highlights": {
+  "title": "Why Austin neighbors switch to Dewey.",
+  "intro": "We're a customer service company that just happens to do lawn care.",
+  "points": [
+   {
+    "name": "Booked in 60 seconds",
+    "text": "Enter your address, pick your service and see your price instantly."
+   },
+   {
+    "name": "On your scheduled day",
+    "text": "You get a text reminder the week of your visit. You don't need to be home."
+   },
+   {
+    "name": "Photos and billing in one portal",
+    "text": "Service details, photos and billing all live in your customer portal."
+   },
+   {
+    "name": "Pet-friendly weed control",
+    "text": "Like many Austin folks, we're dog people, so we use pet-safe products."
+   }
+  ]
+ },
+ "servicesTitle": "Everything your lawn needs, on schedule.",
+ "servicesIntro": "Recurring care or a seasonal cleanup. No contracts, no hidden pricing.",
+ "services": [
+  {
+   "name": "Lawn Mowing & Edging",
+   "text": "Weekly, bi-weekly or monthly mowing with crisp edges along walks, drives and beds, and clippings blown clean."
+  },
+  {
+   "name": "Weed Control",
+   "text": "Pet-friendly weed treatments and hand-pulling in lawns, beds and hardscape areas."
+  },
+  {
+   "name": "Seasonal Cleanups",
+   "text": "Leaf and storm cleanups and overgrown grass management, with haul-off available for an additional fee."
+  },
+  {
+   "name": "Trimming & Blowing",
+   "text": "Hedges, shrubs and small trees under 8 feet trimmed, with debris blown off driveways and walkways."
+  },
+  {
+   "name": "Commercial Lawn Maintenance",
+   "text": "Routine care for property managers, HOAs, realtors and businesses, with every property in one portal."
+  }
+ ],
+ "also": [
+  {
+   "name": "Property managers"
+  },
+  {
+   "name": "HOAs"
+  },
+  {
+   "name": "Realtors"
+  },
+  {
+   "name": "Retail and office spaces"
+  },
+  {
+   "name": "Apartment complexes"
+  }
+ ],
+ "alsoTitle": "We also do:",
+ "promise": "We don't just mow. <em>We take care of it.</em> Every edge, every bed, every visit.",
+ "why": [
+  {
+   "name": "Eagle Scout's Honor guarantee",
+   "text": "If we miss something within the agreed scope, tell us within 24 hours and we'll come back to make it right."
+  },
+  {
+   "name": "Vetted, insured crews",
+   "text": "Every crew member is background-checked, fully insured and trained to treat your property as their own."
+  },
+  {
+   "name": "Locally owned, gives back",
+   "text": "Founded by Jes Elliott. A portion of every service goes to the ALS Association of Texas."
+  }
+ ],
+ "whyTitle": "Why Austin homeowners trust Dewey Lawns.",
+ "howTitle": "A better lawn in three steps.",
+ "steps": [
+  {
+   "name": "Book in 60 seconds",
+   "text": "Enter your address, choose your service and see your price instantly."
+  },
+  {
+   "name": "We arrive on your day",
+   "text": "You get a text reminder, and our crew handles the rest."
+  },
+  {
+   "name": "Relax and repeat",
+   "text": "Details, photos and billing live in your customer portal."
+  }
+ ],
+ "contactTitle": "Ready for a lawn you don't have to think about?",
+ "footerLine": "Lawn care in Austin, TX",
+ "reviews": [
+  {
+   "text": "Dewey did a phenomenal job! Our yard needed a lot of work and they cleaned it up so nice with getting rid of leaves, trimming and weed removal. They are also very communicative on scheduling and pricing so there’s never a surprise cost. Definitely recommend it!",
+   "name": "Lindsay W."
+  },
+  {
+   "text": "Efficient and thorough leaf removal and mowing. Well organized, booking was easy. Good pricing. The lawn looks great, thanks!",
+   "name": "Dylan Jose"
+  },
+  {
+   "text": "We used them for our winter leaf clean up, would definitely recommend! Very easy to communicate with and did a great job with our yard!",
+   "name": "Kelsi St"
+  },
+  {
+   "text": "Prompt, arrived on schedule, good communication, easy to work with. The owner made sure he had a thorough understanding of expectations, then followed up to ensure they were met. Excellent service all around.",
+   "name": "Cass H."
+  },
+  {
+   "text": "Managing multiple properties used to mean juggling five different lawn crews. Dewey handles all our locations with one simple portal. Game changer.",
+   "name": "Kiki S."
+  },
+  {
+   "text": "Incredible team and Jes is so kind and truly runs an honest business! Will definitely be recommending.",
+   "name": "Brittany Johnson"
+  }
+ ],
+ "hours": [
+  "Office hours: Mon–Fri, 10:00am–6:00pm"
+ ],
+ "gallery": [
+  {
+   "src": "img/photo-5.jpg",
+   "alt": "Fresh striped lawn along a sidewalk in front of a stone home",
+   "size": "big"
+  },
+  {
+   "src": "img/photo-1.jpg",
+   "alt": "Dewey Lawns team member facing a freshly striped front lawn"
+  },
+  {
+   "src": "img/photo-9.jpg",
+   "alt": "Crisp lawn edge along a concrete sidewalk"
+  },
+  {
+   "src": "img/photo-7.jpg",
+   "alt": "Striped lawn at a commercial building with a crew member working"
+  },
+  {
+   "src": "img/photo-6.jpg",
+   "alt": "Mowed lawn at a modern office building"
+  }
+ ],
+ "areas": [
+  "Austin"
+ ]
+}

@@ -1,0 +1,162 @@
+{
+ "kit": "detailing",
+ "name": "Davis Bros. Marine Services",
+ "legalName": "Davis Bros. Marine Services",
+ "preview": true,
+ "placeId": "ChIJY57xgIU_w4gRfqh-QGRfGLw",
+ "title": "Davis Bros. Marine Services | Mobile boat detailing in Sarasota, FL",
+ "description": "Mobile boat detailing and maintenance plans in Sarasota and Manatee counties. We bring the shine to your boat. 5.0 on Google from 6 reviews.",
+ "brand": "#1670ff",
+ "brandHi": "#52c6ff",
+ "accent": "#8fd0ff",
+ "logo": "logo.png",
+ "logoChip": true,
+ "wordmark": {
+  "top": "Davis Bros.",
+  "bottom": "Marine Services"
+ },
+ "phone": "(941) 800-5151",
+ "email": "alex@davisbrosmarine.com",
+ "heroImage": "img/photo-2.jpg",
+ "heroAlt": "White catamaran motor yacht docked in a marina under a blue sky",
+ "heroPosition": "60% 60%",
+ "heroPositionPhone": "60% 50%",
+ "rating": {
+  "score": "5.0",
+  "count": 6,
+  "url": "https://maps.google.com/?cid=13553687962754918526"
+ },
+ "kicker": "Mobile boat detailing · Sarasota",
+ "headline": "Back on the water<br><em>looking new.</em>",
+ "intro": "Mobile boat detailing and maintenance plans in Sarasota and Manatee counties. We bring the shine to your boat.",
+ "mobile": {
+  "title": "We come to your boat.",
+  "intro": "Mobile service means your boat gets cared for right where it sits, with no haul to a shop.",
+  "points": [
+   {
+    "name": "At your slip",
+    "text": "We bring our service right to your marina slip."
+   },
+   {
+    "name": "Flexible scheduling",
+    "text": "Options built to fit your busy lifestyle and keep your boating plans intact."
+   },
+   {
+    "name": "Tailored to your boat",
+    "text": "Each vessel is different, so we work with you on what yours needs."
+   },
+   {
+    "name": "Easy to reach",
+    "text": "Call (941) 800-5151 or ask for a quote online."
+   }
+  ]
+ },
+ "servicesTitle": "Bow to stern.",
+ "servicesIntro": "From a wash and wax to full restoration, teak and ceramic coating.",
+ "services": [
+  {
+   "name": "Full Exterior Restoration",
+   "text": "Gelcoat rejuvenation, hull polishing and waxing, stainless steel shine and a UV protection coat."
+  },
+  {
+   "name": "Interior Oasis",
+   "text": "Deep cabin cleaning, upholstery, carpets and mats refreshed, with an interior UV shield."
+  },
+  {
+   "name": "Teak Elegance",
+   "text": "Teak cleaned, brightened, oiled and sealed, with protection that lasts."
+  },
+  {
+   "name": "Ultimate Shine",
+   "text": "Complete exterior and interior detail, chrome and metal revival and ceramic coating."
+  },
+  {
+   "name": "Monthly Maintenance Plans",
+   "text": "Regular washes, touch-ups and checkups, customized to your needs."
+  },
+  {
+   "name": "Wash and Wax",
+   "text": "Your boat washed and waxed for shine and protection.",
+   "price": "Starting at $16 per foot"
+  }
+ ],
+ "also": [
+  {
+   "name": "Yachts"
+  },
+  {
+   "name": "Fishing boats"
+  },
+  {
+   "name": "Pontoons"
+  },
+  {
+   "name": "Engine compartment cleaning"
+  },
+  {
+   "name": "Canvas and upholstery protection"
+  },
+  {
+   "name": "Engine and electrical maintenance"
+  }
+ ],
+ "alsoTitle": "We also detail",
+ "why": [
+  {
+   "name": "Tailored work",
+   "text": "Each boat is unique, and the service is planned around what yours needs."
+  },
+  {
+   "name": "Safe products",
+   "text": "High-quality detailing products that are safe for your boat and the environment."
+  },
+  {
+   "name": "Detailing and maintenance",
+   "text": "One team for the shine and for engine, electrical and hull checks."
+  }
+ ],
+ "whyTitle": "Why boaters call Davis Bros.",
+ "howTitle": "Ready for the water in three steps.",
+ "steps": [
+  {
+   "name": "Ask for a quote",
+   "text": "Call, email or use the form and tell us about your boat."
+  },
+  {
+   "name": "We come to you",
+   "text": "We bring the service to your marina slip."
+  },
+  {
+   "name": "Back on the water",
+   "text": "Clean, polished and protected."
+  }
+ ],
+ "contactTitle": "Book your boat in.",
+ "footerLine": "Mobile boat detailing in Sarasota and Manatee counties",
+ "reviews": [
+  {
+   "text": "Neglected my 20 ft Proline for a few years and she was really needing some love. I had Alex come out and I am glad I did. He fully detailed the boat and I am beyond impressed. His prices were fair and he extremely professional. He also pointed out an issue with the trailer that I was unaware of. Thanks again for everything! I highly recommend Davis Bros.",
+   "name": "Dan reingardt"
+  }
+ ],
+ "hours": [
+  "Mon–Fri: 8:00 am – 8:00 pm",
+  "Saturday: 9:00 am – 12:00 pm",
+  "Sunday: Closed"
+ ],
+ "galleryTitle": "Fresh off the water.",
+ "vehicleTypes": [
+  "Boat",
+  "Pontoon",
+  "Yacht",
+  "Jet ski",
+  "Other"
+ ],
+ "modelPlaceholder": "e.g. Sea Ray 240, 24 ft",
+ "notePlaceholder": "Length, where it is docked or stored, what it needs…",
+ "gallery": [],
+ "areas": [
+  "Sarasota"
+ ],
+ "pitch": "photos"
+}

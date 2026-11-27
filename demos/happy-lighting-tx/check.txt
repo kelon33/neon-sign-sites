@@ -1,0 +1,9 @@
+- No logo found: the header shows the name only.
+- No hero photo: Claude found none of their photos usable.
+- Photo pitch: only 0 usable photos by Claude's choice, so no gallery; the email asks them for photos of their work.
+- Claude's notes: Site photos are only logos, an illustration and dark backgrounds, so none used. Need real photos of finished displays. Only one review on site. No prices stated. Site mentions a FAQ on insurance and deposits but gives no answers. Fix the services JSON: the second service has a typo key and needs a price field.
+- No photos at all: the hero has no picture. Find photos by hand.
+- Only 0 gallery photos.
+- No postal address yet (config.json sender.address): required by law before sending.
+- Review (session): Photo pitch. Clean without photos (green stripes hero). Claims ('guarantee', 'we come back') are on their site.
+- Hero is the holiday kit's licensed stock photo of lit trees (credited on the page), not their work: say so if they ask, and swap in their own photo once they send one.

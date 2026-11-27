@@ -1,0 +1,199 @@
+{
+ "kit": "detailing",
+ "name": "Clean Mobile Detailing AZ",
+ "legalName": "Clean Mobile Detailing AZ",
+ "preview": true,
+ "title": "Clean Mobile Detailing AZ | Mobile car detailing in Phoenix, AZ",
+ "description": "Rated 4.9 from 824 Google reviews. Our Clean Pros bring a fully equipped truck to your home or work and detail your car on the spot. 4.9 on Google from 824 reviews.",
+ "brand": "#1670ff",
+ "brandHi": "#52c6ff",
+ "accent": "#8fd0ff",
+ "logo": null,
+ "logoChip": false,
+ "wordmark": {
+  "top": "Clean Mobile",
+  "bottom": "Detailing AZ"
+ },
+ "phone": "(623) 400-7708",
+ "email": "hello@cleanmobiledetail.com",
+ "heroImage": "img/photo-4.jpg",
+ "heroAlt": "Technician foaming a gray car during a hand wash",
+ "heroPosition": "50% 45%",
+ "heroPositionPhone": "78% 40%",
+ "rating": {
+  "score": "4.9",
+  "count": 824,
+  "url": "https://maps.google.com/?cid=15155762499796516253"
+ },
+ "kicker": "Mobile car detailing · Phoenix, AZ",
+ "headline": "A clean car.<br><em>We come to you.</em>",
+ "intro": "Rated 4.9 from 824 Google reviews. Our Clean Pros bring a fully equipped truck to your home or work and detail your car on the spot.",
+ "mobile": {
+  "title": "Your driveway is our shop.",
+  "intro": "Book online or call. We show up with everything we need.",
+  "points": [
+   {
+    "name": "At your door",
+    "text": "Home, work or any other location that suits you."
+   },
+   {
+    "name": "Fully equipped",
+    "text": "Our trucks carry the tools, power and deionized water. We don't use yours."
+   },
+   {
+    "name": "No upfront payment",
+    "text": "Book online or call, and pay after the work is done."
+   },
+   {
+    "name": "Clean Car Guarantee",
+    "text": "If you're not satisfied, we'll make it right."
+   }
+  ]
+ },
+ "servicesTitle": "Inside, outside, and every detail between.",
+ "servicesIntro": "Start with an interior detail. Add what your car needs.",
+ "services": [
+  {
+   "name": "Interior Detail",
+   "text": "Steam, vacuum, dash, vents, cup holders, mats, door jambs, windows and trunk, with a free child car seat clean.",
+   "price": "Starting at $177"
+  },
+  {
+   "name": "Interior Detail & Exterior Hand Wash",
+   "text": "Your interior detail plus a spot-free hand wash, wheels and rims, trim and tire shine, and streak-free glass."
+  },
+  {
+   "name": "Seat Shampooing",
+   "text": "Lifts hard-to-remove stains and bad odors out of your seats."
+  },
+  {
+   "name": "Pet Hair Removal",
+   "text": "Gets dog hair out of seats and carpet."
+  },
+  {
+   "name": "Odor Elimination Treatment",
+   "text": "Treats bad smells in the cabin."
+  },
+  {
+   "name": "The Clean Club",
+   "text": "Monthly, bi-monthly or quarterly details with priority scheduling and no contracts.",
+   "price": "From $117/monthly"
+  }
+ ],
+ "also": [
+  {
+   "name": "Sedans"
+  },
+  {
+   "name": "SUVs"
+  },
+  {
+   "name": "Trucks"
+  },
+  {
+   "name": "Minivans"
+  },
+  {
+   "name": "Motorcycles"
+  },
+  {
+   "name": "Box trucks"
+  },
+  {
+   "name": "Passenger vans"
+  },
+  {
+   "name": "Fleets and dealerships"
+  }
+ ],
+ "alsoTitle": "Not just cars:",
+ "why": [
+  {
+   "name": "We come to you",
+   "text": "Home, work or anywhere that's convenient for you."
+  },
+  {
+   "name": "Truly mobile",
+   "text": "Trucks equipped with power and deionized water."
+  },
+  {
+   "name": "Clean Guarantee",
+   "text": "5-star quality is the standard. If you're not satisfied, we make it right."
+  }
+ ],
+ "whyTitle": "Why Clean Mobile",
+ "howTitle": "Booked in 60 seconds.",
+ "steps": [
+  {
+   "name": "Book your detail",
+   "text": "Pick your service online, or call or text 623-400-7708."
+  },
+  {
+   "name": "We pull up",
+   "text": "A Clean Pro arrives with a fully equipped truck."
+  },
+  {
+   "name": "Take a look",
+   "text": "Your car is done, and you inspect it before we go."
+  }
+ ],
+ "contactTitle": "Book your detail.",
+ "footerLine": "Mobile car detailing in Phoenix and the East Valley",
+ "reviews": [],
+ "hours": [
+  "Monday – Friday: 9am to 5pm",
+  "Saturday: 9am to 2pm",
+  "Sunday: Closed"
+ ],
+ "gallery": [
+  {
+   "src": "img/photo-17.jpg",
+   "alt": "Technician rinsing a foamed pickup truck next to the Clean truck",
+   "size": "big"
+  },
+  {
+   "src": "img/photo-2.jpg",
+   "alt": "Clean Mobile Detailing truck parked in front of a home"
+  },
+  {
+   "src": "img/photo-1.jpg",
+   "alt": "Technician cleaning a wheel beside the open Clean truck"
+  },
+  {
+   "src": "img/photo-13.jpg",
+   "alt": "Foam on a car seat being worked in with a drill brush",
+   "size": "tall"
+  },
+  {
+   "src": "img/photo-8.jpg",
+   "alt": "Steam cleaning a car dashboard and vents"
+  },
+  {
+   "src": "img/photo-12.jpg",
+   "alt": "Wiping down a black leather seat with a microfiber towel"
+  },
+  {
+   "src": "img/photo-5.jpg",
+   "alt": "Extractor tool shampooing a cloth car seat"
+  },
+  {
+   "src": "img/photo-9.jpg",
+   "alt": "Technician vacuuming a car floor"
+  },
+  {
+   "src": "img/photo-3.jpg",
+   "alt": "Technician detailing the inside of a truck cab"
+  },
+  {
+   "src": "img/photo-15.jpg",
+   "alt": "Cleaning a leather door panel with orange stitching"
+  },
+  {
+   "src": "img/photo-11.jpg",
+   "alt": "Clean black wheel on an SUV"
+  }
+ ],
+ "areas": [
+  "Phoenix"
+ ]
+}

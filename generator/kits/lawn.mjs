@@ -213,6 +213,37 @@ form.booking .btn { grid-column: 1 / -1; margin-top: 6px; }
 @media (max-width: 340px) { .points { grid-template-columns: 1fr; } }
 @media (max-width: 520px) { .logo b { font-size: 1.15rem; } .logo img { height: 44px; } }
 @media (prefers-reduced-motion: reduce) { *, *::before, *::after { animation: none !important; transition: none !important; } .hero > img { transform: none; } }
+
+/* RULE: the first screen reads as a whole page: headline, every hero button and the Google rating
+   visible without scrolling, on laptops, desktops and phones (npm run fold checks it). */
+:root:has(.preview-bar) { --bar: 36px; }
+@media (max-width: 600px) { .pv-for { display: none; } }
+.preview-bar { height: 36px; box-sizing: border-box; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+@media (min-width: 901px) {
+  .hero { min-height: calc(min(100vh, 860px) - var(--bar, 0px)); }
+}
+@media (min-width: 901px) and (max-height: 920px) {
+  .hero { padding-top: 116px; padding-bottom: 52px; }
+  .hero h1 { font-size: clamp(2.5rem, 8vh, 5.2rem); }
+  .hero .lead { margin-top: 16px; }
+  .hero .actions { margin-top: 24px; }
+  .badges { margin-top: 18px; }
+  .hero .rating { margin-top: 18px; }
+}
+@media (max-width: 900px) {
+  .hero { min-height: calc(100svh - var(--bar, 0px)); padding: 96px 0 26px; }
+  .hero h1 { font-size: clamp(1.9rem, min(10.2vw, 6svh), 3.3rem); }
+  .hero .eyebrow { margin-bottom: 10px; }
+  .hero .lead { font-size: 1rem; line-height: 1.5; margin-top: 12px; display: -webkit-box; -webkit-line-clamp: 4; -webkit-box-orient: vertical; overflow: hidden; }
+  .hero .actions { flex-wrap: nowrap; gap: 10px; margin-top: 18px; }
+  .hero .actions .btn { flex: 1 1 0; min-width: 0; justify-content: center; text-align: center; padding: 14px 10px; font-size: .88rem; white-space: nowrap; }
+  .badges { margin-top: 14px; gap: 6px 16px; font-size: .84rem; }
+  .hero .rating { margin-top: 16px; }
+}
+@media (max-width: 900px) and (max-height: 760px) {
+  .hero .lead { -webkit-line-clamp: 3; }
+  .badges { display: none; }
+}
 </style>
 </head>
 <body>
@@ -321,7 +352,7 @@ ${d.why?.length ? `<section class="section">
       <label>Service <select name="service">${d.services.map((s) => `<option>${esc(s.name)}</option>`).join('')}<option>Not sure yet</option></select></label>
       <label>Property <select name="property"><option>Home</option><option>Business</option></select></label>
       <label class="full">Address or neighborhood <input name="address" autocomplete="street-address"></label>
-      <label class="full">Anything we should know? <textarea name="note" placeholder="Yard size, how often, a date you have in mind…"></textarea></label>
+      <label class="full">Anything we should know? <textarea name="note" placeholder="${esc(d.notePlaceholder ?? 'Yard size, how often, a date you have in mind…')}"></textarea></label>
       <button class="btn" type="submit">Request my free quote</button>
     </form>
   </div>

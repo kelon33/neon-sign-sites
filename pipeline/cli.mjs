@@ -13,7 +13,7 @@ import { createRequire } from 'node:module';
 const { chromium } = createRequire(import.meta.url)('playwright');
 import { scrapeSite } from './scrape.mjs';
 import { photoCandidates, logoCandidate, galleryPlan, saveImage, thumbnail, pickHero } from './photos.mjs';
-import { kitFor, detailingCopy, lawnCopy, sharpen, anthropicKey, verify, cleanName, splitWordmark } from './copy.mjs';
+import { kitFor, detailingCopy, lawnCopy, tradeCopy, sharpen, anthropicKey, verify, cleanName, splitWordmark } from './copy.mjs';
 import { draftEmail } from './email.mjs';
 import { blocked } from './dnc.mjs';
 import { renderSite } from '../generator/render.mjs';
@@ -30,15 +30,16 @@ async function findLead(query) {
     if (!f.endsWith('.json')) continue;
     const data = JSON.parse(await readFile(path.join(dir, f), 'utf8'));
     const list = Array.isArray(data) ? data : (data.results ?? data.leads ?? Object.values(data).find(Array.isArray) ?? []);
-    for (const l of list) if (l?.name?.toLowerCase().includes(query.toLowerCase())) found.push(l);
+    for (const l of list) if (l?.placeId === query || l?.name?.toLowerCase().includes(query.toLowerCase())) found.push(l);
   }
   return found;
 }
 
 async function main() {
-  const query = arg('lead');
-  if (!query) { console.log('npm run lead -- --lead "<business name>" [--no-ai]'); process.exit(1); }
-  const leads = await findLead(query);
+  const query = arg('place') ?? arg('lead');
+  if (!query) { console.log('npm run lead -- --lead "<business name>" | --place <Google place ID> [--no-ai] [--fresh]'); process.exit(1); }
+  // A place ID picks one exact listing; a name can match several (one business, many listings).
+  const leads = (await findLead(query)).filter((l) => !arg('place') || l.placeId === query);
   if (!leads.length) throw new Error(`No lead matches "${query}" in leads/.`);
   const lead = leads.find((l) => l.website && l.email) ?? leads[0];
   if (leads.length > 1) console.log(`(${leads.length} matches; using ${lead.name})`);
@@ -57,6 +58,13 @@ async function main() {
   const out = path.join(root, 'demos', slug);
   await mkdir(path.join(out, 'img'), { recursive: true });
   const checks = [];
+  // Google returns businesses from around the searched city (hail-repair shops travel far): the
+  // site names the town in their own address.
+  const own = lead.address?.match(/,\s*([^,]+),\s*([A-Z]{2})\s+\d{5}/);
+  if (own && `${own[1].trim()}, ${own[2]}` !== lead.city) {
+    checks.push(`Found by a search in ${lead.city}, but their address is in ${own[1].trim()}, ${own[2]}: the site uses that. Check their service area.`);
+    lead.city = `${own[1].trim()}, ${own[2]}`;
+  }
   const browser = await chromium.launch();
   try {
     // 1. Their site.
@@ -82,7 +90,12 @@ async function main() {
     else if (logo.dark && logo.transparent) checks.push('Logo is dark on a transparent background: shown on a white chip. Check it reads well.');
 
     // 3. Words: the kit's, then sharper ones from Claude when available.
-    let copy = (kit === 'lawn' ? lawnCopy : detailingCopy)({ name: lead.name, city: lead.city, text });
+    let copy = tradeCopy(lead.trade, (kit === 'detailing' ? detailingCopy : lawnCopy)({ name: lead.name, city: lead.city, text }), lead.city);
+    // Proven general wording from reviewed previews of the same trade (wording/), over the defaults:
+    // the AI improves on it, and --no-ai uses it as is. Facts still come only from their own site.
+    const { library, fromLibrary } = await import('./wording.mjs');
+    const lib = await library(lead.trade);
+    if (lib.length) copy = fromLibrary(copy, lib, { name: lead.name, town: lead.city.replace(/,\s*[A-Z]{2}$/, ''), text });
     // A preview already polished by hand keeps its wording (--fresh starts over); only the photos,
     // logo and rating are refreshed.
     const existingFile = path.join(out, 'site.json');
@@ -110,7 +123,7 @@ async function main() {
       const merged = {
         ...copy,
         kicker: r.kicker, headline: r.headline, intro: r.intro,
-        ...(kit === 'lawn' ? { highlights: points } : { mobile: points }),
+        ...(kit === 'detailing' ? { mobile: points } : { highlights: points }),
         servicesTitle: r.servicesTitle, servicesIntro: r.servicesIntro,
         services: r.services.map((s) => ({ name: s.name, text: s.text, ...(s.price ? { price: s.price } : {}) })),
         also: r.also.map((n) => ({ name: n })),
@@ -125,8 +138,12 @@ async function main() {
       copy = checked;
       for (const d of dropped) checks.push(`Dropped (not backed by their site): ${d}`);
       if (r.heroPhoto >= 1 && r.heroPhoto <= photos.length) heroIndex = r.heroPhoto - 1;
+      // 0 means none of their photos is fit for the hero (logos, graphics): no hero photo then.
+      else if (r.heroPhoto === 0) { heroIndex = -1; checks.push('No hero photo: Claude found none of their photos usable.'); }
       const picked = r.galleryPhotos.map((n) => n - 1).filter((i) => i >= 0 && i < photos.length && i !== heroIndex);
       if (picked.length >= 4) order = [...new Set(picked)];
+      // Fewer than 4 usable photos: no gallery, rather than filling it with logos and graphics.
+      else { order = []; checks.push(`Photo pitch: only ${picked.length} usable photo${picked.length === 1 ? '' : 's'} by Claude's choice, so no gallery; the email asks them for photos of their work.`); }
       alts = Object.fromEntries(r.photoAlts.map((a) => [a.photo - 1, a.alt]));
       wordmark = { top: r.wordmarkTop || lead.name, bottom: r.wordmarkBottom };
       if (r.notes) checks.push(`Claude's notes: ${r.notes}`);
@@ -139,7 +156,7 @@ async function main() {
 
     // 4. Gallery with no holes; the tall slot goes to a portrait photo when there is one.
     const plan = galleryPlan(order.length);
-    let gallery = order.slice(0, plan.count).map((i) => ({ src: photos[i].rel, alt: alts[i] || photos[i].alt || `${kit === 'lawn' ? 'Yard work' : 'Detailing work'} by ${lead.name}` }));
+    let gallery = order.slice(0, plan.count).map((i) => ({ src: photos[i].rel, alt: alts[i] || photos[i].alt || `${{ lawn: 'Yard work', detailing: 'Detailing work', painting: 'Painting work', holiday: 'Holiday lights' }[kit] ?? 'Work'} by ${lead.name}` }));
     if (gallery.length) {
       gallery[0].size = 'big';
       if (plan.tall) {
@@ -156,7 +173,7 @@ async function main() {
     const email = lead.email || site.emails[0] || '';
     const data = {
       ...(existing ?? {}),
-      kit, name: existing?.name ?? lead.name, legalName: copy.legalName ?? lead.name, preview: true,
+      kit, trade: lead.trade, name: existing?.name ?? lead.name, legalName: copy.legalName ?? lead.name, preview: true, placeId: lead.placeId,
       title: copy.title ?? `${lead.name} | ${copy.kicker.split(' · ')[0]} in ${lead.city}`,
       description: copy.description ?? `${copy.intro} ${lead.rating ? `${lead.rating.toFixed(1)} on Google from ${lead.reviews} reviews.` : ''}`.trim(),
       ...(kit === 'detailing' ? { brand: '#1670ff', brandHi: '#52c6ff', accent: '#8fd0ff' } : {}),
@@ -167,7 +184,9 @@ async function main() {
       heroPosition: '60% 60%', heroPositionPhone: '60% 50%',
       rating: lead.rating ? { score: lead.rating.toFixed(1), count: lead.reviews, url: lead.mapsUrl?.split('&')[0] } : null,
       ...copy, gallery, areas: copy.areas ?? [lead.city.replace(/,\s*[A-Z]{2}$/, '')],
+      pitch: gallery.length ? 'site' : 'photos', // photos: no gallery, the email asks for job photos
     };
+    if (kit === 'holiday' && !data.heroImage) checks.push('Hero is the holiday kit\'s licensed stock photo of lit trees (credited on the page), not their work: say so if they ask, and swap in their own photo once they send one.');
     await writeFile(path.join(out, 'site.json'), JSON.stringify(data, null, 1));
     const html = renderSite(data);
     await writeFile(path.join(out, 'index.html'), html);
@@ -181,6 +200,9 @@ async function main() {
       await p.screenshot({ path: path.join(out, `${name}.jpg`), type: 'jpeg', quality: 70, fullPage: true });
       await p.close();
     }
+    // RULE: the first screen reads as a whole page (headline, buttons, Google rating) on every screen size.
+    const { foldProblems } = await import('./fold.mjs');
+    for (const f of await foldProblems(browser, path.join(out, 'index.html'))) checks.push(`First screen: ${f}. Fix before sending.`);
     const { readFile: rf } = await import('node:fs/promises');
     let inline = html;
     for (const m of [...new Set([...html.matchAll(/(?:src|data-full)="((?:img\/[^"]+)|logo\.png)"/g)].map((x) => x[1]))]) {
@@ -191,7 +213,7 @@ async function main() {
 
     // 7. The email, for approval.
     const link = `${config.previewBase}${slug}/`;
-    const mail = draftEmail({ lead, link, sender: config.sender, used: { photos: gallery.length > 0 || heroIndex >= 0, reviews: copy.reviews.length > 0 } });
+    const mail = draftEmail({ lead, link, sender: config.sender, used: { photos: gallery.length > 0 || heroIndex >= 0, reviews: copy.reviews.length > 0 }, pitch: gallery.length ? 'site' : 'photos' });
     if (!config.sender.address) checks.push('No postal address yet (config.json sender.address): required by law before sending.');
     if (!email) checks.push('No email address for this business.');
     await writeFile(path.join(out, 'email.txt'), `To: ${email}\nSubject: ${mail.subject}\n\n${mail.body}\n`);

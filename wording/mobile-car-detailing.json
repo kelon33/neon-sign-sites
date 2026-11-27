@@ -1,0 +1,165 @@
+{
+ "trade": "Mobile car detailing",
+ "about": "General wording from reviewed previews (npm run wording). {name} and {town} are filled in per business.",
+ "entries": [
+  {
+   "from": "602-mobile-car-detailing",
+   "headline": "Showroom shine.<br><em>Wherever you are.</em>",
+   "servicesTitle": "Inside, outside, and everything that shines.",
+   "servicesIntro": "Pick what your car needs, from a deep interior clean to lasting paint protection.",
+   "contactTitle": "Book your detail.",
+   "alsoTitle": "Not just cars:",
+   "sectionTitle": "Your driveway is our shop.",
+   "sectionIntro": "We bring the detail to you, so your day keeps moving.",
+   "steps": [
+    {
+     "name": "Tell us about your car",
+     "text": "Call, text or send the form: your vehicle, the service and where it is."
+    },
+    {
+     "name": "We pull up",
+     "text": "We arrive at your home or office with everything we need."
+    },
+    {
+     "name": "You get the keys back",
+     "text": "To a car that looks, and smells, brand new."
+    }
+   ]
+  },
+  {
+   "from": "almazan-detailing",
+   "headline": "Showroom shine.<br><em>Right in your driveway.</em>",
+   "servicesTitle": "Three details. One clear price each.",
+   "servicesIntro": "Prices start at the amounts shown and depend on vehicle size: small, medium or large.",
+   "howTitle": "Book it. We show up. You drive off shining.",
+   "contactTitle": "Book your detail.",
+   "alsoTitle": "Not just cars:",
+   "sectionTitle": "Your driveway is our shop.",
+   "sectionIntro": "We come to the place that suits you, so your day keeps moving.",
+   "steps": [
+    {
+     "name": "Tell us about your vehicle",
+     "text": "Call or send the form with your vehicle and the service you want."
+    },
+    {
+     "name": "We come to you",
+     "text": "We arrive with the equipment and products to do the job on site."
+    },
+    {
+     "name": "Take the keys back",
+     "text": "Your car is clean, restored and showroom-ready."
+    }
+   ]
+  },
+  {
+   "from": "archers-mobile-detailing",
+   "headline": "Showroom shine.<br><em>Right in your driveway.</em>",
+   "servicesTitle": "Inside, outside, and everything that shines.",
+   "servicesIntro": "Pick what your car needs, from a deep interior clean to lasting paint protection.",
+   "whyTitle": "Why drivers choose Archer's.",
+   "howTitle": "Book it. We show up. You drive off shining.",
+   "contactTitle": "Book your detail.",
+   "alsoTitle": "Not just cars:",
+   "sectionTitle": "Your driveway is our shop.",
+   "sectionIntro": "We bring the detail to you, so your day keeps moving.",
+   "steps": [
+    {
+     "name": "Book",
+     "text": "Book online or call, and get updates about your appointment."
+    },
+    {
+     "name": "We pull up",
+     "text": "We arrive to inspect and detail your vehicle with top-rated products and tools."
+    },
+    {
+     "name": "You approve",
+     "text": "We make sure you are fully satisfied, then collect payment."
+    }
+   ]
+  },
+  {
+   "from": "clean-mobile-detailing-az",
+   "servicesTitle": "Inside, outside, and every detail between.",
+   "servicesIntro": "Start with an interior detail. Add what your car needs.",
+   "contactTitle": "Book your detail.",
+   "alsoTitle": "Not just cars:",
+   "sectionTitle": "Your driveway is our shop.",
+   "sectionIntro": "Book online or call. We show up with everything we need."
+  },
+  {
+   "from": "ericks-auto-detailing",
+   "headline": "Showroom shine.<br><em>Wherever you are.</em>",
+   "servicesTitle": "Inside, outside, and everything that shines.",
+   "servicesIntro": "From a deep interior clean to multi-stage paint correction, with high-quality products for every surface.",
+   "whyTitle": "The detail is in the name.",
+   "contactTitle": "Book your detail.",
+   "galleryTitle": "Fresh off the driveway.",
+   "alsoTitle": "Not just cars:",
+   "sectionTitle": "Your driveway is our shop.",
+   "sectionIntro": "We bring the detail to your home, apartment or office, and work until it's just right.",
+   "steps": [
+    {
+     "name": "Tell us about your car",
+     "text": "Call, text or send the form: your vehicle, the service and where it's parked."
+    },
+    {
+     "name": "We pull up",
+     "text": "We arrive on time at your home or office, with everything we need."
+    },
+    {
+     "name": "You get the keys back",
+     "text": "To a car that looks, and smells, brand new."
+    }
+   ]
+  },
+  {
+   "from": "new-shine-mobile-detailing-ceramic-coating",
+   "servicesTitle": "Inside, outside, and everything that shines.",
+   "servicesIntro": "Pick what your car needs, from a deep interior clean to lasting paint protection.",
+   "contactTitle": "Book your detail.",
+   "alsoTitle": "Not just cars:",
+   "sectionTitle": "Your driveway is our shop.",
+   "sectionIntro": "We bring the detail to you, so your day keeps moving.",
+   "steps": [
+    {
+     "name": "Tell us about your car",
+     "text": "Call, text or send the form: your vehicle, the service and where it is."
+    },
+    {
+     "name": "We pull up",
+     "text": "We arrive at your home or office with everything we need."
+    },
+    {
+     "name": "You get the keys back",
+     "text": "To a car that looks, and smells, brand new."
+    }
+   ]
+  },
+  {
+   "from": "rays-luxury-detailing",
+   "headline": "Showroom shine.<br><em>Right in your driveway.</em>",
+   "servicesTitle": "Inside, outside, and built to last.",
+   "servicesIntro": "Pick what your car needs, from a deep interior clean to long-term protection against Florida sun and lovebugs.",
+   "whyTitle": "Why {town} drivers trust Ray's",
+   "howTitle": "Book it. We show up. You drive off shining.",
+   "contactTitle": "Book your detail.",
+   "alsoTitle": "Not just cars:",
+   "sectionTitle": "Your driveway is our shop.",
+   "sectionIntro": "We bring the detail to you, so your day keeps moving.",
+   "steps": [
+    {
+     "name": "Tell us about your car",
+     "text": "Fill out the form with your vehicle, the services you want and where it is."
+    },
+    {
+     "name": "Get your quote",
+     "text": "We get in touch to confirm the appointment and send a detailed quote."
+    },
+    {
+     "name": "We pull up",
+     "text": "We detail your car at your home, workplace or apartment."
+    }
+   ]
+  }
+ ]
+}

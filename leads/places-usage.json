@@ -1,0 +1,38 @@
+{
+ "about": "Google Places requests, counted by pipeline/find.mjs. Commit this file: it is the only record across sessions.",
+ "months": {
+  "2026-11": {
+   "requests": 41
+  }
+ },
+ "queries": {
+  "lawn care service in Austin, TX": "2026-11-27",
+  "mobile car detailing in Austin, TX": "2026-11-27",
+  "pressure washing service in Austin, TX": "2026-11-27",
+  "pool cleaning service in Austin, TX": "2026-11-27",
+  "window cleaning service in Austin, TX": "2026-11-27",
+  "pet waste removal service in Waco, TX": "2026-11-27",
+  "sprinkler repair in Waco, TX": "2026-11-27",
+  "stump grinding in Waco, TX": "2026-11-27",
+  "sod installation in Waco, TX": "2026-11-27",
+  "christmas light installation in Waco, TX": "2026-11-27",
+  "boat detailing in Waco, TX": "2026-11-27",
+  "rv detailing in Waco, TX": "2026-11-27",
+  "paintless dent repair in Waco, TX": "2026-11-27",
+  "mobile windshield chip repair in Waco, TX": "2026-11-27",
+  "handyman service in Waco, TX": "2026-11-27",
+  "house painter in Waco, TX": "2026-11-27",
+  "junk removal in Waco, TX": "2026-11-27",
+  "mobile dog grooming in Waco, TX": "2026-11-27",
+  "handyman service in Lubbock, TX": "2026-11-27",
+  "junk removal in Lubbock, TX": "2026-11-27",
+  "house painter in Lubbock, TX": "2026-11-27",
+  "mobile dog grooming in Lubbock, TX": "2026-11-27",
+  "paintless dent repair in Lubbock, TX": "2026-11-27",
+  "christmas light installation in Lubbock, TX": "2026-11-27",
+  "boat detailing in Sarasota, FL": "2026-11-27",
+  "house painter in Jacksonville, FL": "2026-11-27",
+  "rv detailing in Jacksonville, FL": "2026-11-27",
+  "boat detailing in Jacksonville, FL": "2026-11-27"
+ }
+}

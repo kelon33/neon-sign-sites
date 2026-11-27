@@ -1,0 +1,4 @@
+- Claude's notes: Only one review on site, exaggerated punctuation kept as written. No hours or prices on site. Photos are all before/after composites, some with a faint watermark. Site says founder's career began in 2007, copy avoids a years-in-business claim. Draft's driveway, dock and ramp claims and the Boat/Pontoon/Yacht form options are not on the site, so check them.
+- Only 5 gallery photos.
+- No postal address yet (config.json sender.address): required by law before sending.
+- Review (session): Hero photo removed (a before/after collage whose labels collided with the headline); the collages stay in the gallery. Boat form and wording checked.
