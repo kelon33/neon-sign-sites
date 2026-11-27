@@ -114,25 +114,6 @@
   "improvements": []
  },
  {
-  "placeId": "ChIJB02gE8mZT4YROUaDp192vy0",
-  "name": "Pawgo Waco Mobile Pet Grooming",
-  "website": "https://www.pawgo.com/kat",
-  "address": "River Rd, Waco, TX 76705",
-  "phone": "(254) 364-6602",
-  "rating": 4.5,
-  "reviews": 17,
-  "mapsUrl": "https://maps.google.com/?cid=3296483605462861369&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-  "trade": "Mobile dog grooming",
-  "city": "Waco, TX",
-  "kind": "weak site",
-  "loadMs": 1205,
-  "reasons": [
-   "almost empty"
-  ],
-  "improvements": [],
-  "email": "appointments@pawgo.com"
- },
- {
   "placeId": "ChIJ_em80oEbTIYRXoTmJsf9mII",
   "name": "DentLogic Paintless Dent Repair",
   "website": "https://www.dentlogictx.com/",
@@ -207,26 +188,6 @@
   ],
   "improvements": [],
   "email": "jessefivestar@gmail.com"
- },
- {
-  "placeId": "ChIJ04xUNVd9RYYRMYY4dXu_sxA",
-  "name": "ForeverLawn Central Texas",
-  "website": "https://foreverlawncentraltexas.com/",
-  "address": "177 Cottonwood Cir, Crawford, TX 76638",
-  "phone": "(254) 900-2233",
-  "rating": 4.9,
-  "reviews": 46,
-  "mapsUrl": "https://maps.google.com/?cid=1203516062406575665&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-  "trade": "Sod installation",
-  "city": "Waco, TX",
-  "kind": "weak site",
-  "loadMs": 210,
-  "reasons": [
-   "GoDaddy site builder"
-  ],
-  "improvements": [],
-  "email": "office@centraltx.foreverlawn.com",
-  "emailNote": "email domain differs from the website: check it is theirs"
  },
  {
   "placeId": "ChIJs9ld3gZ4T4YR7OvjC7KoaA4",
@@ -1708,26 +1669,6 @@
   "email": ""
  },
  {
-  "placeId": "ChIJRxjZqaGDT4YR9qy2S1sI4p4",
-  "name": "Safelite",
-  "website": "https://www.safelite.com/",
-  "address": "4301 Franklin Ave, Waco, TX 76710",
-  "phone": "(877) 664-8932",
-  "rating": 4.3,
-  "reviews": 333,
-  "mapsUrl": "https://maps.google.com/?cid=11448722390934531318&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-  "trade": "Windshield chip repair",
-  "city": "Waco, TX",
-  "kind": "decent site",
-  "loadMs": 1105,
-  "reasons": [],
-  "improvements": [
-   "no tap-to-call link",
-   "only 2 photos"
-  ],
-  "email": ""
- },
- {
   "placeId": "ChIJHXFJMbODT4YRxjE6J45rFfM",
   "name": "Waco Auto Glass Center, Inc.",
   "website": "http://www.wacoautoglasscenter.com/",
@@ -2278,23 +2219,6 @@
   "city": "Waco, TX",
   "kind": "strong site",
   "loadMs": 1806,
-  "reasons": [],
-  "improvements": [],
-  "email": ""
- },
- {
-  "placeId": "ChIJmc5r4NKHT4YR0QR_RIC6hU4",
-  "name": "College Hunks Hauling Junk and Moving Waco",
-  "website": "https://www.collegehunkshaulingjunk.com/waco/?utm_source=GMB&utm_medium=organic&utm_campaign=tx-waco-369",
-  "address": "120 W Loop 340, Waco, TX 76710",
-  "phone": "(254) 233-9967",
-  "rating": 4.9,
-  "reviews": 859,
-  "mapsUrl": "https://maps.google.com/?cid=5658133566928651473&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-  "trade": "Junk removal",
-  "city": "Waco, TX",
-  "kind": "strong site",
-  "loadMs": 1112,
   "reasons": [],
   "improvements": [],
   "email": ""

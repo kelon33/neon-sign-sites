@@ -446,7 +446,12 @@ async function checkFile(file, dnc, { again = false } = {}) {
   if (!Array.isArray(all)) throw new Error(`${file} is not a lead file.`);
   const clean = new Set(onePerWebsite(all.filter((l) => !multiLocation(l.website) && !CHAINS.test(l.name ?? '') && !CHAINS.test(l.website ?? ''))));
   const todo = all.filter((l) => clean.has(l) && (again || l.kind === 'not checked') && !blocked(l, dnc));
-  if (!todo.length) { console.log(`Nothing to check in ${path.relative(root, file)}.`); return; }
+  if (!todo.length) {
+    // Still apply the current rules (chains, branches, one per website) to the file.
+    const removed = await saveLeads(file, []);
+    console.log(`Nothing to check in ${path.relative(root, file)}.${removed ? ` Removed ${removed} chain, multi-location or duplicate listings.` : ''}`);
+    return;
+  }
   // Playwright is installed globally in the cloud sessions; require() finds it from any folder.
   const { chromium } = createRequire(import.meta.url)('playwright');
   const browser = await chromium.launch();
