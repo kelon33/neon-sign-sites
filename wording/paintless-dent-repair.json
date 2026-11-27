@@ -89,6 +89,17 @@
    ]
   },
   {
+   "from": "hill-country-dent-repair",
+   "headline": "Your car's dents.<br><em>Gone. Paint untouched.</em>",
+   "servicesIntro": "From a single door ding to a full hail storm.",
+   "whyTitle": "Why {name}",
+   "howTitle": "Back to like new, step by step.",
+   "galleryTitle": "Dents gone, paint untouched.",
+   "alsoTitle": "We also fix",
+   "sectionTitle": "Door dings, at your door.",
+   "sectionIntro": "For door dings and small dents, I come to you. Hail, deer hits and larger dents are repaired at my {town} shop."
+  },
+  {
    "from": "paintless-dr",
    "headline": "Your car's dents.<br><em>Gone. Paint untouched.</em>",
    "servicesTitle": "Every kind of dent.",
@@ -100,6 +111,31 @@
    "alsoTitle": "We also fix",
    "sectionTitle": "Your driveway is our shop.",
    "sectionIntro": "Our fully equipped mobile units come to your home or office across DFW, so your day keeps moving."
+  },
+  {
+   "from": "the-dentless-cowboys",
+   "headline": "Hail damage gone.<br><em>Hassle gone too.</em>",
+   "servicesTitle": "Every kind of dent.",
+   "servicesIntro": "From a single door ding to a full hail storm.",
+   "whyTitle": "{name} difference.",
+   "howTitle": "Dent-free in three steps.",
+   "contactTitle": "Got hail damage?",
+   "galleryTitle": "Dents gone, paint untouched.",
+   "alsoTitle": "We also fix",
+   "steps": [
+    {
+     "name": "Schedule a free inspection",
+     "text": "Call, text or visit our shop."
+    },
+    {
+     "name": "We handle insurance",
+     "text": "We take care of the claim so you don't have to."
+    },
+    {
+     "name": "Drive away satisfied",
+     "text": "We repair the damage with paintless dent repair and you drive off happy."
+    }
+   ]
   }
  ]
 }

@@ -1,0 +1,6 @@
+- No logo found: the header shows the name only.
+- Photo pitch: only 0 usable photos by Claude's choice, so no gallery; the email asks them for photos of their work.
+- Claude's notes: No reviews on site. Photos 1 (graphic with text) and 3 (looks AI-generated or stock interior) left out; photo 2 may also look stock or AI-generated, so check it. Only 1 usable photo at most. Google shows 5.0 from 34 reviews. Pricing: Basic $200 interior, Premium $250, Exterior Wash +$75 add-on. Draft listed Interior & exterior, paint correction, ceramic, etc.; services here follow the site's own names. Site says Austin Metro, Travis, Williamson and Hays counties.
+- Only 0 gallery photos.
+- No reviews on the site: the page shows the Google rating only.
+- Review (session): Hero was a stock/AI-looking car render: removed (plain hero), photo pitch. Hours line ('Open 24/7') dropped. Wording from the car-detailing library (library-first).

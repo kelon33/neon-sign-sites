@@ -1,0 +1,6 @@
+- Found by a search in Sarasota, FL, but their address is in Bradenton, FL: the site uses that. Check their service area.
+- Logo is dark on a transparent background: shown on a white chip. Check it reads well.
+- Claude's notes: Only one review on site. Second phone number 941-400-6618 listed. Site mentions Sarasota and Tampa Bay locations. No prices on site. Photo 4 shows a manufacturer product bottle, left out.
+- Dropped 1 review: a review widget (elfsight) on https://www.guardiandetail.com/.
+- No reviews on the site: the page shows the Google rating only.
+- Review (session): Header logo was a client's ('Kokomo Yacht Club', from a 'trusted by' strip): removed, name only. 12 of their own boat photos. Their one review came through an Elfsight Google widget: dropped automatically. Good preview.

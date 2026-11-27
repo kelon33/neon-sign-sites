@@ -1,0 +1,152 @@
+{
+ "kit": "detailing",
+ "trade": "Boat detailing",
+ "name": "Excel Professional Detailing & Fiberglass",
+ "legalName": "Excel Professional Detailing & Fiberglass",
+ "preview": true,
+ "placeId": "ChIJC0PtTdfN5YgREHHD3sscIm8",
+ "title": "Excel Professional Detailing & Fiberglass | Boat detailing & fiberglass in Jacksonville, FL",
+ "description": "Excel Professional Detailing & Fiberglass has been making boats look great in the Jacksonville area since 1997. You talk to the team who does the work, from your first call. 5.0 on Google from 18 reviews.",
+ "brand": "#1670ff",
+ "brandHi": "#52c6ff",
+ "accent": "#8fd0ff",
+ "logo": "logo.png",
+ "logoChip": true,
+ "wordmark": {
+  "top": "Excel Professional",
+  "bottom": "Detailing & Fiberglass"
+ },
+ "phone": "(904) 716-2803",
+ "email": "excelfiberglass@gmail.com",
+ "heroImage": "img/photo-15.jpg",
+ "heroAlt": "Detailed blue hull of a Key West boat with a glossy finish",
+ "heroPosition": "60% 60%",
+ "heroPositionPhone": "60% 50%",
+ "rating": {
+  "score": "5.0",
+  "count": 18,
+  "url": "https://maps.google.com/?cid=8007994749359452432"
+ },
+ "kicker": "Boat detailing & fiberglass · Jacksonville",
+ "headline": "Family owned since 1997.<br><em>Your boat, looking great.</em>",
+ "intro": "Excel Professional Detailing & Fiberglass has been making boats look great in the Jacksonville area since 1997. You talk to the team who does the work, from your first call.",
+ "mobile": null,
+ "servicesTitle": "Bow to stern.",
+ "servicesIntro": "Washing and detailing, plus fiberglass repair, all under one roof.",
+ "services": [
+  {
+   "name": "Washing & Detailing",
+   "text": "Interior and exterior washing and detailing, waxing, wet sanding, buffing and restoration."
+  },
+  {
+   "name": "Cosmetic Fiberglass Repair",
+   "text": "Scratch and blemish removal, plus hole and gouge repair."
+  },
+  {
+   "name": "Structural Repairs",
+   "text": "Fiberglass repairs for boats with serious damage."
+  },
+  {
+   "name": "Gel Coat Color Matching",
+   "text": "Repairs matched to the color of your boat."
+  },
+  {
+   "name": "Graphics & Striping",
+   "text": "Pinstriping and boot striping, plus graphic removal and replacement."
+  },
+  {
+   "name": "Rub Rail Replacement",
+   "text": "Rub rails removed and replaced."
+  }
+ ],
+ "also": [
+  {
+   "name": "Sea Dek installation"
+  },
+  {
+   "name": "Monthly detailing services"
+  },
+  {
+   "name": "Gift certificates"
+  }
+ ],
+ "alsoTitle": "We also detail",
+ "why": [
+  {
+   "name": "No middleman",
+   "text": "You speak with the team who will work on your boat from the first call."
+  },
+  {
+   "name": "Word of mouth",
+   "text": "Most of our work comes through referrals, and references are available."
+  },
+  {
+   "name": "Final check",
+   "text": "We check the work once services are complete, and our estimates are accurate."
+  }
+ ],
+ "whyTitle": "Why boat owners call Excel.",
+ "howTitle": "Back on the water in three steps.",
+ "steps": [
+  {
+   "name": "Call us",
+   "text": "Tell us what your boat needs: scratches, gouges, damage or a full detail."
+  },
+  {
+   "name": "Get an estimate",
+   "text": "We give you an accurate estimate. We work with many area marinas, or you can bring the boat to us."
+  },
+  {
+   "name": "Final check",
+   "text": "We go over the finished work with you before it leaves."
+  }
+ ],
+ "contactTitle": "Book your boat in.",
+ "footerLine": "Boat detailing & fiberglass in Jacksonville since 1997",
+ "reviews": [
+  {
+   "text": "Took my boat in to have a few minor fiberglass repairs and detailed. Aaron was very honest in his recommendations on what to fix and what to leave alone. The boat looks better than when I bought it! Highly recommend",
+   "name": "Lance P."
+  }
+ ],
+ "hours": [
+  "Mon - Fri 8:00 am - 5:00 pm"
+ ],
+ "galleryTitle": "Fresh off the water.",
+ "vehicleTypes": [
+  "Boat",
+  "Pontoon",
+  "Yacht",
+  "Jet ski",
+  "Other"
+ ],
+ "modelPlaceholder": "e.g. Sea Ray 240, 24 ft",
+ "notePlaceholder": "Length, where it is docked or stored, what it needs…",
+ "gallery": [
+  {
+   "src": "img/photo-3.jpg",
+   "alt": "Boat helm and cockpit with new teak-style decking",
+   "size": "big"
+  },
+  {
+   "src": "img/photo-5.jpg",
+   "alt": "Boat cockpit with seats and new brown and white decking"
+  },
+  {
+   "src": "img/photo-7.jpg",
+   "alt": "Boat rear deck with new decking installed"
+  },
+  {
+   "src": "img/photo-9.jpg",
+   "alt": "Boat bow with red non-skid stripe on a trailer"
+  },
+  {
+   "src": "img/photo-11.jpg",
+   "alt": "Donzi boat on a trailer outside a marina"
+  }
+ ],
+ "areas": [
+  "Jacksonville"
+ ],
+ "pitch": "site"
+}

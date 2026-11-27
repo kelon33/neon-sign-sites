@@ -13,6 +13,32 @@
    "sectionTitle": "We bring the detail to your dock."
   },
   {
+   "from": "clear-vision-mobile-detailing-and-ceramic-coatings",
+   "servicesTitle": "Surface care, start to finish.",
+   "servicesIntro": "Detailing, correction and coating for paint, fiberglass and gel coat.",
+   "whyTitle": "Why {town} owners call us.",
+   "howTitle": "Three steps to a clearer finish.",
+   "contactTitle": "Get your free quote.",
+   "galleryTitle": "Fresh from the detail.",
+   "alsoTitle": "We also detail",
+   "sectionTitle": "We come to you.",
+   "sectionIntro": "Home, office, marina or storage lot. We bring the equipment, the water and the power.",
+   "steps": [
+    {
+     "name": "Request a quote",
+     "text": "Call or send photos of your vehicle for a recommendation and estimate."
+    },
+    {
+     "name": "Schedule",
+     "text": "Pick a time at your home, office, apartment or marina."
+    },
+    {
+     "name": "We detail on site",
+     "text": "We arrive fully equipped and complete the service where it sits."
+    }
+   ]
+  },
+  {
    "from": "davis-bros-marine-services",
    "headline": "Back on the water<br><em>looking new.</em>",
    "servicesTitle": "Bow to stern.",
@@ -73,6 +99,54 @@
    "galleryTitle": "Fresh off the water.",
    "alsoTitle": "We also detail",
    "sectionTitle": "We come to your boat."
+  },
+  {
+   "from": "excel-professional-detailing-fiberglass",
+   "servicesTitle": "Bow to stern.",
+   "howTitle": "Back on the water in three steps.",
+   "contactTitle": "Book your boat in.",
+   "galleryTitle": "Fresh off the water.",
+   "alsoTitle": "We also detail",
+   "steps": [
+    {
+     "name": "Call us",
+     "text": "Tell us what your boat needs: scratches, gouges, damage or a full detail."
+    },
+    {
+     "name": "Get an estimate",
+     "text": "We give you an accurate estimate. We work with many area marinas, or you can bring the boat to us."
+    },
+    {
+     "name": "Final check",
+     "text": "We go over the finished work with you before it leaves."
+    }
+   ]
+  },
+  {
+   "from": "guardian-detail",
+   "headline": "Like the first day,<br><em>every day.</em>",
+   "servicesTitle": "Waterline up.",
+   "servicesIntro": "From regular washes to full restoration, priced and planned around your boat.",
+   "whyTitle": "Why boat owners call us.",
+   "howTitle": "Ready for the water in three steps.",
+   "contactTitle": "Book your boat in.",
+   "galleryTitle": "Fresh off the water.",
+   "sectionTitle": "We come to your boat.",
+   "sectionIntro": "We come directly to your dock or home, so your day keeps moving.",
+   "steps": [
+    {
+     "name": "Ask for an estimate",
+     "text": "Call or send the form. The estimate is free."
+    },
+    {
+     "name": "We meet and plan",
+     "text": "We look at your boat and decide what it needs."
+    },
+    {
+     "name": "Back on the water",
+     "text": "Your boat is clean, polished and protected."
+    }
+   ]
   },
   {
    "from": "mavinate",
