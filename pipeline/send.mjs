@@ -4,7 +4,7 @@
 //   npm run send -- --approve [--skip 4,7]  records Alon's approval of that list, as a whole ("go, skip #4")
 //   npm run send [-- --dry] [--gap 120-300] sends every approved email not sent yet, then logs it in leads/sent.json
 //
-// Sending is automatic (CLAUDE.md); --approve marks the planned list as cleared to send. Before each email it
+// Alon approves each day's list as a whole (CLAUDE.md); --approve records that. Before each email it
 // checks again: approved and unchanged since approval, never from neonsignsites.com, the mailbox's daily
 // limit, one email per business, the do-not-contact list, the postal address, and that the preview opens.
 // Credentials: NEON_GMAIL_CLIENT_ID, NEON_GMAIL_CLIENT_SECRET and a refresh token per mailbox,

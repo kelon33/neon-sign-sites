@@ -98,7 +98,7 @@ async function main() {
     if (!config.sender?.address) throw new Error('No postal address in config.json (sender.address): US law (CAN-SPAM) requires it in every email. No plan until it is set.');
     if (!mailboxes.length) throw new Error('No sending mailboxes in config.json (sending.mailboxes).');
     const { out, skipped, room } = plan({ ready: await readyPreviews(), sent, mailboxes, dnc });
-    const lines = [`# Emails for ${today()}: for Alon's approval`, '', 'Nothing has been sent yet. `npm run send -- --approve [--skip 4]` and `npm run send` send exactly these texts.', ''];
+    const lines = [`# Emails for ${today()}: for Alon's approval`, '', 'Nothing has been sent. Alon approves the list as a whole ("go", or "go, skip #4"); then `npm run send -- --approve [--skip 4]` and `npm run send` send exactly these texts.', ''];
     const emails = [];
     for (const b of room) lines.push(`- ${b.address}: ${b.left + out.filter((o) => o.from === b.address).length} allowed today`);
     lines.push('');
