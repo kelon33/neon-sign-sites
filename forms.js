@@ -84,5 +84,7 @@ export async function makeItLive(request, env, fetchImpl) {
   }, fetchImpl);
   if (failed) return problem("Our form isn't working right now.", failed);
   const pay = plan === 'own' ? env.PAYPAL_OWN_URL : env.PAYPAL_MONTHLY_URL;
-  return redirect(pay || `/thanks?for=go&plan=${plan}`);
+  // A page of ours (/subscribe) gets the preview slug, so the subscription is tagged with the business.
+  const to = pay && pay.startsWith('/') && slugOk(site) ? `${pay}?site=${site}` : pay;
+  return redirect(to || `/thanks?for=go&plan=${plan}`);
 }

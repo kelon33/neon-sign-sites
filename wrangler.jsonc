@@ -9,7 +9,7 @@
   "vars": {
     "MAIL_FROM": "Neon Sign Sites <hello@neonsignsites.com>",
     "NOTIFY_TO": "alon@neonsignsites.com",
-    "PAYPAL_MONTHLY_URL": "https://www.paypal.com/webapps/billing/plans/subscribe?plan_id=P-37K09329B1018204CNMEYMFY",
+    "PAYPAL_MONTHLY_URL": "/subscribe",
     "PAYPAL_OWN_URL": "https://www.paypal.com/ncp/payment/8BEKHHQQHC7SN"
   },
   "assets": {
