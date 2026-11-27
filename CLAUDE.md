@@ -3,7 +3,7 @@
 We rebuild weak websites of US local service businesses (lawn care, mobile detailing, ...) and offer the new site by email, with a free preview. Owner: Alon (sole proprietor in Israel, עוסק פטור). Store Passport (repo `kelon33/site-translator`) is a separate business: don't touch it from here.
 
 ## Offer (keep the site, terms, emails and previews consistent with it)
-- **Own it:** $299 one-time. Hosting and SSL included for the first year, then $49/year. Changes $25 each, or $19/month care.
+- **Own it:** $299 one-time. Hosting, SSL and 1 small edit a year included for the first year, then $49/year (about $4/month). More changes $25 each, or $19/month care. Not renewed: offline after a 30-day grace period, and we send them the site files. Always mention the $49/year next to "no monthly bill"-style claims.
 - **Monthly:** first month free, then $49/month. Card at signup, first charge on day 31. Minimum 2 paid months after the free month ($98), then cancel anytime; cancelling during the free month costs nothing. One free month per business. The monthly card is the highlighted one on the site. Say "minimum 2 paid months" (never just "2-month minimum") so nobody reads it as 2 months in total. Up to 2 small edits a month (text, photos, prices, hours). Switch to owning for $299 anytime.
 
 ## Repo and publishing

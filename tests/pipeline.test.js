@@ -81,6 +81,7 @@ test('email: names the site problem, has the link, the price, an address and an 
   assert.match(body, /5\.0 stars from 161 Google reviews is great, but your website takes 5\.5 seconds/);
   assert.match(body, /https:\/\/neonsignsites\.com\/p\/ericks-auto-detailing\//);
   assert.match(body, /own it outright for \$299/);
+  assert.match(body, /then \$49 a year/);
   assert.match(body, /minimum 2 paid months/);
   assert.match(body, /POSTAL ADDRESS/);
   assert.match(body, /Reply "no"/);
