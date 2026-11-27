@@ -305,6 +305,11 @@ const SCHEMA = {
   additionalProperties: false,
 };
 
+/** The fields only this business can supply (its facts and photos). When a trade's wording library is
+ *  big enough, the AI is asked for these alone: the headline, titles and steps come from the library. */
+export const FACT_FIELDS = ['wordmarkTop', 'wordmarkBottom', 'intro', 'mobilePoints', 'services', 'also', 'why', 'hours', 'reviews', 'heroPhoto', 'galleryPhotos', 'photoAlts', 'notes'];
+const schemaFor = (only) => (only ? { ...SCHEMA, properties: Object.fromEntries(only.map((k) => [k, SCHEMA.properties[k]])), required: only } : SCHEMA);
+
 const SYSTEM = `You write the copy for a premium one-page website for a local service business, rebuilt from its current website, and you choose its photos.
 
 Voice: sharp, confident, warm, plain American English. Short sentences. Concrete, not generic. Sounds like a top local business, not an agency. No exclamation marks, no clichés like "look no further", "second to none", "passion", "we pride ourselves".
@@ -313,9 +318,9 @@ Facts: use ONLY facts in the business's own site text and the Google facts given
 
 Reviews: copy up to 6 customer reviews from the site text word for word (you may cut a long review with "…" between untouched parts). Pick ones that are specific (what was done, what changed). Use the reviewer's name exactly as shown. No reviews on the site: return [].
 
-Structure (keep it): headline is 2 short lines joined by <br>, the second line wrapped in <em>…</em> (the part that shines). intro: 1–2 sentences. mobilePoints: 4 short points: for detailing, why coming to the customer helps (only if they do); for lawn care, why neighbors call them (schedule, care, results), from what the site says; else []. services: 3–6, in the business's own service names, each with one sentence on what it is or does. also: for detailing, other vehicles they detail (e.g. Boats, RVs); for lawn care, other property types or extra services not in the cards; only if the site says so. why: 3 reasons taken from what the site claims, else []. steps: 3 steps. wordmarkTop/wordmarkBottom: the business name split for a two-line logo (e.g. "Erick's" / "Auto Detailing"). hours: as the site states them, one line per day range, else [].
+Structure (keep it): headline is 2 short lines joined by <br>, the second line wrapped in <em>…</em> (the part that shines). intro: 1–2 sentences. mobilePoints: 4 short points: for detailing, why coming to the customer helps (only if they do); for lawn care, why neighbors call them (schedule, care, results), from what the site says; else []. services: 3–6, in the business's own service names, each with one sentence on what it is or does. also: for detailing, other vehicles they detail (e.g. Boats, RVs); for lawn care, other property types or extra services not in the cards; only if the site says so; never town names (those are service areas). why: 3 reasons taken from what the site claims, else []. steps: 3 steps. wordmarkTop/wordmarkBottom: the business name split for a two-line logo (e.g. "Erick's" / "Auto Detailing"). hours: as the site states them, one line per day range, else [].
 
-Photos: the numbered photos are from their site. heroPhoto: the most striking photo of finished work (a gleaming vehicle, or a green, freshly cut lawn or finished landscape), landscape if possible, bright (0 if none is good). galleryPhotos: the other good ones, best first: real finished work, foam/process shots, the team at work. Leave out flyers, before-photos of messy yards or dirty cars unless paired with the after, graphics with text, screenshots, logos, blurry or dark photos, near-duplicates, stock-looking images. photoAlts: a short, factual description for each photo you used. notes: anything a human should check (e.g. "no reviews on site", "only 3 usable photos").`;
+Photos: the numbered photos are from their site. heroPhoto: the most striking photo of finished work (a gleaming vehicle, or a green, freshly cut lawn or finished landscape), landscape if possible, bright (0 if none is good). galleryPhotos: the other good ones, best first: real finished work, foam/process shots, the team at work. Leave out flyers, before-photos of messy yards or dirty cars unless paired with the after, graphics with text, screenshots, logos, blurry or dark photos, near-duplicates, stock-looking images. Stock includes: AI-generated or 3D-rendered images, staged empty rooms or showroom interiors, generic models posing, paint swatches and tools on white, and a manufacturer's or another company's marketing photos (their watermark or logo on it). When in doubt, leave it out: a preview with no photos is fine, one with stock photos is not. photoAlts: a short, factual description for each photo you used. notes: anything a human should check (e.g. "no reviews on site", "only 3 usable photos").`;
 
 /** The Anthropic API key: ANTHROPIC_API_KEY, or NEON_ANTHROPIC_API_KEY (the name the cloud environment uses). */
 export function anthropicKey() {
@@ -323,14 +328,14 @@ export function anthropicKey() {
 }
 
 /** Asks Claude for sharper wording and the photo choice. Returns null when there is no API key. */
-export async function sharpen({ kit, lead, text, draft, thumbs, model = 'claude-sonnet-5-5' }) {
+export async function sharpen({ kit, lead, text, draft, thumbs, model = 'claude-sonnet-5-5', only = null }) {
   const apiKey = anthropicKey();
   if (!apiKey) return null;
   const { default: Anthropic } = await import('@anthropic-ai/sdk');
   const client = new Anthropic({ apiKey });
   const facts = `Business: ${lead.name}\nTrade: ${lead.trade}\nCity: ${lead.city}\nGoogle rating: ${lead.rating} from ${lead.reviews} reviews\nPhone: ${lead.phone}`;
   const content = [
-    { type: 'text', text: `${facts}\n\nKit: ${kit}\n\nOur ready-made draft (improve on it; keep its structure):\n${JSON.stringify(draft)}\n\nTheir current website text:\n<site>\n${text.slice(0, 24000)}\n</site>\n\nTheir photos follow, numbered from 1.` },
+    { type: 'text', text: `${facts}\n\nKit: ${kit}\n\n${only ? `The headline, section titles and steps are already written (from our library of reviewed sites); write only the fields asked for. The draft, for its voice:` : 'Our ready-made draft (improve on it; keep its structure):'}\n${JSON.stringify(draft)}\n\nTheir current website text:\n<site>\n${text.slice(0, 24000)}\n</site>\n\nTheir photos follow, numbered from 1.` },
     ...thumbs.flatMap((b64, i) => [{ type: 'text', text: `Photo ${i + 1}` }, { type: 'image', source: { type: 'base64', media_type: 'image/jpeg', data: b64 } }]),
   ];
   // The model is one setting in config.json ("aiModel"): claude-sonnet-5-5 (about 3-5 cents a lead)
@@ -342,7 +347,7 @@ export async function sharpen({ kit, lead, text, draft, thumbs, model = 'claude-
     model,
     max_tokens: 16000,
     ...fallback,
-    output_config: { effort: 'low', format: { type: 'json_schema', schema: SCHEMA } },
+    output_config: { effort: 'low', format: { type: 'json_schema', schema: schemaFor(only) } },
     system: SYSTEM,
     messages: [{ role: 'user', content }],
   });

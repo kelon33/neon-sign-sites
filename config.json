@@ -76,5 +76,9 @@
     }
    }
   ]
+ },
+ "wording": {
+  "about": "pipeline/cli.mjs: once a trade's wording library (wording/<trade>.json) has this many reviewed previews, the headline, titles and steps come from it as is, and the AI is asked only for the business's facts and photos.",
+  "libraryFirstMin": 8
  }
 }

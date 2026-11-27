@@ -13,7 +13,8 @@ import { createRequire } from 'node:module';
 const { chromium } = createRequire(import.meta.url)('playwright');
 import { scrapeSite } from './scrape.mjs';
 import { photoCandidates, logoCandidate, galleryPlan, saveImage, thumbnail, pickHero } from './photos.mjs';
-import { kitFor, detailingCopy, lawnCopy, tradeCopy, sharpen, anthropicKey, verify, cleanName, splitWordmark } from './copy.mjs';
+import { kitFor, detailingCopy, lawnCopy, tradeCopy, sharpen, anthropicKey, verify, cleanName, splitWordmark, FACT_FIELDS } from './copy.mjs';
+import { ownReviews, HEARSAY, vehicleFocus, fixStepsTitle, townsInAlso } from './checks.mjs';
 import { draftEmail } from './email.mjs';
 import { blocked } from './dnc.mjs';
 import { renderSite } from '../generator/render.mjs';
@@ -72,6 +73,11 @@ async function main() {
     const site = await scrapeSite(browser, lead.website);
     if (!site) throw new Error('Their site did not load.');
     const text = site.pages.map((p) => p.text).join('\n\n');
+    // A boat search finds car detailers too: their preview gets car wording and a car form.
+    if (kit === 'detailing' && /boat/i.test(lead.trade) && vehicleFocus(text) === 'cars') {
+      checks.push(`Listed as ${lead.trade}, but their site is about cars: built as mobile car detailing.`);
+      lead.trade = 'Mobile car detailing';
+    }
 
     // 2. Photos and logo.
     const tool = await browser.newPage();
@@ -95,6 +101,10 @@ async function main() {
     // the AI improves on it, and --no-ai uses it as is. Facts still come only from their own site.
     const { library, fromLibrary } = await import('./wording.mjs');
     const lib = await library(lead.trade);
+    // Enough reviewed previews of this trade: the general wording comes from them as is, and the AI
+    // is asked only for this business's facts and photos (cheaper, and already-reviewed wording).
+    const libFirst = lib.length >= (config.wording?.libraryFirstMin ?? 8);
+    const model = arg('model') ?? config.aiModel;
     if (lib.length) copy = fromLibrary(copy, lib, { name: lead.name, town: lead.city.replace(/,\s*[A-Z]{2}$/, ''), text });
     // A preview already polished by hand keeps its wording (--fresh starts over); only the photos,
     // logo and rating are refreshed.
@@ -113,22 +123,25 @@ async function main() {
     if (useAi && anthropicKey() && !existing) {
       const thumbs = [];
       for (const p of photos) thumbs.push(await thumbnail(tool, p.file));
-      console.log('Asking Claude for sharper wording and the photo choice');
+      console.log(libFirst ? `Asking Claude (${model}) for their facts and the photo choice; wording from the library (${lib.length} previews)` : `Asking Claude (${model}) for sharper wording and the photo choice`);
       let ai = null;
-      try { ai = await sharpen({ kit, lead, text, draft: copy, thumbs, model: config.aiModel }); }
+      try { ai = await sharpen({ kit, lead, text, draft: copy, thumbs, model, only: libFirst ? FACT_FIELDS : null }); }
       catch (e) { checks.push(`Claude failed (${e.message}): used the kit wording.`); }
       if (ai) {
       const r = ai.result;
-      const points = r.mobilePoints.length ? { title: r.mobileTitle, intro: r.mobileIntro, points: r.mobilePoints } : null;
+      // Library-first: the general fields aren't in the answer, so the library's stay.
+      const pick = (k) => (r[k] !== undefined ? r[k] : copy[k]);
+      const section = copy.mobile ?? copy.highlights ?? {};
+      const points = r.mobilePoints.length ? { title: r.mobileTitle ?? section.title, intro: r.mobileIntro ?? section.intro, points: r.mobilePoints } : null;
       const merged = {
         ...copy,
-        kicker: r.kicker, headline: r.headline, intro: r.intro,
+        kicker: pick('kicker'), headline: pick('headline'), intro: r.intro,
         ...(kit === 'detailing' ? { mobile: points } : { highlights: points }),
-        servicesTitle: r.servicesTitle, servicesIntro: r.servicesIntro,
+        servicesTitle: pick('servicesTitle'), servicesIntro: pick('servicesIntro'),
         services: r.services.map((s) => ({ name: s.name, text: s.text, ...(s.price ? { price: s.price } : {}) })),
         also: r.also.map((n) => ({ name: n })),
-        whyTitle: r.whyTitle, why: r.why, howTitle: r.howTitle, steps: r.steps,
-        contactTitle: r.contactTitle, footerLine: r.footerLine, hours: r.hours, reviews: r.reviews,
+        whyTitle: pick('whyTitle'), why: r.why, howTitle: pick('howTitle'), steps: pick('steps'),
+        contactTitle: pick('contactTitle'), footerLine: pick('footerLine'), hours: r.hours, reviews: r.reviews,
       };
       const { copy: checked, dropped } = verify(merged, { text, facts: ai.facts });
       // A section Claude left empty on purpose (no mobile points: they don't come to you) stays out;
@@ -150,9 +163,29 @@ async function main() {
       wordmark = { top: r.wordmarkTop || lead.name, bottom: r.wordmarkBottom };
       if (r.notes) checks.push(`Claude's notes: ${r.notes}`);
       const u = ai.usage;
-      const price = config.aiModel?.startsWith('claude-haiku') ? [0.10, 0.50] : [2, 10];
+      const price = model.startsWith('claude-haiku') ? [0.10, 0.50] : [2, 10];
       const cents = (u.input_tokens * price[0] + u.output_tokens * price[1]) / 1e4;
       console.log(`Claude: ${u.input_tokens} in, ${u.output_tokens} out (about ${cents.toFixed(2)} cents)`);
+      }
+    }
+
+    // Checks that need no AI (pipeline/checks.mjs): reviews only when written into their own pages,
+    // never Google's through a widget; no lines that quote reviews once those are gone; a steps title
+    // that counts right; no towns among the extra services.
+    if (!existing) {
+      const own = ownReviews(copy.reviews ?? [], site.pages);
+      for (const d of own.dropped) checks.push(`Dropped ${d}.`);
+      copy.reviews = own.reviews;
+      if (!copy.reviews.length) {
+        const plain = (list) => (list ?? []).filter((p) => !HEARSAY.test(`${p.name} ${p.text}`));
+        copy.why = plain(copy.why);
+        for (const k of ['mobile', 'highlights']) if (copy[k]?.points) copy[k].points = plain(copy[k].points);
+      }
+      copy.howTitle = fixStepsTitle(copy.howTitle, copy.steps?.length);
+      const towns = townsInAlso(copy.also ?? [], { areas: [lead.city.replace(/,\s*[A-Z]{2}$/, '')], text });
+      if (towns.length) {
+        copy.also = copy.also.filter((a) => !towns.includes(a));
+        copy.areas = [...new Set([lead.city.replace(/,\s*[A-Z]{2}$/, ''), ...towns.map((t) => t.name ?? t)])];
       }
     }
 

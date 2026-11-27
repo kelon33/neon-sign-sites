@@ -41,7 +41,9 @@ export async function scrapeSite(browser, url, { maxPages = 5 } = {}) {
   const visit = async (u) => {
     const page = await context.newPage();
     try {
-      await page.goto(u, { waitUntil: 'networkidle', timeout: 45000 }).catch(() => {});
+      const resp = await page.goto(u, { waitUntil: 'networkidle', timeout: 45000 }).catch(() => null);
+      // The HTML as their server sends it (before scripts run): a review a widget injects later is not in it.
+      const raw = await resp?.text().catch(() => '') ?? '';
       await page.waitForTimeout(1500);
       // Scroll so lazy images load.
       await page.evaluate(async () => {
@@ -49,7 +51,10 @@ export async function scrapeSite(browser, url, { maxPages = 5 } = {}) {
       });
       await page.waitForTimeout(800);
       // A site that doesn't load shows the browser's own error page: nothing to build from.
-      if (!page.url().startsWith('chrome-error:')) pages.push({ url: page.url(), ...(await page.evaluate(readPage)) });
+      if (!page.url().startsWith('chrome-error:')) {
+        const rendered = await page.content().catch(() => '');
+        pages.push({ url: page.url(), raw: raw.slice(0, 600000), rendered: rendered.slice(0, 1500000), ...(await page.evaluate(readPage)) });
+      }
     } catch { /* a page that fails is skipped */ }
     await page.close();
   };
@@ -64,7 +69,7 @@ export async function scrapeSite(browser, url, { maxPages = 5 } = {}) {
   return {
     url: pages[0].url,
     title: pages[0].title,
-    pages: pages.map((p) => ({ url: p.url, text: p.text.slice(0, 12000) })),
+    pages: pages.map((p) => ({ url: p.url, text: p.text.slice(0, 12000), raw: p.raw, rendered: p.rendered })),
     imgs: pages.flatMap((p) => p.imgs),
     emails: [...new Set(pages.flatMap((p) => p.emails))].filter((e) => !/\.(png|jpe?g|webp|gif)$/.test(e) && !/sentry|wixpress|example\.com/.test(e)),
     links: pages.flatMap((p) => p.links),

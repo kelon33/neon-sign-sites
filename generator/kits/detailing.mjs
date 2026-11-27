@@ -320,7 +320,7 @@ ${d.reviews?.length ? `<section class="section" id="reviews" style="padding-top:
 
 ${d.why?.length ? `<section class="section" style="padding-top:30px">
   <div class="wrap">
-    <p class="eyebrow">Why ${esc(d.wordmark?.top ?? d.name)}</p>
+    <p class="eyebrow">Why ${esc(d.wordmark?.top ? [d.wordmark.top, d.wordmark.bottom].filter(Boolean).join(' ') : d.name)}</p>
     <h2 style="margin-bottom:46px;max-width:16em">${esc(d.whyTitle)}</h2>
     <div class="why">
       ${d.why.map((w, i) => `<div>${whyIcons[i % whyIcons.length]}<h3>${esc(w.name)}</h3><p>${esc(w.text)}</p></div>`).join('\n      ')}
