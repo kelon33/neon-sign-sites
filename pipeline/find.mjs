@@ -78,7 +78,7 @@ export const FIELD_MASK = [
 export const DEFAULTS = { monthlyRequestCap: 600, usdPer1000: 35, maxPages: 3, minReviews: 10, minUseful: 4 };
 
 // National chains and franchises: not our customers.
-const CHAINS = new RegExp(['lawn doctor', 'lawnstarter', 'lawn love', 'massey', 'weed man', 'savatree', 'augusta lawn', 'trugreen', 'brightview', 'davey tree', 'grounds guys', 'u s lawns', 'spring green', 'naturalawn', 'heroes lawn', 'senske', 'greenpal', 'sunday lawn', 'ziebart', 'tint world', 'spiffy', 'detail garage', 'mister car wash', 'tidal wave', 'take 5', 'dent wizard', 'shwash', 'goldie', 'clean air lawn care', 'emerald lawns', 'real green', 'just right lawns']
+const CHAINS = new RegExp(['lawn doctor', 'lawnstarter', 'lawn love', 'massey', 'weed man', 'savatree', 'augusta lawn', 'trugreen', 'brightview', 'davey tree', 'grounds guys', 'u s lawns', 'spring green', 'naturalawn', 'heroes lawn', 'senske', 'greenpal', 'sunday lawn', 'ziebart', 'tint world', 'spiffy', 'detail garage', 'mister car wash', 'tidal wave', 'take 5', 'dent wizard', 'shwash', 'goldie', 'clean air lawn care', 'emerald lawns', 'real green', 'just right lawns', 'pawgo', 'foreverlawn', 'mr handyman', '1 800 got junk', 'college hunks', 'junk king', 'two men and a truck', 'aussie pet mobile', 'christmas decor', 'dent wizard', 'safelite']
   .map((n) => n.replace(/ /g, '[\\s.-]*')).join('|'), 'i');
 // No website of their own to rebuild from.
 const NO_SITE_HOSTS = /(^|\.)(facebook|instagram|yelp|nextdoor|linktr|heygoldie|booksy|vagaro|setmore|square|squareup|urable|thumbtack|angi|homeadvisor|google|tiktok|x|twitter)\.(com|ee|site|me)$/i;
