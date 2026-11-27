@@ -130,14 +130,14 @@ test('the signature carries the phone and address, and old drafts get the curren
   assert.ok(now.endsWith('won\'t email you again.\n'));
 });
 
-test('daily ramp: 3 on the first day, +2 every weekday, weekends skipped, capped at max', async () => {
+test('daily ramp: 3 on the first day, +2 every day (weekends too), capped at max', async () => {
   const { dailyLimit } = await import('../pipeline/queue.mjs');
   const box = { address: 'alon@neonsignsites.net', start: '2026-11-27', daily: { first: 3, step: 2 }, max: 10 };
   assert.equal(dailyLimit(box, '2026-11-26'), 0);
   assert.equal(dailyLimit(box, '2026-11-27'), 3); // Friday
-  assert.equal(dailyLimit(box, '2026-11-30'), 5); // Monday
-  assert.equal(dailyLimit(box, '2026-12-01'), 7);
-  assert.equal(dailyLimit(box, '2026-12-02'), 9);
-  assert.equal(dailyLimit(box, '2026-12-03'), 10);
+  assert.equal(dailyLimit(box, '2026-11-28'), 5); // Saturday
+  assert.equal(dailyLimit(box, '2026-11-29'), 7); // Sunday
+  assert.equal(dailyLimit(box, '2026-11-30'), 9);
+  assert.equal(dailyLimit(box, '2026-12-01'), 10);
   assert.equal(dailyLimit(box, '2026-12-10'), 10);
 });
