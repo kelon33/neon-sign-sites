@@ -43,6 +43,12 @@ for (const domain of await readdir(customers).catch(() => [])) {
   }
   launched.push(domain);
 }
+// Alon's private dashboard (dashboard.mjs): dist/dashboard/, behind Cloudflare Access; worker.js guards it too.
+{
+  const { buildDashboard } = await import('./dashboard.mjs');
+  await mkdir(path.join(dist, 'dashboard'), { recursive: true });
+  await writeFile(path.join(dist, 'dashboard', 'index.html'), await buildDashboard(root));
+}
 // Cloudflare Web Analytics (config.json analyticsToken): page views for the site and every preview,
 // so we can see who opened their preview. Never on customer sites (dist/c/).
 const { analyticsToken } = JSON.parse(await readFile(path.join(root, 'config.json'), 'utf8'));
@@ -51,7 +57,7 @@ if (analyticsToken) {
   const walk = async (dir) => {
     for (const e of await readdir(dir, { withFileTypes: true })) {
       const f = path.join(dir, e.name);
-      if (e.isDirectory()) { if (f !== path.join(dist, 'c')) await walk(f); continue; }
+      if (e.isDirectory()) { if (f !== path.join(dist, 'c') && f !== path.join(dist, 'dashboard')) await walk(f); continue; }
       if (!e.name.endsWith('.html')) continue;
       const html = await readFile(f, 'utf8');
       if (!html.includes('cloudflareinsights')) await writeFile(f, html.replace(/<\/body>(?![\s\S]*<\/body>)/, `${beacon}\n</body>`));

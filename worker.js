@@ -26,6 +26,12 @@ export default {
     const host = url.hostname.toLowerCase();
 
     if (OWN.has(host) || host.endsWith('.workers.dev')) {
+      // The dashboard only through Cloudflare Access on neonsignsites.com (Access adds the header);
+      // never on www, workers.dev or a customer domain, which Access does not cover.
+      if (url.pathname === '/dashboard' || url.pathname.startsWith('/dashboard/')) {
+        if (host !== 'neonsignsites.com' || !request.headers.get('cf-access-jwt-assertion')) return new Response('Not found', { status: 404 });
+        return withHeader(await env.ASSETS.fetch(request), 'X-Robots-Tag', 'noindex, nofollow');
+      }
       if (request.method === 'POST' && url.pathname === '/api/preview-request') return previewRequest(request, env);
       if (request.method === 'POST' && url.pathname === '/api/go') return makeItLive(request, env);
       const res = await env.ASSETS.fetch(request);
