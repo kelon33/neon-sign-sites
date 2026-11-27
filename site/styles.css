@@ -277,28 +277,33 @@ details[open] p { animation: faq-in .35s ease both; }
   .brand-name { display: none; }
 }
 
-/* Full-screen sections: each section fills the screen like a page, and scrolling moves on to the next
-   one. With a mouse or trackpad, index.html pages from section to section (sections taller than the
-   screen scroll normally to their end first). On a touch screen, soft snapping settles each swipe on the
-   start of a section when it ends near one. Skipped on short screens (a phone turned sideways). */
+/* Stacked pages (home page): scrolling stays normal. Each section fills the screen; when it reaches the
+   top it holds still and the next section slides up over it, like a card on a stack. A section taller
+   than the screen scrolls to its end first: index.html sets each section's sticky "top" from its height.
+   Skipped on short screens (a phone turned sideways), where it would only get in the way. */
 @media (min-height: 560px) {
-  html.pages { scroll-padding-top: 73px; }
-  main > section { scroll-snap-align: start; }
-  main > section.hero, main > section.block, main > section.cta {
+  .pages main > section { position: sticky; top: 73px; background-color: var(--bg); }
+  .pages main > section.block.alt { background-color: var(--bg-2); }
+  .pages main > section.cta { background-color: var(--bg); }
+  /* Each card's top edge: rounded corners and a soft shadow over the page below it. */
+  .pages main > section:not(.hero):not(.trades) { border-radius: 28px 28px 0 0; border-top: 1px solid var(--line);
+    box-shadow: 0 -18px 40px -12px rgba(0,0,0,.65); }
+  .pages main > section.trades { position: relative; top: auto; }
+  .pages main > section.hero, .pages main > section.block, .pages main > section.cta {
     display: flex; flex-direction: column; justify-content: center;
     min-height: calc(100vh - 73px); min-height: calc(100svh - 73px); }
-  main > section > .wrap { width: 100%; }
-  main > section.block { padding: 88px 0; }
-  main > section.cta { padding: 88px 0 96px; }
+  .pages main > section > .wrap { width: 100%; }
+  .pages main > section.block { padding: 88px 0; }
+  .pages main > section.cta { padding: 88px 0 96px; }
   /* The first screen is the hero plus the strip of trades under it. */
-  main > section.hero { min-height: calc(100vh - 73px - var(--trades-h, 113px)); min-height: calc(100svh - 73px - var(--trades-h, 113px)); }
-  main > section.trades { scroll-snap-align: none; }
-  .pages .footer { scroll-snap-align: end; }
+  .pages main > section.hero { min-height: calc(100vh - 73px - var(--trades-h, 113px)); min-height: calc(100svh - 73px - var(--trades-h, 113px)); }
+  /* The card being covered sinks back a little (index.html sets --cover from 0 to 1). */
+  .pages main > section.covered { transform: scale(calc(1 - .04 * var(--cover, 0))); filter: brightness(calc(1 - .45 * var(--cover, 0))); transform-origin: 50% 0; }
 }
-@media (min-height: 560px) and (pointer: coarse) { html.pages { scroll-snap-type: y proximity; } }
-@media (min-height: 560px) and (min-width: 601px) { main > section.hero { padding: 32px 0; } }
+@media (min-height: 560px) and (min-width: 601px) { .pages main > section.hero { padding: 32px 0; } }
 /* On a phone the hero already sizes itself to the first screen. */
-@media (max-width: 600px) { main > section.hero { min-height: 0; } }
+@media (max-width: 600px) { .pages main > section.hero { min-height: 0; } }
+@media (max-width: 600px) and (min-height: 560px) { .pages main > section:not(.hero):not(.trades) { border-radius: 22px 22px 0 0; } }
 
 /* Each section's content rises in gently as it arrives (only with JavaScript, never with reduced motion). */
 .reveal-on main > section:not(.hero) > .wrap { opacity: 0; transform: translateY(28px); transition: opacity .7s ease, transform .7s cubic-bezier(.22,.61,.36,1); }

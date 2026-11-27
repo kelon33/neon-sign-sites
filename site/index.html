@@ -225,7 +225,7 @@
       if (!btn._touched || !href.startsWith('#')) return;
       btn._touched = false;
       e.preventDefault();
-      setTimeout(() => document.querySelector(href)?.scrollIntoView({ behavior: 'smooth' }), 340);
+      setTimeout(() => goTo(href), 340);
     });
   }
 
@@ -238,48 +238,63 @@
     for (const s of document.querySelectorAll('main > section')) io.observe(s);
   }
 
-  // Mouse and trackpad: one scroll moves to the next section, like turning a page (styles.css: full-screen
-  // sections). A section taller than the screen scrolls normally until its end shows, then the next scroll
-  // turns the page. Touch screens keep their own scrolling, with soft snapping from the CSS.
-  (() => {
-    const pages = [...document.querySelectorAll('main > section:not(.trades)')];
+  // Stacked pages (styles.css): a section holds still once its end is on screen, and the next slides
+  // over it. Its sticky top is the nav height, or less for a section taller than the screen, so it
+  // scrolls to its end first. The section being covered sinks back as the next one arrives.
+  const stack = (() => {
+    const main = document.querySelector('main');
+    const secs = [...main.querySelectorAll(':scope > section')];
     const navH = () => document.querySelector('.nav')?.offsetHeight || 0;
-    const fits = () => innerHeight >= 560;
-    // While a page turn is under way, and until a trackpad's after-scroll stops, further scrolls are held.
-    let busy = false, animDone = true, lastWheel = 0;
-    const top = (el) => el.getBoundingClientRect().top + scrollY - navH();
-    const bottom = (el) => el.getBoundingClientRect().bottom + scrollY - innerHeight;
-    // Whether more of a section is off screen is judged by its content, not its padding.
-    const inner = (el) => el.querySelector(':scope > .wrap') || el;
-    function current() {
-      let cur = 0;
-      pages.forEach((p, i) => { if (top(p) <= scrollY + 2) cur = i; });
-      return cur;
+    const on = () => getComputedStyle(secs[0]).position === 'sticky';
+    const still = !window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    // clientHeight is the screen without the phone's sliding address bar, so nothing shifts when it hides.
+    function place() {
+      const vh = document.documentElement.clientHeight;
+      for (const s of secs) s.style.top = on() && !s.classList.contains('trades') ? Math.min(navH(), vh - s.offsetHeight) + 'px' : '';
+      shade();
     }
-    function go(y) {
-      busy = true; animDone = false;
-      window.scrollTo({ top: Math.max(0, Math.round(y)), behavior: matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth' });
-      setTimeout(() => { animDone = true; }, 800);
+    // Where a section starts on the page when nothing is stuck: the sum of the heights before it.
+    function start(el) {
+      let y = main.offsetTop;
+      for (const s of secs) { if (s === el) break; y += s.offsetHeight; }
+      return y - navH();
     }
-    window.addEventListener('wheel', (e) => {
-      if (!fits() || e.ctrlKey || Math.abs(e.deltaX) > Math.abs(e.deltaY)) return;
-      const now = performance.now();
-      if (busy && animDone && now - lastWheel > 200) busy = false;
-      lastWheel = now;
-      if (busy) { e.preventDefault(); return; }
-      const i = current(), p = pages[i], y = scrollY;
-      if (e.deltaY > 0) {
-        if (bottom(inner(p)) > y + 2) return;        // more of this section below: scroll normally
-        if (i === pages.length - 1) return;          // last section: on to the footer
-        e.preventDefault(); go(top(pages[i + 1]));
-      } else if (e.deltaY < 0) {
-        if (top(inner(p)) < y - 2) return;           // more of this section above: scroll normally
-        if (i === 0) return;
-        const prev = pages[i - 1];                   // land on the end of a tall section, the start of a short one
-        e.preventDefault(); go(Math.max(top(prev), Math.min(bottom(prev), bottom(inner(prev)) + 48)));
-      }
-    }, { passive: false });
+    function shade() {
+      if (!still) return;
+      secs.forEach((s, i) => {
+        const next = secs[i + 1];
+        if (!on() || !next || s.classList.contains('trades') || next.classList.contains('trades')) { s.classList.remove('covered'); return; }
+        const r = next.getBoundingClientRect(), vh = document.documentElement.clientHeight;
+        const p = Math.max(0, Math.min(1, (vh - r.top) / (vh - navH())));
+        s.classList.toggle('covered', p > 0 && p < 1.001);
+        s.style.setProperty('--cover', p.toFixed(3));
+      });
+    }
+    let ticking = false;
+    window.addEventListener('scroll', () => { if (!ticking) { ticking = true; requestAnimationFrame(() => { ticking = false; shade(); }); } }, { passive: true });
+    window.addEventListener('resize', place);
+    if ('ResizeObserver' in window) new ResizeObserver(place).observe(main); // FAQ answers opening, fonts loading
+    place();
+    return { start, on };
   })();
+
+  // In-page links: a section stuck under others is already "in view" to the browser, so scroll to where
+  // it starts on the page instead.
+  function goTo(hash) {
+    const el = document.querySelector(hash);
+    if (!el) return;
+    const sec = el.closest('main > section') || el;
+    const y = stack.on() && sec.parentElement?.tagName === 'MAIN' ? stack.start(sec) : el.getBoundingClientRect().top + scrollY - 73;
+    window.scrollTo({ top: y, behavior: window.matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth' });
+    history.replaceState(null, '', hash);
+  }
+  document.addEventListener('click', (e) => {
+    const a = e.target.closest('a[href^="#"]');
+    if (!a || e.defaultPrevented) return; // a button tapped on a phone already waits for its glow, then goes
+    const hash = a.getAttribute('href');
+    if (hash.length < 2) return;
+    e.preventDefault(); goTo(hash);
+  });
 
   // The preview form opens the visitor's email app with the details filled in (no server, no tracking).
   document.getElementById('preview-form')?.addEventListener('submit', (e) => {
