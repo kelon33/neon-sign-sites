@@ -2,7 +2,7 @@
  "about": "Google Places requests, counted by pipeline/find.mjs. Commit this file: it is the only record across sessions.",
  "months": {
   "2026-11": {
-   "requests": 18
+   "requests": 25
   }
  },
  "queries": {
@@ -23,6 +23,13 @@
   "handyman service in Waco, TX": "2026-11-27",
   "house painter in Waco, TX": "2026-11-27",
   "junk removal in Waco, TX": "2026-11-27",
-  "mobile dog grooming in Waco, TX": "2026-11-27"
+  "mobile dog grooming in Waco, TX": "2026-11-27",
+  "handyman service in Lubbock, TX": "2026-11-27",
+  "junk removal in Lubbock, TX": "2026-11-27",
+  "house painter in Lubbock, TX": "2026-11-27",
+  "mobile dog grooming in Lubbock, TX": "2026-11-27",
+  "paintless dent repair in Lubbock, TX": "2026-11-27",
+  "christmas light installation in Lubbock, TX": "2026-11-27",
+  "boat detailing in Sarasota, FL": "2026-11-27"
  }
 }
