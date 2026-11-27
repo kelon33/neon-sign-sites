@@ -1,0 +1,6 @@
+- Logo is dark on a transparent background: shown on a white chip. Check it reads well.
+- Photo pitch: only 2 usable photos by Claude's choice, so no gallery; the email asks them for photos of their work.
+- Claude's notes: Only 3 photos, all modest quality. Site gives per-foot prices for Maintenance Detail Wash ($8), Wash and Wax ($16) and oxidation removal ($30, unit unclear); only Wash and Wax is shown. The 90-day mold/mildew guarantee with quarterly plans is on the site but was left out; confirm before using. Site says 'Serving Sarasota and Manatee counties'. Only one review on site, though Google shows 6. Wix site has a stray address (4023 Royal Palms Ave); confirm whether to show it.
+- Only 0 gallery photos.
+- No postal address yet (config.json sender.address): required by law before sending.
+- Review (session): Photo pitch (too few photos of their work on their site). Fold check passed.

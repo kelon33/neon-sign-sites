@@ -1,0 +1,7 @@
+- Found by a search in Jacksonville, FL, but their address is in Ponte Vedra Beach, FL: the site uses that. Check their service area.
+- Dropped (not backed by their site): service: Exterior painting Pressure washing, caulking and resealing, then two coats sprayed on. As low as $2,600 for a single story home, up to 1,600 sq. ft.
+- Photo pitch: only 2 usable photos by Claude's choice, so no gallery; the email asks them for photos of their work.
+- Claude's notes: Site is dated: reviews are from 2013 to 2015. Site mentions Jacksonville and St. Johns County service areas and 2009 to 2023 rankings. Prices and coupon are as stated on the site and should be confirmed. Only 3 photos, low resolution. Site text mentions a 1997 start and a #1 claim; the #1 claim was left out.
+- Only 0 gallery photos.
+- No postal address yet (config.json sender.address): required by law before sending.
+- Review (session): Photo pitch (too few photos of their work on their site). Fold check passed.

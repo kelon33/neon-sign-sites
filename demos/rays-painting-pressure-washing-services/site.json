@@ -1,0 +1,115 @@
+{
+ "kit": "painting",
+ "name": "Ray’s Painting & Pressure Washing Services",
+ "legalName": "Ray’s Painting & Pressure Washing Services",
+ "preview": true,
+ "placeId": "ChIJhXj-rWAdx2QRWDhMHPT48kM",
+ "title": "Ray’s Painting & Pressure Washing Services | House painting in Jacksonville, FL",
+ "description": "Interior and exterior painting, cabinet refinishing and pressure washing across Jacksonville and Northeast Florida. Family owned, with over 20 years of hands-on experience. 5.0 on Google from 90 reviews.",
+ "logo": "logo.png",
+ "logoChip": true,
+ "wordmark": {
+  "top": "Ray's Painting",
+  "bottom": "& Pressure Washing"
+ },
+ "phone": "(904) 626-5690",
+ "email": "thomas@rayspaintjax.com",
+ "heroImage": "img/photo-6.jpg",
+ "heroAlt": "Gray-green house with white trim and a covered porch",
+ "heroPosition": "60% 60%",
+ "heroPositionPhone": "60% 50%",
+ "rating": {
+  "score": "5.0",
+  "count": 90,
+  "url": "https://maps.google.com/?cid=4896249472235616344"
+ },
+ "kicker": "House painting · Jacksonville",
+ "headline": "Fresh paint.<br><em>Honest work.</em>",
+ "intro": "Interior and exterior painting, cabinet refinishing and pressure washing across Jacksonville and Northeast Florida. Family owned, with over 20 years of hands-on experience.",
+ "badges": [
+  "Licensed & insured",
+  "Free estimates",
+  "Family owned",
+  "Homes and businesses"
+ ],
+ "highlights": null,
+ "servicesTitle": "Inside and out.",
+ "servicesIntro": "One room or the whole house. Free estimates.",
+ "services": [
+  {
+   "name": "Residential Interior Painting",
+   "text": "Transform your living spaces with beautiful, lasting finishes."
+  },
+  {
+   "name": "Exterior Painting",
+   "text": "Boost curb appeal and protect your home with expert exterior work."
+  },
+  {
+   "name": "Cabinet Refinishing & Painting",
+   "text": "Give kitchens and bathrooms a fresh, modern look."
+  },
+  {
+   "name": "Professional Pressure Washing",
+   "text": "Prepare surfaces for painting or restore your property's shine."
+  }
+ ],
+ "also": [
+  {
+   "name": "Deck and fence staining"
+  },
+  {
+   "name": "Drywall repair with painting"
+  },
+  {
+   "name": "Commercial painting"
+  }
+ ],
+ "alsoTitle": "We also do:",
+ "promise": null,
+ "why": [
+  {
+   "name": "20+ years of experience",
+   "text": "Owner Thomas Carroll has painted for over two decades, on homes and businesses."
+  },
+  {
+   "name": "Family owned and operated",
+   "text": "They treat every home and business like it's their own."
+  },
+  {
+   "name": "Word-of-mouth reputation",
+   "text": "Most of the work comes from referrals and repeat customers."
+  }
+ ],
+ "whyTitle": "Why Ray's.",
+ "howTitle": "A fresh coat in three steps.",
+ "steps": [
+  {
+   "name": "Ask for a free estimate",
+   "text": "Call or use the form to tell us about your project."
+  },
+  {
+   "name": "Plan the job",
+   "text": "We go over the work, colors and timing with you."
+  },
+  {
+   "name": "Enjoy the new look",
+   "text": "We paint, and aim to finish on time and on budget."
+  }
+ ],
+ "contactTitle": "Ready for a fresh coat?",
+ "footerLine": "House painting and pressure washing in Jacksonville, FL",
+ "reviews": [
+  {
+   "text": "Highly recommend the very professional great job",
+   "name": "Andrea House"
+  }
+ ],
+ "hours": [],
+ "galleryTitle": "Homes we’ve painted.",
+ "notePlaceholder": "Inside or outside, how many rooms, a date you have in mind…",
+ "gallery": [],
+ "areas": [
+  "Jacksonville"
+ ],
+ "pitch": "photos"
+}
