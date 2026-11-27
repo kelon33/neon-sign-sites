@@ -1,0 +1,122 @@
+{
+  "kit": "painting",
+  "trade": "House painting",
+  "name": "The Painting Craftsmen",
+  "legalName": "The Painting Craftsmen",
+  "preview": true,
+  "placeId": "ChIJGydkCye35YgRJQCY0AsGz6A",
+  "title": "The Painting Craftsmen | Boutique house painting in Jacksonville, FL",
+  "description": "The Painting Craftsmen is a locally owned residential painting contractor serving greater Jacksonville. Interior, exterior and cabinets, with free estimates and a one-year satisfaction guarantee. 4.9 on Google from 196 reviews.",
+  "logo": "logo.png",
+  "logoChip": false,
+  "wordmark": {
+    "top": "The Painting Craftsmen"
+  },
+  "phone": "(904) 507-5700",
+  "email": "contact@paintingcraftsmen.com",
+  "rating": {
+    "score": "4.9",
+    "count": 196,
+    "url": "https://maps.google.com/?cid=11587487014061604901"
+  },
+  "kicker": "Boutique house painting · Jacksonville",
+  "headline": "Painters you invite in.<br><em>Craftsmen you keep.</em>",
+  "intro": "The Painting Craftsmen is a locally owned residential painting contractor serving greater Jacksonville. Interior, exterior and cabinets, with free estimates and a one-year satisfaction guarantee.",
+  "badges": [
+    "Licensed & insured",
+    "Free estimates",
+    "Residential painting"
+  ],
+  "highlights": null,
+  "servicesTitle": "Inside and out.",
+  "servicesIntro": "One room or the whole property.",
+  "services": [
+    {
+      "name": "Interior painting",
+      "text": "Living rooms, bedrooms, kitchens, bathrooms, ceilings, trim and accent walls, with color and finish consultations."
+    },
+    {
+      "name": "Exterior painting",
+      "text": "Full home exteriors, including siding, trim, doors and shutters, with surface prep and primer."
+    },
+    {
+      "name": "Cabinet refinishing",
+      "text": "A kitchen transformation without a full remodel, with durable topcoats built for daily use."
+    },
+    {
+      "name": "Deck staining and fence refinishing",
+      "text": "Premium stains and sealers that protect outdoor wood from Florida sun, rain and humidity."
+    },
+    {
+      "name": "Pool deck coatings",
+      "text": "A surface that stays cooler, resists slipping and holds up to UV, chlorine and foot traffic."
+    },
+    {
+      "name": "Stucco and drywall repair",
+      "text": "Cracks, holes and damaged texture repaired, matched to your existing finish and painted to blend."
+    }
+  ],
+  "also": [
+    {
+      "name": "Pressure washing"
+    },
+    {
+      "name": "Caulking and waterproofing"
+    },
+    {
+      "name": "Rotten wood repair"
+    },
+    {
+      "name": "Textured ceiling repair"
+    },
+    {
+      "name": "Garage floor coating"
+    },
+    {
+      "name": "Wallpaper removal"
+    }
+  ],
+  "alsoTitle": "We also do:",
+  "promise": null,
+  "why": [
+    {
+      "name": "Licensed, insured, Lead-Safe Certified",
+      "text": "We protect your home and family on every project."
+    },
+    {
+      "name": "One-year satisfaction guarantee",
+      "text": "Every service is backed for one year from the date of application."
+    },
+    {
+      "name": "Clean, careful, on time",
+      "text": "We communicate clearly, arrive when we say and leave your home clean."
+    }
+  ],
+  "whyTitle": "Why Jacksonville homeowners choose us.",
+  "howTitle": "From estimate to final walk-through.",
+  "steps": [
+    {
+      "name": "Get a free estimate",
+      "text": "Call or text, or send the form. No obligation, so you know what to expect before work begins."
+    },
+    {
+      "name": "We prep and paint",
+      "text": "We mask and cover your home, repair surfaces, then paint with Benjamin Moore and Sherwin-Williams products."
+    },
+    {
+      "name": "Final walk-through",
+      "text": "We check the work with you and make it right if anything falls short."
+    }
+  ],
+  "contactTitle": "Ready for a fresh coat?",
+  "footerLine": "Residential painting in Jacksonville, FL",
+  "reviews": [],
+  "hours": [],
+  "galleryTitle": "Homes we’ve painted.",
+  "notePlaceholder": "Inside or outside, how many rooms, a date you have in mind…",
+  "gallery": [],
+  "areas": [
+    "Jacksonville"
+  ],
+  "pitch": "photos"
+}
