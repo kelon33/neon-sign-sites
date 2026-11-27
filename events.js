@@ -31,12 +31,12 @@ export async function record(env, kind, slug, extra = {}) {
 
 /** Everything, for the dashboard: { p: { slug: meta }, g: {...}, m: {...} }. */
 export async function allEvents(env) {
-  const out = { p: {}, g: {}, m: {} };
+  const out = { p: {}, g: {}, m: {}, c: {}, s: {}, $: {}, S: {} };
   if (!env.EVENTS) return out;
   let cursor;
   do {
     const page = await env.EVENTS.list({ cursor, limit: 1000 });
-    for (const k of page.keys) { const [kind, slug] = k.name.split(':'); if (out[kind]) out[kind][slug] = k.metadata ?? {}; }
+    for (const k of page.keys) { const i = k.name.indexOf(':'); const kind = k.name.slice(0, i); if (out[kind]) out[kind][k.name.slice(i + 1)] = k.metadata ?? {}; }
     cursor = page.list_complete ? undefined : page.cursor;
   } while (cursor);
   return out;

@@ -21,3 +21,16 @@ test('events: preview opens and the Make it live page count, bots and our own HE
   assert.equal(eventOf(...req('/p/dewey-lawns/', 'Mozilla/5.0 (compatible; Googlebot/2.1)')), null);
   assert.equal(eventOf(...req('/p/dewey-lawns/', 'Mozilla/5.0', 'HEAD')), null);
 });
+
+test('Quo webhook signature: right key passes, wrong key or old timestamp fails', async () => {
+  const { quoSignatureOk } = await import('../hooks.js');
+  const { createHmac } = await import('node:crypto');
+  const secret = Buffer.from('test-signing-key-1234').toString('base64');
+  const body = '{"type":"call.completed"}';
+  const sign = (ts, key = secret) => `hmac;1;${ts};${createHmac('sha256', Buffer.from(key, 'base64')).update(`${ts}.${body}`).digest('base64')}`;
+  const now = Date.now();
+  assert.equal(await quoSignatureOk(sign(now), body, secret), true);
+  assert.equal(await quoSignatureOk(sign(now, Buffer.from('other').toString('base64')), body, secret), false);
+  assert.equal(await quoSignatureOk(sign(now - 60 * 60 * 1000), body, secret), false);
+  assert.equal(await quoSignatureOk(null, body, secret), false);
+});

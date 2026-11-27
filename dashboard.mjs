@@ -44,6 +44,19 @@ export async function buildDashboard(root) {
     const mail = await readFile(path.join(root, 'demos', slug, 'email.txt'), 'utf8').catch(() => null);
     if (mail && /^To: *\S+@/m.test(mail) && !emailed.has(slug)) ready++;
   }
+  // Phone numbers of every business (their preview's and Google's), so calls and texts to (888) 444-1847 match a lead.
+  const phones = {};
+  const ten = (n) => String(n ?? '').replace(/\D/g, '').slice(-10);
+  for (const slug of Object.keys(names)) {
+    const site = await json(path.join(root, 'demos', slug, 'site.json'), {});
+    if (ten(site.phone).length === 10) phones[ten(site.phone)] = slug;
+  }
+  for (const f of await readdir(path.join(root, 'leads')).catch(() => [])) {
+    if (!f.startsWith('found-') || !f.endsWith('.json')) continue;
+    const d = await json(path.join(root, 'leads', f), []);
+    const list = Array.isArray(d) ? d : d.leads ?? [];
+    for (const l of list) { const s2 = sent.find((x) => x.to?.toLowerCase() === l.email?.toLowerCase()); if (s2 && ten(l.phone).length === 10 && !phones[ten(l.phone)]) phones[ten(l.phone)] = s2.slug; }
+  }
   const rows = pipeline({ sent, replies, dnc, names });
   const count = (st) => rows.filter((r) => r.status === st).length;
   const hot = rows.filter((r) => r.status.startsWith('hot')).sort((a, b) => String(b.last?.date).localeCompare(String(a.last?.date)));
@@ -61,11 +74,13 @@ export async function buildDashboard(root) {
   });
   const month = new Date().toISOString().slice(0, 7);
   const places = usage.months?.[month]?.requests ?? 0;
+  const cap = (await json(path.join(root, 'config.json'), {})).places?.monthlyRequestCap ?? 600;
   const label = { 'hot-form': 'Make it live / form', 'hot-reply': 'Replied', cold: 'No reaction yet', no: 'Said no', bounced: 'Bounced' };
   const preview = (slug) => `<a href="/p/${esc(slug)}/" target="_blank" rel="noopener">${esc(names[slug] ?? slug)}</a>`;
+  const open = (slug) => `<a class="open" href="/p/${esc(slug)}/" target="_blank" rel="noopener">Preview ↗</a><small>neonsignsites.com/p/${esc(slug)}/</small>`;
   const quote = (r) => r?.text ? `<q>${esc(r.text.split(/\n(On .+wrote:|-----Original Message-----)/)[0].trim().slice(0, 220))}</q>` : '';
-  const table = (list) => list.length ? `<table><thead><tr><th>Business</th><th>Status</th><th>Opened</th><th>Emailed</th><th>From</th><th>Subj.</th></tr></thead><tbody>${list.map((r) =>
-    `<tr class="${esc(r.status)}" data-slug="${esc(r.slug)}"><td>${preview(r.slug)}<small>${esc(r.to ?? '')}</small></td><td><span class="tag ${esc(r.status)}">${esc(label[r.status])}</span></td><td class="opened">–</td><td>${esc(r.sentOn ?? '')}</td><td>${esc((r.from ?? '').replace('@neonsignsites.', ' @ .'))}</td><td>${esc(r.variant ?? '–')}</td></tr>`).join('')}</tbody></table>` : '<p class="muted">Nothing here yet.</p>';
+  const table = (list) => list.length ? `<table><thead><tr><th>Business</th><th>Preview</th><th>Status</th><th>Opened</th><th>Calls / texts</th><th>Emailed</th><th>From</th><th>Subj.</th></tr></thead><tbody>${list.map((r) =>
+    `<tr class="${esc(r.status)}" data-slug="${esc(r.slug)}"><td>${preview(r.slug)}<small>${esc(r.to ?? '')}</small></td><td>${open(r.slug)}</td><td><span class="tag ${esc(r.status)}">${esc(label[r.status])}</span></td><td class="opened">–</td><td class="calls">–</td><td>${esc(r.sentOn ?? '')}</td><td>${esc((r.from ?? '').replace('@neonsignsites.', ' @ .'))}</td><td>${esc(r.variant ?? '–')}</td></tr>`).join('')}</tbody></table>` : '<p class="muted">Nothing here yet.</p>';
   const order = { 'hot-form': 0, 'hot-reply': 1, cold: 2, no: 3, bounced: 4 };
   const all = [...rows].sort((a, b) => order[a.status] - order[b.status] || String(b.sentOn).localeCompare(String(a.sentOn)));
   const built = new Date().toISOString().replace('T', ' ').slice(0, 16) + ' UTC';
@@ -97,33 +112,36 @@ q { display: block; color: var(--fg); opacity: .85; margin-top: 4px; font-style:
 .bars-x { display: flex; gap: 6px; font-size: .7rem; color: var(--muted); } .bars-x span { flex: 1; text-align: center; min-width: 14px; }
 table { width: 100%; border-collapse: collapse; font-size: .9rem; } th, td { text-align: left; padding: 9px 8px; border-top: 1px solid var(--line); vertical-align: top; }
 th { color: var(--muted); font-weight: 500; border-top: 0; }
-a { color: #ff8fb4; text-decoration: none; } a:hover { text-decoration: underline; }
+a { color: #ff8fb4; text-decoration: none; }
+a.open { display: inline-block; padding: 4px 10px; border: 1px solid rgba(255,79,139,.45); border-radius: 99px; font-size: .82rem; white-space: nowrap; }
+a.open:hover { background: rgba(255,79,139,.12); text-decoration: none; } a:hover { text-decoration: underline; }
 .tag { display: inline-block; padding: 2px 8px; border-radius: 99px; font-size: .78rem; white-space: nowrap; background: #22222c; color: var(--muted); }
 .tag.warm { background: rgba(255,210,122,.14); color: var(--gold); }
 .tag.hot-form, .tag.hot-reply { background: rgba(255,79,139,.18); color: #ff9cbf; } .tag.no { background: #2a1d1d; color: #e59a9a; } .tag.bounced { background: #2a2618; color: var(--gold); }
-@media (max-width: 760px) { .cols { grid-template-columns: 1fr; } td:nth-child(5), th:nth-child(5), td:nth-child(6), th:nth-child(6) { display: none; } }
+@media (max-width: 760px) { .cols { grid-template-columns: 1fr; } td:nth-child(7), th:nth-child(7), td:nth-child(8), th:nth-child(8), td:nth-child(6), th:nth-child(6) { display: none; } td small { word-break: break-all; } }
 </style></head><body><div class="wrap">
 <header><h1><img src="/logo.svg" alt="">Dashboard</h1><span class="muted">Updated ${esc(built)}</span></header>
 
 <div class="kpis">
-  <div class="kpi hot"><b>${hot.length}</b><span>Hot leads</span></div>
+  <div class="kpi hot"><b id="k-hot">${hot.length}</b><span>Hot leads</span></div>
   <div class="kpi"><b id="k-warm">…</b><span>Warm (opened their preview)</span></div>
   <div class="kpi"><b id="k-cold">${count('cold')}</b><span>Cold (no reaction yet)</span></div>
   <div class="kpi"><b>${sent.length}</b><span>Emails sent · ${esc(perDay[day(new Date().toISOString())] ?? 0)} today</span></div>
   <div class="kpi"><b>${rate}%</b><span>Reply rate (${realReplies} of ${delivered} delivered)</span></div>
   <div class="kpi"><b>${ready}</b><span>Previews ready to send</span></div>
-  <div class="kpi money"><b>–</b><span>Revenue (PayPal not connected yet)</span></div>
+  <div class="kpi money"><b id="k-rev">–</b><span id="k-rev-l">Revenue (PayPal not connected yet)</span></div>
 </div>
 
 <div class="cols">
-  <div><h2>Hot leads</h2><div class="card">${hot.length ? hot.map((r) => `<div class="lead">${preview(r.slug)} <span class="tag ${esc(r.status)}">${esc(label[r.status])}</span><small>${esc(r.last?.from ?? '')} → ${esc(r.last?.box ?? '')} · ${esc(day(r.last?.date))}</small>${quote(r.last)}</div>`).join('') : '<p class="muted">No replies or "Make it live" yet. They appear here within 2 hours, and you get a notification.</p>'}</div></div>
+  <div><h2>Hot leads</h2><div class="card">${hot.length ? hot.map((r) => `<div class="lead">${preview(r.slug)} <span class="tag ${esc(r.status)}">${esc(label[r.status])}</span> <a class="open" href="/p/${esc(r.slug)}/" target="_blank" rel="noopener">Preview ↗</a><small>${esc(r.last?.from ?? '')} → ${esc(r.last?.box ?? '')} · ${esc(day(r.last?.date))}</small>${quote(r.last)}</div>`).join('') : '<p class="muted">No replies or "Make it live" yet. They appear here within 2 hours, and you get a notification.</p>'}</div></div>
   <div><h2>Emails per day</h2><div class="card">${days.length ? `<div class="bars">${days.map((d) => `<div style="height:${Math.round((100 * perDay[d]) / max)}%"><span>${perDay[d]}</span></div>`).join('')}</div><div class="bars-x">${days.map((d) => `<span>${esc(d.slice(5))}</span>`).join('')}</div>` : '<p class="muted">Nothing sent yet.</p>'}
   <h2 style="margin-top:22px">Subject test</h2>${ab.map((x) => `<p>${x.v === 'A' ? '<b>A</b> "Name – new website (preview)"' : '<b>B</b> "Quick question about their-site.com"'}<br><span class="muted">${x.r} replies of ${x.n} sent (${x.pct}%)</span></p>`).join('')}
-  <p class="muted">Said no: ${count('no')} · Bounced: ${count('bounced')} · Do-not-contact list: ${dnc.length}<br>Google Places this month: ${esc(places)} of 600 requests</p></div></div>
+  <p class="muted">Said no: ${count('no')} · Bounced: ${count('bounced')} · Do-not-contact list: ${dnc.length}<br>Google Places this month: ${esc(places)} of ${esc(cap)} requests</p></div></div>
 </div>
 
+<div id="unknown"></div>
 <h2>Every business</h2><div class="card">${table(all)}</div>
-<p class="muted" style="margin-top:20px">Preview visits and "Make it live" clicks are live (from today; bots and link scanners are not counted). Coming next: calls to (888) 444-1847 and PayPal payments.</p>
+<p class="muted" style="margin-top:20px">Preview visits and "Make it live" clicks are live (from today; bots and link scanners are not counted). Calls and texts to (888) 444-1847 (Quo) and PayPal payments appear once their webhooks are set up.</p>
 <script>
 // Live numbers from the site itself (KV via /dashboard/api/events): who opened their preview, who opened "Make it live".
 fetch('/dashboard/api/events', { credentials: 'same-origin' }).then((r) => r.json()).then((ev) => {
@@ -139,6 +157,29 @@ fetch('/dashboard/api/events', { credentials: 'same-origin' }).then((r) => r.jso
     if (tr.classList.contains('cold') && (p || g)) { tag.className = 'tag warm'; tag.textContent = g ? 'Opened "Make it live"' : 'Opened preview'; warm++; }
     else if (tr.classList.contains('cold')) cold++;
   }
+  // Calls and texts (Quo), matched to a business by phone number.
+  const PHONES = ${JSON.stringify(phones)};
+  const unknown = [];
+  for (const [num, kind] of [...Object.keys(ev.c || {}).map((n) => [n, 'c']), ...Object.keys(ev.s || {}).map((n) => [n, 's'])]) {
+    const slug = PHONES[num], m = ev[kind][num];
+    const tr = slug && document.querySelector('tr[data-slug="' + slug + '"]');
+    const text = kind === 'c' ? (m.c + ' call' + (m.c > 1 ? 's' : '') + (m.vm ? ', ' + m.vm + ' voicemail' : '') + (m.missed ? ', ' + m.missed + ' missed' : '')) : (m.c + ' text' + (m.c > 1 ? 's' : ''));
+    if (!tr) { unknown.push('(' + num.slice(0, 3) + ') ' + num.slice(3, 6) + '-' + num.slice(6) + ': ' + text + ', last ' + when(m.l)); continue; }
+    const cell = tr.querySelector('.calls');
+    cell.innerHTML = (cell.textContent === '–' ? '' : cell.innerHTML + '<br>') + text + ' <small>last ' + when(m.l) + '</small>';
+    const tag = tr.querySelector('.tag');
+    if (!/hot/.test(tag.className)) { if (tag.className === 'tag warm') warm--; else if (tr.classList.contains('cold')) cold--; tag.className = 'tag hot-reply'; tag.textContent = kind === 'c' ? 'Called you' : 'Texted you'; }
+  }
+  if (unknown.length) document.getElementById('unknown').innerHTML = '<h2>Calls and texts from numbers we cannot match</h2><div class="card">' + unknown.map((u) => '<p>' + u + '</p>').join('') + '</div>';
+  // Revenue (PayPal).
+  const pays = Object.values(ev.$ || {}), month = new Date().toISOString().slice(0, 7);
+  if (pays.length || Object.keys(ev.S || {}).length) {
+    const sum = (list) => list.reduce((a, p) => a + (Number(p.amt) || 0), 0);
+    const active = Object.values(ev.S || {}).filter((x) => ['activated', 'created', 're-activated', 'updated'].includes(x.status)).length;
+    document.getElementById('k-rev').textContent = '$' + Math.round(sum(pays.filter((p) => String(p.at).startsWith(month))));
+    document.getElementById('k-rev-l').textContent = 'Revenue this month · $' + Math.round(sum(pays)) + ' total · ' + active + ' monthly plan' + (active === 1 ? '' : 's') + ' active';
+  }
+  document.getElementById('k-hot').textContent = document.querySelectorAll('tr[data-slug] .tag.hot-reply, tr[data-slug] .tag.hot-form').length;
   document.getElementById('k-warm').textContent = warm;
   document.getElementById('k-cold').textContent = cold;
 }).catch(() => { document.getElementById('k-warm').textContent = '?'; });

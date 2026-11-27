@@ -6,6 +6,7 @@
 
 import { previewRequest, makeItLive } from './forms.js';
 import { eventOf, record, allEvents } from './events.js';
+import { quoHook, paypalHook } from './hooks.js';
 
 const OWN = new Set(['neonsignsites.com', 'www.neonsignsites.com', 'localhost', '127.0.0.1']);
 
@@ -36,6 +37,8 @@ export default {
         }
         return withHeader(await env.ASSETS.fetch(request), 'X-Robots-Tag', 'noindex, nofollow');
       }
+      if (request.method === 'POST' && url.pathname === '/hooks/quo') return quoHook(request, env);
+      if (request.method === 'POST' && url.pathname === '/hooks/paypal') return paypalHook(request, env);
       if (request.method === 'POST' && url.pathname === '/api/preview-request') return previewRequest(request, env);
       if (request.method === 'POST' && url.pathname === '/api/go') {
         // Count the "Make it live" click for the dashboard (from the form's own fields, before it is read).
