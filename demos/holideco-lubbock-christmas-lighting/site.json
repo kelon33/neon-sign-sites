@@ -1,0 +1,110 @@
+{
+  "kit": "holiday",
+  "trade": "Christmas light installation",
+  "name": "HoliDeco Lubbock Christmas Lighting",
+  "legalName": "HoliDeco Lubbock Christmas Lighting",
+  "preview": true,
+  "placeId": "ChIJY3SQukhz_oYR4RUA3qFOKoE",
+  "title": "HoliDeco Lubbock Christmas Lighting | Christmas light installation in Lubbock, TX",
+  "description": "Holiday lighting for Lubbock homes and businesses. We design it, install it, maintain it and take it down. 4.8 on Google from 14 reviews.",
+  "logo": "logo.png",
+  "logoChip": false,
+  "wordmark": {
+    "top": "HoliDeco",
+    "bottom": "Lubbock Christmas Lighting"
+  },
+  "phone": "(806) 878-9667",
+  "email": "support@lubbockchristmaslights.com",
+  "rating": {
+    "score": "4.8",
+    "count": 14,
+    "url": "https://maps.google.com/?cid=9307338037035800033"
+  },
+  "kicker": "Christmas light installation · Lubbock, TX",
+  "headline": "We hang the lights.<br><em>You enjoy the season.</em>",
+  "intro": "Holiday lighting for Lubbock homes and businesses. We design it, install it, maintain it and take it down.",
+  "badges": [],
+  "highlights": null,
+  "servicesTitle": "Lighting, done for you.",
+  "servicesIntro": "One team from the first walk-through to the last bulb put away.",
+  "services": [
+    {
+      "name": "Design Consultation",
+      "text": "One of our lighting experts comes to your property and plans the look with you, or for you."
+    },
+    {
+      "name": "Residential Lighting Installation",
+      "text": "We hang your holiday lights so you skip the ladder and the risk."
+    },
+    {
+      "name": "Commercial Lighting Installation",
+      "text": "We light up offices and other commercial properties and maintain the lights all season."
+    },
+    {
+      "name": "Outdoor Decorations",
+      "text": "Decorations that go beyond lights, planned to fit your property."
+    },
+    {
+      "name": "Maintenance & Removal",
+      "text": "We fix lights that go out, then take everything down and store it until next year."
+    }
+  ],
+  "also": [
+    {
+      "name": "Pressure washing"
+    },
+    {
+      "name": "Homes"
+    },
+    {
+      "name": "Businesses"
+    }
+  ],
+  "alsoTitle": "We also do:",
+  "promise": null,
+  "why": [
+    {
+      "name": "We come to you",
+      "text": "Our office is not a showroom. We visit your property and give a free estimate."
+    },
+    {
+      "name": "No hidden fees",
+      "text": "The free estimate is given at your property, so you know the cost up front."
+    },
+    {
+      "name": "Start to finish",
+      "text": "Design, installation, maintenance, removal and storage are all handled by us."
+    }
+  ],
+  "whyTitle": "Why HoliDeco Lubbock Christmas Lighting",
+  "howTitle": "Lit up in three steps.",
+  "steps": [
+    {
+      "name": "Free estimate",
+      "text": "Call us. One of our experts visits your property and walks you through the plan."
+    },
+    {
+      "name": "Design and install",
+      "text": "We settle the design with you, then hang the lights and decorations."
+    },
+    {
+      "name": "Maintain and remove",
+      "text": "We fix any problems during the season, then take it all down and store it."
+    }
+  ],
+  "contactTitle": "Ready for a free estimate?",
+  "footerLine": "Christmas light installation in Lubbock, TX",
+  "reviews": [],
+  "hours": [
+    "Monday to Friday: 8:00 to 17:00",
+    "Saturday: 9:00 to 14:00",
+    "Sunday: Closed"
+  ],
+  "galleryTitle": "Homes we light up.",
+  "notePlaceholder": "Roofline length, trees, a date you want them up…",
+  "gallery": [],
+  "areas": [
+    "Lubbock"
+  ],
+  "pitch": "photos"
+}
