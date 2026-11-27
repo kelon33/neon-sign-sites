@@ -78,9 +78,10 @@ test('the photo pitch: no gallery, and the email asks for job photos instead of 
   const lead = { name: 'Glow Co', rating: 4.9, reviews: 113, reasons: ['GoDaddy site builder'] };
   const body = draftEmail({ lead, link: 'L', sender: { name: 'A' }, used: { photos: true, reviews: true }, pitch: 'photos' }).body;
   assert.match(body, /113 Google reviews is great, but your website shows almost none of your work\./);
-  assert.match(body, /rebuilt it with your own services and reviews, and left room for your work/);
+  assert.match(body, /built you a new one with your own services and reviews, and left room for your work/);
   assert.match(body, /Send me 5 or 6 photos of jobs you're proud of/);
-  assert.match(body, /your first month is free, then \$49 a month/);
+  assert.match(body, /First month free, then \$49\/month/);
+  assert.match(body, /Want me to finish it\?/);
   assert.doesNotMatch(body, /your own photos/);
   const normal = draftEmail({ lead, link: 'L', sender: { name: 'A' } }).body;
   assert.doesNotMatch(normal, /Send me 5 or 6 photos/);
@@ -122,10 +123,10 @@ test('the wording library keeps only general lines, and reuses them without carr
 test('the signature carries the phone and address, and old drafts get the current one', async () => {
   const { signature, refreshSignature } = await import('../pipeline/email.mjs');
   const sender = { name: 'Alon Katz', phone: '(888) 444-1847', address: '6421 N. Florida Ave, Suite D-1009, Tampa, FL 33604' };
-  assert.equal(signature(sender), 'Rather talk it through? Call me at (888) 444-1847.\n\nAlon Katz\nNeon Sign Sites\n(888) 444-1847\n6421 N. Florida Ave, Suite D-1009, Tampa, FL 33604');
+  assert.equal(signature(sender), "If you'd rather talk it through, call me at (888) 444-1847.\n\nAlon Katz\nNeon Sign Sites\n(888) 444-1847\n6421 N. Florida Ave, Suite D-1009, Tampa, FL 33604");
   const old = 'To: a@b.com\nSubject: S\n\nHi,\n\nBody.\n\nAlon Katz\nNeon Sign Sites\n[POSTAL ADDRESS: required before sending]\n\nNot interested? Reply "no" and I won\'t email you again.\n';
   const now = refreshSignature(old, sender);
-  assert.ok(now.includes('Body.\n\nRather talk it through? Call me at (888) 444-1847.\n\nAlon Katz\nNeon Sign Sites\n(888) 444-1847\n6421 N.'));
+  assert.ok(now.includes("Body.\n\nIf you'd rather talk it through, call me at (888) 444-1847.\n\nAlon Katz\nNeon Sign Sites\n(888) 444-1847\n6421 N."));
   assert.equal(refreshSignature(now, sender), now); // refreshing twice changes nothing
   assert.ok(!now.includes('POSTAL ADDRESS'));
   assert.ok(now.endsWith('won\'t email you again.\n'));
@@ -141,4 +142,18 @@ test('daily ramp: 3 on the first day, +2 every day (weekends too), capped at max
   assert.equal(dailyLimit(box, '2026-11-30'), 9);
   assert.equal(dailyLimit(box, '2026-12-01'), 10);
   assert.equal(dailyLimit(box, '2026-12-10'), 10);
+});
+
+test('subject A/B and rewording an old draft keeps its opening and link', async () => {
+  const { subjectFor, rewordDraft } = await import('../pipeline/email.mjs');
+  assert.equal(subjectFor('A', { name: 'Dewey Lawns' }), 'Dewey Lawns – new website (preview)');
+  assert.equal(subjectFor('B', { name: 'Dewey Lawns', domain: 'deweylawns.com' }), 'Quick question about deweylawns.com');
+  assert.equal(subjectFor('B', { name: 'Dewey Lawns' }), 'Quick question about Dewey Lawns');
+  const old = 'To: a@b.com\nSubject: I rebuilt the X website\n\nHi,\n\nI came across X on Google. Slow site.\n\nSo I rebuilt it, with your own photos and services. Have a look on your phone:\nhttps://neonsignsites.com/p/x/\n\nIf you like it, it\'s yours: long offer. If not, no hard feelings.\n\nAlon Katz\nNeon Sign Sites\nAddr\n\nNot interested? Reply "no" and I won\'t email you again.\n';
+  const sender = { name: 'Alon Katz', phone: '(888) 444-1847', address: 'Addr' };
+  const now = rewordDraft(old, sender);
+  assert.match(now, /I came across X on Google\. Slow site\.\n\nSo I built you a new one, with your own photos and services:\nhttps:\/\/neonsignsites\.com\/p\/x\/\n\nIf you like it, it can be live this week\./);
+  assert.match(now, /Want me to put it live\?\n\nIf you'd rather talk it through, call me at \(888\) 444-1847\./);
+  assert.doesNotMatch(now, /long offer/);
+  assert.equal(rewordDraft(now, sender), now);
 });

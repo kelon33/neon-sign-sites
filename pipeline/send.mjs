@@ -142,7 +142,7 @@ async function main() {
     while (windowState(tz) === 'wait') await sleep(60_000);
     if (windowState(tz) === 'late') { console.log(`#${e.n} ${e.slug}: not sent (after 17:00 their time; it goes on the next list).`); continue; }
     const r = await gmailSend(e, config.sender.name);
-    sent.push({ date: outbox.date, slug: e.slug, to: e.to, from: e.from, subject: r.subject, messageId: r.id, threadId: r.threadId, sentAt: new Date().toISOString() });
+    sent.push({ date: outbox.date, slug: e.slug, to: e.to, from: e.from, variant: e.variant ?? null, subject: r.subject, messageId: r.id, threadId: r.threadId, sentAt: new Date().toISOString() });
     await writeFile(SENT, JSON.stringify(sent, null, 1) + '\n');
     sentNow++;
     console.log(`#${e.n} ${e.slug}: sent to ${e.to} from ${e.from}.`);

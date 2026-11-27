@@ -84,11 +84,14 @@ async function main() {
   }
   await writeFile(FILE, JSON.stringify(store, null, 1) + '\n');
   await writeFile(DNC, JSON.stringify(dnc, null, 1) + '\n');
-  if (!fresh.length) { console.log('No new replies.'); return; }
+  // Subject A/B test: replies (not "no", not bounces) per variant.
+  const ab = ['A', 'B'].map((v) => { const n = sent.filter((x) => x.variant === v).length; const r = new Set(store.replies.filter((x) => x.kind === 'reply' && sent.find((y) => y.slug === x.slug)?.variant === v).map((x) => x.slug)).size; return `${v}: ${r}/${n} replied${n ? ` (${Math.round((100 * r) / n)}%)` : ''}`; });
+  const abLine = `Subject test: ${ab.join(', ')}.`;
+  if (!fresh.length) { console.log(`No new replies. ${abLine}`); return; }
   for (const r of fresh) {
     console.log(`\n### ${r.kind === 'no' ? 'NO (added to do-not-contact)' : r.kind === 'bounce' ? 'BOUNCE' : 'REPLY'}: ${r.from} → ${r.box}${r.slug ? ` (preview: ${r.slug})` : ''}\nSubject: ${r.subject}\n${r.date}\n\n${r.text.split(/\n(On .+wrote:|-----Original Message-----)/)[0].trim().slice(0, 1500)}`);
   }
-  console.log(`\n${fresh.length} new: ${fresh.filter((r) => r.kind === 'reply').length} replies, ${fresh.filter((r) => r.kind === 'no').length} no, ${fresh.filter((r) => r.kind === 'bounce').length} bounces. Commit leads/replies.json and do-not-contact.json.`);
+  console.log(`\n${fresh.length} new: ${fresh.filter((r) => r.kind === 'reply').length} replies, ${fresh.filter((r) => r.kind === 'no').length} no, ${fresh.filter((r) => r.kind === 'bounce').length} bounces. Commit leads/replies.json and do-not-contact.json.\n${abLine}`);
 }
 
 if (process.argv[1] && fileURLToPath(import.meta.url) === path.resolve(process.argv[1])) {

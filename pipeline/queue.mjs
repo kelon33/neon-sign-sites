@@ -15,7 +15,7 @@ import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { blocked } from './dnc.mjs';
 import { JUNK_EMAIL } from './find.mjs';
-import { refreshSignature } from './email.mjs';
+import { refreshSignature, rewordDraft, subjectFor } from './email.mjs';
 import { stateOf, zoneOf } from './timing.mjs';
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
@@ -56,6 +56,19 @@ export function plan({ ready, sent, mailboxes, dnc, day = today() }) {
   }
   return { out, skipped, room };
 }
+
+/** Each lead's own website, by email, from every leads/*.json file (for subject B: "Quick question about their-site.com"). */
+async function websites() {
+  const out = {};
+  for (const f of await readdir(path.join(root, 'leads'))) {
+    if (!f.endsWith('.json')) continue;
+    const d = await json(path.join(root, 'leads', f), null);
+    const list = Array.isArray(d) ? d : d?.leads ?? [];
+    for (const l of Array.isArray(list) ? list : []) if (l?.email && l?.website) out[l.email.toLowerCase()] = l.website;
+  }
+  return out;
+}
+const bare = (url) => { try { return new URL(url).hostname.replace(/^www\./, ''); } catch { return null; } };
 
 async function json(file, fallback) { return readFile(file, 'utf8').then(JSON.parse).catch(() => fallback); }
 
@@ -110,16 +123,21 @@ async function main() {
     const { out, skipped, room } = plan({ ready: await readyPreviews(), sent, mailboxes, dnc });
     const lines = [`# Emails for ${today()}: for Alon's approval`, '', 'Nothing has been sent. Alon approves the list as a whole ("go", or "go, skip #4"); then `npm run send -- --approve [--skip 4]` and `npm run send` send exactly these texts.', ''];
     const emails = [];
+    const sites = await websites();
     for (const b of room) lines.push(`- ${b.address}: ${b.left + out.filter((o) => o.from === b.address).length} allowed today`);
     lines.push('');
     for (const o of out) {
-      o.text = refreshSignature(o.text, config.sender);
+      o.text = refreshSignature(rewordDraft(o.text, config.sender) ?? o.text, config.sender);
+      // Subject A/B test: alternate by position; the reply rate per variant decides (npm run replies reports it).
+      const variant = (emails.length % 2) ? 'B' : 'A';
+      o.text = o.text.replace(/^Subject: .*$/m, `Subject: ${subjectFor(variant, { name: o.name, domain: bare(sites[o.to.toLowerCase()]) })}`);
+      o.variant = variant;
       if (o.text.includes('[POSTAL ADDRESS')) throw new Error(`${o.slug}: the draft has no postal address in its signature. Fix demos/${o.slug}/email.txt.`);
       const link = o.text.match(/https:\/\/neonsignsites\.com\/p\/[^\s]+/)?.[0];
       const up = link ? await live(link) : null;
       const n = emails.length + 1;
-      emails.push({ n, slug: o.slug, name: o.name, to: o.to, from: o.from, state: o.state, tz: zoneOf(o.state), text: o.text.trim() + '\n', link, linkLive: up });
-      lines.push(`## ${n}. ${o.name} → ${o.to} (from ${o.from}; ${o.state ?? '?'}, sent from 8:00 their time)`, '', up === false ? '**The preview link does not open yet (not on main?). It will not be sent.**\n' : '', '```', o.text.trim(), '```', '');
+      emails.push({ n, slug: o.slug, name: o.name, to: o.to, from: o.from, variant: o.variant, state: o.state, tz: zoneOf(o.state), text: o.text.trim() + '\n', link, linkLive: up });
+      lines.push(`## ${n}. ${o.name} → ${o.to} (from ${o.from}; ${o.state ?? '?'}, sent from 8:00 their time; subject ${o.variant})`, '', up === false ? '**The preview link does not open yet (not on main?). It will not be sent.**\n' : '', '```', o.text.trim(), '```', '');
     }
     if (skipped.length) lines.push('Left out:', ...skipped.map((s) => `- ${s}`), '');
     await mkdir(path.join(root, 'outbox'), { recursive: true });

@@ -1,12 +1,12 @@
 {
  "about": "Replies found in the sending mailboxes by npm run replies. kind: reply, no (added to do-not-contact.json), bounce.",
  "checked": {
-  "alon@neonsignsites.net": "2026-11-27T12:16:57.150Z",
-  "alon.katz@neonsignsites.net": "2026-11-27T12:16:58.431Z",
-  "katz.alon@neonsignsites.net": "2026-11-27T12:17:00.775Z",
-  "alon@neonsignsites.co": "2026-11-27T12:17:02.613Z",
-  "alon.katz@neonsignsites.co": "2026-11-27T12:17:04.370Z",
-  "katz.alon@neonsignsites.co": "2026-11-27T12:17:06.017Z"
+  "alon@neonsignsites.net": "2026-11-27T14:22:53.630Z",
+  "alon.katz@neonsignsites.net": "2026-11-27T14:22:54.564Z",
+  "katz.alon@neonsignsites.net": "2026-11-27T14:22:55.164Z",
+  "alon@neonsignsites.co": "2026-11-27T14:22:55.739Z",
+  "alon.katz@neonsignsites.co": "2026-11-27T14:22:56.336Z",
+  "katz.alon@neonsignsites.co": "2026-11-27T14:22:56.587Z"
  },
  "replies": []
 }

@@ -77,12 +77,11 @@ test('email: names the site problem, has the link, the price, an address and an 
     link: 'https://neonsignsites.com/p/ericks-auto-detailing/',
     sender: { name: 'Alon Katz', address: null },
   });
-  assert.equal(subject, "I rebuilt the Erick's Auto Detailing website");
+  assert.equal(subject, "Erick's Auto Detailing – new website (preview)");
   assert.match(body, /5\.0 stars from 161 Google reviews is great, but your website takes 5\.5 seconds/);
   assert.match(body, /https:\/\/neonsignsites\.com\/p\/ericks-auto-detailing\//);
-  assert.match(body, /own it outright for \$299/);
-  assert.match(body, /then \$49 a year/);
-  assert.match(body, /minimum 2 paid months/);
+  assert.match(body, /First month free, then \$49\/month, or \$299 to own it\./);
+  assert.match(body, /Want me to put it live\?/);
   assert.match(body, /POSTAL ADDRESS/);
   assert.match(body, /Reply "no"/);
 });
@@ -120,8 +119,8 @@ test('hero: a bright landscape photo beats a dark one and any portrait', async (
 
 test('email only promises the reviews when the preview has them', () => {
   const lead = { name: 'X', rating: 5, reviews: 30, reasons: [] };
-  assert.match(draftEmail({ lead, link: 'l', sender: { name: 'A' }, used: { photos: true, reviews: false } }).body, /your own photos and services\./);
-  assert.match(draftEmail({ lead, link: 'l', sender: { name: 'A' } }).body, /your own photos, services and reviews\./);
+  assert.match(draftEmail({ lead, link: 'l', sender: { name: 'A' }, used: { photos: true, reviews: false } }).body, /your own photos and services:/);
+  assert.match(draftEmail({ lead, link: 'l', sender: { name: 'A' } }).body, /your own photos, services and reviews:/);
 });
 
 test('do-not-contact: matches by email, by company domain, by name; a shared gmail domain alone does not', async () => {

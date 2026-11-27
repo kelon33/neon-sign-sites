@@ -41,13 +41,29 @@ export function weakness(reasons = []) {
 export const OFFER = 'your first month is free, then $49 a month with hosting and edits included (minimum 2 paid months after the free one, then cancel anytime). Or own it outright for $299, with the first year of hosting included, then $49 a year.';
 
 export function signature(sender) {
-  const call = sender.phone ? `Rather talk it through? Call me at ${sender.phone}.\n\n` : '';
+  const call = sender.phone ? `If you'd rather talk it through, call me at ${sender.phone}.\n\n` : '';
   return call + [sender.name, 'Neon Sign Sites', sender.phone, sender.address ?? '[POSTAL ADDRESS: required before sending]'].filter(Boolean).join('\n');
 }
 
 /** Puts the current signature into a saved draft, so drafts written before a change (address, phone) stay current. */
 export function refreshSignature(text, sender) {
-  return text.replace(/\n\n(?:Rather talk it through\?[^\n]*\n\n)?[^\n]+\nNeon Sign Sites\n[\s\S]*?\n\nNot interested\?/, `\n\n${signature(sender)}\n\nNot interested?`);
+  return text.replace(/\n\n(?:(?:Rather talk it through\?|If you'd rather talk it through,)[^\n]*\n\n)?[^\n]+\nNeon Sign Sites\n[\s\S]*?\n\nNot interested\?/, `\n\n${signature(sender)}\n\nNot interested?`);
+}
+
+/** The short offer line in emails (the full terms are on the site and shown before anyone pays). */
+export const OFFER_SHORT = 'First month free, then $49/month, or $299 to own it.';
+
+/** The email body after the opening line (2026-11-27 wording, agreed with Alon): short, one link, one question. */
+export function compose({ opening, ownList, link, photoPitch, sender }) {
+  const built = photoPitch
+    ? `So I built you a new one with your own ${ownList}, and left room for your work:\n${link}\n\nSend me 5 or 6 photos of jobs you're proud of and it can be live this week. ${OFFER_SHORT}\n\nWant me to finish it?`
+    : `So I built you a new one, with your own ${ownList}:\n${link}\n\nIf you like it, it can be live this week. ${OFFER_SHORT}\n\nWant me to put it live?`;
+  return `Hi,\n\n${opening}\n\n${built}\n\n${signature(sender)}\n\nNot interested? Reply "no" and I won't email you again.`;
+}
+
+/** Subject lines under test (A/B by replies): A says what it is, B reads like a personal note. */
+export function subjectFor(variant, { name, domain }) {
+  return variant === 'B' ? `Quick question about ${domain || name}` : `${name} – new website (preview)`;
 }
 
 export function draftEmail({ lead, link, sender, used = { photos: true, reviews: true }, pitch = 'site' }) {
@@ -57,24 +73,20 @@ export function draftEmail({ lead, link, sender, used = { photos: true, reviews:
   const praise = lead.rating >= 4.7 && lead.reviews >= 20 ? `${lead.rating.toFixed(1)} stars from ${lead.reviews} Google reviews is great, but ` : '';
   const why = photoPitch ? 'your website shows almost none of your work'
     : lead.reasons?.length ? weakness(lead.reasons) : (gap(lead.improvements) ?? weakness([]));
-  const subject = `I rebuilt the ${lead.name} website`;
-  const rebuilt = photoPitch
-    ? `So I rebuilt it with your own ${ownList}, and left room for your work. Have a look on your phone:
-${link}
+  const opening = `I came across ${lead.name} on Google. ${praise ? praise + why : why.charAt(0).toUpperCase() + why.slice(1)}.`;
+  const subject = subjectFor('A', { name: lead.name });
+  return { subject, body: compose({ opening, ownList, link, photoPitch, sender }) };
+}
 
-Send me 5 or 6 photos of jobs you're proud of and it's ready to go live. If you like it, it's yours:`
-    : `So I rebuilt it, with your own ${ownList}. Have a look on your phone:
-${link}
-
-If you like it, it's yours:`;
-  const body = `Hi,
-
-I came across ${lead.name} on Google. ${praise ? praise + why : why.charAt(0).toUpperCase() + why.slice(1)}.
-
-${rebuilt} ${OFFER} If not, no hard feelings.
-
-${signature(sender)}
-
-Not interested? Reply "no" and I won't email you again.`;
-  return { subject, body };
+/** Rewrites a saved draft (demos/<slug>/email.txt, any earlier wording) into the current wording,
+ *  keeping its personal opening line, what was used from their site, and its link. */
+export function rewordDraft(text, sender) {
+  const [head, ...paras] = text.replace(/\r\n/g, '\n').split('\n\n');
+  const opening = paras.find((p) => p.startsWith('I came across'));
+  const link = text.match(/https:\/\/neonsignsites\.com\/p\/[^\s]+/)?.[0];
+  const own = text.match(/with your own ([^.:,\n]+(?:, [^.:,\n]+)*(?: and [^.:,\n]+)?)(?:[.:]|, and left room)/)?.[1]?.trim();
+  if (!opening || !link || !own) return null;
+  const ownList = own.replace(/,? and left room for your work$/, '');
+  const photoPitch = /left room for your work|5 or 6 photos/.test(text);
+  return `${head}\n\n${compose({ opening, ownList, link, photoPitch, sender }).replace(/^Hi,\n\n/, 'Hi,\n\n')}`.replace(/^(To:[^\n]*\nSubject:[^\n]*)\n\nHi,/, '$1\n\nHi,') + '\n';
 }
