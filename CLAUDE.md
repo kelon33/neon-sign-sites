@@ -48,7 +48,7 @@ We rebuild weak websites of US local service businesses (lawn care, mobile detai
 ## Daily schedule (scheduled tasks on Alon's account, US Eastern time)
 - **5:37 every day (12:37 Israel), `neon-sign-sites` environment:** reply check, then plans the day's list and sends it to Alon (push notification) for approval; once he answers "go" in that session, it sends and reports. Each email goes out from 8:00 in the business's own time zone (9:00 at weekends; `pipeline/timing.mjs`, state from the preview), east to west; one that would arrive after 17:00 their time waits for the next list. Also searches the next leads (Places) without the site check.
 - **11:23 every day, `neon-sign-sites builder` environment:** checks the new leads' sites, builds and reviews the next day's previews, pushes them live. Never sends.
-- **Every hour 8:00-21:00, every day, `neon-sign-sites` environment:** `npm run replies` over the six mailboxes; push notification to Alon only when there is a new reply, with a suggested answer. Prospects are never answered without Alon.
+- **Every hour, day and night, `neon-sign-sites` environment:** `npm run replies` over the six mailboxes (inbox and spam, plus the site forms); push notification to Alon only when there is something new, with a suggested answer. When he approves it ("send") in that session, `npm run answer` sends it in the same thread. Prospects are never answered without Alon.
 
 ## Working chats and the daily handoff
 Two chats work on Neon Sign Sites, each with a role (until Alon merges them, the site chat is two chats: "site" and "list"):
