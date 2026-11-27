@@ -1,0 +1,117 @@
+{
+  "kit": "painting",
+  "trade": "House painting",
+  "name": "Adkins Paint & Drywall",
+  "legalName": "Adkins Paint & Drywall",
+  "preview": true,
+  "placeId": "ChIJbQJa22JEqGkR4QzCLp6UayQ",
+  "title": "Adkins Paint & Drywall | Painting & drywall in Lorena, TX",
+  "description": "Family-owned painting and drywall for homes and businesses across Central Texas. One team takes your walls from bare framing to the final coat. 5.0 on Google from 40 reviews.",
+  "logo": "logo.png",
+  "logoChip": true,
+  "wordmark": {
+    "top": "Adkins",
+    "bottom": "Paint & Drywall"
+  },
+  "phone": "(254) 265-0377",
+  "email": "owner@adkinspaintanddrywall.com",
+  "rating": {
+    "score": "5.0",
+    "count": 40,
+    "url": "https://maps.google.com/?cid=2624354614983658721"
+  },
+  "kicker": "Painting & drywall · Lorena and Central Texas",
+  "headline": "Clean walls.<br><em>Family-built finish.</em>",
+  "intro": "Family-owned painting and drywall for homes and businesses across Central Texas. One team takes your walls from bare framing to the final coat.",
+  "badges": [
+    "Free estimates",
+    "Family owned",
+    "Homes and businesses"
+  ],
+  "highlights": null,
+  "servicesTitle": "From the studs to the final coat.",
+  "servicesIntro": "Residential and commercial work across Waco, Lorena, Temple, Belton and nearby towns. Every estimate is free.",
+  "services": [
+    {
+      "name": "Paint",
+      "text": "Interior and exterior painting for homes and offices, with a clean, lasting finish."
+    },
+    {
+      "name": "Drywall",
+      "text": "Installation, repair, finishing and texture matching, so repairs disappear once painted."
+    },
+    {
+      "name": "Trim",
+      "text": "Crown molding and baseboard installation and replacement with precise, polished results."
+    },
+    {
+      "name": "Wallpaper",
+      "text": "Old wallpaper removed and fresh designs installed."
+    },
+    {
+      "name": "Epoxy coatings",
+      "text": "Durable, sleek floor coatings for garages, basements and commercial spaces."
+    },
+    {
+      "name": "Pressure washing",
+      "text": "Dirt, grime and mildew cleared from the exterior of your home or business."
+    }
+  ],
+  "also": [
+    {
+      "name": "Homes"
+    },
+    {
+      "name": "Businesses"
+    },
+    {
+      "name": "New construction"
+    },
+    {
+      "name": "Remodels and additions"
+    }
+  ],
+  "alsoTitle": "We also do:",
+  "promise": null,
+  "why": [
+    {
+      "name": "3-year limited warranty",
+      "text": "Covers peeling, blistering or chipping caused by defects in our application, for the period in your proposal."
+    },
+    {
+      "name": "One contractor, start to finish",
+      "text": "Drywall, texture, primer and paint under one roof, so you coordinate fewer trades."
+    },
+    {
+      "name": "Family owned",
+      "text": "Founded by Anthony's great-great grandfather and now run by a family raising three children in Central Texas."
+    }
+  ],
+  "whyTitle": "Why Central Texas calls Adkins.",
+  "howTitle": "A finished room in three steps.",
+  "steps": [
+    {
+      "name": "Free estimate",
+      "text": "We look at the scope or damage and talk through your project. You can also send photos."
+    },
+    {
+      "name": "Prep and repair",
+      "text": "We protect your space, then repair or install, tape, bed, sand and texture."
+    },
+    {
+      "name": "Prime, paint, walk through",
+      "text": "We prime and paint, then do a final walkthrough with you."
+    }
+  ],
+  "contactTitle": "Let's bring your vision to life.",
+  "footerLine": "Painting and drywall in Lorena and Central Texas",
+  "reviews": [],
+  "hours": [],
+  "galleryTitle": "Homes we’ve painted.",
+  "notePlaceholder": "Inside or outside, how many rooms, a date you have in mind…",
+  "gallery": [],
+  "areas": [
+    "Lorena"
+  ],
+  "pitch": "photos"
+}
