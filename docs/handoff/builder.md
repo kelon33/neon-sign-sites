@@ -31,3 +31,35 @@
 - Wikimedia API and Openverse rate-limit this environment quickly; the Commons MediaSearch web page and thumb.wikimedia.org work. Check each photo's licence on its own file page.
 - Node fetch needs NODE_USE_ENV_PROXY=1 in this environment.
 - Google review texts shown through widgets (Trustindex) on a business's site must not be copied (site chat added a check).
+
+## Added by the "20+ more previews" session (session_019BJDWq8M5fSSDziFnSYUbv, 2026-11-27, archived)
+Done (all on main):
+- 25 of 26 batch previews from found-2026-11-27 reviewed and live (09edbaf), plus 5 from the model comparison (fdc6bfc). Deleted Ocean Wave Painting (no real email).
+- Preview bar is one 40px line; it had pushed the phone fold on every preview (46b4567).
+- Emails: font-licence addresses (impallari@, ndiscovered.com, latofonts) are ignored by find, and queue, send and batch refuse them; %20 cleaned from mailto links. Cen-Tex Lighting has no real email: never send it (send refuses it).
+- `pipeline/checks.mjs` (d8b2447, bc93ff3): Google-review detection, tested on 14 sites (8/8 caught). Also: car vs boat focus, steps-title count, towns out of "also", "customers say" lines. The AI also confirms the logo is theirs (a072308).
+- Library-first wording for trades with 8+ reviewed previews; `--model` flag.
+- Sending ceiling 30 a mailbox (180 a day from Dec 11); Places cap 3,600 a month (~$125).
+
+Decisions Alon made (2026-11-27):
+- AI stays Sonnet 5.5. Compared with Haiku 5.5 on 5 leads: Haiku chose stock photos and dropped real ones on 4 of 5 and wrote an unbacked "Austin's best"; it is ~14x cheaper (0.25¢ against ~3.5¢).
+- **Approved: move the AI step to the Message Batches API (50% off)**, so Sonnet at 180 a day (~$190/month) fits his $100/month of free API credits. Needed before about Dec 6 (~90 previews a day).
+- Places budget about $125 a month; ceiling 30 a day per mailbox.
+
+Open item: build the Batches switch (not started; no code changed). Plan:
+1. `copy.mjs`: split `sharpen()` into `sharpenRequest()` (returns params and facts), a direct call (keeps the beta `fallbacks`), and `parseSharpen(message, facts)`. Batch requests can't carry `fallbacks` or `betas`: use `client.messages.batches.create({ requests: [{ custom_id, params }] })` with plain params (output_config json_schema plus effort work there).
+2. `cli.mjs --prepare`: run up to the AI call, then write `demos/<slug>/.build.json` (lead, checks, copy, photos, logo, heroIndex, order, wordmark, libFirst, model, text, site.pages incl. raw/rendered) and `.ai-request.json`, and exit. `--finish`: load them plus `.ai-result.json`, continue from the merge step (checks, gallery, render, screenshots, email), delete the three files. Add them to .gitignore.
+3. `batch.mjs`: prepare all, submit one batch (custom_id p0..pN mapped to slugs, saved in leads/ai-batches.json so a dead session can resume with `--resume <batch id>`), poll every minute (most finish within 1h, max 24h), write results, finish each. `builtAlready()` must count a demos dir only when it has site.json. Keep `npm run lead` (direct call) for single leads.
+4. Prices: batch is half of $2/$10 (Sonnet 5.5) per million tokens.
+
+Lead supply (Saturday 28 Nov):
+- 12 buildable leads left in found-2026-11-27.json (15 minus the 5 built, plus 2 now eligible).
+- 41 of the month's 3,600 Places requests used.
+- 36 previews ready and not yet emailed (one is Cen-Tex Lighting, which can't be sent).
+- The ramp needs 30 Sat, 42 Sun, 54 Mon, then +12 a day to 180 on Dec 11. Searching more cities is urgent (site chat). Yield is about 2 emailable leads per Places request; boat, dent and painting do best, big-city lawn and car detailing worst.
+
+Known gaps (not fixed):
+- When the logo is wrong, the real logo is often among their photos (the AI says which). Could be used automatically.
+- The detailing booking form asks "Where should we come?" even for shops.
+- Google's phone number can be a call-tracking line different from their site's; their site's number is better.
+- Hours like "Open 24 hours" come from their sites; drop them in review.
