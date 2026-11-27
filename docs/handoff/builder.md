@@ -53,7 +53,7 @@ Open item: build the Batches switch (not started; no code changed). Plan:
 4. Prices: batch is half of $2/$10 (Sonnet 5.5) per million tokens.
 
 Lead supply (Saturday 28 Nov):
-- 12 buildable leads left in found-2026-11-27.json (15 minus the 5 built, plus 2 now eligible).
+- 9 buildable leads left in found-2026-11-27.json (`npm run batch -- --file leads/found-2026-11-27.json --count 50 --dry`).
 - 41 of the month's 3,600 Places requests used.
 - 36 previews ready and not yet emailed (one is Cen-Tex Lighting, which can't be sent).
 - The ramp needs 30 Sat, 42 Sun, 54 Mon, then +12 a day to 180 on Dec 11. Searching more cities is urgent (site chat). Yield is about 2 emailable leads per Places request; boat, dent and painting do best, big-city lawn and car detailing worst.
