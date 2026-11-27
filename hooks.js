@@ -94,15 +94,22 @@ async function paypalToken(env) {
 export async function paypalHook(request, env) {
   if (!env.PAYPAL_CLIENT_ID || !env.PAYPAL_SECRET || !env.PAYPAL_WEBHOOK_ID || !env.EVENTS) return new Response('Not configured', { status: 503 });
   const body = await request.text();
-  const ev = JSON.parse(body);
+  let ev = {};
+  try { ev = JSON.parse(body); } catch {}
   const h = (n) => request.headers.get(n);
+  const token = await paypalToken(env).catch(() => null);
+  if (!token) { await diag(env, 'paypal', 'PayPal login failed: check PAYPAL_CLIENT_ID and PAYPAL_SECRET (Live app)', request, ev.event_type ?? null); return new Response('PayPal login failed', { status: 500 }); }
   const v = await fetch('https://api-m.paypal.com/v1/notifications/verify-webhook-signature', {
     method: 'POST',
-    headers: { authorization: `Bearer ${await paypalToken(env)}`, 'content-type': 'application/json' },
+    headers: { authorization: `Bearer ${token}`, 'content-type': 'application/json' },
     body: JSON.stringify({ auth_algo: h('paypal-auth-algo'), cert_url: h('paypal-cert-url'), transmission_id: h('paypal-transmission-id'),
       transmission_sig: h('paypal-transmission-sig'), transmission_time: h('paypal-transmission-time'), webhook_id: env.PAYPAL_WEBHOOK_ID, webhook_event: ev }),
   });
-  if ((await v.json()).verification_status !== 'SUCCESS') return new Response('Not verified', { status: 401 });
+  if ((await v.json().catch(() => ({}))).verification_status !== 'SUCCESS') {
+    await diag(env, 'paypal', h('paypal-transmission-id') ? 'not verified: check PAYPAL_WEBHOOK_ID' : 'PayPal login OK; unsigned test ignored', request, ev.event_type ?? null);
+    return new Response('Not verified', { status: 401 });
+  }
+  await diag(env, 'paypal', 'accepted', request, ev.event_type ?? null);
   const r = ev.resource ?? {};
   const at = ev.create_time ?? new Date().toISOString();
   if (ev.event_type?.startsWith('BILLING.SUBSCRIPTION.')) {
