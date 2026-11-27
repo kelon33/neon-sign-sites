@@ -1,0 +1,183 @@
+{
+ "kit": "lawn",
+ "name": "ZaZu Landscaping",
+ "legalName": "ZaZu Landscaping",
+ "preview": true,
+ "placeId": "ChIJEwj4wo30iQwRU_HLKNa-_pE",
+ "title": "ZaZu Landscaping | Lawn care & landscaping in Austin, TX",
+ "description": "ZaZu Landscaping keeps Austin yards clean, sharp and consistent. We answer the phone, show up, and do what we said we would. 5.0 on Google from 79 reviews.",
+ "logo": "logo.png",
+ "logoChip": false,
+ "wordmark": {
+  "top": "ZaZu",
+  "bottom": "Landscaping"
+ },
+ "phone": "(737) 257-5655",
+ "email": "info@zazulandscaping.com",
+ "heroImage": "img/photo-2.jpg",
+ "heroAlt": "Freshly cut green lawn with a stone walk leading to a house",
+ "heroPosition": "60% 60%",
+ "heroPositionPhone": "60% 50%",
+ "rating": {
+  "score": "5.0",
+  "count": 79,
+  "url": "https://maps.google.com/?cid=10520055606600790355"
+ },
+ "kicker": "Lawn care & landscaping · Austin, TX",
+ "headline": "Your yard, handled.<br><em>Every single visit.</em>",
+ "intro": "ZaZu Landscaping keeps Austin yards clean, sharp and consistent. We answer the phone, show up, and do what we said we would.",
+ "badges": [
+  "Free estimates",
+  "Homes and businesses"
+ ],
+ "highlights": {
+  "title": "Why Austin neighbors call ZaZu",
+  "intro": "Reliable yard care is hard to find. Here is what clients say sets us apart.",
+  "points": [
+   {
+    "name": "We show up",
+    "text": "Consistent visits, on schedule, with no excuses and no ghosting."
+   },
+   {
+    "name": "We answer",
+    "text": "Clear communication from the first call to the last visit."
+   },
+   {
+    "name": "We finish the job",
+    "text": "Leaves bagged and hauled away. Weeds handled. Everything left spotless."
+   },
+   {
+    "name": "We look closer",
+    "text": "More than a quick mow, blow and go. We tend to every part of the yard."
+   }
+  ]
+ },
+ "servicesTitle": "Everything your yard needs, from one team.",
+ "servicesIntro": "Regular care or a one-time reset. Final pricing is always confirmed after a site visit.",
+ "services": [
+  {
+   "name": "Premium Lawn Care",
+   "text": "Mowing, edging, light hedge trimming and blowing, done to the same standard every visit."
+  },
+  {
+   "name": "Weed Control & Fertilizing",
+   "text": "Kill weeds. Feed roots. Simple."
+  },
+  {
+   "name": "Yard Clean-Up",
+   "text": "Leaves, debris and overgrowth removed, bagged and hauled away."
+  },
+  {
+   "name": "Sod Installation",
+   "text": "Professional install with no guesswork and no hassle."
+  },
+  {
+   "name": "Landscape Design & Installation",
+   "text": "Creative design and precise installation to transform your space."
+  },
+  {
+   "name": "Irrigation Repair",
+   "text": "A quick fix for happy grass and lower bills."
+  }
+ ],
+ "also": [
+  {
+   "name": "Full-Service Yard Management plans"
+  },
+  {
+   "name": "Commercial landscaping for HOAs, multifamily and shopping centers"
+  },
+  {
+   "name": "Mulch and seasonal color installs"
+  }
+ ],
+ "alsoTitle": "We also do:",
+ "promise": "We don't just mow. <em>We take care of it.</em> Every edge, every bed, every visit.",
+ "why": [
+  {
+   "name": "Unmatched quality",
+   "text": "Clients point to the detail: thorough weeding, spotless finishes, nothing missed."
+  },
+  {
+   "name": "Consistency you can count on",
+   "text": "The same standard on every visit, planned through the seasons."
+  },
+  {
+   "name": "Clear communication",
+   "text": "A responsive team that picks up the phone and follows through."
+  }
+ ],
+ "whyTitle": "Why choose ZaZu",
+ "howTitle": "Yard freedom in three steps.",
+ "steps": [
+  {
+   "name": "Ask for a free estimate",
+   "text": "Call, text or use the form with your property and the service you need."
+  },
+  {
+   "name": "We walk the site",
+   "text": "We look at your yard and confirm pricing after a site visit."
+  },
+  {
+   "name": "We handle it",
+   "text": "Your yard stays clean, healthy and cared for. You get your time back."
+  }
+ ],
+ "contactTitle": "Ready for a yard you don't have to manage?",
+ "footerLine": "Lawn care & landscaping in Austin, Cedar Park, Round Rock and Pflugerville",
+ "reviews": [
+  {
+   "text": "We live in North Austin and needed a landscaping company that would really maintain our yard, not just do a quick mow, blow, and go in 15 minutes. We reached out to Zazu Landscaping, and we couldn't be happier. Their team carefully tends to our yard, leaves everything spotless, and even bags and hauls away the leaves. Great service!",
+   "name": "DORON YACOBY"
+  },
+  {
+   "text": "Waw! What a game changer. My lawn has never looked better. Seamless interaction, great price and all with a huge smile. So glad I found ZaZu",
+   "name": "Shai Tofach"
+  },
+  {
+   "text": "That's it, I finally found a company I want to stick with! Great quality and very thorough team. Unlike with other companies that once they leave, you feel annoyed when you find here and there things they missed or forgot - here you feel that you finally get a proper value for the price.",
+   "name": "Segev Mazovskiy"
+  },
+  {
+   "text": "Izzy and the Zazu crew did such a great job maintaining our yard and making sure the weeds are at bay without us having to point out and explicitly ask.",
+   "name": "Ori"
+  },
+  {
+   "text": "I helped a friend get his yard under control. We found ZaZu Landscaping and so far the experience has been good. The quality is great. The manager is responsive. They even take care of the weeds. They're not cheap but the service is worth it.",
+   "name": "Jonathan Elkayam"
+  },
+  {
+   "text": "ZaZu Landscaping is a great company. Quality work, honest people and very communicative. Strongly recommend",
+   "name": "Michal Shapira"
+  }
+ ],
+ "hours": [
+  "Monday - Saturday: 8am - 7pm"
+ ],
+ "gallery": [
+  {
+   "src": "img/photo-9.jpg",
+   "alt": "Paver path curving through a manicured garden and lawn",
+   "size": "big"
+  },
+  {
+   "src": "img/photo-6.jpg",
+   "alt": "Green lawn with stepping stones and landscaped beds"
+  },
+  {
+   "src": "img/photo-7.jpg",
+   "alt": "Trimmed shrubs and a planted stone bowl by a gated entry"
+  },
+  {
+   "src": "img/photo-15.jpg",
+   "alt": "Commercial entrance with flower pots and trimmed lawn"
+  },
+  {
+   "src": "img/photo-16.jpg",
+   "alt": "Fresh flower bed with white rock beside a window"
+  }
+ ],
+ "areas": [
+  "Austin"
+ ]
+}
