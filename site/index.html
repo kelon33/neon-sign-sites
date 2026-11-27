@@ -287,12 +287,18 @@
     if (!reduce) setInterval(() => { if (visible && !document.hidden && performance.now() > pausedUntil) show(idx + 1); }, 4200);
   })();
 
-  // Sections rise in as they arrive (styles.css: reveal-on). The hero is visible from the start.
+  // Sections fade in as they arrive and fade out as they leave, every time, in the direction of the scroll
+  // (styles.css: reveal-on). Leaving through the top, a section drifts up; through the bottom, down.
+  // The hero is visible from the start.
   if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches && 'IntersectionObserver' in window) {
     document.documentElement.classList.add('reveal-on');
     const io = new IntersectionObserver((entries) => {
-      for (const en of entries) if (en.isIntersecting) { en.target.classList.add('is-in'); io.unobserve(en.target); }
-    }, { threshold: 0.15 });
+      for (const en of entries) {
+        const s = en.target;
+        if (en.isIntersecting) { s.classList.remove('is-above'); s.classList.add('is-in'); }
+        else { s.classList.remove('is-in'); s.classList.toggle('is-above', en.boundingClientRect.top < 0); }
+      }
+    }, { rootMargin: '-8% 0px -8% 0px', threshold: 0 });
     for (const s of document.querySelectorAll('main > section')) io.observe(s);
   }
 

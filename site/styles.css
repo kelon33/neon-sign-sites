@@ -82,7 +82,7 @@ a, button { -webkit-tap-highlight-color: transparent; }
 .nav nav a:hover { color: var(--fg); }
 
 /* Hero */
-.hero { position: relative; overflow: hidden; padding: 72px 0 110px; }
+.hero { position: relative; overflow-x: clip; padding: 72px 0 110px; } /* glows may spill down into the next section, so there is no hard edge */
 .hero::before { content: ""; position: absolute; inset: -20% -10% auto auto; width: 720px; height: 720px; background: radial-gradient(closest-side, rgba(255,79,139,.20), transparent 70%); pointer-events: none; }
 .hero::after { content: ""; position: absolute; left: -200px; bottom: -300px; width: 700px; height: 700px; background: radial-gradient(closest-side, rgba(255,210,122,.10), transparent 70%); pointer-events: none; }
 .hero-grid { position: relative; display: grid; grid-template-columns: 1.15fr .85fr; gap: 64px; align-items: center; }
@@ -157,7 +157,11 @@ a, button { -webkit-tap-highlight-color: transparent; }
 .s-cards span:nth-child(3) { background: linear-gradient(160deg, #d6e6e9, #93b8c3); }
 
 /* Trades strip */
-.trades { border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); padding: 26px 0; }
+.trades { position: relative; padding: 26px 0; }
+/* Hairlines that fade out at both ends instead of hard full-width lines. */
+.trades::before, .trades::after, .footer::before { content: ""; position: absolute; left: 0; right: 0; height: 1px; background: linear-gradient(90deg, transparent, var(--line) 20%, var(--line) 80%, transparent); }
+.trades::before, .footer::before { top: 0; }
+.trades::after { bottom: 0; }
 .trades .wrap { display: flex; flex-wrap: wrap; gap: 14px 28px; align-items: center; justify-content: space-between; }
 .trades p { color: var(--muted); font-size: 0.9rem; }
 .trades ul { display: flex; flex-wrap: wrap; gap: 10px 26px; list-style: none; margin: 0; padding: 0; }
@@ -165,7 +169,8 @@ a, button { -webkit-tap-highlight-color: transparent; }
 
 /* Blocks */
 .block { padding: 120px 0; }
-.block.alt { background: var(--bg-2); border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
+/* Alternate sections blend in and out of the page colour: no visible band edges. */
+.block.alt { background: linear-gradient(180deg, var(--bg) 0%, var(--bg-2) 22%, var(--bg-2) 78%, var(--bg) 100%); }
 .two { display: grid; grid-template-columns: 1fr 1fr; gap: 64px; align-items: start; }
 .prose p { color: var(--muted); font-size: 1.1rem; }
 .prose p + p { margin-top: 18px; color: var(--fg); }
@@ -223,7 +228,7 @@ details[open] p { animation: faq-in .35s ease both; }
 @media (prefers-reduced-motion: reduce) { summary::after, details[open] p { transition: none; animation: none; } }
 
 /* Call to action */
-.cta { padding: 120px 0 130px; text-align: center; background: radial-gradient(ellipse at 50% 0%, rgba(255,79,139,.16), transparent 60%); }
+.cta { padding: 120px 0 130px; text-align: center; background: radial-gradient(ellipse 70% 55% at 50% 30%, rgba(255,79,139,.13), transparent 75%); }
 .cta img { margin-bottom: 26px; }
 .cta > .wrap > p { color: var(--muted); margin-top: 16px; font-size: 1.1rem; }
 .form { margin: 40px auto 0; max-width: 520px; display: grid; gap: 14px; text-align: left; }
@@ -244,7 +249,7 @@ details[open] p { animation: faq-in .35s ease both; }
 .agree a { color: #ff7aa8; }
 .thanks .btn { margin-top: 18px; }
 
-.footer { border-top: 1px solid var(--line); padding: 44px 0; }
+.footer { position: relative; padding: 44px 0; }
 .footer .wrap { display: grid; gap: 10px; }
 .footer p { color: var(--muted); font-size: 0.95rem; }
 .footer a { text-decoration: none; }
@@ -315,6 +320,8 @@ details[open] p { animation: faq-in .35s ease both; }
   .brand-name { display: none; }
 }
 
-/* Each section's content rises in gently as it arrives (only with JavaScript, never with reduced motion). */
-.reveal-on main > section:not(.hero) > .wrap { opacity: 0; transform: translateY(28px); transition: opacity .7s ease, transform .7s cubic-bezier(.22,.61,.36,1); }
+/* Each section's content fades in as it arrives and out as it leaves, both ways, every time
+   (only with JavaScript, never with reduced motion). Below the screen it waits low; above it, high. */
+.reveal-on main > section:not(.hero) > .wrap { opacity: 0; transform: translateY(28px); transition: opacity .6s ease, transform .6s cubic-bezier(.22,.61,.36,1); }
+.reveal-on main > section.is-above:not(.hero) > .wrap { transform: translateY(-28px); }
 .reveal-on main > section.is-in > .wrap { opacity: 1; transform: none; }
