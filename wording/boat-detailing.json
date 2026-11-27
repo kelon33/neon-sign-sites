@@ -1,0 +1,59 @@
+{
+ "trade": "Boat detailing",
+ "about": "General wording from reviewed previews (npm run wording). {name} and {town} are filled in per business.",
+ "entries": [
+  {
+   "from": "davis-bros-marine-services",
+   "headline": "Back on the water<br><em>looking new.</em>",
+   "servicesTitle": "Bow to stern.",
+   "servicesIntro": "From a wash and wax to full restoration, teak and ceramic coating.",
+   "howTitle": "Ready for the water in three steps.",
+   "contactTitle": "Book your boat in.",
+   "galleryTitle": "Fresh off the water.",
+   "alsoTitle": "We also detail",
+   "sectionTitle": "We come to your boat.",
+   "sectionIntro": "Mobile service means your boat gets cared for right where it sits, with no haul to a shop.",
+   "steps": [
+    {
+     "name": "Ask for a quote",
+     "text": "Call, email or use the form and tell us about your boat."
+    },
+    {
+     "name": "We come to you",
+     "text": "We bring the service to your marina slip."
+    },
+    {
+     "name": "Back on the water",
+     "text": "Clean, polished and protected."
+    }
+   ]
+  },
+  {
+   "from": "mavinate",
+   "headline": "Back on the water<br><em>looking new.</em>",
+   "servicesTitle": "Bow to stern.",
+   "servicesIntro": "Upkeep for like-new boats. Restoration for weathered ones. Protection to keep them that way.",
+   "whyTitle": "What we give you that others don't.",
+   "howTitle": "Ready for the water in three steps.",
+   "contactTitle": "Book your boat in.",
+   "galleryTitle": "Fresh off the water.",
+   "alsoTitle": "We also detail",
+   "sectionTitle": "We bring the detail to you.",
+   "sectionIntro": "{name} is based in {town} and works on a mobile basis.",
+   "steps": [
+    {
+     "name": "Tell us about your boat",
+     "text": "Call or send the form with what it needs."
+    },
+    {
+     "name": "We come to you",
+     "text": "Mobile service, based in {town}."
+    },
+    {
+     "name": "Back on the water",
+     "text": "Clean, polished and protected."
+    }
+   ]
+  }
+ ]
+}

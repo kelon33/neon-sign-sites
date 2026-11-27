@@ -1,0 +1,42 @@
+{
+ "trade": "House painting",
+ "about": "General wording from reviewed previews (npm run wording). {name} and {town} are filled in per business.",
+ "entries": [
+  {
+   "from": "elegance-home-painting",
+   "headline": "Fresh paint.<br><em>Clean lines.</em>",
+   "servicesTitle": "Inside and out.",
+   "servicesIntro": "One room or the whole house.",
+   "whyTitle": "Why homeowners call us.",
+   "howTitle": "A fresh coat in three steps.",
+   "contactTitle": "Ready for a fresh coat?",
+   "galleryTitle": "Homes we’ve painted.",
+   "alsoTitle": "We also do:"
+  },
+  {
+   "from": "rays-painting-pressure-washing-services",
+   "headline": "Fresh paint.<br><em>Honest work.</em>",
+   "servicesTitle": "Inside and out.",
+   "servicesIntro": "One room or the whole house. Free estimates.",
+   "whyTitle": "Why Ray's.",
+   "howTitle": "A fresh coat in three steps.",
+   "contactTitle": "Ready for a fresh coat?",
+   "galleryTitle": "Homes we’ve painted.",
+   "alsoTitle": "We also do:",
+   "steps": [
+    {
+     "name": "Ask for a free estimate",
+     "text": "Call or use the form to tell us about your project."
+    },
+    {
+     "name": "Plan the job",
+     "text": "We go over the work, colors and timing with you."
+    },
+    {
+     "name": "Enjoy the new look",
+     "text": "We paint, and aim to finish on time and on budget."
+    }
+   ]
+  }
+ ]
+}
