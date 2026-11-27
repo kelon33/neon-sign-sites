@@ -74,7 +74,7 @@ export function detailingCopy({ name, city, text }) {
     alsoTitle: 'Not just cars:',
     why: [],
     whyTitle: '',
-    howTitle: 'Booked in a minute. Shining by tonight.',
+    howTitle: 'Book it. We show up. You drive off shining.',
     steps: [
       { name: 'Tell us about your car', text: 'Call, text or send the form: your vehicle, the service and where it is.' },
       { name: mobile ? 'We pull up' : 'Bring it in', text: mobile ? 'We arrive at your home or office with everything we need.' : 'Drop it off at a time that suits you.' },
