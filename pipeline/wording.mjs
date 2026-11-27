@@ -67,6 +67,22 @@ export async function library(trade) {
   return readFile(path.join(DIR, `${slugOf(trade)}.json`), 'utf8').then((j) => JSON.parse(j).entries).catch(() => []);
 }
 
+/** Names in a line (a capitalised word not starting a sentence: "Manny", "the South Plains") that
+ *  their own site, name and town don't contain: a library line written for someone else. */
+export function strangeNames(s, { name = '', town = '', text = '' } = {}) {
+  const plain = String(s).replace(/<br\s*\/?>/gi, '. ').replace(/<[^>]+>/g, ' ');
+  const known = `${name} ${town} ${text}`;
+  const out = [];
+  for (const m of plain.matchAll(/[A-Z][a-z’']+(?:[A-Z][a-z]+)*/g)) {
+    const before = plain.slice(0, m.index).trimEnd();
+    if (!before || /[.!?:;—–(“"]$/.test(before)) continue;
+    const w = m[0].replace(/['’]s$/, '');
+    if (/^(I|Google|We|You|Our)$/.test(w)) continue;
+    if (!new RegExp(`\\b${w}\\b`, 'i').test(known)) out.push(w);
+  }
+  return out;
+}
+
 /** Proven general wording laid over a draft: each field from one library entry, chosen by the
  *  business name so neighbours differ; claims kept only if their own site makes them too. */
 export function fromLibrary(copy, entries, { name, town, text }) {
@@ -74,15 +90,15 @@ export function fromLibrary(copy, entries, { name, town, text }) {
   const seed = [...(name ?? '')].reduce((a, c) => (a * 31 + c.charCodeAt(0)) >>> 0, 7);
   const out = { ...copy };
   const fill = (s) => s.split('{name}').join(name ?? '').split('{town}').join(town ?? '');
-  const ok = (s) => !unbackedClaim(s, text ?? '');
+  const ok = (s) => !unbackedClaim(s, text ?? '') && !strangeNames(s, { name, town, text }).length;
   for (const [i, f] of ['headline', 'servicesTitle', 'servicesIntro', 'whyTitle', 'howTitle', 'contactTitle', 'galleryTitle', 'alsoTitle'].entries()) {
     const have = entries.filter((e) => e[f] && ok(fill(e[f])));
     if (have.length) out[f] = fill(have[(seed + i) % have.length][f]);
   }
-  const steps = entries.filter((e) => e.steps && e.steps.every((s) => ok(fill(`${s.name} ${s.text}`))));
+  const steps = entries.filter((e) => e.steps && e.steps.every((s) => ok(fill(`${s.name}. ${s.text}`))));
   if (steps.length) out.steps = steps[seed % steps.length].steps.map((s) => ({ name: fill(s.name), text: fill(s.text) }));
   const key = out.mobile ? 'mobile' : out.highlights ? 'highlights' : null;
-  const sec = entries.filter((e) => e.sectionTitle && ok(fill(`${e.sectionTitle} ${e.sectionIntro ?? ''}`)));
+  const sec = entries.filter((e) => e.sectionTitle && ok(fill(`${e.sectionTitle}. ${e.sectionIntro ?? ''}`)));
   if (key && sec.length) { const e = sec[seed % sec.length]; out[key] = { ...out[key], title: fill(e.sectionTitle), ...(e.sectionIntro ? { intro: fill(e.sectionIntro) } : {}) }; }
   return out;
 }

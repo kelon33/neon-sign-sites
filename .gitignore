@@ -2,3 +2,8 @@ node_modules/
 dist/
 .env
 .wrangler/
+
+# Builds waiting for a Message Batch (pipeline/batch.mjs)
+demos/*/.build.json
+demos/*/.ai-request.json
+demos/*/.ai-result.json

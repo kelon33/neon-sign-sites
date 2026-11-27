@@ -2,10 +2,14 @@
 // One command from a lead to a draft site, screenshots and an email, ready for a human to approve:
 //   npm run lead -- "Erick's Auto Detailing"     (a name, or part of one, from leads/)
 //   npm run lead -- "..." --no-ai                 (ready-made kit wording only, free)
+//   npm run lead -- --place <id> --prepare         (stop before the AI step: writes demos/<slug>/.build.json
+//                                                   and .ai-request.json, for a Message Batch; see batch.mjs)
+//   npm run lead -- --finish <slug>                (go on from there with demos/<slug>/.ai-result.json, or a
+//                                                   direct call when there is none)
 // Writes demos/<slug>/: site.json, index.html, img/, logo, desktop.jpg, phone.jpg,
 // preview.html (one file with everything inside), email.txt and check.txt (what a human should look at).
 
-import { readFile, writeFile, readdir, mkdir } from 'node:fs/promises';
+import { readFile, writeFile, readdir, mkdir, rm } from 'node:fs/promises';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { createRequire } from 'node:module';
@@ -13,7 +17,7 @@ import { createRequire } from 'node:module';
 const { chromium } = createRequire(import.meta.url)('playwright');
 import { scrapeSite } from './scrape.mjs';
 import { photoCandidates, logoCandidate, galleryPlan, saveImage, thumbnail, pickHero } from './photos.mjs';
-import { kitFor, detailingCopy, lawnCopy, tradeCopy, sharpen, anthropicKey, verify, cleanName, splitWordmark, FACT_FIELDS } from './copy.mjs';
+import { kitFor, detailingCopy, lawnCopy, tradeCopy, sharpenRequest, parseSharpen, callClaude, anthropicKey, verify, cleanName, splitWordmark, FACT_FIELDS } from './copy.mjs';
 import { ownReviews, HEARSAY, vehicleFocus, fixStepsTitle, townsInAlso } from './checks.mjs';
 import { draftEmail } from './email.mjs';
 import { blocked } from './dnc.mjs';
@@ -36,29 +40,39 @@ async function findLead(query) {
   return found;
 }
 
+const BUILD_FILES = ['.build.json', '.ai-request.json', '.ai-result.json'];
+
 async function main() {
+  const finishSlug = arg('finish');
+  const prepare = args.includes('--prepare');
   const query = arg('place') ?? arg('lead');
-  if (!query) { console.log('npm run lead -- --lead "<business name>" | --place <Google place ID> [--no-ai] [--fresh]'); process.exit(1); }
+  if (!query && !finishSlug) { console.log('npm run lead -- --lead "<business name>" | --place <Google place ID> [--no-ai] [--fresh] [--prepare] | --finish <slug>'); process.exit(1); }
+  const config = JSON.parse(await readFile(path.join(root, 'config.json'), 'utf8'));
+  let lead, kit, slug, out, checks, site, text, photos, logo, copy, heroIndex, order, alts, wordmark, existing, libFirst, model, lib;
+  if (finishSlug) {
+    const st = JSON.parse(await readFile(path.join(root, 'demos', finishSlug, '.build.json'), 'utf8'));
+    ({ lead, kit, slug, checks, site, text, photos, logo, copy, heroIndex, order, alts, wordmark, existing, libFirst, model } = st);
+    out = path.join(root, 'demos', slug);
+  } else {
   // A place ID picks one exact listing; a name can match several (one business, many listings).
   const leads = (await findLead(query)).filter((l) => !arg('place') || l.placeId === query);
   if (!leads.length) throw new Error(`No lead matches "${query}" in leads/.`);
-  const lead = leads.find((l) => l.website && l.email) ?? leads[0];
+  lead = leads.find((l) => l.website && l.email) ?? leads[0];
   if (leads.length > 1) console.log(`(${leads.length} matches; using ${lead.name})`);
   const dnc = JSON.parse(await readFile(path.join(root, 'do-not-contact.json'), 'utf8')).entries;
   const no = blocked(lead, dnc);
   if (no) throw new Error(`${lead.name} is on the do-not-contact list (${no.email ?? no.domain ?? no.name}, ${no.date ?? 'no date'}). Not building it.`);
-  const kit = kitFor(lead.trade);
+  kit = kitFor(lead.trade);
   if (!kit) throw new Error(`No kit for "${lead.trade}" yet (detailing and lawn care only).`);
   if (!lead.website || /instagram|facebook/.test(lead.website)) throw new Error('This lead has no website to rebuild from.');
 
   // People call the business by its plain name, not Google's keyword-stuffed one.
   lead.listedName = lead.name;
   lead.name = cleanName(lead.name, lead.city);
-  const config = JSON.parse(await readFile(path.join(root, 'config.json'), 'utf8'));
-  const slug = slugify(lead.name);
-  const out = path.join(root, 'demos', slug);
+  slug = slugify(lead.name);
+  out = path.join(root, 'demos', slug);
   await mkdir(path.join(out, 'img'), { recursive: true });
-  const checks = [];
+  checks = [];
   // Google returns businesses from around the searched city (hail-repair shops travel far): the
   // site names the town in their own address.
   const own = lead.address?.match(/,\s*([^,]+),\s*([A-Z]{2})\s+\d{5}/);
@@ -66,13 +80,16 @@ async function main() {
     checks.push(`Found by a search in ${lead.city}, but their address is in ${own[1].trim()}, ${own[2]}: the site uses that. Check their service area.`);
     lead.city = `${own[1].trim()}, ${own[2]}`;
   }
+  }
   const browser = await chromium.launch();
   try {
+    const tool = await browser.newPage();
+    if (!finishSlug) {
     // 1. Their site.
     console.log(`Reading ${lead.website}`);
-    const site = await scrapeSite(browser, lead.website);
+    site = await scrapeSite(browser, lead.website);
     if (!site) throw new Error('Their site did not load.');
-    const text = site.pages.map((p) => p.text).join('\n\n');
+    text = site.pages.map((p) => p.text).join('\n\n');
     // A boat search finds car detailers too: their preview gets car wording and a car form.
     if (kit === 'detailing' && /boat/i.test(lead.trade) && vehicleFocus(text) === 'cars') {
       checks.push(`Listed as ${lead.trade}, but their site is about cars: built as mobile car detailing.`);
@@ -84,8 +101,7 @@ async function main() {
     }
 
     // 2. Photos and logo.
-    const tool = await browser.newPage();
-    const photos = [];
+    photos = [];
     for (const c of photoCandidates(site.imgs).slice(0, 24)) {
       const file = path.join(out, 'img', `photo-${photos.length + 1}.jpg`);
       const saved = await saveImage(tool, c.src, file);
@@ -93,45 +109,66 @@ async function main() {
       if (saved && Math.max(saved.w, saved.h) >= 600 && Math.min(saved.w, saved.h) >= 380) photos.push({ file, rel: `img/photo-${photos.length + 1}.jpg`, ...saved, alt: c.alt });
     }
     console.log(`${photos.length} photos`);
-    let logo = null;
+    logo = null;
     const lc = logoCandidate(site.imgs);
     if (lc) logo = await saveImage(tool, lc.src, path.join(out, 'logo.png'), { max: 360, logo: true });
     if (!logo) checks.push('No logo found: the header shows the name only.');
     else if (logo.dark && logo.transparent) checks.push('Logo is dark on a transparent background: shown on a white chip. Check it reads well.');
 
     // 3. Words: the kit's, then sharper ones from Claude when available.
-    let copy = tradeCopy(lead.trade, (kit === 'detailing' ? detailingCopy : lawnCopy)({ name: lead.name, city: lead.city, text }), lead.city);
+    copy = tradeCopy(lead.trade, (kit === 'detailing' ? detailingCopy : lawnCopy)({ name: lead.name, city: lead.city, text }), lead.city);
     // Proven general wording from reviewed previews of the same trade (wording/), over the defaults:
     // the AI improves on it, and --no-ai uses it as is. Facts still come only from their own site.
     const { library, fromLibrary } = await import('./wording.mjs');
-    const lib = await library(lead.trade);
+    lib = await library(lead.trade);
     // Enough reviewed previews of this trade: the general wording comes from them as is, and the AI
     // is asked only for this business's facts and photos (cheaper, and already-reviewed wording).
-    const libFirst = lib.length >= (config.wording?.libraryFirstMin ?? 8);
-    const model = arg('model') ?? config.aiModel;
+    libFirst = lib.length >= (config.wording?.libraryFirstMin ?? 8);
+    model = arg('model') ?? config.aiModel;
     if (lib.length) copy = fromLibrary(copy, lib, { name: lead.name, town: lead.city.replace(/,\s*[A-Z]{2}$/, ''), text });
     // A preview already polished by hand keeps its wording (--fresh starts over); only the photos,
     // logo and rating are refreshed.
     const existingFile = path.join(out, 'site.json');
-    const existing = !args.includes('--fresh') ? await readFile(existingFile, 'utf8').then(JSON.parse).catch(() => null) : null;
+    existing = !args.includes('--fresh') ? await readFile(existingFile, 'utf8').then(JSON.parse).catch(() => null) : null;
     const WORDS = ['kicker', 'headline', 'intro', 'badges', 'highlights', 'mobile', 'servicesTitle', 'servicesIntro', 'services', 'also', 'alsoTitle', 'promise', 'why', 'whyTitle', 'howTitle', 'steps', 'contactTitle', 'footerLine', 'reviews', 'hours', 'areas', 'areasTitle', 'areasIntro', 'title', 'description', 'wordmark', 'address', 'legalName'];
     if (existing) { for (const k of WORDS) if (existing[k] !== undefined) copy[k] = existing[k]; checks.push('Kept the hand-written wording from the existing site.json (use --fresh to start over).'); }
     // The hero prefers a landscape photo; phone photos (all portrait) still work, cropped.
-    let heroIndex = pickHero(photos);
+    heroIndex = pickHero(photos);
     if (heroIndex >= 0 && photos[heroIndex].h >= photos[heroIndex].w) checks.push('Hero uses a portrait photo, cropped: check it looks good.');
-    let order = photos.map((_, i) => i).filter((i) => i !== heroIndex);
-    let alts = {};
-    let wordmark = splitWordmark(lead.name);
+    order = photos.map((_, i) => i).filter((i) => i !== heroIndex);
+    alts = {};
+    wordmark = splitWordmark(lead.name);
+    }
     const useAi = !args.includes('--no-ai');
     if (useAi && !anthropicKey()) checks.push('No ANTHROPIC_API_KEY (or NEON_ANTHROPIC_API_KEY): used the kit wording (no reviews, generic intro).');
+    let viaBatch = false;
     if (useAi && anthropicKey() && !existing) {
-      const thumbs = [];
-      for (const p of photos) thumbs.push(await thumbnail(tool, p.file));
-      console.log(libFirst ? `Asking Claude (${model}) for their facts and the photo choice; wording from the library (${lib.length} previews)` : `Asking Claude (${model}) for sharper wording and the photo choice`);
       let ai = null;
-      const logoThumb = logo ? await thumbnail(tool, path.join(out, 'logo.png')).catch(() => null) : null;
-      try { ai = await sharpen({ kit, lead, text, draft: copy, thumbs, logoThumb, model, only: libFirst ? FACT_FIELDS : null }); }
-      catch (e) { checks.push(`Claude failed (${e.message}): used the kit wording.`); }
+      if (finishSlug) {
+        // The batch's answer, or (it failed or expired) one direct call with the same request.
+        const req = JSON.parse(await readFile(path.join(out, '.ai-request.json'), 'utf8'));
+        const res = await readFile(path.join(out, '.ai-result.json'), 'utf8').then(JSON.parse).catch(() => null);
+        if (!res) console.log(`No batch answer: asking Claude (${model}) directly`);
+        try { ai = { ...parseSharpen(res ?? await callClaude(req.params)), facts: req.facts }; viaBatch = !!res; }
+        catch (e) { checks.push(`Claude failed (${e.message}): used the kit wording.`); }
+      } else {
+        const thumbs = [];
+        for (const p of photos) thumbs.push(await thumbnail(tool, p.file));
+        const logoThumb = logo ? await thumbnail(tool, path.join(out, 'logo.png')).catch(() => null) : null;
+        const req = sharpenRequest({ kit, lead, text, draft: copy, thumbs, logoThumb, model, only: libFirst ? FACT_FIELDS : null });
+        if (prepare) {
+          // Stop here: batch.mjs sends the request with the others and runs --finish when it is answered.
+          const st = { lead, kit, slug, checks, site: { pages: site.pages, emails: site.emails }, text, photos, logo, copy, heroIndex, order, alts, wordmark, existing, libFirst, model };
+          await writeFile(path.join(out, '.build.json'), JSON.stringify(st));
+          await writeFile(path.join(out, '.ai-request.json'), JSON.stringify(req));
+          console.log(`→ prepared demos/${slug}/`);
+          await tool.close();
+          return;
+        }
+        console.log(libFirst ? `Asking Claude (${model}) for their facts and the photo choice; wording from the library (${lib.length} previews)` : `Asking Claude (${model}) for sharper wording and the photo choice`);
+        try { ai = { ...parseSharpen(await callClaude(req.params)), facts: req.facts }; }
+        catch (e) { checks.push(`Claude failed (${e.message}): used the kit wording.`); }
+      }
       if (ai) {
       const r = ai.result;
       // Library-first: the general fields aren't in the answer, so the library's stay.
@@ -174,9 +211,10 @@ async function main() {
       }
       if (r.notes) checks.push(`Claude's notes: ${r.notes}`);
       const u = ai.usage;
-      const price = model.startsWith('claude-haiku') ? [0.10, 0.50] : [2, 10];
+      // A Message Batch costs half (Sonnet 5.5: $2 in / $10 out per million tokens, $1 / $5 in a batch).
+      const price = (model.startsWith('claude-haiku') ? [0.10, 0.50] : [2, 10]).map((p) => (viaBatch ? p / 2 : p));
       const cents = (u.input_tokens * price[0] + u.output_tokens * price[1]) / 1e4;
-      console.log(`Claude: ${u.input_tokens} in, ${u.output_tokens} out (about ${cents.toFixed(2)} cents)`);
+      console.log(`Claude${viaBatch ? ' (batch)' : ''}: ${u.input_tokens} in, ${u.output_tokens} out (about ${cents.toFixed(2)} cents)`);
       }
     }
 
@@ -265,6 +303,7 @@ async function main() {
     if (!email) checks.push('No email address for this business.');
     await writeFile(path.join(out, 'email.txt'), `To: ${email}\nSubject: ${mail.subject}\n\n${mail.body}\n`);
     await writeFile(path.join(out, 'check.txt'), checks.length ? checks.map((c) => `- ${c}`).join('\n') + '\n' : 'Nothing flagged.\n');
+    if (finishSlug) for (const f of BUILD_FILES) await rm(path.join(out, f), { force: true });
     console.log(`\n→ demos/${slug}/  (preview.html, desktop.jpg, phone.jpg, email.txt, check.txt)`);
     for (const c of checks) console.log(`  ! ${c}`);
     await tool.close();
@@ -273,4 +312,6 @@ async function main() {
   }
 }
 
-main().catch((e) => { console.error(e.message); process.exit(1); });
+if (process.argv[1] && fileURLToPath(import.meta.url) === path.resolve(process.argv[1])) {
+  main().catch((e) => { console.error(e.message); process.exit(1); });
+}

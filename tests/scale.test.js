@@ -157,3 +157,13 @@ test('subject A/B and rewording an old draft keeps its opening and link', async 
   assert.doesNotMatch(now, /long offer/);
   assert.equal(rewordDraft(now, sender), now);
 });
+
+test('wording library: a line naming someone else (a person, a region) is not reused', async () => {
+  const { fromLibrary, strangeNames } = await import('../pipeline/wording.mjs');
+  assert.deepEqual(strangeNames('Why people stay with Manny.', { name: 'Exclusive Mobile Detail', text: 'we detail cars' }), ['Manny']);
+  assert.deepEqual(strangeNames('Clean cars,<br><em>Every week.</em>'), []);
+  const lib = [{ whyTitle: 'Why people stay with Manny.', servicesIntro: 'Homes across {town} and the South Plains.' }];
+  const out = fromLibrary({ whyTitle: 'Why us.', servicesIntro: 'Kit intro.' }, lib, { name: 'Home Pros', town: 'San Antonio', text: 'painting in San Antonio' });
+  assert.equal(out.whyTitle, 'Why us.');
+  assert.equal(out.servicesIntro, 'Kit intro.');
+});

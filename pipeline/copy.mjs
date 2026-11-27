@@ -328,34 +328,51 @@ export function anthropicKey() {
   return process.env.ANTHROPIC_API_KEY || process.env.NEON_ANTHROPIC_API_KEY || '';
 }
 
-/** Asks Claude for sharper wording and the photo choice. Returns null when there is no API key. */
-export async function sharpen({ kit, lead, text, draft, thumbs, logoThumb = null, model = 'claude-sonnet-5-5', only = null }) {
-  const apiKey = anthropicKey();
-  if (!apiKey) return null;
-  const { default: Anthropic } = await import('@anthropic-ai/sdk');
-  const client = new Anthropic({ apiKey });
+/** The request for Claude (plain Messages API params, no beta fields, so it also fits a Message
+ *  Batch) and the facts verify() checks against. */
+export function sharpenRequest({ kit, lead, text, draft, thumbs, logoThumb = null, model = 'claude-sonnet-5-5', only = null }) {
   const facts = `Business: ${lead.name}\nTrade: ${lead.trade}\nCity: ${lead.city}\nGoogle rating: ${lead.rating} from ${lead.reviews} reviews\nPhone: ${lead.phone}${lead.note ? `\nNote: ${lead.note}` : ''}`;
   const content = [
     { type: 'text', text: `${facts}\n\nKit: ${kit}\n\n${only ? `The headline, section titles and steps are already written (from our library of reviewed sites); write only the fields asked for. The draft, for its voice:` : 'Our ready-made draft (improve on it; keep its structure):'}\n${JSON.stringify(draft)}\n\nTheir current website text:\n<site>\n${text.slice(0, 24000)}\n</site>\n\nTheir photos follow, numbered from 1.` },
     ...thumbs.flatMap((b64, i) => [{ type: 'text', text: `Photo ${i + 1}` }, { type: 'image', source: { type: 'base64', media_type: 'image/jpeg', data: b64 } }]),
     ...(logoThumb ? [{ type: 'text', text: 'Logo' }, { type: 'image', source: { type: 'base64', media_type: 'image/jpeg', data: logoThumb } }] : []),
   ];
-  // The model is one setting in config.json ("aiModel"): claude-sonnet-5-5 (about 3-5 cents a lead)
-  // or claude-haiku-5-5 (about a quarter of a cent). Low effort keeps the thinking short;
-  // verify() still drops anything the business's own site doesn't back up. Sonnet can hand a
-  // request it declines to its fallback model on the server; Haiku has no such fallback.
-  const fallback = model.startsWith('claude-haiku') ? {} : { betas: ['server-side-fallback-2026-07-01'], fallbacks: 'default' };
-  const response = await client.beta.messages.create({
+  // The model is one setting in config.json ("aiModel"): claude-sonnet-5-5 (about 3-5 cents a lead,
+  // half that through a Message Batch) or claude-haiku-5-5. Low effort keeps the thinking short;
+  // verify() still drops anything the business's own site doesn't back up.
+  const params = {
     model,
     max_tokens: 16000,
-    ...fallback,
     output_config: { effort: 'low', format: { type: 'json_schema', schema: schemaFor(only) } },
     system: SYSTEM,
     messages: [{ role: 'user', content }],
-  });
-  if (response.stop_reason !== 'end_turn') throw new Error(`Claude stopped: ${response.stop_reason}`);
-  const out = response.content.find((b) => b.type === 'text');
-  return { result: JSON.parse(out.text), usage: response.usage, facts };
+  };
+  return { params, facts };
+}
+
+/** Claude's answer (a Message, direct or from a batch) as the copy object. */
+export function parseSharpen(message) {
+  if (message.stop_reason !== 'end_turn') throw new Error(`Claude stopped: ${message.stop_reason}`);
+  const out = message.content.find((b) => b.type === 'text');
+  return { result: JSON.parse(out.text), usage: message.usage };
+}
+
+/** One direct call. Sonnet can hand a request it declines to its fallback model on the server (a
+ *  beta, so not available in batches); Haiku has no such fallback. */
+export async function callClaude(params) {
+  const apiKey = anthropicKey();
+  if (!apiKey) return null;
+  const { default: Anthropic } = await import('@anthropic-ai/sdk');
+  const client = new Anthropic({ apiKey });
+  const fallback = params.model.startsWith('claude-haiku') ? {} : { betas: ['server-side-fallback-2026-07-01'], fallbacks: 'default' };
+  return client.beta.messages.create({ ...params, ...fallback });
+}
+
+/** Asks Claude for sharper wording and the photo choice. Returns null when there is no API key. */
+export async function sharpen(opts) {
+  if (!anthropicKey()) return null;
+  const { params, facts } = sharpenRequest(opts);
+  return { ...parseSharpen(await callClaude(params)), facts };
 }
 
 /** A business name as people say it: Google names often carry " in Phoenix" or " - Best Detailing". */

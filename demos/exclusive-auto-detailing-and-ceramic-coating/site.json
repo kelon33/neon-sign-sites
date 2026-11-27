@@ -1,0 +1,150 @@
+{
+ "kit": "detailing",
+ "trade": "Mobile car detailing",
+ "name": "Exclusive Auto Detailing and Ceramic Coating",
+ "legalName": "Exclusive Auto Detailing and Ceramic Coating",
+ "preview": true,
+ "placeId": "ChIJzw_D_CS_yIARcP4sEMDHaDc",
+ "title": "Exclusive Auto Detailing and Ceramic Coating | Mobile car detailing in Las Vegas, NV",
+ "description": "Premium detailing, paint correction and ceramic coating, brought to your home or workplace in Las Vegas. No drop-off. Just a vehicle that looks new again. 4.9 on Google from 743 reviews.",
+ "brand": "#1670ff",
+ "brandHi": "#52c6ff",
+ "accent": "#8fd0ff",
+ "logo": "logo.png",
+ "logoChip": false,
+ "wordmark": {
+  "top": "Exclusive",
+  "bottom": "Mobile Detail"
+ },
+ "phone": "(775) 901-6063",
+ "email": "charles.rosenow.b@gmail.com",
+ "heroImage": "img/photo-9.jpg",
+ "heroAlt": "White Bentley sedan parked in a driveway beside a green lawn",
+ "heroPosition": "60% 60%",
+ "heroPositionPhone": "60% 50%",
+ "rating": {
+  "score": "4.9",
+  "count": 743,
+  "url": "https://maps.google.com/?cid=3992660697382977136"
+ },
+ "kicker": "Mobile car detailing · Las Vegas, NV",
+ "headline": "Showroom shine.<br><em>Right in your driveway.</em>",
+ "intro": "Premium detailing, paint correction and ceramic coating, brought to your home or workplace in Las Vegas. No drop-off. Just a vehicle that looks new again.",
+ "mobile": {
+  "title": "Your driveway is our shop.",
+  "intro": "We come to the place that suits you, so your day keeps moving.",
+  "points": [
+   {
+    "name": "We come to you",
+    "text": "At your home or your workplace. Wherever you are."
+   },
+   {
+    "name": "Your day keeps moving",
+    "text": "Relax at home or work while we pamper your vehicle."
+   },
+   {
+    "name": "Every detail counts",
+    "text": "We pay attention to even the smallest imperfections."
+   },
+   {
+    "name": "Easy to book",
+    "text": "Call (775) 901-6063 or send the quote form."
+   }
+  ]
+ },
+ "servicesTitle": "Inside, outside, and everything that shines.",
+ "servicesIntro": "Start with an interior detail. Add what your car needs.",
+ "services": [
+  {
+   "name": "Paint Correction",
+   "text": "Paint restoration detailing that brings back your vehicle's original shine."
+  },
+  {
+   "name": "Auto Detailing",
+   "text": "A thorough, all-encompassing clean that revitalizes your vehicle inside and out."
+  },
+  {
+   "name": "Ceramic Coating",
+   "text": "An advanced coating that shields your vehicle from a myriad of environmental hazards."
+  }
+ ],
+ "also": [
+  {
+   "name": "Boats"
+  },
+  {
+   "name": "Motorhomes"
+  }
+ ],
+ "alsoTitle": "Not just cars:",
+ "why": [
+  {
+   "name": "Convenience",
+   "text": "We come to you, wherever you are."
+  },
+  {
+   "name": "Precision",
+   "text": "Every detail matters. We pay attention to even the smallest imperfections."
+  },
+  {
+   "name": "Expert care",
+   "text": "Trained technicians who specialize in luxury and delicate automobiles."
+  },
+  {
+   "name": "Long-term protection",
+   "text": "Our services enhance your vehicle's look and protect it from environmental damage."
+  }
+ ],
+ "whyTitle": "Why people stay with us.",
+ "howTitle": "Book it. We show up. You drive off shining.",
+ "steps": [
+  {
+   "name": "Tell us about your car",
+   "text": "Fill out the form with your vehicle, the services you want and where it is."
+  },
+  {
+   "name": "Get your quote",
+   "text": "We get in touch to confirm the appointment and send a detailed quote."
+  },
+  {
+   "name": "We pull up",
+   "text": "We detail your car at your home, workplace or apartment."
+  }
+ ],
+ "contactTitle": "Book your detail.",
+ "footerLine": "Mobile car detailing in Las Vegas",
+ "reviews": [
+  {
+   "text": "Exclusive Auto did a great job with my Jeep. I work in construction so my jeep gets dirty a lot and now it looks almost new. The Tech who came out was polite and professional and I will use Exclusive Auto again in the future. Thank you so much!",
+   "name": "Customer"
+  }
+ ],
+ "hours": [
+  "Mon - Fri: 9:00 - 5:30"
+ ],
+ "galleryTitle": "Fresh off the driveway.",
+ "gallery": [
+  {
+   "src": "img/photo-10.jpg",
+   "alt": "Silver Porsche 911 Turbo on a paver driveway",
+   "size": "big"
+  },
+  {
+   "src": "img/photo-1.jpg",
+   "alt": "Orange Mercedes G-Class SUV parked on pavers"
+  },
+  {
+   "src": "img/photo-5.jpg",
+   "alt": "Lifted blue Toyota Tundra truck"
+  },
+  {
+   "src": "img/photo-3.jpg",
+   "alt": "Red Corvette with gleaming paint being detailed in a shop",
+   "size": "tall"
+  }
+ ],
+ "areas": [
+  "Las Vegas"
+ ],
+ "pitch": "site"
+}

@@ -1,0 +1,37 @@
+[
+ {
+  "id": "msgbatch_013ShtoX3ec1TdroqtkUANoS",
+  "created": "2026-11-27T15:57:13.274Z",
+  "map": {
+   "p0": "exclusive-auto-detailing-and-ceramic-coating",
+   "p1": "home-pros-painting-and-home-repairs"
+  },
+  "leads": [
+   {
+    "slug": "exclusive-auto-detailing-and-ceramic-coating",
+    "name": "Exclusive Auto Detailing and Ceramic Coating | Mobile Service",
+    "kind": "weak site",
+    "trade": "Boat detailing",
+    "reviews": 743,
+    "website": "https://exclusivemobiledetails.net/",
+    "reasons": [
+     "GoDaddy site builder"
+    ],
+    "improvements": []
+   },
+   {
+    "slug": "home-pros-painting-and-home-repairs",
+    "name": "Home Pros Painting and Home Repairs of San Antonio",
+    "kind": "weak site",
+    "trade": "House painting",
+    "reviews": 79,
+    "website": "https://www.homeprospaintsa.com/?utm_source=google&utm_medium=organic&utm_campaign=gbp_san_antonio",
+    "reasons": [
+     "copyright 2022"
+    ],
+    "improvements": []
+   }
+  ],
+  "done": true
+ }
+]
