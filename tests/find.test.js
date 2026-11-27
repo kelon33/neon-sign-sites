@@ -99,12 +99,15 @@ test('working sites with clear gaps are a separate "decent site" category; no ga
   assert.equal(siteKind([], []), 'strong site');
 });
 
-test('each trade has its main phrase first, and every phrase fits a site kit', () => {
+test('each trade has its main phrase first, and every phrase fits a site kit', async () => {
   assert.equal(TRADES.lawn.queries[0], 'lawn care service');
   assert.equal(TRADES.detailing.queries[0], 'mobile car detailing');
   for (const t of Object.values(TRADES).filter((t) => !t.test)) assert.ok(t.queries.length >= 3);
-  // Test trades have no kit, so no previews are built for them.
-  for (const t of Object.values(TRADES).filter((t) => t.test)) assert.equal(kitFor(t.trade), null);
+  // Test trades are searched but never built (npm run batch skips them) until promoted.
+  const { pick } = await import('../pipeline/batch.mjs');
+  for (const t of Object.values(TRADES).filter((t) => t.test))
+    assert.deepEqual(pick([{ placeId: 'x', name: 'X', city: 'Waco, TX', trade: t.trade, kind: 'weak site', email: 'a@b.com', reviews: 9 }]), []);
+  assert.equal(kitFor('Lawn care'), 'lawn');
 });
 
 test('lead files are sorted weak, decent, strong, and the readable copy has one section per category', async () => {

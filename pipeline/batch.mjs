@@ -16,6 +16,7 @@ import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { kitFor, cleanName } from './copy.mjs';
 import { blocked } from './dnc.mjs';
+import { TEST_TRADES } from './find.mjs';
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 export const slugify = (s) => s.toLowerCase().replace(/['’]/g, '').replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
@@ -23,7 +24,7 @@ const KINDS = { weak: 'weak site', decent: 'decent site' };
 
 /** The leads to build, in order. `built` holds the slugs and place IDs already in demos/. */
 export function pick(leads, { count = 5, kinds = ['weak site', 'decent site'], built = new Set(), dnc = [] } = {}) {
-  const ok = leads.filter((l) => l.email && kitFor(l.trade) && kinds.includes(l.kind) && !blocked(l, dnc)
+  const ok = leads.filter((l) => l.email && kitFor(l.trade) && !TEST_TRADES.has(l.trade) && kinds.includes(l.kind) && !blocked(l, dnc)
     && !built.has(l.placeId) && !built.has(slugify(cleanName(l.name, l.city))));
   const out = [];
   for (const kind of kinds) {

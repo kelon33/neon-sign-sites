@@ -48,7 +48,24 @@ export const TRADES = {
   pressure: { trade: 'Pressure washing', queries: ['pressure washing service'], test: true },
   pool: { trade: 'Pool cleaning', queries: ['pool cleaning service'], test: true },
   windows: { trade: 'Window cleaning', queries: ['window cleaning service'], test: true },
+  // Small one-person trades. "kit" = the existing kit their site would use if the test goes well.
+  petwaste: { trade: 'Pet waste removal', queries: ['pet waste removal service'], test: true, kit: 'lawn' },
+  sprinkler: { trade: 'Sprinkler repair', queries: ['sprinkler repair'], test: true, kit: 'lawn' },
+  stump: { trade: 'Stump grinding', queries: ['stump grinding'], test: true, kit: 'lawn' },
+  sod: { trade: 'Sod installation', queries: ['sod installation'], test: true, kit: 'lawn' },
+  lights: { trade: 'Christmas light installation', queries: ['christmas light installation'], test: true, kit: 'lawn' },
+  boat: { trade: 'Boat detailing', queries: ['boat detailing'], test: true, kit: 'detailing' },
+  rv: { trade: 'RV detailing', queries: ['rv detailing'], test: true, kit: 'detailing' },
+  dent: { trade: 'Paintless dent repair', queries: ['paintless dent repair'], test: true, kit: 'detailing' },
+  windshield: { trade: 'Windshield chip repair', queries: ['mobile windshield chip repair'], test: true, kit: 'detailing' },
+  handyman: { trade: 'Handyman', queries: ['handyman service'], test: true },
+  painting: { trade: 'House painting', queries: ['house painter'], test: true },
+  junk: { trade: 'Junk removal', queries: ['junk removal'], test: true },
+  grooming: { trade: 'Mobile dog grooming', queries: ['mobile dog grooming'], test: true },
 };
+
+/** Trades still being tested: searched, never built into previews until promoted. */
+export const TEST_TRADES = new Set(Object.values(TRADES).filter((t) => t.test).map((t) => t.trade));
 
 // Only these fields, all in one price tier. Adding reviews, photos, regularOpeningHours or
 // editorialSummary would make every request dearer.
@@ -262,11 +279,12 @@ async function knownPlaceIds() {
 async function nextCities(n) {
   const list = (await readJson(path.join(root, 'leads', 'cities.json'), { cities: [] })).cities;
   const usage = await readJson(path.join(root, 'leads', 'places-usage.json'), { queries: {} });
-  const done = new Set(Object.keys(usage.queries ?? {}).map((q) => q.split(' in ').at(-1)));
+  const main = Object.values(TRADES).filter((t) => !t.test).flatMap((t) => t.queries);
+  const done = new Set(Object.keys(usage.queries ?? {}).filter((q) => main.some((m) => q.startsWith(`${m} in `))).map((q) => q.split(' in ').at(-1)));
   for (const f of await readdir(path.join(root, 'leads'))) {
     if (!/^(us-|found-).*\.json$/.test(f)) continue;
     const data = await readJson(path.join(root, 'leads', f), []);
-    for (const l of Array.isArray(data) ? data : []) if (l?.city) done.add(l.city);
+    for (const l of Array.isArray(data) ? data : []) if (l?.city && !TEST_TRADES.has(l.trade)) done.add(l.city);
   }
   const picked = list.filter((c) => !done.has(c)).slice(0, n);
   if (!picked.length) throw new Error('Every city in leads/cities.json has been searched: add more.');
