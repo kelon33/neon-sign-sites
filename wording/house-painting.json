@@ -3,6 +3,41 @@
  "about": "General wording from reviewed previews (npm run wording). {name} and {town} are filled in per business.",
  "entries": [
   {
+   "from": "adkins-paint-drywall",
+   "headline": "Clean walls.<br><em>Family-built finish.</em>",
+   "servicesTitle": "From the studs to the final coat.",
+   "servicesIntro": "Residential and commercial work across Waco, {town}, Temple, Belton and nearby towns. Every estimate is free.",
+   "howTitle": "A finished room in three steps.",
+   "contactTitle": "Let's bring your vision to life.",
+   "galleryTitle": "Homes we’ve painted.",
+   "alsoTitle": "We also do:"
+  },
+  {
+   "from": "best-painter",
+   "headline": "Fresh paint.<br><em>Done by family.</em>",
+   "servicesTitle": "Inside and out.",
+   "servicesIntro": "One room or the whole house. Every estimate is free and flat.",
+   "whyTitle": "Why {name}.",
+   "howTitle": "A fresh coat in three steps.",
+   "contactTitle": "Ready for a fresh coat?",
+   "galleryTitle": "Homes we’ve painted.",
+   "alsoTitle": "We also do:",
+   "steps": [
+    {
+     "name": "Call for a free estimate",
+     "text": "We look at the work, ask questions and give you a flat price."
+    },
+    {
+     "name": "We prep and paint",
+     "text": "We mask, scrape, caulk and prime, then paint. We buy all the supplies."
+    },
+    {
+     "name": "Pay when it is done",
+     "text": "On most jobs, you pay nothing until everything is completely finished."
+    }
+   ]
+  },
+  {
    "from": "brush-bros-painting",
    "headline": "The painter you hire<br><em>is the painter who shows up.</em>",
    "servicesTitle": "Inside and out.",
@@ -14,6 +49,30 @@
    "alsoTitle": "We also do:"
   },
   {
+   "from": "dyer-painting-company-high-performance-floor-coatings",
+   "servicesTitle": "Inside, outside, and underfoot.",
+   "servicesIntro": "Homes, businesses and industrial sites. One crew that does it right.",
+   "whyTitle": "Why customers come back.",
+   "howTitle": "How a project works.",
+   "contactTitle": "Request a free quote.",
+   "galleryTitle": "Homes we’ve painted.",
+   "alsoTitle": "We also do:",
+   "steps": [
+    {
+     "name": "Free consultation",
+     "text": "Tell us what you need. We talk through the scope and give you a free quote."
+    },
+    {
+     "name": "Plan and schedule",
+     "text": "We agree on the details and set the work with clear communication."
+    },
+    {
+     "name": "Paint and walkthrough",
+     "text": "Our team does the work, then walks the finished job with you."
+    }
+   ]
+  },
+  {
    "from": "elegance-home-painting",
    "headline": "Fresh paint.<br><em>Clean lines.</em>",
    "servicesTitle": "Inside and out.",
@@ -23,6 +82,32 @@
    "contactTitle": "Ready for a fresh coat?",
    "galleryTitle": "Homes we’ve painted.",
    "alsoTitle": "We also do:"
+  },
+  {
+   "from": "j-m-painting-and-remodeling",
+   "headline": "Fresh paint.<br><em>Honest work.</em>",
+   "servicesTitle": "Inside and out.",
+   "whyTitle": "Why homeowners call us.",
+   "howTitle": "A fresh coat in three steps.",
+   "contactTitle": "Ready for a fresh coat?",
+   "galleryTitle": "Homes we’ve painted.",
+   "alsoTitle": "We also do:",
+   "sectionTitle": "Why neighbors call J & M.",
+   "sectionIntro": "Painting is only part of it. The crew keeps you in the loop and works until the job is right.",
+   "steps": [
+    {
+     "name": "Free estimate",
+     "text": "Tell us about the job. We look it over and give you a quote."
+    },
+    {
+     "name": "We do the work",
+     "text": "The crew arrives on schedule, and you get daily updates your way."
+    },
+    {
+     "name": "Final look",
+     "text": "We finish every detail so you are satisfied with the result."
+    }
+   ]
   },
   {
    "from": "pro-tech-painting-and-drywall",
@@ -96,6 +181,30 @@
     {
      "name": "Enjoy the new look",
      "text": "We paint, and aim to finish on time and on budget."
+    }
+   ]
+  },
+  {
+   "from": "the-painting-craftsmen",
+   "servicesTitle": "Inside and out.",
+   "servicesIntro": "One room or the whole property.",
+   "whyTitle": "Why {town} homeowners choose us.",
+   "howTitle": "From estimate to final walk-through.",
+   "contactTitle": "Ready for a fresh coat?",
+   "galleryTitle": "Homes we’ve painted.",
+   "alsoTitle": "We also do:",
+   "steps": [
+    {
+     "name": "Get a free estimate",
+     "text": "Call or text, or send the form. No obligation, so you know what to expect before work begins."
+    },
+    {
+     "name": "We prep and paint",
+     "text": "We mask and cover your home, repair surfaces, then paint with Benjamin Moore and Sherwin-Williams products."
+    },
+    {
+     "name": "Final walk-through",
+     "text": "We check the work with you and make it right if anything falls short."
     }
    ]
   },

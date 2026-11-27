@@ -3,6 +3,16 @@
  "about": "General wording from reviewed previews (npm run wording). {name} and {town} are filled in per business.",
  "entries": [
   {
+   "from": "boat-beautiful-mobile-boat-detailing",
+   "headline": "Lake day ready.<br><em>Every day.</em>",
+   "servicesTitle": "Bow to stern.",
+   "servicesIntro": "One-time details, regular programs and long-lasting protection.",
+   "howTitle": "Ready for the water in three steps.",
+   "galleryTitle": "Fresh off the water.",
+   "alsoTitle": "We also detail",
+   "sectionTitle": "We bring the detail to your dock."
+  },
+  {
    "from": "davis-bros-marine-services",
    "headline": "Back on the water<br><em>looking new.</em>",
    "servicesTitle": "Bow to stern.",
@@ -27,6 +37,42 @@
      "text": "Clean, polished and protected."
     }
    ]
+  },
+  {
+   "from": "detail-m-d",
+   "headline": "Offshore-ready.<br><em>Mirror finish.</em>",
+   "servicesTitle": "Bow to stern.",
+   "servicesIntro": "Restoration for weathered boats. Protection to keep every boat looking new.",
+   "whyTitle": "Why boat owners call us.",
+   "howTitle": "Back on the water in three steps.",
+   "contactTitle": "Book your boat in.",
+   "galleryTitle": "Fresh off the water.",
+   "steps": [
+    {
+     "name": "Tell us about your boat",
+     "text": "Call or send the form with the vessel and what you need."
+    },
+    {
+     "name": "We assess and plan",
+     "text": "We inspect the surface and set the right correction and protection."
+    },
+    {
+     "name": "Back on the water",
+     "text": "Your boat returns with deep gloss and lasting protection."
+    }
+   ]
+  },
+  {
+   "from": "elc-detailing-sarasota",
+   "headline": "Like the first day,<br><em>every day.</em>",
+   "servicesTitle": "Bow to stern.",
+   "servicesIntro": "Routine washes. Full restoration. Protection that holds up in Florida sun and salt.",
+   "whyTitle": "What we give you that others don't.",
+   "howTitle": "Ready for the water in three steps.",
+   "contactTitle": "Book your boat in.",
+   "galleryTitle": "Fresh off the water.",
+   "alsoTitle": "We also detail",
+   "sectionTitle": "We come to your boat."
   },
   {
    "from": "mavinate",

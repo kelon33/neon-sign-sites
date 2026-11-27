@@ -177,6 +177,32 @@
      "text": "We detail your car at your home, workplace or apartment."
     }
    ]
+  },
+  {
+   "from": "tonys-mobile-detailing",
+   "headline": "Showroom shine,<br><em>at your driveway.</em>",
+   "servicesTitle": "Inside, outside, protected.",
+   "servicesIntro": "From a one-time clean to regular upkeep, pick the service that fits your vehicle.",
+   "howTitle": "Detailed in three steps.",
+   "contactTitle": "Book your detail.",
+   "galleryTitle": "Fresh off the driveway.",
+   "alsoTitle": "We also detail",
+   "sectionTitle": "We come to you.",
+   "sectionIntro": "Mobile service means your car gets a full detail right where it sits. All we need is your home's power and water.",
+   "steps": [
+    {
+     "name": "Book",
+     "text": "Book online or by phone and stay updated the whole way."
+    },
+    {
+     "name": "We detail",
+     "text": "Our experts inspect your vehicle and detail it with high-quality products and tools."
+    },
+    {
+     "name": "You approve",
+     "text": "Inspect the result, make sure you're satisfied, then pay."
+    }
+   ]
   }
  ]
 }

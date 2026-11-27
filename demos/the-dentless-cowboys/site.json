@@ -1,0 +1,97 @@
+{
+  "kit": "detailing",
+  "trade": "Paintless dent repair",
+  "name": "The Dentless Cowboys",
+  "legalName": "The Dentless Cowboys",
+  "preview": true,
+  "placeId": "ChIJrebVdDnPRIYRzZotoyVyfYU",
+  "title": "The Dentless Cowboys | Paintless dent repair in Lubbock, TX",
+  "description": "Paintless dent repair in Lubbock, with no repainting and no bondo. We work with all insurance companies and handle the claim for you. 5.0 on Google from 86 reviews.",
+  "brand": "#1670ff",
+  "brandHi": "#52c6ff",
+  "accent": "#8fd0ff",
+  "logo": "logo.png",
+  "logoChip": false,
+  "wordmark": {
+    "top": "The Dentless Cowboys"
+  },
+  "phone": "(928) 920-6712",
+  "email": "thedentlesscowboys@gmail.com",
+  "heroImage": null,
+  "heroAlt": "",
+  "heroPosition": "60% 60%",
+  "heroPositionPhone": "60% 50%",
+  "rating": {
+    "score": "5.0",
+    "count": 86,
+    "url": "https://maps.google.com/?cid=9618969885110278861"
+  },
+  "kicker": "Paintless dent repair · Lubbock",
+  "headline": "Hail damage gone.<br><em>Hassle gone too.</em>",
+  "intro": "Paintless dent repair in Lubbock, with no repainting and no bondo. We work with all insurance companies and handle the claim for you.",
+  "mobile": null,
+  "servicesTitle": "Every kind of dent.",
+  "servicesIntro": "From a single door ding to a full hail storm.",
+  "services": [
+    {
+      "name": "Hail damage repair",
+      "text": "Paintless dent repair that restores your car to its original condition after a storm."
+    },
+    {
+      "name": "Free damage inspection",
+      "text": "Call, text or visit the shop and we look over the damage at no cost."
+    },
+    {
+      "name": "Insurance claim help",
+      "text": "We work with all insurance companies and take care of the paperwork."
+    },
+    {
+      "name": "Rental car or pick-up and delivery",
+      "text": "A free rental car or pick-up and delivery while we repair your vehicle."
+    }
+  ],
+  "also": [],
+  "alsoTitle": "We also fix",
+  "why": [
+    {
+      "name": "15+ years of experience",
+      "text": "Over 15 years making hail damage disappear."
+    },
+    {
+      "name": "Fast turnaround",
+      "text": "Most repairs are done in 1-3 days."
+    },
+    {
+      "name": "Insurance handled",
+      "text": "$0 out-of-pocket with comprehensive coverage, and we deal with the paperwork."
+    }
+  ],
+  "whyTitle": "The Dentless Cowboys difference.",
+  "howTitle": "Dent-free in three steps.",
+  "steps": [
+    {
+      "name": "Schedule a free inspection",
+      "text": "Call, text or visit our shop."
+    },
+    {
+      "name": "We handle insurance",
+      "text": "We take care of the claim so you don't have to."
+    },
+    {
+      "name": "Drive away satisfied",
+      "text": "We repair the damage with paintless dent repair and you drive off happy."
+    }
+  ],
+  "contactTitle": "Got hail damage?",
+  "footerLine": "Paintless dent repair in Lubbock",
+  "reviews": [],
+  "hours": [],
+  "galleryTitle": "Dents gone, paint untouched.",
+  "notePlaceholder": "Where the dent is, how big, hail or a door ding…",
+  "ctaLabel": "Get an estimate",
+  "gallery": [],
+  "areas": [
+    "Lubbock"
+  ],
+  "pitch": "photos"
+}

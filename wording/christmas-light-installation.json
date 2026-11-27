@@ -26,6 +26,31 @@
    ]
   },
   {
+   "from": "elf-lighting",
+   "headline": "We hang the lights.<br><em>You enjoy the holidays.</em>",
+   "servicesTitle": "Lighting, handled start to finish.",
+   "servicesIntro": "One team for the whole season. We bring the leased lights and take care of every detail.",
+   "whyTitle": "Why {name}",
+   "howTitle": "Lit up in three steps.",
+   "contactTitle": "Ready to light it up?",
+   "galleryTitle": "Homes we light up.",
+   "alsoTitle": "We also do:",
+   "steps": [
+    {
+     "name": "Design your display",
+     "text": "Tell us your vision. We plan a custom look and walk you through the quote."
+    },
+    {
+     "name": "We bring and install",
+     "text": "Our crew supplies the leased lights and installs your agreed design."
+    },
+    {
+     "name": "Enjoy the glow, then we pack it away",
+     "text": "Enjoy it all season. After the holidays, we take the lights down and store them until next Christmas."
+    }
+   ]
+  },
+  {
    "from": "happy-lighting-tx",
    "headline": "We hang the lights.<br><em>You enjoy the holidays.</em>",
    "servicesTitle": "Lights, done for you.",
@@ -48,6 +73,56 @@
     {
      "name": "We hang them",
      "text": "We install, maintain and take them down in January."
+    }
+   ]
+  },
+  {
+   "from": "holideco-lubbock-christmas-lighting",
+   "headline": "We hang the lights.<br><em>You enjoy the season.</em>",
+   "servicesTitle": "Lighting, done for you.",
+   "servicesIntro": "One team from the first walk-through to the last bulb put away.",
+   "whyTitle": "Why {name}",
+   "howTitle": "Lit up in three steps.",
+   "contactTitle": "Ready for a free estimate?",
+   "galleryTitle": "Homes we light up.",
+   "alsoTitle": "We also do:",
+   "steps": [
+    {
+     "name": "Free estimate",
+     "text": "Call us. One of our experts visits your property and walks you through the plan."
+    },
+    {
+     "name": "Design and install",
+     "text": "We settle the design with you, then hang the lights and decorations."
+    },
+    {
+     "name": "Maintain and remove",
+     "text": "We fix any problems during the season, then take it all down and store it."
+    }
+   ]
+  },
+  {
+   "from": "lighting-by-gga",
+   "headline": "Custom lighting, designed and installed.<br><em>Results you'll love for years.</em>",
+   "servicesTitle": "Lighting for every season.",
+   "servicesIntro": "Short-term or long-term, we design it and install it for you.",
+   "whyTitle": "Why {name}",
+   "howTitle": "Lit up in three steps.",
+   "contactTitle": "Ready for a free estimate?",
+   "galleryTitle": "Homes we light up.",
+   "alsoTitle": "We also do:",
+   "steps": [
+    {
+     "name": "Get a free estimate",
+     "text": "Call or fill out the quote form and tell us what lighting you want."
+    },
+    {
+     "name": "We design it",
+     "text": "We plan a look that fits your home or business."
+    },
+    {
+     "name": "We install it",
+     "text": "Our team handles every step. You enjoy the result."
     }
    ]
   },
