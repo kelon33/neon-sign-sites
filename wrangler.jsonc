@@ -16,6 +16,8 @@
     "PAYPAL_MONTHLY_URL": "/subscribe",
     "PAYPAL_OWN_URL": "https://www.paypal.com/ncp/payment/8BEKHHQQHC7SN"
   },
+  // Preview visits and "Make it live" clicks for the dashboard (events.js). Created by Alon, 2026-11-27.
+  "kv_namespaces": [{ "binding": "EVENTS", "id": "42bf638324ae44659d2d9dd1d2f753dd" }],
   "assets": {
     "directory": "./dist",
     "binding": "ASSETS",

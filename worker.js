@@ -5,6 +5,7 @@
 // www.<domain> at us with one CNAME and forwards <domain> to www.<domain> at their registrar.
 
 import { previewRequest, makeItLive } from './forms.js';
+import { eventOf, record, allEvents } from './events.js';
 
 const OWN = new Set(['neonsignsites.com', 'www.neonsignsites.com', 'localhost', '127.0.0.1']);
 
@@ -21,7 +22,7 @@ function withHeader(res, name, value) {
 }
 
 export default {
-  async fetch(request, env) {
+  async fetch(request, env, ctx) {
     const url = new URL(request.url);
     const host = url.hostname.toLowerCase();
 
@@ -30,10 +31,21 @@ export default {
       // never on www, workers.dev or a customer domain, which Access does not cover.
       if (url.pathname === '/dashboard' || url.pathname.startsWith('/dashboard/')) {
         if (host !== 'neonsignsites.com' || !request.headers.get('cf-access-jwt-assertion')) return new Response('Not found', { status: 404 });
+        if (url.pathname === '/dashboard/api/events') {
+          return new Response(JSON.stringify(await allEvents(env)), { headers: { 'content-type': 'application/json', 'cache-control': 'no-store', 'X-Robots-Tag': 'noindex' } });
+        }
         return withHeader(await env.ASSETS.fetch(request), 'X-Robots-Tag', 'noindex, nofollow');
       }
       if (request.method === 'POST' && url.pathname === '/api/preview-request') return previewRequest(request, env);
-      if (request.method === 'POST' && url.pathname === '/api/go') return makeItLive(request, env);
+      if (request.method === 'POST' && url.pathname === '/api/go') {
+        // Count the "Make it live" click for the dashboard (from the form's own fields, before it is read).
+        const f = await request.clone().formData().catch(() => null);
+        const slug = String(f?.get('site') ?? '').replace(/[^a-z0-9-]/g, '').slice(0, 80);
+        if (slug && !/TEST by Claude/.test(String(f?.get('business') ?? ''))) ctx?.waitUntil(record(env, 'm', slug, { plan: String(f.get('plan') ?? '').slice(0, 10) }).catch(() => {}));
+        return makeItLive(request, env);
+      }
+      const ev = eventOf(request, url);
+      if (ev) ctx?.waitUntil(record(env, ev.kind, ev.slug).catch(() => {}));
       const res = await env.ASSETS.fetch(request);
       // Customer sites are also reachable at /c/<domain>/ here: keep those copies out of search engines.
       return url.pathname.startsWith('/c/') ? withHeader(res, 'X-Robots-Tag', 'noindex, nofollow') : res;

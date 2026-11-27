@@ -64,8 +64,8 @@ export async function buildDashboard(root) {
   const label = { 'hot-form': 'Make it live / form', 'hot-reply': 'Replied', cold: 'No reaction yet', no: 'Said no', bounced: 'Bounced' };
   const preview = (slug) => `<a href="/p/${esc(slug)}/" target="_blank" rel="noopener">${esc(names[slug] ?? slug)}</a>`;
   const quote = (r) => r?.text ? `<q>${esc(r.text.split(/\n(On .+wrote:|-----Original Message-----)/)[0].trim().slice(0, 220))}</q>` : '';
-  const table = (list) => list.length ? `<table><thead><tr><th>Business</th><th>Status</th><th>Emailed</th><th>From</th><th>Subj.</th></tr></thead><tbody>${list.map((r) =>
-    `<tr class="${esc(r.status)}"><td>${preview(r.slug)}<small>${esc(r.to ?? '')}</small></td><td><span class="tag ${esc(r.status)}">${esc(label[r.status])}</span></td><td>${esc(r.sentOn ?? '')}</td><td>${esc((r.from ?? '').replace('@neonsignsites.', ' @ .'))}</td><td>${esc(r.variant ?? '–')}</td></tr>`).join('')}</tbody></table>` : '<p class="muted">Nothing here yet.</p>';
+  const table = (list) => list.length ? `<table><thead><tr><th>Business</th><th>Status</th><th>Opened</th><th>Emailed</th><th>From</th><th>Subj.</th></tr></thead><tbody>${list.map((r) =>
+    `<tr class="${esc(r.status)}" data-slug="${esc(r.slug)}"><td>${preview(r.slug)}<small>${esc(r.to ?? '')}</small></td><td><span class="tag ${esc(r.status)}">${esc(label[r.status])}</span></td><td class="opened">–</td><td>${esc(r.sentOn ?? '')}</td><td>${esc((r.from ?? '').replace('@neonsignsites.', ' @ .'))}</td><td>${esc(r.variant ?? '–')}</td></tr>`).join('')}</tbody></table>` : '<p class="muted">Nothing here yet.</p>';
   const order = { 'hot-form': 0, 'hot-reply': 1, cold: 2, no: 3, bounced: 4 };
   const all = [...rows].sort((a, b) => order[a.status] - order[b.status] || String(b.sentOn).localeCompare(String(a.sentOn)));
   const built = new Date().toISOString().replace('T', ' ').slice(0, 16) + ' UTC';
@@ -99,14 +99,16 @@ table { width: 100%; border-collapse: collapse; font-size: .9rem; } th, td { tex
 th { color: var(--muted); font-weight: 500; border-top: 0; }
 a { color: #ff8fb4; text-decoration: none; } a:hover { text-decoration: underline; }
 .tag { display: inline-block; padding: 2px 8px; border-radius: 99px; font-size: .78rem; white-space: nowrap; background: #22222c; color: var(--muted); }
+.tag.warm { background: rgba(255,210,122,.14); color: var(--gold); }
 .tag.hot-form, .tag.hot-reply { background: rgba(255,79,139,.18); color: #ff9cbf; } .tag.no { background: #2a1d1d; color: #e59a9a; } .tag.bounced { background: #2a2618; color: var(--gold); }
-@media (max-width: 760px) { .cols { grid-template-columns: 1fr; } td:nth-child(4), th:nth-child(4) { display: none; } }
+@media (max-width: 760px) { .cols { grid-template-columns: 1fr; } td:nth-child(5), th:nth-child(5), td:nth-child(6), th:nth-child(6) { display: none; } }
 </style></head><body><div class="wrap">
 <header><h1><img src="/logo.svg" alt="">Dashboard</h1><span class="muted">Updated ${esc(built)}</span></header>
 
 <div class="kpis">
   <div class="kpi hot"><b>${hot.length}</b><span>Hot leads</span></div>
-  <div class="kpi"><b>${count('cold')}</b><span>Cold (no reaction yet)</span></div>
+  <div class="kpi"><b id="k-warm">…</b><span>Warm (opened their preview)</span></div>
+  <div class="kpi"><b id="k-cold">${count('cold')}</b><span>Cold (no reaction yet)</span></div>
   <div class="kpi"><b>${sent.length}</b><span>Emails sent · ${esc(perDay[day(new Date().toISOString())] ?? 0)} today</span></div>
   <div class="kpi"><b>${rate}%</b><span>Reply rate (${realReplies} of ${delivered} delivered)</span></div>
   <div class="kpi"><b>${ready}</b><span>Previews ready to send</span></div>
@@ -121,7 +123,26 @@ a { color: #ff8fb4; text-decoration: none; } a:hover { text-decoration: underlin
 </div>
 
 <h2>Every business</h2><div class="card">${table(all)}</div>
-<p class="muted" style="margin-top:20px">Coming next: preview visits, "Make it live" clicks, calls to (888) 444-1847 and PayPal payments.</p>
+<p class="muted" style="margin-top:20px">Preview visits and "Make it live" clicks are live (from today; bots and link scanners are not counted). Coming next: calls to (888) 444-1847 and PayPal payments.</p>
+<script>
+// Live numbers from the site itself (KV via /dashboard/api/events): who opened their preview, who opened "Make it live".
+fetch('/dashboard/api/events', { credentials: 'same-origin' }).then((r) => r.json()).then((ev) => {
+  let warm = 0, cold = 0;
+  const when = (iso) => new Date(iso).toLocaleString([], { month: 'short', day: 'numeric', hour: '2-digit', minute: '2-digit' });
+  for (const tr of document.querySelectorAll('tr[data-slug]')) {
+    const s = tr.dataset.slug, p = ev.p[s], g = ev.g[s], m = ev.m[s];
+    const cell = tr.querySelector('.opened');
+    cell.innerHTML = p ? p.c + '× <small>last ' + when(p.l) + '</small>' : '–';
+    if (g && !m) cell.innerHTML += '<small>opened "Make it live"</small>';
+    if (m) cell.innerHTML += '<small>sent "Make it live" (' + (m.plan || '?') + ')</small>';
+    const tag = tr.querySelector('.tag');
+    if (tr.classList.contains('cold') && (p || g)) { tag.className = 'tag warm'; tag.textContent = g ? 'Opened "Make it live"' : 'Opened preview'; warm++; }
+    else if (tr.classList.contains('cold')) cold++;
+  }
+  document.getElementById('k-warm').textContent = warm;
+  document.getElementById('k-cold').textContent = cold;
+}).catch(() => { document.getElementById('k-warm').textContent = '?'; });
+</script>
 </div></body></html>
 `;
 }
