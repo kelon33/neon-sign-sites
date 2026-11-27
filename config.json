@@ -13,5 +13,19 @@
   "minReviews": 10,
   "minUseful": 4,
   "about": "pipeline/find.mjs: Text Search (New) only, list price per 1,000 requests at the fields we ask for (check Google price list). 600 requests is about $21 at list price, under the $25 a month budget even without the free monthly allowance."
+ },
+ "sending": {
+  "about": "pipeline/queue.mjs plans each day's emails for approval; it never sends. Per mailbox: start = the date of its first cold email (until set, it sends nothing), ramp = emails a day in week 1, week 2, ... (CLAUDE.md: 5, then 10; raise only once warmed up), max = hard ceiling. Never a neonsignsites.com address.",
+  "mailboxes": [
+   {
+    "address": "alon@neonsignsites.net",
+    "start": null,
+    "ramp": [
+     5,
+     10
+    ],
+    "max": 10
+   }
+  ]
  }
 }

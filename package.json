@@ -10,6 +10,8 @@
   "scripts": {
     "lead": "node pipeline/cli.mjs",
     "find": "node pipeline/find.mjs",
+    "batch": "node pipeline/batch.mjs",
+    "queue": "node pipeline/queue.mjs",
     "render": "node generator/render.mjs",
     "build": "node deploy.mjs --dry",
     "deploy": "node deploy.mjs",

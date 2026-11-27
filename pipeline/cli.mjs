@@ -30,15 +30,16 @@ async function findLead(query) {
     if (!f.endsWith('.json')) continue;
     const data = JSON.parse(await readFile(path.join(dir, f), 'utf8'));
     const list = Array.isArray(data) ? data : (data.results ?? data.leads ?? Object.values(data).find(Array.isArray) ?? []);
-    for (const l of list) if (l?.name?.toLowerCase().includes(query.toLowerCase())) found.push(l);
+    for (const l of list) if (l?.placeId === query || l?.name?.toLowerCase().includes(query.toLowerCase())) found.push(l);
   }
   return found;
 }
 
 async function main() {
-  const query = arg('lead');
-  if (!query) { console.log('npm run lead -- --lead "<business name>" [--no-ai]'); process.exit(1); }
-  const leads = await findLead(query);
+  const query = arg('place') ?? arg('lead');
+  if (!query) { console.log('npm run lead -- --lead "<business name>" | --place <Google place ID> [--no-ai] [--fresh]'); process.exit(1); }
+  // A place ID picks one exact listing; a name can match several (one business, many listings).
+  const leads = (await findLead(query)).filter((l) => !arg('place') || l.placeId === query);
   if (!leads.length) throw new Error(`No lead matches "${query}" in leads/.`);
   const lead = leads.find((l) => l.website && l.email) ?? leads[0];
   if (leads.length > 1) console.log(`(${leads.length} matches; using ${lead.name})`);
@@ -156,7 +157,7 @@ async function main() {
     const email = lead.email || site.emails[0] || '';
     const data = {
       ...(existing ?? {}),
-      kit, name: existing?.name ?? lead.name, legalName: copy.legalName ?? lead.name, preview: true,
+      kit, name: existing?.name ?? lead.name, legalName: copy.legalName ?? lead.name, preview: true, placeId: lead.placeId,
       title: copy.title ?? `${lead.name} | ${copy.kicker.split(' · ')[0]} in ${lead.city}`,
       description: copy.description ?? `${copy.intro} ${lead.rating ? `${lead.rating.toFixed(1)} on Google from ${lead.reviews} reviews.` : ''}`.trim(),
       ...(kit === 'detailing' ? { brand: '#1670ff', brandHi: '#52c6ff', accent: '#8fd0ff' } : {}),

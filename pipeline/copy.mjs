@@ -133,13 +133,40 @@ const norm = (s) => String(s ?? '').toLowerCase().replace(/[’‘]/g, "'").repl
  * Keeps only what the business itself said: reviews must appear word for word on their site,
  * and every number in the new wording must appear in their site text or Google facts.
  */
+// Trust claims a draft may only make when their own site makes them: [claim in our copy, what the
+// site must say]. The AI wording added these unasked ("Licensed & insured", "no subcontractors",
+// "Ray does the work himself"), and they are the claims a business owner would object to.
+export const CLAIMS = [
+  [/licen[sc]ed/i, /licen[sc]/i], [/\binsured\b|insurance/i, /insur/i], [/\bbonded\b/i, /\bbonded\b/i],
+  [/certified|certification/i, /certif/i], [/guarantee/i, /guarantee/i], [/warrant(y|ies)/i, /warrant/i],
+  [/family[- ]owned|family[- ]run/i, /family/i], [/veteran/i, /veteran/i], [/woman[- ]owned|minority[- ]owned/i, /woman|women|minority/i],
+  [/owner[- ](operated|run|led)|owners? (are|is) (personally|on site)|\b(himself|herself)\b/i, /owner|himself|herself|founder|founded/i],
+  [/subcontract/i, /subcontract/i], [/in[- ]house/i, /in[- ]house/i], [/cookie[- ]cutter/i, /cookie[- ]cutter/i],
+  [/same[- ]day/i, /same[- ]day/i], [/24\/7|24 hours|around the clock/i, /24\/7|24 hours|24-hour|around the clock/i],
+  [/eco[- ]friendly|environmentally/i, /eco|environment|green products/i], [/award/i, /award/i],
+];
+// Notes the AI wrote to itself that leaked into the copy ("The site lists every day as open 24 hours").
+const META = /\b(the|their) (website|brief|draft)\b|\bthe site (says|lists|shows|promises|mentions|states)\b|\b(user|brief) (gave|says)\b/i;
+
+/** Why a piece of copy makes a claim their site does not, or null. */
+export function unbackedClaim(s, source) {
+  if (META.test(s)) return 'a note about the site, not copy';
+  for (const [claim, need] of CLAIMS) if (claim.test(s) && !need.test(source)) return `claim not on their site (${s.match(claim)[0]})`;
+  return null;
+}
+
 export function verify(copy, { text, facts }) {
   const source = norm(`${text} ${facts}`);
   // Whole numbers only: "15" must not pass because a review mentions an "F150".
   const has = (n) => new RegExp(`(^|[^\\d])${n.replace(/[.,]/g, '\\$&')}(?![\\d])`).test(source);
   const numbersOk = (s) => [...String(s).matchAll(/\d[\d,.]*/g)].every((m) => has(m[0].replace(/[.,]$/, '')));
   const dropped = [];
-  const keep = (label, s) => { if (numbersOk(s)) return true; dropped.push(`${label}: ${s}`); return false; };
+  const keep = (label, s) => {
+    const claim = unbackedClaim(s, `${text} ${facts}`);
+    if (numbersOk(s) && !claim) return true;
+    dropped.push(`${label}${claim ? ` (${claim})` : ''}: ${s}`);
+    return false;
+  };
   const out = structuredClone(copy);
   out.reviews = (out.reviews ?? []).filter((r) => {
     const snippets = r.text.split(/\s*(?:…|\.\.\.)\s*/).filter(Boolean);

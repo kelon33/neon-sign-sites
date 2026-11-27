@@ -1,4 +1,5 @@
 import test from 'node:test';
+import { kitFor } from '../pipeline/copy.mjs';
 import assert from 'node:assert/strict';
 import { FIELD_MASK, skipReason, worthNextPage, pickEmail, weaknesses, toLead, cost, networkLooksBlocked, multiLocation, onePerWebsite, improvements, siteKind, TRADES } from '../pipeline/find.mjs';
 
@@ -101,5 +102,7 @@ test('working sites with clear gaps are a separate "decent site" category; no ga
 test('each trade has its main phrase first, and every phrase fits a site kit', () => {
   assert.equal(TRADES.lawn.queries[0], 'lawn care service');
   assert.equal(TRADES.detailing.queries[0], 'mobile car detailing');
-  for (const t of Object.values(TRADES)) assert.ok(t.queries.length >= 3);
+  for (const t of Object.values(TRADES).filter((t) => !t.test)) assert.ok(t.queries.length >= 3);
+  // Test trades have no kit, so no previews are built for them.
+  for (const t of Object.values(TRADES).filter((t) => t.test)) assert.equal(kitFor(t.trade), null);
 });

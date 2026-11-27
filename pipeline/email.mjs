@@ -9,6 +9,24 @@ const WHY = [
   [/site builder|Weebly|Wix|GoDaddy/i, () => "your website looks like a template that doesn't show off your work"],
 ];
 
+// For a "decent site" (works, but with clear gaps): the gap, said plainly. First match wins, so the
+// most persuasive gaps come first.
+const GAP = [
+  [/no tap-to-call/, () => "people on their phone can't tap to call you from your website"],
+  [/no quote or booking/, () => "your website has no quick way to ask for a quote or book"],
+  [/no reviews on the site/, () => "your website doesn't show any of your reviews"],
+  [/no photos|only \d photo/, () => "your website shows almost none of your work"],
+  [/loads in (\d+(?:\.\d)?)s/, (m) => `your website takes ${m[1]} seconds to open`],
+  [/copyright (\d{4})/, (m) => `your website still says © ${m[1]}, which makes it look unattended`],
+  [/no meta description/, () => "your website shows up on Google without a proper description"],
+];
+
+/** The one-line gap for a decent site, or null. */
+export function gap(improvements = []) {
+  for (const [re, say] of GAP) for (const r of improvements) { const m = r.match(re); if (m) return say(m); }
+  return null;
+}
+
 export function weakness(reasons = []) {
   for (const r of reasons) for (const [re, say] of WHY) { const m = r.match(re); if (m) return say(m); }
   return "your website doesn't show your work the way your reviews do";
@@ -18,7 +36,7 @@ export function draftEmail({ lead, link, sender, used = { photos: true, reviews:
   const own = ['photos', 'services', ...(used.reviews ? ['reviews'] : [])].filter((w) => w !== 'photos' || used.photos);
   const ownList = own.length > 1 ? `${own.slice(0, -1).join(', ')} and ${own.at(-1)}` : own[0];
   const praise = lead.rating >= 4.7 && lead.reviews >= 20 ? `${lead.rating.toFixed(1)} stars from ${lead.reviews} Google reviews is great, but ` : '';
-  const why = weakness(lead.reasons);
+  const why = lead.reasons?.length ? weakness(lead.reasons) : (gap(lead.improvements) ?? weakness([]));
   const subject = `I rebuilt the ${lead.name} website`;
   const body = `Hi,
 

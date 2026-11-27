@@ -41,6 +41,11 @@ const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 export const TRADES = {
   lawn: { trade: 'Lawn care', queries: ['lawn care service', 'landscaping', 'lawn mowing service', 'yard maintenance'] },
   detailing: { trade: 'Mobile car detailing', queries: ['mobile car detailing', 'auto detailing', 'car detailing', 'ceramic coating'] },
+  // Test trades: no site kit yet, so no previews (npm run batch skips them). Search one city with
+  // --pages 1 to see how many weak sites the trade has before anyone builds a kit for it.
+  pressure: { trade: 'Pressure washing', queries: ['pressure washing service'], test: true },
+  pool: { trade: 'Pool cleaning', queries: ['pool cleaning service'], test: true },
+  windows: { trade: 'Window cleaning', queries: ['window cleaning service'], test: true },
 };
 
 // Only these fields, all in one price tier. Adding reviews, photos, regularOpeningHours or
@@ -239,7 +244,7 @@ async function readJson(file, fallback) {
 async function knownPlaceIds() {
   const ids = new Set();
   for (const f of await readdir(path.join(root, 'leads'))) {
-    if (!f.endsWith('.json') || f === 'places-usage.json') continue;
+    if (!/^(us-|found-).*\.json$/.test(f)) continue; // lead files only (not usage, cities, sent)
     const data = await readJson(path.join(root, 'leads', f), []);
     const list = Array.isArray(data) ? data : Object.values(data).find(Array.isArray) ?? [];
     for (const l of list) {
@@ -249,6 +254,22 @@ async function knownPlaceIds() {
     }
   }
   return ids;
+}
+
+/** The next cities from leads/cities.json that no search has covered yet. */
+async function nextCities(n) {
+  const list = (await readJson(path.join(root, 'leads', 'cities.json'), { cities: [] })).cities;
+  const usage = await readJson(path.join(root, 'leads', 'places-usage.json'), { queries: {} });
+  const done = new Set(Object.keys(usage.queries ?? {}).map((q) => q.split(' in ').at(-1)));
+  for (const f of await readdir(path.join(root, 'leads'))) {
+    if (!/^(us-|found-).*\.json$/.test(f)) continue;
+    const data = await readJson(path.join(root, 'leads', f), []);
+    for (const l of Array.isArray(data) ? data : []) if (l?.city) done.add(l.city);
+  }
+  const picked = list.filter((c) => !done.has(c)).slice(0, n);
+  if (!picked.length) throw new Error('Every city in leads/cities.json has been searched: add more.');
+  console.log(`Next cities: ${picked.join('; ')}`);
+  return picked;
 }
 
 async function searchPage(key, textQuery, pageToken) {
@@ -274,6 +295,7 @@ function parseArgs(argv) {
     check: one('check'),
     maxPages: one('pages') ? Math.min(3, +one('pages')) : undefined,
     phrases: one('phrases') ? Math.max(1, +one('phrases')) : undefined,
+    next: one('next') ? Math.max(1, +one('next')) : undefined,
     minReviews: one('min-reviews') ? +one('min-reviews') : undefined,
   };
 }
@@ -282,8 +304,10 @@ async function main() {
   const args = parseArgs(process.argv.slice(2));
   const dnc = (await readJson(path.join(root, 'do-not-contact.json'), { entries: [] })).entries;
   if (args.check) return checkFile(path.resolve(args.check), dnc, { again: args.again });
+  if (args.next) args.cities.push(...await nextCities(args.next));
   if (!args.trades.length || !args.cities.length || args.trades.some((t) => !TRADES[t])) {
-    console.log('npm run find -- --trade lawn|detailing[,…] --city "Austin, TX" [--city …] [--pages 1-3] [--phrases 1-4] [--min-reviews 10] [--dry] [--again] [--no-check]');
+    console.log(`Trades: ${Object.keys(TRADES).join(', ')} (${Object.entries(TRADES).filter(([, t]) => t.test).map(([k]) => k).join(', ')}: test only, no kit yet).`);
+    console.log('npm run find -- --trade lawn|detailing[,…] --city "Austin, TX" [--city …] | --next 3 [--pages 1-3] [--phrases 1-4] [--min-reviews 10] [--dry] [--again] [--no-check]');
     console.log('npm run find -- --check leads/found-<date>.json [--again]   (--again re-checks leads already checked)');
     process.exit(1);
   }
