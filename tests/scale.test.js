@@ -93,7 +93,7 @@ test('house painting and boat detailing: their own design or wording, no lawn or
   assert.equal(kitFor('House painting'), 'painting');
   assert.equal(kitFor('Paintless dent repair'), 'detailing');
   assert.equal(kitFor('Boat detailing'), 'detailing');
-  const visible = (h) => h.replace(/<style[\s\S]*?<\/style>/g, '');
+  const visible = (h) => h.replace(/<style[\s\S]*?<\/style>/g, '').replace(/data:image[^"']*/g, '');
   const paint = tradeCopy('House painting', lawnCopy({ name: 'Brush Co', city: 'Lubbock, TX', text: '' }), 'Lubbock, TX');
   const html = renderSite({ kit: 'painting', name: 'Brush Co', phone: '1', email: 'a@b.com', gallery: [{ src: 'img/a.jpg', alt: 'a', size: 'big' }], areas: ['Lubbock'], ...paint });
   assert.doesNotMatch(visible(html), /mow|yard|lawn|grass/i);

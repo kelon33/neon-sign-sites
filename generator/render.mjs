@@ -12,6 +12,7 @@ import { renderLawn } from './kits/lawn.mjs';
 import { renderDetailing } from './kits/detailing.mjs';
 import { renderPainting } from './kits/painting.mjs';
 import { renderHoliday } from './kits/holiday.mjs';
+import { withStockHero, CREDIT_CSS } from './stock.mjs';
 
 // One kit per trade: its own look and sections, the same data file shape where they overlap.
 // site.json picks one with "kit" (lawn when it has none).
@@ -20,7 +21,10 @@ export const KITS = { lawn: renderLawn, detailing: renderDetailing, painting: re
 export function renderSite(d) {
   const kit = KITS[d.kit ?? 'lawn'];
   if (!kit) throw new Error(`Unknown kit "${d.kit}". Kits: ${Object.keys(KITS).join(', ')}`);
-  return kit(d);
+  // No usable photo of their own: a licensed real photo for the trade, credited in the hero.
+  const { d: data, credit } = withStockHero(d);
+  const html = kit(data);
+  return credit ? html.replace('<section class="hero">', `<section class="hero">${credit}`).replace('</style>', `${CREDIT_CSS}</style>`) : html;
 }
 
 if (process.argv[1] && import.meta.url.endsWith(path.basename(process.argv[1]))) {
