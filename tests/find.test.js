@@ -106,3 +106,17 @@ test('each trade has its main phrase first, and every phrase fits a site kit', (
   // Test trades have no kit, so no previews are built for them.
   for (const t of Object.values(TRADES).filter((t) => t.test)) assert.equal(kitFor(t.trade), null);
 });
+
+test('lead files are sorted weak, decent, strong, and the readable copy has one section per category', async () => {
+  const { sortLeads, leadsReport } = await import('../pipeline/find.mjs');
+  const l = (name, kind, o = {}) => ({ name, kind, trade: 'Pool cleaning', city: 'Austin, TX', reviews: 20, email: 'a@b.com', website: `https://${name}.com/`, ...o });
+  const leads = [l('s', 'strong site'), l('n', 'not checked', { email: undefined }), l('b', 'site broken'), l('d', 'decent site', { improvements: ['no quote form'] }),
+    l('w2', 'weak site', { email: '' }), l('w1', 'weak site', { reasons: ['slow'] }), l('w3', 'weak site', { trade: 'Lawn care' })];
+  assert.deepEqual(sortLeads(leads).map((x) => x.name), ['w3', 'w1', 'w2', 'd', 's', 'b', 'n']);
+  assert.equal(leads[0].name, 's', 'the input is not changed');
+  const md = leadsReport(leads, 'found-test');
+  const at = (h) => md.indexOf(h);
+  assert.ok(at('## Weak sites') > 0 && at('## Weak sites') < at('## Decent sites') && at('## Decent sites') < at('## Strong sites'));
+  assert.match(md, /\| Pool cleaning \| 2 \| 1 \| 1 \| 1 \| 1 \| 6 \|/);
+  assert.match(md, /\*\*w1\*\*.*slow/);
+});
