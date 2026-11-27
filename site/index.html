@@ -294,14 +294,6 @@
     for (const s of document.querySelectorAll('main > section')) io.observe(s);
   }
 
-  // The preview form opens the visitor's email app with the details filled in (no server, no tracking).
-  document.getElementById('preview-form')?.addEventListener('submit', (e) => {
-    e.preventDefault();
-    const f = new FormData(e.target);
-    const body = `Business: ${f.get('business')}\nWebsite or Google listing: ${f.get('website')}\nMy email: ${f.get('email')}`;
-    location.href = `mailto:hello@neonsignsites.com?subject=${encodeURIComponent('Free preview request: ' + f.get('business'))}&body=${encodeURIComponent(body)}`;
-  });
-
   // FAQ: answers slide open and closed instead of jumping (faq-anim).
   const reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
   for (const item of document.querySelectorAll('#faq details')) {
