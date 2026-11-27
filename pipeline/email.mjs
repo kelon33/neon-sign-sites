@@ -34,20 +34,30 @@ export function weakness(reasons = []) {
   return "your website doesn't show your work the way your reviews do";
 }
 
-export function draftEmail({ lead, link, sender, used = { photos: true, reviews: true } }) {
-  const own = ['photos', 'services', ...(used.reviews ? ['reviews'] : [])].filter((w) => w !== 'photos' || used.photos);
+// The photo pitch: their site has too few photos of their work for a gallery, so the preview has
+// none, and the email says so and asks for a few job photos to finish it.
+export function draftEmail({ lead, link, sender, used = { photos: true, reviews: true }, pitch = 'site' }) {
+  const photoPitch = pitch === 'photos';
+  const own = ['photos', 'services', ...(used.reviews ? ['reviews'] : [])].filter((w) => w !== 'photos' || (used.photos && !photoPitch));
   const ownList = own.length > 1 ? `${own.slice(0, -1).join(', ')} and ${own.at(-1)}` : own[0];
   const praise = lead.rating >= 4.7 && lead.reviews >= 20 ? `${lead.rating.toFixed(1)} stars from ${lead.reviews} Google reviews is great, but ` : '';
-  const why = lead.reasons?.length ? weakness(lead.reasons) : (gap(lead.improvements) ?? weakness([]));
+  const why = photoPitch ? 'your website shows almost none of your work'
+    : lead.reasons?.length ? weakness(lead.reasons) : (gap(lead.improvements) ?? weakness([]));
   const subject = `I rebuilt the ${lead.name} website`;
+  const rebuilt = photoPitch
+    ? `So I rebuilt it with your own ${ownList}, and left room for your work. Have a look on your phone:
+${link}
+
+Send me 5 or 6 photos of jobs you're proud of and it's ready to go live. If you like it, it's yours:`
+    : `So I rebuilt it, with your own ${ownList}. Have a look on your phone:
+${link}
+
+If you like it, it's yours:`;
   const body = `Hi,
 
 I came across ${lead.name} on Google. ${praise ? praise + why : why.charAt(0).toUpperCase() + why.slice(1)}.
 
-So I rebuilt it, with your own ${ownList}. Have a look on your phone:
-${link}
-
-If you like it, it's yours: $299 once, or $0 to start and $49 a month with hosting and edits included. If not, no hard feelings.
+${rebuilt} $299 once, or $0 to start and $49 a month with hosting and edits included. If not, no hard feelings.
 
 ${sender.name}
 Neon Sign Sites

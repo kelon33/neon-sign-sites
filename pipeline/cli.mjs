@@ -138,7 +138,7 @@ async function main() {
       const picked = r.galleryPhotos.map((n) => n - 1).filter((i) => i >= 0 && i < photos.length && i !== heroIndex);
       if (picked.length >= 4) order = [...new Set(picked)];
       // Fewer than 4 usable photos: no gallery, rather than filling it with logos and graphics.
-      else { order = []; checks.push(`Only ${picked.length} usable photo${picked.length === 1 ? '' : 's'} by Claude's choice: no gallery. Probably not worth sending.`); }
+      else { order = []; checks.push(`Photo pitch: only ${picked.length} usable photo${picked.length === 1 ? '' : 's'} by Claude's choice, so no gallery; the email asks them for photos of their work.`); }
       alts = Object.fromEntries(r.photoAlts.map((a) => [a.photo - 1, a.alt]));
       wordmark = { top: r.wordmarkTop || lead.name, bottom: r.wordmarkBottom };
       if (r.notes) checks.push(`Claude's notes: ${r.notes}`);
@@ -179,6 +179,7 @@ async function main() {
       heroPosition: '60% 60%', heroPositionPhone: '60% 50%',
       rating: lead.rating ? { score: lead.rating.toFixed(1), count: lead.reviews, url: lead.mapsUrl?.split('&')[0] } : null,
       ...copy, gallery, areas: copy.areas ?? [lead.city.replace(/,\s*[A-Z]{2}$/, '')],
+      pitch: gallery.length ? 'site' : 'photos', // photos: no gallery, the email asks for job photos
     };
     await writeFile(path.join(out, 'site.json'), JSON.stringify(data, null, 1));
     const html = renderSite(data);
@@ -203,7 +204,7 @@ async function main() {
 
     // 7. The email, for approval.
     const link = `${config.previewBase}${slug}/`;
-    const mail = draftEmail({ lead, link, sender: config.sender, used: { photos: gallery.length > 0 || heroIndex >= 0, reviews: copy.reviews.length > 0 } });
+    const mail = draftEmail({ lead, link, sender: config.sender, used: { photos: gallery.length > 0 || heroIndex >= 0, reviews: copy.reviews.length > 0 }, pitch: gallery.length ? 'site' : 'photos' });
     if (!config.sender.address) checks.push('No postal address yet (config.json sender.address): required by law before sending.');
     if (!email) checks.push('No email address for this business.');
     await writeFile(path.join(out, 'email.txt'), `To: ${email}\nSubject: ${mail.subject}\n\n${mail.body}\n`);

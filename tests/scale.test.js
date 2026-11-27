@@ -73,3 +73,15 @@ test('borrowing trades get a kit and their own default wording, with no lawn or 
   assert.doesNotMatch(html2, /pet hair|oxidized|Fresh off the driveway/i);
   assert.match(html2, /Dents gone, paint untouched/);
 });
+
+test('the photo pitch: no gallery, and the email asks for job photos instead of praising them', () => {
+  const lead = { name: 'Glow Co', rating: 4.9, reviews: 113, reasons: ['GoDaddy site builder'] };
+  const body = draftEmail({ lead, link: 'L', sender: { name: 'A' }, used: { photos: true, reviews: true }, pitch: 'photos' }).body;
+  assert.match(body, /113 Google reviews is great, but your website shows almost none of your work\./);
+  assert.match(body, /rebuilt it with your own services and reviews, and left room for your work/);
+  assert.match(body, /Send me 5 or 6 photos of jobs you're proud of/);
+  assert.match(body, /\$299 once, or \$0 to start and \$49 a month/);
+  assert.doesNotMatch(body, /your own photos/);
+  const normal = draftEmail({ lead, link: 'L', sender: { name: 'A' } }).body;
+  assert.doesNotMatch(normal, /Send me 5 or 6 photos/);
+});

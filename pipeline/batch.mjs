@@ -5,6 +5,7 @@
 //   npm run batch -- --file leads/found-2026-11-27.json --count 5
 //   ... --kind weak            (only weak sites; default: weak first, then decent ones)
 //   ... --trade "dent repair"  (only trades whose name contains this)
+//   ... --place <id>,<id>      (exactly these leads)
 // Previews dropped after review go in leads/rejected.json, so no batch builds them again.
 //
 // Picks leads that have an email, a kit for their trade, no preview yet and no do-not-contact
@@ -58,7 +59,9 @@ async function main() {
   const leads = JSON.parse(await readFile(path.resolve(file), 'utf8'));
   const kinds = (arg('kind') ?? 'weak,decent').split(',').map((k) => KINDS[k.trim()]).filter(Boolean);
   const dnc = JSON.parse(await readFile(path.join(root, 'do-not-contact.json'), 'utf8')).entries;
-  const chosen = pick(leads, { count: +(arg('count') ?? 5), kinds, built: await builtAlready(), dnc, trade: arg('trade') ?? '' });
+  // --place id1,id2: exactly these leads (e.g. to rebuild ones dropped before), still never a do-not-contact one.
+  const chosen = arg('place') ? arg('place').split(',').map((id) => leads.find((l) => l.placeId === id.trim())).filter((l) => l && !blocked(l, dnc))
+    : pick(leads, { count: +(arg('count') ?? 5), kinds, built: await builtAlready(), dnc, trade: arg('trade') ?? '' });
   if (!chosen.length) { console.log('No lead left to build in this file (needs an email, a kit, no preview yet).'); return; }
   for (const l of chosen) console.log(`- ${l.kind} | ${l.trade} | ${l.reviews} reviews | ${l.name} | ${(l.reasons?.length ? l.reasons : l.improvements ?? []).join(', ')}`);
   console.log(`${chosen.length} previews, about ${chosen.length * 5} cents of AI wording.`);
@@ -78,8 +81,10 @@ async function main() {
       continue;
     }
     const check = await readFile(path.join(root, 'demos', slug, 'check.txt'), 'utf8').catch(() => '');
+    const site = await readFile(path.join(root, 'demos', slug, 'site.json'), 'utf8').then(JSON.parse).catch(() => ({}));
     lines.push(`- Preview: demos/${slug}/ (desktop.jpg, phone.jpg, email.txt)`, `- Site: ${l.website}`,
-      `- Why them: ${(l.reasons?.length ? l.reasons : l.improvements ?? []).join(', ') || '—'}`, '', check.trim(), '');
+      `- Why them: ${(l.reasons?.length ? l.reasons : l.improvements ?? []).join(', ') || '—'}`,
+      `- Pitch: ${site.pitch === 'photos' ? 'PHOTOS (too few photos of their work: no gallery; the email asks them for job photos)' : 'their site'}`, '', check.trim(), '');
   }
   const out = path.join(root, 'leads', `batch-${new Date().toISOString().slice(0, 10)}.md`);
   const earlier = await readFile(out, 'utf8').catch(() => '');
