@@ -11,12 +11,12 @@
  "cloudflareZoneId": "9894368a436f0b0ca321be8f9e463517",
  "analyticsToken": "602c929a29b84d86bbc04d6adad71b4e",
  "places": {
-  "monthlyRequestCap": 600,
+  "monthlyRequestCap": 3600,
   "usdPer1000": 35,
   "maxPages": 3,
   "minReviews": 10,
   "minUseful": 4,
-  "about": "pipeline/find.mjs: Text Search (New) only, list price per 1,000 requests at the fields we ask for (check Google price list). 600 requests is about $21 at list price, under the $25 a month budget even without the free monthly allowance."
+  "about": "pipeline/find.mjs: Text Search (New) only, list price per 1,000 requests at the fields we ask for (check Google price list). 3,600 requests is about $126 at list price: the budget for 180 emails a day (Alon, 2026-11-27), before Google's free monthly allowance."
  },
  "sending": {
   "about": "pipeline/queue.mjs plans each day's emails for approval; pipeline/send.mjs sends an approved list. Per mailbox: start = the date of its first cold email (until set, it sends nothing); daily = {first, step}: first emails on the start day, +step every day after (weekends too) (Instantly's ramp: start small, +2 a day); max = hard ceiling: 30 a mailbox (Alon, 2026-11-27: 6 x 30 = 180 a day). Never a neonsignsites.com address.",
