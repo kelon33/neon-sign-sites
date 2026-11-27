@@ -1,0 +1,101 @@
+{
+  "kit": "holiday",
+  "trade": "Christmas light installation",
+  "name": "Elf Lighting",
+  "legalName": "Elf Lighting",
+  "preview": true,
+  "placeId": "ChIJJy0_5T2Tn0oRWFLRA7mWeDE",
+  "title": "Elf Lighting | Christmas light installation in Woodway, TX",
+  "description": "Custom Christmas lighting for your home or business in Woodway, with no ladders, tangled strands or storage. We design it, install it, maintain it and take it down. 5.0 on Google from 6 reviews.",
+  "logo": "logo.png",
+  "logoChip": true,
+  "wordmark": {
+    "top": "Elf",
+    "bottom": "Lighting"
+  },
+  "phone": "(254) 214-1985",
+  "email": "elflightingservices@gmail.com",
+  "heroImage": "img/photo-2.jpg",
+  "heroAlt": "Brick home with roofline Christmas lights and an Elf Lighting yard sign at night",
+  "heroPosition": "60% 60%",
+  "heroPositionPhone": "60% 50%",
+  "rating": {
+    "score": "5.0",
+    "count": 6,
+    "url": "https://maps.google.com/?cid=3564764826440913496"
+  },
+  "kicker": "Christmas light installation · Waco",
+  "headline": "We hang the lights.<br><em>You enjoy the holidays.</em>",
+  "intro": "Custom Christmas lighting for your home or business around Waco, with no ladders, tangled strands or storage. We design it, install it, maintain it and take it down.",
+  "badges": [],
+  "highlights": null,
+  "servicesTitle": "Lighting, handled start to finish.",
+  "servicesIntro": "One team for the whole season. We bring the leased lights and take care of every detail.",
+  "services": [
+    {
+      "name": "Residential lighting",
+      "text": "Custom holiday lighting for rooflines, trees and other features around your home."
+    },
+    {
+      "name": "Commercial lighting",
+      "text": "Holiday lighting for businesses and commercial properties, planned around your building."
+    },
+    {
+      "name": "Design & installation",
+      "text": "We work with you on the look, provide the leased lights and install the display."
+    },
+    {
+      "name": "Maintenance, removal & storage",
+      "text": "We fix lighting issues during the season, then take the display down and store it."
+    }
+  ],
+  "also": [],
+  "alsoTitle": "We also do:",
+  "promise": null,
+  "why": [
+    {
+      "name": "The lights stay ours",
+      "text": "You enjoy the display without buying or storing any equipment."
+    },
+    {
+      "name": "A look made for your home",
+      "text": "We plan a custom design for your property and walk you through the quote."
+    },
+    {
+      "name": "Seasonal care included",
+      "text": "If your lights need attention, contact us for maintenance. Takedown and storage are included."
+    }
+  ],
+  "whyTitle": "Why Elf Lighting",
+  "howTitle": "Lit up in three steps.",
+  "steps": [
+    {
+      "name": "Design your display",
+      "text": "Tell us your vision. We plan a custom look and walk you through the quote."
+    },
+    {
+      "name": "We bring and install",
+      "text": "Our crew supplies the leased lights and installs your agreed design."
+    },
+    {
+      "name": "Enjoy the glow, then we pack it away",
+      "text": "Enjoy it all season. After the holidays, we take the lights down and store them until next Christmas."
+    }
+  ],
+  "contactTitle": "Ready to light it up?",
+  "footerLine": "Christmas light installation in Waco and Woodway",
+  "reviews": [],
+  "hours": [],
+  "galleryTitle": "Homes we light up.",
+  "notePlaceholder": "Roofline length, trees, a date you want them up…",
+  "gallery": [],
+  "areas": [
+    "Waco",
+    "Woodway",
+    "China Spring",
+    "Hewitt",
+    "Robinson",
+    "Lorena"
+  ],
+  "pitch": "photos"
+}
