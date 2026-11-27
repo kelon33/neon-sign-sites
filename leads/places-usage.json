@@ -2,8 +2,11 @@
  "about": "Google Places requests, counted by pipeline/find.mjs. Commit this file: it is the only record across sessions.",
  "months": {
   "2026-11": {
-   "requests": 0
+   "requests": 2
   }
  },
- "queries": {}
+ "queries": {
+  "lawn care service in Austin, TX": "2026-11-27",
+  "mobile car detailing in Austin, TX": "2026-11-27"
+ }
 }
