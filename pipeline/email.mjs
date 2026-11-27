@@ -36,6 +36,16 @@ export function weakness(reasons = []) {
 
 // The photo pitch: their site has too few photos of their work for a gallery, so the preview has
 // none, and the email says so and asks for a few job photos to finish it.
+/** The sign-off: name, business, phone (when set) and postal address (CAN-SPAM). Plain text: no bold in email. */
+export function signature(sender) {
+  return [sender.name, 'Neon Sign Sites', sender.phone, sender.address ?? '[POSTAL ADDRESS: required before sending]'].filter(Boolean).join('\n');
+}
+
+/** Puts the current signature into a saved draft, so drafts written before a change (address, phone) stay current. */
+export function refreshSignature(text, sender) {
+  return text.replace(/\n\n[^\n]+\nNeon Sign Sites\n[\s\S]*?\n\nNot interested\?/, `\n\n${signature(sender)}\n\nNot interested?`);
+}
+
 export function draftEmail({ lead, link, sender, used = { photos: true, reviews: true }, pitch = 'site' }) {
   const photoPitch = pitch === 'photos';
   const own = ['photos', 'services', ...(used.reviews ? ['reviews'] : [])].filter((w) => w !== 'photos' || (used.photos && !photoPitch));
@@ -59,9 +69,7 @@ I came across ${lead.name} on Google. ${praise ? praise + why : why.charAt(0).to
 
 ${rebuilt} $299 once, or $0 to start and $49 a month with hosting and edits included. If not, no hard feelings.
 
-${sender.name}
-Neon Sign Sites
-${sender.address ?? '[POSTAL ADDRESS: required before sending]'}
+${signature(sender)}
 
 Not interested? Reply "no" and I won't email you again.`;
   return { subject, body };

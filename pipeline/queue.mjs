@@ -6,7 +6,7 @@
 //   npm run queue -- --status                  sent so far, per mailbox
 //
 // Rules it enforces (CLAUDE.md): never from neonsignsites.com; a daily limit per mailbox that ramps
-// up with its age (5 a day in week 1, 10 from week 2, more only when Alon raises it in config.json);
+// up with its age (7 a day in week 1, 10 from week 2, more only when Alon raises it in config.json);
 // the do-not-contact list checked again at planning time and at recording time; one email per
 // business, ever; no plan at all while config.json has no postal address (CAN-SPAM).
 
@@ -14,6 +14,7 @@ import { readFile, writeFile, readdir, mkdir } from 'node:fs/promises';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { blocked } from './dnc.mjs';
+import { refreshSignature } from './email.mjs';
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const SENT = path.join(root, 'leads', 'sent.json');
@@ -24,7 +25,7 @@ export function dailyLimit(box, day = today()) {
   if (/@neonsignsites\.com$/i.test(box.address)) return 0; // the brand domain never sends cold email
   if (!box.start || day < box.start) return 0;
   const week = Math.floor((Date.parse(day) - Date.parse(box.start)) / (7 * 864e5));
-  const ramp = box.ramp ?? [5, 10];
+  const ramp = box.ramp ?? [7, 10];
   return Math.min(ramp[Math.min(week, ramp.length - 1)], box.max ?? Infinity);
 }
 
@@ -101,6 +102,8 @@ async function main() {
     for (const b of room) lines.push(`- ${b.address}: ${b.left + out.filter((o) => o.from === b.address).length} allowed today`);
     lines.push('');
     for (const o of out) {
+      o.text = refreshSignature(o.text, config.sender);
+      if (o.text.includes('[POSTAL ADDRESS')) throw new Error(`${o.slug}: the draft has no postal address in its signature. Fix demos/${o.slug}/email.txt.`);
       const link = o.text.match(/https:\/\/neonsignsites\.com\/p\/[^\s]+/)?.[0];
       const up = link ? await live(link) : null;
       lines.push(`## ${o.name} → ${o.to} (from ${o.from})`, '', up === false ? '**The preview link does not open yet (not on main?). Do not send.**\n' : '', '```', o.text.trim(), '```', '');

@@ -2,6 +2,7 @@
  "previewBase": "https://neonsignsites.com/p/",
  "sender": {
   "name": "Alon Katz",
+  "phone": "(888) 444-1847",
   "address": "6421 N. Florida Ave, Suite D-1009, Tampa, FL 33604"
  },
  "cloudflareAccountId": "a8a12cfcfad0e7b0d4f01b88f3744e64",
@@ -15,13 +16,58 @@
   "about": "pipeline/find.mjs: Text Search (New) only, list price per 1,000 requests at the fields we ask for (check Google price list). 600 requests is about $21 at list price, under the $25 a month budget even without the free monthly allowance."
  },
  "sending": {
-  "about": "pipeline/queue.mjs plans each day's emails for approval; it never sends. Per mailbox: start = the date of its first cold email (until set, it sends nothing), ramp = emails a day in week 1, week 2, ... (CLAUDE.md: 5, then 10; raise only once warmed up), max = hard ceiling. Never a neonsignsites.com address.",
+  "about": "pipeline/queue.mjs plans each day's emails for approval; it never sends. Per mailbox: start = the date of its first cold email (until set, it sends nothing), ramp = emails a day in week 1, week 2, ... (CLAUDE.md: 7, then 10; raise only once warmed up), max = hard ceiling. Never a neonsignsites.com address.",
   "mailboxes": [
    {
     "address": "alon@neonsignsites.net",
-    "start": null,
+    "start": "2026-11-30",
     "ramp": [
-     5,
+     7,
+     10
+    ],
+    "max": 10
+   },
+   {
+    "address": "alon.katz@neonsignsites.net",
+    "start": "2026-11-30",
+    "ramp": [
+     7,
+     10
+    ],
+    "max": 10
+   },
+   {
+    "address": "katz.alon@neonsignsites.net",
+    "start": "2026-11-30",
+    "ramp": [
+     7,
+     10
+    ],
+    "max": 10
+   },
+   {
+    "address": "alon@neonsignsites.co",
+    "start": "2026-11-30",
+    "ramp": [
+     7,
+     10
+    ],
+    "max": 10
+   },
+   {
+    "address": "alon.katz@neonsignsites.co",
+    "start": "2026-11-30",
+    "ramp": [
+     7,
+     10
+    ],
+    "max": 10
+   },
+   {
+    "address": "katz.alon@neonsignsites.co",
+    "start": "2026-11-30",
+    "ramp": [
+     7,
      10
     ],
     "max": 10
