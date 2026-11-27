@@ -36,6 +36,9 @@ test('email: their own domain first, then a free mailbox, never a builder placeh
   const site = 'https://www.joeslawn.com/';
   assert.equal(pickEmail('<a href="mailto:joe@gmail.com">x</a> office@joeslawn.com', site).email, 'office@joeslawn.com');
   assert.equal(pickEmail('write to joe@gmail.com', site).email, 'joe@gmail.com');
+  assert.equal(pickEmail('<a href="mailto:%20info@cleantindustries.com">%20info@cleantindustries.com</a>', 'http://cleantindustries.com/').email, 'info@cleantindustries.com');
+  assert.equal(pickEmail('/* Copyright 2016 The Cabin Project Authors (impallari@gmail.com) */ <a href="mailto:joe@gmail.com">', site).email, 'joe@gmail.com');
+  assert.equal(pickEmail('Copyright 2012 Natanael Gama (info@ndiscovered.com)', site).email, '');
   assert.equal(pickEmail('filler@godaddy.com support@webador.com logo@2x.png', site).email, '');
   const other = pickEmail('hola@dominantsite.com', site);
   assert.equal(other.email, 'hola@dominantsite.com');

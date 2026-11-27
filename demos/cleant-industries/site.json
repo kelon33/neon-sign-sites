@@ -1,0 +1,139 @@
+{
+  "kit": "detailing",
+  "trade": "Mobile car detailing",
+  "name": "Cleant Industries",
+  "legalName": "Cleant Industries",
+  "preview": true,
+  "placeId": "ChIJa2vSLWGBT4YR-9CZYGynJOQ",
+  "title": "Cleant Industries | Auto detailing in Waco, TX",
+  "description": "Auto detailing, paint correction, ceramic coating and paint protection film in Waco. Owner-run by Paris Williams, with free consultations and a personal quote. 5.0 on Google from 109 reviews.",
+  "brand": "#1670ff",
+  "brandHi": "#52c6ff",
+  "accent": "#8fd0ff",
+  "logo": "logo.png",
+  "logoChip": false,
+  "wordmark": {
+    "top": "Cleant",
+    "bottom": "Industries"
+  },
+  "phone": "(254) 218-3288",
+  "email": "info@cleantindustries.com",
+  "heroImage": "img/photo-12.jpg",
+  "heroAlt": "Front of a deep blue classic sports car with polished paint",
+  "heroPosition": "60% 60%",
+  "heroPositionPhone": "60% 50%",
+  "rating": {
+    "score": "5.0",
+    "count": 109,
+    "url": "https://maps.google.com/?cid=16439448623728152827"
+  },
+  "kicker": "Auto detailing · Waco",
+  "headline": "Not just clean.<br><em>Cleant.</em>",
+  "intro": "Auto detailing, paint correction, ceramic coating and paint protection film in Waco. Owner-run by Paris Williams, with free consultations and a personal quote.",
+  "mobile": null,
+  "servicesTitle": "What we do.",
+  "servicesIntro": "Four services, one standard: attention to detail. Prices depend on your vehicle's size, condition and needs.",
+  "services": [
+    {
+      "name": "Auto Detailing",
+      "text": "A full detail that makes a real difference, so life can get busy and the small details are on us."
+    },
+    {
+      "name": "Paint Correction",
+      "text": "Your factory paint, but better. Straight from the factory or from your garage, any paint can look better."
+    },
+    {
+      "name": "Ceramic Coating",
+      "text": "Protects your investment and makes maintenance a breeze."
+    },
+    {
+      "name": "Paint Protection Film",
+      "text": "Guards against rock chips, scratches and UV fading, with the gloss and hydrophobic feel of a ceramic coating."
+    }
+  ],
+  "also": [],
+  "alsoTitle": "We also detail",
+  "why": [
+    {
+      "name": "Owner on the job",
+      "text": "Paris Williams has over 10 years in private detailing and works with full transparency and accountability."
+    },
+    {
+      "name": "They show you, not just tell you",
+      "text": "Customers say the team walks you through anything you want to know."
+    },
+    {
+      "name": "Free consultations",
+      "text": "Fill out the form and get a personal quote for the result you want."
+    }
+  ],
+  "whyTitle": "Why Waco trusts Cleant.",
+  "howTitle": "Three steps to a Cleant car.",
+  "steps": [
+    {
+      "name": "Request a consultation",
+      "text": "Call or fill out the form. Consultations are free."
+    },
+    {
+      "name": "Get your quote",
+      "text": "We price by your vehicle's size, condition and needs."
+    },
+    {
+      "name": "Pick up your car",
+      "text": "Detailed, protected and ready for the big reveal."
+    }
+  ],
+  "contactTitle": "Book your consultation.",
+  "footerLine": "Auto detailing in Waco · 1801 Washington Ave, Waco, TX 76701",
+  "reviews": [
+    {
+      "text": "The car looks NEW! I could not be happier with my experience with Cleant, from that first friendly interactions with Paris and his staff to the big REVEAL after they had worked their magic! I was most impressed with the final results… Paris's initial estimate was spot-on the bill I was presented, and every detail was meticulously perfeected before the care was returned. I will use Cleant again!",
+      "name": "Laura Munn"
+    },
+    {
+      "text": "Cleant is THE definition of detailing. They were able to fit me into their busy schedule. When my truck took longer than expected, they did not cut any corners, and finished the job. The owner, Paris, was very professional. I will definitely be back.",
+      "name": "Justin Crabtree"
+    },
+    {
+      "text": "Mr. Cleant and his crew are the only people I trust to work on my projects. They blacked out my E 63 AMG wagon and I have plans to get some more products for them such as paint correction and PPF I wouldn’t go anywhere else.",
+      "name": "Julian Georgescu"
+    },
+    {
+      "text": "Cannot say enough about this business!!! Wow, above and beyond, attention to detail, they walk you through anything you want to know, they don’t just tell you they show you. Super professional, friendly, helpful, everything.",
+      "name": "Brady Brink"
+    },
+    {
+      "text": "I’ve been taking my cars to Paris at Cleant Industries for years. They are the only shop in town I trust to detail and coat my cars. Whenever I get a car back from Paris the color just seems to pop in a way that it doesn’t when I attempt to clean it myself.",
+      "name": "Brett J."
+    }
+  ],
+  "hours": [],
+  "galleryTitle": "Fresh off the driveway.",
+  "gallery": [
+    {
+      "src": "img/photo-13.jpg",
+      "alt": "Red Ferrari covered in foam during a hand wash",
+      "size": "big"
+    },
+    {
+      "src": "img/photo-8.jpg",
+      "alt": "Three Cleant team members standing with a silver Nissan Z outside the shop"
+    },
+    {
+      "src": "img/photo-10.jpg",
+      "alt": "Cleant team in the shop with a black car and yellow microfiber towels"
+    },
+    {
+      "src": "img/photo-11.jpg",
+      "alt": "Clean black leather rear seats in an SUV"
+    },
+    {
+      "src": "img/photo-3.jpg",
+      "alt": "Cleant detailer wiping down a car in black and white"
+    }
+  ],
+  "areas": [
+    "Waco"
+  ],
+  "pitch": "site"
+}

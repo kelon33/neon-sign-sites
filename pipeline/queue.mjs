@@ -14,6 +14,7 @@ import { readFile, writeFile, readdir, mkdir } from 'node:fs/promises';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { blocked } from './dnc.mjs';
+import { JUNK_EMAIL } from './find.mjs';
 import { refreshSignature } from './email.mjs';
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
@@ -39,6 +40,7 @@ export function plan({ ready, sent, mailboxes, dnc, day = today() }) {
     if (done.has(r.slug) || done.has(r.to.toLowerCase())) continue;
     const no = blocked(r.lead ?? { email: r.to, name: r.name }, dnc);
     if (no) { skipped.push(`${r.slug}: on the do-not-contact list`); continue; }
+    if (JUNK_EMAIL.test(r.to)) { skipped.push(`${r.slug}: ${r.to} is not their address (a font licence or placeholder)`); continue; }
     const box = room.reduce((best, b) => (b.left > (best?.left ?? 0) ? b : best), null); // spread evenly: the box with the most room
     if (!box) break;
     box.left--;

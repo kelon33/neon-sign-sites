@@ -85,7 +85,7 @@ const NO_SITE_HOSTS = /(^|\.)(facebook|instagram|yelp|nextdoor|linktr|heygoldie|
 // A free subdomain from a site builder: still a lead (often the best kind), but flagged.
 const BUILDER_SUBDOMAIN = /\.(wixsite\.com|netlify\.app|godaddysites\.com|business\.site|sitedrop\.live|weebly\.com|square\.site|carrd\.co|webflow\.io|wordpress\.com|amazonaws\.com|vercel\.app)$/i;
 // Email addresses that are not the business's: placeholders, builders and trackers.
-const JUNK_EMAIL = /@(example\.|domain\.|email\.|yourdomain|sentry|wixpress|godaddy\.com|webador|squarespace|weebly|wix\.com|filler|mysite|website\.com|.*\.(png|jpe?g|gif|webp|svg)$)|^(filler|user|name|your|you|email|test|noreply|no-reply)@/i;
+export const JUNK_EMAIL = /@(ndiscovered\.com|latofonts|example\.|domain\.|email\.|yourdomain|sentry|wixpress|godaddy\.com|webador|squarespace|weebly|wix\.com|filler|mysite|website\.com|.*\.(png|jpe?g|gif|webp|svg)$)|^(filler|user|name|your|you|email|test|noreply|no-reply|impallari)@/i;
 const FREE_MAIL = /@(gmail|yahoo|hotmail|outlook|aol|icloud|live|msn|comcast|att|ymail)\./i;
 
 export const hostOf = (u) => { try { return new URL(u).hostname.replace(/^www\./, '').toLowerCase(); } catch { return ''; } };
@@ -172,9 +172,14 @@ export function toLead(place, trade, city) {
 export function pickEmail(html, website) {
   const site = hostOf(website);
   const found = new Set();
-  for (const m of html.matchAll(/mailto:([^"'?\s>]+)/gi)) found.add(decodeURIComponent(m[1]).toLowerCase());
-  for (const m of html.matchAll(/[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}/gi)) found.add(m[0].toLowerCase());
-  const emails = [...found].filter((e) => !JUNK_EMAIL.test(e));
+  // Decoded and trimmed: a link like mailto:%20info@x.com must not give "%20info@x.com".
+  const clean = (e) => { try { e = decodeURIComponent(e); } catch { /* keep as is */ } return e.trim().toLowerCase().replace(/^[^a-z0-9]+/, ''); };
+  for (const m of html.matchAll(/mailto:([^"'?\s>]+)/gi)) found.add(clean(m[1]));
+  for (const m of html.matchAll(/[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}/gi)) found.add(clean(m[0]));
+  // Font licences embedded in the page ("Copyright 2016 The Cabin Project Authors (impallari@gmail.com)")
+  // name the font's designer, not the business.
+  const fonts = new Set([...html.matchAll(/Copyright[^()<>]{0,120}\(\s*([^()\s<>]+@[^()\s<>]+)\s*\)/gi)].map((m) => clean(m[1])));
+  const emails = [...found].filter((e) => !JUNK_EMAIL.test(e) && !fonts.has(e));
   const own = emails.find((e) => { const d = e.split('@')[1]; return site && (site === d || site.endsWith(`.${d}`) || d.endsWith(`.${site}`)); });
   const free = emails.find((e) => FREE_MAIL.test(e));
   if (own || free) return { email: own ?? free };

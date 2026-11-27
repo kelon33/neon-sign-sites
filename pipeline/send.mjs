@@ -16,6 +16,7 @@ import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { blocked } from './dnc.mjs';
 import { dailyLimit } from './queue.mjs';
+import { JUNK_EMAIL } from './find.mjs';
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const SENT = path.join(root, 'leads', 'sent.json');
@@ -68,6 +69,7 @@ export function refuse(e, { approved, sent, dnc, mailboxes, config, day = today(
   if (sent.filter((s) => s.from === e.from && s.date === day).length >= dailyLimit(box, day)) return `${e.from} reached today's limit`;
   if (sent.some((s) => s.slug === e.slug || s.to?.toLowerCase() === e.to.toLowerCase())) return 'already emailed (one email per business)';
   if (blocked({ email: e.to, name: e.name }, dnc)) return 'on the do-not-contact list';
+  if (JUNK_EMAIL.test(e.to)) return `${e.to} is not their address (a font licence or placeholder)`;
   if (!config.sender?.address || !e.text.includes(config.sender.address)) return 'no postal address in the email';
   if (!/Reply "no"/.test(e.text)) return 'no opt-out line in the email';
   return null;

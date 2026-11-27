@@ -1,0 +1,121 @@
+{
+ "kit": "painting",
+ "trade": "House painting",
+ "name": "Top Notch Painting",
+ "legalName": "Top Notch Painting",
+ "preview": true,
+ "placeId": "ChIJC336xLvR34kRR8DnIZGE_O8",
+ "title": "Top Notch Painting | House painting in Jacksonville, FL",
+ "description": "Interior, exterior and cabinet painting for Jacksonville homes and businesses. Licensed, fully insured and rated 4.9 from 62 Google reviews. 4.9 on Google from 62 reviews.",
+ "logo": null,
+ "logoChip": false,
+ "wordmark": {
+  "top": "Top Notch",
+  "bottom": "Painting"
+ },
+ "phone": "(904) 776-1048",
+ "email": "topnotchpaintingflorida@gmail.com",
+ "heroImage": "img/photo-5.jpg",
+ "heroAlt": "Painter in a Top Notch Painting suit holding a roller beside a ladder in front of a freshly painted blue wall",
+ "heroPosition": "60% 60%",
+ "heroPositionPhone": "60% 50%",
+ "rating": {
+  "score": "4.9",
+  "count": 62,
+  "url": "https://maps.google.com/?cid=17292842428069822535"
+ },
+ "kicker": "House painting · Jacksonville",
+ "headline": "Fresh paint.<br><em>A notch above.</em>",
+ "intro": "Interior, exterior and cabinet painting for Jacksonville homes and businesses. Licensed, fully insured and rated 4.9 from 62 Google reviews.",
+ "badges": [
+  "Licensed & insured",
+  "Free estimates",
+  "Homes and businesses"
+ ],
+ "highlights": null,
+ "servicesTitle": "Inside and out.",
+ "servicesIntro": "One room or a whole office building.",
+ "services": [
+  {
+   "name": "Interior painting",
+   "text": "From lightening up a living room to a complete color overhaul."
+  },
+  {
+   "name": "Exterior painting",
+   "text": "Brick, wood siding, vinyl, cedar shingles and wood trim."
+  },
+  {
+   "name": "Cabinets",
+   "text": "A fresh coat that gives your kitchen cabinets new life."
+  },
+  {
+   "name": "Commercial painting",
+   "text": "Single rooms to entire office buildings, finished on time and on budget."
+  },
+  {
+   "name": "Pressure washing and pavers",
+   "text": "Wash, sand and seal pavers, driveways, decks and siding."
+  },
+  {
+   "name": "Wood staining and epoxy floors",
+   "text": "Stain and refinishing that brings out natural wood color, plus tough epoxy coatings for concrete."
+  }
+ ],
+ "also": [
+  {
+   "name": "Commercial properties"
+  },
+  {
+   "name": "Paver driveways and walkways"
+  },
+  {
+   "name": "Decks"
+  },
+  {
+   "name": "Concrete floors"
+  }
+ ],
+ "alsoTitle": "We also do:",
+ "promise": null,
+ "why": [
+  {
+   "name": "Licensed and fully insured",
+   "text": "Safety comes first on every job."
+  },
+  {
+   "name": "Satisfaction guaranteed",
+   "text": "If you don't love the work, they make it right. Their only job is to make you happy."
+  },
+  {
+   "name": "Family first",
+   "text": "A company run as a community, not a machine."
+  }
+ ],
+ "whyTitle": "Why Top Notch.",
+ "howTitle": "A fresh coat in three steps.",
+ "steps": [
+  {
+   "name": "Get a free quote",
+   "text": "Call (904) 776-1048 or send a message about your project."
+  },
+  {
+   "name": "Plan the job",
+   "text": "We go over the work, colors and timing with you."
+  },
+  {
+   "name": "Enjoy the new look",
+   "text": "We paint, clean up and make sure you love the result."
+  }
+ ],
+ "contactTitle": "Ready for a fresh coat?",
+ "footerLine": "House painting in Jacksonville, FL",
+ "reviews": [],
+ "hours": [],
+ "galleryTitle": "Homes we’ve painted.",
+ "notePlaceholder": "Inside or outside, how many rooms, a date you have in mind…",
+ "gallery": [],
+ "areas": [
+  "Jacksonville"
+ ],
+ "pitch": "photos"
+}

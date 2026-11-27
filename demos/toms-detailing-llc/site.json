@@ -1,0 +1,173 @@
+{
+  "kit": "detailing",
+  "trade": "Boat detailing",
+  "name": "Tom's Detailing, LLC.",
+  "legalName": "Tom's Detailing, LLC.",
+  "preview": true,
+  "placeId": "ChIJ4RjVJDEVw4gRoXbpIt7I5zU",
+  "title": "Tom's Detailing, LLC. | Boat detailing in Sarasota, FL",
+  "description": "Tom's Detailing is a professional boat detailing company in Sarasota. High quality work, and it delivers on its promises. 5.0 on Google from 65 reviews.",
+  "brand": "#1670ff",
+  "brandHi": "#52c6ff",
+  "accent": "#8fd0ff",
+  "wordmark": {
+    "top": "Tom's",
+    "bottom": "Detailing"
+  },
+  "phone": "(941) 264-8370",
+  "email": "tomsdetailingsrq@gmail.com",
+  "heroImage": "img/photo-7.jpg",
+  "heroAlt": "Blue and white center console boat on a lift at a dock at sunset",
+  "heroPosition": "60% 60%",
+  "heroPositionPhone": "60% 50%",
+  "rating": {
+    "score": "5.0",
+    "count": 65,
+    "url": "https://maps.google.com/?cid=3884294060024362657"
+  },
+  "kicker": "Boat detailing · Sarasota",
+  "headline": "Back on the water<br><em>looking new.</em>",
+  "intro": "Tom's Detailing is a professional boat detailing company in Sarasota. High quality work, and it delivers on its promises.",
+  "mobile": {
+    "title": "Your boat, your spot.",
+    "intro": "Tom's team takes care of your boat wherever it is kept, in Sarasota and surrounding areas.",
+    "points": [
+      {
+        "name": "On a lift",
+        "text": "Boats on a lift in the water get the full treatment."
+      },
+      {
+        "name": "Dry storage",
+        "text": "Stored on land? Tom's crew works there too."
+      },
+      {
+        "name": "At your home",
+        "text": "Boat parked at your house? We handle it there."
+      },
+      {
+        "name": "Easy to book",
+        "text": "Call Tom or send the form with a few photos of your boat."
+      }
+    ]
+  },
+  "servicesTitle": "Bow to stern.",
+  "servicesIntro": "Regular upkeep, deep restoration and long-lasting protection, all with professional products used every day by the team.",
+  "services": [
+    {
+      "name": "Wash Plans",
+      "text": "Weekly, biweekly or monthly washes to keep your boat clean and ready."
+    },
+    {
+      "name": "Full Detail with Wax",
+      "text": "A full detail with wax protection, offered 2, 3 or 4 times a year."
+    },
+    {
+      "name": "Ceramic Coating",
+      "text": "Protection for 12 to 18 months, easier cleaning and more gloss."
+    },
+    {
+      "name": "Paint Correction",
+      "text": "Scratch and hologram removal, heavy oxidation removal, wet sanding, buffing and polishing."
+    },
+    {
+      "name": "Teak Maintenance",
+      "text": "Teak cleaning and sealer application, best done 4 times a year."
+    },
+    {
+      "name": "Yacht Interior Cleaning",
+      "text": "Keeps your cabin interior clean."
+    }
+  ],
+  "also": [
+    {
+      "name": "Jet skis"
+    },
+    {
+      "name": "RVs and campers"
+    },
+    {
+      "name": "Engine room detailing"
+    },
+    {
+      "name": "Metal polishing and rust removal"
+    },
+    {
+      "name": "Hurricane preparation for boats on a lift"
+    },
+    {
+      "name": "Classic cars"
+    }
+  ],
+  "alsoTitle": "We also detail",
+  "why": [
+    {
+      "name": "High quality",
+      "text": "Professional products used every day by the team."
+    },
+    {
+      "name": "Promises kept",
+      "text": "Tom's Detailing always delivers on its promises."
+    },
+    {
+      "name": "Attention to detail",
+      "text": "Your boat is cared for on a lift, in dry storage or at your home."
+    }
+  ],
+  "whyTitle": "What you get with Tom.",
+  "howTitle": "Ready for the water in three steps.",
+  "steps": [
+    {
+      "name": "Tell us about your boat",
+      "text": "Call or send the form with the vessel, the service and a few photos."
+    },
+    {
+      "name": "We set the plan",
+      "text": "One-time detail or a regular wash plan, your choice."
+    },
+    {
+      "name": "Back on the water",
+      "text": "You enjoy your boat. We handle the rest."
+    }
+  ],
+  "contactTitle": "Book your boat in.",
+  "footerLine": "Boat detailing in Sarasota, FL",
+  "reviews": [],
+  "hours": [],
+  "galleryTitle": "Fresh off the water.",
+  "vehicleTypes": [
+    "Boat",
+    "Pontoon",
+    "Yacht",
+    "Jet ski",
+    "Other"
+  ],
+  "modelPlaceholder": "e.g. Sea Ray 240, 24 ft",
+  "notePlaceholder": "Length, where it is docked or stored, what it needs…",
+  "gallery": [
+    {
+      "src": "img/photo-3.jpg",
+      "alt": "Helm and steering wheel of a clean boat at sunset",
+      "size": "big"
+    },
+    {
+      "src": "img/photo-4.jpg",
+      "alt": "Tom polishing a boat hull with a buffer"
+    },
+    {
+      "src": "img/photo-5.jpg",
+      "alt": "Polished stainless steel cleat on a boat"
+    },
+    {
+      "src": "img/photo-8.jpg",
+      "alt": "Tom's Detailing green branded work truck"
+    },
+    {
+      "src": "img/photo-6.jpg",
+      "alt": "Detailing trucks parked by boats in dry storage"
+    }
+  ],
+  "areas": [
+    "Sarasota"
+  ],
+  "pitch": "site"
+}

@@ -1,0 +1,189 @@
+{
+  "kit": "detailing",
+  "trade": "Mobile car detailing",
+  "name": "Cen-Tex Mobile Wash",
+  "legalName": "Cen-Tex Mobile Wash",
+  "preview": true,
+  "placeId": "ChIJA90hk_KDT4YRSFSS54OAKZc",
+  "title": "Cen-Tex Mobile Wash | Mobile detailing in Waco, TX",
+  "description": "Manny Olvera and his crew detail cars, trucks, SUVs, vans and RVs at your home or business around Waco. Twenty years in the trade. 4.7 on Google from 117 reviews.",
+  "brand": "#1670ff",
+  "brandHi": "#52c6ff",
+  "accent": "#8fd0ff",
+  "logo": "logo.png",
+  "logoChip": true,
+  "wordmark": {
+    "top": "Cen-Tex",
+    "bottom": "Mobile Wash"
+  },
+  "phone": "(254) 753-0268",
+  "email": "manuel@centexmobilewash.com",
+  "heroImage": "img/photo-22.jpg",
+  "heroAlt": "Detailed silver Bentley sedan parked in a lot",
+  "heroPosition": "60% 60%",
+  "heroPositionPhone": "60% 50%",
+  "rating": {
+    "score": "4.7",
+    "count": 117,
+    "url": "https://maps.google.com/?cid=10892378477786453064"
+  },
+  "kicker": "Mobile detailing · Waco",
+  "headline": "We bring the shop<br><em>to your driveway.</em>",
+  "intro": "Manny Olvera and his crew detail cars, trucks, SUVs, vans and RVs at your home or business around Waco. Twenty years in the trade.",
+  "mobile": {
+    "title": "We come to you.",
+    "intro": "No car wash line. No drop-off at a shop. Manny and the crew bring the equipment to your home or place of business.",
+    "points": [
+      {
+        "name": "At your door",
+        "text": "Home or business in Waco, Lorena, Woodway, Hewitt, Lacy Lakeview, Bellmead and Robinson, within 25 miles."
+      },
+      {
+        "name": "Temple and Killeen too",
+        "text": "We drive to Temple, Killeen and points in between for a reasonable fee."
+      },
+      {
+        "name": "By appointment",
+        "text": "Call, email or text Manny and set a time that works."
+      },
+      {
+        "name": "Se habla Español",
+        "text": "Hablamos español."
+      }
+    ]
+  },
+  "servicesTitle": "Inside and out.",
+  "servicesIntro": "Three detail packages, plus the extras that bring an older vehicle back.",
+  "services": [
+    {
+      "name": "Professional Exterior Detail",
+      "text": "Hand wash, clay bar decontamination, swirl-free two-step machine polish and a pro-grade wax. Takes 2 to 4 hours."
+    },
+    {
+      "name": "Professional Interior Detail",
+      "text": "Vacuum, shampoo and steam clean, leather conditioned, fabric protected, everything sanitized. Takes 1.5 to 3 hours."
+    },
+    {
+      "name": "Complete Exterior and Interior Detail",
+      "text": "Both packages in one visit. Our most popular. Takes 3 to 5 hours."
+    },
+    {
+      "name": "Headlight Restoration",
+      "text": "Cloudy, yellowed lenses made clear again, with a one year warranty."
+    },
+    {
+      "name": "Ozone Treatment",
+      "text": "Removes smoke, pet and other odors from the cabin."
+    },
+    {
+      "name": "Fleet Service",
+      "text": "We come to your business and wash every car and truck in your fleet."
+    }
+  ],
+  "also": [
+    {
+      "name": "RVs"
+    },
+    {
+      "name": "Heavy equipment"
+    },
+    {
+      "name": "Antique and show cars"
+    },
+    {
+      "name": "Fleets"
+    },
+    {
+      "name": "Engine bays"
+    },
+    {
+      "name": "Windshield chip repair"
+    }
+  ],
+  "alsoTitle": "We also detail",
+  "why": [
+    {
+      "name": "Twenty years in the trade",
+      "text": "Manny has detailed in Waco for two decades and has lived here most of his life."
+    },
+    {
+      "name": "Trained and certified",
+      "text": "A member of the International Detailing Association with professional training in auto detail and reconditioning."
+    },
+    {
+      "name": "Insured for your protection",
+      "text": "Cash, check, MasterCard and Visa accepted, and invoices for companies upon credit approval."
+    }
+  ],
+  "whyTitle": "Why people stay with Manny.",
+  "howTitle": "A clean vehicle in three steps.",
+  "steps": [
+    {
+      "name": "Call, text or email",
+      "text": "Tell Manny what you drive and what it needs."
+    },
+    {
+      "name": "We come to you",
+      "text": "The crew arrives at your home or business with the equipment."
+    },
+    {
+      "name": "Drive away happy",
+      "text": "Clean inside, polished outside, and ready to go."
+    }
+  ],
+  "contactTitle": "Book your detail.",
+  "footerLine": "Mobile detailing in Waco, TX",
+  "reviews": [
+    {
+      "text": "Cen-Tex Mobile Wash has been working closely with us at HOLT Agribusiness for the past 4 years. He started detailing our heavy machinery for trade shows all across Texas. He has been very reliable and does quality work that represents our company well at these trade shows.",
+      "name": "Jason Chancey"
+    },
+    {
+      "text": "I have been in the car business for 20+ years and have used every detail business in Waco at one time or another. These guys know what they are doing. They have the equipment and professional knowledge to get your car clean as new.",
+      "name": "Russell Kramolis"
+    },
+    {
+      "text": "He buffed up the finish, restored the headlights (I had no idea they were so cloudy from getting dinged by rocks), steam cleaned the engine, and got old, old coffee stains out of the upholstery and carpet.",
+      "name": "Carla Pendergraft"
+    },
+    {
+      "text": "I was extremely pleased with the service offered by Cen-Tex Mobile Wash. He was very courteous and very prompt. The headlights look great.",
+      "name": "Donna Stanley"
+    },
+    {
+      "text": "Manuel has been washing my cars for 15 years. Always does a fantastic job, inside & out. Manny & his crew care about your car.",
+      "name": "Carter Harris"
+    }
+  ],
+  "hours": [
+    "By appointment. Call, email or text."
+  ],
+  "galleryTitle": "Fresh off the driveway.",
+  "gallery": [
+    {
+      "src": "img/photo-23.jpg",
+      "alt": "Restored red vintage panel truck",
+      "size": "big"
+    },
+    {
+      "src": "img/photo-16.jpg",
+      "alt": "Headlight restoration, before and after"
+    },
+    {
+      "src": "img/photo-17.jpg",
+      "alt": "Engine bay steam clean, before and after"
+    },
+    {
+      "src": "img/photo-18.jpg",
+      "alt": "Crew washing an RV roof next to the work van"
+    },
+    {
+      "src": "img/photo-19.jpg",
+      "alt": "Crew detailing SUVs on site with the mobile van"
+    }
+  ],
+  "areas": [
+    "Waco"
+  ],
+  "pitch": "site"
+}

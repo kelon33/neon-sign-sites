@@ -1,0 +1,4 @@
+- Dropped (not backed by their site): review: If you're looking for the best of the best, this is it! This
+- Claude's notes: Site is for car detailing, not boats; the draft's boat copy was replaced. Hours, vehicle types and shuttle answers were not shown on the site, so hours are empty. Hero photo is 12 (portrait-ish crop, no landscape finished-work shot). Photo 2 is blue-tinted and excluded. No prices stated on site. Site says both 'over five years' and 'over 10 years' and 'established 2019', so no years figure was used.
+- Only 5 gallery photos.
+- Review (session): A car detailer listed under boat detailing: boat form options and gallery title replaced. Email was '%20info@…' (an encoded space from their mailto link): fixed to info@cleantindustries.com, and pickEmail now cleans such links. Logo has the name in it and the wordmark repeats it; acceptable. Fold fixed (preview bar).
