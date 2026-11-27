@@ -1,0 +1,97 @@
+{
+  "kit": "detailing",
+  "trade": "Paintless dent repair",
+  "name": "Auto Hail Solutions",
+  "legalName": "Auto Hail Solutions",
+  "preview": true,
+  "placeId": "ChIJZwnxM5Zt_oYRcBR2qZ-KmA4",
+  "title": "Auto Hail Solutions | Paintless dent repair in Lubbock, TX",
+  "description": "Auto Hail Solutions handles your insurance claim, delivers a free rental and repairs the dents. Your vehicle comes back freshly detailed and dent free. 4.9 on Google from 232 reviews.",
+  "brand": "#1670ff",
+  "brandHi": "#52c6ff",
+  "accent": "#8fd0ff",
+  "logo": null,
+  "logoChip": false,
+  "wordmark": {
+    "top": "Auto Hail",
+    "bottom": "Solutions"
+  },
+  "phone": "(806) 589-6732",
+  "email": "info@autohailsolutionsllc.com",
+  "rating": {
+    "score": "4.9",
+    "count": 232,
+    "url": "https://maps.google.com/?cid=1051742931338531952"
+  },
+  "kicker": "Paintless dent repair · Lubbock",
+  "headline": "Hail damage?<br><em>We make it easy.</em>",
+  "intro": "Auto Hail Solutions handles your insurance claim, delivers a free rental and repairs the dents. Your vehicle comes back freshly detailed and dent free.",
+  "mobile": null,
+  "servicesTitle": "Hail repair, start to finish.",
+  "servicesIntro": "One team handles the repair, the claim and the rental.",
+  "services": [
+    {
+      "name": "Hail damage repair",
+      "text": "Master certified technicians repair your vehicle after a storm, backed by a lifetime warranty on repairs."
+    },
+    {
+      "name": "Insurance claim handled",
+      "text": "We submit photos and an estimate to your insurance so they can approve your vehicle for repairs."
+    },
+    {
+      "name": "Free rental delivered",
+      "text": "A free loaner car is brought to your home or work."
+    },
+    {
+      "name": "Free deluxe detail",
+      "text": "Every hail repair includes a deluxe detail."
+    },
+    {
+      "name": "Door ding removal",
+      "text": "Minor door dings are removed free with a hail repair."
+    }
+  ],
+  "also": [],
+  "alsoTitle": "We also fix",
+  "why": [
+    {
+      "name": "Owner on the phone",
+      "text": "Owner Joseph Kurosky has 10+ years in paintless dent repair and personally handles the calls."
+    },
+    {
+      "name": "Never over-promise",
+      "text": "The team aims to never over-promise and always over-deliver, with 100% satisfaction as the goal."
+    }
+  ],
+  "whyTitle": "The Auto Hail Solutions difference.",
+  "howTitle": "Back to like new, step by step.",
+  "steps": [
+    {
+      "name": "Book a free inspection",
+      "text": "The owner or a team member comes out to inspect the damage, and a free loaner car is delivered to your home or work."
+    },
+    {
+      "name": "We work with your insurance",
+      "text": "We submit photos and an estimate so your insurance can approve the repair."
+    },
+    {
+      "name": "Pick up your vehicle",
+      "text": "Our master certified technicians repair it. You collect a freshly detailed, dent free vehicle."
+    }
+  ],
+  "contactTitle": "Hail damage? Call us.",
+  "footerLine": "Paintless dent repair in Lubbock",
+  "reviews": [],
+  "hours": [
+    "Mon-Fri 9:00AM - 6:00PM",
+    "Sat-Sun 9:00AM - 6:00PM (Appointment Only)"
+  ],
+  "galleryTitle": "Dents gone, paint untouched.",
+  "notePlaceholder": "Where the dent is, how big, hail or a door ding…",
+  "ctaLabel": "Get an estimate",
+  "gallery": [],
+  "areas": [
+    "Lubbock"
+  ],
+  "pitch": "photos"
+}
