@@ -133,8 +133,12 @@ async function main() {
       copy = checked;
       for (const d of dropped) checks.push(`Dropped (not backed by their site): ${d}`);
       if (r.heroPhoto >= 1 && r.heroPhoto <= photos.length) heroIndex = r.heroPhoto - 1;
+      // 0 means none of their photos is fit for the hero (logos, graphics): no hero photo then.
+      else if (r.heroPhoto === 0) { heroIndex = -1; checks.push('No hero photo: Claude found none of their photos usable.'); }
       const picked = r.galleryPhotos.map((n) => n - 1).filter((i) => i >= 0 && i < photos.length && i !== heroIndex);
       if (picked.length >= 4) order = [...new Set(picked)];
+      // Fewer than 4 usable photos: no gallery, rather than filling it with logos and graphics.
+      else { order = []; checks.push(`Only ${picked.length} usable photo${picked.length === 1 ? '' : 's'} by Claude's choice: no gallery. Probably not worth sending.`); }
       alts = Object.fromEntries(r.photoAlts.map((a) => [a.photo - 1, a.alt]));
       wordmark = { top: r.wordmarkTop || lead.name, bottom: r.wordmarkBottom };
       if (r.notes) checks.push(`Claude's notes: ${r.notes}`);
