@@ -62,3 +62,10 @@ test('timing: state from the preview, its time zone, and the 8:00-17:00 local wi
   assert.equal(windowState('America/New_York', new Date('2026-12-02T23:00:00Z')), 'late'); // 18:00 New York
   assert.equal(windowState('America/New_York', new Date('2026-12-05T13:30:00Z')), 'wait'); // Saturday 8:30: opens at 9
 });
+
+test('an answer goes in the same thread, as a reply', async () => {
+  const { answerMime } = await import('../pipeline/answer.mjs');
+  const raw = Buffer.from(answerMime({ from: 'alon@neonsignsites.co', fromName: 'Alon Katz', to: 'bob@x.com', subject: 'Quick question about x.com', inReplyTo: '<abc@mail.gmail.com>', body: 'Hi Bob' }), 'base64url').toString();
+  assert.match(raw, /Subject: Re: Quick question about x\.com/);
+  assert.match(raw, /In-Reply-To: <abc@mail\.gmail\.com>\r\nReferences: <abc@mail\.gmail\.com>/);
+});
