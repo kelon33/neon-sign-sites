@@ -2,7 +2,7 @@
  "about": "Google Places requests, counted by pipeline/find.mjs. Commit this file: it is the only record across sessions.",
  "months": {
   "2026-11": {
-   "requests": 38
+   "requests": 41
   }
  },
  "queries": {
@@ -30,6 +30,9 @@
   "mobile dog grooming in Lubbock, TX": "2026-11-27",
   "paintless dent repair in Lubbock, TX": "2026-11-27",
   "christmas light installation in Lubbock, TX": "2026-11-27",
-  "boat detailing in Sarasota, FL": "2026-11-27"
+  "boat detailing in Sarasota, FL": "2026-11-27",
+  "house painter in Jacksonville, FL": "2026-11-27",
+  "rv detailing in Jacksonville, FL": "2026-11-27",
+  "boat detailing in Jacksonville, FL": "2026-11-27"
  }
 }
