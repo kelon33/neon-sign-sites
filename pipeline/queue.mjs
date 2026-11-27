@@ -21,10 +21,19 @@ const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const SENT = path.join(root, 'leads', 'sent.json');
 const today = () => new Date().toISOString().slice(0, 10);
 
-/** How many emails a mailbox may send on a day: its ramp by week since it started, capped by max. */
+/** Weekdays from start up to day (day 0 = the start day). Weekends don't count: we only send on weekdays. */
+export function sendingDays(start, day) {
+  let n = 0;
+  for (let t = Date.parse(start) + 864e5; t <= Date.parse(day); t += 864e5) if (![0, 6].includes(new Date(t).getUTCDay())) n++;
+  return n;
+}
+
+/** How many emails a mailbox may send on a day, capped by max. A daily ramp ({ first, step }: first on
+ *  the start day, +step every weekday after) when set, otherwise the weekly ramp. */
 export function dailyLimit(box, day = today()) {
   if (/@neonsignsites\.com$/i.test(box.address)) return 0; // the brand domain never sends cold email
   if (!box.start || day < box.start) return 0;
+  if (box.daily) return Math.min(box.daily.first + box.daily.step * sendingDays(box.start, day), box.max ?? Infinity);
   const week = Math.floor((Date.parse(day) - Date.parse(box.start)) / (7 * 864e5));
   const ramp = box.ramp ?? [7, 10];
   return Math.min(ramp[Math.min(week, ramp.length - 1)], box.max ?? Infinity);
