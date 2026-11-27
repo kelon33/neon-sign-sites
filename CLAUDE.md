@@ -58,6 +58,12 @@ Two chats work on Neon Sign Sites, each with a role (until Alon merges them, the
 - **Site & leads** (environment `neon-sign-sites`, Places key and mailboxes): lead search (scraping), neonsignsites.com and general site updates, sending. Handoff: `docs/handoff/site.md` (and `docs/handoff/list.md` until the merge).
 Each role keeps **one chat** (no new chat each day). Every evening (23:13 Israel time) a scheduled message in that chat has it save the day (see `docs/handoff/README.md`): what was done, the state, open items, decisions; lasting rules go into this file. Then Alon types `/clear` in the chat. Every morning (06:47) a scheduled message in the same chat has it re-read this file and its handoff and post the day's open items. History lives in these files, not in the chat.
 
+## Rule: when to notify Alon (Alon, 2026-11-27; every chat and every scheduled task)
+Notify Alon (push notification, or a message meant for him) **only** when:
+- the day's sending list is ready for his approval (`outbox/<date>.md`), or
+- he is actively working with that chat right now (answer him as usual).
+Everything else runs silently and goes into the handoff files: lead searches (as long as they stay within the Places budget; going over it, or about to, is the exception: say so), site checks, preview builds and reviews, batches, commits, routine morning open-items posts (post them only when an approval is waiting). Errors that block the day's sending list count as part of that list: mention them with it.
+
 ## Rule: spend Claude usage carefully (Alon, 2026-11-27)
 The chats' own work counts against Alon's Claude plan; the preview AI step counts against API credits. Both are kept low:
 - **Review previews from sheets.** `npm run review` (all uncommitted previews, or `-- <slug> ...`) writes `review/sheet-<n>.jpg` (first screen on laptop and phone, 6 previews an image) and `review/digest.md` (one line each, only the flags that need a look). Read those; open a preview's full `desktop.jpg` / `phone.jpg` only when its tile or line shows a problem.
