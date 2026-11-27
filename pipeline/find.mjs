@@ -249,7 +249,8 @@ async function main() {
   const left = opts.monthlyRequestCap - month.requests;
   console.log(`${todo.length} searches, at most ${worst} requests (~$${cost(worst, opts.usdPer1000).toFixed(2)} at list price). This month: ${month.requests} of ${opts.monthlyRequestCap} requests used.`);
   if (args.dry || !todo.length) return;
-  const key = process.env.GOOGLE_PLACES_API_KEY || process.env.NEON_GOOGLE_PLACES_API_KEY;
+  // Pasted keys often carry quotes, spaces or a line break: Google then answers "API key not valid".
+  const key = (process.env.GOOGLE_PLACES_API_KEY || process.env.NEON_GOOGLE_PLACES_API_KEY || '').trim().replace(/^["']|["']$/g, '').trim();
   if (!key) throw new Error('No GOOGLE_PLACES_API_KEY (or NEON_GOOGLE_PLACES_API_KEY) in the environment.');
   if (left <= 0) throw new Error(`Monthly cap reached (${opts.monthlyRequestCap} requests, config.json places.monthlyRequestCap). Nothing was called.`);
 
