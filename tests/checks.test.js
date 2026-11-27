@@ -10,6 +10,8 @@ test('Google reviews on their site are spotted (widgets, labels, badges)', () =>
   assert.equal(googleReviewSignals([page({ text: 'Great job! Posted on Google' })]).length, 1);
   assert.equal(googleReviewSignals([page({ text: 'Mark — Google review. Janet — Google review.' })]).length, 1);
   assert.equal(googleReviewSignals([page({ raw: '<img src="/uploads/Google5stars1.png">' })]).length, 1);
+  // Elementor's own reviews widget holds testimonials the owner typed in.
+  assert.equal(googleReviewSignals([page({ raw: "<link id='widget-reviews-css' href='/elementor-pro/assets/css/widget-reviews.min.css'>" })]).length, 0);
   // A link to their listing is fine.
   assert.equal(googleReviewSignals([page({ text: 'Read our Google reviews. Leave us a Google review!' })]).length, 0);
 });

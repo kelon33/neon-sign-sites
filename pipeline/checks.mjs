@@ -3,7 +3,7 @@
 // found by a boat search, a steps title that miscounts its steps, lines that quote removed reviews.
 
 // Review widgets that show Google reviews on a business's own site (Google's terms: never copy them).
-export const REVIEW_WIDGET = /trustindex|ti-widget|elfsight|wprev|wp-review-slider|sociablekit|embedsocial|reviewsonmywebsite|google-reviews-widget|grw-review|featurable|nicejob|birdeye-widget|widget-reviews/i;
+export const REVIEW_WIDGET = /trustindex|ti-widget|elfsight|wprev|wp-review-slider|sociablekit|embedsocial|reviewsonmywebsite|google-reviews-widget|grw-review|featurable|nicejob|birdeye-widget/i;
 
 /** Why the reviews on their pages look like Google's (any reason drops them all), or []. */
 export function googleReviewSignals(pages = []) {
