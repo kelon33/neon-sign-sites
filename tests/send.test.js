@@ -36,3 +36,14 @@ test('only an approved, unchanged email within the rules goes out', () => {
   const full = Array.from({ length: 7 }, (_, i) => ({ slug: `s${i}`, to: `t${i}@x.com`, from: e.from, date: '2026-11-27' }));
   assert.match(refuse(e, { ...ok, sent: full }), /limit/);
 });
+
+test('replies: a clear no is an opt-out, bounces are bounces, the rest are replies', async () => {
+  const { kind } = await import('../pipeline/replies.mjs');
+  assert.equal(kind({ from: 'Bob <bob@x.com>', subject: 'Re: I rebuilt', text: 'No\n\n> On Fri ...' }), 'no');
+  assert.equal(kind({ from: 'bob@x.com', subject: 'Re: x', text: 'Not interested, thanks.' }), 'no');
+  assert.equal(kind({ from: 'bob@x.com', subject: 'Re: x', text: 'Please remove me from your list' }), 'no');
+  assert.equal(kind({ from: 'bob@x.com', subject: 'unsubscribe', text: '' }), 'no');
+  assert.equal(kind({ from: 'Mail Delivery Subsystem <mailer-daemon@googlemail.com>', subject: 'Delivery Status Notification (Failure)', text: '' }), 'bounce');
+  assert.equal(kind({ from: 'bob@x.com', subject: 'Re: x', text: 'Looks great! How does the monthly plan work?' }), 'reply');
+  assert.equal(kind({ from: 'bob@x.com', subject: 'Re: x', text: 'No way, this looks amazing. Call me.' }), 'reply');
+});
