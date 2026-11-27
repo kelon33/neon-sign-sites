@@ -2,11 +2,14 @@
  "about": "Google Places requests, counted by pipeline/find.mjs. Commit this file: it is the only record across sessions.",
  "months": {
   "2026-11": {
-   "requests": 2
+   "requests": 5
   }
  },
  "queries": {
   "lawn care service in Austin, TX": "2026-11-27",
-  "mobile car detailing in Austin, TX": "2026-11-27"
+  "mobile car detailing in Austin, TX": "2026-11-27",
+  "pressure washing service in Austin, TX": "2026-11-27",
+  "pool cleaning service in Austin, TX": "2026-11-27",
+  "window cleaning service in Austin, TX": "2026-11-27"
  }
 }
