@@ -1,27 +1,6 @@
 {
  "date": "2026-11-27",
- "approved": {
-  "at": "2026-11-27T13:49:25.725Z",
-  "skip": [],
-  "hashes": {
-   "1": "bbb3ebd1128aa5a0",
-   "2": "a9258c57b9fa7593",
-   "3": "adc8525765f1f995",
-   "4": "6e74b41aed420eb8",
-   "5": "3e9652805debd454",
-   "6": "0a6c95643d8c7928",
-   "7": "7a4900dca3d24cc9",
-   "8": "fd69b0f17fd96610",
-   "9": "b097e640de6fd93d",
-   "10": "b61728859c1c8668",
-   "11": "8d322c0dcef4dc23",
-   "12": "d0644047dfcf533d",
-   "13": "6145b0575dee5187",
-   "14": "e65c1add81f9ba99",
-   "15": "efec70346df71868",
-   "16": "5084f3ed4adbd92d"
-  }
- },
+ "approved": null,
  "emails": [
   {
    "n": 1,
@@ -74,12 +53,12 @@
   {
    "n": 5,
    "slug": "austins-lawn-enforcement",
-   "name": "Austin’s lawn enforcement",
+   "name": "Austin\u2019s lawn enforcement",
    "to": "austinslawnenforcer@gmail.com",
    "from": "alon@neonsignsites.net",
    "state": "TX",
    "tz": "America/Chicago",
-   "text": "To: austinslawnenforcer@gmail.com\nSubject: I rebuilt the Austin’s lawn enforcement website\n\nHi,\n\nI came across Austin’s lawn enforcement on Google. 5.0 stars from 49 Google reviews is great, but people on their phone can't tap to call you from your website.\n\nSo I rebuilt it, with your own photos, services and reviews. Have a look on your phone:\nhttps://neonsignsites.com/p/austins-lawn-enforcement/\n\nIf you like it, it's yours: your first month is free, then $49 a month with hosting and edits included (minimum 2 paid months after the free one, then cancel anytime). Or own it outright for $299, with the first year of hosting included, then $49 a year. If not, no hard feelings.\n\nRather talk it through? Call me at (888) 444-1847.\n\nAlon Katz\nNeon Sign Sites\n(888) 444-1847\n6421 N. Florida Ave, Suite D-1009, Tampa, FL 33604\n\nNot interested? Reply \"no\" and I won't email you again.\n",
+   "text": "To: austinslawnenforcer@gmail.com\nSubject: I rebuilt the Austin\u2019s lawn enforcement website\n\nHi,\n\nI came across Austin\u2019s lawn enforcement on Google. 5.0 stars from 49 Google reviews is great, but people on their phone can't tap to call you from your website.\n\nSo I rebuilt it, with your own photos, services and reviews. Have a look on your phone:\nhttps://neonsignsites.com/p/austins-lawn-enforcement/\n\nIf you like it, it's yours: your first month is free, then $49 a month with hosting and edits included (minimum 2 paid months after the free one, then cancel anytime). Or own it outright for $299, with the first year of hosting included, then $49 a year. If not, no hard feelings.\n\nRather talk it through? Call me at (888) 444-1847.\n\nAlon Katz\nNeon Sign Sites\n(888) 444-1847\n6421 N. Florida Ave, Suite D-1009, Tampa, FL 33604\n\nNot interested? Reply \"no\" and I won't email you again.\n",
    "link": "https://neonsignsites.com/p/austins-lawn-enforcement/",
    "linkLive": true
   },
@@ -215,5 +194,6 @@
    "link": "https://neonsignsites.com/p/detail-m-d/",
    "linkLive": true
   }
- ]
+ ],
+ "held": "Alon stopped sending to rework the email wording (2026-11-27)."
 }
