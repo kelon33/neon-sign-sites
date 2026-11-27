@@ -47,7 +47,7 @@ export const FIELD_MASK = [
 export const DEFAULTS = { monthlyRequestCap: 600, usdPer1000: 35, maxPages: 3, minReviews: 10, minUseful: 4 };
 
 // National chains and franchises: not our customers.
-const CHAINS = new RegExp(['lawn doctor', 'lawnstarter', 'lawn love', 'massey', 'weed man', 'savatree', 'augusta lawn', 'trugreen', 'brightview', 'davey tree', 'grounds guys', 'u s lawns', 'spring green', 'naturalawn', 'heroes lawn', 'senske', 'greenpal', 'sunday lawn', 'ziebart', 'tint world', 'spiffy', 'detail garage', 'mister car wash', 'tidal wave', 'take 5', 'dent wizard', 'shwash', 'goldie']
+const CHAINS = new RegExp(['lawn doctor', 'lawnstarter', 'lawn love', 'massey', 'weed man', 'savatree', 'augusta lawn', 'trugreen', 'brightview', 'davey tree', 'grounds guys', 'u s lawns', 'spring green', 'naturalawn', 'heroes lawn', 'senske', 'greenpal', 'sunday lawn', 'ziebart', 'tint world', 'spiffy', 'detail garage', 'mister car wash', 'tidal wave', 'take 5', 'dent wizard', 'shwash', 'goldie', 'clean air lawn care', 'emerald lawns', 'real green', 'just right lawns']
   .map((n) => n.replace(/ /g, '[\\s.-]*')).join('|'), 'i');
 // No website of their own to rebuild from.
 const NO_SITE_HOSTS = /(^|\.)(facebook|instagram|yelp|nextdoor|linktr|heygoldie|booksy|vagaro|setmore|square|squareup|urable|thumbtack|angi|homeadvisor|google|tiktok|x|twitter)\.(com|ee|site|me)$/i;
@@ -79,9 +79,31 @@ export function skipReason(place, { minReviews = DEFAULTS.minReviews, known = ne
   if (place.businessStatus && place.businessStatus !== 'OPERATIONAL') return 'closed';
   if (CHAINS.test(name) || CHAINS.test(place.websiteUri ?? '')) return 'chain';
   if (!place.websiteUri) return 'no website';
+  if (known.has(`host:${hostOf(place.websiteUri)}`)) return 'already in leads/';
   if (NO_SITE_HOSTS.test(hostOf(place.websiteUri))) return 'social or booking page only';
+  if (multiLocation(place.websiteUri)) return 'multi-location company';
   if ((place.userRatingCount ?? 0) < minReviews) return `under ${minReviews} reviews`;
   return null;
+}
+
+const STATES = 'al|ak|az|ar|ca|co|ct|de|fl|ga|hi|id|il|in|ia|ks|ky|la|me|md|ma|mi|mn|ms|mo|mt|ne|nv|nh|nj|nm|ny|nc|nd|oh|ok|or|pa|ri|sc|sd|tn|tx|ut|vt|va|wa|wv|wi|wy';
+/** A branch page of a company with offices in several cities: /locations/round-rock-tx/,
+ *  /service-locations/tx/austin/, /austin-tx/... Not a small local business. */
+export function multiLocation(url) {
+  let p = '';
+  try { p = new URL(url).pathname.toLowerCase(); } catch { return false; }
+  return /\/(locations?|service-locations|branches|offices)\//.test(p) || new RegExp(`/[a-z-]+-(${STATES})(/|$)`).test(p);
+}
+
+/** One lead per website: a business with a Google listing per neighbourhood is still one business
+ *  (and gets one email). Keeps the listing with the most reviews. */
+export function onePerWebsite(leads) {
+  const best = new Map();
+  for (const l of leads) {
+    const h = hostOf(l.website ?? '') || l.placeId;
+    if (!best.has(h) || (l.reviews ?? 0) > (best.get(h).reviews ?? 0)) best.set(h, l);
+  }
+  return leads.filter((l) => best.get(hostOf(l.website ?? '') || l.placeId) === l);
 }
 
 /** Whether to pay for the next page: only while this one still had enough useful businesses. */
@@ -192,7 +214,11 @@ async function knownPlaceIds() {
     if (!f.endsWith('.json') || f === 'places-usage.json') continue;
     const data = await readJson(path.join(root, 'leads', f), []);
     const list = Array.isArray(data) ? data : Object.values(data).find(Array.isArray) ?? [];
-    for (const l of list) if (l?.placeId) ids.add(l.placeId);
+    for (const l of list) {
+      if (l?.placeId) ids.add(l.placeId);
+      // Older files: the same business under another listing is not new either.
+      if (l?.website && f.startsWith('us-')) ids.add(`host:${hostOf(l.website)}`);
+    }
   }
   return ids;
 }
@@ -286,7 +312,8 @@ async function main() {
 
   // Save what was paid for before anything else can fail.
   const out = path.join(root, 'leads', `found-${new Date().toISOString().slice(0, 10)}.json`);
-  const fresh = leads.filter((l) => !blocked(l, dnc)).map((l) => ({ ...l, kind: 'not checked' }));
+  const fresh = onePerWebsite(leads.filter((l) => !blocked(l, dnc))).map((l) => ({ ...l, kind: 'not checked' }));
+  if (fresh.length < leads.length) skipped['extra listing of the same business'] = leads.length - fresh.length;
   await saveLeads(out, fresh);
   console.log(`\n${used} requests (~$${cost(used, opts.usdPer1000).toFixed(2)} at list price); ${month.requests} of ${opts.monthlyRequestCap} this month.`);
   console.log(`${fresh.length} new leads → ${path.relative(root, out)}. Left out: ${Object.entries(skipped).map(([k, v]) => `${v} ${k}`).join(', ') || 'none'}.`);
@@ -300,14 +327,18 @@ async function main() {
 async function saveLeads(file, leads) {
   const before = await readJson(file, []);
   const merged = [...before.filter((b) => !leads.some((k) => k.placeId === b.placeId)), ...leads];
-  await writeFile(file, JSON.stringify(merged, null, 1) + '\n');
+  // Applies the current rules to the whole file, so files saved by an older version get them too.
+  const clean = onePerWebsite(merged.filter((l) => !multiLocation(l.website) && !CHAINS.test(l.name ?? '') && !CHAINS.test(l.website ?? '')));
+  await writeFile(file, JSON.stringify(clean, null, 1) + '\n');
+  return merged.length - clean.length;
 }
 
 /** The free part: their websites and emails, for every lead in the file not checked yet. */
 async function checkFile(file, dnc) {
   const all = await readJson(file, null);
   if (!Array.isArray(all)) throw new Error(`${file} is not a lead file.`);
-  const todo = all.filter((l) => l.kind === 'not checked' && !blocked(l, dnc));
+  const clean = new Set(onePerWebsite(all.filter((l) => !multiLocation(l.website) && !CHAINS.test(l.name ?? '') && !CHAINS.test(l.website ?? ''))));
+  const todo = all.filter((l) => clean.has(l) && l.kind === 'not checked' && !blocked(l, dnc));
   if (!todo.length) { console.log(`Nothing to check in ${path.relative(root, file)}.`); return; }
   // Playwright is installed globally in the cloud sessions; require() finds it from any folder.
   const { chromium } = createRequire(import.meta.url)('playwright');
@@ -322,7 +353,8 @@ async function checkFile(file, dnc) {
     throw new Error(`${checked.filter((l) => l.kind === 'site broken').length} of ${checked.length} sites did not load: this environment's network is probably blocking them. `
       + `Nothing was changed; the leads are saved unchecked. Run npm run find -- --check ${path.relative(root, file)} where the network is open.`);
   }
-  await saveLeads(file, checked.filter((l) => !blocked(l, dnc)));
+  const removed = await saveLeads(file, checked.filter((l) => !blocked(l, dnc)));
+  if (removed) console.log(`Removed ${removed} chain, multi-location or duplicate listings.`);
   const withEmail = checked.filter((l) => l.email);
   console.log(`Checked ${checked.length} sites: ${withEmail.length} with an email (${withEmail.filter((l) => l.kind !== 'decent site').length} with a weak or broken site) → ${path.relative(root, file)}`);
 }

@@ -1,6 +1,6 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import { FIELD_MASK, skipReason, worthNextPage, pickEmail, weaknesses, toLead, cost, networkLooksBlocked } from '../pipeline/find.mjs';
+import { FIELD_MASK, skipReason, worthNextPage, pickEmail, weaknesses, toLead, cost, networkLooksBlocked, multiLocation, onePerWebsite } from '../pipeline/find.mjs';
 
 const place = (o = {}) => ({ id: 'p1', displayName: { text: 'Joe’s Lawn Care' }, websiteUri: 'https://joeslawn.com/', userRatingCount: 40, businessStatus: 'OPERATIONAL', ...o });
 
@@ -65,4 +65,24 @@ test('a blocked network is not mistaken for broken sites', () => {
   // About 1 in 10 broken is normal.
   assert.equal(networkLooksBlocked([...Array(9)].map(() => lead('decent site')).concat(lead('site broken'))), false);
   assert.equal(networkLooksBlocked([lead('site broken')]), false);
+});
+
+test('branch pages of multi-location companies are left out', () => {
+  assert.equal(multiLocation('https://emeraldlawns.com/locations/round-rock-tx/?utm_source=google'), true);
+  assert.equal(multiLocation('https://cleanairlawncare.com/service-locations/tx/austin/'), true);
+  assert.equal(multiLocation('https://justrightlawns.com/austin-tx/lawn-care-austin'), true);
+  assert.equal(multiLocation('https://ontimemobilecardetailingatx.com/south-congress'), false);
+  assert.equal(multiLocation('https://deweylawns.com/'), false);
+  assert.equal(skipReason(place({ websiteUri: 'https://joeslawn.com/locations/round-rock-tx/' })), 'multi-location company');
+});
+
+test('a business with a listing per neighbourhood becomes one lead (the most reviewed)', () => {
+  const leads = [
+    { placeId: 'a', website: 'https://pinksdetailingatx.com/?utm_campaign=gbp-north-austin', reviews: 105 },
+    { placeId: 'b', website: 'https://pinksdetailingatx.com/southaustin', reviews: 48 },
+    { placeId: 'c', website: 'https://www.topchoiceaustin.com/', reviews: 137 },
+    { placeId: 'd', website: 'http://www.topchoiceaustin.com/', reviews: 644 },
+    { placeId: 'e', website: 'https://deweylawns.com/', reviews: 230 },
+  ];
+  assert.deepEqual(onePerWebsite(leads).map((l) => l.placeId), ['a', 'd', 'e']);
 });
