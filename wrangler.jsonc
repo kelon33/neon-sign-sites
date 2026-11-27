@@ -5,6 +5,10 @@
   "name": "neon-sign-sites",
   "compatibility_date": "2026-11-01",
   "main": "worker.js",
+  // Only neonsignsites.com and customer domains: no *.workers.dev address and no preview URLs
+  // (they would bypass the Access login on /dashboard; worker.js refuses it there too).
+  "workers_dev": false,
+  "preview_urls": false,
   // Plain settings for the forms (forms.js). The Resend key is a secret set in the dashboard, not here.
   "vars": {
     "MAIL_FROM": "Neon Sign Sites <hello@neonsignsites.com>",
