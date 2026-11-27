@@ -39,11 +39,13 @@ export function generalize(s, { name, town }) {
   // Lines found to promise what businesses don't (kept out even though older previews have them).
   if (/shining by tonight/i.test(s)) return null;
   let out = s;
-  const words = (name ?? '').split(/[\s&,.-]+/).filter((w) => w.length > 3 && !/^(mobile|detailing|lawn|care|services?|landscaping|painting|lighting|repair|auto|llc|inc)$/i.test(w));
+  // Each word of their name, without a possessive or punctuation ("Ray’s" → "Ray"), so "Why Ray's." is caught.
+  const words = (name ?? '').split(/[\s&,.-]+/).map((w) => w.replace(/['’]s$/i, '').replace(/[^a-z0-9]/gi, ''))
+    .filter((w) => w.length >= 3 && !/^(mobile|detailing|lawn|care|services?|landscaping|painting|lighting|repair|auto|llc|inc|the|and)$/i.test(w));
   if (name) out = out.split(name).join('{name}');
   if (town) out = out.split(town).join('{town}');
   // Any other word of their name left (a nickname, "Ray handles..."): too specific.
-  if (words.some((w) => new RegExp(`\\b${w.replace(/[^a-z0-9]/gi, '')}\\b`, 'i').test(out))) return null;
+  if (words.some((w) => new RegExp(`\\b${w}\\b`, 'i').test(out))) return null;
   return out;
 }
 

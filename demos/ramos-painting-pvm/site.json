@@ -1,0 +1,142 @@
+{
+ "kit": "painting",
+ "trade": "House painting",
+ "name": "Ramos Painting PVM",
+ "legalName": "Ramos Painting PVM",
+ "preview": true,
+ "placeId": "ChIJ4ezk2uJmkmARz-6an_g6uNA",
+ "title": "Ramos Painting PVM | House painting in Waco, TX",
+ "description": "Professional interior and exterior painting for homes and businesses in Waco and across Central Texas. Careful prep, full protection, finishes that last. 5.0 on Google from 13 reviews.",
+ "logo": "logo.png",
+ "logoChip": false,
+ "wordmark": {
+  "top": "Ramos",
+  "bottom": "Painting PVM"
+ },
+ "phone": "(254) 981-8679",
+ "email": "ramospvm@gmail.com",
+ "heroImage": "img/photo-1.jpg",
+ "heroAlt": "Painter on a ladder painting the exterior of a stone and stucco home",
+ "heroPosition": "60% 60%",
+ "heroPositionPhone": "60% 50%",
+ "rating": {
+  "score": "5.0",
+  "count": 13,
+  "url": "https://maps.google.com/?cid=15039835795107802831"
+ },
+ "kicker": "House painting · Waco, TX",
+ "headline": "We don't sell paint.<br><em>We sell transformation.</em>",
+ "intro": "Professional interior and exterior painting for homes and businesses in Waco and across Central Texas. Careful prep, full protection, finishes that last.",
+ "badges": [
+  "Free estimates",
+  "Homes and businesses"
+ ],
+ "highlights": null,
+ "servicesTitle": "Inside and out.",
+ "servicesIntro": "One room, a custom home or a commercial space.",
+ "services": [
+  {
+   "name": "Residential Interior Painting",
+   "text": "Walls, ceilings, trim, doors and cabinets with clean finishes and detailed prep."
+  },
+  {
+   "name": "Residential Exterior Painting",
+   "text": "Siding, brick, soffit, fascia and doors, with proper surface preparation."
+  },
+  {
+   "name": "Commercial Painting",
+   "text": "Offices, retail spaces and warehouses, with an organized process and minimal disruption."
+  },
+  {
+   "name": "New Construction & Custom Homes",
+   "text": "Complete painting for new builds, with clean finishes from the ground up."
+  },
+  {
+   "name": "Remodeling Projects",
+   "text": "Painting for remodels, with attention to detail in every phase."
+  },
+  {
+   "name": "Surface Preparation & Protection",
+   "text": "Power washing, caulking, repairs, priming and full protection of floors and fixtures."
+  }
+ ],
+ "also": [],
+ "alsoTitle": "We also do:",
+ "promise": null,
+ "why": [
+  {
+   "name": "Precision and protection",
+   "text": "Detailed prep and full protection of floors, fixtures and non-paintable areas on every project."
+  },
+  {
+   "name": "Quality materials",
+   "text": "Premium Sherwin-Williams products and a proven process built around each property."
+  },
+  {
+   "name": "Clear communication",
+   "text": "Reliable scheduling and a job done right the first time."
+  }
+ ],
+ "whyTitle": "Why Ramos Painting PVM.",
+ "howTitle": "From estimate to final walkthrough.",
+ "steps": [
+  {
+   "name": "Free estimate",
+   "text": "We evaluate your property, talk through colors and timing, and give you a detailed quote."
+  },
+  {
+   "name": "Prep and protect",
+   "text": "We sand, patch, prime and cover every surface before any paint goes on."
+  },
+  {
+   "name": "Paint and walk through",
+   "text": "We apply each coat with care, then inspect every detail with you."
+  }
+ ],
+ "contactTitle": "Ready to transform your space?",
+ "footerLine": "House painting in Waco and Central Texas",
+ "reviews": [
+  {
+   "text": "Ramos Painting transformed our entire home. The attention to detail was incredible, and the team was professional from start to finish.",
+   "name": "SARAH M."
+  },
+  {
+   "text": "We hired them for a commercial project and were impressed by their organized process and clean results. Highly recommend!",
+   "name": "DAVID L."
+  },
+  {
+   "text": "From the free estimate to the final walkthrough, everything was handled with professionalism and care. Our house looks brand new.",
+   "name": "MARIA G."
+  }
+ ],
+ "hours": [],
+ "galleryTitle": "Homes we’ve painted.",
+ "notePlaceholder": "Inside or outside, how many rooms, a date you have in mind…",
+ "gallery": [
+  {
+   "src": "img/photo-7.jpg",
+   "alt": "White brick house with dark trim freshly painted",
+   "size": "big"
+  },
+  {
+   "src": "img/photo-9.jpg",
+   "alt": "Kitchen with light blue island and painted cabinets"
+  },
+  {
+   "src": "img/photo-5.jpg",
+   "alt": "Kitchen with dark painted cabinets and white range hood"
+  },
+  {
+   "src": "img/photo-12.jpg",
+   "alt": "Blue and gray house with scaffolding on a green lawn"
+  },
+  {
+   "src": "img/photo-8.jpg",
+   "alt": "Painter on a ladder painting brick and trim"
+  }
+ ],
+ "areas": [
+  "Waco"
+ ],
+ "pitch": "site"
+}

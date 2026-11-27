@@ -1,0 +1,3 @@
+- Claude's notes: Site says 'over a decade' of experience and 95%/100% stats, left out. Reviews are on site, first names only, not confirmed as Google reviews. Several photos (2, 11, 13-18) look stock or AI-generated and were skipped. Photo 3 is personal. No hours listed. Draft said 'Ray's', corrected to Ramos.
+- Only 5 gallery photos.
+- Review (session): Good: 5 job photos and 3 written reviews from their own site (no widget). Headline is their own line. The AI's 'Draft said Ray's' came from the wording library: 'Why Ray's.' had slipped in (apostrophe not caught); fixed in pipeline/wording.mjs, and this preview's title is correct.

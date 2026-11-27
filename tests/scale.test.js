@@ -109,6 +109,7 @@ test('the wording library keeps only general lines, and reuses them without carr
   assert.equal(generalize('Call (512) 555-0100 today', { name: 'X', town: 'Austin' }), null);
   assert.equal(generalize('Why Austin calls Dewey Lawns', { name: 'Dewey Lawns', town: 'Austin' }), 'Why {town} calls {name}');
   assert.equal(generalize('Dewey handles every job', { name: 'Dewey Lawns', town: 'Austin' }), null);
+  assert.equal(generalize("Why Ray's.", { name: 'Ray’s Painting & Pressure Washing Services', town: 'Jacksonville' }), null);
   const entry = harvestOne({ name: 'Dewey Lawns', areas: ['Austin'], headline: 'Your weekend back.', howTitle: 'Fully guaranteed in three steps.', whyTitle: 'Why Austin trusts Dewey Lawns',
     steps: [{ name: 'Book', text: 'Online in a minute.' }, { name: 'We mow', text: 'On your day.' }, { name: 'Relax', text: 'Done.' }] });
   assert.equal(entry.whyTitle, 'Why {town} trusts {name}');
