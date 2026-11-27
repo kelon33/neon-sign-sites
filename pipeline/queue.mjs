@@ -39,7 +39,7 @@ export function plan({ ready, sent, mailboxes, dnc, day = today() }) {
     if (done.has(r.slug) || done.has(r.to.toLowerCase())) continue;
     const no = blocked(r.lead ?? { email: r.to, name: r.name }, dnc);
     if (no) { skipped.push(`${r.slug}: on the do-not-contact list`); continue; }
-    const box = room.find((b) => b.left > 0);
+    const box = room.reduce((best, b) => (b.left > (best?.left ?? 0) ? b : best), null); // spread evenly: the box with the most room
     if (!box) break;
     box.left--;
     out.push({ ...r, from: box.address });
