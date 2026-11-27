@@ -58,6 +58,7 @@ async function diag(env, name, result, request, type = null) {
 export async function quoHook(request, env) {
   if (!env.QUO_WEBHOOK_SECRET || !env.EVENTS) return new Response('Not configured', { status: 503 });
   const body = await request.text();
+  await diag(env, 'quo', 'received, checking', request);
   const secret = env.QUO_WEBHOOK_SECRET.trim();
   const ok = secret.startsWith('whsec_') || request.headers.get('webhook-signature') || request.headers.get('svix-signature')
     ? await standardSignatureOk(request.headers, body, secret)

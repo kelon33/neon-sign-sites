@@ -46,8 +46,15 @@ export default {
         page.headers.append('Set-Cookie', 'nss_owner=1; Max-Age=31536000; Path=/; Secure; HttpOnly; SameSite=Lax');
         return page;
       }
-      if (request.method === 'POST' && url.pathname === '/hooks/quo') return quoHook(request, env);
-      if (request.method === 'POST' && url.pathname === '/hooks/paypal') return paypalHook(request, env);
+      // Webhooks: tolerate a trailing slash, and log any arrival (any method) so the dashboard can show it.
+      const hook = url.pathname.match(/^\/hooks\/(quo|paypal)\/?$/)?.[1];
+      if (hook) {
+        if (request.method !== 'POST') {
+          if (env.EVENTS) ctx?.waitUntil(env.EVENTS.put(`x:${hook}`, '', { metadata: { at: new Date().toISOString(), result: `${request.method} (not POST) ignored` } }).catch(() => {}));
+          return new Response('ok');
+        }
+        return hook === 'quo' ? quoHook(request, env) : paypalHook(request, env);
+      }
       if (request.method === 'POST' && url.pathname === '/api/preview-request') return previewRequest(request, env);
       if (request.method === 'POST' && url.pathname === '/api/go') {
         // Count the "Make it live" click for the dashboard (from the form's own fields, before it is read).
