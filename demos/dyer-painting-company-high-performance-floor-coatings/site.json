@@ -1,0 +1,101 @@
+{
+  "kit": "painting",
+  "trade": "House painting",
+  "name": "Dyer Painting Company & High Performance Floor Coatings",
+  "legalName": "Dyer Painting Company & High Performance Floor Coatings",
+  "preview": true,
+  "placeId": "ChIJISH2492DT4YRsz3kaic-vew",
+  "title": "Dyer Painting Company & High Performance Floor Coatings | Painting contractors in Waco, TX",
+  "description": "Residential, commercial and industrial painting in Waco, plus wall coverings and high-performance floor coatings. Call (254) 752-1676 for a free consultation. 4.8 on Google from 5 reviews.",
+  "wordmark": {
+    "top": "Dyer Painting",
+    "bottom": "Company"
+  },
+  "phone": "(254) 752-1676",
+  "email": "dyerpaintc@aol.com",
+  "heroImage": null,
+  "heroAlt": "",
+  "heroPosition": "60% 60%",
+  "heroPositionPhone": "60% 50%",
+  "rating": {
+    "score": "4.8",
+    "count": 5,
+    "url": "https://maps.google.com/?cid=17058859302567296435"
+  },
+  "kicker": "Painting contractors · Waco · Since 1949",
+  "headline": "Quality first.<br><em>Since 1949.</em>",
+  "intro": "Residential, commercial and industrial painting in Waco, plus wall coverings and high-performance floor coatings. Call (254) 752-1676 for a free consultation.",
+  "badges": [
+    "Free estimates",
+    "Homes and businesses"
+  ],
+  "highlights": null,
+  "servicesTitle": "Inside, outside, and underfoot.",
+  "servicesIntro": "Homes, businesses and industrial sites. One crew that does it right.",
+  "services": [
+    {
+      "name": "Residential painting",
+      "text": "Interior and exterior painting for homeowners across Central Texas."
+    },
+    {
+      "name": "Commercial painting",
+      "text": "Painting that protects and presents your business property."
+    },
+    {
+      "name": "Industrial painting",
+      "text": "Coatings and finishes built for the demands of industrial environments."
+    },
+    {
+      "name": "Wall-covering installation",
+      "text": "Expert installation of wall coverings."
+    },
+    {
+      "name": "High-performance floor coatings",
+      "text": "Flooring systems designed for durability, function and long-term performance."
+    }
+  ],
+  "also": [],
+  "alsoTitle": "We also do:",
+  "promise": null,
+  "why": [
+    {
+      "name": "Since 1949",
+      "text": "More than 75 years of work for homeowners, businesses, industries and contractors."
+    },
+    {
+      "name": "Clear communication",
+      "text": "From the first consultation to the final walkthrough, you hear from a responsive, transparent team."
+    },
+    {
+      "name": "Trade association members",
+      "text": "Members of the Painting Contractors Association and the Associated General Contractors of America."
+    }
+  ],
+  "whyTitle": "Why customers come back.",
+  "howTitle": "How a project works.",
+  "steps": [
+    {
+      "name": "Free consultation",
+      "text": "Tell us what you need. We talk through the scope and give you a free quote."
+    },
+    {
+      "name": "Plan and schedule",
+      "text": "We agree on the details and set the work with clear communication."
+    },
+    {
+      "name": "Paint and walkthrough",
+      "text": "Our team does the work, then walks the finished job with you."
+    }
+  ],
+  "contactTitle": "Request a free quote.",
+  "footerLine": "Painting and floor coatings in Waco since 1949",
+  "reviews": [],
+  "hours": [],
+  "galleryTitle": "Homes we’ve painted.",
+  "notePlaceholder": "Inside or outside, how many rooms, a date you have in mind…",
+  "gallery": [],
+  "areas": [
+    "Waco"
+  ],
+  "pitch": "photos"
+}
