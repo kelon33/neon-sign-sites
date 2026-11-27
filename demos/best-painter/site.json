@@ -1,0 +1,153 @@
+{
+  "kit": "painting",
+  "trade": "House painting",
+  "name": "Best Painter",
+  "legalName": "Best Painter",
+  "preview": true,
+  "placeId": "ChIJWxLbDFpz_oYRK7snc78LOlQ",
+  "title": "Best Painter | House painting in Lubbock, TX",
+  "description": "Family-owned house painters in Lubbock and across the South Plains. You deal with Tom or one of his sons, and we do all the work ourselves. 5.0 on Google from 12 reviews.",
+  "logo": "logo.png",
+  "logoChip": true,
+  "wordmark": {
+    "top": "Best",
+    "bottom": "Painter"
+  },
+  "phone": "(806) 239-6606",
+  "email": "bestpainteroflubbock@gmail.com",
+  "heroImage": "img/photo-2.jpg",
+  "heroAlt": "Finished white-painted brick home with a tidy lawn",
+  "heroPosition": "60% 60%",
+  "heroPositionPhone": "60% 50%",
+  "rating": {
+    "score": "5.0",
+    "count": 12,
+    "url": "https://maps.google.com/?cid=6069176364733807403"
+  },
+  "kicker": "House painting · Lubbock",
+  "headline": "Fresh paint.<br><em>Done by family.</em>",
+  "intro": "Family-owned house painters in Lubbock and across the South Plains. You deal with Tom or one of his sons, and we do all the work ourselves.",
+  "badges": [
+    "Free estimates",
+    "Family owned",
+    "Homes and businesses"
+  ],
+  "highlights": null,
+  "servicesTitle": "Inside and out.",
+  "servicesIntro": "One room or the whole house. Every estimate is free and flat.",
+  "services": [
+    {
+      "name": "Exterior painting",
+      "text": "We paint brick, siding and trim. We scrape, caulk and prime where needed, then apply at least 2 coats of Sherwin-Williams paint."
+    },
+    {
+      "name": "Interior painting",
+      "text": "We mask everything off first, then paint walls, ceilings, trim and more, in one room or the whole house."
+    },
+    {
+      "name": "Cabinet painting",
+      "text": "Kitchen cabinets and bathroom vanities, even natural wood that has never been painted."
+    },
+    {
+      "name": "Staining and oiling",
+      "text": "Fences, decks, gazebos and cedar houses, usually with Wood Defender or linseed oil."
+    },
+    {
+      "name": "Drywall and wood-rot repair",
+      "text": "We repair and retexture drywall and replace rotten wood, from fascia boards to siding."
+    },
+    {
+      "name": "Stucco repair",
+      "text": "Cracks and chips patched and texture-matched."
+    }
+  ],
+  "also": [
+    {
+      "name": "Churches"
+    },
+    {
+      "name": "Gazebos"
+    },
+    {
+      "name": "Cedar houses"
+    }
+  ],
+  "alsoTitle": "We also do:",
+  "promise": null,
+  "why": [
+    {
+      "name": "Family owned, four generations",
+      "text": "You deal with Tom or one of his sons from estimate to final coat. The person you talked to is the person holding the brush."
+    },
+    {
+      "name": "No money up front on most jobs",
+      "text": "You pay when the job is completely done. We buy all the supplies."
+    },
+    {
+      "name": "Always on time",
+      "text": "We show up on time for the estimate. If something comes up, we call right away."
+    }
+  ],
+  "whyTitle": "Why Best Painter.",
+  "howTitle": "A fresh coat in three steps.",
+  "steps": [
+    {
+      "name": "Call for a free estimate",
+      "text": "We look at the work, ask questions and give you a flat price."
+    },
+    {
+      "name": "We prep and paint",
+      "text": "We mask, scrape, caulk and prime, then paint. We buy all the supplies."
+    },
+    {
+      "name": "Pay when it is done",
+      "text": "On most jobs, you pay nothing until everything is completely finished."
+    }
+  ],
+  "contactTitle": "Ready for a fresh coat?",
+  "footerLine": "House painting in Lubbock and every town within 75 miles",
+  "reviews": [],
+  "hours": [],
+  "galleryTitle": "Homes we’ve painted.",
+  "notePlaceholder": "Inside or outside, how many rooms, a date you have in mind…",
+  "gallery": [
+    {
+      "src": "img/photo-10.jpg",
+      "alt": "Finished entryway with arch and dark blue front door",
+      "size": "big"
+    },
+    {
+      "src": "img/photo-14.jpg",
+      "alt": "Bathroom with white painted vanity and cabinet"
+    },
+    {
+      "src": "img/photo-8.jpg",
+      "alt": "Stucco crack and chips before and after repair and paint"
+    },
+    {
+      "src": "img/photo-15.jpg",
+      "alt": "Porch steps before and after red stain"
+    },
+    {
+      "src": "img/photo-7.jpg",
+      "alt": "Before and after of a brick home exterior repaint",
+      "size": "tall"
+    },
+    {
+      "src": "img/photo-3.jpg",
+      "alt": "Painter covering a room with plastic before painting"
+    },
+    {
+      "src": "img/photo-9.jpg",
+      "alt": "Freshly painted living room with fireplace"
+    },
+    {
+      "src": "img/photo-11.jpg",
+      "alt": "Finished hallway with fresh white walls"
+    }
+  ],
+  "areas": [
+    "Lubbock"
+  ],
+  "pitch": "site"
+}
