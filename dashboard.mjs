@@ -142,7 +142,7 @@ a.open:hover { background: rgba(255,79,139,.12); text-decoration: none; } a:hove
 
 <div id="unknown"></div>
 <h2>Every business</h2><div class="card">${table(all)}</div>
-<p class="muted" style="margin-top:20px">Preview visits and "Make it live" clicks are live (from today; bots and link scanners are not counted). Calls and texts to (888) 444-1847 (Quo) and PayPal payments appear once their webhooks are set up.</p>
+<p class="muted" style="margin-top:20px">Preview visits and "Make it live" clicks are live (from today; bots, link scanners and your own visits from any browser where you opened this dashboard are not counted). Calls and texts to (888) 444-1847 (Quo) and PayPal payments appear once their webhooks are set up.</p>
 <script>
 // Live numbers from the site itself (KV via /dashboard/api/events): who opened their preview, who opened "Make it live".
 fetch('/dashboard/api/events', { credentials: 'same-origin' }).then((r) => r.json()).then((ev) => {
@@ -152,6 +152,7 @@ fetch('/dashboard/api/events', { credentials: 'same-origin' }).then((r) => r.jso
     const s = tr.dataset.slug, p = ev.p[s], g = ev.g[s], m = ev.m[s];
     const cell = tr.querySelector('.opened');
     cell.innerHTML = p ? p.c + '× <small>last ' + when(p.l) + '</small>' : '–';
+    if (p || g) cell.innerHTML += '<small><a href="#" class="forget" data-slug="' + s + '">that was me</a></small>';
     if (g && !m) cell.innerHTML += '<small>opened "Make it live"</small>';
     if (m) cell.innerHTML += '<small>sent "Make it live" (' + (m.plan || '?') + ')</small>';
     const tag = tr.querySelector('.tag');
@@ -187,6 +188,10 @@ fetch('/dashboard/api/events', { credentials: 'same-origin' }).then((r) => r.jso
     hs.push(label + ': ' + (x ? 'last delivery ' + when(x.at) + ', ' + x.result + (x.type ? ' (' + x.type + ')' : '') + (x.result !== 'accepted' && x.headers ? ' [' + x.headers + ']' : '') : 'nothing received yet'));
   }
   document.getElementById('hooks-status').innerHTML = hs.join('<br>');
+  for (const a of document.querySelectorAll('a.forget')) a.addEventListener('click', (e) => {
+    e.preventDefault();
+    fetch('/dashboard/api/forget?slug=' + encodeURIComponent(a.dataset.slug), { method: 'POST', headers: { 'x-dashboard': '1' }, credentials: 'same-origin' }).then(() => location.reload());
+  });
   document.getElementById('k-warm').textContent = warm;
   document.getElementById('k-cold').textContent = cold;
 }).catch(() => { document.getElementById('k-warm').textContent = '?'; });

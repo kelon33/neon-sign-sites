@@ -32,10 +32,19 @@ export default {
       // never on www, workers.dev or a customer domain, which Access does not cover.
       if (url.pathname === '/dashboard' || url.pathname.startsWith('/dashboard/')) {
         if (host !== 'neonsignsites.com' || !request.headers.get('cf-access-jwt-assertion')) return new Response('Not found', { status: 404 });
+        if (request.method === 'POST' && url.pathname === '/dashboard/api/forget' && request.headers.get('x-dashboard') === '1') {
+          // "That was me": remove a preview's visit and Make-it-live-page counts.
+          const slug = (url.searchParams.get('slug') ?? '').replace(/[^a-z0-9-]/g, '').slice(0, 80);
+          if (slug && env.EVENTS) await Promise.all([env.EVENTS.delete(`p:${slug}`), env.EVENTS.delete(`g:${slug}`)]);
+          return new Response('ok');
+        }
         if (url.pathname === '/dashboard/api/events') {
           return new Response(JSON.stringify(await allEvents(env)), { headers: { 'content-type': 'application/json', 'cache-control': 'no-store', 'X-Robots-Tag': 'noindex' } });
         }
-        return withHeader(await env.ASSETS.fetch(request), 'X-Robots-Tag', 'noindex, nofollow');
+        // Opening the dashboard marks this browser as Alon's: his own preview visits are then not counted.
+        const page = withHeader(await env.ASSETS.fetch(request), 'X-Robots-Tag', 'noindex, nofollow');
+        page.headers.append('Set-Cookie', 'nss_owner=1; Max-Age=31536000; Path=/; Secure; HttpOnly; SameSite=Lax');
+        return page;
       }
       if (request.method === 'POST' && url.pathname === '/hooks/quo') return quoHook(request, env);
       if (request.method === 'POST' && url.pathname === '/hooks/paypal') return paypalHook(request, env);
@@ -44,10 +53,10 @@ export default {
         // Count the "Make it live" click for the dashboard (from the form's own fields, before it is read).
         const f = await request.clone().formData().catch(() => null);
         const slug = String(f?.get('site') ?? '').replace(/[^a-z0-9-]/g, '').slice(0, 80);
-        if (slug && !/TEST by Claude/.test(String(f?.get('business') ?? ''))) ctx?.waitUntil(record(env, 'm', slug, { plan: String(f.get('plan') ?? '').slice(0, 10) }).catch(() => {}));
+        if (slug && !/TEST by Claude/.test(String(f?.get('business') ?? '')) && !/(?:^|;\s*)nss_owner=1/.test(request.headers.get('cookie') ?? '')) ctx?.waitUntil(record(env, 'm', slug, { plan: String(f.get('plan') ?? '').slice(0, 10) }).catch(() => {}));
         return makeItLive(request, env);
       }
-      const ev = eventOf(request, url);
+      const ev = /(?:^|;\s*)nss_owner=1/.test(request.headers.get('cookie') ?? '') ? null : eventOf(request, url);
       if (ev) ctx?.waitUntil(record(env, ev.kind, ev.slug).catch(() => {}));
       const res = await env.ASSETS.fetch(request);
       // Customer sites are also reachable at /c/<domain>/ here: keep those copies out of search engines.
