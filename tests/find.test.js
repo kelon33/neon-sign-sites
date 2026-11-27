@@ -1,6 +1,6 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import { FIELD_MASK, skipReason, worthNextPage, pickEmail, weaknesses, toLead, cost, networkLooksBlocked, multiLocation, onePerWebsite } from '../pipeline/find.mjs';
+import { FIELD_MASK, skipReason, worthNextPage, pickEmail, weaknesses, toLead, cost, networkLooksBlocked, multiLocation, onePerWebsite, improvements, siteKind, TRADES } from '../pipeline/find.mjs';
 
 const place = (o = {}) => ({ id: 'p1', displayName: { text: 'Joe’s Lawn Care' }, websiteUri: 'https://joeslawn.com/', userRatingCount: 40, businessStatus: 'OPERATIONAL', ...o });
 
@@ -85,4 +85,21 @@ test('a business with a listing per neighbourhood becomes one lead (the most rev
     { placeId: 'e', website: 'https://deweylawns.com/', reviews: 230 },
   ];
   assert.deepEqual(onePerWebsite(leads).map((l) => l.placeId), ['a', 'd', 'e']);
+});
+
+test('working sites with clear gaps are a separate "decent site" category; no gaps is "strong"', () => {
+  const bare = `<meta name="viewport" content="width=device-width"><p>${'We mow lawns in Austin. '.repeat(30)} © 2026</p>`;
+  assert.deepEqual(improvements(bare, { ms: 900, year: 2026 }), ['no tap-to-call link', 'no quote or booking form', 'no reviews on the site', 'no photos', 'no meta description']);
+  const full = `<meta name="description" content="x"><a href="tel:5125550100">Call</a><form></form><h2>What our customers say</h2>${'<img src="job.jpg">'.repeat(4)} © 2026`;
+  assert.deepEqual(improvements(full, { ms: 900, year: 2026 }), []);
+  assert.deepEqual(improvements(full.replace('2026', '2025'), { ms: 3000, year: 2026 }), ['loads in 3.0s', 'copyright 2025']);
+  assert.equal(siteKind(['copyright 2016'], []), 'weak site');
+  assert.equal(siteKind([], ['no tap-to-call link']), 'decent site');
+  assert.equal(siteKind([], []), 'strong site');
+});
+
+test('each trade has its main phrase first, and every phrase fits a site kit', () => {
+  assert.equal(TRADES.lawn.queries[0], 'lawn care service');
+  assert.equal(TRADES.detailing.queries[0], 'mobile car detailing');
+  for (const t of Object.values(TRADES)) assert.ok(t.queries.length >= 3);
 });

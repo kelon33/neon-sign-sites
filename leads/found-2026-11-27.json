@@ -10,10 +10,11 @@
   "mapsUrl": "https://maps.google.com/?cid=5440597790589295214&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
   "trade": "Lawn care",
   "city": "Austin, TX",
-  "kind": "decent site",
-  "loadMs": 470,
+  "kind": "strong site",
+  "loadMs": 496,
   "reasons": [],
-  "email": "info@adamslawnservice-austin.com"
+  "email": "info@adamslawnservice-austin.com",
+  "improvements": []
  },
  {
   "placeId": "ChIJBz6jrFdIW4YReG24V7s-l9w",
@@ -26,10 +27,11 @@
   "mapsUrl": "https://maps.google.com/?cid=15895242384178965880&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
   "trade": "Lawn care",
   "city": "Austin, TX",
-  "kind": "decent site",
-  "loadMs": 691,
+  "kind": "strong site",
+  "loadMs": 659,
   "reasons": [],
-  "email": ""
+  "email": "",
+  "improvements": []
  },
  {
   "placeId": "ChIJ5xVcwyItW4YRwlgwdLqFaU0",
@@ -43,11 +45,12 @@
   "trade": "Lawn care",
   "city": "Austin, TX",
   "kind": "weak site",
-  "loadMs": 318,
+  "loadMs": 396,
   "reasons": [
    "copyright 2016"
   ],
-  "email": ""
+  "email": "",
+  "improvements": []
  },
  {
   "placeId": "ChIJK1upxcGE1S0R1vTEIPrGMUg",
@@ -61,9 +64,15 @@
   "trade": "Lawn care",
   "city": "Austin, TX",
   "kind": "decent site",
-  "loadMs": 372,
+  "loadMs": 339,
   "reasons": [],
-  "email": "holler@deweylawns.com"
+  "email": "holler@deweylawns.com",
+  "improvements": [
+   "no tap-to-call link",
+   "no quote or booking form",
+   "no reviews on the site",
+   "no meta description"
+  ]
  },
  {
   "placeId": "ChIJqxRIf3dNW4YR1U4PKHUxb_I",
@@ -77,11 +86,12 @@
   "trade": "Lawn care",
   "city": "Austin, TX",
   "kind": "weak site",
-  "loadMs": 1331,
+  "loadMs": 887,
   "reasons": [
    "copyright 2021"
   ],
-  "email": "support@goatlawnsatx.com"
+  "email": "support@goatlawnsatx.com",
+  "improvements": []
  },
  {
   "placeId": "ChIJe5TlSI5NW4YRLNHx2zxlDpQ",
@@ -95,9 +105,12 @@
   "trade": "Lawn care",
   "city": "Austin, TX",
   "kind": "decent site",
-  "loadMs": 420,
+  "loadMs": 446,
   "reasons": [],
-  "email": "austinslawnenforcer@gmail.com"
+  "email": "austinslawnenforcer@gmail.com",
+  "improvements": [
+   "no tap-to-call link"
+  ]
  },
  {
   "placeId": "ChIJEwj4wo30iQwRU_HLKNa-_pE",
@@ -111,11 +124,12 @@
   "trade": "Lawn care",
   "city": "Austin, TX",
   "kind": "weak site",
-  "loadMs": 4179,
+  "loadMs": 5681,
   "reasons": [
-   "slow (4.2s)"
+   "slow (5.7s)"
   ],
-  "email": "info@zazulandscaping.com"
+  "email": "info@zazulandscaping.com",
+  "improvements": []
  },
  {
   "placeId": "ChIJa__6dq14UQIR6bueCsFmCTo",
@@ -128,10 +142,11 @@
   "mapsUrl": "https://maps.google.com/?cid=4181986708283112425&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
   "trade": "Mobile car detailing",
   "city": "Austin, TX",
-  "kind": "decent site",
-  "loadMs": 607,
+  "kind": "strong site",
+  "loadMs": 563,
   "reasons": [],
-  "email": "hillcountrydetails@gmail.com"
+  "email": "hillcountrydetails@gmail.com",
+  "improvements": []
  },
  {
   "placeId": "ChIJvVqfg2e1RIYRFmSgwjRqHpQ",
@@ -145,9 +160,12 @@
   "trade": "Mobile car detailing",
   "city": "Austin, TX",
   "kind": "decent site",
-  "loadMs": 1214,
+  "loadMs": 1197,
   "reasons": [],
-  "email": "info@ontimemobilecardetailingatx.com"
+  "email": "info@ontimemobilecardetailingatx.com",
+  "improvements": [
+   "only 0 photos"
+  ]
  },
  {
   "placeId": "ChIJ9S8WTbzLRIYR9PYp0-VCc-w",
@@ -160,10 +178,11 @@
   "mapsUrl": "https://maps.google.com/?cid=17038035370130405108&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
   "trade": "Mobile car detailing",
   "city": "Austin, TX",
-  "kind": "decent site",
-  "loadMs": 1382,
+  "kind": "strong site",
+  "loadMs": 1521,
   "reasons": [],
-  "email": ""
+  "email": "",
+  "improvements": []
  },
  {
   "placeId": "ChIJtSya7vhG3C4RbfHzGOvRqDM",
@@ -177,9 +196,12 @@
   "trade": "Mobile car detailing",
   "city": "Austin, TX",
   "kind": "decent site",
-  "loadMs": 434,
+  "loadMs": 355,
   "reasons": [],
-  "email": "info@archersdetailing.com"
+  "email": "info@archersdetailing.com",
+  "improvements": [
+   "no quote or booking form"
+  ]
  },
  {
   "placeId": "ChIJ5fi7j7iDpakRsC9WHavW6SI",
@@ -192,10 +214,11 @@
   "mapsUrl": "https://maps.google.com/?cid=2515777897283071920&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
   "trade": "Mobile car detailing",
   "city": "Austin, TX",
-  "kind": "decent site",
-  "loadMs": 334,
+  "kind": "strong site",
+  "loadMs": 315,
   "reasons": [],
-  "email": "gavinscardetailing@gmail.com"
+  "email": "gavinscardetailing@gmail.com",
+  "improvements": []
  },
  {
   "placeId": "ChIJxRDv_kJLW4YRN1qflRP961I",
@@ -209,9 +232,13 @@
   "trade": "Mobile car detailing",
   "city": "Austin, TX",
   "kind": "decent site",
-  "loadMs": 524,
+  "loadMs": 487,
   "reasons": [],
-  "email": "capitaldetail@gmail.com"
+  "email": "capitaldetail@gmail.com",
+  "improvements": [
+   "no reviews on the site",
+   "only 0 photos"
+  ]
  },
  {
   "placeId": "ChIJSZI_xs61RIYRgr5oPOAI2sw",
@@ -224,10 +251,11 @@
   "mapsUrl": "https://maps.google.com/?cid=14761120487839415938&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
   "trade": "Mobile car detailing",
   "city": "Austin, TX",
-  "kind": "decent site",
-  "loadMs": 232,
+  "kind": "strong site",
+  "loadMs": 178,
   "reasons": [],
   "email": "support@keepcleanatx.com",
-  "emailNote": "email domain differs from the website: check it is theirs"
+  "emailNote": "email domain differs from the website: check it is theirs",
+  "improvements": []
  }
 ]
