@@ -1,0 +1,156 @@
+{
+  "kit": "detailing",
+  "trade": "Boat detailing",
+  "name": "Boat Beautiful Mobile Boat Detailing",
+  "legalName": "Boat Beautiful Mobile Boat Detailing",
+  "preview": true,
+  "placeId": "ChIJWRlWaNsxW4YRvP5pjplm8cI",
+  "title": "Boat Beautiful Mobile Boat Detailing | Boat detailing in Austin, TX",
+  "description": "Boat detailing built for Lake Austin, Lake Travis and Lake LBJ. We come to your dock or marina, no travel fee. 4.8 on Google from 187 reviews.",
+  "brand": "#1670ff",
+  "brandHi": "#52c6ff",
+  "accent": "#8fd0ff",
+  "logo": "logo.png",
+  "logoChip": false,
+  "wordmark": {
+    "top": "Boat Beautiful",
+    "bottom": "Mobile Boat Detailing"
+  },
+  "phone": "(512) 963-3290",
+  "email": "info@boatbeautiful.com",
+  "heroImage": "img/photo-1.jpg",
+  "heroAlt": "Two detailers machine-polishing a boat hull",
+  "rating": {
+    "score": "4.8",
+    "count": 187,
+    "url": "https://maps.google.com/?cid=14047121522450628284"
+  },
+  "kicker": "Boat detailing · Austin since 2008",
+  "headline": "Lake day ready.<br><em>Every day.</em>",
+  "intro": "Boat detailing built for Lake Austin, Lake Travis and Lake LBJ. We come to your dock or marina, no travel fee.",
+  "mobile": {
+    "title": "We bring the detail to your dock.",
+    "intro": "Boat Beautiful is mobile. We work on your boat where it sits, so you never haul it anywhere.",
+    "points": [
+      {
+        "name": "Dock or marina",
+        "text": "We come to your private dock or marina."
+      },
+      {
+        "name": "No travel fee",
+        "text": "Lake Austin, Lake Travis and Lake LBJ, no travel fee."
+      },
+      {
+        "name": "Flexible scheduling",
+        "text": "Book a one-time detail or join the regular program."
+      },
+      {
+        "name": "Free quotes",
+        "text": "Call, text or send the form for a free quote and expert advice."
+      }
+    ]
+  },
+  "servicesTitle": "Bow to stern.",
+  "servicesIntro": "One-time details, regular programs and long-lasting protection.",
+  "services": [
+    {
+      "name": "Boat Detailing",
+      "text": "Interior detailing and exterior polishing that remove dirt, grime and contaminants."
+    },
+    {
+      "name": "Boat Membership Detailing",
+      "text": "A regular detail program that keeps your boat clean and protected all year."
+    },
+    {
+      "name": "Marine Ceramic Coating",
+      "text": "Long-lasting shine, protection and easier maintenance."
+    },
+    {
+      "name": "Boat Gel Coat Restoration",
+      "text": "Multi-step restoration that brings back the finish of your hull."
+    }
+  ],
+  "also": [
+    {
+      "name": "RV detailing"
+    },
+    {
+      "name": "RV ceramic coating"
+    },
+    {
+      "name": "Boat dock wash"
+    }
+  ],
+  "alsoTitle": "We also detail",
+  "why": [
+    {
+      "name": "Since 2008",
+      "text": "Central Texas boat and RV detailing, with customers who return year after year."
+    },
+    {
+      "name": "Professional-grade products",
+      "text": "Proven techniques to protect and enhance your investment."
+    },
+    {
+      "name": "Easy to work with",
+      "text": "Flexible scheduling, free quotes and a team that shows up on time, according to our customers."
+    }
+  ],
+  "whyTitle": "Why boat owners stick with us.",
+  "howTitle": "Ready for the water in three steps.",
+  "steps": [
+    {
+      "name": "Tell us about your boat",
+      "text": "Send the form with the boat length and the lake or marina where it is kept."
+    },
+    {
+      "name": "Get your quote",
+      "text": "We recommend the right package and send you a free quote."
+    },
+    {
+      "name": "We come to you",
+      "text": "We detail it at your dock or marina and you hit the water."
+    }
+  ],
+  "contactTitle": "Book your boat in.",
+  "footerLine": "Mobile boat detailing in Austin, TX",
+  "reviews": [],
+  "hours": [
+    "Monday - Friday: 8:00 AM - 5:00 PM",
+    "Saturday - Sunday: Closed"
+  ],
+  "galleryTitle": "Fresh off the water.",
+  "vehicleTypes": [
+    "Boat",
+    "Pontoon",
+    "Yacht",
+    "Jet ski",
+    "Other"
+  ],
+  "modelPlaceholder": "e.g. Sea Ray 240, 24 ft",
+  "notePlaceholder": "Length, where it is docked or stored, what it needs…",
+  "gallery": [
+    {
+      "src": "img/photo-3.jpg",
+      "alt": "Detailer wiping down a wakeboard tower speaker",
+      "size": "big"
+    },
+    {
+      "src": "img/photo-8.jpg",
+      "alt": "Detailer buffing a red hull",
+      "size": "tall"
+    },
+    {
+      "src": "img/photo-6.jpg",
+      "alt": "Cabin cruiser in a covered slip"
+    },
+    {
+      "src": "img/photo-7.jpg",
+      "alt": "The Boat Beautiful crew"
+    }
+  ],
+  "areas": [
+    "Austin"
+  ],
+  "pitch": "site"
+}
