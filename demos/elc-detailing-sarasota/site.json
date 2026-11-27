@@ -1,0 +1,184 @@
+{
+  "kit": "detailing",
+  "trade": "Boat detailing",
+  "name": "ELC Detailing Sarasota",
+  "legalName": "ELC Detailing Sarasota",
+  "preview": true,
+  "placeId": "ChIJfVfewe9Fw4gRUdaeSTxoR-c",
+  "title": "ELC Detailing Sarasota | Boat detailing in Sarasota, FL",
+  "description": "Mobile boat detailing across Sarasota and the Gulf Coast. We clean, polish and protect your boat where it sits. 5.0 on Google from 96 reviews.",
+  "brand": "#1670ff",
+  "brandHi": "#52c6ff",
+  "accent": "#8fd0ff",
+  "logo": "logo.png",
+  "logoChip": false,
+  "wordmark": {
+    "top": "ELC Detailing",
+    "bottom": "Sarasota"
+  },
+  "phone": "(941) 993-7250",
+  "email": "contact@elcdetailing.com",
+  "heroImage": "img/photo-3.jpg",
+  "heroAlt": "ELC technician polishing a yacht hull in a marina",
+  "heroPosition": "60% 60%",
+  "heroPositionPhone": "60% 50%",
+  "rating": {
+    "score": "5.0",
+    "count": 96,
+    "url": "https://maps.google.com/?cid=16665403554250282577"
+  },
+  "kicker": "Boat detailing · Sarasota",
+  "headline": "Like the first day,<br><em>every day.</em>",
+  "intro": "Mobile boat detailing across Sarasota and the Gulf Coast. We clean, polish and protect your boat where it sits.",
+  "mobile": {
+    "title": "We come to your boat.",
+    "intro": "ELC Detailing is mobile. We work wherever you need us, from Sarasota to St. Petersburg.",
+    "points": [
+      {
+        "name": "Wherever you need us",
+        "text": "Sarasota, Bradenton, Longboat Key, Siesta Key, Venice and more."
+      },
+      {
+        "name": "Year-round care",
+        "text": "Annual plans with monthly, bi-monthly or weekly washes."
+      },
+      {
+        "name": "Eco-friendly products",
+        "text": "Less pollution, less exposure to harsh chemicals, less water."
+      },
+      {
+        "name": "Easy to book",
+        "text": "Call or send the form. We reply within 24 hours."
+      }
+    ]
+  },
+  "servicesTitle": "Bow to stern.",
+  "servicesIntro": "Routine washes. Full restoration. Protection that holds up in Florida sun and salt.",
+  "services": [
+    {
+      "name": "Full Detail",
+      "text": "Deep wash, vinyl care, metal polish and hand wax, with compound for oxidation when needed."
+    },
+    {
+      "name": "Detail Wash",
+      "text": "A deep wash that removes salt, grime, mold and rust stains from every surface and compartment."
+    },
+    {
+      "name": "Wet Sanding",
+      "text": "A 3-step process that removes heavy oxidation and scratches and brings back the gelcoat shine."
+    },
+    {
+      "name": "Teak Cleaning and Restoration",
+      "text": "Scrub, brighten and oil to bring back the original color of the wood."
+    },
+    {
+      "name": "Gelcoat Repair",
+      "text": "Repair for damaged gelcoat on your boat."
+    },
+    {
+      "name": "Bottom Paint Service",
+      "text": "Improves fuel efficiency and makes the hull easier to clean."
+    }
+  ],
+  "also": [
+    {
+      "name": "Commercial clients"
+    },
+    {
+      "name": "Annual boat management"
+    },
+    {
+      "name": "Hurricane action plan"
+    },
+    {
+      "name": "Buying or selling a boat"
+    }
+  ],
+  "alsoTitle": "We also detail",
+  "why": [
+    {
+      "name": "Experienced team",
+      "text": "Excellence in every detail, from a highly experienced crew."
+    },
+    {
+      "name": "365-day service",
+      "text": "Annual boat management keeps your boat ready to go."
+    },
+    {
+      "name": "Storm support",
+      "text": "We help secure your boat before a hurricane and clean it after."
+    }
+  ],
+  "whyTitle": "What we give you that others don't.",
+  "howTitle": "Ready for the water in three steps.",
+  "steps": [
+    {
+      "name": "Call or send the form",
+      "text": "Tell us about your boat and what it needs. We reply within 24 hours."
+    },
+    {
+      "name": "Pick your service",
+      "text": "A one-time detail or an annual plan with regular washes."
+    },
+    {
+      "name": "Enjoy the water",
+      "text": "We do the rest. Your boat looks like new."
+    }
+  ],
+  "contactTitle": "Book your boat in.",
+  "footerLine": "Mobile boat detailing in Sarasota and the Gulf Coast",
+  "reviews": [],
+  "hours": [
+    "Monday - Friday: 8:00 a.m. to 6:00 p.m."
+  ],
+  "galleryTitle": "Fresh off the water.",
+  "vehicleTypes": [
+    "Boat",
+    "Pontoon",
+    "Yacht",
+    "Jet ski",
+    "Other"
+  ],
+  "modelPlaceholder": "e.g. Sea Ray 240, 24 ft",
+  "notePlaceholder": "Length, where it is docked or stored, what it needs…",
+  "gallery": [
+    {
+      "src": "img/photo-10.jpg",
+      "alt": "Restored teak deck with rich color",
+      "size": "big"
+    },
+    {
+      "src": "img/photo-7.jpg",
+      "alt": "Clean boat interior with helm and seats"
+    },
+    {
+      "src": "img/photo-2.jpg",
+      "alt": "Clean white boat bow with gray and orange seats"
+    },
+    {
+      "src": "img/photo-8.jpg",
+      "alt": "ELC team washing a boat"
+    },
+    {
+      "src": "img/photo-12.jpg",
+      "alt": "Teak deck along a covered bow",
+      "size": "tall"
+    },
+    {
+      "src": "img/photo-6.jpg",
+      "alt": "ELC technicians buffing a hull"
+    },
+    {
+      "src": "img/photo-15.jpg",
+      "alt": "Teak deck after restoration"
+    },
+    {
+      "src": "img/photo-5.jpg",
+      "alt": "Hull half polished showing oxidation removal"
+    }
+  ],
+  "areas": [
+    "Sarasota"
+  ],
+  "pitch": "site"
+}
