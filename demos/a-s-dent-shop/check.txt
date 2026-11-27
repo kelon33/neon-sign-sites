@@ -1,0 +1,4 @@
+- Logo is dark on a transparent background: shown on a white chip. Check it reads well.
+- Claude's notes: Site gives conflicting start dates (1991, 1996, 1983) and a 'lifetime warranty available' claim, so I left years and warranty out of the copy except the 1991 and 1996 facts. Review by 'Lawn Works' is as shown on the site. Photo 3 is an elephant graphic and was left out; Photo 8 is a before shot. No prices on site. Mobile points left empty because they do not come to the customer. Draft's claim of 'pick up your vehicle' not on site, removed.
+- Only 5 gallery photos.
+- Review (session): A shop, not mobile: the 'We come to you' section (kit default wording that came back after Claude left it empty) removed; pipeline/cli.mjs no longer refills it. Reviews are written on their own site (no widget). Only the 1991 and 1996 facts used, as the site states them. Good preview.

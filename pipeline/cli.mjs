@@ -131,7 +131,9 @@ async function main() {
         contactTitle: r.contactTitle, footerLine: r.footerLine, hours: r.hours, reviews: r.reviews,
       };
       const { copy: checked, dropped } = verify(merged, { text, facts: ai.facts });
-      for (const k of Object.keys(checked)) if (checked[k] === null) checked[k] = copy[k];
+      // A section Claude left empty on purpose (no mobile points: they don't come to you) stays out;
+      // other empty fields fall back to the kit wording.
+      for (const k of Object.keys(checked)) if (checked[k] === null && !(['mobile', 'highlights'].includes(k) && !points)) checked[k] = copy[k];
       if (checked.steps.length < 3) checked.steps = copy.steps;
       if (checked.services.length < 3) checked.services = copy.services;
       if (checked.highlights) checked.highlights.points = checked.highlights.points.filter((p) => verify({ steps: [p] }, { text, facts: ai.facts }).copy.steps.length);

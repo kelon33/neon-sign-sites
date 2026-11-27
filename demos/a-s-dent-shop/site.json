@@ -1,0 +1,144 @@
+{
+  "kit": "detailing",
+  "trade": "Paintless dent repair",
+  "name": "A.S. Dent Shop",
+  "legalName": "A.S. Dent Shop",
+  "preview": true,
+  "placeId": "ChIJF8oP6M9y_oYRWF6LnRoQt1Y",
+  "title": "A.S. Dent Shop | Paintless dent repair in Lubbock, TX",
+  "description": "Lubbock's original dent shop. We massage hail damage, door dings and creases out from behind, with no paint and no filler. 5.0 on Google from 1230 reviews.",
+  "brand": "#1670ff",
+  "brandHi": "#52c6ff",
+  "accent": "#8fd0ff",
+  "logo": "logo.png",
+  "logoChip": true,
+  "wordmark": {
+    "top": "A.S. Dent",
+    "bottom": "Shop"
+  },
+  "phone": "(806) 785-3034",
+  "email": "info@asdentshop.com",
+  "heroImage": "img/photo-1.jpg",
+  "heroAlt": "Classic blue Mustang fastback parked outside the A.S. Dent Shop",
+  "heroPosition": "60% 60%",
+  "heroPositionPhone": "60% 50%",
+  "rating": {
+    "score": "5.0",
+    "count": 1230,
+    "url": "https://maps.google.com/?cid=6248480714498203224"
+  },
+  "kicker": "Paintless dent repair · Lubbock",
+  "headline": "Hail damage gone.<br><em>Factory paint stays.</em>",
+  "intro": "Lubbock's original dent shop. We massage hail damage, door dings and creases out from behind, with no paint and no filler.",
+  "servicesTitle": "Every kind of dent.",
+  "servicesIntro": "From a single door ding to a full hail storm.",
+  "services": [
+    {
+      "name": "Paintless Hail Repair",
+      "text": "Hail dents worked out from underneath, and we work with your insurance adjuster on your behalf."
+    },
+    {
+      "name": "Paintless Dent Removal",
+      "text": "Door dings, fallen-debris dents and more, gently massaged back to original form."
+    },
+    {
+      "name": "Free Assessment",
+      "text": "Bring it by for a free look. Assessments run Monday to Friday, 10 to 1 and 2 to 4."
+    }
+  ],
+  "also": [],
+  "alsoTitle": "We also fix",
+  "why": [
+    {
+      "name": "Lubbock's original dent shop",
+      "text": "Owner Allen Scott trained in paintless dent removal in 1991 and opened the Slide Road shop in 1996."
+    },
+    {
+      "name": "Original paint, kept",
+      "text": "No painting, no fillers. You keep the factory finish and the value of your car."
+    },
+    {
+      "name": "Insurance handled",
+      "text": "We work with your adjuster on your behalf. A free loaner car comes with hail dent repair."
+    }
+  ],
+  "whyTitle": "The A.S. Dent Shop difference.",
+  "howTitle": "Back to like new in three steps.",
+  "steps": [
+    {
+      "name": "Call or stop by",
+      "text": "Get a free assessment at 3034 Slide Road. Tell us about the damage."
+    },
+    {
+      "name": "We handle the details",
+      "text": "We work with your insurance adjuster and set you up with a loaner for hail repair."
+    },
+    {
+      "name": "Pick it up",
+      "text": "We remove the dent and you drive away with your original factory paint."
+    }
+  ],
+  "contactTitle": "Got a dent?",
+  "footerLine": "Paintless dent repair in Lubbock",
+  "reviews": [
+    {
+      "text": "Dropped my mustang off to repair a door ding on my rear quarter panel, a difficult spot to work on and it looks as if nothing ever happened! AS Dent Shop did a fantastic job and will definitely bring my business back if ever needed again.",
+      "name": "ExotiiK A."
+    },
+    {
+      "text": "We took a 2021 Mustang GT with a dented top into AS Dent shop knowing it probably need to be replaced. AS Dent shop took a near  impossible job and made it look new! Great service and high quality work.",
+      "name": "Ann C."
+    },
+    {
+      "text": "I got damage from a hailstorm and was admitted in right away after making my insurance claim. They gave me a realistic estimated time of completion for fixing the damage.",
+      "name": "Joaquin"
+    },
+    {
+      "text": "Got a nasty door ding in my new truck it broke my heart. AS Dent shop made it completely disappear and I was happy again.",
+      "name": "Lawn Works"
+    },
+    {
+      "text": "Allen did a fantastic job on my vehicle. No hidden costs or excuses. Had my vehicle in and out in no time.",
+      "name": "Steve G."
+    },
+    {
+      "text": "Great service. Car looks brand new! Can’t see any residual dent or scratch.",
+      "name": "Carson J."
+    }
+  ],
+  "hours": [
+    "Monday - Friday: 8:30 AM – 5:30 PM",
+    "Saturday - Sunday: Closed",
+    "Free assessments Monday - Friday: 10 AM to 1 PM and 2 PM to 4 PM"
+  ],
+  "galleryTitle": "Dents gone, paint untouched.",
+  "notePlaceholder": "Where the dent is, how big, hail or a door ding…",
+  "ctaLabel": "Get an estimate",
+  "gallery": [
+    {
+      "src": "img/photo-9.jpg",
+      "alt": "Smooth black SUV rear quarter panel after dent repair",
+      "size": "big"
+    },
+    {
+      "src": "img/photo-6.jpg",
+      "alt": "Dent on a red car fender shown in a reflection board"
+    },
+    {
+      "src": "img/photo-7.jpg",
+      "alt": "Red fender with the dent reflection straightened"
+    },
+    {
+      "src": "img/photo-4.jpg",
+      "alt": "Door dent reflected in a gray car panel"
+    },
+    {
+      "src": "img/photo-5.jpg",
+      "alt": "Gray car door panel with reflection lines during repair"
+    }
+  ],
+  "areas": [
+    "Lubbock"
+  ],
+  "pitch": "site"
+}
