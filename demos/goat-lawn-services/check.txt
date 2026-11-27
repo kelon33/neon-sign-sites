@@ -1,0 +1,7 @@
+- No logo found: the header shows the name only.
+- Photo pitch: only 0 usable photos by Claude's choice, so no gallery; the email asks them for photos of their work.
+- Claude's notes: No reviews on site. Only 1 usable photo; photo 2 (gravel) left out. Photo 1 looks like stock and may not be their own work. Site claims 8 years and 384 lawns but left out as unverified. Hours taken from site.
+- Only 0 gallery photos.
+- No reviews on the site: the page shows the Google rating only.
+- No postal address yet (config.json sender.address): required by law before sending.
+- Review (session): Hero photo removed (Claude flagged it as probably stock, not their work). Photo pitch. No reviews on their site, so the page shows the Google rating only.

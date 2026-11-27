@@ -1,0 +1,128 @@
+{
+ "kit": "detailing",
+ "name": "DentLogic Paintless Dent Repair",
+ "legalName": "DentLogic Paintless Dent Repair",
+ "preview": true,
+ "placeId": "ChIJ_em80oEbTIYRXoTmJsf9mII",
+ "title": "DentLogic Paintless Dent Repair | Paintless dent repair in Crowley, TX",
+ "description": "Locally owned paintless dent repair in Crowley. One team member works with you from start to satisfaction, and we handle the rental car, the insurance claim and the pickup. 5.0 on Google from 578 reviews.",
+ "brand": "#1670ff",
+ "brandHi": "#52c6ff",
+ "accent": "#8fd0ff",
+ "logo": "logo.png",
+ "logoChip": false,
+ "wordmark": {
+  "top": "DentLogic",
+  "bottom": "Paintless Dent Repair"
+ },
+ "phone": "(469) 955-7782",
+ "email": "taylor@dentlogictx.com",
+ "heroImage": null,
+ "heroAlt": "",
+ "heroPosition": "60% 60%",
+ "heroPositionPhone": "60% 50%",
+ "rating": {
+  "score": "5.0",
+  "count": 578,
+  "url": "https://maps.google.com/?cid=9410550453183611998"
+ },
+ "kicker": "Paintless dent repair · Crowley, TX",
+ "headline": "Hail damage gone.<br><em>Hassle gone too.</em>",
+ "intro": "Locally owned paintless dent repair in Crowley. One team member works with you from start to satisfaction, and we handle the rental car, the insurance claim and the pickup.",
+ "mobile": {
+  "title": "We come to you. Then we bring it back.",
+  "intro": "Busy? DentLogic takes the work out of getting your car fixed.",
+  "points": [
+   {
+    "name": "Pickup and delivery",
+    "text": "We pick up your vehicle and deliver it back when repairs are done."
+   },
+   {
+    "name": "Rental car provided",
+    "text": "Through your insurance or through us, you have a way to get around."
+   },
+   {
+    "name": "Claim help",
+    "text": "We assist you in filing your insurance claim."
+   },
+   {
+    "name": "Mini-detail",
+    "text": "When repairs are complete, your car gets a mini-detail."
+   }
+  ]
+ },
+ "servicesTitle": "Everything your car needs.",
+ "servicesIntro": "Expert dent repair, plus the services that make it easy.",
+ "services": [
+  {
+   "name": "Paintless dent repair",
+   "text": "A sharp eye and a patient hand remove most dents without paint repair."
+  },
+  {
+   "name": "Hail damage repair",
+   "text": "Your car comes back without a trace of hail damage."
+  },
+  {
+   "name": "Deductible assistance",
+   "text": "We provide deductible assistance, with discounts, a referral program and gift cards available."
+  },
+  {
+   "name": "Insurance claim assistance",
+   "text": "We help you file your claim and work with your insurance company."
+  },
+  {
+   "name": "Rental car assistance",
+   "text": "A rental car is arranged so you stay on the road while we work."
+  },
+  {
+   "name": "Paint work, when necessary",
+   "text": "If the paint itself is damaged, it may need paint repair."
+  }
+ ],
+ "also": [],
+ "alsoTitle": "We also fix",
+ "why": [
+  {
+   "name": "Specialist technicians",
+   "text": "Our technicians have years of experience and specialize in paintless dent repair."
+  },
+  {
+   "name": "One point of contact",
+   "text": "A team member works directly with you from start to satisfaction."
+  },
+  {
+   "name": "Locally owned",
+   "text": "DentLogic was born and raised in Texas, and the owner focuses on the customer."
+  }
+ ],
+ "whyTitle": "Why drivers choose DentLogic.",
+ "howTitle": "Back to like new in three steps.",
+ "steps": [
+  {
+   "name": "Call or text",
+   "text": "Tell us about the damage. We explain the process and set up your rental car."
+  },
+  {
+   "name": "We handle the details",
+   "text": "We help with your insurance claim and can pick up your vehicle."
+  },
+  {
+   "name": "Drive it home",
+   "text": "We repair the damage, give it a mini-detail and deliver it back."
+  }
+ ],
+ "contactTitle": "Hail damage? Call us.",
+ "footerLine": "Paintless dent repair in Crowley, TX",
+ "reviews": [],
+ "hours": [
+  "Mon - Sat: 9am - 6pm, but you can call anytime"
+ ],
+ "galleryTitle": "Dents gone, paint untouched.",
+ "notePlaceholder": "Where the dent is, how big, hail or a door ding…",
+ "ctaLabel": "Get an estimate",
+ "gallery": [],
+ "areas": [
+  "Crowley"
+ ],
+ "pitch": "photos"
+}
