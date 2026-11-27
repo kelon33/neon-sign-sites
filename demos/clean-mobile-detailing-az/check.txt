@@ -3,3 +3,4 @@
 - No postal address yet (config.json sender.address): required by law before sending.
 - Review (session): Hero changed from a house/lawn shot to a technician foam-washing a car (phone crop shifted to keep him in view). "Why Clean" changed to "Why Clean Mobile". Checked on their site: no upfront payments, 100% Clean Car Guarantee, deionized water, $177, $117/month, hours, phone. "Licensed, trained and certified" is on their site but was left out.
 - This lead was marked "decent site" in the research; it is a polished, larger operation, so the pitch may land less well.
+- Review (2026-11-27): reviews removed. They were Google review texts shown on their site through a Trustindex widget (CLAUDE.md: never copy Google review texts). The page shows the Google rating only; the email says 'photos and services'.

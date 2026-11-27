@@ -2,3 +2,4 @@
 - Only 5 gallery photos.
 - No postal address yet (config.json sender.address): required by law before sending.
 - Review (session): Swapped out stock-looking gallery photos (Audi R8, red Ferrari, RV in the woods) for their own job photos (Porsche, Audi e-tron, Maybach). "His crew" changed to Brian alone; "repeat customers" dropped. Prices checked on their /car-detailing/ and /rv-wash-and-wax/ pages. One gallery photo shows a readable licence plate (it is on their own site).
+- Review (2026-11-27): reviews removed. They were Google review texts shown on their site through a Trustindex widget (CLAUDE.md: never copy Google review texts). The page shows the Google rating only; the email says 'photos and services'.
