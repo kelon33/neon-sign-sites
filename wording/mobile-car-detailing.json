@@ -6,10 +6,38 @@
    "from": "602-mobile-car-detailing",
    "headline": "Showroom shine.<br><em>Wherever you are.</em>",
    "servicesTitle": "Inside, outside, and everything that shines.",
+   "howTitle": "Booked in a minute. We come to you.",
    "contactTitle": "Book your detail.",
    "alsoTitle": "Not just cars:",
    "sectionTitle": "Your driveway is our shop.",
    "sectionIntro": "We bring the detail to you, so your day keeps moving."
+  },
+  {
+   "from": "affluent-auto-spa-mobile-detailing",
+   "headline": "Showroom shine.<br><em>Wherever you are.</em>",
+   "servicesTitle": "Inside, outside, and everything that shines.",
+   "servicesIntro": "From a deep interior clean to multi-stage paint correction, with high-quality products for every surface.",
+   "whyTitle": "The detail is in the name.",
+   "howTitle": "Book it. We show up. You drive off shining.",
+   "contactTitle": "Book your detail.",
+   "galleryTitle": "Fresh off the driveway.",
+   "alsoTitle": "Not just cars:",
+   "sectionTitle": "Your driveway is our shop.",
+   "sectionIntro": "Book online or call. We show up with everything we need.",
+   "steps": [
+    {
+     "name": "Tell us about your vehicle",
+     "text": "Call or send the form with your vehicle and the service you want."
+    },
+    {
+     "name": "We come to you",
+     "text": "We arrive with the equipment and products to do the job on site."
+    },
+    {
+     "name": "Take the keys back",
+     "text": "Your car is clean, restored and showroom-ready."
+    }
+   ]
   },
   {
    "from": "almazan-detailing",
@@ -37,6 +65,33 @@
    ]
   },
   {
+   "from": "alpha-pro-detailing",
+   "headline": "Showroom shine.<br><em>Right in your driveway.</em>",
+   "servicesTitle": "Inside, outside, and every detail between.",
+   "servicesIntro": "From a deep interior clean to multi-stage paint correction, with high-quality products for every surface.",
+   "whyTitle": "The detail is in the name.",
+   "howTitle": "Book it. We show up. You drive off shining.",
+   "contactTitle": "Book your detail.",
+   "galleryTitle": "Fresh off the driveway.",
+   "alsoTitle": "We also detail",
+   "sectionTitle": "Your driveway is our shop.",
+   "sectionIntro": "We come to the place that suits you, so your day keeps moving.",
+   "steps": [
+    {
+     "name": "Tell us about your car",
+     "text": "Call, text or send the form: your vehicle, the service and where it's parked."
+    },
+    {
+     "name": "We pull up",
+     "text": "We arrive on time at your home or office, with everything we need."
+    },
+    {
+     "name": "You get the keys back",
+     "text": "To a car that looks, and smells, brand new."
+    }
+   ]
+  },
+  {
    "from": "archers-mobile-detailing",
    "headline": "Showroom shine.<br><em>Right in your driveway.</em>",
    "servicesTitle": "Inside, outside, and everything that shines.",
@@ -60,6 +115,18 @@
      "text": "We make sure you are fully satisfied, then collect payment."
     }
    ]
+  },
+  {
+   "from": "cargo-detailing-car-detailing-las-vegas",
+   "headline": "We bring the shop<br><em>to your driveway.</em>",
+   "servicesTitle": "Inside, outside, and everything that shines.",
+   "servicesIntro": "From a deep interior clean to multi-stage paint correction, with high-quality products for every surface.",
+   "whyTitle": "The detail is in the name.",
+   "howTitle": "Book it. We show up. You drive off shining.",
+   "contactTitle": "Book your detail.",
+   "galleryTitle": "Fresh off the driveway.",
+   "alsoTitle": "Not just cars:",
+   "sectionTitle": "We come to you."
   },
   {
    "from": "cen-tex-mobile-wash",
@@ -119,11 +186,89 @@
    ]
   },
   {
+   "from": "deep-detailing",
+   "headline": "Showroom shine.<br><em>Wherever you are.</em>",
+   "servicesTitle": "Inside, outside, and every detail between.",
+   "servicesIntro": "Four services, one standard: attention to detail. Prices depend on your vehicle's size, condition and needs.",
+   "whyTitle": "The detail is in the name.",
+   "howTitle": "Book it. We show up. You drive off shining.",
+   "contactTitle": "Book your detail.",
+   "galleryTitle": "Fresh off the driveway.",
+   "alsoTitle": "We also detail",
+   "sectionTitle": "Your driveway is our shop.",
+   "sectionIntro": "We bring the detail to you, so your day keeps moving.",
+   "steps": [
+    {
+     "name": "Request a consultation",
+     "text": "Call or fill out the form. Consultations are free."
+    },
+    {
+     "name": "Get your quote",
+     "text": "We price by your vehicle's size, condition and needs."
+    },
+    {
+     "name": "Pick up your car",
+     "text": "Detailed, protected and ready for the big reveal."
+    }
+   ]
+  },
+  {
+   "from": "detail-city-las-vegas",
+   "headline": "We bring the shop<br><em>to your driveway.</em>",
+   "servicesTitle": "Inside, outside, and everything that shines.",
+   "servicesIntro": "From a one-time clean to regular upkeep, pick the service that fits your vehicle.",
+   "howTitle": "Book it. We show up. You drive off shining.",
+   "galleryTitle": "Fresh off the driveway.",
+   "alsoTitle": "Not just cars:",
+   "steps": [
+    {
+     "name": "Tell us about your car",
+     "text": "Call, text or send the form: your vehicle, the service and where it's parked."
+    },
+    {
+     "name": "We pull up",
+     "text": "We arrive on time at your home or office, with everything we need."
+    },
+    {
+     "name": "You get the keys back",
+     "text": "To a car that looks, and smells, brand new."
+    }
+   ]
+  },
+  {
+   "from": "elite-mobile-detailing",
+   "headline": "Showroom shine,<br><em>at your driveway.</em>",
+   "servicesTitle": "Inside, outside, and everything that shines.",
+   "servicesIntro": "Prices start at the amounts shown and depend on vehicle size: small, medium or large.",
+   "whyTitle": "The detail is in the name.",
+   "howTitle": "A clean vehicle in three steps.",
+   "contactTitle": "Book your detail.",
+   "galleryTitle": "Fresh off the driveway.",
+   "alsoTitle": "Not just cars:",
+   "sectionTitle": "Your driveway is our shop.",
+   "sectionIntro": "We bring the detail to you, so your day keeps moving.",
+   "steps": [
+    {
+     "name": "Book",
+     "text": "Book online or by phone and stay updated the whole way."
+    },
+    {
+     "name": "We detail",
+     "text": "Our experts inspect your vehicle and detail it with high-quality products and tools."
+    },
+    {
+     "name": "You approve",
+     "text": "Inspect the result, make sure you're satisfied, then pay."
+    }
+   ]
+  },
+  {
    "from": "ericks-auto-detailing",
    "headline": "Showroom shine.<br><em>Wherever you are.</em>",
    "servicesTitle": "Inside, outside, and everything that shines.",
    "servicesIntro": "From a deep interior clean to multi-stage paint correction, with high-quality products for every surface.",
    "whyTitle": "The detail is in the name.",
+   "howTitle": "Booked in a minute. We come to you.",
    "contactTitle": "Book your detail.",
    "galleryTitle": "Fresh off the driveway.",
    "alsoTitle": "Not just cars:",
@@ -145,9 +290,179 @@
    ]
   },
   {
+   "from": "exclusive-auto-detailing-and-ceramic-coating",
+   "headline": "Showroom shine.<br><em>Right in your driveway.</em>",
+   "servicesTitle": "Inside, outside, and everything that shines.",
+   "servicesIntro": "Start with an interior detail. Add what your car needs.",
+   "whyTitle": "Why people stay with us.",
+   "howTitle": "Book it. We show up. You drive off shining.",
+   "contactTitle": "Book your detail.",
+   "galleryTitle": "Fresh off the driveway.",
+   "alsoTitle": "Not just cars:",
+   "sectionTitle": "Your driveway is our shop.",
+   "sectionIntro": "We come to the place that suits you, so your day keeps moving.",
+   "steps": [
+    {
+     "name": "Tell us about your car",
+     "text": "Fill out the form with your vehicle, the services you want and where it is."
+    },
+    {
+     "name": "Get your quote",
+     "text": "We get in touch to confirm the appointment and send a detailed quote."
+    },
+    {
+     "name": "We pull up",
+     "text": "We detail your car at your home, workplace or apartment."
+    }
+   ]
+  },
+  {
+   "from": "luxe-detailing-artists",
+   "headline": "Showroom shine.<br><em>Right in your driveway.</em>",
+   "servicesTitle": "Three details. One clear price each.",
+   "servicesIntro": "From a one-time clean to regular upkeep, pick the service that fits your vehicle.",
+   "whyTitle": "The detail is in the name.",
+   "howTitle": "Book it. We show up. You drive off shining.",
+   "contactTitle": "Book your consultation.",
+   "galleryTitle": "Fresh off the driveway.",
+   "alsoTitle": "Not just cars:",
+   "steps": [
+    {
+     "name": "Tell us about your vehicle",
+     "text": "Call or send the form with your vehicle and the service you want."
+    },
+    {
+     "name": "We come to you",
+     "text": "We arrive with the equipment and products to do the job on site."
+    },
+    {
+     "name": "Take the keys back",
+     "text": "Your car is clean, restored and showroom-ready."
+    }
+   ]
+  },
+  {
+   "from": "lvdetailer-mobile-car-detailing",
+   "headline": "Showroom shine.<br><em>Wherever you are.</em>",
+   "servicesTitle": "Inside, outside, protected.",
+   "servicesIntro": "From a one-time clean to regular upkeep, pick the service that fits your vehicle.",
+   "whyTitle": "The detail is in the name.",
+   "howTitle": "Book it. We show up. You drive off shining.",
+   "contactTitle": "Book your detail.",
+   "galleryTitle": "Fresh off the driveway.",
+   "alsoTitle": "We also detail",
+   "sectionTitle": "Your driveway is our shop.",
+   "sectionIntro": "We bring the detail to you, so your day keeps moving."
+  },
+  {
+   "from": "madhouse-detailing-customs",
+   "headline": "Showroom shine.<br><em>Wherever you are.</em>",
+   "servicesTitle": "Inside, outside, and everything that shines.",
+   "servicesIntro": "From a one-time clean to regular upkeep, pick the service that fits your vehicle.",
+   "whyTitle": "The detail is in the name.",
+   "howTitle": "Book it. We show up. You drive off shining.",
+   "contactTitle": "Book your detail.",
+   "galleryTitle": "Fresh off the driveway.",
+   "alsoTitle": "Not just cars:",
+   "steps": [
+    {
+     "name": "Tell us about your vehicle",
+     "text": "Call or send the form with your vehicle and the service you want."
+    },
+    {
+     "name": "We come to you",
+     "text": "We arrive with the equipment and products to do the job on site."
+    },
+    {
+     "name": "Take the keys back",
+     "text": "Your car is clean, restored and showroom-ready."
+    }
+   ]
+  },
+  {
+   "from": "maxcraft-mobile-detailing",
+   "headline": "Showroom shine.<br><em>Wherever you are.</em>",
+   "servicesTitle": "Inside, outside, and built to last.",
+   "servicesIntro": "Pick what your car needs, from a deep interior clean to lasting paint protection.",
+   "whyTitle": "The detail is in the name.",
+   "howTitle": "Book it. We show up. You drive off shining.",
+   "contactTitle": "Book your detail.",
+   "galleryTitle": "Fresh off the driveway.",
+   "alsoTitle": "Not just cars:",
+   "sectionTitle": "Your driveway is our shop.",
+   "sectionIntro": "We bring the detail to you, so your day keeps moving.",
+   "steps": [
+    {
+     "name": "Request a consultation",
+     "text": "Call or fill out the form. Consultations are free."
+    },
+    {
+     "name": "Get your quote",
+     "text": "We price by your vehicle's size, condition and needs."
+    },
+    {
+     "name": "Pick up your car",
+     "text": "Detailed, protected and ready for the big reveal."
+    }
+   ]
+  },
+  {
+   "from": "mobile-auto-spa",
+   "headline": "Showroom shine.<br><em>Right in your driveway.</em>",
+   "servicesTitle": "Inside, outside, and everything that shines.",
+   "servicesIntro": "Prices start at the amounts shown and depend on vehicle size: small, medium or large.",
+   "whyTitle": "The detail is in the name.",
+   "howTitle": "Book it. We show up. You drive off shining.",
+   "contactTitle": "Book your detail.",
+   "galleryTitle": "Fresh off the driveway.",
+   "alsoTitle": "Not just cars:",
+   "sectionTitle": "Your driveway is our shop.",
+   "sectionIntro": "We bring the detail to you, so your day keeps moving.",
+   "steps": [
+    {
+     "name": "Request a consultation",
+     "text": "Call or fill out the form. Consultations are free."
+    },
+    {
+     "name": "Get your quote",
+     "text": "We price by your vehicle's size, condition and needs."
+    },
+    {
+     "name": "Pick up your car",
+     "text": "Detailed, protected and ready for the big reveal."
+    }
+   ]
+  },
+  {
+   "from": "nashville-mobile-detail",
+   "headline": "Showroom shine.<br><em>Right in your driveway.</em>",
+   "servicesTitle": "Three details. One clear price each.",
+   "howTitle": "Book it. We show up. You drive off shining.",
+   "contactTitle": "Book your consultation.",
+   "galleryTitle": "Fresh off the driveway.",
+   "alsoTitle": "Not just cars:",
+   "sectionTitle": "Your driveway is our shop.",
+   "sectionIntro": "Book online or call. We show up with everything we need.",
+   "steps": [
+    {
+     "name": "Request a consultation",
+     "text": "Call or fill out the form. Consultations are free."
+    },
+    {
+     "name": "Get your quote",
+     "text": "We price by your vehicle's size, condition and needs."
+    },
+    {
+     "name": "Pick up your car",
+     "text": "Detailed, protected and ready for the big reveal."
+    }
+   ]
+  },
+  {
    "from": "new-shine-mobile-detailing-ceramic-coating",
    "servicesTitle": "Inside, outside, and everything that shines.",
    "servicesIntro": "Pick what your car needs, from a deep interior clean to lasting paint protection.",
+   "howTitle": "Booked in a minute. We come to you.",
    "contactTitle": "Book your detail.",
    "alsoTitle": "Not just cars:",
    "sectionTitle": "Your driveway is our shop.",
@@ -158,13 +473,40 @@
    "headline": "Showroom shine.<br><em>Right in your driveway.</em>",
    "servicesTitle": "Inside, outside, and every detail between.",
    "servicesIntro": "Prices start at the amounts shown and depend on vehicle size: small, medium or large.",
-   "whyTitle": "Why people stay with Manny.",
+   "whyTitle": "Why people stay with us.",
    "howTitle": "A clean vehicle in three steps.",
    "contactTitle": "Book your detail.",
    "galleryTitle": "Fresh off the driveway.",
    "alsoTitle": "Not just cars:",
    "sectionTitle": "Your driveway is our shop.",
    "sectionIntro": "We bring the detail to you, so your day keeps moving."
+  },
+  {
+   "from": "priority-one-detailing",
+   "headline": "Showroom shine.<br><em>Right in your driveway.</em>",
+   "servicesTitle": "Inside, outside, and every detail between.",
+   "servicesIntro": "From a deep interior clean to multi-stage paint correction, with high-quality products for every surface.",
+   "whyTitle": "The detail is in the name.",
+   "howTitle": "Book it. We show up. You drive off shining.",
+   "contactTitle": "Book your detail.",
+   "galleryTitle": "Fresh off the driveway.",
+   "alsoTitle": "We also detail",
+   "sectionTitle": "Your driveway is our shop.",
+   "sectionIntro": "We bring the detail to you, so your day keeps moving.",
+   "steps": [
+    {
+     "name": "Tell us about your vehicle",
+     "text": "Call or send the form with your vehicle and the service you want."
+    },
+    {
+     "name": "We come to you",
+     "text": "We arrive with the equipment and products to do the job on site."
+    },
+    {
+     "name": "Take the keys back",
+     "text": "Your car is clean, restored and showroom-ready."
+    }
+   ]
   },
   {
    "from": "rays-luxury-detailing",
@@ -192,6 +534,77 @@
    ]
   },
   {
+   "from": "reflectionz-detail-las-vegas-ceramicpro",
+   "headline": "Showroom shine.<br><em>Wherever you are.</em>",
+   "servicesTitle": "Inside, outside, and built to last.",
+   "servicesIntro": "Prices start at the amounts shown and depend on vehicle size: small, medium or large.",
+   "howTitle": "Book it. We show up. You drive off shining.",
+   "galleryTitle": "Fresh off the driveway.",
+   "alsoTitle": "Not just cars:",
+   "steps": [
+    {
+     "name": "Request a consultation",
+     "text": "Call or fill out the form. Consultations are free."
+    },
+    {
+     "name": "Get your quote",
+     "text": "We price by your vehicle's size, condition and needs."
+    },
+    {
+     "name": "Pick up your car",
+     "text": "Detailed, protected and ready for the big reveal."
+    }
+   ]
+  },
+  {
+   "from": "steam-art",
+   "headline": "Showroom shine.<br><em>Wherever you are.</em>",
+   "servicesTitle": "Inside, outside, and everything that shines.",
+   "servicesIntro": "Prices start at the amounts shown and depend on vehicle size: small, medium or large.",
+   "whyTitle": "The detail is in the name.",
+   "howTitle": "A clean vehicle in three steps.",
+   "contactTitle": "Book your detail.",
+   "galleryTitle": "Fresh off the driveway.",
+   "alsoTitle": "Not just cars:",
+   "sectionTitle": "Your driveway is our shop.",
+   "sectionIntro": "We bring the detail to you, so your day keeps moving.",
+   "steps": [
+    {
+     "name": "Tell us about your car",
+     "text": "Fill out the form with your vehicle, the services you want and where it is."
+    },
+    {
+     "name": "Get your quote",
+     "text": "We get in touch to confirm the appointment and send a detailed quote."
+    },
+    {
+     "name": "We pull up",
+     "text": "We detail your car at your home, workplace or apartment."
+    }
+   ]
+  },
+  {
+   "from": "the-best-detail",
+   "headline": "Showroom shine,<br><em>at your driveway.</em>",
+   "servicesTitle": "Inside, outside, and everything that shines.",
+   "servicesIntro": "Prices start at the amounts shown and depend on vehicle size: small, medium or large.",
+   "howTitle": "A clean vehicle in three steps.",
+   "galleryTitle": "Fresh off the driveway.",
+   "alsoTitle": "Not just cars:",
+   "sectionTitle": "Your driveway is our shop."
+  },
+  {
+   "from": "the-detail-code",
+   "headline": "Showroom shine.<br><em>Right in your driveway.</em>",
+   "servicesTitle": "Three details. One clear price each.",
+   "howTitle": "A clean vehicle in three steps.",
+   "contactTitle": "Book your consultation.",
+   "galleryTitle": "Fresh off the driveway.",
+   "alsoTitle": "Not just cars:",
+   "sectionTitle": "Your driveway is our shop.",
+   "sectionIntro": "Book online or call. We show up with everything we need."
+  },
+  {
    "from": "tonys-mobile-detailing",
    "headline": "Showroom shine,<br><em>at your driveway.</em>",
    "servicesTitle": "Inside, outside, protected.",
@@ -214,6 +627,33 @@
     {
      "name": "You approve",
      "text": "Inspect the result, make sure you're satisfied, then pay."
+    }
+   ]
+  },
+  {
+   "from": "touchstone-detailing",
+   "headline": "Showroom shine.<br><em>Right in your driveway.</em>",
+   "servicesTitle": "Three details. One clear price each.",
+   "servicesIntro": "From a deep interior clean to multi-stage paint correction, with high-quality products for every surface.",
+   "whyTitle": "The detail is in the name.",
+   "howTitle": "Book it. We show up. You drive off shining.",
+   "contactTitle": "Book your consultation.",
+   "galleryTitle": "Fresh off the driveway.",
+   "alsoTitle": "Not just cars:",
+   "sectionTitle": "Your driveway is our shop.",
+   "sectionIntro": "We bring the detail to you, so your day keeps moving.",
+   "steps": [
+    {
+     "name": "Tell us about your vehicle",
+     "text": "Call or send the form with your vehicle and the service you want."
+    },
+    {
+     "name": "We come to you",
+     "text": "We arrive with the equipment and products to do the job on site."
+    },
+    {
+     "name": "Take the keys back",
+     "text": "Your car is clean, restored and showroom-ready."
     }
    ]
   }

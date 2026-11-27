@@ -13,6 +13,56 @@
    "alsoTitle": "We also do:"
   },
   {
+   "from": "alphex-painting-remodeling",
+   "headline": "Fresh paint.<br><em>Honest work.</em>",
+   "servicesTitle": "Inside and out.",
+   "servicesIntro": "Homes, businesses and industrial sites. One crew that does it right.",
+   "whyTitle": "Why {town} homeowners choose us.",
+   "howTitle": "A fresh coat in three steps.",
+   "contactTitle": "Let's bring your vision to life.",
+   "galleryTitle": "Homes we’ve painted.",
+   "alsoTitle": "We also do:",
+   "steps": [
+    {
+     "name": "Free consultation",
+     "text": "Tell us what you need. We talk through the scope and give you a free quote."
+    },
+    {
+     "name": "Plan and schedule",
+     "text": "We agree on the details and set the work with clear communication."
+    },
+    {
+     "name": "Paint and walkthrough",
+     "text": "Our team does the work, then walks the finished job with you."
+    }
+   ]
+  },
+  {
+   "from": "atlantic-painting-renovations",
+   "headline": "Fresh paint.<br><em>Clean lines.</em>",
+   "servicesTitle": "Inside and out.",
+   "servicesIntro": "One room or the whole house. Free estimates.",
+   "whyTitle": "Why homeowners call us.",
+   "howTitle": "A fresh coat in three steps.",
+   "contactTitle": "Ready for a fresh coat?",
+   "galleryTitle": "Homes we’ve painted.",
+   "alsoTitle": "We also do:",
+   "steps": [
+    {
+     "name": "Ask for a free estimate",
+     "text": "Call or use the form to tell us about your project."
+    },
+    {
+     "name": "Plan the job",
+     "text": "We go over the work, colors and timing with you."
+    },
+    {
+     "name": "Enjoy the new look",
+     "text": "We paint, and aim to finish on time and on budget."
+    }
+   ]
+  },
+  {
    "from": "best-painter",
    "headline": "Fresh paint.<br><em>Done by family.</em>",
    "servicesTitle": "Inside and out.",
@@ -49,12 +99,162 @@
    "alsoTitle": "We also do:"
   },
   {
+   "from": "cal-pac-painting-of-nevada",
+   "headline": "Fresh paint.<br><em>Clean lines.</em>",
+   "servicesTitle": "Inside and out.",
+   "servicesIntro": "One room or the whole house. Free estimates.",
+   "whyTitle": "Why homeowners call us.",
+   "howTitle": "A fresh coat in three steps.",
+   "contactTitle": "Ready for a fresh coat?",
+   "galleryTitle": "Homes we’ve painted.",
+   "alsoTitle": "We also do:",
+   "steps": [
+    {
+     "name": "Free consultation",
+     "text": "Tell us what you need. We talk through the scope and give you a free quote."
+    },
+    {
+     "name": "Plan and schedule",
+     "text": "We agree on the details and set the work with clear communication."
+    },
+    {
+     "name": "Paint and walkthrough",
+     "text": "Our team does the work, then walks the finished job with you."
+    }
+   ]
+  },
+  {
+   "from": "colorwise-painting",
+   "headline": "Fresh paint.<br><em>Honest work.</em>",
+   "servicesTitle": "Inside and out.",
+   "servicesIntro": "One room or the whole property.",
+   "whyTitle": "Why homeowners call us.",
+   "howTitle": "A fresh coat in three steps.",
+   "contactTitle": "Ready for a fresh coat?",
+   "galleryTitle": "Homes we’ve painted.",
+   "alsoTitle": "We also do:",
+   "steps": [
+    {
+     "name": "Free estimate",
+     "text": "We evaluate your property, talk through colors and timing, and give you a detailed quote."
+    },
+    {
+     "name": "Prep and protect",
+     "text": "We sand, patch, prime and cover every surface before any paint goes on."
+    },
+    {
+     "name": "Paint and walk through",
+     "text": "We apply each coat with care, then inspect every detail with you."
+    }
+   ]
+  },
+  {
+   "from": "deco-plus-painting",
+   "headline": "We don't sell paint.<br><em>We sell transformation.</em>",
+   "servicesTitle": "Inside and out.",
+   "servicesIntro": "One room or the whole house. Every estimate is free and flat.",
+   "whyTitle": "Why {name}.",
+   "howTitle": "From estimate to final walkthrough.",
+   "contactTitle": "Ready for a fresh coat?",
+   "galleryTitle": "Homes we’ve painted.",
+   "alsoTitle": "We also do:",
+   "steps": [
+    {
+     "name": "Free estimate",
+     "text": "Tell us about the job. We look it over and give you a quote."
+    },
+    {
+     "name": "We do the work",
+     "text": "The crew arrives on schedule, and you get daily updates your way."
+    },
+    {
+     "name": "Final look",
+     "text": "We finish every detail so you are satisfied with the result."
+    }
+   ]
+  },
+  {
+   "from": "diesel-painting",
+   "headline": "Fresh paint.<br><em>Clean lines.</em>",
+   "servicesTitle": "Inside and out.",
+   "servicesIntro": "One room or the whole house. Free estimates.",
+   "whyTitle": "Why {town} homeowners choose us.",
+   "howTitle": "A fresh coat in three steps.",
+   "contactTitle": "Request a free quote.",
+   "galleryTitle": "Homes we’ve painted.",
+   "alsoTitle": "We also do:",
+   "steps": [
+    {
+     "name": "Ask for a free estimate",
+     "text": "Call or use the form to tell us about your project."
+    },
+    {
+     "name": "Plan the job",
+     "text": "We go over the work, colors and timing with you."
+    },
+    {
+     "name": "Enjoy the new look",
+     "text": "We paint, and aim to finish on time and on budget."
+    }
+   ]
+  },
+  {
+   "from": "dry-coats-painting-san-antonio",
+   "headline": "Clean walls.<br><em>Family-built finish.</em>",
+   "servicesTitle": "Inside and out.",
+   "servicesIntro": "One room or the whole house.",
+   "whyTitle": "Why homeowners call us.",
+   "howTitle": "A fresh coat in three steps.",
+   "contactTitle": "Ready for a fresh coat?",
+   "galleryTitle": "Homes we’ve painted.",
+   "alsoTitle": "We also do:",
+   "steps": [
+    {
+     "name": "Free estimate",
+     "text": "Tell us about the job. We look it over and give you a quote."
+    },
+    {
+     "name": "We do the work",
+     "text": "The crew arrives on schedule, and you get daily updates your way."
+    },
+    {
+     "name": "Final look",
+     "text": "We finish every detail so you are satisfied with the result."
+    }
+   ]
+  },
+  {
    "from": "dyer-painting-company-high-performance-floor-coatings",
    "servicesTitle": "Inside, outside, and underfoot.",
    "servicesIntro": "Homes, businesses and industrial sites. One crew that does it right.",
    "whyTitle": "Why customers come back.",
    "howTitle": "How a project works.",
    "contactTitle": "Request a free quote.",
+   "galleryTitle": "Homes we’ve painted.",
+   "alsoTitle": "We also do:",
+   "steps": [
+    {
+     "name": "Free consultation",
+     "text": "Tell us what you need. We talk through the scope and give you a free quote."
+    },
+    {
+     "name": "Plan and schedule",
+     "text": "We agree on the details and set the work with clear communication."
+    },
+    {
+     "name": "Paint and walkthrough",
+     "text": "Our team does the work, then walks the finished job with you."
+    }
+   ]
+  },
+  {
+   "from": "eastnashville-cb",
+   "headline": "Fresh paint.<br><em>Done by family.</em>",
+   "servicesTitle": "Inside and out.",
+   "servicesIntro": "One room or the whole house. Custom bids, no guesswork.",
+   "whyTitle": "Why homeowners call us.",
+   "howTitle": "A fresh coat in three steps.",
+   "contactTitle": "Ready for a fresh coat?",
    "galleryTitle": "Homes we’ve painted.",
    "alsoTitle": "We also do:",
    "steps": [
@@ -84,6 +284,131 @@
    "alsoTitle": "We also do:"
   },
   {
+   "from": "everlast-pro-painting",
+   "headline": "Fresh paint.<br><em>Honest work.</em>",
+   "servicesTitle": "Inside and out.",
+   "servicesIntro": "One room or the whole property.",
+   "whyTitle": "Why {name}.",
+   "howTitle": "A fresh coat in three steps.",
+   "contactTitle": "Request a free quote.",
+   "galleryTitle": "Homes we’ve painted.",
+   "alsoTitle": "We also do:",
+   "steps": [
+    {
+     "name": "Call for a free estimate",
+     "text": "We look at the work, ask questions and give you a flat price."
+    },
+    {
+     "name": "We prep and paint",
+     "text": "We mask, scrape, caulk and prime, then paint. We buy all the supplies."
+    },
+    {
+     "name": "Pay when it is done",
+     "text": "On most jobs, you pay nothing until everything is completely finished."
+    }
+   ]
+  },
+  {
+   "from": "halletts-painting-construction-services",
+   "headline": "We don't sell paint.<br><em>We sell transformation.</em>",
+   "servicesTitle": "Inside and out.",
+   "servicesIntro": "One room or the whole house. Every estimate is free and flat.",
+   "whyTitle": "Why {name}.",
+   "howTitle": "A fresh coat in three steps.",
+   "contactTitle": "Ready for a fresh coat?",
+   "galleryTitle": "Homes we’ve painted.",
+   "alsoTitle": "We also do:",
+   "steps": [
+    {
+     "name": "Call for a free estimate",
+     "text": "We look at the work, ask questions and give you a flat price."
+    },
+    {
+     "name": "We prep and paint",
+     "text": "We mask, scrape, caulk and prime, then paint. We buy all the supplies."
+    },
+    {
+     "name": "Pay when it is done",
+     "text": "On most jobs, you pay nothing until everything is completely finished."
+    }
+   ]
+  },
+  {
+   "from": "hendrick-painting",
+   "headline": "Fresh paint.<br><em>Clean lines.</em>",
+   "servicesTitle": "Inside and out.",
+   "servicesIntro": "One room or the whole house. Free estimates.",
+   "whyTitle": "Why {town} homeowners choose us.",
+   "howTitle": "A fresh coat in three steps.",
+   "contactTitle": "Ready for a fresh coat?",
+   "galleryTitle": "Homes we’ve painted.",
+   "alsoTitle": "We also do:",
+   "steps": [
+    {
+     "name": "Ask for a free estimate",
+     "text": "Call or use the form to tell us about your project."
+    },
+    {
+     "name": "Plan the job",
+     "text": "We go over the work, colors and timing with you."
+    },
+    {
+     "name": "Enjoy the new look",
+     "text": "We paint, and aim to finish on time and on budget."
+    }
+   ]
+  },
+  {
+   "from": "home-pros-painting-and-home-repairs",
+   "headline": "The painter you hire<br><em>is the painter who shows up.</em>",
+   "servicesTitle": "Inside and out.",
+   "servicesIntro": "Homes and businesses across {town}. Every project quoted free.",
+   "whyTitle": "Why homeowners call us.",
+   "howTitle": "A fresh coat in three steps.",
+   "contactTitle": "Ready for a fresh coat?",
+   "galleryTitle": "Homes we’ve painted.",
+   "alsoTitle": "We also do:",
+   "steps": [
+    {
+     "name": "Call for a free estimate",
+     "text": "We look at the work, ask questions and give you a flat price."
+    },
+    {
+     "name": "We prep and paint",
+     "text": "We mask, scrape, caulk and prime, then paint. We buy all the supplies."
+    },
+    {
+     "name": "Pay when it is done",
+     "text": "On most jobs, you pay nothing until everything is completely finished."
+    }
+   ]
+  },
+  {
+   "from": "j-j-custom-painting-company",
+   "headline": "Fresh paint.<br><em>Honest work.</em>",
+   "servicesTitle": "Inside and out.",
+   "servicesIntro": "Homes, businesses and industrial sites. One crew that does it right.",
+   "whyTitle": "Why {name}.",
+   "howTitle": "From estimate to final walk-through.",
+   "contactTitle": "Ready for a fresh coat?",
+   "galleryTitle": "Homes we’ve painted.",
+   "alsoTitle": "We also do:",
+   "steps": [
+    {
+     "name": "Free consultation",
+     "text": "Tell us what you need. We talk through the scope and give you a free quote."
+    },
+    {
+     "name": "Plan and schedule",
+     "text": "We agree on the details and set the work with clear communication."
+    },
+    {
+     "name": "Paint and walkthrough",
+     "text": "Our team does the work, then walks the finished job with you."
+    }
+   ]
+  },
+  {
    "from": "j-m-painting-and-remodeling",
    "headline": "Fresh paint.<br><em>Honest work.</em>",
    "servicesTitle": "Inside and out.",
@@ -110,6 +435,142 @@
    ]
   },
   {
+   "from": "j-v-painting",
+   "headline": "Fresh paint.<br><em>Done by family.</em>",
+   "servicesTitle": "Inside and out.",
+   "servicesIntro": "One room or the whole house. Custom bids, no guesswork.",
+   "whyTitle": "Why homeowners call us.",
+   "howTitle": "A fresh coat in three steps.",
+   "contactTitle": "Ready for a fresh coat?",
+   "galleryTitle": "Homes we’ve painted.",
+   "alsoTitle": "We also do:",
+   "steps": [
+    {
+     "name": "Ask for a free estimate",
+     "text": "Call or use the form to tell us about your project."
+    },
+    {
+     "name": "Plan the job",
+     "text": "We go over the work, colors and timing with you."
+    },
+    {
+     "name": "Enjoy the new look",
+     "text": "We paint, and aim to finish on time and on budget."
+    }
+   ]
+  },
+  {
+   "from": "jc-paint-and-more",
+   "headline": "Clean walls.<br><em>Family-built finish.</em>",
+   "servicesTitle": "Inside and out.",
+   "servicesIntro": "One room or the whole house.",
+   "whyTitle": "Why homeowners call us.",
+   "howTitle": "A finished room in three steps.",
+   "contactTitle": "Ready for a fresh coat?",
+   "galleryTitle": "Homes we’ve painted.",
+   "alsoTitle": "We also do:"
+  },
+  {
+   "from": "m-m-custom-painting",
+   "headline": "Clean walls.<br><em>Family-built finish.</em>",
+   "servicesTitle": "Inside and out.",
+   "servicesIntro": "One room or the whole house.",
+   "whyTitle": "Why customers come back.",
+   "howTitle": "A fresh coat in three steps.",
+   "contactTitle": "Ready for a fresh coat?",
+   "galleryTitle": "Homes we’ve painted.",
+   "alsoTitle": "We also do:",
+   "steps": [
+    {
+     "name": "Free estimate",
+     "text": "We evaluate your property, talk through colors and timing, and give you a detailed quote."
+    },
+    {
+     "name": "Prep and protect",
+     "text": "We sand, patch, prime and cover every surface before any paint goes on."
+    },
+    {
+     "name": "Paint and walk through",
+     "text": "We apply each coat with care, then inspect every detail with you."
+    }
+   ]
+  },
+  {
+   "from": "new-direction-painting",
+   "headline": "Fresh paint.<br><em>Honest work.</em>",
+   "servicesTitle": "Inside and out.",
+   "servicesIntro": "One room or the whole property.",
+   "whyTitle": "Why {name}.",
+   "howTitle": "From estimate to final walk-through.",
+   "contactTitle": "Ready for a fresh coat?",
+   "galleryTitle": "Homes we’ve painted.",
+   "alsoTitle": "We also do:",
+   "steps": [
+    {
+     "name": "Free estimate",
+     "text": "Tell us about the job. We look it over and give you a quote."
+    },
+    {
+     "name": "We do the work",
+     "text": "The crew arrives on schedule, and you get daily updates your way."
+    },
+    {
+     "name": "Final look",
+     "text": "We finish every detail so you are satisfied with the result."
+    }
+   ]
+  },
+  {
+   "from": "next-door-painting",
+   "headline": "Clean walls.<br><em>Family-built finish.</em>",
+   "servicesTitle": "Inside and out.",
+   "servicesIntro": "One room or the whole house.",
+   "whyTitle": "Why homeowners call us.",
+   "howTitle": "A fresh coat in three steps.",
+   "contactTitle": "Ready for a fresh coat?",
+   "galleryTitle": "Homes we’ve painted.",
+   "alsoTitle": "We also do:",
+   "steps": [
+    {
+     "name": "Free estimate",
+     "text": "Tell us about the job. We look it over and give you a quote."
+    },
+    {
+     "name": "We do the work",
+     "text": "The crew arrives on schedule, and you get daily updates your way."
+    },
+    {
+     "name": "Final look",
+     "text": "We finish every detail so you are satisfied with the result."
+    }
+   ]
+  },
+  {
+   "from": "paper-moon-painting",
+   "headline": "Clean walls.<br><em>Family-built finish.</em>",
+   "servicesTitle": "From the studs to the final coat.",
+   "servicesIntro": "One room or the whole house.",
+   "whyTitle": "Why {town} homeowners choose us.",
+   "howTitle": "How a project works.",
+   "contactTitle": "Ready for a fresh coat?",
+   "galleryTitle": "Homes we’ve painted.",
+   "alsoTitle": "We also do:",
+   "steps": [
+    {
+     "name": "Free estimate",
+     "text": "We evaluate your property, talk through colors and timing, and give you a detailed quote."
+    },
+    {
+     "name": "Prep and protect",
+     "text": "We sand, patch, prime and cover every surface before any paint goes on."
+    },
+    {
+     "name": "Paint and walk through",
+     "text": "We apply each coat with care, then inspect every detail with you."
+    }
+   ]
+  },
+  {
    "from": "pro-tech-painting-and-drywall",
    "headline": "Fresh paint.<br><em>Clean finish.</em>",
    "servicesTitle": "Inside and out.",
@@ -132,6 +593,31 @@
     {
      "name": "Prep, paint, finish",
      "text": "We protect your floors and furniture, paint, and leave your space clean."
+    }
+   ]
+  },
+  {
+   "from": "quality-touch-painting",
+   "headline": "Fresh paint.<br><em>Clean finish.</em>",
+   "servicesTitle": "Inside and out.",
+   "servicesIntro": "One room or a whole office building.",
+   "whyTitle": "Why homeowners call us.",
+   "howTitle": "From estimate to final walk-through.",
+   "contactTitle": "Ready for a fresh coat?",
+   "galleryTitle": "Homes we’ve painted.",
+   "alsoTitle": "We also do:",
+   "steps": [
+    {
+     "name": "Ask for a free estimate",
+     "text": "Call or use the form to tell us about your project."
+    },
+    {
+     "name": "Plan the job",
+     "text": "We go over the work, colors and timing with you."
+    },
+    {
+     "name": "Enjoy the new look",
+     "text": "We paint, and aim to finish on time and on budget."
     }
    ]
   },
@@ -207,6 +693,16 @@
      "text": "We check the work with you and make it right if anything falls short."
     }
    ]
+  },
+  {
+   "from": "tiny-patch-paint-co",
+   "servicesTitle": "Inside and out.",
+   "servicesIntro": "Homes, businesses and industrial sites. One crew that does it right.",
+   "whyTitle": "Why homeowners call us.",
+   "howTitle": "A fresh coat in three steps.",
+   "contactTitle": "Ready for a fresh coat?",
+   "galleryTitle": "Homes we’ve painted.",
+   "alsoTitle": "We also do:"
   },
   {
    "from": "top-notch-painting",

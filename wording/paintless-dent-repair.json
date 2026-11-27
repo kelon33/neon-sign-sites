@@ -21,6 +21,42 @@
    "alsoTitle": "We also fix"
   },
   {
+   "from": "all-out-paintless-dent-removal",
+   "headline": "Hail damage gone.<br><em>Hassle gone too.</em>",
+   "servicesTitle": "Everything your car needs.",
+   "servicesIntro": "From a single door ding to a full hail storm.",
+   "whyTitle": "The {name} difference.",
+   "contactTitle": "Hail damage? Call us.",
+   "galleryTitle": "Dents gone, paint untouched.",
+   "alsoTitle": "We also fix",
+   "sectionTitle": "Door dings, at your door.",
+   "sectionIntro": "For door dings and small dents, I come to you. Hail, deer hits and larger dents are repaired at my {town} shop."
+  },
+  {
+   "from": "appearance-1st-automotive",
+   "headline": "Hail damage gone.<br><em>Hassle gone too.</em>",
+   "servicesTitle": "Everything your car needs.",
+   "servicesIntro": "From a single door ding to hail damage.",
+   "howTitle": "Back to like new in three steps.",
+   "contactTitle": "Hail damage? Call us.",
+   "galleryTitle": "Dents gone, paint untouched.",
+   "alsoTitle": "We also fix",
+   "steps": [
+    {
+     "name": "Book a free inspection",
+     "text": "The owner or a team member comes out to inspect the damage, and a free loaner car is delivered to your home or work."
+    },
+    {
+     "name": "We work with your insurance",
+     "text": "We submit photos and an estimate so your insurance can approve the repair."
+    },
+    {
+     "name": "Pick up your vehicle",
+     "text": "Our master certified technicians repair it. You collect a freshly detailed, dent free vehicle."
+    }
+   ]
+  },
+  {
    "from": "auto-hail-solutions",
    "servicesIntro": "One team handles the repair, the claim and the rental.",
    "whyTitle": "The {name} difference.",
@@ -43,10 +79,304 @@
    ]
   },
   {
+   "from": "automobiles-for-tomorrow-auto-body-collision-repair",
+   "headline": "Hail damage gone.<br><em>Paint untouched.</em>",
+   "servicesTitle": "Every kind of dent.",
+   "servicesIntro": "One team handles the repair, the claim and the rental.",
+   "whyTitle": "Why {name}",
+   "howTitle": "Back to like new, step by step.",
+   "contactTitle": "Got a dent?",
+   "galleryTitle": "Dents gone, paint untouched.",
+   "alsoTitle": "We also fix",
+   "steps": [
+    {
+     "name": "Schedule a free inspection",
+     "text": "Call, text or visit our shop."
+    },
+    {
+     "name": "We handle insurance",
+     "text": "We take care of the claim so you don't have to."
+    },
+    {
+     "name": "Drive away satisfied",
+     "text": "We repair the damage with paintless dent repair and you drive off happy."
+    }
+   ]
+  },
+  {
+   "from": "autoworks",
+   "headline": "Hail damage gone.<br><em>Hassle gone too.</em>",
+   "servicesTitle": "Everything your car needs.",
+   "servicesIntro": "From a single door ding to a full hail storm.",
+   "whyTitle": "Why {name}",
+   "howTitle": "Dent-free in three steps.",
+   "contactTitle": "Hail damage? Call us.",
+   "galleryTitle": "Dents gone, paint untouched.",
+   "alsoTitle": "We also fix",
+   "steps": [
+    {
+     "name": "Send the details",
+     "text": "Call, or use the form with your year, make, model and photos of the damage."
+    },
+    {
+     "name": "Get an evaluation",
+     "text": "Bring the vehicle in and we look at the hail damage, dings or film options."
+    },
+    {
+     "name": "Drive it smooth",
+     "text": "We work the dents out and hand the vehicle back."
+    }
+   ]
+  },
+  {
+   "from": "bryans-hail-dent-repair",
+   "whyTitle": "The {name} difference.",
+   "howTitle": "Back to like new in three steps.",
+   "galleryTitle": "Dents gone, paint untouched.",
+   "alsoTitle": "We also fix",
+   "steps": [
+    {
+     "name": "Call or text",
+     "text": "Tell us about the damage. We explain the process and set up your rental car."
+    },
+    {
+     "name": "We handle the details",
+     "text": "We help with your insurance claim and can pick up your vehicle."
+    },
+    {
+     "name": "Drive it home",
+     "text": "We repair the damage, give it a mini-detail and deliver it back."
+    }
+   ]
+  },
+  {
+   "from": "c-s-paintless-dent-repair",
+   "headline": "Hail damage gone.<br><em>Paint untouched.</em>",
+   "servicesTitle": "Everything your car needs.",
+   "servicesIntro": "One team handles the repair, the claim and the rental.",
+   "whyTitle": "The {name} difference.",
+   "contactTitle": "Hail damage? Call us.",
+   "galleryTitle": "Dents gone, paint untouched.",
+   "alsoTitle": "We also fix",
+   "steps": [
+    {
+     "name": "Send the details",
+     "text": "Call, or use the form with your year, make, model and photos of the damage."
+    },
+    {
+     "name": "Get an evaluation",
+     "text": "Bring the vehicle in and we look at the hail damage, dings or film options."
+    },
+    {
+     "name": "Drive it smooth",
+     "text": "We work the dents out and hand the vehicle back."
+    }
+   ]
+  },
+  {
+   "from": "champion-dent-removal",
+   "headline": "Hail damage gone.<br><em>Hassle gone too.</em>",
+   "servicesIntro": "From a single door ding to a full hail storm.",
+   "whyTitle": "{name} difference.",
+   "galleryTitle": "Dents gone, paint untouched.",
+   "alsoTitle": "We also fix",
+   "sectionTitle": "We come to you. Then we bring it back.",
+   "sectionIntro": "We bring the detail to you, so your day keeps moving.",
+   "steps": [
+    {
+     "name": "Send the details",
+     "text": "Call, or use the form with your year, make, model and photos of the damage."
+    },
+    {
+     "name": "Get an evaluation",
+     "text": "Bring the vehicle in and we look at the hail damage, dings or film options."
+    },
+    {
+     "name": "Drive it smooth",
+     "text": "We work the dents out and hand the vehicle back."
+    }
+   ]
+  },
+  {
+   "from": "collision-center",
+   "headline": "Hail damage gone.<br><em>Factory paint stays.</em>",
+   "servicesTitle": "Every kind of dent.",
+   "servicesIntro": "From a single door ding to a full hail storm.",
+   "whyTitle": "The {name} difference.",
+   "howTitle": "Dent-free in three steps.",
+   "contactTitle": "Got hail damage?",
+   "galleryTitle": "Dents gone, paint untouched.",
+   "alsoTitle": "We also fix",
+   "steps": [
+    {
+     "name": "Send the details",
+     "text": "Call, or use the form with your year, make, model and photos of the damage."
+    },
+    {
+     "name": "Get an evaluation",
+     "text": "Bring the vehicle in and we look at the hail damage, dings or film options."
+    },
+    {
+     "name": "Drive it smooth",
+     "text": "We work the dents out and hand the vehicle back."
+    }
+   ]
+  },
+  {
+   "from": "collision-san-antonio-auto-body-shop-bumper-repair-paintless-dent-removal",
+   "headline": "Your car's dents.<br><em>Gone. Paint untouched.</em>",
+   "servicesIntro": "From a single door ding to a full hail storm.",
+   "whyTitle": "The {name} difference.",
+   "howTitle": "Back to like new in three steps.",
+   "galleryTitle": "Dents gone, paint untouched.",
+   "alsoTitle": "We also fix",
+   "steps": [
+    {
+     "name": "Send the details",
+     "text": "Call, or use the form with your year, make, model and photos of the damage."
+    },
+    {
+     "name": "Get an evaluation",
+     "text": "Bring the vehicle in and we look at the hail damage, dings or film options."
+    },
+    {
+     "name": "Drive it smooth",
+     "text": "We work the dents out and hand the vehicle back."
+    }
+   ]
+  },
+  {
+   "from": "dapper-dent-repair",
+   "headline": "Hail damage gone.<br><em>Hassle gone too.</em>",
+   "servicesIntro": "From a single door ding to hail damage.",
+   "whyTitle": "The {name} difference.",
+   "howTitle": "Back to like new in three steps.",
+   "galleryTitle": "Dents gone, paint untouched.",
+   "alsoTitle": "We also fix"
+  },
+  {
+   "from": "dent-dynasty",
+   "headline": "Hail damage gone.<br><em>Hassle gone too.</em>",
+   "servicesIntro": "From a single door ding to hail damage.",
+   "whyTitle": "{name} difference.",
+   "howTitle": "Back to like new, step by step.",
+   "contactTitle": "Got hail damage?",
+   "galleryTitle": "Dents gone, paint untouched.",
+   "alsoTitle": "We also fix",
+   "steps": [
+    {
+     "name": "Send the details",
+     "text": "Call, or use the form with your year, make, model and photos of the damage."
+    },
+    {
+     "name": "Get an evaluation",
+     "text": "Bring the vehicle in and we look at the hail damage, dings or film options."
+    },
+    {
+     "name": "Drive it smooth",
+     "text": "We work the dents out and hand the vehicle back."
+    }
+   ]
+  },
+  {
    "from": "dent-guy-inc-paintless-dent-repair",
    "headline": "Hail damage gone.<br><em>Factory paint stays.</em>",
    "servicesIntro": "Hail damage, everyday dents, and protective film, handled with the same hands-on care.",
    "howTitle": "Back to like new in three steps.",
+   "galleryTitle": "Dents gone, paint untouched.",
+   "alsoTitle": "We also fix",
+   "steps": [
+    {
+     "name": "Send the details",
+     "text": "Call, or use the form with your year, make, model and photos of the damage."
+    },
+    {
+     "name": "Get an evaluation",
+     "text": "Bring the vehicle in and we look at the hail damage, dings or film options."
+    },
+    {
+     "name": "Drive it smooth",
+     "text": "We work the dents out and hand the vehicle back."
+    }
+   ]
+  },
+  {
+   "from": "dent-magic",
+   "headline": "Hail damage gone.<br><em>Factory paint stays.</em>",
+   "servicesIntro": "Hail damage, everyday dents, and protective film, handled with the same hands-on care.",
+   "whyTitle": "The {name} difference.",
+   "galleryTitle": "Dents gone, paint untouched.",
+   "alsoTitle": "We also fix",
+   "steps": [
+    {
+     "name": "Send the details",
+     "text": "Call, or use the form with your year, make, model and photos of the damage."
+    },
+    {
+     "name": "Get an evaluation",
+     "text": "Bring the vehicle in and we look at the hail damage, dings or film options."
+    },
+    {
+     "name": "Drive it smooth",
+     "text": "We work the dents out and hand the vehicle back."
+    }
+   ]
+  },
+  {
+   "from": "dent-technique",
+   "headline": "Hail damage gone.<br><em>Factory paint stays.</em>",
+   "servicesIntro": "From a single door ding to a full hail storm.",
+   "whyTitle": "The {name} difference.",
+   "howTitle": "Back to like new, step by step.",
+   "contactTitle": "Got hail damage?",
+   "galleryTitle": "Dents gone, paint untouched.",
+   "alsoTitle": "We also fix",
+   "steps": [
+    {
+     "name": "Call or text",
+     "text": "Tell us about the damage. We explain the process and set up your rental car."
+    },
+    {
+     "name": "We handle the details",
+     "text": "We help with your insurance claim and can pick up your vehicle."
+    },
+    {
+     "name": "Drive it home",
+     "text": "We repair the damage, give it a mini-detail and deliver it back."
+    }
+   ]
+  },
+  {
+   "from": "dent-titan-a-d-r",
+   "headline": "Your car's dents.<br><em>Gone. Paint untouched.</em>",
+   "servicesIntro": "From a single door ding to a full hail storm.",
+   "whyTitle": "The {name} difference.",
+   "howTitle": "Back to like new, step by step.",
+   "galleryTitle": "Dents gone, paint untouched.",
+   "alsoTitle": "We also fix",
+   "steps": [
+    {
+     "name": "Send the details",
+     "text": "Call, or use the form with your year, make, model and photos of the damage."
+    },
+    {
+     "name": "Get an evaluation",
+     "text": "Bring the vehicle in and we look at the hail damage, dings or film options."
+    },
+    {
+     "name": "Drive it smooth",
+     "text": "We work the dents out and hand the vehicle back."
+    }
+   ]
+  },
+  {
+   "from": "dentcore-pdr",
+   "headline": "Hail damage gone.<br><em>Hassle gone too.</em>",
+   "servicesTitle": "Every kind of dent.",
+   "servicesIntro": "From a single door ding to a full hail storm.",
+   "whyTitle": "The {name} difference.",
+   "howTitle": "Dent-free in three steps.",
+   "contactTitle": "Got a dent?",
    "galleryTitle": "Dents gone, paint untouched.",
    "alsoTitle": "We also fix",
    "steps": [
@@ -100,6 +430,134 @@
    "sectionIntro": "For door dings and small dents, I come to you. Hail, deer hits and larger dents are repaired at my {town} shop."
   },
   {
+   "from": "inline-dent-repair",
+   "headline": "Hail damage gone.<br><em>Paint untouched.</em>",
+   "servicesIntro": "One team handles the repair, the claim and the rental.",
+   "whyTitle": "Why {name}",
+   "howTitle": "Back to like new, step by step.",
+   "contactTitle": "Got hail damage?",
+   "galleryTitle": "Dents gone, paint untouched.",
+   "alsoTitle": "We also fix",
+   "steps": [
+    {
+     "name": "Send the details",
+     "text": "Call, or use the form with your year, make, model and photos of the damage."
+    },
+    {
+     "name": "Get an evaluation",
+     "text": "Bring the vehicle in and we look at the hail damage, dings or film options."
+    },
+    {
+     "name": "Drive it smooth",
+     "text": "We work the dents out and hand the vehicle back."
+    }
+   ]
+  },
+  {
+   "from": "invision-pdr",
+   "headline": "Your car's dents.<br><em>Gone. Paint untouched.</em>",
+   "servicesTitle": "Every kind of dent.",
+   "servicesIntro": "From a single door ding to a full hail storm.",
+   "whyTitle": "{name} difference.",
+   "howTitle": "Dent-free in three steps.",
+   "contactTitle": "Got hail damage?",
+   "galleryTitle": "Dents gone, paint untouched.",
+   "alsoTitle": "We also fix",
+   "sectionTitle": "Your driveway is our shop.",
+   "sectionIntro": "Our fully equipped mobile units come to your home or office across DFW, so your day keeps moving.",
+   "steps": [
+    {
+     "name": "Send the details",
+     "text": "Call, or use the form with your year, make, model and photos of the damage."
+    },
+    {
+     "name": "Get an evaluation",
+     "text": "Bring the vehicle in and we look at the hail damage, dings or film options."
+    },
+    {
+     "name": "Drive it smooth",
+     "text": "We work the dents out and hand the vehicle back."
+    }
+   ]
+  },
+  {
+   "from": "legacy-pdr-solutions",
+   "headline": "Hail damage gone.<br><em>Hassle gone too.</em>",
+   "servicesTitle": "Everything your car needs.",
+   "servicesIntro": "From a single door ding to hail damage.",
+   "whyTitle": "The {name} difference.",
+   "howTitle": "Back to like new in three steps.",
+   "contactTitle": "Hail damage? Call us.",
+   "galleryTitle": "Dents gone, paint untouched.",
+   "alsoTitle": "We also fix",
+   "steps": [
+    {
+     "name": "Send the details",
+     "text": "Call, or use the form with your year, make, model and photos of the damage."
+    },
+    {
+     "name": "Get an evaluation",
+     "text": "Bring the vehicle in and we look at the hail damage, dings or film options."
+    },
+    {
+     "name": "Drive it smooth",
+     "text": "We work the dents out and hand the vehicle back."
+    }
+   ]
+  },
+  {
+   "from": "nexterra",
+   "headline": "Your car's dents.<br><em>Gone. Paint untouched.</em>",
+   "servicesTitle": "Every kind of dent.",
+   "servicesIntro": "From a single door ding to a full hail storm. No job too big or too small.",
+   "whyTitle": "The {name} difference.",
+   "howTitle": "Back to like new, step by step.",
+   "contactTitle": "Got hail damage?",
+   "galleryTitle": "Dents gone, paint untouched.",
+   "alsoTitle": "We also fix",
+   "sectionTitle": "Your driveway is our shop.",
+   "sectionIntro": "Our fully equipped mobile units come to your home or office across DFW, so your day keeps moving.",
+   "steps": [
+    {
+     "name": "Call or text",
+     "text": "Tell us about the damage. We explain the process and set up your rental car."
+    },
+    {
+     "name": "We handle the details",
+     "text": "We help with your insurance claim and can pick up your vehicle."
+    },
+    {
+     "name": "Drive it home",
+     "text": "We repair the damage, give it a mini-detail and deliver it back."
+    }
+   ]
+  },
+  {
+   "from": "north-nashville-collision",
+   "headline": "Your car's dents.<br><em>Gone. Paint untouched.</em>",
+   "servicesTitle": "Every kind of dent.",
+   "servicesIntro": "From a single door ding to a full hail storm.",
+   "whyTitle": "The {name} difference.",
+   "howTitle": "Dent-free in three steps.",
+   "contactTitle": "Got hail damage?",
+   "galleryTitle": "Dents gone, paint untouched.",
+   "alsoTitle": "We also fix",
+   "steps": [
+    {
+     "name": "Call or text",
+     "text": "Tell us about the damage. We explain the process and set up your rental car."
+    },
+    {
+     "name": "We handle the details",
+     "text": "We help with your insurance claim and can pick up your vehicle."
+    },
+    {
+     "name": "Drive it home",
+     "text": "We repair the damage, give it a mini-detail and deliver it back."
+    }
+   ]
+  },
+  {
    "from": "paintless-dr",
    "headline": "Your car's dents.<br><em>Gone. Paint untouched.</em>",
    "servicesTitle": "Every kind of dent.",
@@ -111,6 +569,103 @@
    "alsoTitle": "We also fix",
    "sectionTitle": "Your driveway is our shop.",
    "sectionIntro": "Our fully equipped mobile units come to your home or office across DFW, so your day keeps moving."
+  },
+  {
+   "from": "performance-paintless",
+   "headline": "Hail damage gone.<br><em>Hassle gone too.</em>",
+   "servicesTitle": "Everything your car needs.",
+   "servicesIntro": "From a single door ding to hail damage.",
+   "whyTitle": "{name} difference.",
+   "howTitle": "Back to like new in three steps.",
+   "contactTitle": "Hail damage? Call us.",
+   "galleryTitle": "Dents gone, paint untouched.",
+   "alsoTitle": "We also fix",
+   "steps": [
+    {
+     "name": "Book a free inspection",
+     "text": "The owner or a team member comes out to inspect the damage, and a free loaner car is delivered to your home or work."
+    },
+    {
+     "name": "We work with your insurance",
+     "text": "We submit photos and an estimate so your insurance can approve the repair."
+    },
+    {
+     "name": "Pick up your vehicle",
+     "text": "Our master certified technicians repair it. You collect a freshly detailed, dent free vehicle."
+    }
+   ]
+  },
+  {
+   "from": "prime-time-pdr",
+   "headline": "Your car's dents.<br><em>Gone. Paint untouched.</em>",
+   "servicesTitle": "Every kind of dent.",
+   "servicesIntro": "From a single door ding to a full hail storm.",
+   "whyTitle": "Why {name}",
+   "howTitle": "Dent-free in three steps.",
+   "contactTitle": "Got a dent?",
+   "galleryTitle": "Dents gone, paint untouched.",
+   "alsoTitle": "We also fix",
+   "steps": [
+    {
+     "name": "Call or text",
+     "text": "Tell us about the damage. We explain the process and set up your rental car."
+    },
+    {
+     "name": "We handle the details",
+     "text": "We help with your insurance claim and can pick up your vehicle."
+    },
+    {
+     "name": "Drive it home",
+     "text": "We repair the damage, give it a mini-detail and deliver it back."
+    }
+   ]
+  },
+  {
+   "from": "smooth-a-dent",
+   "headline": "Your car's dents.<br><em>Gone. Paint untouched.</em>",
+   "servicesIntro": "From a single door ding to a full hail storm. No job too big or too small.",
+   "whyTitle": "The {name} difference.",
+   "howTitle": "Back to like new, step by step.",
+   "galleryTitle": "Dents gone, paint untouched.",
+   "alsoTitle": "We also fix",
+   "sectionTitle": "Door dings, at your door.",
+   "sectionIntro": "For door dings and small dents, I come to you. Hail, deer hits and larger dents are repaired at my {town} shop."
+  },
+  {
+   "from": "sprayworks-mobile-scratch-and-dent-repair",
+   "headline": "Your car's dents.<br><em>Gone. Paint untouched.</em>",
+   "servicesIntro": "From a single door ding to a full hail storm. No job too big or too small.",
+   "whyTitle": "The {name} difference.",
+   "howTitle": "Back to like new in three steps.",
+   "galleryTitle": "Dents gone, paint untouched.",
+   "alsoTitle": "We also fix",
+   "sectionTitle": "Your driveway is our shop.",
+   "sectionIntro": "Our fully equipped mobile units come to your home or office across DFW, so your day keeps moving.",
+   "steps": [
+    {
+     "name": "Send the details",
+     "text": "Call, or use the form with your year, make, model and photos of the damage."
+    },
+    {
+     "name": "Get an evaluation",
+     "text": "Bring the vehicle in and we look at the hail damage, dings or film options."
+    },
+    {
+     "name": "Drive it smooth",
+     "text": "We work the dents out and hand the vehicle back."
+    }
+   ]
+  },
+  {
+   "from": "texas-dents",
+   "servicesTitle": "Every kind of dent.",
+   "servicesIntro": "From a single door ding to a full hail storm. No job too big or too small.",
+   "whyTitle": "{name} difference.",
+   "howTitle": "Back to like new, step by step.",
+   "contactTitle": "Got hail damage?",
+   "alsoTitle": "We also fix",
+   "sectionTitle": "We come to you. Then we bring it back.",
+   "sectionIntro": "We bring the detail to you, so your day keeps moving."
   },
   {
    "from": "the-dentless-cowboys",
@@ -134,6 +689,29 @@
     {
      "name": "Drive away satisfied",
      "text": "We repair the damage with paintless dent repair and you drive off happy."
+    }
+   ]
+  },
+  {
+   "from": "true-craft-paintless-dent-repair",
+   "headline": "Your car's dents.<br><em>Gone. Paint untouched.</em>",
+   "servicesIntro": "From a single door ding to a full hail storm.",
+   "whyTitle": "Why {name}",
+   "contactTitle": "Got hail damage?",
+   "galleryTitle": "Dents gone, paint untouched.",
+   "alsoTitle": "We also fix",
+   "steps": [
+    {
+     "name": "Send the details",
+     "text": "Call, or use the form with your year, make, model and photos of the damage."
+    },
+    {
+     "name": "Get an evaluation",
+     "text": "Bring the vehicle in and we look at the hail damage, dings or film options."
+    },
+    {
+     "name": "Drive it smooth",
+     "text": "We work the dents out and hand the vehicle back."
     }
    ]
   }

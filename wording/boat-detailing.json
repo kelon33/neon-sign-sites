@@ -3,6 +3,58 @@
  "about": "General wording from reviewed previews (npm run wording). {name} and {town} are filled in per business.",
  "entries": [
   {
+   "from": "below-the-belt-services",
+   "headline": "Lake day ready.<br><em>Every day.</em>",
+   "servicesTitle": "Bow to stern.",
+   "servicesIntro": "From a wash and wax to full restoration, teak and ceramic coating.",
+   "whyTitle": "Why boat owners call us.",
+   "howTitle": "Back on the water in three steps.",
+   "contactTitle": "Book your boat in.",
+   "galleryTitle": "Fresh off the water.",
+   "alsoTitle": "We also detail",
+   "steps": [
+    {
+     "name": "Request a quote",
+     "text": "Call or send photos of your vehicle for a recommendation and estimate."
+    },
+    {
+     "name": "Schedule",
+     "text": "Pick a time at your home, office, apartment or marina."
+    },
+    {
+     "name": "We detail on site",
+     "text": "We arrive fully equipped and complete the service where it sits."
+    }
+   ]
+  },
+  {
+   "from": "benfield-marine",
+   "headline": "Like the first day,<br><em>every day.</em>",
+   "servicesTitle": "Bow to stern.",
+   "servicesIntro": "Upkeep for like-new boats. Restoration for weathered ones. Protection to keep them that way.",
+   "whyTitle": "What we give you that others don't.",
+   "howTitle": "Ready for the water in three steps.",
+   "contactTitle": "Book your boat in.",
+   "galleryTitle": "Fresh off the water.",
+   "alsoTitle": "We also detail",
+   "sectionTitle": "We come to your boat.",
+   "sectionIntro": "We bring the detail to you, so your day keeps moving.",
+   "steps": [
+    {
+     "name": "Call us",
+     "text": "Tell us what your boat needs: scratches, gouges, damage or a full detail."
+    },
+    {
+     "name": "Get an estimate",
+     "text": "We give you an accurate estimate. We work with many area marinas, or you can bring the boat to us."
+    },
+    {
+     "name": "Final check",
+     "text": "We go over the finished work with you before it leaves."
+    }
+   ]
+  },
+  {
    "from": "boat-beautiful-mobile-boat-detailing",
    "headline": "Lake day ready.<br><em>Every day.</em>",
    "servicesTitle": "Bow to stern.",
@@ -11,6 +63,31 @@
    "galleryTitle": "Fresh off the water.",
    "alsoTitle": "We also detail",
    "sectionTitle": "We bring the detail to your dock."
+  },
+  {
+   "from": "central-tennessee-marine-service",
+   "headline": "Back on the water<br><em>looking new.</em>",
+   "servicesTitle": "Bow to stern.",
+   "servicesIntro": "Detailing, correction and coating for paint, fiberglass and gel coat.",
+   "whyTitle": "What we give you that others don't.",
+   "howTitle": "Ready for the water in three steps.",
+   "contactTitle": "Book your boat in.",
+   "galleryTitle": "Fresh from the detail.",
+   "alsoTitle": "We also detail",
+   "steps": [
+    {
+     "name": "Tell us about your boat",
+     "text": "Call or send the form with the vessel, the service and a few photos."
+    },
+    {
+     "name": "We set the plan",
+     "text": "One-time detail or a regular wash plan, your choice."
+    },
+    {
+     "name": "Back on the water",
+     "text": "You enjoy your boat. We handle the rest."
+    }
+   ]
   },
   {
    "from": "clear-vision-mobile-detailing-and-ceramic-coatings",
@@ -149,6 +226,17 @@
    ]
   },
   {
+   "from": "marine-detail-austin",
+   "headline": "Back on the water<br><em>looking new.</em>",
+   "servicesTitle": "Bow to stern.",
+   "servicesIntro": "Detailing, correction and coating for paint, fiberglass and gel coat.",
+   "whyTitle": "What we give you that others don't.",
+   "howTitle": "Ready for the water in three steps.",
+   "contactTitle": "Book your boat in.",
+   "galleryTitle": "Fresh off the water.",
+   "sectionTitle": "Your boat, your spot."
+  },
+  {
    "from": "mavinate",
    "headline": "Back on the water<br><em>looking new.</em>",
    "servicesTitle": "Bow to stern.",
@@ -176,6 +264,120 @@
    ]
   },
   {
+   "from": "mobile-speed-detailing",
+   "headline": "Like the first day,<br><em>every day.</em>",
+   "servicesTitle": "Bow to stern.",
+   "servicesIntro": "Regular upkeep, deep restoration and long-lasting protection, all with professional products used every day by the team.",
+   "whyTitle": "What we give you that others don't.",
+   "howTitle": "Ready for the water in three steps.",
+   "contactTitle": "Book your boat in.",
+   "galleryTitle": "Fresh from the detail.",
+   "alsoTitle": "We also detail",
+   "steps": [
+    {
+     "name": "Ask for an estimate",
+     "text": "Call or send the form. The estimate is free."
+    },
+    {
+     "name": "We meet and plan",
+     "text": "We look at your boat and decide what it needs."
+    },
+    {
+     "name": "Back on the water",
+     "text": "Your boat is clean, polished and protected."
+    }
+   ]
+  },
+  {
+   "from": "mynt-mobile-detailing",
+   "headline": "Like the first day,<br><em>every day.</em>",
+   "servicesTitle": "Bow to stern.",
+   "servicesIntro": "Upkeep for like-new boats. Restoration for weathered ones. Protection to keep them that way.",
+   "whyTitle": "What we give you that others don't.",
+   "howTitle": "Back on the water in three steps.",
+   "contactTitle": "Book your boat in.",
+   "galleryTitle": "Fresh off the water.",
+   "alsoTitle": "We also detail",
+   "sectionTitle": "We come to your boat.",
+   "sectionIntro": "We bring the detail to you, so your day keeps moving.",
+   "steps": [
+    {
+     "name": "Call us",
+     "text": "Tell us what your boat needs: scratches, gouges, damage or a full detail."
+    },
+    {
+     "name": "Get an estimate",
+     "text": "We give you an accurate estimate. We work with many area marinas, or you can bring the boat to us."
+    },
+    {
+     "name": "Final check",
+     "text": "We go over the finished work with you before it leaves."
+    }
+   ]
+  },
+  {
+   "from": "ship-shape-marine",
+   "headline": "Lake day ready.<br><em>Every day.</em>",
+   "servicesTitle": "Bow to stern.",
+   "servicesIntro": "From a wash and wax to full restoration, teak and ceramic coating.",
+   "whyTitle": "Why boat owners call us.",
+   "howTitle": "Back on the water in three steps.",
+   "contactTitle": "Book your boat in.",
+   "galleryTitle": "Fresh off the water.",
+   "alsoTitle": "We also detail",
+   "steps": [
+    {
+     "name": "Request a quote",
+     "text": "Call or send photos of your vehicle for a recommendation and estimate."
+    },
+    {
+     "name": "Schedule",
+     "text": "Pick a time at your home, office, apartment or marina."
+    },
+    {
+     "name": "We detail on site",
+     "text": "We arrive fully equipped and complete the service where it sits."
+    }
+   ]
+  },
+  {
+   "from": "sin-city-mobile-detailing",
+   "headline": "Back on the water<br><em>looking new.</em>",
+   "servicesTitle": "Bow to stern.",
+   "servicesIntro": "One-time details, regular programs and long-lasting protection.",
+   "whyTitle": "What we give you that others don't.",
+   "howTitle": "Ready for the water in three steps.",
+   "contactTitle": "Book your boat in.",
+   "galleryTitle": "Fresh off the water.",
+   "alsoTitle": "We also detail",
+   "steps": [
+    {
+     "name": "Tell us about your boat",
+     "text": "Call or send the form with what it needs."
+    },
+    {
+     "name": "We come to you",
+     "text": "Mobile service, based in {town}."
+    },
+    {
+     "name": "Back on the water",
+     "text": "Clean, polished and protected."
+    }
+   ]
+  },
+  {
+   "from": "tnt-water-sports",
+   "headline": "Like the first day,<br><em>every day.</em>",
+   "servicesTitle": "Bow to stern.",
+   "servicesIntro": "Regular upkeep, deep restoration and long-lasting protection, all with professional products used every day by the team.",
+   "whyTitle": "What we give you that others don't.",
+   "howTitle": "Three steps to a clearer finish.",
+   "contactTitle": "Book your boat in.",
+   "alsoTitle": "We also detail",
+   "sectionTitle": "We come to your boat.",
+   "sectionIntro": "We come directly to your dock or home, so your day keeps moving."
+  },
+  {
    "from": "toms-detailing-llc",
    "headline": "Back on the water<br><em>looking new.</em>",
    "servicesTitle": "Bow to stern.",
@@ -197,6 +399,56 @@
     {
      "name": "Back on the water",
      "text": "You enjoy your boat. We handle the rest."
+    }
+   ]
+  },
+  {
+   "from": "tornado-mobile-detailing",
+   "headline": "Lake day ready.<br><em>Every day.</em>",
+   "servicesTitle": "Bow to stern.",
+   "servicesIntro": "From a wash and wax to full restoration, teak and ceramic coating.",
+   "whyTitle": "Why boat owners call us.",
+   "howTitle": "Back on the water in three steps.",
+   "contactTitle": "Book your boat in.",
+   "galleryTitle": "Fresh off the water.",
+   "alsoTitle": "We also detail",
+   "steps": [
+    {
+     "name": "Request a quote",
+     "text": "Call or send photos of your vehicle for a recommendation and estimate."
+    },
+    {
+     "name": "Schedule",
+     "text": "Pick a time at your home, office, apartment or marina."
+    },
+    {
+     "name": "We detail on site",
+     "text": "We arrive fully equipped and complete the service where it sits."
+    }
+   ]
+  },
+  {
+   "from": "tx-marine-riggers",
+   "headline": "Back on the water<br><em>looking new.</em>",
+   "servicesTitle": "Bow to stern.",
+   "servicesIntro": "Restoration for weathered boats. Protection to keep every boat looking new.",
+   "whyTitle": "What we give you that others don't.",
+   "howTitle": "Ready for the water in three steps.",
+   "contactTitle": "Book your boat in.",
+   "galleryTitle": "Fresh off the water.",
+   "alsoTitle": "We also detail",
+   "steps": [
+    {
+     "name": "Ask for a quote",
+     "text": "Call, email or use the form and tell us about your boat."
+    },
+    {
+     "name": "We come to you",
+     "text": "We bring the service to your marina slip."
+    },
+    {
+     "name": "Back on the water",
+     "text": "Clean, polished and protected."
     }
    ]
   }
