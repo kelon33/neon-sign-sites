@@ -82,7 +82,8 @@ async function main() {
       `- Why them: ${(l.reasons?.length ? l.reasons : l.improvements ?? []).join(', ') || '—'}`, '', check.trim(), '');
   }
   const out = path.join(root, 'leads', `batch-${new Date().toISOString().slice(0, 10)}.md`);
-  await writeFile(out, lines.join('\n') + '\n');
+  const earlier = await readFile(out, 'utf8').catch(() => '');
+  await writeFile(out, (earlier ? `${earlier.trimEnd()}\n\n---\n\n` : '') + lines.join('\n') + '\n');
   console.log(`\nSummary for review: ${path.relative(root, out)}`);
 }
 

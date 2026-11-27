@@ -7,6 +7,8 @@ const WHY = [
   [/does not load|broken/, () => "your website didn't load when I tried it"],
   [/almost empty/, () => "your website says very little about what you do"],
   [/site builder|Weebly|Wix|GoDaddy/i, () => "your website looks like a template that doesn't show off your work"],
+  [/copyright (\d{4})/, (m) => `your website still says © ${m[1]}, which makes it look unattended`],
+  [/no https/, () => 'browsers mark your website "Not secure"'],
 ];
 
 // For a "decent site" (works, but with clear gaps): the gap, said plainly. First match wins, so the

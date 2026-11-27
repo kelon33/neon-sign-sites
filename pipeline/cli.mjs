@@ -58,6 +58,13 @@ async function main() {
   const out = path.join(root, 'demos', slug);
   await mkdir(path.join(out, 'img'), { recursive: true });
   const checks = [];
+  // Google returns businesses from around the searched city (hail-repair shops travel far): the
+  // site names the town in their own address.
+  const own = lead.address?.match(/,\s*([^,]+),\s*([A-Z]{2})\s+\d{5}/);
+  if (own && `${own[1].trim()}, ${own[2]}` !== lead.city) {
+    checks.push(`Found by a search in ${lead.city}, but their address is in ${own[1].trim()}, ${own[2]}: the site uses that. Check their service area.`);
+    lead.city = `${own[1].trim()}, ${own[2]}`;
+  }
   const browser = await chromium.launch();
   try {
     // 1. Their site.

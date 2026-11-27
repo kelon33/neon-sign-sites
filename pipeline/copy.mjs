@@ -64,7 +64,7 @@ const TRADE_WORDS = [
       { name: 'Drive it smooth', text: 'We work the dent out and hand the car back.' },
     ],
     contactTitle: 'Got a dent?', footerLine: `Paintless dent repair in ${town}`,
-    notePlaceholder: 'Where the dent is, how big, hail or a door ding…',
+    notePlaceholder: 'Where the dent is, how big, hail or a door ding…', ctaLabel: 'Get an estimate',
   })],
   [/christmas light|holiday light/i, (town) => ({
     kicker: `Christmas light installation · ${town}`,

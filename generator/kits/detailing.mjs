@@ -229,7 +229,7 @@ ${preview}
   <div class="wrap">
     <a class="logo" href="#">${d.logo ? `<img src="${esc(d.logo)}" alt=""${d.logoChip ? ' class="chip"' : ''}>` : ''}<span><b>${esc(d.wordmark?.top ?? d.name)}</b>${d.wordmark?.bottom ? `<small>${esc(d.wordmark.bottom)}</small>` : ''}</span></a>
     <nav aria-label="Main"><a href="#services">Services</a>${d.gallery?.length ? '<a href="#work">Our work</a>' : ''}${d.reviews?.length ? '<a href="#reviews">Reviews</a>' : ''}<a href="#book">Contact</a></nav>
-    <a class="btn" href="#book">Book a detail</a>
+    <a class="btn" href="#book">${esc(d.ctaLabel ?? 'Book a detail')}</a>
   </div>
 </header>
 
@@ -241,7 +241,7 @@ ${preview}
     <h1>${d.headline}</h1>
     <p class="lead">${esc(d.intro)}</p>
     <div class="actions">
-      <a class="btn" href="#book">Book a detail</a>
+      <a class="btn" href="#book">${esc(d.ctaLabel ?? 'Book a detail')}</a>
       <a class="btn ghost" href="${tel(d.phone)}">Call ${esc(d.phone)}</a>
     </div>
     ${rating}
@@ -336,7 +336,7 @@ ${d.why?.length ? `<section class="section" style="padding-top:30px">
 </main>
 
 <footer class="footer"><div class="wrap"><span>© ${new Date().getFullYear()} ${esc(d.legalName ?? d.name)}</span><span>${esc(d.footerLine ?? '')}</span></div></footer>
-<div class="dock away"><a class="btn ghost" href="${tel(d.phone)}">Call</a><a class="btn" href="#book">Book a detail</a></div>
+<div class="dock away"><a class="btn ghost" href="${tel(d.phone)}">Call</a><a class="btn" href="#book">${esc(d.ctaLabel ?? 'Book a detail')}</a></div>
 <script>
   // Gallery: a tap opens the photo large.
   const box = document.querySelector('dialog.lightbox');
