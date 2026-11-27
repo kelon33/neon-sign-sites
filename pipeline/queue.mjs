@@ -6,7 +6,7 @@
 //   npm run queue -- --status                  sent so far, per mailbox
 //
 // Rules it enforces (CLAUDE.md): never from neonsignsites.com; a daily limit per mailbox that ramps
-// up with its age (7 a day in week 1, 10 from week 2, more only when Alon raises it in config.json);
+// up with its age (config.json sending: +2 a day up to each mailbox's max, now 30);
 // the do-not-contact list checked again at planning time and at recording time; one email per
 // business, ever; no plan at all while config.json has no postal address (CAN-SPAM).
 

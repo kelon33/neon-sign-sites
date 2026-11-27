@@ -19,12 +19,12 @@
   "about": "pipeline/find.mjs: Text Search (New) only, list price per 1,000 requests at the fields we ask for (check Google price list). 600 requests is about $21 at list price, under the $25 a month budget even without the free monthly allowance."
  },
  "sending": {
-  "about": "pipeline/queue.mjs plans each day's emails for approval; pipeline/send.mjs sends an approved list. Per mailbox: start = the date of its first cold email (until set, it sends nothing); daily = {first, step}: first emails on the start day, +step every day after (weekends too) (Instantly's ramp: start small, +2 a day); max = hard ceiling (10 until the mailboxes are fully warmed up). Never a neonsignsites.com address.",
+  "about": "pipeline/queue.mjs plans each day's emails for approval; pipeline/send.mjs sends an approved list. Per mailbox: start = the date of its first cold email (until set, it sends nothing); daily = {first, step}: first emails on the start day, +step every day after (weekends too) (Instantly's ramp: start small, +2 a day); max = hard ceiling: 30 a mailbox (Alon, 2026-11-27: 6 x 30 = 180 a day). Never a neonsignsites.com address.",
   "mailboxes": [
    {
     "address": "alon@neonsignsites.net",
     "start": "2026-11-27",
-    "max": 10,
+    "max": 30,
     "daily": {
      "first": 3,
      "step": 2
@@ -33,7 +33,7 @@
    {
     "address": "alon.katz@neonsignsites.net",
     "start": "2026-11-27",
-    "max": 10,
+    "max": 30,
     "daily": {
      "first": 3,
      "step": 2
@@ -42,7 +42,7 @@
    {
     "address": "katz.alon@neonsignsites.net",
     "start": "2026-11-27",
-    "max": 10,
+    "max": 30,
     "daily": {
      "first": 3,
      "step": 2
@@ -51,7 +51,7 @@
    {
     "address": "alon@neonsignsites.co",
     "start": "2026-11-27",
-    "max": 10,
+    "max": 30,
     "daily": {
      "first": 3,
      "step": 2
@@ -60,7 +60,7 @@
    {
     "address": "alon.katz@neonsignsites.co",
     "start": "2026-11-27",
-    "max": 10,
+    "max": 30,
     "daily": {
      "first": 3,
      "step": 2
@@ -69,7 +69,7 @@
    {
     "address": "katz.alon@neonsignsites.co",
     "start": "2026-11-27",
-    "max": 10,
+    "max": 30,
     "daily": {
      "first": 3,
      "step": 2
