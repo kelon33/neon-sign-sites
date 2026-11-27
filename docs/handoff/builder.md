@@ -1,6 +1,6 @@
 # Builder handoff
 
-**Session:** session_019BJDWqGaRxD21UztnejtgL, 2026-11-27 (first handoff; written early, the evening handoff will refresh it).
+**Session:** session_019BJDWqGaRxD21UztnejtgL (the builder chat, kept every day), 2026-11-27.
 **Role:** builds and reviews previews, the kits and the preview design. Environment `neon-sign-sites builder` (open network, no Places key, never sends).
 
 ## Done (26-27 Nov)
@@ -19,7 +19,7 @@
 ## Open items
 - Older previews 602, New Shine and Erick's (hand-written) still say "Shining by tonight" (a promise from the old detailing default). Ask Alon whether to change them (Erick's wording is hand-written).
 - Christmas-light leads with real photos: build only those (most have none; photo pitch otherwise). Season ends late December.
-- When Alon picks the AI wording model, the site chats merge into one ("Site & leads"): delete the "list" morning task and fold list.md into site.md.
+- When Alon picks the AI wording model, the site chats merge into one ("Site & leads"): delete the list chat's two scheduled messages (evening save, morning start), fold list.md into site.md, archive the list chat.
 
 ## Decisions Alon made
 - Decent-but-not-perfect sites are pitched too (separate category, email names the gap).
