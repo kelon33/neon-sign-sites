@@ -1,0 +1,9 @@
+{
+ "about": "Google Places requests, counted by pipeline/find.mjs. Commit this file: it is the only record across sessions.",
+ "months": {
+  "2026-11": {
+   "requests": 0
+  }
+ },
+ "queries": {}
+}
