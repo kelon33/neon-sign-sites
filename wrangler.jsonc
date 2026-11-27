@@ -10,7 +10,7 @@
     "MAIL_FROM": "Neon Sign Sites <hello@neonsignsites.com>",
     "NOTIFY_TO": "alon@neonsignsites.com",
     "PAYPAL_MONTHLY_URL": "",
-    "PAYPAL_OWN_URL": ""
+    "PAYPAL_OWN_URL": "https://www.paypal.com/ncp/payment/8BEKHHQQHC7SN"
   },
   "assets": {
     "directory": "./dist",
