@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en" class="pages">
+<html lang="en">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -58,24 +58,57 @@
         </div>
       </div>
 
-      <div class="device" aria-hidden="true">
-        <div class="phone">
+      <div class="device">
+        <div class="phone" aria-hidden="true">
           <div class="notch"></div>
-          <div class="screen">
-            <div class="s-top"><span class="s-logo">Evergreen Lawn Co.</span><span class="s-menu"></span></div>
-            <div class="s-hero">
-              <p class="s-kicker">Phoenix lawn care</p>
-              <p class="s-title">A lawn the whole street notices.</p>
-              <span class="s-btn">Call (602) 555-0142</span>
-              <span class="s-btn ghost">Free quote</span>
+          <div class="screens" tabindex="-1">
+            <div class="screen lawn">
+              <div class="s-top"><span class="s-logo">Evergreen Lawn Co.</span><span class="s-menu"></span></div>
+              <div class="s-hero">
+                <p class="s-kicker">Phoenix lawn care</p>
+                <p class="s-title">A lawn the whole street notices.</p>
+                <span class="s-btn">Call (602) 555-0142</span>
+                <span class="s-btn ghost">Free quote</span>
+              </div>
+              <div class="s-stars">★★★★★ <span>4.9 · 212 Google reviews</span></div>
+              <div class="s-cards"><span></span><span></span><span></span></div>
+              <p class="s-h">Our services</p>
+              <ul class="s-list"><li>Weekly mowing &amp; edging</li><li>Irrigation repair</li><li>Seasonal cleanups</li><li>Tree &amp; shrub trimming</li></ul>
             </div>
-            <div class="s-stars">★★★★★ <span>4.9 · 212 Google reviews</span></div>
-            <div class="s-cards"><span></span><span></span><span></span></div>
-            <p class="s-h">Our services</p>
-            <ul class="s-list"><li>Weekly mowing &amp; edging</li><li>Irrigation repair</li><li>Seasonal cleanups</li><li>Tree &amp; shrub trimming</li></ul>
+            <div class="screen detail">
+              <div class="s-top"><span class="s-logo">Mirror Finish Mobile Detailing</span><span class="s-menu"></span></div>
+              <div class="s-hero">
+                <p class="s-kicker">Mobile detailing · Tampa</p>
+                <p class="s-title">Showroom shine, in your driveway.</p>
+                <span class="s-btn">Book a detail</span>
+                <span class="s-btn ghost">Call (813) 555-0187</span>
+              </div>
+              <div class="s-stars">★★★★★ <span>5.0 · 148 Google reviews</span></div>
+              <div class="s-cards"><span></span><span></span><span></span></div>
+              <p class="s-h">Packages</p>
+              <ul class="s-list"><li>Express wash &amp; wax</li><li>Full interior detail</li><li>Ceramic coating</li><li>Paint correction</li></ul>
+            </div>
+            <div class="screen clean">
+              <div class="s-top"><span class="s-logo">Brightside Home Cleaning</span><span class="s-menu"></span></div>
+              <div class="s-hero">
+                <p class="s-kicker">House cleaning · Raleigh</p>
+                <p class="s-title">Come home to a spotless house.</p>
+                <span class="s-btn">Get a free quote</span>
+                <span class="s-btn ghost">Call (919) 555-0123</span>
+              </div>
+              <div class="s-stars">★★★★★ <span>4.9 · 96 Google reviews</span></div>
+              <div class="s-cards"><span></span><span></span><span></span></div>
+              <p class="s-h">Services</p>
+              <ul class="s-list"><li>Standard cleaning</li><li>Deep cleaning</li><li>Move-in / move-out</li><li>Recurring visits</li></ul>
+            </div>
           </div>
         </div>
-        <p class="device-note">A preview like the one we send you: your business, your services, your photos.</p>
+        <div class="dots" role="group" aria-label="Sample sites">
+          <button type="button" aria-label="Lawn care sample" aria-pressed="true"></button>
+          <button type="button" aria-label="Mobile detailing sample" aria-pressed="false"></button>
+          <button type="button" aria-label="House cleaning sample" aria-pressed="false"></button>
+        </div>
+        <p class="device-note">Sample designs for made-up businesses. Your preview uses your business, your services and your photos.</p>
       </div>
     </div>
   </section>
@@ -225,9 +258,32 @@
       if (!btn._touched || !href.startsWith('#')) return;
       btn._touched = false;
       e.preventDefault();
-      setTimeout(() => goTo(href), 340);
+      setTimeout(() => document.querySelector(href)?.scrollIntoView({ behavior: 'smooth' }), 340);
     });
   }
+
+  // Hero phone: a carousel of sample sites. It moves on by itself every few seconds (not with reduced
+  // motion), can be swiped, and the dots jump to a sample. Touching it pauses the slideshow for a while.
+  (() => {
+    const track = document.querySelector('.screens');
+    const dots = [...document.querySelectorAll('.dots button')];
+    if (!track || !dots.length) return;
+    const n = dots.length, reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
+    let idx = 0, pausedUntil = 0, visible = true;
+    const show = (i, smooth = true) => { idx = (i + n) % n; track.scrollTo({ left: idx * track.clientWidth, behavior: smooth && !reduce ? 'smooth' : 'auto' }); mark(); };
+    const mark = () => dots.forEach((d, j) => d.setAttribute('aria-pressed', String(j === idx)));
+    const pause = (ms = 9000) => { pausedUntil = performance.now() + ms; };
+    dots.forEach((d, j) => d.addEventListener('click', () => { pause(); show(j); }));
+    track.addEventListener('pointerdown', () => pause(), { passive: true });
+    track.addEventListener('touchstart', () => pause(), { passive: true });
+    track.addEventListener('mouseenter', () => pause(60000));
+    track.addEventListener('mouseleave', () => pause(2500));
+    // Follow a swipe: the dot shows whichever sample has settled in view.
+    let t = 0;
+    track.addEventListener('scroll', () => { clearTimeout(t); t = setTimeout(() => { idx = Math.round(track.scrollLeft / track.clientWidth); mark(); }, 80); }, { passive: true });
+    if ('IntersectionObserver' in window) new IntersectionObserver(([e]) => { visible = e.isIntersecting; }).observe(track);
+    if (!reduce) setInterval(() => { if (visible && !document.hidden && performance.now() > pausedUntil) show(idx + 1); }, 4200);
+  })();
 
   // Sections rise in as they arrive (styles.css: reveal-on). The hero is visible from the start.
   if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches && 'IntersectionObserver' in window) {
@@ -237,64 +293,6 @@
     }, { threshold: 0.15 });
     for (const s of document.querySelectorAll('main > section')) io.observe(s);
   }
-
-  // Stacked pages (styles.css): a section holds still once its end is on screen, and the next slides
-  // over it. Its sticky top is the nav height, or less for a section taller than the screen, so it
-  // scrolls to its end first. The section being covered sinks back as the next one arrives.
-  const stack = (() => {
-    const main = document.querySelector('main');
-    const secs = [...main.querySelectorAll(':scope > section')];
-    const navH = () => document.querySelector('.nav')?.offsetHeight || 0;
-    const on = () => getComputedStyle(secs[0]).position === 'sticky';
-    const still = !window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-    // clientHeight is the screen without the phone's sliding address bar, so nothing shifts when it hides.
-    function place() {
-      const vh = document.documentElement.clientHeight;
-      for (const s of secs) s.style.top = on() && !s.classList.contains('trades') ? Math.min(navH(), vh - s.offsetHeight) + 'px' : '';
-      shade();
-    }
-    // Where a section starts on the page when nothing is stuck: the sum of the heights before it.
-    function start(el) {
-      let y = main.offsetTop;
-      for (const s of secs) { if (s === el) break; y += s.offsetHeight; }
-      return y - navH();
-    }
-    function shade() {
-      if (!still) return;
-      secs.forEach((s, i) => {
-        const next = secs[i + 1];
-        if (!on() || !next || s.classList.contains('trades') || next.classList.contains('trades')) { s.classList.remove('covered'); return; }
-        const r = next.getBoundingClientRect(), vh = document.documentElement.clientHeight;
-        const p = Math.max(0, Math.min(1, (vh - r.top) / (vh - navH())));
-        s.classList.toggle('covered', p > 0 && p < 1.001);
-        s.style.setProperty('--cover', p.toFixed(3));
-      });
-    }
-    let ticking = false;
-    window.addEventListener('scroll', () => { if (!ticking) { ticking = true; requestAnimationFrame(() => { ticking = false; shade(); }); } }, { passive: true });
-    window.addEventListener('resize', place);
-    if ('ResizeObserver' in window) new ResizeObserver(place).observe(main); // FAQ answers opening, fonts loading
-    place();
-    return { start, on };
-  })();
-
-  // In-page links: a section stuck under others is already "in view" to the browser, so scroll to where
-  // it starts on the page instead.
-  function goTo(hash) {
-    const el = document.querySelector(hash);
-    if (!el) return;
-    const sec = el.closest('main > section') || el;
-    const y = stack.on() && sec.parentElement?.tagName === 'MAIN' ? stack.start(sec) : el.getBoundingClientRect().top + scrollY - 73;
-    window.scrollTo({ top: y, behavior: window.matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth' });
-    history.replaceState(null, '', hash);
-  }
-  document.addEventListener('click', (e) => {
-    const a = e.target.closest('a[href^="#"]');
-    if (!a || e.defaultPrevented) return; // a button tapped on a phone already waits for its glow, then goes
-    const hash = a.getAttribute('href');
-    if (hash.length < 2) return;
-    e.preventDefault(); goTo(hash);
-  });
 
   // The preview form opens the visitor's email app with the details filled in (no server, no tracking).
   document.getElementById('preview-form')?.addEventListener('submit', (e) => {
