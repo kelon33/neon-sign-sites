@@ -1,0 +1,95 @@
+{
+  "kit": "detailing",
+  "trade": "Paintless dent repair",
+  "name": "Dent Guy Inc. Paintless Dent Repair",
+  "legalName": "Dent Guy Inc. Paintless Dent Repair",
+  "preview": true,
+  "placeId": "ChIJ8R1SE5alToYRyuZtFu2y_XY",
+  "title": "Dent Guy Inc. Paintless Dent Repair | Veteran-owned in Rockwall, TX",
+  "description": "Over 30 years of paintless dent repair on all makes and models. Hail, door dings and everyday dents worked out from behind the panel. 5.0 on Google from 113 reviews.",
+  "brand": "#1670ff",
+  "brandHi": "#52c6ff",
+  "accent": "#8fd0ff",
+  "logo": "logo.png",
+  "logoChip": false,
+  "wordmark": {
+    "top": "Dent Guy Inc.",
+    "bottom": "Paintless Dent Repair"
+  },
+  "phone": "(214) 537-9011",
+  "email": "mgr.dgi1@gmail.com",
+  "rating": {
+    "score": "5.0",
+    "count": 113,
+    "url": "https://maps.google.com/?cid=8574205996936586954"
+  },
+  "kicker": "Veteran-owned · Paintless dent repair",
+  "headline": "Hail damage gone.<br><em>Factory paint stays.</em>",
+  "intro": "Over 30 years of paintless dent repair on all makes and models. Hail, door dings and everyday dents worked out from behind the panel.",
+  "mobile": null,
+  "servicesTitle": "Every kind of dent.",
+  "servicesIntro": "Hail damage, everyday dents, and protective film, handled with the same hands-on care.",
+  "services": [
+    {
+      "name": "Hail damage repair",
+      "text": "Many small dents on the roof, hood and doors, removed from behind the panel so the factory paint stays intact."
+    },
+    {
+      "name": "Everyday dents and dings",
+      "text": "Door dings and parking lot dents repaired without repainting the panel."
+    },
+    {
+      "name": "Paint protection film",
+      "text": "Clear film on high-impact areas shields paint from road debris and keeps the original finish visible."
+    },
+    {
+      "name": "Windshield protection film",
+      "text": "Film that helps guard the glass against stones and road debris, applied for a clean, close fit."
+    }
+  ],
+  "also": [],
+  "alsoTitle": "We also fix",
+  "why": [
+    {
+      "name": "Over 30 years in the trade",
+      "text": "Three decades of paintless dent repair, one panel at a time."
+    },
+    {
+      "name": "Factory finish preserved",
+      "text": "Tools work the metal from behind the panel, so the original paint stays wherever the dent allows."
+    },
+    {
+      "name": "All makes and models",
+      "text": "Domestic, import and luxury vehicles get the same care on every panel."
+    }
+  ],
+  "whyTitle": "The Dent Guy difference.",
+  "howTitle": "Back to like new in three steps.",
+  "steps": [
+    {
+      "name": "Send the details",
+      "text": "Call, or use the form with your year, make, model and photos of the damage."
+    },
+    {
+      "name": "Get an evaluation",
+      "text": "Bring the vehicle in and we look at the hail damage, dings or film options."
+    },
+    {
+      "name": "Drive it smooth",
+      "text": "We work the dents out and hand the vehicle back."
+    }
+  ],
+  "contactTitle": "Got a dent?",
+  "footerLine": "Veteran-owned paintless dent repair · 5330 Rochell Rd, Fate, TX 75032",
+  "reviews": [],
+  "hours": [],
+  "galleryTitle": "Dents gone, paint untouched.",
+  "notePlaceholder": "Where the dent is, how big, hail or a door ding…",
+  "ctaLabel": "Get an estimate",
+  "gallery": [],
+  "areas": [
+    "Fate",
+    "Rockwall"
+  ],
+  "pitch": "photos"
+}
