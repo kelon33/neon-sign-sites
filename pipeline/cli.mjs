@@ -129,7 +129,8 @@ async function main() {
       for (const p of photos) thumbs.push(await thumbnail(tool, p.file));
       console.log(libFirst ? `Asking Claude (${model}) for their facts and the photo choice; wording from the library (${lib.length} previews)` : `Asking Claude (${model}) for sharper wording and the photo choice`);
       let ai = null;
-      try { ai = await sharpen({ kit, lead, text, draft: copy, thumbs, model, only: libFirst ? FACT_FIELDS : null }); }
+      const logoThumb = logo ? await thumbnail(tool, path.join(out, 'logo.png')).catch(() => null) : null;
+      try { ai = await sharpen({ kit, lead, text, draft: copy, thumbs, logoThumb, model, only: libFirst ? FACT_FIELDS : null }); }
       catch (e) { checks.push(`Claude failed (${e.message}): used the kit wording.`); }
       if (ai) {
       const r = ai.result;
@@ -165,6 +166,12 @@ async function main() {
       else { order = []; checks.push(`Photo pitch: only ${picked.length} usable photo${picked.length === 1 ? '' : 's'} by Claude's choice, so no gallery; the email asks them for photos of their work.`); }
       alts = Object.fromEntries(r.photoAlts.map((a) => [a.photo - 1, a.alt]));
       wordmark = { top: r.wordmarkTop || lead.name, bottom: r.wordmarkBottom };
+      // Logos found on their site are sometimes a Google badge, a client's or their web designer's.
+      if (logo && r.logoIsTheirs === false) {
+        logo = null;
+        await import('node:fs/promises').then((fs) => fs.rm(path.join(out, 'logo.png'), { force: true }));
+        checks.push('Logo dropped: Claude saw it is not theirs (a badge, a client\'s or their web designer\'s). The header shows the name only.');
+      }
       if (r.notes) checks.push(`Claude's notes: ${r.notes}`);
       const u = ai.usage;
       const price = model.startsWith('claude-haiku') ? [0.10, 0.50] : [2, 10];
