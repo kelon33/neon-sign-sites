@@ -34,3 +34,17 @@ test('Quo webhook signature: right key passes, wrong key or old timestamp fails'
   assert.equal(await quoSignatureOk(sign(now - 60 * 60 * 1000), body, secret), false);
   assert.equal(await quoSignatureOk(null, body, secret), false);
 });
+
+test('Quo whsec_ secrets: Standard Webhooks signatures', async () => {
+  const { standardSignatureOk } = await import('../hooks.js');
+  const { createHmac } = await import('node:crypto');
+  const raw = Buffer.from('another-test-key-5678');
+  const secret = 'whsec_' + raw.toString('base64');
+  const body = '{"type":"call.completed"}';
+  const ts = String(Math.floor(Date.now() / 1000));
+  const sig = createHmac('sha256', raw).update(`msg_1.${ts}.${body}`).digest('base64');
+  const h = (s) => new Map([['webhook-id', 'msg_1'], ['webhook-timestamp', ts], ['webhook-signature', s]]);
+  assert.equal(await standardSignatureOk(h(`v1,${sig}`), body, secret), true);
+  assert.equal(await standardSignatureOk(h(`v1,bad v1,${sig}`), body, secret), true);
+  assert.equal(await standardSignatureOk(h('v1,bad'), body, secret), false);
+});

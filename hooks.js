@@ -1,7 +1,8 @@
 // Webhooks that feed the dashboard (KV binding EVENTS):
 //   POST /hooks/quo     Quo (formerly OpenPhone): calls and texts to (888) 444-1847.
 //                       Signed: header "openphone-signature" (or "quo-signature"): hmac;1;<timestamp>;<base64 HMAC-SHA256
-//                       of "<timestamp>.<raw body>" with the base64-decoded signing key>. Worker secret QUO_WEBHOOK_SECRET.
+//                       of "<timestamp>.<raw body>" with the base64-decoded signing key>, or the Standard Webhooks
+//                       format when the secret starts with "whsec_" (standardSignatureOk). Worker secret QUO_WEBHOOK_SECRET.
 //   POST /hooks/paypal  PayPal: subscriptions and payments. Checked with PayPal's verify-webhook-signature API,
 //                       using Worker secrets PAYPAL_CLIENT_ID, PAYPAL_SECRET and PAYPAL_WEBHOOK_ID.
 // Without its secret a hook refuses everything (503), so nothing unverified is ever stored.
@@ -32,10 +33,27 @@ async function bump(env, key, extra = {}, counters = {}) {
   await env.EVENTS.put(key, '', { metadata: meta });
 }
 
+/** Standard Webhooks / Svix format (secrets that start with "whsec_"): headers webhook-id, webhook-timestamp
+ *  (seconds) and webhook-signature ("v1,<base64>" entries, space-separated); signed content is
+ *  "<id>.<timestamp>.<raw body>" with the base64 key after "whsec_". Exported for tests. */
+export async function standardSignatureOk(headers, body, secret) {
+  const id = headers.get('webhook-id') ?? headers.get('svix-id');
+  const ts = headers.get('webhook-timestamp') ?? headers.get('svix-timestamp');
+  const sigs = headers.get('webhook-signature') ?? headers.get('svix-signature');
+  if (!id || !ts || !sigs || !secret) return false;
+  if (Math.abs(Date.now() / 1000 - Number(ts)) > 15 * 60) return false;
+  const key = await crypto.subtle.importKey('raw', fromB64(secret.replace(/^whsec_/, '')), { name: 'HMAC', hash: 'SHA-256' }, false, ['sign']);
+  const mac = b64(await crypto.subtle.sign('HMAC', key, new TextEncoder().encode(`${id}.${ts}.${body}`)));
+  return sigs.split(' ').some((entry) => entry.split(',')[1] === mac);
+}
+
 export async function quoHook(request, env) {
   if (!env.QUO_WEBHOOK_SECRET || !env.EVENTS) return new Response('Not configured', { status: 503 });
   const body = await request.text();
-  const ok = await quoSignatureOk(request.headers.get('openphone-signature') ?? request.headers.get('quo-signature'), body, env.QUO_WEBHOOK_SECRET);
+  const secret = env.QUO_WEBHOOK_SECRET.trim();
+  const ok = secret.startsWith('whsec_') || request.headers.get('webhook-signature') || request.headers.get('svix-signature')
+    ? await standardSignatureOk(request.headers, body, secret)
+    : await quoSignatureOk(request.headers.get('openphone-signature') ?? request.headers.get('quo-signature'), body, secret);
   if (!ok) return new Response('Bad signature', { status: 401 });
   const ev = JSON.parse(body);
   const type = ev.type ?? ev.object?.type ?? '';
