@@ -63,8 +63,17 @@ export default {
         if (slug && !/TEST by Claude/.test(String(f?.get('business') ?? '')) && !/(?:^|;\s*)nss_owner=1/.test(request.headers.get('cookie') ?? '')) ctx?.waitUntil(record(env, 'm', slug, { plan: String(f.get('plan') ?? '').slice(0, 10) }).catch(() => {}));
         return makeItLive(request, env);
       }
-      const ev = /(?:^|;\s*)nss_owner=1/.test(request.headers.get('cookie') ?? '') ? null : eventOf(request, url);
+      // Alon's own visits never count: previews opened from the dashboard carry ?me=1 (which also marks
+      // the browser), and a browser that opened the dashboard has the nss_owner cookie.
+      const isMe = url.searchParams.get('me') === '1' || /(?:^|;\s*)nss_owner=1/.test(request.headers.get('cookie') ?? '');
+      const ev = isMe ? null : eventOf(request, url);
       if (ev) ctx?.waitUntil(record(env, ev.kind, ev.slug).catch(() => {}));
+      if (url.searchParams.get('me') === '1') {
+        const res = await env.ASSETS.fetch(request);
+        const out = new Response(res.body, res);
+        out.headers.append('Set-Cookie', 'nss_owner=1; Max-Age=31536000; Path=/; Secure; HttpOnly; SameSite=Lax');
+        return out;
+      }
       const res = await env.ASSETS.fetch(request);
       // Customer sites are also reachable at /c/<domain>/ here: keep those copies out of search engines.
       return url.pathname.startsWith('/c/') ? withHeader(res, 'X-Robots-Tag', 'noindex, nofollow') : res;

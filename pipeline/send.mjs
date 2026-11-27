@@ -129,24 +129,38 @@ async function main() {
   let sentNow = 0;
   // Each email goes out inside its business's working-day window (pipeline/timing.mjs): east first,
   // waiting for the window to open; one that finds its window closed stays for the next day's list.
+  // The six mailboxes send in parallel, each with its own 2-5 minute spacing (180 a day would take
+  // over 10 hours one at a time); leads/sent.json is written by one writer at a time.
   const ORDER = ['America/New_York', 'America/Chicago', 'America/Denver', 'America/Phoenix', 'America/Los_Angeles', 'America/Anchorage', 'Pacific/Honolulu'];
   const queue = [...outbox.emails].sort((a, b) => ORDER.indexOf(a.tz ?? 'America/New_York') - ORDER.indexOf(b.tz ?? 'America/New_York'));
-  for (const e of queue) {
-    const sent = await json(SENT, []);
-    const no = refuse(e, { approved: outbox.approved, sent, dnc, mailboxes, config, day: outbox.date });
-    if (no) { console.log(`#${e.n} ${e.slug}: not sent (${no}).`); continue; }
-    if (e.link && !(await opens(e.link))) { console.log(`#${e.n} ${e.slug}: not sent (the preview ${e.link} does not open).`); continue; }
-    const tz = e.tz ?? 'America/New_York';
-    if (dry) { console.log(`#${e.n} ${e.slug}: would send to ${e.to} from ${e.from} (${tz}: ${windowState(tz)}).`); continue; }
-    if (sentNow) await sleep((lo + Math.random() * (hi - lo)) * 1000);
-    while (windowState(tz) === 'wait') await sleep(60_000);
-    if (windowState(tz) === 'late') { console.log(`#${e.n} ${e.slug}: not sent (after 17:00 their time; it goes on the next list).`); continue; }
-    const r = await gmailSend(e, config.sender.name);
-    sent.push({ date: outbox.date, slug: e.slug, to: e.to, from: e.from, variant: e.variant ?? null, subject: r.subject, messageId: r.id, threadId: r.threadId, sentAt: new Date().toISOString() });
-    await writeFile(SENT, JSON.stringify(sent, null, 1) + '\n');
-    sentNow++;
-    console.log(`#${e.n} ${e.slug}: sent to ${e.to} from ${e.from}.`);
-  }
+  let lock = Promise.resolve();
+  const exclusive = (fn) => { const run = lock.then(fn); lock = run.catch(() => {}); return run; };
+  const perBox = {};
+  for (const e of queue) (perBox[e.from] ??= []).push(e);
+  await Promise.all(Object.values(perBox).map(async (list, k) => {
+    if (!dry) await sleep(k * 20_000); // stagger the mailboxes a little
+    let mine = 0;
+    for (const e of list) {
+      const tz = e.tz ?? 'America/New_York';
+      const pre = await exclusive(async () => refuse(e, { approved: outbox.approved, sent: await json(SENT, []), dnc, mailboxes, config, day: outbox.date }));
+      if (pre) { console.log(`#${e.n} ${e.slug}: not sent (${pre}).`); continue; }
+      if (e.link && !(await opens(e.link))) { console.log(`#${e.n} ${e.slug}: not sent (the preview ${e.link} does not open).`); continue; }
+      if (dry) { console.log(`#${e.n} ${e.slug}: would send to ${e.to} from ${e.from} (${tz}: ${windowState(tz)}).`); continue; }
+      if (mine) await sleep((lo + Math.random() * (hi - lo)) * 1000);
+      while (windowState(tz) === 'wait') await sleep(60_000);
+      if (windowState(tz) === 'late') { console.log(`#${e.n} ${e.slug}: not sent (after 17:00 their time; it goes on the next list).`); continue; }
+      await exclusive(async () => {
+        const sent = await json(SENT, []);
+        const no = refuse(e, { approved: outbox.approved, sent, dnc, mailboxes, config, day: outbox.date }); // re-check right before sending
+        if (no) { console.log(`#${e.n} ${e.slug}: not sent (${no}).`); return; }
+        const r = await gmailSend(e, config.sender.name);
+        sent.push({ date: outbox.date, slug: e.slug, to: e.to, from: e.from, variant: e.variant ?? null, subject: r.subject, messageId: r.id, threadId: r.threadId, sentAt: new Date().toISOString() });
+        await writeFile(SENT, JSON.stringify(sent, null, 1) + '\n');
+        sentNow++; mine++;
+        console.log(`#${e.n} ${e.slug}: sent to ${e.to} from ${e.from}.`);
+      });
+    }
+  }));
   console.log(dry ? 'Dry run: nothing sent.' : `${sentNow} sent. Commit leads/sent.json.`);
 }
 

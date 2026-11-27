@@ -76,8 +76,8 @@ export async function buildDashboard(root) {
   const places = usage.months?.[month]?.requests ?? 0;
   const cap = (await json(path.join(root, 'config.json'), {})).places?.monthlyRequestCap ?? 600;
   const label = { 'hot-form': 'Make it live / form', 'hot-reply': 'Replied', cold: 'No reaction yet', no: 'Said no', bounced: 'Bounced' };
-  const preview = (slug) => `<a href="/p/${esc(slug)}/" target="_blank" rel="noopener">${esc(names[slug] ?? slug)}</a>`;
-  const open = (slug) => `<a class="open" href="/p/${esc(slug)}/" target="_blank" rel="noopener">Preview ↗</a><small>neonsignsites.com/p/${esc(slug)}/</small>`;
+  const preview = (slug) => `<a href="/p/${esc(slug)}/?me=1" target="_blank" rel="noopener">${esc(names[slug] ?? slug)}</a>`;
+  const open = (slug) => `<a class="open" href="/p/${esc(slug)}/?me=1" target="_blank" rel="noopener">Preview ↗</a><small>neonsignsites.com/p/${esc(slug)}/</small>`;
   const quote = (r) => r?.text ? `<q>${esc(r.text.split(/\n(On .+wrote:|-----Original Message-----)/)[0].trim().slice(0, 220))}</q>` : '';
   const table = (list) => list.length ? `<table><thead><tr><th>Business</th><th>Preview</th><th>Status</th><th>Opened</th><th>Calls / texts</th><th>Emailed</th><th>From</th><th>Subj.</th></tr></thead><tbody>${list.map((r) =>
     `<tr class="${esc(r.status)}" data-slug="${esc(r.slug)}"><td>${preview(r.slug)}<small>${esc(r.to ?? '')}</small></td><td>${open(r.slug)}</td><td><span class="tag ${esc(r.status)}">${esc(label[r.status])}</span></td><td class="opened">–</td><td class="calls">–</td><td>${esc(r.sentOn ?? '')}</td><td>${esc((r.from ?? '').replace('@neonsignsites.', ' @ .'))}</td><td>${esc(r.variant ?? '–')}</td></tr>`).join('')}</tbody></table>` : '<p class="muted">Nothing here yet.</p>';
@@ -104,6 +104,7 @@ h1 { font-size: 1.3rem; margin: 0; } h2 { font-size: 1.05rem; margin: 34px 0 12p
 .kpi.hot b { color: var(--pink); text-shadow: 0 0 18px rgba(255,79,139,.45); } .kpi.money b { color: var(--green); }
 .cols { display: grid; grid-template-columns: 1.2fr .8fr; gap: 16px; }
 .card { background: var(--card); border: 1px solid var(--line); border-radius: 14px; padding: 16px; overflow-x: auto; }
+.lead.missed b { color: #ff9cbf; }
 .lead { padding: 12px 0; border-top: 1px solid var(--line); } .lead:first-child { border-top: 0; padding-top: 0; }
 q { display: block; color: var(--fg); opacity: .85; margin-top: 4px; font-style: italic; }
 .bars { display: flex; align-items: flex-end; gap: 6px; height: 120px; margin-top: 8px; }
@@ -132,15 +133,16 @@ a.open:hover { background: rgba(255,79,139,.12); text-decoration: none; } a:hove
   <div class="kpi money"><b id="k-rev">–</b><span id="k-rev-l">Revenue (PayPal not connected yet)</span></div>
 </div>
 
+<div id="calls"></div>
+
 <div class="cols">
-  <div><h2>Hot leads</h2><div class="card">${hot.length ? hot.map((r) => `<div class="lead">${preview(r.slug)} <span class="tag ${esc(r.status)}">${esc(label[r.status])}</span> <a class="open" href="/p/${esc(r.slug)}/" target="_blank" rel="noopener">Preview ↗</a><small>${esc(r.last?.from ?? '')} → ${esc(r.last?.box ?? '')} · ${esc(day(r.last?.date))}</small>${quote(r.last)}</div>`).join('') : '<p class="muted">No replies or "Make it live" yet. They appear here within 2 hours, and you get a notification.</p>'}</div></div>
+  <div><h2>Hot leads</h2><div class="card" id="hot-card">${hot.length ? hot.map((r) => `<div class="lead">${preview(r.slug)} <span class="tag ${esc(r.status)}">${esc(label[r.status])}</span> <a class="open" href="/p/${esc(r.slug)}/?me=1" target="_blank" rel="noopener">Preview ↗</a><small>${esc(r.last?.from ?? '')} → ${esc(r.last?.box ?? '')} · ${esc(day(r.last?.date))}</small>${quote(r.last)}</div>`).join('') : '<p class="muted">No replies or "Make it live" yet. They appear here within 2 hours, and you get a notification.</p>'}</div></div>
   <div><h2>Emails per day</h2><div class="card">${days.length ? `<div class="bars">${days.map((d) => `<div style="height:${Math.round((100 * perDay[d]) / max)}%"><span>${perDay[d]}</span></div>`).join('')}</div><div class="bars-x">${days.map((d) => `<span>${esc(d.slice(5))}</span>`).join('')}</div>` : '<p class="muted">Nothing sent yet.</p>'}
   <h2 style="margin-top:22px">Subject test</h2>${ab.map((x) => `<p>${x.v === 'A' ? '<b>A</b> "Name – new website (preview)"' : '<b>B</b> "Quick question about their-site.com"'}<br><span class="muted">${x.r} replies of ${x.n} sent (${x.pct}%)</span></p>`).join('')}
   <p class="muted" id="hooks-status"></p>
   <p class="muted">Said no: ${count('no')} · Bounced: ${count('bounced')} · Do-not-contact list: ${dnc.length}<br>Google Places this month: ${esc(places)} of ${esc(cap)} requests</p></div></div>
 </div>
 
-<div id="unknown"></div>
 <h2>Every business</h2><div class="card">${table(all)}</div>
 <p class="muted" style="margin-top:20px">Preview visits and "Make it live" clicks are live (from today; bots, link scanners and your own visits from any browser where you opened this dashboard are not counted). Calls and texts to (888) 444-1847 (Quo) and PayPal payments appear once their webhooks are set up.</p>
 <script>
@@ -174,7 +176,33 @@ fetch('/dashboard/api/events', { credentials: 'same-origin' }).then((r) => r.jso
     const tag = tr.querySelector('.tag');
     if (!/hot/.test(tag.className)) { if (tag.className === 'tag warm') warm--; else if (tr.classList.contains('cold')) cold--; tag.className = 'tag hot-reply'; tag.textContent = kind === 'c' ? 'Called you' : 'Texted you'; }
   }
-  if (unknown.length) document.getElementById('unknown').innerHTML = '<h2>Calls and texts from numbers we cannot match</h2><div class="card">' + unknown.map((u) => '<p>' + u + '</p>').join('') + '</div>';
+  // The Calls box at the top: every caller, newest first, missed and unanswered calls in pink.
+  const callers = [];
+  for (const [num, m] of Object.entries(ev.c || {})) callers.push({ num, m, kind: 'call' });
+  for (const [num, m] of Object.entries(ev.s || {})) callers.push({ num, m, kind: 'text' });
+  callers.sort((a, b) => String(b.m.l).localeCompare(String(a.m.l)));
+  if (callers.length) {
+    const fmt = (n) => '(' + n.slice(0, 3) + ') ' + n.slice(3, 6) + '-' + n.slice(6);
+    const rowsHtml = callers.slice(0, 12).map(({ num, m, kind }) => {
+      const slug = PHONES[num];
+      const tr = slug && document.querySelector('tr[data-slug="' + slug + '"]');
+      const who = tr ? tr.querySelector('td a').outerHTML + ' <a class="open" href="/p/' + slug + '/?me=1" target="_blank" rel="noopener">Preview ↗</a>' : 'Unknown caller';
+      const missed = kind === 'call' && (m.rang || m.missed);
+      const what = kind === 'text' ? 'Texted' + (m.last ? ': “' + m.last.replace(/</g, '&lt;') + '”' : '') : m.rang ? 'Rang, not answered' : (m.missed ? 'Missed call' : 'Call') + (m.vm ? ' · voicemail' : '');
+      return '<div class="lead' + (missed ? ' missed' : '') + '"><b>' + fmt(num) + '</b> · ' + who + '<small>' + what + (m.c > 1 ? ' · ' + m.c + '×' : '') + ' · last ' + when(m.l) + '</small></div>';
+    }).join('');
+    const missedN = callers.filter((x) => x.kind === 'call' && (x.m.rang || x.m.missed)).length;
+    document.getElementById('calls').innerHTML = '<h2>Calls and texts' + (missedN ? ' <span class="tag hot-reply">' + missedN + ' missed</span>' : '') + '</h2><div class="card">' + rowsHtml + '<p class="muted" style="margin:10px 0 0">Call back from the Quo app: (888) 444-1847.</p></div>';
+  }
+  // Leads who called or texted also go into the Hot leads box.
+  const hotCard = document.querySelector('#hot-card');
+  for (const { num, m, kind } of callers) {
+    const slug = PHONES[num];
+    const tr = slug && document.querySelector('tr[data-slug="' + slug + '"]');
+    if (!tr || !hotCard) continue;
+    if (hotCard.querySelector('.muted')) hotCard.innerHTML = '';
+    hotCard.insertAdjacentHTML('afterbegin', '<div class="lead">' + tr.querySelector('td a').outerHTML + ' <span class="tag hot-reply">' + (kind === 'text' ? 'Texted you' : m.rang || m.missed ? 'Missed call' : 'Called you') + '</span> <a class="open" href="/p/' + slug + '/?me=1" target="_blank" rel="noopener">Preview ↗</a><small>' + when(m.l) + '</small></div>');
+  }
   // Revenue (PayPal).
   const pays = Object.values(ev.$ || {}), month = new Date().toISOString().slice(0, 7);
   if (pays.length || Object.keys(ev.S || {}).length) {
@@ -192,7 +220,15 @@ fetch('/dashboard/api/events', { credentials: 'same-origin' }).then((r) => r.jso
   document.getElementById('hooks-status').innerHTML = hs.join('<br>');
   for (const a of document.querySelectorAll('a.forget')) a.addEventListener('click', (e) => {
     e.preventDefault();
-    fetch('/dashboard/api/forget?slug=' + encodeURIComponent(a.dataset.slug), { method: 'POST', headers: { 'x-dashboard': '1' }, credentials: 'same-origin' }).then(() => location.reload());
+    a.textContent = 'removing…';
+    fetch('/dashboard/api/forget?slug=' + encodeURIComponent(a.dataset.slug), { method: 'POST', headers: { 'x-dashboard': '1' }, credentials: 'same-origin' })
+      .then((r) => {
+        if (!r.ok) throw new Error(r.status);
+        const tr = a.closest('tr'), tag = tr.querySelector('.tag');
+        tr.querySelector('.opened').innerHTML = '– <small>removed (you)</small>';
+        if (tag.className === 'tag warm') { tag.className = 'tag cold'; tag.textContent = 'No reaction yet'; const k = document.getElementById('k-warm'); k.textContent = Math.max(0, Number(k.textContent) - 1); const c = document.getElementById('k-cold'); c.textContent = Number(c.textContent) + 1; }
+      })
+      .catch((err) => { a.textContent = 'could not remove (' + err.message + ')'; });
   });
   document.getElementById('k-warm').textContent = warm;
   document.getElementById('k-cold').textContent = cold;
