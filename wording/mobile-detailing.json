@@ -30,6 +30,30 @@
    ]
   },
   {
+   "from": "lake-and-land-detailing",
+   "headline": "Paint that looks new,<br><em>and stays that way.</em>",
+   "servicesTitle": "What we do.",
+   "servicesIntro": "Pricing starts at the numbers below. Call or schedule online for an official quote.",
+   "howTitle": "Three steps to a better finish.",
+   "contactTitle": "Book your vehicle in.",
+   "galleryTitle": "Fresh off the water.",
+   "alsoTitle": "We also detail",
+   "steps": [
+    {
+     "name": "Tell us what you drive",
+     "text": "Call or fill out the form with your vehicle and the services you want."
+    },
+    {
+     "name": "Get your quote",
+     "text": "Starting prices are posted. We give you an official quote before work begins."
+    },
+    {
+     "name": "Pick it up",
+     "text": "Your vehicle comes back corrected, protected and ready to show."
+    }
+   ]
+  },
+  {
    "from": "r-j-extreme-mobile-car-wash",
    "headline": "Showroom shine.<br><em>Mirror finish.</em>",
    "servicesTitle": "Bow to stern.",

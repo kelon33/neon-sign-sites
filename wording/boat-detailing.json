@@ -3,6 +3,33 @@
  "about": "General wording from reviewed previews (npm run wording). {name} and {town} are filled in per business.",
  "entries": [
   {
+   "from": "anchors-up-marine-detailing-and-gelcoat-repair",
+   "headline": "Lake day ready.<br><em>Every day.</em>",
+   "servicesTitle": "Bow to stern.",
+   "servicesIntro": "Restoration for weathered boats. Protection to keep every boat looking new.",
+   "whyTitle": "What we give you that others don't.",
+   "howTitle": "Back on the water in three steps.",
+   "contactTitle": "Book your boat in.",
+   "galleryTitle": "Fresh from the detail.",
+   "alsoTitle": "We also detail",
+   "sectionTitle": "We come to your boat.",
+   "sectionIntro": "We come directly to your dock or home, so your day keeps moving.",
+   "steps": [
+    {
+     "name": "Call us",
+     "text": "Tell us what your boat needs: scratches, gouges, damage or a full detail."
+    },
+    {
+     "name": "Get an estimate",
+     "text": "We give you an accurate estimate. We work with many area marinas, or you can bring the boat to us."
+    },
+    {
+     "name": "Final check",
+     "text": "We go over the finished work with you before it leaves."
+    }
+   ]
+  },
+  {
    "from": "below-the-belt-services",
    "headline": "Lake day ready.<br><em>Every day.</em>",
    "servicesTitle": "Bow to stern.",
@@ -63,6 +90,17 @@
    "galleryTitle": "Fresh off the water.",
    "alsoTitle": "We also detail",
    "sectionTitle": "We bring the detail to your dock."
+  },
+  {
+   "from": "captain-caseys-auto-boat-detailing",
+   "headline": "Lake day ready.<br><em>Every day.</em>",
+   "servicesTitle": "Bow to stern.",
+   "servicesIntro": "One-time details, regular programs and long-lasting protection.",
+   "whyTitle": "What we give you that others don't.",
+   "howTitle": "Back on the water in three steps.",
+   "galleryTitle": "Fresh off the water.",
+   "alsoTitle": "We also detail",
+   "sectionIntro": "We bring the detail to you, so your day keeps moving."
   },
   {
    "from": "central-tennessee-marine-service",
@@ -200,6 +238,31 @@
    ]
   },
   {
+   "from": "florida-marine-detailing",
+   "headline": "Like the first day,<br><em>every day.</em>",
+   "servicesTitle": "Bow to stern.",
+   "servicesIntro": "One-time details, regular programs and long-lasting protection.",
+   "whyTitle": "Why boat owners call us.",
+   "howTitle": "Ready for the water in three steps.",
+   "contactTitle": "Book your boat in.",
+   "galleryTitle": "Fresh off the water.",
+   "alsoTitle": "We also detail",
+   "steps": [
+    {
+     "name": "Tell us about your boat",
+     "text": "Call or send the form with the vessel, the service and a few photos."
+    },
+    {
+     "name": "We set the plan",
+     "text": "One-time detail or a regular wash plan, your choice."
+    },
+    {
+     "name": "Back on the water",
+     "text": "You enjoy your boat. We handle the rest."
+    }
+   ]
+  },
+  {
    "from": "guardian-detail",
    "headline": "Like the first day,<br><em>every day.</em>",
    "servicesTitle": "Waterline up.",
@@ -312,6 +375,31 @@
     {
      "name": "Final check",
      "text": "We go over the finished work with you before it leaves."
+    }
+   ]
+  },
+  {
+   "from": "patriot-marine-sales-and-service",
+   "headline": "Lake day ready.<br><em>Every day.</em>",
+   "servicesTitle": "Bow to stern.",
+   "servicesIntro": "From a wash and wax to full restoration, teak and ceramic coating.",
+   "whyTitle": "What we give you that others don't.",
+   "howTitle": "Back on the water in three steps.",
+   "contactTitle": "Book your boat in.",
+   "galleryTitle": "Fresh off the water.",
+   "alsoTitle": "We also detail",
+   "steps": [
+    {
+     "name": "Tell us about your boat",
+     "text": "Call or send the form with the vessel, the service and a few photos."
+    },
+    {
+     "name": "We set the plan",
+     "text": "One-time detail or a regular wash plan, your choice."
+    },
+    {
+     "name": "Back on the water",
+     "text": "You enjoy your boat. We handle the rest."
     }
    ]
   },
