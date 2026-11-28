@@ -1,0 +1,173 @@
+{
+ "kit": "detailing",
+ "trade": "Paintless dent repair",
+ "name": "Doggone Dents",
+ "legalName": "Doggone Dents",
+ "preview": true,
+ "placeId": "ChIJz-jyQDp9Ok4Rir-zeeBnBf8",
+ "title": "Doggone Dents | Paintless dent repair in Ponte Vedra Beach, FL",
+ "description": "Mobile paintless dent repair from owner Jason Spencer, who fixes every car himself. Door dings start at $150, and most are done in under an hour. 4.9 on Google from 30 reviews.",
+ "brand": "#1670ff",
+ "brandHi": "#52c6ff",
+ "accent": "#8fd0ff",
+ "logo": "logo.png",
+ "logoChip": false,
+ "wordmark": {
+  "top": "Doggone",
+  "bottom": "Dents"
+ },
+ "phone": "(904) 515-3368",
+ "email": "info@doggonedents.com",
+ "heroImage": "img/photo-13.jpg",
+ "heroAlt": "Red sedan door before and after dent repair",
+ "heroPosition": "60% 60%",
+ "heroPositionPhone": "60% 50%",
+ "rating": {
+  "score": "4.9",
+  "count": 30,
+  "url": "https://maps.google.com/?cid=18376208068367335306"
+ },
+ "kicker": "Paintless dent repair · Ponte Vedra Beach",
+ "headline": "Your car's dents.<br><em>Gone. Paint untouched.</em>",
+ "intro": "Mobile paintless dent repair from owner Jason Spencer, who fixes every car himself. Door dings start at $150, and most are done in under an hour.",
+ "mobile": {
+  "title": "We come to you. Then we bring it back.",
+  "intro": "We bring the detail to you, so your day keeps moving.",
+  "points": [
+   {
+    "name": "At your door",
+    "text": "Home, office or jobsite. We come to you."
+   },
+   {
+    "name": "Most done in under an hour",
+    "text": "Your day keeps moving while the dent disappears."
+   },
+   {
+    "name": "Text a photo",
+    "text": "Send a picture of the damage and get a ballpark quote, usually the same day."
+   },
+   {
+    "name": "Evenings and weekends",
+    "text": "Flexible appointments to fit a busy schedule."
+   }
+  ]
+ },
+ "servicesTitle": "Every kind of dent.",
+ "servicesIntro": "From a single door ding to a full hail storm.",
+ "services": [
+  {
+   "name": "Door Ding Removal",
+   "text": "Parking lot dings pushed out with no trace and the paint finish kept.",
+   "price": "Starting at $150"
+  },
+  {
+   "name": "Hail Damage Repair",
+   "text": "Full hail restoration, with help working directly with insurance companies."
+  },
+  {
+   "name": "Large Dent Repair",
+   "text": "Impact dents and larger creases often fixed with PDR, no paint needed."
+  },
+  {
+   "name": "Minor Plastic Bumper Repair",
+   "text": "Dents and creases removed from plastic bumper covers without repainting.",
+   "price": "Starting at $200"
+  },
+  {
+   "name": "Minor Scuff Removal",
+   "text": "Surface-level scuffs and scratches removed while the original paint stays.",
+   "price": "Starting at $100"
+  },
+  {
+   "name": "Headlight Restoration",
+   "text": "Cloudy, oxidized headlights cleared and sealed with a UV protective coating.",
+   "price": "Starting at $100"
+  }
+ ],
+ "also": [],
+ "alsoTitle": "We also fix",
+ "why": [
+  {
+   "name": "One guy, start to finish",
+   "text": "Owner Jason answers, quotes and does every repair himself. No call centers, no subcontractors."
+  },
+  {
+   "name": "20+ years of experience",
+   "text": "Family owned, with more than 20 years of paintless dent repair behind it."
+  },
+  {
+   "name": "Made right",
+   "text": "If you're not happy with the repair, tell Jason and he'll make it right."
+  }
+ ],
+ "whyTitle": "The Doggone Dents difference.",
+ "howTitle": "Back to like new, step by step.",
+ "steps": [
+  {
+   "name": "Send the details",
+   "text": "Call, or use the form with your year, make, model and photos of the damage."
+  },
+  {
+   "name": "Get an evaluation",
+   "text": "Bring the vehicle in and we look at the hail damage, dings or film options."
+  },
+  {
+   "name": "Drive it smooth",
+   "text": "We work the dents out and hand the vehicle back."
+  }
+ ],
+ "contactTitle": "Hail damage? Call us.",
+ "footerLine": "Paintless dent repair in Ponte Vedra Beach",
+ "reviews": [],
+ "hours": [
+  "Monday - Friday: 8:00 AM - 6:00 PM",
+  "Saturday: 9:00 AM - 4:00 PM",
+  "Sunday: Closed"
+ ],
+ "galleryTitle": "Dents gone, paint untouched.",
+ "notePlaceholder": "Where the dent is, how big, hail or a door ding…",
+ "ctaLabel": "Get an estimate",
+ "gallery": [
+  {
+   "src": "img/photo-1.jpg",
+   "alt": "Dark Toyota fender dent before and after",
+   "size": "big"
+  },
+  {
+   "src": "img/photo-4.jpg",
+   "alt": "Gray SUV rear quarter panel before and after repair"
+  },
+  {
+   "src": "img/photo-5.jpg",
+   "alt": "Gray car door ding before and after"
+  },
+  {
+   "src": "img/photo-16.jpg",
+   "alt": "Green car fender dent before and after"
+  },
+  {
+   "src": "img/photo-6.jpg",
+   "alt": "Roof dent before and after repair"
+  },
+  {
+   "src": "img/photo-19.jpg",
+   "alt": "Gray car fender dent before and after, four views"
+  },
+  {
+   "src": "img/photo-3.jpg",
+   "alt": "Rolls-Royce fuel door before and after dent repair"
+  },
+  {
+   "src": "img/photo-15.jpg",
+   "alt": "Maroon car panel dent before and after"
+  },
+  {
+   "src": "img/photo-17.jpg",
+   "alt": "Fender dent before and after repair"
+  }
+ ],
+ "areas": [
+  "Ponte Vedra Beach"
+ ],
+ "pitch": "site"
+}

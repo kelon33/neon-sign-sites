@@ -85,7 +85,7 @@ const NO_SITE_HOSTS = /(^|\.)(facebook|instagram|yelp|nextdoor|linktr|heygoldie|
 // A free subdomain from a site builder: still a lead (often the best kind), but flagged.
 const BUILDER_SUBDOMAIN = /\.(wixsite\.com|netlify\.app|godaddysites\.com|business\.site|sitedrop\.live|weebly\.com|square\.site|carrd\.co|webflow\.io|wordpress\.com|amazonaws\.com|vercel\.app)$/i;
 // Email addresses that are not the business's: placeholders, builders and trackers.
-export const JUNK_EMAIL = /@(ndiscovered\.com|latofonts|example\.|domain\.|email\.|yourdomain|sentry|wixpress|godaddy\.com|webador|squarespace|weebly|wix\.com|filler|mysite|website\.com|.*\.(png|jpe?g|gif|webp|svg)$)|^(filler|user|name|your|you|email|test|noreply|no-reply|impallari|unsubscribe\w*)@|@doe\.com$|@constantcontact\.|[^\w.+@-]/i;
+export const JUNK_EMAIL = /@(ndiscovered\.com|latofonts|example\.|domain\.|email\.|yourdomain|sentry|wixpress|godaddy\.com|webador|squarespace|weebly|wix\.com|filler|mysite|website\.com|.*\.(png|jpe?g|gif|webp|svg)$)|^(filler|user|name|your|you|email|test|noreply|no-reply|impallari|unsubscribe\w*|do-?not-?reply)@|@doe\.com$|@constantcontact\.|[^\w.+@-]/i;
 const FREE_MAIL = /@(gmail|yahoo|hotmail|outlook|aol|icloud|live|msn|comcast|att|ymail)\./i;
 
 export const hostOf = (u) => { try { return new URL(u).hostname.replace(/^www\./, '').toLowerCase(); } catch { return ''; } };

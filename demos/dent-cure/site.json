@@ -1,0 +1,102 @@
+{
+ "kit": "detailing",
+ "trade": "Paintless dent repair",
+ "name": "Dent Cure",
+ "legalName": "Dent Cure",
+ "preview": true,
+ "placeId": "ChIJ71x5dxJdXIYRtWcxQjIxbwk",
+ "title": "Dent Cure | Paintless dent repair in San Antonio, TX",
+ "description": "Paintless dent repair in San Antonio for larger dents, creases, hail damage and bumper dents. No fillers, sanding or repainting, so your factory finish stays. 5.0 on Google from 12 reviews.",
+ "brand": "#1670ff",
+ "brandHi": "#52c6ff",
+ "accent": "#8fd0ff",
+ "logo": "logo.png",
+ "logoChip": true,
+ "wordmark": {
+  "top": "Dent",
+  "bottom": "Cure"
+ },
+ "phone": "(210) 749-1233",
+ "email": "info@dentcuresa.com",
+ "heroImage": "img/photo-3.jpg",
+ "heroAlt": "Dent Cure technician working on a dark SUV under repair lighting",
+ "heroPosition": "60% 60%",
+ "heroPositionPhone": "60% 50%",
+ "rating": {
+  "score": "5.0",
+  "count": 12,
+  "url": "https://maps.google.com/?cid=679816160684894133"
+ },
+ "kicker": "Paintless dent repair · San Antonio",
+ "headline": "Hail damage gone.<br><em>Hassle gone too.</em>",
+ "intro": "Paintless dent repair in San Antonio for larger dents, creases, hail damage and bumper dents. No fillers, sanding or repainting, so your factory finish stays.",
+ "mobile": null,
+ "servicesTitle": "Everything your car needs.",
+ "servicesIntro": "From a single door ding to hail damage.",
+ "services": [
+  {
+   "name": "Repair estimates",
+   "text": "Advanced lighting and measurement tools show the extent of the damage, so you get an accurate and fair repair cost."
+  },
+  {
+   "name": "Dings and dent repair",
+   "text": "Door dings and small dents come out quickly, and the surface goes back to a smooth, factory finish without repainting."
+  },
+  {
+   "name": "Hail claim repairs",
+   "text": "From estimate to final inspection, we remove hail dents without repainting and work directly with your insurance on the claim."
+  },
+  {
+   "name": "Larger dents and creases",
+   "text": "Bigger dents and creases are repaired while your vehicle's factory panels and finish are preserved."
+  },
+  {
+   "name": "Bumper dents",
+   "text": "Bumper dents are removed without fillers, sanding or repainting."
+  }
+ ],
+ "also": [],
+ "alsoTitle": "We also fix",
+ "why": [
+  {
+   "name": "Factory finish preserved",
+   "text": "The process protects your original panels and paint, so the car keeps its value and appearance."
+  },
+  {
+   "name": "Days, not weeks",
+   "text": "Fast dent removal with professional results in days."
+  },
+  {
+   "name": "Claim ready",
+   "text": "Hail damage repair and insurance estimates, handled without the hassle."
+  }
+ ],
+ "whyTitle": "Why Dent Cure",
+ "howTitle": "Back to like new, step by step.",
+ "steps": [
+  {
+   "name": "Send the details",
+   "text": "Call, or use the form with your year, make, model and photos of the damage."
+  },
+  {
+   "name": "Get an evaluation",
+   "text": "Bring the vehicle in and we look at the hail damage, dings or film options."
+  },
+  {
+   "name": "Drive it smooth",
+   "text": "We work the dents out and hand the vehicle back."
+  }
+ ],
+ "contactTitle": "Got a dent?",
+ "footerLine": "Paintless dent repair in San Antonio",
+ "reviews": [],
+ "hours": [],
+ "galleryTitle": "Dents gone, paint untouched.",
+ "notePlaceholder": "Where the dent is, how big, hail or a door ding…",
+ "ctaLabel": "Get an estimate",
+ "gallery": [],
+ "areas": [
+  "San Antonio"
+ ],
+ "pitch": "photos"
+}

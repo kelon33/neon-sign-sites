@@ -1,0 +1,157 @@
+{
+ "kit": "detailing",
+ "trade": "Boat detailing",
+ "name": "Anchors Up Marine Detailing and Gelcoat Repair",
+ "legalName": "Anchors Up Marine Detailing and Gelcoat Repair",
+ "preview": true,
+ "placeId": "ChIJ083Tv0DD5YgReo-2LeWG3Ls",
+ "title": "Anchors Up Marine Detailing and Gelcoat Repair | Boat detailing in Middleburg, FL",
+ "description": "Mobile boat detailing and gelcoat repair for Middleburg and North Florida. We come to your dock, home or marina and walk you through every detail when we finish. 4.6 on Google from 8 reviews.",
+ "brand": "#1670ff",
+ "brandHi": "#52c6ff",
+ "accent": "#8fd0ff",
+ "logo": "logo.png",
+ "logoChip": true,
+ "wordmark": {
+  "top": "Anchors Up",
+  "bottom": "Marine Detailing"
+ },
+ "phone": "(904) 200-7703",
+ "email": "unchorsupdetailing@gmail.com",
+ "heroImage": null,
+ "heroAlt": "",
+ "heroPosition": "60% 60%",
+ "heroPositionPhone": "60% 50%",
+ "rating": {
+  "score": "4.6",
+  "count": 8,
+  "url": "https://maps.google.com/?cid=13536842898841440122"
+ },
+ "kicker": "Boat detailing · Middleburg",
+ "headline": "Lake day ready.<br><em>Every day.</em>",
+ "intro": "Mobile boat detailing and gelcoat repair for Middleburg and North Florida. We come to your dock, home or marina and walk you through every detail when we finish.",
+ "mobile": {
+  "title": "We come to your boat.",
+  "intro": "We come directly to your dock or home, so your day keeps moving.",
+  "points": [
+   {
+    "name": "Free on-site quote",
+    "text": "A qualified detailer meets you, answers your questions and sends an estimate."
+   },
+   {
+    "name": "Repairs on location",
+    "text": "A certified tech fixes gouges, dings and deep scratches where the boat sits."
+   },
+   {
+    "name": "Walk-through at the end",
+    "text": "We go over every detail with you after completion."
+   }
+  ]
+ },
+ "servicesTitle": "Bow to stern.",
+ "servicesIntro": "Restoration for weathered boats. Protection to keep every boat looking new.",
+ "services": [
+  {
+   "name": "Professional Boat Detailing",
+   "text": "Every component of your boat is cleaned, polished and sealed, with a machine seal of the gelcoat inside and out.",
+   "price": "$25.00 ft"
+  },
+  {
+   "name": "Boat Washes",
+   "text": "A professional wash with Shurhold brushes, then force-air drying to prevent water spotting on glass and metal.",
+   "price": "$10.00 ft"
+  },
+  {
+   "name": "Gelcoat Restoration",
+   "text": "Multiple techniques to fit any level of oxidation, bringing gelcoat back to a showroom finish.",
+   "price": "$20.00 ft"
+  },
+  {
+   "name": "Gelcoat Repair",
+   "text": "100% mobile repair for gouges, dings and deep scratches."
+  },
+  {
+   "name": "Ceramic Coating",
+   "text": "Professional-grade ceramic coating on most boats and wave runners to protect against sun, dirt and stains.",
+   "price": "$75.00 ft"
+  },
+  {
+   "name": "Debadging",
+   "text": "Decals removed, with wet sanding and polishing where needed to clear ghosting on the gelcoat.",
+   "price": "$100"
+  }
+ ],
+ "also": [
+  {
+   "name": "Wave runners"
+  },
+  {
+   "name": "Motor yachts"
+  },
+  {
+   "name": "Bowriders"
+  },
+  {
+   "name": "Wake boats"
+  }
+ ],
+ "alsoTitle": "We also detail",
+ "why": [
+  {
+   "name": "Certified work",
+   "text": "Certified in boat detailing, mobile gelcoat repair and ceramic coating."
+  },
+  {
+   "name": "Eco-friendly products",
+   "text": "They use eco-friendly products on your boat."
+  }
+ ],
+ "whyTitle": "What we give you that others don't.",
+ "howTitle": "Back on the water in three steps.",
+ "steps": [
+  {
+   "name": "Call us",
+   "text": "Tell us what your boat needs: scratches, gouges, damage or a full detail."
+  },
+  {
+   "name": "Get an estimate",
+   "text": "We give you an accurate estimate. We work with many area marinas, or you can bring the boat to us."
+  },
+  {
+   "name": "Final check",
+   "text": "We go over the finished work with you before it leaves."
+  }
+ ],
+ "contactTitle": "Book your boat in.",
+ "footerLine": "Boat detailing in Middleburg",
+ "reviews": [
+  {
+   "text": "Highly recommend Anchors Up, Detail oriented, professional, and trustworthy. Thank you for doing a great job on our boat today and working around our schedule to get it done for us.",
+   "name": "Crystal B."
+  },
+  {
+   "text": "You don't find many honest, hard working detailers, but I was very lucky to find Anchors Up! Professional and flawless. Super knowledgeable and did an amazing job! Highly recommend.",
+   "name": "Dustin M."
+  },
+  {
+   "text": "Brandon really went the extra mile to make sure my boat was showroom quality, Veteran owned and operated .",
+   "name": "Michael S."
+  }
+ ],
+ "hours": [],
+ "galleryTitle": "Fresh from the detail.",
+ "vehicleTypes": [
+  "Boat",
+  "Pontoon",
+  "Yacht",
+  "Jet ski",
+  "Other"
+ ],
+ "modelPlaceholder": "e.g. Sea Ray 240, 24 ft",
+ "notePlaceholder": "Length, where it is docked or stored, what it needs…",
+ "gallery": [],
+ "areas": [
+  "Middleburg"
+ ],
+ "pitch": "photos"
+}

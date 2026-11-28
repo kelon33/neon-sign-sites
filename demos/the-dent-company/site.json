@@ -1,0 +1,115 @@
+{
+ "kit": "detailing",
+ "trade": "Paintless dent repair",
+ "name": "The Dent Company",
+ "legalName": "The Dent Company",
+ "preview": true,
+ "placeId": "ChIJDZMI52Fz_oYRKzlpJKdnEUE",
+ "title": "The Dent Company | Paintless dent repair in San Antonio, TX",
+ "description": "Paintless dent repair and auto hail repair that keeps your factory paint. Free estimates, free valet, and a lifetime warranty on our work. 5.0 on Google from 7 reviews.",
+ "brand": "#1670ff",
+ "brandHi": "#52c6ff",
+ "accent": "#8fd0ff",
+ "logo": "logo.png",
+ "logoChip": false,
+ "wordmark": {
+  "top": "The",
+  "bottom": "Dent Company"
+ },
+ "phone": "(210) 526-4245",
+ "email": "support@thedentcompany.com",
+ "heroImage": "img/photo-7.jpg",
+ "heroAlt": "Orange sports coupe parked outside The Dent Company shop",
+ "heroPosition": "60% 60%",
+ "heroPositionPhone": "60% 50%",
+ "rating": {
+  "score": "5.0",
+  "count": 7,
+  "url": "https://maps.google.com/?cid=4688642654637472043"
+ },
+ "kicker": "Paintless dent repair · San Antonio",
+ "headline": "Your car's dents.<br><em>Gone. Paint untouched.</em>",
+ "intro": "Paintless dent repair and auto hail repair that keeps your factory paint. Free estimates, free valet, and a lifetime warranty on our work.",
+ "mobile": null,
+ "servicesTitle": "Every kind of dent.",
+ "servicesIntro": "From a single door ding to a full hail storm. No job too big or too small.",
+ "services": [
+  {
+   "name": "Auto Hail Repair",
+   "text": "Hail damage pushed out by hand, with no aftermarket parts or panel replacement."
+  },
+  {
+   "name": "Paintless Dent Repair",
+   "text": "Dents worked out from behind the panel, so the factory paint is not harmed."
+  },
+  {
+   "name": "Small Dent & Door Ding Repair",
+   "text": "Small dents and door dings removed without paint or filler."
+  },
+  {
+   "name": "Dent Removal",
+   "text": "Dents removed so your vehicle stays 100% original."
+  },
+  {
+   "name": "Dealership Auto Hail Repair",
+   "text": "On-site hail repair for dealerships, nationwide."
+  },
+  {
+   "name": "Auto Body Shop Repair",
+   "text": "Paint and body work when a repair needs more than paintless methods."
+  }
+ ],
+ "also": [
+  {
+   "name": "Fleets"
+  },
+  {
+   "name": "Dealerships"
+  }
+ ],
+ "alsoTitle": "We also fix",
+ "why": [
+  {
+   "name": "Lifetime warranty",
+   "text": "Every repair carries a Lifetime Warranty and a 100% Satisfaction Guarantee. If it ever needs fixing, they repair their own work free of charge."
+  },
+  {
+   "name": "No deductible, free rental",
+   "text": "They cover up to $500 of your deductible and provide a free rental car on qualifying auto hail repair."
+  },
+  {
+   "name": "Free valet and estimates",
+   "text": "Estimates and inspections are free. They pick up your vehicle and drop it off when repairs are finished."
+  }
+ ],
+ "whyTitle": "The The Dent Company difference.",
+ "howTitle": "Dent-free in three steps.",
+ "steps": [
+  {
+   "name": "Call or text",
+   "text": "Tell us about the damage. We explain the process and set up your rental car."
+  },
+  {
+   "name": "We handle the details",
+   "text": "We help with your insurance claim and can pick up your vehicle."
+  },
+  {
+   "name": "Drive it home",
+   "text": "We repair the damage, give it a mini-detail and deliver it back."
+  }
+ ],
+ "contactTitle": "Got hail damage?",
+ "footerLine": "Paintless dent repair in San Antonio",
+ "reviews": [],
+ "hours": [
+  "Monday – Saturday: 8am – 7pm"
+ ],
+ "galleryTitle": "Dents gone, paint untouched.",
+ "notePlaceholder": "Where the dent is, how big, hail or a door ding…",
+ "ctaLabel": "Get an estimate",
+ "gallery": [],
+ "areas": [
+  "San Antonio"
+ ],
+ "pitch": "photos"
+}

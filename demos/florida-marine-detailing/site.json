@@ -1,0 +1,143 @@
+{
+ "kit": "detailing",
+ "trade": "Boat detailing",
+ "name": "Florida Marine Detailing",
+ "legalName": "Florida Marine Detailing",
+ "preview": true,
+ "placeId": "ChIJCWAGlDE35IgRw8_r8ahNUK8",
+ "title": "Florida Marine Detailing | Boat detailing in Ponte Vedra Beach, FL",
+ "description": "Boat and yacht detailing in Ponte Vedra Beach, from a basic wash to a showroom-floor detail. Scheduling is fast and easy, and the estimate is free. 5.0 on Google from 12 reviews.",
+ "brand": "#1670ff",
+ "brandHi": "#52c6ff",
+ "accent": "#8fd0ff",
+ "logo": null,
+ "logoChip": false,
+ "wordmark": {
+  "top": "Florida Marine",
+  "bottom": "Detailing"
+ },
+ "phone": "(904) 614-7560",
+ "email": "sam@flmarinedetailing.com",
+ "heroImage": "img/photo-10.jpg",
+ "heroAlt": "Detailed white flybridge boat with teak-colored trim at the dock",
+ "heroPosition": "60% 60%",
+ "heroPositionPhone": "60% 50%",
+ "rating": {
+  "score": "5.0",
+  "count": 12,
+  "url": "https://maps.google.com/?cid=12632682342782848963"
+ },
+ "kicker": "Boat detailing · Ponte Vedra Beach",
+ "headline": "Like the first day,<br><em>every day.</em>",
+ "intro": "Boat and yacht detailing in Ponte Vedra Beach, from a basic wash to a showroom-floor detail. Scheduling is fast and easy, and the estimate is free.",
+ "mobile": null,
+ "servicesTitle": "Bow to stern.",
+ "servicesIntro": "One-time details, regular programs and long-lasting protection.",
+ "services": [
+  {
+   "name": "Teak Cleaning",
+   "text": "Regular cleaning and treating keeps teak at its natural luster and stops mold, buildup and discoloration."
+  },
+  {
+   "name": "Washes",
+   "text": "One-time detailed washes as needed, or recurring washes every one, two, three or four weeks to keep your boat ready year-round."
+  },
+  {
+   "name": "Detail",
+   "text": "Buff and polish removes oxidation, brings back the gloss and protects your gel coat so the boat is easier to clean."
+  }
+ ],
+ "also": [],
+ "alsoTitle": "We also detail",
+ "why": [
+  {
+   "name": "Every boat gets its own approach",
+   "text": "From wet sanding, buff and polish on heavily oxidized boats to a simple buff and wax on lightly oxidized ones."
+  },
+  {
+   "name": "A test spot first",
+   "text": "We always test a spot to see which approach will give the best results."
+  },
+  {
+   "name": "Easy to schedule",
+   "text": "Fast, easy scheduling and a free estimate based on your needs."
+  }
+ ],
+ "whyTitle": "Why boat owners call us.",
+ "howTitle": "Ready for the water in three steps.",
+ "steps": [
+  {
+   "name": "Tell us about your boat",
+   "text": "Call or send the form with the vessel, the service and a few photos."
+  },
+  {
+   "name": "We set the plan",
+   "text": "One-time detail or a regular wash plan, your choice."
+  },
+  {
+   "name": "Back on the water",
+   "text": "You enjoy your boat. We handle the rest."
+  }
+ ],
+ "contactTitle": "Book your boat in.",
+ "footerLine": "Boat detailing in Ponte Vedra Beach",
+ "reviews": [],
+ "hours": [
+  "Mon–Thu: 7:30am–5:00pm",
+  "Fri: 7:30am–5:00pm",
+  "Sat–Sun: by appointment"
+ ],
+ "galleryTitle": "Fresh off the water.",
+ "vehicleTypes": [
+  "Boat",
+  "Pontoon",
+  "Yacht",
+  "Jet ski",
+  "Other"
+ ],
+ "modelPlaceholder": "e.g. Sea Ray 240, 24 ft",
+ "notePlaceholder": "Length, where it is docked or stored, what it needs…",
+ "gallery": [
+  {
+   "src": "img/photo-7.jpg",
+   "alt": "Polished blue hull with a mirror-like reflection",
+   "size": "big"
+  },
+  {
+   "src": "img/photo-5.jpg",
+   "alt": "Restored teak foredeck on a white boat"
+  },
+  {
+   "src": "img/photo-6.jpg",
+   "alt": "Before and after of a boat's teak swim platform"
+  },
+  {
+   "src": "img/photo-17.jpg",
+   "alt": "Clean upper deck with seating and teak-look flooring"
+  },
+  {
+   "src": "img/photo-16.jpg",
+   "alt": "White motor yacht docked in a marina"
+  },
+  {
+   "src": "img/photo-11.jpg",
+   "alt": "White boat with wood trim at the dock"
+  },
+  {
+   "src": "img/photo-15.jpg",
+   "alt": "White cruiser with enclosed flybridge at the marina"
+  },
+  {
+   "src": "img/photo-9.jpg",
+   "alt": "Glossy white hull and side deck"
+  },
+  {
+   "src": "img/photo-13.jpg",
+   "alt": "Polished boat with wood rails along the dock"
+  }
+ ],
+ "areas": [
+  "Ponte Vedra Beach"
+ ],
+ "pitch": "site"
+}

@@ -1,0 +1,147 @@
+{
+ "kit": "detailing",
+ "trade": "Boat detailing",
+ "name": "Captain Casey’s Auto & Boat Detailing",
+ "legalName": "Captain Casey’s Auto & Boat Detailing",
+ "preview": true,
+ "placeId": "ChIJ0X_bVwQTw4gRSjZ6-CcIi0Q",
+ "title": "Captain Casey’s Auto & Boat Detailing | Boat detailing in Sarasota, FL",
+ "description": "Mobile detailing for boats and cars in Sarasota. Hand washed, polished and protected, right where you park or dock. 5.0 on Google from 7 reviews.",
+ "brand": "#1670ff",
+ "brandHi": "#52c6ff",
+ "accent": "#8fd0ff",
+ "logo": null,
+ "logoChip": false,
+ "wordmark": {
+  "top": "Captain Casey's",
+  "bottom": "Auto & Boat Detailing"
+ },
+ "phone": "(863) 660-8852",
+ "email": "captaincaseysboatdetailing@gmail.com",
+ "heroImage": null,
+ "heroAlt": "",
+ "heroPosition": "60% 60%",
+ "heroPositionPhone": "60% 50%",
+ "rating": {
+  "score": "5.0",
+  "count": 7,
+  "url": "https://maps.google.com/?cid=4939050384107386442"
+ },
+ "kicker": "Boat detailing · Sarasota",
+ "headline": "Lake day ready.<br><em>Every day.</em>",
+ "intro": "Mobile detailing for boats and cars in Sarasota. Hand washed, polished and protected, right where you park or dock.",
+ "mobile": {
+  "title": "Your boat, your spot.",
+  "intro": "We bring the detail to you, so your day keeps moving.",
+  "points": [
+   {
+    "name": "We come to you",
+    "text": "Our mobile service comes right to you."
+   },
+   {
+    "name": "Done by hand",
+    "text": "Detailed hand washing, inside and out."
+   },
+   {
+    "name": "Protects too",
+    "text": "Products chosen to clean and to protect."
+   },
+   {
+    "name": "Easy to book",
+    "text": "Call or text 863-660-8852."
+   }
+  ]
+ },
+ "servicesTitle": "Bow to stern.",
+ "servicesIntro": "One-time details, regular programs and long-lasting protection.",
+ "services": [
+  {
+   "name": "Boat Wash & Wax",
+   "text": "Full interior detail with hatches cleaned and metal polished, plus exterior wash, polish and wax.",
+   "price": "$25/ft"
+  },
+  {
+   "name": "Car Detail",
+   "text": "Interior vacuum, carpet shampoo, steam-cleaned seats, leather treatment and clean windows, plus exterior wash, polish, wax and shined wheels and tires.",
+   "price": "Starting at $200"
+  },
+  {
+   "name": "Ceramic Coatings",
+   "text": "A lasting protective coating for your vehicle or boat."
+  },
+  {
+   "name": "Marine Vinyl and Cushion Cleaning",
+   "text": "Marine vinyl and cushions cleaned by hand."
+  },
+  {
+   "name": "Leather Restoring",
+   "text": "Worn leather treated and brought back."
+  },
+  {
+   "name": "Monthly Maintenance Plans",
+   "text": "Monthly or bi-monthly cleanings to keep your car or boat looking pristine for less.",
+   "price": "Call for Pricing"
+  }
+ ],
+ "also": [
+  {
+   "name": "Cars"
+  },
+  {
+   "name": "Boats"
+  },
+  {
+   "name": "And more"
+  }
+ ],
+ "alsoTitle": "We also detail",
+ "why": [
+  {
+   "name": "Mobile service",
+   "text": "We come right to you, so there is no drop-off."
+  },
+  {
+   "name": "Hand detailing",
+   "text": "Detailed hand washing on every job."
+  },
+  {
+   "name": "Built to protect",
+   "text": "We use the best products so the detail cleans and protects."
+  }
+ ],
+ "whyTitle": "What we give you that others don't.",
+ "howTitle": "Back on the water in three steps.",
+ "steps": [
+  {
+   "name": "Tell us about your boat",
+   "text": "Call or send the form with what it needs."
+  },
+  {
+   "name": "We come to you",
+   "text": "Mobile service, based in Sarasota."
+  },
+  {
+   "name": "Back on the water",
+   "text": "Clean, polished and protected."
+  }
+ ],
+ "contactTitle": "Book your boat in.",
+ "footerLine": "Boat detailing in Sarasota",
+ "reviews": [],
+ "hours": [],
+ "galleryTitle": "Fresh off the water.",
+ "vehicleTypes": [
+  "Boat",
+  "Pontoon",
+  "Yacht",
+  "Jet ski",
+  "Other"
+ ],
+ "modelPlaceholder": "e.g. Sea Ray 240, 24 ft",
+ "notePlaceholder": "Length, where it is docked or stored, what it needs…",
+ "gallery": [],
+ "areas": [
+  "Sarasota"
+ ],
+ "pitch": "photos"
+}

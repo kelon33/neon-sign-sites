@@ -113,6 +113,8 @@ export async function saveImage(page, src, file, { max = 1200, logo = false } = 
 export async function thumbnail(page, file) {
   const { readFile } = await import('node:fs/promises');
   const dataUrl = `data:image/jpeg;base64,${(await readFile(file)).toString('base64')}`;
+  // On a blank page: the last image opened may have come with a page whose rules block data: images.
+  if (page.url() !== 'about:blank') await page.goto('about:blank');
   const out = await page.evaluate(shrinkInPage, { dataUrl, max: 384, logo: false });
   return out.data.split(',')[1];
 }

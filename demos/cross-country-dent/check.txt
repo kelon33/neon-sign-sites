@@ -1,0 +1,7 @@
+- Logo is dark on a transparent background: shown on a white chip. Check it reads well.
+- No hero photo: Claude found none of their photos usable.
+- Photo pitch: only 0 usable photos by Claude's choice, so no gallery; the email asks them for photos of their work.
+- Claude's notes: Photos are dark, AI-looking or staged marketing renders, so none were used. Site lists Fort Worth and Converse addresses, not San Antonio; Converse is near San Antonio. Site claims lifetime warranty and deductible coverage; confirm terms with owner. Only 2 reviews on site. Site says free inspection.
+- No photos at all: the hero has no picture. Find photos by hand.
+- Only 0 gallery photos.
+- Hero is a licensed stock photo for the trade (credited on the page, see generator/assets/CREDITS.md), not their work: swap in their own photo once they send one.

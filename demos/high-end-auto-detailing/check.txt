@@ -1,0 +1,6 @@
+- Listed as Boat detailing, but their site is about cars: built as mobile car detailing.
+- No logo found: the header shows the name only.
+- Photo pitch: only 0 usable photos by Claude's choice, so no gallery; the email asks them for photos of their work.
+- Claude's notes: No review text on site (only a claim of 200+ 5-star Google reviews, while Google shows 47). Photos look AI-generated or stock, so only photo 1 is used and it is questionable. Prices are shown as 'from' sedan prices; trucks and SUVs cost more. Site offers shop appointments as well as mobile. Headline draft mentions 'Three details' but the site has 12 packages.
+- Only 0 gallery photos.
+- No reviews on the site: the page shows the Google rating only.

@@ -1,0 +1,121 @@
+{
+ "kit": "detailing",
+ "trade": "Paintless dent repair",
+ "name": "Brian’s Dent Magic Paintless Dent Repair",
+ "legalName": "Brian’s Dent Magic Paintless Dent Repair",
+ "preview": true,
+ "placeId": "ChIJ3475iEo7U4YRX0nTDF0SMUg",
+ "title": "Brian’s Dent Magic Paintless Dent Repair | Paintless dent repair in Iowa Park, TX",
+ "description": "Paintless dent repair for dents, creases, dings and hail damage. No paint, no bondo, no chemicals. The factory finish stays. 4.8 on Google from 13 reviews.",
+ "brand": "#1670ff",
+ "brandHi": "#52c6ff",
+ "accent": "#8fd0ff",
+ "logo": null,
+ "logoChip": false,
+ "wordmark": {
+  "top": "Brian's",
+  "bottom": "Dent Magic"
+ },
+ "phone": "(940) 704-6394",
+ "email": "dentmagicwf@gmail.com",
+ "heroImage": "img/photo-3.jpg",
+ "heroAlt": "Technician working on the hood of a blue classic Pontiac Firebird",
+ "heroPosition": "60% 60%",
+ "heroPositionPhone": "60% 50%",
+ "rating": {
+  "score": "4.8",
+  "count": 13,
+  "url": "https://maps.google.com/?cid=5201959235446065503"
+ },
+ "kicker": "Paintless dent repair · Iowa Park",
+ "headline": "Hail damage gone.<br><em>Paint untouched.</em>",
+ "intro": "Paintless dent repair for dents, creases, dings and hail damage. No paint, no bondo, no chemicals. The factory finish stays.",
+ "mobile": {
+  "title": "Door dings, at your door.",
+  "intro": "For door dings and small dents, I come to you. Hail, deer hits and larger dents are repaired at my Iowa Park shop.",
+  "points": [
+   {
+    "name": "We come to you",
+    "text": "Can't make it to the shop? We repair on site at your location."
+   },
+   {
+    "name": "Fits a busy day",
+    "text": "Built for clients with a full schedule who can't drive to the shop."
+   },
+   {
+    "name": "Back on the road faster",
+    "text": "A streamlined process that gets you moving sooner."
+   },
+   {
+    "name": "Quote by text",
+    "text": "Text photos from your phone to 940-704-6394 for a quick quote."
+   }
+  ]
+ },
+ "servicesTitle": "Everything your car needs.",
+ "servicesIntro": "From a single door ding to a full hail storm.",
+ "services": [
+  {
+   "name": "Dents",
+   "text": "Paintless removal that preserves the original factory paint."
+  },
+  {
+   "name": "Creases",
+   "text": "Worked out with special tools and skill, with no filler."
+  },
+  {
+   "name": "Door dings",
+   "text": "Small dings repaired at our shop or at your location."
+  },
+  {
+   "name": "Hail damage",
+   "text": "Hail dents removed and the vehicle returned to like-new condition."
+  }
+ ],
+ "also": [],
+ "alsoTitle": "We also fix",
+ "why": [
+  {
+   "name": "Over 25 years",
+   "text": "Brian's Dent Magic has been repairing dents, creases, bumps, dings and hail damage for over 25 years."
+  },
+  {
+   "name": "Untraceable repairs",
+   "text": "No paint, bondo or chemicals. The original factory paint is preserved."
+  },
+  {
+   "name": "Shop or on site",
+   "text": "Bring it to us, or we come to you and repair on site."
+  }
+ ],
+ "whyTitle": "The Brian’s Dent Magic Paintless Dent Repair difference.",
+ "howTitle": "Back to like new in three steps.",
+ "steps": [
+  {
+   "name": "Send the details",
+   "text": "Call, or use the form with your year, make, model and photos of the damage."
+  },
+  {
+   "name": "Get an evaluation",
+   "text": "Bring the vehicle in and we look at the hail damage, dings or film options."
+  },
+  {
+   "name": "Drive it smooth",
+   "text": "We work the dents out and hand the vehicle back."
+  }
+ ],
+ "contactTitle": "Hail damage? Call us.",
+ "footerLine": "Paintless dent repair in Iowa Park",
+ "reviews": [],
+ "hours": [
+  "Monday - Friday 8:00am - 5:00pm"
+ ],
+ "galleryTitle": "Dents gone, paint untouched.",
+ "notePlaceholder": "Where the dent is, how big, hail or a door ding…",
+ "ctaLabel": "Get an estimate",
+ "gallery": [],
+ "areas": [
+  "Iowa Park"
+ ],
+ "pitch": "photos"
+}

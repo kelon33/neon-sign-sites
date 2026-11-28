@@ -1,0 +1,139 @@
+{
+ "kit": "detailing",
+ "trade": "Boat detailing",
+ "name": "Patriot Marine Sales and Service",
+ "legalName": "Patriot Marine Sales and Service",
+ "preview": true,
+ "placeId": "ChIJrWZD2fE_ZIgRReC94BradQg",
+ "title": "Patriot Marine Sales and Service | Boat detailing in Mt. Juliet, TN",
+ "description": "Boat cleaning in Mt. Juliet, done bow to stern. Full detailing, bottom spray-offs, acid washes and weekly in-slip cleaning at Cedar Creek Marina. 4.5 on Google from 8 reviews.",
+ "brand": "#1670ff",
+ "brandHi": "#52c6ff",
+ "accent": "#8fd0ff",
+ "logo": null,
+ "logoChip": false,
+ "wordmark": {
+  "top": "Patriot Marine",
+  "bottom": "Sales & Service"
+ },
+ "phone": "(615) 288-3701",
+ "email": "patriotmarinemjtn@gmail.com",
+ "heroImage": null,
+ "heroAlt": "",
+ "heroPosition": "60% 60%",
+ "heroPositionPhone": "60% 50%",
+ "rating": {
+  "score": "4.5",
+  "count": 8,
+  "url": "https://maps.google.com/?cid=609633133553115205"
+ },
+ "kicker": "Boat detailing · Mt. Juliet",
+ "headline": "Lake day ready.<br><em>Every day.</em>",
+ "intro": "Boat cleaning in Mt. Juliet, done bow to stern. Full detailing, bottom spray-offs, acid washes and weekly in-slip cleaning at Cedar Creek Marina.",
+ "mobile": {
+  "points": [
+   {
+    "name": "In-slip cleaning",
+    "text": "Weekly cleaning happens right at your marina."
+   },
+   {
+    "name": "No hauling",
+    "text": "Your boat stays put. No moving it to get it cleaned."
+   },
+   {
+    "name": "Regular care",
+    "text": "Regular cleanings protect your finish and reduce long-term wear."
+   },
+   {
+    "name": "Ready to go",
+    "text": "Your boat is clean and ready when you are."
+   }
+  ]
+ },
+ "servicesTitle": "Bow to stern.",
+ "servicesIntro": "From a wash and wax to full restoration, teak and ceramic coating.",
+ "services": [
+  {
+   "name": "Full Boat Detailing",
+   "text": "Comprehensive cleaning from bow to stern, inside and out."
+  },
+  {
+   "name": "Bottom Spray-Offs",
+   "text": "Removes salt, algae and buildup to help protect your hull."
+  },
+  {
+   "name": "Acid Washes",
+   "text": "Safe, effective restoration for fiberglass, aluminum and pontoon boats."
+  },
+  {
+   "name": "Weekly In-Slip Cleaning",
+   "text": "Your boat is cleaned and maintained at your marina, with no hauling or moving."
+  }
+ ],
+ "also": [
+  {
+   "name": "Fiberglass boats"
+  },
+  {
+   "name": "Aluminum boats"
+  },
+  {
+   "name": "Pontoon boats"
+  }
+ ],
+ "alsoTitle": "We also detail",
+ "why": [
+  {
+   "name": "Detail-oriented cleaning",
+   "text": "Thorough work on fiberglass, aluminum and pontoon boats."
+  },
+  {
+   "name": "Honest and clear",
+   "text": "Honesty, transparency and clear communication keep you in the loop."
+  },
+  {
+   "name": "Prompt, fair service",
+   "text": "Prompt, reliable service at fair prices, because boating season is short."
+  }
+ ],
+ "whyTitle": "What we give you that others don't.",
+ "howTitle": "Back on the water in three steps.",
+ "steps": [
+  {
+   "name": "Tell us about your boat",
+   "text": "Call or send the form with the vessel, the service and a few photos."
+  },
+  {
+   "name": "We set the plan",
+   "text": "One-time detail or a regular wash plan, your choice."
+  },
+  {
+   "name": "Back on the water",
+   "text": "You enjoy your boat. We handle the rest."
+  }
+ ],
+ "contactTitle": "Book your boat in.",
+ "footerLine": "Boat detailing in Mt. Juliet",
+ "reviews": [],
+ "hours": [
+  "Monday - Friday: 9:00 - 4:00",
+  "Saturday: Appointment Only",
+  "Sunday: Closed",
+  "(Winter Hours May Vary)"
+ ],
+ "galleryTitle": "Fresh off the water.",
+ "vehicleTypes": [
+  "Boat",
+  "Pontoon",
+  "Yacht",
+  "Jet ski",
+  "Other"
+ ],
+ "modelPlaceholder": "e.g. Sea Ray 240, 24 ft",
+ "notePlaceholder": "Length, where it is docked or stored, what it needs…",
+ "gallery": [],
+ "areas": [
+  "Mt. Juliet"
+ ],
+ "pitch": "photos"
+}

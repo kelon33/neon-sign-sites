@@ -2,6 +2,18 @@
 
 Every hand fix or rejection in a preview review, and the script change that stops it next time (rule in CLAUDE.md). Newest first.
 
+## 2026-11-28 (24 leads left from found-2026-11-27)
+
+| Problem | Previews | Cause | Script change | Status |
+|---|---|---|---|---|
+| Not the trade (fiberglass/gelcoat shop, marine repair shop) | 2 | Search phrase matched | Caught by yesterday's `fit` check: not built, added to rejected.json automatically | done (worked) |
+| Builds failed: "source image cannot be decoded" | 2 | Thumbnails were made on the tab last used to open an image; a site's page rules there blocked data: images | `thumbnail()` runs on about:blank | done |
+| Only email is `donotreply@` | 1 | Not in the junk list | `JUNK_EMAIL` drops `donotreply@` / `do-not-reply@` | done |
+| Email belongs to another business that already has a preview (info@nexterras.com on Dent Concepts) | 1 | Shared site or designer; nothing compared emails across previews | `batch` skips a lead whose email a built preview already uses | done |
+| Email on an unrelated spam domain (gudanghokiwebsite.com; site likely hacked) | 1 | `pickEmail` keeps an other-domain address with a note, but the note never reached the review | The note now goes into check.txt ("Email …: email domain differs from the website") so the digest shows it. Open: reject other-domain emails whose domain looks like spam | note done; spam check open |
+| Preview built from an error page ("upstream request failed"; Immaculate Auto Detailing), no email | 1 | The scraper returned the error text as their site | `cli` stops when the text is under 150 characters or starts like an error page; the lead can be retried later | done |
+| Possible typo in their own address (unchorsupdetailing@ for Anchors Up) | 1 | Their site's own spelling | Open: the pre-send email check (planned) catches addresses that don't exist | open |
+
 ## 2026-11-27 (batch of 85: boat, dent, painting)
 
 | Problem | Previews | Cause | Script change | Status |

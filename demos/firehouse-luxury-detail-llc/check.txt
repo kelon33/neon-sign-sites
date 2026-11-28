@@ -1,0 +1,8 @@
+- Found by a search in Waco, TX, but their address is in China Spring, TX: the site uses that. Check their service area.
+- Listed as Boat detailing, but their site is about cars: built as mobile car detailing.
+- No hero photo: Claude found none of their photos usable.
+- Photo pitch: only 0 usable photos by Claude's choice, so no gallery; the email asks them for photos of their work.
+- Claude's notes: None of the site photos are of their own work: they look like stock (an Audi close-up, a dark interior, a showroom, textures), so none were used. Site says vehicles picked up outside China Spring cost extra, so the mobile claim is not certain; mobile points are kept to what the site says. Extra fees may apply for heavy dirt or pet hair. Site mentions paint protection film and 1 step paint correction (price not clearly matched in the list), so these were left out of the cards.
+- No photos at all: the hero has no picture. Find photos by hand.
+- Only 0 gallery photos.
+- Hero is a licensed stock photo for the trade (credited on the page, see generator/assets/CREDITS.md), not their work: swap in their own photo once they send one.

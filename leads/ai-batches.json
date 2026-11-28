@@ -1201,5 +1201,365 @@
    }
   ],
   "done": true
+ },
+ {
+  "id": "msgbatch_01V8HN6LUiMDv8aE5LsVuDLM",
+  "created": "2026-11-28T05:06:03.703Z",
+  "map": {
+   "p0": "preferred-hail-group",
+   "p1": "dent-concepts",
+   "p2": "boat-brothers-fiberglass-gelcoat",
+   "p3": "cross-country-dent",
+   "p4": "hammerhead-paintless-dent-removal",
+   "p5": "lake-and-land-detailing",
+   "p6": "doggone-dents",
+   "p7": "all-states-hail-team",
+   "p8": "automotive-detailing-by-billy",
+   "p9": "capital-mobile-car-detailing-barton-creek",
+   "p10": "t-k-boat-repair-and-fiberglass-specialist",
+   "p11": "select-pdr",
+   "p12": "skiwi-marine-services",
+   "p13": "brians-dent-magic-paintless-dent-repair",
+   "p14": "a-1-dent-company",
+   "p15": "florida-marine-detailing",
+   "p16": "dent-cure",
+   "p17": "firehouse-luxury-detail-llc",
+   "p18": "anchors-up-marine-detailing-and-gelcoat-repair",
+   "p19": "patriot-marine-sales-and-service",
+   "p20": "captain-caseys-auto-boat-detailing",
+   "p21": "the-dent-company"
+  },
+  "leads": [
+   {
+    "slug": "preferred-hail-group",
+    "name": "Preferred Hail Group",
+    "kind": "weak site",
+    "trade": "Paintless dent repair",
+    "reviews": 10,
+    "website": "http://preferredhail.com/",
+    "reasons": [
+     "GoDaddy site builder"
+    ],
+    "improvements": []
+   },
+   {
+    "slug": "dent-concepts",
+    "name": "Dent Concepts",
+    "kind": "decent site",
+    "trade": "Paintless dent repair",
+    "reviews": 231,
+    "website": "https://dentconcepts.com/",
+    "reasons": [],
+    "improvements": [
+     "no quote or booking form",
+     "no meta description"
+    ]
+   },
+   {
+    "slug": "boat-brothers-fiberglass-gelcoat",
+    "name": "Boat Brothers Fiberglass & Gelcoat",
+    "kind": "decent site",
+    "trade": "Boat detailing",
+    "reviews": 37,
+    "website": "https://www.boatbrothersco.com/",
+    "reasons": [],
+    "improvements": [
+     "no quote or booking form",
+     "no reviews on the site",
+     "only 2 photos"
+    ]
+   },
+   {
+    "slug": "cross-country-dent",
+    "name": "Cross Country Dent",
+    "kind": "decent site",
+    "trade": "Paintless dent repair",
+    "reviews": 37,
+    "website": "https://www.crosscountrydent.com/",
+    "reasons": [],
+    "improvements": [
+     "no tap-to-call link",
+     "no quote or booking form"
+    ]
+   },
+   {
+    "slug": "hammerhead-paintless-dent-removal",
+    "name": "Hammerhead Paintless Dent Removal",
+    "kind": "decent site",
+    "trade": "Paintless dent repair",
+    "reviews": 32,
+    "website": "https://www.hammerheadpdr.com/",
+    "reasons": [],
+    "improvements": [
+     "no quote or booking form"
+    ]
+   },
+   {
+    "slug": "lake-and-land-detailing",
+    "name": "Lake And Land Detailing",
+    "kind": "decent site",
+    "trade": "Boat detailing",
+    "reviews": 30,
+    "website": "http://lakeandlanddetailing.com/",
+    "reasons": [],
+    "improvements": [
+     "no reviews on the site"
+    ]
+   },
+   {
+    "slug": "doggone-dents",
+    "name": "Doggone Dents",
+    "kind": "decent site",
+    "trade": "Paintless dent repair",
+    "reviews": 30,
+    "website": "http://www.doggonedents.com/",
+    "reasons": [],
+    "improvements": [
+     "only 1 photo"
+    ]
+   },
+   {
+    "slug": "all-states-hail-team",
+    "name": "All States Hail Team",
+    "kind": "decent site",
+    "trade": "Paintless dent repair",
+    "reviews": 25,
+    "website": "https://allstateshailteams.com/",
+    "reasons": [],
+    "improvements": [
+     "no quote or booking form",
+     "copyright 2025"
+    ]
+   },
+   {
+    "slug": "automotive-detailing-by-billy",
+    "name": "Automotive Detailing by Billy",
+    "kind": "decent site",
+    "trade": "Boat detailing",
+    "reviews": 24,
+    "website": "https://automotivedetailingbybilly.com/",
+    "reasons": [],
+    "improvements": [
+     "only 2 photos"
+    ]
+   },
+   {
+    "slug": "capital-mobile-car-detailing-barton-creek",
+    "name": "Capital Mobile Car Detailing Barton Creek",
+    "kind": "decent site",
+    "trade": "Mobile car detailing",
+    "reviews": 23,
+    "website": "https://capitalmobilecardetailing.site/",
+    "reasons": [],
+    "improvements": [
+     "no reviews on the site",
+     "only 0 photos"
+    ]
+   },
+   {
+    "slug": "t-k-boat-repair-and-fiberglass-specialist",
+    "name": "T & K Boat Repair and Fiberglass Specialist",
+    "kind": "decent site",
+    "trade": "Boat detailing",
+    "reviews": 19,
+    "website": "https://tandkboatrepair.com/",
+    "reasons": [],
+    "improvements": [
+     "no tap-to-call link",
+     "loads in 3.6s"
+    ]
+   },
+   {
+    "slug": "select-pdr",
+    "name": "SELECT PDR LLC",
+    "kind": "decent site",
+    "trade": "Paintless dent repair",
+    "reviews": 17,
+    "website": "https://www.selectpdrllc.com/",
+    "reasons": [],
+    "improvements": [
+     "no quote or booking form",
+     "copyright 2025"
+    ]
+   },
+   {
+    "slug": "skiwi-marine-services",
+    "name": "Skiwi Marine Services",
+    "kind": "decent site",
+    "trade": "Boat detailing",
+    "reviews": 13,
+    "website": "https://skiwimarine.com/",
+    "reasons": [],
+    "improvements": [
+     "no tap-to-call link",
+     "only 2 photos",
+     "no meta description",
+     "copyright 2024"
+    ]
+   },
+   {
+    "slug": "brians-dent-magic-paintless-dent-repair",
+    "name": "Brian’s Dent Magic Paintless Dent Repair",
+    "kind": "decent site",
+    "trade": "Paintless dent repair",
+    "reviews": 13,
+    "website": "http://briansdentmagic.com/",
+    "reasons": [],
+    "improvements": [
+     "no quote or booking form",
+     "no reviews on the site"
+    ]
+   },
+   {
+    "slug": "a-1-dent-company",
+    "name": "A-1 Dent Company",
+    "kind": "decent site",
+    "trade": "Paintless dent repair",
+    "reviews": 13,
+    "website": "http://a-1dent.com/",
+    "reasons": [],
+    "improvements": [
+     "no quote or booking form"
+    ]
+   },
+   {
+    "slug": "florida-marine-detailing",
+    "name": "Florida Marine Detailing",
+    "kind": "decent site",
+    "trade": "Boat detailing",
+    "reviews": 12,
+    "website": "http://flmarinedetailing.com/",
+    "reasons": [],
+    "improvements": [
+     "no reviews on the site",
+     "only 3 photos"
+    ]
+   },
+   {
+    "slug": "dent-cure",
+    "name": "Dent Cure",
+    "kind": "decent site",
+    "trade": "Paintless dent repair",
+    "reviews": 12,
+    "website": "http://www.dentcuresa.com/",
+    "reasons": [],
+    "improvements": [
+     "no tap-to-call link",
+     "only 2 photos"
+    ]
+   },
+   {
+    "slug": "firehouse-luxury-detail-llc",
+    "name": "Firehouse Luxury Detail LLC.",
+    "kind": "decent site",
+    "trade": "Boat detailing",
+    "reviews": 9,
+    "website": "https://www.fhdetail.com/",
+    "reasons": [],
+    "improvements": [
+     "no tap-to-call link",
+     "no quote or booking form",
+     "no meta description"
+    ]
+   },
+   {
+    "slug": "anchors-up-marine-detailing-and-gelcoat-repair",
+    "name": "Anchors Up Marine Detailing and Gelcoat Repair",
+    "kind": "decent site",
+    "trade": "Boat detailing",
+    "reviews": 8,
+    "website": "http://anchorsupdetailing.com/",
+    "reasons": [],
+    "improvements": [
+     "no tap-to-call link"
+    ]
+   },
+   {
+    "slug": "patriot-marine-sales-and-service",
+    "name": "Patriot Marine Sales and Service",
+    "kind": "decent site",
+    "trade": "Boat detailing",
+    "reviews": 8,
+    "website": "http://patriotmarinemjtn.com/",
+    "reasons": [],
+    "improvements": [
+     "no tap-to-call link",
+     "no quote or booking form",
+     "no reviews on the site"
+    ]
+   },
+   {
+    "slug": "captain-caseys-auto-boat-detailing",
+    "name": "Captain Casey’s Auto & Boat Detailing",
+    "kind": "decent site",
+    "trade": "Boat detailing",
+    "reviews": 7,
+    "website": "http://www.captaincaseysdetailing.com/",
+    "reasons": [],
+    "improvements": [
+     "no reviews on the site"
+    ]
+   },
+   {
+    "slug": "the-dent-company",
+    "name": "The Dent Company",
+    "kind": "decent site",
+    "trade": "Paintless dent repair",
+    "reviews": 7,
+    "website": "http://thedentcompany.com/",
+    "reasons": [],
+    "improvements": [
+     "no tap-to-call link"
+    ]
+   }
+  ],
+  "done": true
+ },
+ {
+  "id": "msgbatch_01BhXE8HxdHRtmi6dbRL784m",
+  "created": "2026-11-28T05:14:00.530Z",
+  "map": {
+   "p0": "immaculate-auto-detailing-and-ceramic-coating",
+   "p1": "high-end-auto-detailing",
+   "p2": "immaculate-auto-detailing-and-ceramic-coating"
+  },
+  "leads": [
+   {
+    "slug": "immaculate-auto-detailing-and-ceramic-coating",
+    "name": "Immaculate Auto Detailing and Ceramic Coating",
+    "kind": "decent site",
+    "trade": "Boat detailing",
+    "reviews": 155,
+    "website": "https://www.immaculateautodetailing.net/",
+    "reasons": [],
+    "improvements": [
+     "only 3 photos"
+    ]
+   },
+   {
+    "slug": "high-end-auto-detailing",
+    "name": "High End Auto Detailing",
+    "kind": "decent site",
+    "trade": "Boat detailing",
+    "reviews": 47,
+    "website": "https://highendautodetailing.lovable.app/",
+    "reasons": [],
+    "improvements": [
+     "only 2 photos"
+    ]
+   },
+   {
+    "slug": "immaculate-auto-detailing-and-ceramic-coating",
+    "name": "Immaculate Auto Detailing And Ceramic Coating - Southern Highlands",
+    "kind": "site broken",
+    "trade": "Boat detailing",
+    "reviews": 281,
+    "website": "https://www.thefirstdetail.com/",
+    "reasons": [
+     "does not load"
+    ]
+   }
+  ],
+  "done": true
  }
 ]

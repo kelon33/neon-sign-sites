@@ -1,0 +1,106 @@
+{
+ "kit": "detailing",
+ "trade": "Paintless dent repair",
+ "name": "Preferred Hail Group",
+ "legalName": "Preferred Hail Group",
+ "preview": true,
+ "placeId": "ChIJTe_7q6YPZIgRtxqWp0kTQ2o",
+ "title": "Preferred Hail Group | Paintless dent repair in Smyrna, TN",
+ "description": "Hail and dent repair for cars, trucks and luxury vehicles, done by technicians with over 30 years of experience between them. Every service comes with a lifetime warranty. 5.0 on Google from 10 reviews.",
+ "brand": "#1670ff",
+ "brandHi": "#52c6ff",
+ "accent": "#8fd0ff",
+ "logo": null,
+ "logoChip": false,
+ "wordmark": {
+  "top": "Preferred",
+  "bottom": "Hail Group"
+ },
+ "phone": "(615) 967-0003",
+ "email": "repairs@preferredhail.com",
+ "heroImage": "img/photo-3.jpg",
+ "heroAlt": "Green Aston Martin SUV with a clean finish after repair",
+ "heroPosition": "60% 60%",
+ "heroPositionPhone": "60% 50%",
+ "rating": {
+  "score": "5.0",
+  "count": 10,
+  "url": "https://maps.google.com/?cid=7656984998525147831"
+ },
+ "kicker": "Paintless dent repair · Smyrna",
+ "headline": "Hail damage gone.<br><em>Factory paint stays.</em>",
+ "intro": "Hail and dent repair for cars, trucks and luxury vehicles, done by technicians with over 30 years of experience between them. Every service comes with a lifetime warranty.",
+ "mobile": null,
+ "servicesTitle": "Everything your car needs.",
+ "servicesIntro": "From a single door ding to hail damage.",
+ "services": [
+  {
+   "name": "Hail damage repair",
+   "text": "Hundreds of dents worked out and the vehicle handed back with a final delivery detail."
+  },
+  {
+   "name": "Dent repair",
+   "text": "Big dents, like carwash damage on a low-mileage truck, repaired by hand."
+  },
+  {
+   "name": "Glue pull repair",
+   "text": "Small dents on panels, including aluminum, pulled out with a glue pull process."
+  },
+  {
+   "name": "Damage assessment",
+   "text": "Send a message about your vehicle and we schedule your assessment."
+  },
+  {
+   "name": "Auto restoration",
+   "text": "Work on high-end vehicles, from Rolls-Royce to Aston Martin, Maserati and Bentley."
+  }
+ ],
+ "also": [],
+ "alsoTitle": "We also fix",
+ "why": [
+  {
+   "name": "Experienced technicians",
+   "text": "Over 30 years of experience between them, focused on high-quality repairs."
+  },
+  {
+   "name": "Lifetime warranty",
+   "text": "A lifetime warranty comes with all of our services."
+  },
+  {
+   "name": "Here since 2002",
+   "text": "Serving the community since 2002 and recognized by local and state business organizations."
+  }
+ ],
+ "whyTitle": "The Preferred Hail Group difference.",
+ "howTitle": "Back to like new in three steps.",
+ "steps": [
+  {
+   "name": "Send the details",
+   "text": "Call, or use the form with your year, make, model and photos of the damage."
+  },
+  {
+   "name": "Get an evaluation",
+   "text": "Bring the vehicle in and we look at the hail damage, dings or film options."
+  },
+  {
+   "name": "Drive it smooth",
+   "text": "We work the dents out and hand the vehicle back."
+  }
+ ],
+ "contactTitle": "Got hail damage?",
+ "footerLine": "Paintless dent repair in Smyrna",
+ "reviews": [],
+ "hours": [
+  "Monday - Friday: 9am - 6pm",
+  "Saturday: 10am - 3pm",
+  "Sunday: Closed"
+ ],
+ "galleryTitle": "Dents gone, paint untouched.",
+ "notePlaceholder": "Where the dent is, how big, hail or a door ding…",
+ "ctaLabel": "Get an estimate",
+ "gallery": [],
+ "areas": [
+  "Smyrna"
+ ],
+ "pitch": "photos"
+}

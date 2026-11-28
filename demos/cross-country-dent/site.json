@@ -1,0 +1,138 @@
+{
+ "kit": "detailing",
+ "trade": "Paintless dent repair",
+ "name": "Cross Country Dent",
+ "legalName": "Cross Country Dent",
+ "preview": true,
+ "placeId": "ChIJn4ZNvzJdXIYRxiPbpb5BILw",
+ "title": "Cross Country Dent | Paintless dent repair in San Antonio, TX",
+ "description": "Paintless dent repair and hail damage restoration that keeps your factory paint whenever possible. We handle the insurance claim with you, from free inspection to the clean return. 4.7 on Google from 37 reviews.",
+ "brand": "#1670ff",
+ "brandHi": "#52c6ff",
+ "accent": "#8fd0ff",
+ "logo": "logo.png",
+ "logoChip": true,
+ "wordmark": {
+  "top": "Cross Country",
+  "bottom": "Dent"
+ },
+ "phone": "(210) 413-0858",
+ "email": "crosscountrydent@outlook.com",
+ "heroImage": null,
+ "heroAlt": "",
+ "heroPosition": "60% 60%",
+ "heroPositionPhone": "60% 50%",
+ "rating": {
+  "score": "4.7",
+  "count": 37,
+  "url": "https://maps.google.com/?cid=13555907165467386822"
+ },
+ "kicker": "Paintless dent repair · San Antonio",
+ "headline": "Hail damage gone.<br><em>Hassle gone too.</em>",
+ "intro": "Paintless dent repair and hail damage restoration that keeps your factory paint whenever possible. We handle the insurance claim with you, from free inspection to the clean return.",
+ "mobile": {
+  "points": [
+   {
+    "name": "Free pickup and delivery",
+    "text": "We pick up and deliver your vehicle from home, work or wherever is convenient."
+   },
+   {
+    "name": "Loaner or rental help",
+    "text": "We help set up rental coverage or offer a complimentary loaner from our fleet when available."
+   },
+   {
+    "name": "Cleaned before return",
+    "text": "Your vehicle comes back cleaned and detailed at no cost to you."
+   },
+   {
+    "name": "Updates along the way",
+    "text": "You get clear communication from inspection to completion."
+   }
+  ]
+ },
+ "servicesTitle": "Everything your car needs.",
+ "servicesIntro": "From a single door ding to a full hail storm.",
+ "services": [
+  {
+   "name": "Paintless Dent Repair",
+   "text": "We restore hail damage and preserve your factory paint and finish whenever possible."
+  },
+  {
+   "name": "Claim Support",
+   "text": "We work directly with your insurance company and handle the claim from inspection to completion."
+  },
+  {
+   "name": "Deductible Assistance",
+   "text": "We help cover your deductible so you are not paying it out of pocket."
+  },
+  {
+   "name": "Pickup & Delivery",
+   "text": "We pick up and deliver your vehicle from home, work or wherever is convenient."
+  },
+  {
+   "name": "Rental Car Support",
+   "text": "We help set up rental coverage or offer a complimentary loaner from our fleet when available."
+  },
+  {
+   "name": "Complimentary Car Detail",
+   "text": "Your vehicle is cleaned and detailed before it is returned, at no cost to you."
+  }
+ ],
+ "also": [],
+ "alsoTitle": "We also fix",
+ "why": [
+  {
+   "name": "Certified PDR technicians",
+   "text": "Certified techs with years of experience, backed by a lifetime warranty."
+  },
+  {
+   "name": "Honest estimates",
+   "text": "Honest work, honest estimates, zero surprises."
+  },
+  {
+   "name": "Claim handled start to finish",
+   "text": "Hail claims are typically covered under comprehensive and often do not affect your premium the way a collision claim does."
+  }
+ ],
+ "whyTitle": "The Cross Country Dent difference.",
+ "howTitle": "Back to like new, step by step.",
+ "steps": [
+  {
+   "name": "Send the details",
+   "text": "Call, or use the form with your year, make, model and photos of the damage."
+  },
+  {
+   "name": "Get an evaluation",
+   "text": "Bring the vehicle in and we look at the hail damage, dings or film options."
+  },
+  {
+   "name": "Drive it smooth",
+   "text": "We work the dents out and hand the vehicle back."
+  }
+ ],
+ "contactTitle": "Hail damage? Call us.",
+ "footerLine": "Paintless dent repair in San Antonio",
+ "reviews": [
+  {
+   "text": "After a hailstorm left my SUV covered in dents, Cross Country Dents made it stress-free. It's rare to find a company that is this professional, honest, and efficient. Amazing service! Nick was responsive, professional, and went above and beyond to ensure my satisfaction. Thanks Nick!!",
+   "name": "Mayra Garza"
+  },
+  {
+   "text": "This is truly a stand up company. They did my work on my Honda while working somewhere else. I was so impressed by Nick and his communication, attention to detail and follow up. … Nick keeps it 100% professional. Giving you updates and pictures every step of the way. No one loves dealing with the insurance companies and Nick took care of that also making the whole experience seamless.",
+   "name": "Amanda Idell"
+  }
+ ],
+ "hours": [
+  "Monday - Friday: 8:00AM - 5:00PM",
+  "Saturday: 10:00AM - 2:00PM",
+  "Sunday: Closed"
+ ],
+ "galleryTitle": "Dents gone, paint untouched.",
+ "notePlaceholder": "Where the dent is, how big, hail or a door ding…",
+ "ctaLabel": "Get an estimate",
+ "gallery": [],
+ "areas": [
+  "San Antonio"
+ ],
+ "pitch": "photos"
+}

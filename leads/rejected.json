@@ -47,5 +47,42 @@
   "slug": "that-1-painter-san-antonio",
   "reason": "franchise (That 1 Painter)",
   "date": "2026-11-27"
+ },
+ {
+  "placeId": "ChIJgatm0xVJ5IgRlzOiE7VDD34",
+  "name": "Boat Brothers Fiberglass & Gelcoat",
+  "slug": "boat-brothers-fiberglass-gelcoat",
+  "reason": "does not do Boat detailing itself (Claude): Site shows mainly fiberglass, gelcoat repair and refinishing; boat detailing is only one listed service. No reviews on site. Only 1 usable photo (photo 2, a pro",
+  "date": "2026-11-28",
+  "auto": true
+ },
+ {
+  "placeId": "ChIJne1lHdfRyIARDtp5_bzVbwA",
+  "name": "Skiwi Marine Services",
+  "slug": "skiwi-marine-services",
+  "reason": "does not do Boat detailing itself (Claude): Site is a marine repair, fiberglass, upholstery and jet ski service shop, not mainly detailing. Only one review on site (duplicated). Hours differ between heade",
+  "date": "2026-11-28",
+  "auto": true
+ },
+ {
+  "placeId": "ChIJm805zCNt_oYR_16OQ2AtSKc",
+  "name": "A-1 Dent Company",
+  "slug": "a-1-dent-company",
+  "reason": "only email is donotreply@",
+  "date": "2026-11-28"
+ },
+ {
+  "placeId": "ChIJ31XRB-k9ZIgR7y1DSubcwLM",
+  "name": "Dent Concepts",
+  "slug": "dent-concepts",
+  "reason": "email is another business's (info@nexterras.com, Nexterra already has a preview)",
+  "date": "2026-11-28"
+ },
+ {
+  "placeId": "ChIJPSEZ0-NCZIgRCt0qH8IO7fs",
+  "name": "T & K Boat Repair and Fiberglass Specialist",
+  "slug": "t-k-boat-repair-and-fiberglass-specialist",
+  "reason": "email is on an unrelated spam domain (gudanghokiwebsite.com): site likely hacked",
+  "date": "2026-11-28"
  }
 ]

@@ -90,6 +90,8 @@ async function main() {
     site = await scrapeSite(browser, lead.website);
     if (!site) throw new Error('Their site did not load.');
     text = site.pages.map((p) => p.text).join('\n\n');
+    // An error page ("upstream request failed", a bare 502) is not their site: no preview from it.
+    if (text.trim().length < 150 || /^(upstream (request|connect) (failed|error)|bad gateway|service unavailable)/im.test(text.trim().slice(0, 200))) throw new Error('Their site did not load (error page).');
     // A boat search finds car detailers too: their preview gets car wording and a car form.
     if (kit === 'detailing' && /boat/i.test(lead.trade) && vehicleFocus(text) === 'cars') {
       checks.push(`Listed as ${lead.trade}, but their site is about cars: built as mobile car detailing.`);
@@ -101,6 +103,8 @@ async function main() {
       lead.note = 'We found them by searching for boat detailing, but they detail cars and other vehicles too. Show the work they actually do: their real photos of any vehicle are good gallery and hero photos, and their car services belong in the services.';
       checks.push('Details cars and boats (found by a boat search): the AI was told to show all their work.');
     }
+
+    if (lead.emailNote) checks.push(`Email ${lead.email}: ${lead.emailNote}.`);
 
     // 2. Photos and logo.
     photos = [];
@@ -328,5 +332,5 @@ async function main() {
 }
 
 if (process.argv[1] && fileURLToPath(import.meta.url) === path.resolve(process.argv[1])) {
-  main().catch((e) => { console.error(e.message); process.exit(1); });
+  main().catch((e) => { console.error(process.env.DEBUG ? e.stack : e.message); process.exit(1); });
 }

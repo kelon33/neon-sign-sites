@@ -1,0 +1,6 @@
+- Found by a search in Nashville, TN, but their address is in Mt. Juliet, TN: the site uses that. Check their service area.
+- Details cars and boats (found by a boat search): the AI was told to show all their work.
+- Logo is dark on a transparent background: shown on a white chip. Check it reads well.
+- Claude's notes: Found via boat detailing, but the site is mostly cars (paint correction, ceramic, PPF, tint, wraps); boat work is vessel ceramic coating and wet sanding. Site says Drew came to a customer's house once, but no general mobile service is stated, so mobile section left empty. Photo 11 and photo 1 show staff; photo 1 shows a GTechniq cover. No hours on site. PPF price shown is the lowest (Rockers).
+- Dropped review by Bobby Perdue: not in their own pages (added by a script, likely a Google widget).
+- Dropped review by Marcus Lewis: not in their own pages (added by a script, likely a Google widget).

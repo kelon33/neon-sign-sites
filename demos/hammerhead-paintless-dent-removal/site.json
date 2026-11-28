@@ -1,0 +1,106 @@
+{
+ "kit": "detailing",
+ "trade": "Paintless dent repair",
+ "name": "Hammerhead Paintless Dent Removal",
+ "legalName": "Hammerhead Paintless Dent Removal",
+ "preview": true,
+ "placeId": "ChIJT9ab3bJxXIYRi70U-0yHn-g",
+ "title": "Hammerhead Paintless Dent Removal | Paintless dent repair in Boerne, TX",
+ "description": "Paintless dent repair in Boerne and across the Hill Country. Door dings and hail damage worked out by hand, so your factory paint stays. 5.0 on Google from 32 reviews.",
+ "brand": "#1670ff",
+ "brandHi": "#52c6ff",
+ "accent": "#8fd0ff",
+ "logo": "logo.png",
+ "logoChip": false,
+ "wordmark": {
+  "top": "Hammerhead",
+  "bottom": "Paintless Dent Removal"
+ },
+ "phone": "(830) 265-8855",
+ "email": "info@hammerheadpdr.com",
+ "heroImage": "img/photo-4.jpg",
+ "heroAlt": "Technician removing a dent from the door of a dark blue coupe",
+ "heroPosition": "60% 60%",
+ "heroPositionPhone": "60% 50%",
+ "rating": {
+  "score": "5.0",
+  "count": 32,
+  "url": "https://maps.google.com/?cid=16762265102795980171"
+ },
+ "kicker": "Paintless dent repair · Boerne",
+ "headline": "Hail damage gone.<br><em>Hassle gone too.</em>",
+ "intro": "Paintless dent repair in Boerne and across the Hill Country. Door dings and hail damage worked out by hand, so your factory paint stays.",
+ "mobile": null,
+ "servicesTitle": "Everything your car needs.",
+ "servicesIntro": "From a single door ding to a full hail storm.",
+ "services": [
+  {
+   "name": "Hail Damage Repair",
+   "text": "Hail damage of any severity, worked out panel by panel."
+  },
+  {
+   "name": "Door Ding Repair",
+   "text": "Parking-lot dings and shopping cart dents removed without repainting."
+  },
+  {
+   "name": "Dent Repair",
+   "text": "Larger dents and creases restored to a smooth, original finish."
+  },
+  {
+   "name": "Minor Dent Repair",
+   "text": "Small dents taken out quickly and cleanly."
+  },
+  {
+   "name": "Paintless Dent Removal",
+   "text": "A technique that smooths out the panel without harming the paint."
+  }
+ ],
+ "also": [],
+ "alsoTitle": "We also fix",
+ "why": [
+  {
+   "name": "Over 10 years of experience",
+   "text": "Rob Heckel runs the shop and works on dents large and small, on all makes and models."
+  },
+  {
+   "name": "Insurance work accepted",
+   "text": "Bring your claim number and paperwork. We handle the rest."
+  },
+  {
+   "name": "Prompt, on-site estimates",
+   "text": "We explain every step and any cost before work starts."
+  }
+ ],
+ "whyTitle": "Why Hammerhead Paintless Dent Removal",
+ "howTitle": "Dent-free in three steps.",
+ "steps": [
+  {
+   "name": "Send the details",
+   "text": "Call, or use the form with your year, make, model and photos of the damage."
+  },
+  {
+   "name": "Get an evaluation",
+   "text": "Bring the vehicle in and we look at the hail damage, dings or film options."
+  },
+  {
+   "name": "Drive it smooth",
+   "text": "We work the dents out and hand the vehicle back."
+  }
+ ],
+ "contactTitle": "Got hail damage?",
+ "footerLine": "Paintless dent repair in Boerne",
+ "reviews": [],
+ "hours": [
+  "Mon – Fri: 8:00 am – 6:00 pm",
+  "Sat – Sun: Closed",
+  "Saturday by appointment only. Out of shop Thursdays for mobile repairs."
+ ],
+ "galleryTitle": "Dents gone, paint untouched.",
+ "notePlaceholder": "Where the dent is, how big, hail or a door ding…",
+ "ctaLabel": "Get an estimate",
+ "gallery": [],
+ "areas": [
+  "Boerne"
+ ],
+ "pitch": "photos"
+}

@@ -1,0 +1,5 @@
+- Photo pitch: only 3 usable photos by Claude's choice, so no gallery; the email asks them for photos of their work.
+- Claude's notes: Site is for Denver, Arvada CO, Fort Smith AR and Nixa MO locations, not San Antonio; the draft's San Antonio and mobile claims are not supported by the site. Hours and phone are for Arvada. Photos are dark. Some reviews mention Denver. Mobile points left empty because the site offers valet pickup, not mobile service. Verify the San Antonio location exists.
+- Dropped 6 reviews: reviews labelled "Google review" on https://thedentcompany.com/reviews/.
+- Only 0 gallery photos.
+- No reviews on the site: the page shows the Google rating only.

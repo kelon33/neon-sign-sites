@@ -33,7 +33,7 @@ const KINDS = { weak: 'weak site', decent: 'decent site' };
 /** The leads to build, in order. `built` holds the slugs and place IDs already in demos/. */
 export function pick(leads, { count = 5, kinds = ['weak site', 'decent site'], built = new Set(), dnc = [], trade = '' } = {}) {
   const ok = leads.filter((l) => l.email && !JUNK_EMAIL.test(l.email) && (l.trade ?? '').toLowerCase().includes(trade.toLowerCase()) && kitFor(l.trade) && !TEST_TRADES.has(l.trade) && kinds.includes(l.kind) && !blocked(l, dnc) && !CHAINS.test(l.name ?? '') && !CHAINS.test(l.website ?? '')
-    && !built.has(l.placeId) && !built.has(slugify(cleanName(l.name, l.city))));
+    && !built.has(l.placeId) && !built.has(slugify(cleanName(l.name, l.city))) && !built.has(`email:${l.email.toLowerCase()}`));
   const out = [];
   for (const kind of kinds) {
     // Trades in turn, so a batch is not all lawn or all detailing.
@@ -55,6 +55,8 @@ async function builtAlready() {
     if (!site) continue;
     built.add(slug);
     if (site.placeId) built.add(site.placeId);
+    // Its email too: two businesses showing the same address (a shared web designer's, a copied site) get one preview.
+    if (site.email) built.add(`email:${String(site.email).toLowerCase()}`);
   }
   return built;
 }

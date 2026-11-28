@@ -172,3 +172,10 @@ test('vehicleCounts: counts car and boat words', async () => {
   const { vehicleCounts } = await import('../pipeline/checks.mjs');
   assert.deepEqual(vehicleCounts('Cars, trucks and boats. Boat detailing. Car wash.'), { boats: 2, cars: 3 });
 });
+
+test('batch pick: an email another preview already uses is skipped', async () => {
+  const { pick } = await import('../pipeline/batch.mjs');
+  const lead = { placeId: 'n1', name: 'Dent Two', city: 'Nashville, TN', trade: 'Paintless dent repair', kind: 'weak site', email: 'Info@Shared.com', reviews: 9 };
+  assert.equal(pick([lead], { built: new Set(['email:info@shared.com']) }).length, 0);
+  assert.equal(pick([lead]).length, 1);
+});

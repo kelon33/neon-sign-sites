@@ -1,0 +1,10 @@
+- Found by a search in Waco, TX, but their address is in Robinson, TX: the site uses that. Check their service area.
+- Listed as Boat detailing, but their site is about cars: built as mobile car detailing.
+- No hero photo: Claude found none of their photos usable.
+- Photo pitch: only 0 usable photos by Claude's choice, so no gallery; the email asks them for photos of their work.
+- Claude's notes: Photos 1 and 2 look like stock images, so none were used. Service cards use the site's own package names, not the draft's. Review dates on the site are in the future (2026). The draft's paint correction, wax and odor removal services are not on the site, so they were removed.
+- Dropped 6 reviews: reviews labelled "Google review" on https://automotivedetailingbybilly.com/.
+- No photos at all: the hero has no picture. Find photos by hand.
+- Only 0 gallery photos.
+- No reviews on the site: the page shows the Google rating only.
+- Hero is a licensed stock photo for the trade (credited on the page, see generator/assets/CREDITS.md), not their work: swap in their own photo once they send one.
