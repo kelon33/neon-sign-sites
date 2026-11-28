@@ -39,3 +39,9 @@
 - **Never GET a preview URL** to check it (counts as a visit); use HEAD.
 - **Dashboard client JS lives inside a template literal** in `dashboard.mjs`: no backticks, no `${}` and no `\'` in the browser script.
 - From this cloud session: no `dig`, Cloudflare DNS-over-HTTPS and www.neonsignsites.com are blocked by the proxy; paypal.com can't be fetched.
+
+## Update 2026-11-28 (morning)
+- Done: address check (`npm run mx`, builder runs it daily; leads/mx.json), one same-thread follow-up after 4 days (first ones due 2026-12-01), new customer → "Payment received" note → reply check launches the site and drafts the domain email (`npm run answer -- --customer`). PayPal keys set as Secrets; login checked OK (webhook ID confirmed only by the first real event).
+- neonsignsites.co email DNS is complete (MX, SPF, DKIM, DMARC p=none, no rua). Our Cloudflare token covers only .com and .net.
+- Decided: no inbox-placement seed test and no Instantly API for now; revisit when the reply numbers come in (about 150 emails; near 0% replies would point at spam).
+- Not now (Alon): separate .com mailbox; receipts setup.
