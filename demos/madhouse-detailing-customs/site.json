@@ -1,180 +1,186 @@
 {
- "kit": "detailing",
- "trade": "Mobile car detailing",
- "name": "MADhouse Detailing & Customs",
- "legalName": "MADhouse Detailing & Customs",
- "preview": true,
- "placeId": "ChIJx2ZfsX_GyIARYM0_PySambU",
- "title": "MADhouse Detailing & Customs | Car detailing in Las Vegas, NV",
- "description": "PPF, ceramic coatings, vinyl wraps and paint correction for Las Vegas drivers. Family-owned since 2010, built for desert sun and road dust. 4.8 on Google from 75 reviews.",
- "brand": "#1670ff",
- "brandHi": "#52c6ff",
- "accent": "#8fd0ff",
- "logo": "logo.png",
- "logoChip": false,
- "wordmark": {
-  "top": "MADhouse",
-  "bottom": "Detailing & Customs"
- },
- "phone": "(702) 540-5841",
- "email": "madhouselv1@gmail.com",
- "heroImage": "img/photo-1.jpg",
- "heroAlt": "Gray Tesla Model 3 parked in the Las Vegas sun",
- "heroPosition": "60% 60%",
- "heroPositionPhone": "60% 50%",
- "rating": {
-  "score": "4.8",
-  "count": 75,
-  "url": "https://maps.google.com/?cid=13085659672772332896"
- },
- "kicker": "Car detailing · Las Vegas, NV",
- "headline": "Showroom shine.<br><em>Wherever you are.</em>",
- "intro": "PPF, ceramic coatings, vinyl wraps and paint correction for Las Vegas drivers. Family-owned since 2010, built for desert sun and road dust.",
- "mobile": null,
- "servicesTitle": "Inside, outside, and everything that shines.",
- "servicesIntro": "From a one-time clean to regular upkeep, pick the service that fits your vehicle.",
- "services": [
-  {
-   "name": "Paint Protection Film",
-   "text": "Self-healing film in gloss, matte or color-change finishes that guards against chips, scratches and discoloration.",
-   "price": "Front end package from $1,699"
+  "kit": "detailing",
+  "trade": "Mobile car detailing",
+  "name": "MADhouse Detailing & Customs",
+  "legalName": "MADhouse Detailing & Customs",
+  "preview": true,
+  "placeId": "ChIJx2ZfsX_GyIARYM0_PySambU",
+  "title": "MADhouse Detailing & Customs | Car detailing in Las Vegas, NV",
+  "description": "PPF, ceramic coatings, vinyl wraps and paint correction for Las Vegas drivers. Family-owned since 2010, built for desert sun and road dust. 4.8 on Google from 75 reviews.",
+  "brand": "#1670ff",
+  "brandHi": "#52c6ff",
+  "accent": "#8fd0ff",
+  "logo": "logo.png",
+  "logoChip": false,
+  "wordmark": {
+    "top": "MADhouse",
+    "bottom": "Detailing & Customs"
   },
-  {
-   "name": "Ceramic Coatings",
-   "text": "Gtechniq coatings that add gloss, repel water and keep contamination off your paint.",
-   "price": "From $950"
+  "phone": "(702) 540-5841",
+  "email": "madhouselv1@gmail.com",
+  "heroImage": "img/photo-1.jpg",
+  "heroAlt": "Gray Tesla Model 3 parked in the Las Vegas sun",
+  "heroPosition": "60% 60%",
+  "heroPositionPhone": "60% 50%",
+  "rating": {
+    "score": "4.8",
+    "count": 75,
+    "url": "https://maps.google.com/?cid=13085659672772332896"
   },
-  {
-   "name": "Paint Correction",
-   "text": "Machine polishing that removes swirls and scratches and sharpens your finish."
-  },
-  {
-   "name": "Vinyl Wraps",
-   "text": "Change the look of your ride with a wrap, including Tesla vinyl wraps."
-  },
-  {
-   "name": "Window Tinting",
-   "text": "Tint that adds privacy and keeps your interior cooler."
-  },
-  {
-   "name": "Custom Suspension",
-   "text": "Air suspension and coil covers for the stance and ride you want."
+  "kicker": "Car detailing · Las Vegas, NV",
+  "headline": "Showroom shine.<br><em>Wherever you are.</em>",
+  "intro": "PPF, ceramic coatings, vinyl wraps and paint correction for Las Vegas drivers. Family-owned since 2010, built for desert sun and road dust.",
+  "mobile": null,
+  "servicesTitle": "Inside, outside, and everything that shines.",
+  "servicesIntro": "From a one-time clean to regular upkeep, pick the service that fits your vehicle.",
+  "services": [
+    {
+      "name": "Paint Protection Film",
+      "text": "Self-healing film in gloss, matte or color-change finishes that guards against chips, scratches and discoloration.",
+      "price": "Front end package from $1,699"
+    },
+    {
+      "name": "Ceramic Coatings",
+      "text": "Gtechniq coatings that add gloss, repel water and keep contamination off your paint.",
+      "price": "From $950"
+    },
+    {
+      "name": "Paint Correction",
+      "text": "Machine polishing that removes swirls and scratches and sharpens your finish."
+    },
+    {
+      "name": "Vinyl Wraps",
+      "text": "Change the look of your ride with a wrap, including Tesla vinyl wraps."
+    },
+    {
+      "name": "Window Tinting",
+      "text": "Tint that adds privacy and keeps your interior cooler."
+    },
+    {
+      "name": "Custom Suspension",
+      "text": "Air suspension and coil covers for the stance and ride you want."
+    }
+  ],
+  "also": [
+    {
+      "name": "Tesla services"
+    },
+    {
+      "name": "Caliper painting"
+    },
+    {
+      "name": "Pickup and drop-off"
+    }
+  ],
+  "alsoTitle": "Not just cars:",
+  "why": [
+    {
+      "name": "Family-owned since 2010",
+      "text": "A Las Vegas shop that treats every vehicle as if it were their own."
+    },
+    {
+      "name": "Authorized installers",
+      "text": "STEK-authorized for PPF and Nevada's exclusive Gtechniq Crystal Serum Ultra authorized installer."
+    },
+    {
+      "name": "Built for the desert",
+      "text": "Protection chosen for Las Vegas sun, dust and heat swings."
+    }
+  ],
+  "whyTitle": "The detail is in the name.",
+  "howTitle": "Book it. We show up. You drive off shining.",
+  "steps": [
+    {
+      "name": "Tell us about your vehicle",
+      "text": "Call or send the form with your vehicle and the service you want."
+    },
+    {
+      "name": "We come to you",
+      "text": "We arrive with the equipment and products to do the job on site."
+    },
+    {
+      "name": "Take the keys back",
+      "text": "Your car is clean, restored and showroom-ready."
+    }
+  ],
+  "contactTitle": "Book your detail.",
+  "footerLine": "Car detailing in Las Vegas",
+  "reviews": [
+    {
+      "text": "I brought in my brand new 2025 CX-5 to get paint protection film and window tints applied by Mario and the team and they did a flawless job! I’ve had paint protection film done on my other car and in comparison, MADhouse definitely delivered above and beyond. If you want your car taken care of with great attention to detail, this is the place to be.",
+      "name": "Michael Medina"
+    },
+    {
+      "text": "This place is awesome! Love the people here. I had a problem with my brake pads making noise due to having another company that spray painted my calipers and Mario was able to diagnose it since Tesla service department wouldn’t. I Highly recommended this place.",
+      "name": "Amy Acob"
+    }
+  ],
+  "hours": [
+    "Monday - Friday: 11:30 AM - 8:00 PM",
+    "Saturday: By Appointment Only",
+    "Sunday: Closed"
+  ],
+  "galleryTitle": "Fresh off the driveway.",
+  "gallery": [
+    {
+      "src": "img/photo-14.jpg",
+      "alt": "Yellow Corvette with black stripes",
+      "size": "big"
+    },
+    {
+      "src": "img/photo-19.jpg",
+      "alt": "Red Corvette ZR1 with chrome wheels"
+    },
+    {
+      "src": "img/photo-21.jpg",
+      "alt": "Matte purple Subaru WRX in front of Las Vegas towers"
+    },
+    {
+      "src": "img/photo-4.jpg",
+      "alt": "Red Porsche 911 Turbo convertible"
+    },
+    {
+      "src": "img/photo-13.jpg",
+      "alt": "Red Corvette with rear spoiler at dusk",
+      "size": "tall"
+    },
+    {
+      "src": "img/photo-3.jpg",
+      "alt": "Color-shift wrapped BMW M4 at night"
+    },
+    {
+      "src": "img/photo-20.jpg",
+      "alt": "Orange wrapped sedan with red brake calipers"
+    },
+    {
+      "src": "img/photo-2.jpg",
+      "alt": "White Corvette with black wheels"
+    },
+    {
+      "src": "img/photo-17.jpg",
+      "alt": "Black Cadillac CTS-V wagon on a desert road"
+    },
+    {
+      "src": "img/photo-5.jpg",
+      "alt": "Black Tesla Cybertruck in the desert"
+    },
+    {
+      "src": "img/photo-8.jpg",
+      "alt": "Orange Porsche 911 rear view"
+    },
+    {
+      "src": "img/photo-6.jpg",
+      "alt": "Red Corvette convertible with mountains behind"
+    }
+  ],
+  "areas": [
+    "Las Vegas"
+  ],
+  "pitch": "site",
+  "siteCheck": {
+    "reasons": [],
+    "improvements": [
+      "no quote or booking form"
+    ]
   }
- ],
- "also": [
-  {
-   "name": "Tesla services"
-  },
-  {
-   "name": "Caliper painting"
-  },
-  {
-   "name": "Pickup and drop-off"
-  }
- ],
- "alsoTitle": "Not just cars:",
- "why": [
-  {
-   "name": "Family-owned since 2010",
-   "text": "A Las Vegas shop that treats every vehicle as if it were their own."
-  },
-  {
-   "name": "Authorized installers",
-   "text": "STEK-authorized for PPF and Nevada's exclusive Gtechniq Crystal Serum Ultra authorized installer."
-  },
-  {
-   "name": "Built for the desert",
-   "text": "Protection chosen for Las Vegas sun, dust and heat swings."
-  }
- ],
- "whyTitle": "The detail is in the name.",
- "howTitle": "Book it. We show up. You drive off shining.",
- "steps": [
-  {
-   "name": "Tell us about your vehicle",
-   "text": "Call or send the form with your vehicle and the service you want."
-  },
-  {
-   "name": "We come to you",
-   "text": "We arrive with the equipment and products to do the job on site."
-  },
-  {
-   "name": "Take the keys back",
-   "text": "Your car is clean, restored and showroom-ready."
-  }
- ],
- "contactTitle": "Book your detail.",
- "footerLine": "Car detailing in Las Vegas",
- "reviews": [
-  {
-   "text": "I brought in my brand new 2025 CX-5 to get paint protection film and window tints applied by Mario and the team and they did a flawless job! I’ve had paint protection film done on my other car and in comparison, MADhouse definitely delivered above and beyond. If you want your car taken care of with great attention to detail, this is the place to be.",
-   "name": "Michael Medina"
-  },
-  {
-   "text": "This place is awesome! Love the people here. I had a problem with my brake pads making noise due to having another company that spray painted my calipers and Mario was able to diagnose it since Tesla service department wouldn’t. I Highly recommended this place.",
-   "name": "Amy Acob"
-  }
- ],
- "hours": [
-  "Monday - Friday: 11:30 AM - 8:00 PM",
-  "Saturday: By Appointment Only",
-  "Sunday: Closed"
- ],
- "galleryTitle": "Fresh off the driveway.",
- "gallery": [
-  {
-   "src": "img/photo-14.jpg",
-   "alt": "Yellow Corvette with black stripes",
-   "size": "big"
-  },
-  {
-   "src": "img/photo-19.jpg",
-   "alt": "Red Corvette ZR1 with chrome wheels"
-  },
-  {
-   "src": "img/photo-21.jpg",
-   "alt": "Matte purple Subaru WRX in front of Las Vegas towers"
-  },
-  {
-   "src": "img/photo-4.jpg",
-   "alt": "Red Porsche 911 Turbo convertible"
-  },
-  {
-   "src": "img/photo-13.jpg",
-   "alt": "Red Corvette with rear spoiler at dusk",
-   "size": "tall"
-  },
-  {
-   "src": "img/photo-3.jpg",
-   "alt": "Color-shift wrapped BMW M4 at night"
-  },
-  {
-   "src": "img/photo-20.jpg",
-   "alt": "Orange wrapped sedan with red brake calipers"
-  },
-  {
-   "src": "img/photo-2.jpg",
-   "alt": "White Corvette with black wheels"
-  },
-  {
-   "src": "img/photo-17.jpg",
-   "alt": "Black Cadillac CTS-V wagon on a desert road"
-  },
-  {
-   "src": "img/photo-5.jpg",
-   "alt": "Black Tesla Cybertruck in the desert"
-  },
-  {
-   "src": "img/photo-8.jpg",
-   "alt": "Orange Porsche 911 rear view"
-  },
-  {
-   "src": "img/photo-6.jpg",
-   "alt": "Red Corvette convertible with mountains behind"
-  }
- ],
- "areas": [
-  "Las Vegas"
- ],
- "pitch": "site"
 }

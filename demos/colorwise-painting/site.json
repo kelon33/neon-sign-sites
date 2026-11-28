@@ -1,79 +1,85 @@
 {
- "kit": "painting",
- "trade": "House painting",
- "name": "Colorwise Painting",
- "legalName": "Colorwise Painting",
- "preview": true,
- "placeId": "ChIJya4ybR-35YgRPhGnSWB4TjM",
- "title": "Colorwise Painting | House painting in Jacksonville, FL",
- "description": "Interior and exterior house painting in Jacksonville. Rated 5 stars by 31 Google reviewers. 5.0 on Google from 31 reviews.",
- "logo": null,
- "logoChip": false,
- "wordmark": {
-  "top": "Colorwise",
-  "bottom": "Painting"
- },
- "phone": "(904) 385-2078",
- "email": "matt@colorwisepaintco.com",
- "heroImage": null,
- "heroAlt": "",
- "heroPosition": "60% 60%",
- "heroPositionPhone": "60% 50%",
- "rating": {
-  "score": "5.0",
-  "count": 31,
-  "url": "https://maps.google.com/?cid=3697024699065635134"
- },
- "kicker": "House painting · Jacksonville",
- "headline": "Fresh paint.<br><em>Honest work.</em>",
- "intro": "Interior and exterior house painting in Jacksonville. Rated 5 stars by 31 Google reviewers.",
- "badges": [],
- "highlights": null,
- "servicesTitle": "Inside and out.",
- "servicesIntro": "One room or the whole property.",
- "services": [
-  {
-   "name": "Interior painting",
-   "text": "Walls, ceilings and trim in the colors you choose."
+  "kit": "painting",
+  "trade": "House painting",
+  "name": "Colorwise Painting",
+  "legalName": "Colorwise Painting",
+  "preview": true,
+  "placeId": "ChIJya4ybR-35YgRPhGnSWB4TjM",
+  "title": "Colorwise Painting | House painting in Jacksonville, FL",
+  "description": "Interior and exterior house painting in Jacksonville. Rated 5 stars by 31 Google reviewers. 5.0 on Google from 31 reviews.",
+  "logo": null,
+  "logoChip": false,
+  "wordmark": {
+    "top": "Colorwise",
+    "bottom": "Painting"
   },
-  {
-   "name": "Exterior painting",
-   "text": "Siding, trim and doors, prepped and painted."
+  "phone": "(904) 385-2078",
+  "email": "matt@colorwisepaintco.com",
+  "heroImage": null,
+  "heroAlt": "",
+  "heroPosition": "60% 60%",
+  "heroPositionPhone": "60% 50%",
+  "rating": {
+    "score": "5.0",
+    "count": 31,
+    "url": "https://maps.google.com/?cid=3697024699065635134"
   },
-  {
-   "name": "Cabinets and trim",
-   "text": "Kitchen cabinets, doors and woodwork refreshed."
+  "kicker": "House painting · Jacksonville",
+  "headline": "Fresh paint.<br><em>Honest work.</em>",
+  "intro": "Interior and exterior house painting in Jacksonville. Rated 5 stars by 31 Google reviewers.",
+  "badges": [],
+  "highlights": null,
+  "servicesTitle": "Inside and out.",
+  "servicesIntro": "One room or the whole property.",
+  "services": [
+    {
+      "name": "Interior painting",
+      "text": "Walls, ceilings and trim in the colors you choose."
+    },
+    {
+      "name": "Exterior painting",
+      "text": "Siding, trim and doors, prepped and painted."
+    },
+    {
+      "name": "Cabinets and trim",
+      "text": "Kitchen cabinets, doors and woodwork refreshed."
+    }
+  ],
+  "also": [],
+  "alsoTitle": "We also do:",
+  "promise": null,
+  "why": [],
+  "whyTitle": "Why homeowners call us.",
+  "howTitle": "A fresh coat in three steps.",
+  "steps": [
+    {
+      "name": "Free estimate",
+      "text": "We evaluate your property, talk through colors and timing, and give you a detailed quote."
+    },
+    {
+      "name": "Prep and protect",
+      "text": "We sand, patch, prime and cover every surface before any paint goes on."
+    },
+    {
+      "name": "Paint and walk through",
+      "text": "We apply each coat with care, then inspect every detail with you."
+    }
+  ],
+  "contactTitle": "Ready for a fresh coat?",
+  "footerLine": "House painting in Jacksonville",
+  "reviews": [],
+  "hours": [],
+  "galleryTitle": "Homes we’ve painted.",
+  "notePlaceholder": "Inside or outside, how many rooms, a date you have in mind…",
+  "gallery": [],
+  "areas": [
+    "Jacksonville"
+  ],
+  "pitch": "photos",
+  "siteCheck": {
+    "reasons": [],
+    "improvements": [
+      "no quote or booking form"
+    ]
   }
- ],
- "also": [],
- "alsoTitle": "We also do:",
- "promise": null,
- "why": [],
- "whyTitle": "Why homeowners call us.",
- "howTitle": "A fresh coat in three steps.",
- "steps": [
-  {
-   "name": "Free estimate",
-   "text": "We evaluate your property, talk through colors and timing, and give you a detailed quote."
-  },
-  {
-   "name": "Prep and protect",
-   "text": "We sand, patch, prime and cover every surface before any paint goes on."
-  },
-  {
-   "name": "Paint and walk through",
-   "text": "We apply each coat with care, then inspect every detail with you."
-  }
- ],
- "contactTitle": "Ready for a fresh coat?",
- "footerLine": "House painting in Jacksonville",
- "reviews": [],
- "hours": [],
- "galleryTitle": "Homes we’ve painted.",
- "notePlaceholder": "Inside or outside, how many rooms, a date you have in mind…",
- "gallery": [],
- "areas": [
-  "Jacksonville"
- ],
- "pitch": "photos"
 }

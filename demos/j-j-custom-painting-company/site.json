@@ -1,172 +1,179 @@
 {
- "kit": "painting",
- "trade": "House painting",
- "name": "J&J Custom Painting Company",
- "legalName": "J&J Custom Painting Company",
- "preview": true,
- "placeId": "ChIJ13hlcvzRyIARSpZOXzVNR88",
- "title": "J&J Custom Painting Company | House painting in Las Vegas, NV",
- "description": "Residential and commercial painters serving Las Vegas and Southern Nevada. Family-operated, licensed, bonded and insured, with a free estimate to start. 5.0 on Google from 35 reviews.",
- "logo": "logo.png",
- "logoChip": true,
- "wordmark": {
-  "top": "J&J Custom",
-  "bottom": "Painting Company"
- },
- "phone": "(702) 910-4917",
- "email": "office@j-jcustompainting.com",
- "heroImage": "img/photo-5.jpg",
- "heroAlt": "Stucco home with fresh paint and green landscaping",
- "heroPosition": "60% 60%",
- "heroPositionPhone": "60% 50%",
- "rating": {
-  "score": "5.0",
-  "count": 35,
-  "url": "https://maps.google.com/?cid=14935991580825130570"
- },
- "kicker": "House painting · Las Vegas",
- "headline": "Fresh paint.<br><em>Honest work.</em>",
- "intro": "Residential and commercial painters serving Las Vegas and Southern Nevada. Family-operated, licensed, bonded and insured, with a free estimate to start.",
- "badges": [
-  "Licensed & insured",
-  "Free estimates",
-  "Homes and businesses"
- ],
- "highlights": null,
- "servicesTitle": "Inside and out.",
- "servicesIntro": "Homes, businesses and industrial sites. One crew that does it right.",
- "services": [
-  {
-   "name": "Interior and exterior painting",
-   "text": "Fresh color and clean finishes inside, and a protective coat outside that lifts curb appeal."
+  "kit": "painting",
+  "trade": "House painting",
+  "name": "J&J Custom Painting Company",
+  "legalName": "J&J Custom Painting Company",
+  "preview": true,
+  "placeId": "ChIJ13hlcvzRyIARSpZOXzVNR88",
+  "title": "J&J Custom Painting Company | House painting in Las Vegas, NV",
+  "description": "Residential and commercial painters serving Las Vegas and Southern Nevada. Family-operated, licensed, bonded and insured, with a free estimate to start. 5.0 on Google from 35 reviews.",
+  "logo": "logo.png",
+  "logoChip": true,
+  "wordmark": {
+    "top": "J&J Custom",
+    "bottom": "Painting Company"
   },
-  {
-   "name": "Whole house painting",
-   "text": "One crew takes your entire home from first prep to final coat."
+  "phone": "(702) 910-4917",
+  "email": "office@j-jcustompainting.com",
+  "heroImage": "img/photo-5.jpg",
+  "heroAlt": "Stucco home with fresh paint and green landscaping",
+  "heroPosition": "60% 60%",
+  "heroPositionPhone": "60% 50%",
+  "rating": {
+    "score": "5.0",
+    "count": 35,
+    "url": "https://maps.google.com/?cid=14935991580825130570"
   },
-  {
-   "name": "Cabinet painting",
-   "text": "Kitchen cabinet refinishing that modernizes the room without a remodel."
-  },
-  {
-   "name": "Stucco repair",
-   "text": "Exterior surfaces restored so the repair disappears under the paint."
-  },
-  {
-   "name": "Drywall installation and repair",
-   "text": "Smooth, ready-to-paint walls for new builds and renovations."
-  },
-  {
-   "name": "Commercial painting",
-   "text": "Offices, warehouses and retail spaces painted to look sharp and last."
+  "kicker": "House painting · Las Vegas",
+  "headline": "Fresh paint.<br><em>Honest work.</em>",
+  "intro": "Residential and commercial painters serving Las Vegas and Southern Nevada. Family-operated, licensed, bonded and insured, with a free estimate to start.",
+  "badges": [
+    "Licensed & insured",
+    "Free estimates",
+    "Homes and businesses"
+  ],
+  "highlights": null,
+  "servicesTitle": "Inside and out.",
+  "servicesIntro": "Homes, businesses and industrial sites. One crew that does it right.",
+  "services": [
+    {
+      "name": "Interior and exterior painting",
+      "text": "Fresh color and clean finishes inside, and a protective coat outside that lifts curb appeal."
+    },
+    {
+      "name": "Whole house painting",
+      "text": "One crew takes your entire home from first prep to final coat."
+    },
+    {
+      "name": "Cabinet painting",
+      "text": "Kitchen cabinet refinishing that modernizes the room without a remodel."
+    },
+    {
+      "name": "Stucco repair",
+      "text": "Exterior surfaces restored so the repair disappears under the paint."
+    },
+    {
+      "name": "Drywall installation and repair",
+      "text": "Smooth, ready-to-paint walls for new builds and renovations."
+    },
+    {
+      "name": "Commercial painting",
+      "text": "Offices, warehouses and retail spaces painted to look sharp and last."
+    }
+  ],
+  "also": [
+    {
+      "name": "Custom wood finishes"
+    },
+    {
+      "name": "Staining"
+    },
+    {
+      "name": "Custom textures and finishes"
+    },
+    {
+      "name": "Color consultations"
+    },
+    {
+      "name": "Maintenance painting"
+    },
+    {
+      "name": "New construction builds"
+    },
+    {
+      "name": "HOAs"
+    }
+  ],
+  "alsoTitle": "We also do:",
+  "promise": null,
+  "why": [
+    {
+      "name": "Family-operated",
+      "text": "Pedro and Clara run the company, and customers deal with them directly."
+    },
+    {
+      "name": "Licensed, bonded and insured",
+      "text": "Licensed, bonded and insured in Nevada, with a 1 year limited warranty on the work."
+    },
+    {
+      "name": "Rated 5 stars",
+      "text": "A 5 star rating on Google from 35 reviews, built on homeowners and builders across the Las Vegas Valley."
+    }
+  ],
+  "whyTitle": "Why J&J Custom Painting Company.",
+  "howTitle": "From estimate to final walk-through.",
+  "steps": [
+    {
+      "name": "Free consultation",
+      "text": "Tell us what you need. We talk through the scope and give you a free quote."
+    },
+    {
+      "name": "Plan and schedule",
+      "text": "We agree on the details and set the work with clear communication."
+    },
+    {
+      "name": "Paint and walkthrough",
+      "text": "Our team does the work, then walks the finished job with you."
+    }
+  ],
+  "contactTitle": "Ready for a fresh coat?",
+  "footerLine": "House painting in Las Vegas",
+  "reviews": [],
+  "hours": [
+    "Mon-Fri: 8:00am to 5:30pm",
+    "Sat: 8:00am to 3:30pm",
+    "Sun: Closed"
+  ],
+  "galleryTitle": "Homes we’ve painted.",
+  "notePlaceholder": "Inside or outside, how many rooms, a date you have in mind…",
+  "gallery": [
+    {
+      "src": "img/photo-10.jpg",
+      "alt": "Painted tan home with dark brown garage doors",
+      "size": "big"
+    },
+    {
+      "src": "img/photo-12.jpg",
+      "alt": "Painted Southwest-style home with paver driveway"
+    },
+    {
+      "src": "img/photo-6.jpg",
+      "alt": "Painted stucco home with French doors beside a pool"
+    },
+    {
+      "src": "img/photo-9.jpg",
+      "alt": "Painted luxury home behind a pool"
+    },
+    {
+      "src": "img/photo-14.jpg",
+      "alt": "Freshly painted gray-green home with paver driveway"
+    },
+    {
+      "src": "img/photo-11.jpg",
+      "alt": "Painted white home with dark garage door"
+    },
+    {
+      "src": "img/photo-13.jpg",
+      "alt": "Home exterior with ladders during a paint job"
+    },
+    {
+      "src": "img/photo-3.jpg",
+      "alt": "Painted entry and garage door of a stucco home"
+    },
+    {
+      "src": "img/photo-2.jpg",
+      "alt": "Painter working at a commercial medical building"
+    }
+  ],
+  "areas": [
+    "Las Vegas"
+  ],
+  "pitch": "site",
+  "siteCheck": {
+    "reasons": [],
+    "improvements": [
+      "no tap-to-call link",
+      "loads in 3.8s"
+    ]
   }
- ],
- "also": [
-  {
-   "name": "Custom wood finishes"
-  },
-  {
-   "name": "Staining"
-  },
-  {
-   "name": "Custom textures and finishes"
-  },
-  {
-   "name": "Color consultations"
-  },
-  {
-   "name": "Maintenance painting"
-  },
-  {
-   "name": "New construction builds"
-  },
-  {
-   "name": "HOAs"
-  }
- ],
- "alsoTitle": "We also do:",
- "promise": null,
- "why": [
-  {
-   "name": "Family-operated",
-   "text": "Pedro and Clara run the company, and customers deal with them directly."
-  },
-  {
-   "name": "Licensed, bonded and insured",
-   "text": "Licensed, bonded and insured in Nevada, with a 1 year limited warranty on the work."
-  },
-  {
-   "name": "Rated 5 stars",
-   "text": "A 5 star rating on Google from 35 reviews, built on homeowners and builders across the Las Vegas Valley."
-  }
- ],
- "whyTitle": "Why J&J Custom Painting Company.",
- "howTitle": "From estimate to final walk-through.",
- "steps": [
-  {
-   "name": "Free consultation",
-   "text": "Tell us what you need. We talk through the scope and give you a free quote."
-  },
-  {
-   "name": "Plan and schedule",
-   "text": "We agree on the details and set the work with clear communication."
-  },
-  {
-   "name": "Paint and walkthrough",
-   "text": "Our team does the work, then walks the finished job with you."
-  }
- ],
- "contactTitle": "Ready for a fresh coat?",
- "footerLine": "House painting in Las Vegas",
- "reviews": [],
- "hours": [
-  "Mon-Fri: 8:00am to 5:30pm",
-  "Sat: 8:00am to 3:30pm",
-  "Sun: Closed"
- ],
- "galleryTitle": "Homes we’ve painted.",
- "notePlaceholder": "Inside or outside, how many rooms, a date you have in mind…",
- "gallery": [
-  {
-   "src": "img/photo-10.jpg",
-   "alt": "Painted tan home with dark brown garage doors",
-   "size": "big"
-  },
-  {
-   "src": "img/photo-12.jpg",
-   "alt": "Painted Southwest-style home with paver driveway"
-  },
-  {
-   "src": "img/photo-6.jpg",
-   "alt": "Painted stucco home with French doors beside a pool"
-  },
-  {
-   "src": "img/photo-9.jpg",
-   "alt": "Painted luxury home behind a pool"
-  },
-  {
-   "src": "img/photo-14.jpg",
-   "alt": "Freshly painted gray-green home with paver driveway"
-  },
-  {
-   "src": "img/photo-11.jpg",
-   "alt": "Painted white home with dark garage door"
-  },
-  {
-   "src": "img/photo-13.jpg",
-   "alt": "Home exterior with ladders during a paint job"
-  },
-  {
-   "src": "img/photo-3.jpg",
-   "alt": "Painted entry and garage door of a stucco home"
-  },
-  {
-   "src": "img/photo-2.jpg",
-   "alt": "Painter working at a commercial medical building"
-  }
- ],
- "areas": [
-  "Las Vegas"
- ],
- "pitch": "site"
 }

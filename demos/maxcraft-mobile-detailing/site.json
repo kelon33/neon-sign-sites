@@ -1,140 +1,146 @@
 {
- "kit": "detailing",
- "trade": "Mobile car detailing",
- "name": "MaxCraft Mobile Detailing",
- "legalName": "MaxCraft Mobile Detailing",
- "preview": true,
- "placeId": "ChIJnzfcF9nE90cRJFqNQb2sAh8",
- "title": "MaxCraft Mobile Detailing | Mobile car detailing in San Antonio, TX",
- "description": "Professional detailing in your driveway or at your office, across San Antonio and the Hill Country. You get on with your day while we detail your car, and you pay only once you're satisfied. 4.9 on Google from 366 reviews.",
- "brand": "#1670ff",
- "brandHi": "#52c6ff",
- "accent": "#8fd0ff",
- "logo": "logo.png",
- "logoChip": true,
- "wordmark": {
-  "top": "MaxCraft",
-  "bottom": "Mobile Detailing"
- },
- "phone": "(210) 296-0593",
- "email": "maxcraftdetailing@gmail.com",
- "heroImage": null,
- "heroAlt": "",
- "heroPosition": "60% 60%",
- "heroPositionPhone": "60% 50%",
- "rating": {
-  "score": "4.9",
-  "count": 366,
-  "url": "https://maps.google.com/?cid=2234538293977766436"
- },
- "kicker": "Mobile car detailing · San Antonio, TX",
- "headline": "Showroom shine.<br><em>Wherever you are.</em>",
- "intro": "Professional detailing in your driveway or at your office, across San Antonio and the Hill Country. You get on with your day while we detail your car, and you pay only once you're satisfied.",
- "mobile": {
-  "title": "Your driveway is our shop.",
-  "intro": "We bring the detail to you, so your day keeps moving.",
-  "points": [
-   {
-    "name": "At your door",
-    "text": "Your driveway, the office or wherever the vehicle is parked."
-   },
-   {
-    "name": "No drop-off",
-    "text": "No waiting room. Your car gets detailed while you get on with your day."
-   },
-   {
-    "name": "Fully equipped",
-    "text": "We bring the steam cleaners, extractors and products. You give us access to power and water."
-   },
-   {
-    "name": "Book any time",
-    "text": "Online booking runs 24/7, with appointment updates from the moment you book."
-   }
-  ]
- },
- "servicesTitle": "Inside, outside, and built to last.",
- "servicesIntro": "Pick what your car needs, from a deep interior clean to lasting paint protection.",
- "services": [
-  {
-   "name": "Full Detail",
-   "text": "Our complete inside-and-out detail: the full interior and exterior treatment in one visit.",
-   "price": "From $289"
+  "kit": "detailing",
+  "trade": "Mobile car detailing",
+  "name": "MaxCraft Mobile Detailing",
+  "legalName": "MaxCraft Mobile Detailing",
+  "preview": true,
+  "placeId": "ChIJnzfcF9nE90cRJFqNQb2sAh8",
+  "title": "MaxCraft Mobile Detailing | Mobile car detailing in San Antonio, TX",
+  "description": "Professional detailing in your driveway or at your office, across San Antonio and the Hill Country. You get on with your day while we detail your car, and you pay only once you're satisfied. 4.9 on Google from 366 reviews.",
+  "brand": "#1670ff",
+  "brandHi": "#52c6ff",
+  "accent": "#8fd0ff",
+  "logo": "logo.png",
+  "logoChip": true,
+  "wordmark": {
+    "top": "MaxCraft",
+    "bottom": "Mobile Detailing"
   },
-  {
-   "name": "Exterior Detail",
-   "text": "Foam-bath hand wash, wheels and rim faces, bug and tar removal, clay bar and a ceramic wax finish that lasts about 6 months.",
-   "price": "From $179"
+  "phone": "(210) 296-0593",
+  "email": "maxcraftdetailing@gmail.com",
+  "heroImage": null,
+  "heroAlt": "",
+  "heroPosition": "60% 60%",
+  "heroPositionPhone": "60% 50%",
+  "rating": {
+    "score": "4.9",
+    "count": 366,
+    "url": "https://maps.google.com/?cid=2234538293977766436"
   },
-  {
-   "name": "Interior Detail",
-   "text": "Deep vacuum, steam cleaning and disinfection, seat and carpet shampoo, and UV protectant on leather, vinyl and plastics.",
-   "price": "From $199"
+  "kicker": "Mobile car detailing · San Antonio, TX",
+  "headline": "Showroom shine.<br><em>Wherever you are.</em>",
+  "intro": "Professional detailing in your driveway or at your office, across San Antonio and the Hill Country. You get on with your day while we detail your car, and you pay only once you're satisfied.",
+  "mobile": {
+    "title": "Your driveway is our shop.",
+    "intro": "We bring the detail to you, so your day keeps moving.",
+    "points": [
+      {
+        "name": "At your door",
+        "text": "Your driveway, the office or wherever the vehicle is parked."
+      },
+      {
+        "name": "No drop-off",
+        "text": "No waiting room. Your car gets detailed while you get on with your day."
+      },
+      {
+        "name": "Fully equipped",
+        "text": "We bring the steam cleaners, extractors and products. You give us access to power and water."
+      },
+      {
+        "name": "Book any time",
+        "text": "Online booking runs 24/7, with appointment updates from the moment you book."
+      }
+    ]
   },
-  {
-   "name": "Ceramic Coating",
-   "text": "A hydrophobic coating that bonds to your paint and protects it for years, not months like wax."
-  },
-  {
-   "name": "Paint Correction",
-   "text": "Machine polishing that brings back deep gloss, and the right prep before any ceramic coating."
-  },
-  {
-   "name": "RV Detailing",
-   "text": "We bring the equipment to your RV and wash it on site, priced to the size of your rig."
+  "servicesTitle": "Inside, outside, and built to last.",
+  "servicesIntro": "Pick what your car needs, from a deep interior clean to lasting paint protection.",
+  "services": [
+    {
+      "name": "Full Detail",
+      "text": "Our complete inside-and-out detail: the full interior and exterior treatment in one visit.",
+      "price": "From $289"
+    },
+    {
+      "name": "Exterior Detail",
+      "text": "Foam-bath hand wash, wheels and rim faces, bug and tar removal, clay bar and a ceramic wax finish that lasts about 6 months.",
+      "price": "From $179"
+    },
+    {
+      "name": "Interior Detail",
+      "text": "Deep vacuum, steam cleaning and disinfection, seat and carpet shampoo, and UV protectant on leather, vinyl and plastics.",
+      "price": "From $199"
+    },
+    {
+      "name": "Ceramic Coating",
+      "text": "A hydrophobic coating that bonds to your paint and protects it for years, not months like wax."
+    },
+    {
+      "name": "Paint Correction",
+      "text": "Machine polishing that brings back deep gloss, and the right prep before any ceramic coating."
+    },
+    {
+      "name": "RV Detailing",
+      "text": "We bring the equipment to your RV and wash it on site, priced to the size of your rig."
+    }
+  ],
+  "also": [
+    {
+      "name": "Trucks"
+    },
+    {
+      "name": "SUVs"
+    },
+    {
+      "name": "RVs"
+    }
+  ],
+  "alsoTitle": "Not just cars:",
+  "why": [
+    {
+      "name": "Professional-grade quality",
+      "text": "Pro-grade products and a proven process, from foam bath to final protection."
+    },
+    {
+      "name": "Trusted locally",
+      "text": "4.9 stars from 350+ Google reviews from San Antonio drivers."
+    },
+    {
+      "name": "Pay when you're satisfied",
+      "text": "Starting prices up front, your final price confirmed before we start, and no payment until you approve the result."
+    }
+  ],
+  "whyTitle": "The detail is in the name.",
+  "howTitle": "Book it. We show up. You drive off shining.",
+  "steps": [
+    {
+      "name": "Request a consultation",
+      "text": "Call or fill out the form. Consultations are free."
+    },
+    {
+      "name": "Get your quote",
+      "text": "We price by your vehicle's size, condition and needs."
+    },
+    {
+      "name": "Pick up your car",
+      "text": "Detailed, protected and ready for the big reveal."
+    }
+  ],
+  "contactTitle": "Book your detail.",
+  "footerLine": "Mobile car detailing in San Antonio",
+  "reviews": [],
+  "hours": [
+    "Open 24 hours, 7 days a week"
+  ],
+  "galleryTitle": "Fresh off the driveway.",
+  "gallery": [],
+  "areas": [
+    "San Antonio"
+  ],
+  "pitch": "photos",
+  "siteCheck": {
+    "reasons": [
+      "slow (4.5s)"
+    ],
+    "improvements": []
   }
- ],
- "also": [
-  {
-   "name": "Trucks"
-  },
-  {
-   "name": "SUVs"
-  },
-  {
-   "name": "RVs"
-  }
- ],
- "alsoTitle": "Not just cars:",
- "why": [
-  {
-   "name": "Professional-grade quality",
-   "text": "Pro-grade products and a proven process, from foam bath to final protection."
-  },
-  {
-   "name": "Trusted locally",
-   "text": "4.9 stars from 350+ Google reviews from San Antonio drivers."
-  },
-  {
-   "name": "Pay when you're satisfied",
-   "text": "Starting prices up front, your final price confirmed before we start, and no payment until you approve the result."
-  }
- ],
- "whyTitle": "The detail is in the name.",
- "howTitle": "Book it. We show up. You drive off shining.",
- "steps": [
-  {
-   "name": "Request a consultation",
-   "text": "Call or fill out the form. Consultations are free."
-  },
-  {
-   "name": "Get your quote",
-   "text": "We price by your vehicle's size, condition and needs."
-  },
-  {
-   "name": "Pick up your car",
-   "text": "Detailed, protected and ready for the big reveal."
-  }
- ],
- "contactTitle": "Book your detail.",
- "footerLine": "Mobile car detailing in San Antonio",
- "reviews": [],
- "hours": [
-  "Open 24 hours, 7 days a week"
- ],
- "galleryTitle": "Fresh off the driveway.",
- "gallery": [],
- "areas": [
-  "San Antonio"
- ],
- "pitch": "photos"
 }

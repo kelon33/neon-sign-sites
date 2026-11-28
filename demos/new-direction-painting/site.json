@@ -1,141 +1,147 @@
 {
- "kit": "painting",
- "trade": "House painting",
- "name": "New Direction Painting",
- "legalName": "New Direction Painting",
- "preview": true,
- "placeId": "ChIJraTFnNvXkgMRSBfktitUGIU",
- "title": "New Direction Painting | House painting in Franklin, TN",
- "description": "Detail-oriented house painting in Franklin from a local, licensed painter. Jared Cook and his in-house crew handle the prep, the paint and the final walkthrough. 5.0 on Google from 170 reviews.",
- "logo": "logo.png",
- "logoChip": false,
- "wordmark": {
-  "top": "New Direction",
-  "bottom": "Painting"
- },
- "phone": "(615) 592-4848",
- "email": "jared@newdirectionpainting.co",
- "heroImage": "img/photo-3.jpg",
- "heroAlt": "Painted brick home with arched entry and green lawn",
- "heroPosition": "60% 60%",
- "heroPositionPhone": "60% 50%",
- "rating": {
-  "score": "5.0",
-  "count": 170,
-  "url": "https://maps.google.com/?cid=9590507953214199624"
- },
- "kicker": "House painting · Franklin",
- "headline": "Fresh paint.<br><em>Honest work.</em>",
- "intro": "Detail-oriented house painting in Franklin from a local, licensed painter. Jared Cook and his in-house crew handle the prep, the paint and the final walkthrough.",
- "badges": [
-  "Free estimates",
-  "Homes and businesses"
- ],
- "highlights": null,
- "servicesTitle": "Inside and out.",
- "servicesIntro": "One room or the whole property.",
- "services": [
-  {
-   "name": "Interior Painting",
-   "text": "Walls, ceilings, trim and baseboards, plus accent walls, wall and ceiling repair and wallpaper removal."
+  "kit": "painting",
+  "trade": "House painting",
+  "name": "New Direction Painting",
+  "legalName": "New Direction Painting",
+  "preview": true,
+  "placeId": "ChIJraTFnNvXkgMRSBfktitUGIU",
+  "title": "New Direction Painting | House painting in Franklin, TN",
+  "description": "Detail-oriented house painting in Franklin from a local, licensed painter. Jared Cook and his in-house crew handle the prep, the paint and the final walkthrough. 5.0 on Google from 170 reviews.",
+  "logo": "logo.png",
+  "logoChip": false,
+  "wordmark": {
+    "top": "New Direction",
+    "bottom": "Painting"
   },
-  {
-   "name": "Exterior Painting",
-   "text": "Full home repaints, windows, trim, accents, soffit and fascia."
+  "phone": "(615) 592-4848",
+  "email": "jared@newdirectionpainting.co",
+  "heroImage": "img/photo-3.jpg",
+  "heroAlt": "Painted brick home with arched entry and green lawn",
+  "heroPosition": "60% 60%",
+  "heroPositionPhone": "60% 50%",
+  "rating": {
+    "score": "5.0",
+    "count": 170,
+    "url": "https://maps.google.com/?cid=9590507953214199624"
   },
-  {
-   "name": "Cabinet Painting",
-   "text": "Kitchen, bathroom, linen and entryway cabinets, with surface prep, hardware removal and multiple coats."
-  },
-  {
-   "name": "Deck Staining",
-   "text": "Pressure washing, staining and railing painting to protect your deck and update its look."
-  },
-  {
-   "name": "Commercial Painting",
-   "text": "Retail, office, medical and storefront painting for local businesses."
+  "kicker": "House painting · Franklin",
+  "headline": "Fresh paint.<br><em>Honest work.</em>",
+  "intro": "Detail-oriented house painting in Franklin from a local, licensed painter. Jared Cook and his in-house crew handle the prep, the paint and the final walkthrough.",
+  "badges": [
+    "Free estimates",
+    "Homes and businesses"
+  ],
+  "highlights": null,
+  "servicesTitle": "Inside and out.",
+  "servicesIntro": "One room or the whole property.",
+  "services": [
+    {
+      "name": "Interior Painting",
+      "text": "Walls, ceilings, trim and baseboards, plus accent walls, wall and ceiling repair and wallpaper removal."
+    },
+    {
+      "name": "Exterior Painting",
+      "text": "Full home repaints, windows, trim, accents, soffit and fascia."
+    },
+    {
+      "name": "Cabinet Painting",
+      "text": "Kitchen, bathroom, linen and entryway cabinets, with surface prep, hardware removal and multiple coats."
+    },
+    {
+      "name": "Deck Staining",
+      "text": "Pressure washing, staining and railing painting to protect your deck and update its look."
+    },
+    {
+      "name": "Commercial Painting",
+      "text": "Retail, office, medical and storefront painting for local businesses."
+    }
+  ],
+  "also": [],
+  "alsoTitle": "We also do:",
+  "promise": null,
+  "why": [
+    {
+      "name": "In-house crew only",
+      "text": "Every painter on your job is a trained New Direction employee, not a subcontractor."
+    },
+    {
+      "name": "Two-coat finish",
+      "text": "Jared stands by a two-coat policy, so walls look right and last."
+    },
+    {
+      "name": "Final walkthrough",
+      "text": "Before the crew leaves, you walk the finished work with them. Anything that needs attention gets handled on the spot."
+    }
+  ],
+  "whyTitle": "Why New Direction Painting.",
+  "howTitle": "From estimate to final walk-through.",
+  "steps": [
+    {
+      "name": "Free estimate",
+      "text": "Tell us about the job. We look it over and give you a quote."
+    },
+    {
+      "name": "We do the work",
+      "text": "The crew arrives on schedule, and you get daily updates your way."
+    },
+    {
+      "name": "Final look",
+      "text": "We finish every detail so you are satisfied with the result."
+    }
+  ],
+  "contactTitle": "Ready for a fresh coat?",
+  "footerLine": "House painting in Franklin",
+  "reviews": [],
+  "hours": [],
+  "galleryTitle": "Homes we’ve painted.",
+  "notePlaceholder": "Inside or outside, how many rooms, a date you have in mind…",
+  "gallery": [
+    {
+      "src": "img/photo-16.jpg",
+      "alt": "Cabin repainted in dark charcoal with green roof",
+      "size": "big"
+    },
+    {
+      "src": "img/photo-2.jpg",
+      "alt": "White brick ranch home with black shutters"
+    },
+    {
+      "src": "img/photo-13.jpg",
+      "alt": "Large stucco home with arched doors after painting"
+    },
+    {
+      "src": "img/photo-12.jpg",
+      "alt": "Bedroom with blue walls and white trim"
+    },
+    {
+      "src": "img/photo-8.jpg",
+      "alt": "Staircase with white railings and navy accent wall"
+    },
+    {
+      "src": "img/photo-17.jpg",
+      "alt": "Red brick exterior with garage doors"
+    },
+    {
+      "src": "img/photo-10.jpg",
+      "alt": "Freshly painted bedroom wall in neutral tone"
+    },
+    {
+      "src": "img/photo-5.jpg",
+      "alt": "Brick home with arched windows and landscaped lawn"
+    },
+    {
+      "src": "img/photo-4.jpg",
+      "alt": "Painters on ladders working on a brick house exterior"
+    }
+  ],
+  "areas": [
+    "Franklin"
+  ],
+  "pitch": "site",
+  "siteCheck": {
+    "reasons": [],
+    "improvements": [
+      "no quote or booking form"
+    ]
   }
- ],
- "also": [],
- "alsoTitle": "We also do:",
- "promise": null,
- "why": [
-  {
-   "name": "In-house crew only",
-   "text": "Every painter on your job is a trained New Direction employee, not a subcontractor."
-  },
-  {
-   "name": "Two-coat finish",
-   "text": "Jared stands by a two-coat policy, so walls look right and last."
-  },
-  {
-   "name": "Final walkthrough",
-   "text": "Before the crew leaves, you walk the finished work with them. Anything that needs attention gets handled on the spot."
-  }
- ],
- "whyTitle": "Why New Direction Painting.",
- "howTitle": "From estimate to final walk-through.",
- "steps": [
-  {
-   "name": "Free estimate",
-   "text": "Tell us about the job. We look it over and give you a quote."
-  },
-  {
-   "name": "We do the work",
-   "text": "The crew arrives on schedule, and you get daily updates your way."
-  },
-  {
-   "name": "Final look",
-   "text": "We finish every detail so you are satisfied with the result."
-  }
- ],
- "contactTitle": "Ready for a fresh coat?",
- "footerLine": "House painting in Franklin",
- "reviews": [],
- "hours": [],
- "galleryTitle": "Homes we’ve painted.",
- "notePlaceholder": "Inside or outside, how many rooms, a date you have in mind…",
- "gallery": [
-  {
-   "src": "img/photo-16.jpg",
-   "alt": "Cabin repainted in dark charcoal with green roof",
-   "size": "big"
-  },
-  {
-   "src": "img/photo-2.jpg",
-   "alt": "White brick ranch home with black shutters"
-  },
-  {
-   "src": "img/photo-13.jpg",
-   "alt": "Large stucco home with arched doors after painting"
-  },
-  {
-   "src": "img/photo-12.jpg",
-   "alt": "Bedroom with blue walls and white trim"
-  },
-  {
-   "src": "img/photo-8.jpg",
-   "alt": "Staircase with white railings and navy accent wall"
-  },
-  {
-   "src": "img/photo-17.jpg",
-   "alt": "Red brick exterior with garage doors"
-  },
-  {
-   "src": "img/photo-10.jpg",
-   "alt": "Freshly painted bedroom wall in neutral tone"
-  },
-  {
-   "src": "img/photo-5.jpg",
-   "alt": "Brick home with arched windows and landscaped lawn"
-  },
-  {
-   "src": "img/photo-4.jpg",
-   "alt": "Painters on ladders working on a brick house exterior"
-  }
- ],
- "areas": [
-  "Franklin"
- ],
- "pitch": "site"
 }

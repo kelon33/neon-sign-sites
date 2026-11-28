@@ -1,162 +1,168 @@
 {
- "kit": "painting",
- "trade": "House painting",
- "name": "M&M Custom Painting",
- "legalName": "M&M Custom Painting",
- "preview": true,
- "placeId": "ChIJwTQCblbryIARxcVIyWRmS4Y",
- "title": "M&M Custom Painting | House painting in Las Vegas, NV",
- "description": "Family-owned house painters in Las Vegas, founded by Manuel Sr. and now led by his son Manny. Residential and commercial painting, cabinet refreshing and custom finishes. 4.9 on Google from 32 reviews.",
- "logo": null,
- "logoChip": false,
- "wordmark": {
-  "top": "M&M Custom",
-  "bottom": "Painting"
- },
- "phone": "(702) 613-1244",
- "email": "mnmcustompaints@yahoo.com",
- "heroImage": "img/photo-3.jpg",
- "heroAlt": "Two-story painted home with pool and spa",
- "heroPosition": "60% 60%",
- "heroPositionPhone": "60% 50%",
- "rating": {
-  "score": "4.9",
-  "count": 32,
-  "url": "https://maps.google.com/?cid=9676940807395395013"
- },
- "kicker": "House painting · Las Vegas",
- "headline": "Clean walls.<br><em>Family-built finish.</em>",
- "intro": "Family-owned house painters in Las Vegas, founded by Manuel Sr. and now led by his son Manny. Residential and commercial painting, cabinet refreshing and custom finishes.",
- "badges": [
-  "Family owned",
-  "Homes and businesses"
- ],
- "highlights": null,
- "servicesTitle": "Inside and out.",
- "servicesIntro": "One room or the whole house.",
- "services": [
-  {
-   "name": "Interior Painting",
-   "text": "Walls, base boards and doors painted clean, with drywall repair when a wall needs it."
+  "kit": "painting",
+  "trade": "House painting",
+  "name": "M&M Custom Painting",
+  "legalName": "M&M Custom Painting",
+  "preview": true,
+  "placeId": "ChIJwTQCblbryIARxcVIyWRmS4Y",
+  "title": "M&M Custom Painting | House painting in Las Vegas, NV",
+  "description": "Family-owned house painters in Las Vegas, founded by Manuel Sr. and now led by his son Manny. Residential and commercial painting, cabinet refreshing and custom finishes. 4.9 on Google from 32 reviews.",
+  "logo": null,
+  "logoChip": false,
+  "wordmark": {
+    "top": "M&M Custom",
+    "bottom": "Painting"
   },
-  {
-   "name": "Exterior Painting",
-   "text": "Exterior makeovers for homes and businesses."
+  "phone": "(702) 613-1244",
+  "email": "mnmcustompaints@yahoo.com",
+  "heroImage": "img/photo-3.jpg",
+  "heroAlt": "Two-story painted home with pool and spa",
+  "heroPosition": "60% 60%",
+  "heroPositionPhone": "60% 50%",
+  "rating": {
+    "score": "4.9",
+    "count": 32,
+    "url": "https://maps.google.com/?cid=9676940807395395013"
   },
-  {
-   "name": "Cabinetry",
-   "text": "Cabinets refreshed to perfection."
-  },
-  {
-   "name": "Commercial Painting",
-   "text": "Reliable painting and quality finishes for your business."
-  },
-  {
-   "name": "Custom Finishes",
-   "text": "Specialty finishes like pool decks and epoxy floors built to endure."
-  },
-  {
-   "name": "Stamped Concrete",
-   "text": "Decorative concrete finishes for walkways and outdoor spaces."
+  "kicker": "House painting · Las Vegas",
+  "headline": "Clean walls.<br><em>Family-built finish.</em>",
+  "intro": "Family-owned house painters in Las Vegas, founded by Manuel Sr. and now led by his son Manny. Residential and commercial painting, cabinet refreshing and custom finishes.",
+  "badges": [
+    "Family owned",
+    "Homes and businesses"
+  ],
+  "highlights": null,
+  "servicesTitle": "Inside and out.",
+  "servicesIntro": "One room or the whole house.",
+  "services": [
+    {
+      "name": "Interior Painting",
+      "text": "Walls, base boards and doors painted clean, with drywall repair when a wall needs it."
+    },
+    {
+      "name": "Exterior Painting",
+      "text": "Exterior makeovers for homes and businesses."
+    },
+    {
+      "name": "Cabinetry",
+      "text": "Cabinets refreshed to perfection."
+    },
+    {
+      "name": "Commercial Painting",
+      "text": "Reliable painting and quality finishes for your business."
+    },
+    {
+      "name": "Custom Finishes",
+      "text": "Specialty finishes like pool decks and epoxy floors built to endure."
+    },
+    {
+      "name": "Stamped Concrete",
+      "text": "Decorative concrete finishes for walkways and outdoor spaces."
+    }
+  ],
+  "also": [
+    {
+      "name": "Pool decks"
+    },
+    {
+      "name": "Epoxy floors"
+    },
+    {
+      "name": "Drywall repair"
+    }
+  ],
+  "alsoTitle": "We also do:",
+  "promise": null,
+  "why": [
+    {
+      "name": "Family-built",
+      "text": "Founded by Manuel Sr. in Canoga Park, CA, and brought to Las Vegas in the 90s. Manny leads it today."
+    },
+    {
+      "name": "Meticulous prep",
+      "text": "The M&M Promise: careful prep, eco-friendly materials and a clean finish."
+    },
+    {
+      "name": "Homes and businesses",
+      "text": "Residential and commercial painting, from interior walls to exterior makeovers."
+    }
+  ],
+  "whyTitle": "Why customers come back.",
+  "howTitle": "A fresh coat in three steps.",
+  "steps": [
+    {
+      "name": "Free estimate",
+      "text": "We evaluate your property, talk through colors and timing, and give you a detailed quote."
+    },
+    {
+      "name": "Prep and protect",
+      "text": "We sand, patch, prime and cover every surface before any paint goes on."
+    },
+    {
+      "name": "Paint and walk through",
+      "text": "We apply each coat with care, then inspect every detail with you."
+    }
+  ],
+  "contactTitle": "Ready for a fresh coat?",
+  "footerLine": "House painting in Las Vegas",
+  "reviews": [
+    {
+      "text": "Great job! Great experience from start to finish. Skilled dry wall repair; large and extra large holes. Clean and respectful. Base boards and doors paint look clean. Immediate call next time I need paint or wall repair. Thank you, Manny and team.",
+      "name": "David B."
+    }
+  ],
+  "hours": [
+    "6 AM - 5 PM"
+  ],
+  "galleryTitle": "Homes we’ve painted.",
+  "notePlaceholder": "Inside or outside, how many rooms, a date you have in mind…",
+  "gallery": [
+    {
+      "src": "img/photo-8.jpg",
+      "alt": "White two-story house with balconies and palm tree",
+      "size": "big"
+    },
+    {
+      "src": "img/photo-9.jpg",
+      "alt": "Cream stucco house with dark garage doors"
+    },
+    {
+      "src": "img/photo-10.jpg",
+      "alt": "Painted house with stone accents and paver driveway"
+    },
+    {
+      "src": "img/photo-13.jpg",
+      "alt": "Two-story home with flag and freshly painted exterior"
+    },
+    {
+      "src": "img/photo-12.jpg",
+      "alt": "Painted three-car garage home with stone detail"
+    },
+    {
+      "src": "img/photo-11.jpg",
+      "alt": "Tan stucco home with paver driveway"
+    },
+    {
+      "src": "img/photo-6.jpg",
+      "alt": "Stamped concrete walkway lined with hedges"
+    },
+    {
+      "src": "img/photo-7.jpg",
+      "alt": "Stained wood double entry door with glass inlays"
+    },
+    {
+      "src": "img/photo-2.jpg",
+      "alt": "Painted home beside a lap pool and pool deck"
+    }
+  ],
+  "areas": [
+    "Las Vegas"
+  ],
+  "pitch": "site",
+  "siteCheck": {
+    "reasons": [],
+    "improvements": [
+      "copyright 2024"
+    ]
   }
- ],
- "also": [
-  {
-   "name": "Pool decks"
-  },
-  {
-   "name": "Epoxy floors"
-  },
-  {
-   "name": "Drywall repair"
-  }
- ],
- "alsoTitle": "We also do:",
- "promise": null,
- "why": [
-  {
-   "name": "Family-built",
-   "text": "Founded by Manuel Sr. in Canoga Park, CA, and brought to Las Vegas in the 90s. Manny leads it today."
-  },
-  {
-   "name": "Meticulous prep",
-   "text": "The M&M Promise: careful prep, eco-friendly materials and a clean finish."
-  },
-  {
-   "name": "Homes and businesses",
-   "text": "Residential and commercial painting, from interior walls to exterior makeovers."
-  }
- ],
- "whyTitle": "Why customers come back.",
- "howTitle": "A fresh coat in three steps.",
- "steps": [
-  {
-   "name": "Free estimate",
-   "text": "We evaluate your property, talk through colors and timing, and give you a detailed quote."
-  },
-  {
-   "name": "Prep and protect",
-   "text": "We sand, patch, prime and cover every surface before any paint goes on."
-  },
-  {
-   "name": "Paint and walk through",
-   "text": "We apply each coat with care, then inspect every detail with you."
-  }
- ],
- "contactTitle": "Ready for a fresh coat?",
- "footerLine": "House painting in Las Vegas",
- "reviews": [
-  {
-   "text": "Great job! Great experience from start to finish. Skilled dry wall repair; large and extra large holes. Clean and respectful. Base boards and doors paint look clean. Immediate call next time I need paint or wall repair. Thank you, Manny and team.",
-   "name": "David B."
-  }
- ],
- "hours": [
-  "6 AM - 5 PM"
- ],
- "galleryTitle": "Homes we’ve painted.",
- "notePlaceholder": "Inside or outside, how many rooms, a date you have in mind…",
- "gallery": [
-  {
-   "src": "img/photo-8.jpg",
-   "alt": "White two-story house with balconies and palm tree",
-   "size": "big"
-  },
-  {
-   "src": "img/photo-9.jpg",
-   "alt": "Cream stucco house with dark garage doors"
-  },
-  {
-   "src": "img/photo-10.jpg",
-   "alt": "Painted house with stone accents and paver driveway"
-  },
-  {
-   "src": "img/photo-13.jpg",
-   "alt": "Two-story home with flag and freshly painted exterior"
-  },
-  {
-   "src": "img/photo-12.jpg",
-   "alt": "Painted three-car garage home with stone detail"
-  },
-  {
-   "src": "img/photo-11.jpg",
-   "alt": "Tan stucco home with paver driveway"
-  },
-  {
-   "src": "img/photo-6.jpg",
-   "alt": "Stamped concrete walkway lined with hedges"
-  },
-  {
-   "src": "img/photo-7.jpg",
-   "alt": "Stained wood double entry door with glass inlays"
-  },
-  {
-   "src": "img/photo-2.jpg",
-   "alt": "Painted home beside a lap pool and pool deck"
-  }
- ],
- "areas": [
-  "Las Vegas"
- ],
- "pitch": "site"
 }

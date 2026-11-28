@@ -287,6 +287,8 @@ async function main() {
       heroPosition: '60% 60%', heroPositionPhone: '60% 50%',
       rating: lead.rating ? { score: lead.rating.toFixed(1), count: lead.reviews, url: lead.mapsUrl?.split('&')[0] } : null,
       ...copy, gallery, areas: copy.areas ?? [lead.city.replace(/,\s*[A-Z]{2}$/, '')],
+      // What the site check measured on their current site: the preview's "What this page fixes" box.
+      ...(lead.reasons || lead.improvements ? { siteCheck: { reasons: lead.reasons ?? [], improvements: lead.improvements ?? [] } } : {}),
       pitch: gallery.length ? 'site' : 'photos', // photos: no gallery, the email asks for job photos
     };
     if (kit !== 'holiday' && !data.heroImage) checks.push('Hero is a licensed stock photo for the trade (credited on the page, see generator/assets/CREDITS.md), not their work: swap in their own photo once they send one.');

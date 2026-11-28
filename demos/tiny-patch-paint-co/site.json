@@ -1,105 +1,113 @@
 {
- "kit": "painting",
- "trade": "House painting",
- "name": "Tiny Patch Paint Co.",
- "legalName": "Tiny Patch Paint Co.",
- "preview": true,
- "placeId": "ChIJh5lZl9ZtZIgRCrp-XZjx3ww",
- "title": "Tiny Patch Paint Co. | House painting in Brentwood, TN",
- "description": "Small-scale painting and drywall repair for homes and businesses across Middle Tennessee. Clean, detailed work without the stress of a big renovation. 5.0 on Google from 25 reviews.",
- "logo": "logo.png",
- "logoChip": true,
- "wordmark": {
-  "top": "Tiny Patch",
-  "bottom": "Paint Co."
- },
- "phone": "(615) 499-2507",
- "email": "info@tinypatchpaintco.com",
- "heroImage": null,
- "heroAlt": "",
- "heroPosition": "60% 60%",
- "heroPositionPhone": "60% 50%",
- "rating": {
-  "score": "5.0",
-  "count": 25,
-  "url": "https://maps.google.com/?cid=927725684967520778"
- },
- "kicker": "House painting · Brentwood",
- "headline": "Fresh paint.<br><em>Honest work.</em>",
- "intro": "Small-scale painting and drywall repair for homes and businesses across Middle Tennessee. Clean, detailed work without the stress of a big renovation.",
- "badges": [
-  "Homes and businesses"
- ],
- "highlights": null,
- "servicesTitle": "Inside and out.",
- "servicesIntro": "Homes, businesses and industrial sites. One crew that does it right.",
- "services": [
-  {
-   "name": "Projects around the house",
-   "text": "Patch the hole where the TV used to be, touch up the kitchen, repaint a kid's bedroom or freshen an accent wall."
+  "kit": "painting",
+  "trade": "House painting",
+  "name": "Tiny Patch Paint Co.",
+  "legalName": "Tiny Patch Paint Co.",
+  "preview": true,
+  "placeId": "ChIJh5lZl9ZtZIgRCrp-XZjx3ww",
+  "title": "Tiny Patch Paint Co. | House painting in Brentwood, TN",
+  "description": "Small-scale painting and drywall repair for homes and businesses across Middle Tennessee. Clean, detailed work without the stress of a big renovation. 5.0 on Google from 25 reviews.",
+  "logo": "logo.png",
+  "logoChip": true,
+  "wordmark": {
+    "top": "Tiny Patch",
+    "bottom": "Paint Co."
   },
-  {
-   "name": "Drywall repair",
-   "text": "Damaged drywall repaired and finished so the wall looks like new."
+  "phone": "(615) 499-2507",
+  "email": "info@tinypatchpaintco.com",
+  "heroImage": null,
+  "heroAlt": "",
+  "heroPosition": "60% 60%",
+  "heroPositionPhone": "60% 50%",
+  "rating": {
+    "score": "5.0",
+    "count": 25,
+    "url": "https://maps.google.com/?cid=927725684967520778"
   },
-  {
-   "name": "Small businesses",
-   "text": "We come freshen up your space at your convenience, so you don't have to close."
-  },
-  {
-   "name": "Airbnb and rental touch-ups",
-   "text": "Spot repairs between guests, tenants, or before selling."
+  "kicker": "House painting · Brentwood",
+  "headline": "Fresh paint.<br><em>Honest work.</em>",
+  "intro": "Small-scale painting and drywall repair for homes and businesses across Middle Tennessee. Clean, detailed work without the stress of a big renovation.",
+  "badges": [
+    "Homes and businesses"
+  ],
+  "highlights": null,
+  "servicesTitle": "Inside and out.",
+  "servicesIntro": "Homes, businesses and industrial sites. One crew that does it right.",
+  "services": [
+    {
+      "name": "Projects around the house",
+      "text": "Patch the hole where the TV used to be, touch up the kitchen, repaint a kid's bedroom or freshen an accent wall."
+    },
+    {
+      "name": "Drywall repair",
+      "text": "Damaged drywall repaired and finished so the wall looks like new."
+    },
+    {
+      "name": "Small businesses",
+      "text": "We come freshen up your space at your convenience, so you don't have to close."
+    },
+    {
+      "name": "Airbnb and rental touch-ups",
+      "text": "Spot repairs between guests, tenants, or before selling."
+    }
+  ],
+  "also": [
+    {
+      "name": "Commercial painting"
+    },
+    {
+      "name": "Rental properties"
+    }
+  ],
+  "alsoTitle": "We also do:",
+  "promise": null,
+  "why": [
+    {
+      "name": "Small jobs welcome",
+      "text": "No project is too small to make a big difference."
+    },
+    {
+      "name": "Clean and detailed",
+      "text": "Careful, reliable results that refresh your space without a large renovation."
+    },
+    {
+      "name": "Hassle-free",
+      "text": "Friendly service and a finish built to last, whatever the size of the job."
+    }
+  ],
+  "whyTitle": "Why homeowners call us.",
+  "howTitle": "A fresh coat in three steps.",
+  "steps": [
+    {
+      "name": "On-site estimate",
+      "text": "We visit your home and give you a detailed bid based on the scope of work."
+    },
+    {
+      "name": "Approve and choose colors",
+      "text": "Approve the bid, then pick colors with our guidance while we schedule the job."
+    },
+    {
+      "name": "Prep, paint, finish",
+      "text": "We protect your floors and furniture, paint, and leave your space clean."
+    }
+  ],
+  "contactTitle": "Ready for a fresh coat?",
+  "footerLine": "House painting in Brentwood",
+  "reviews": [],
+  "hours": [],
+  "galleryTitle": "Homes we’ve painted.",
+  "notePlaceholder": "Inside or outside, how many rooms, a date you have in mind…",
+  "gallery": [],
+  "areas": [
+    "Brentwood"
+  ],
+  "pitch": "photos",
+  "siteCheck": {
+    "reasons": [],
+    "improvements": [
+      "no tap-to-call link",
+      "no reviews on the site",
+      "only 1 photo"
+    ]
   }
- ],
- "also": [
-  {
-   "name": "Commercial painting"
-  },
-  {
-   "name": "Rental properties"
-  }
- ],
- "alsoTitle": "We also do:",
- "promise": null,
- "why": [
-  {
-   "name": "Small jobs welcome",
-   "text": "No project is too small to make a big difference."
-  },
-  {
-   "name": "Clean and detailed",
-   "text": "Careful, reliable results that refresh your space without a large renovation."
-  },
-  {
-   "name": "Hassle-free",
-   "text": "Friendly service and a finish built to last, whatever the size of the job."
-  }
- ],
- "whyTitle": "Why homeowners call us.",
- "howTitle": "A fresh coat in three steps.",
- "steps": [
-  {
-   "name": "On-site estimate",
-   "text": "We visit your home and give you a detailed bid based on the scope of work."
-  },
-  {
-   "name": "Approve and choose colors",
-   "text": "Approve the bid, then pick colors with our guidance while we schedule the job."
-  },
-  {
-   "name": "Prep, paint, finish",
-   "text": "We protect your floors and furniture, paint, and leave your space clean."
-  }
- ],
- "contactTitle": "Ready for a fresh coat?",
- "footerLine": "House painting in Brentwood",
- "reviews": [],
- "hours": [],
- "galleryTitle": "Homes we’ve painted.",
- "notePlaceholder": "Inside or outside, how many rooms, a date you have in mind…",
- "gallery": [],
- "areas": [
-  "Brentwood"
- ],
- "pitch": "photos"
 }

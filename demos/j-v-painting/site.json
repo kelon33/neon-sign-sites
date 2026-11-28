@@ -1,114 +1,121 @@
 {
- "kit": "painting",
- "trade": "House painting",
- "name": "J.V. Painting",
- "legalName": "J.V. Painting",
- "preview": true,
- "placeId": "ChIJAQBMXJJEXIYRMXkZTuMH1Eo",
- "title": "J.V. Painting | House painting in San Antonio, TX",
- "description": "Residential and commercial painters in San Antonio. Big job or small, we prep it right and paint it the way you picked it. 4.9 on Google from 20 reviews.",
- "logo": null,
- "logoChip": false,
- "wordmark": {
-  "top": "J.V.",
-  "bottom": "Painting Co"
- },
- "phone": "(210) 480-7570",
- "email": "astigma@astigmatic.com",
- "heroImage": null,
- "heroAlt": "",
- "heroPosition": "60% 60%",
- "heroPositionPhone": "60% 50%",
- "rating": {
-  "score": "4.9",
-  "count": 20,
-  "url": "https://maps.google.com/?cid=5391943326718589233"
- },
- "kicker": "House painting · San Antonio",
- "headline": "Fresh paint.<br><em>Done by family.</em>",
- "intro": "Residential and commercial painters in San Antonio. Big job or small, we prep it right and paint it the way you picked it.",
- "badges": [
-  "Free estimates",
-  "Homes and businesses"
- ],
- "highlights": null,
- "servicesTitle": "Inside and out.",
- "servicesIntro": "One room or the whole house. Custom bids, no guesswork.",
- "services": [
-  {
-   "name": "Residential painting",
-   "text": "Interior and exterior painting for homes, with color selection and coordination built into the job."
+  "kit": "painting",
+  "trade": "House painting",
+  "name": "J.V. Painting",
+  "legalName": "J.V. Painting",
+  "preview": true,
+  "placeId": "ChIJAQBMXJJEXIYRMXkZTuMH1Eo",
+  "title": "J.V. Painting | House painting in San Antonio, TX",
+  "description": "Residential and commercial painters in San Antonio. Big job or small, we prep it right and paint it the way you picked it. 4.9 on Google from 20 reviews.",
+  "logo": null,
+  "logoChip": false,
+  "wordmark": {
+    "top": "J.V.",
+    "bottom": "Painting Co"
   },
-  {
-   "name": "Commercial painting",
-   "text": "Interior and exterior finishes for schools, from classrooms and cafeterias to libraries and hallways."
+  "phone": "(210) 480-7570",
+  "email": "astigma@astigmatic.com",
+  "heroImage": null,
+  "heroAlt": "",
+  "heroPosition": "60% 60%",
+  "heroPositionPhone": "60% 50%",
+  "rating": {
+    "score": "4.9",
+    "count": 20,
+    "url": "https://maps.google.com/?cid=5391943326718589233"
   },
-  {
-   "name": "Handrail refinishing",
-   "text": "Metal handrails power washed, primed and finished with industrial paint."
-  },
-  {
-   "name": "Historic interior repaint",
-   "text": "Floors and light fixtures covered and protected, a pro-block enamel prime coat, then two coats of Sherwin Williams paint."
+  "kicker": "House painting · San Antonio",
+  "headline": "Fresh paint.<br><em>Done by family.</em>",
+  "intro": "Residential and commercial painters in San Antonio. Big job or small, we prep it right and paint it the way you picked it.",
+  "badges": [
+    "Free estimates",
+    "Homes and businesses"
+  ],
+  "highlights": null,
+  "servicesTitle": "Inside and out.",
+  "servicesIntro": "One room or the whole house. Custom bids, no guesswork.",
+  "services": [
+    {
+      "name": "Residential painting",
+      "text": "Interior and exterior painting for homes, with color selection and coordination built into the job."
+    },
+    {
+      "name": "Commercial painting",
+      "text": "Interior and exterior finishes for schools, from classrooms and cafeterias to libraries and hallways."
+    },
+    {
+      "name": "Handrail refinishing",
+      "text": "Metal handrails power washed, primed and finished with industrial paint."
+    },
+    {
+      "name": "Historic interior repaint",
+      "text": "Floors and light fixtures covered and protected, a pro-block enamel prime coat, then two coats of Sherwin Williams paint."
+    }
+  ],
+  "also": [
+    {
+      "name": "Schools"
+    },
+    {
+      "name": "Commercial buildings"
+    }
+  ],
+  "alsoTitle": "We also do:",
+  "promise": null,
+  "why": [
+    {
+      "name": "Prep comes first",
+      "text": "Power washing and primer come before paint. Prep is the key to a better finish."
+    },
+    {
+      "name": "Built around your schedule",
+      "text": "We work around your busy day and consult with you on every color choice."
+    },
+    {
+      "name": "Insured, with referrals",
+      "text": "Fully insured with general liability and workers compensation for employees. Referrals are available."
+    }
+  ],
+  "whyTitle": "Why homeowners call us.",
+  "howTitle": "A fresh coat in three steps.",
+  "steps": [
+    {
+      "name": "Ask for a free estimate",
+      "text": "Call or use the form to tell us about your project."
+    },
+    {
+      "name": "Plan the job",
+      "text": "We go over the work, colors and timing with you."
+    },
+    {
+      "name": "Enjoy the new look",
+      "text": "We paint, and aim to finish on time and on budget."
+    }
+  ],
+  "contactTitle": "Ready for a fresh coat?",
+  "footerLine": "House painting in San Antonio",
+  "reviews": [
+    {
+      "text": "The best prep and finish apint for this 40 plus old school",
+      "name": "JV PEREZ"
+    }
+  ],
+  "hours": [
+    "Monday - Friday: 8am - 6pm",
+    "Saturday - Sunday: Closed"
+  ],
+  "galleryTitle": "Homes we’ve painted.",
+  "notePlaceholder": "Inside or outside, how many rooms, a date you have in mind…",
+  "gallery": [],
+  "areas": [
+    "San Antonio"
+  ],
+  "pitch": "photos",
+  "siteCheck": {
+    "reasons": [
+      "GoDaddy site builder",
+      "copyright 2022"
+    ],
+    "improvements": []
   }
- ],
- "also": [
-  {
-   "name": "Schools"
-  },
-  {
-   "name": "Commercial buildings"
-  }
- ],
- "alsoTitle": "We also do:",
- "promise": null,
- "why": [
-  {
-   "name": "Prep comes first",
-   "text": "Power washing and primer come before paint. Prep is the key to a better finish."
-  },
-  {
-   "name": "Built around your schedule",
-   "text": "We work around your busy day and consult with you on every color choice."
-  },
-  {
-   "name": "Insured, with referrals",
-   "text": "Fully insured with general liability and workers compensation for employees. Referrals are available."
-  }
- ],
- "whyTitle": "Why homeowners call us.",
- "howTitle": "A fresh coat in three steps.",
- "steps": [
-  {
-   "name": "Ask for a free estimate",
-   "text": "Call or use the form to tell us about your project."
-  },
-  {
-   "name": "Plan the job",
-   "text": "We go over the work, colors and timing with you."
-  },
-  {
-   "name": "Enjoy the new look",
-   "text": "We paint, and aim to finish on time and on budget."
-  }
- ],
- "contactTitle": "Ready for a fresh coat?",
- "footerLine": "House painting in San Antonio",
- "reviews": [
-  {
-   "text": "The best prep and finish apint for this 40 plus old school",
-   "name": "JV PEREZ"
-  }
- ],
- "hours": [
-  "Monday - Friday: 8am - 6pm",
-  "Saturday - Sunday: Closed"
- ],
- "galleryTitle": "Homes we’ve painted.",
- "notePlaceholder": "Inside or outside, how many rooms, a date you have in mind…",
- "gallery": [],
- "areas": [
-  "San Antonio"
- ],
- "pitch": "photos"
 }

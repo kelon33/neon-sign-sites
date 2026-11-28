@@ -1,173 +1,179 @@
 {
- "kit": "detailing",
- "trade": "Paintless dent repair",
- "name": "Hill Country Dent Repair",
- "legalName": "Hill Country Dent Repair",
- "preview": true,
- "placeId": "ChIJN6sAf3NdYEARWxXEsBATiZs",
- "title": "Hill Country Dent Repair | Paintless dent repair in Spring Branch, TX",
- "description": "I fix dents without paint or filler, and I do every estimate and repair myself. Door dings, creases and hail damage, worked out from behind the panel so your factory paint stays. 5.0 on Google from 62 reviews.",
- "brand": "#1670ff",
- "brandHi": "#52c6ff",
- "accent": "#8fd0ff",
- "logo": "logo.png",
- "logoChip": true,
- "wordmark": {
-  "top": "Hill Country",
-  "bottom": "Dent Repair"
- },
- "phone": "(210) 899-7788",
- "email": "info@em.hillcountrypdr.com",
- "heroImage": "img/photo-7.jpg",
- "heroAlt": "Technician repairing a dent on a black SUV in the shop",
- "heroPosition": "60% 60%",
- "heroPositionPhone": "60% 50%",
- "rating": {
-  "score": "5.0",
-  "count": 62,
-  "url": "https://maps.google.com/?cid=11207510110094234971"
- },
- "kicker": "Paintless dent repair · Spring Branch",
- "headline": "Your car's dents.<br><em>Gone. Paint untouched.</em>",
- "intro": "I fix dents without paint or filler, and I do every estimate and repair myself. Door dings, creases and hail damage, worked out from behind the panel so your factory paint stays.",
- "mobile": {
-  "title": "Door dings, at your door.",
-  "intro": "For door dings and small dents, I come to you. Hail, deer hits and larger dents are repaired at my Spring Branch shop.",
-  "points": [
-   {
-    "name": "I come to you",
-    "text": "Mobile visits for door dings and small dents."
-   },
-   {
-    "name": "Set days",
-    "text": "Mondays and Fridays, 9am to 1pm."
-   },
-   {
-    "name": "Flat trip fee",
-    "text": "$50 trip fee for mobile visits."
-   },
-   {
-    "name": "Easy to start",
-    "text": "Call, text or upload two photos of the dent for an estimate."
-   }
-  ]
- },
- "servicesTitle": "Every kind of dent.",
- "servicesIntro": "From a single door ding to a full hail storm.",
- "services": [
-  {
-   "name": "Paintless Dent Repair",
-   "text": "Dents pushed out from behind the panel with no sanding, filler or paint. Dents up to 1 inch start at $150.",
-   "price": "From $150"
+  "kit": "detailing",
+  "trade": "Paintless dent repair",
+  "name": "Hill Country Dent Repair",
+  "legalName": "Hill Country Dent Repair",
+  "preview": true,
+  "placeId": "ChIJN6sAf3NdYEARWxXEsBATiZs",
+  "title": "Hill Country Dent Repair | Paintless dent repair in Spring Branch, TX",
+  "description": "I fix dents without paint or filler, and I do every estimate and repair myself. Door dings, creases and hail damage, worked out from behind the panel so your factory paint stays. 5.0 on Google from 62 reviews.",
+  "brand": "#1670ff",
+  "brandHi": "#52c6ff",
+  "accent": "#8fd0ff",
+  "logo": "logo.png",
+  "logoChip": true,
+  "wordmark": {
+    "top": "Hill Country",
+    "bottom": "Dent Repair"
   },
-  {
-   "name": "Auto Hail Repair",
-   "text": "Complete inspection and repair of hail dents on the roof, hood and trunk, done at my shop."
+  "phone": "(210) 899-7788",
+  "email": "info@em.hillcountrypdr.com",
+  "heroImage": "img/photo-7.jpg",
+  "heroAlt": "Technician repairing a dent on a black SUV in the shop",
+  "heroPosition": "60% 60%",
+  "heroPositionPhone": "60% 50%",
+  "rating": {
+    "score": "5.0",
+    "count": 62,
+    "url": "https://maps.google.com/?cid=11207510110094234971"
   },
-  {
-   "name": "Mobile Dent Repair",
-   "text": "Door dings and small dents fixed paintless, same day, where you are."
+  "kicker": "Paintless dent repair · Spring Branch",
+  "headline": "Your car's dents.<br><em>Gone. Paint untouched.</em>",
+  "intro": "I fix dents without paint or filler, and I do every estimate and repair myself. Door dings, creases and hail damage, worked out from behind the panel so your factory paint stays.",
+  "mobile": {
+    "title": "Door dings, at your door.",
+    "intro": "For door dings and small dents, I come to you. Hail, deer hits and larger dents are repaired at my Spring Branch shop.",
+    "points": [
+      {
+        "name": "I come to you",
+        "text": "Mobile visits for door dings and small dents."
+      },
+      {
+        "name": "Set days",
+        "text": "Mondays and Fridays, 9am to 1pm."
+      },
+      {
+        "name": "Flat trip fee",
+        "text": "$50 trip fee for mobile visits."
+      },
+      {
+        "name": "Easy to start",
+        "text": "Call, text or upload two photos of the dent for an estimate."
+      }
+    ]
   },
-  {
-   "name": "Hail Insurance Claims",
-   "text": "You file the claim. I handle the estimate, the adjuster and any supplements."
-  },
-  {
-   "name": "Aluminum Panels",
-   "text": "Different tools and technique than steel, and work I do regularly."
+  "servicesTitle": "Every kind of dent.",
+  "servicesIntro": "From a single door ding to a full hail storm.",
+  "services": [
+    {
+      "name": "Paintless Dent Repair",
+      "text": "Dents pushed out from behind the panel with no sanding, filler or paint. Dents up to 1 inch start at $150.",
+      "price": "From $150"
+    },
+    {
+      "name": "Auto Hail Repair",
+      "text": "Complete inspection and repair of hail dents on the roof, hood and trunk, done at my shop."
+    },
+    {
+      "name": "Mobile Dent Repair",
+      "text": "Door dings and small dents fixed paintless, same day, where you are."
+    },
+    {
+      "name": "Hail Insurance Claims",
+      "text": "You file the claim. I handle the estimate, the adjuster and any supplements."
+    },
+    {
+      "name": "Aluminum Panels",
+      "text": "Different tools and technique than steel, and work I do regularly."
+    }
+  ],
+  "also": [
+    {
+      "name": "Motorcycle tanks"
+    },
+    {
+      "name": "Deer hits"
+    },
+    {
+      "name": "Shopping cart dents"
+    }
+  ],
+  "alsoTitle": "We also fix",
+  "why": [
+    {
+      "name": "Straight answers",
+      "text": "I tell you what can and can't be fixed before any work starts."
+    },
+    {
+      "name": "Exact price first",
+      "text": "You get the exact price before I begin."
+    },
+    {
+      "name": "Fully insured",
+      "text": "General liability and garagekeepers coverage, with a satisfaction guarantee."
+    }
+  ],
+  "whyTitle": "Why Hill Country Dent Repair",
+  "howTitle": "Back to like new, step by step.",
+  "steps": [
+    {
+      "name": "Send the details",
+      "text": "Call or text, or upload two photos of your dent for an estimate."
+    },
+    {
+      "name": "Get a straight answer",
+      "text": "I look at the dent under the light and tell you if paintless repair will work, and the exact price."
+    },
+    {
+      "name": "Drive it smooth",
+      "text": "I work the dents out, check every panel under the light and hand the car back."
+    }
+  ],
+  "contactTitle": "Got a dent?",
+  "footerLine": "Paintless dent repair in Spring Branch",
+  "reviews": [],
+  "hours": [
+    "Mon - Fri: 9:00 am – 4:30 pm",
+    "Saturday: Closed",
+    "Sunday: Closed"
+  ],
+  "galleryTitle": "Dents gone, paint untouched.",
+  "notePlaceholder": "Where the dent is, how big, hail or a door ding…",
+  "ctaLabel": "Get an estimate",
+  "gallery": [
+    {
+      "src": "img/photo-5.jpg",
+      "alt": "Hood under a reflective light board on a repair stand",
+      "size": "big"
+    },
+    {
+      "src": "img/photo-15.jpg",
+      "alt": "Technician repairing a door dent on a gray car"
+    },
+    {
+      "src": "img/photo-6.jpg",
+      "alt": "Technician using a tool on a car's rear panel"
+    },
+    {
+      "src": "img/photo-4.jpg",
+      "alt": "Small dents in a door panel shown by reflected light"
+    },
+    {
+      "src": "img/photo-9.jpg",
+      "alt": "Technician working a panel with a rod tool",
+      "size": "tall"
+    },
+    {
+      "src": "img/photo-10.jpg",
+      "alt": "Dent on a gray fender near the wheel"
+    },
+    {
+      "src": "img/photo-11.jpg",
+      "alt": "Kevin beside his van with tools at the rear"
+    },
+    {
+      "src": "img/photo-8.jpg",
+      "alt": "Technician working on a red SUV in the shop"
+    }
+  ],
+  "areas": [
+    "Spring Branch"
+  ],
+  "pitch": "site",
+  "siteCheck": {
+    "reasons": [],
+    "improvements": [
+      "no quote or booking form"
+    ]
   }
- ],
- "also": [
-  {
-   "name": "Motorcycle tanks"
-  },
-  {
-   "name": "Deer hits"
-  },
-  {
-   "name": "Shopping cart dents"
-  }
- ],
- "alsoTitle": "We also fix",
- "why": [
-  {
-   "name": "Straight answers",
-   "text": "I tell you what can and can't be fixed before any work starts."
-  },
-  {
-   "name": "Exact price first",
-   "text": "You get the exact price before I begin."
-  },
-  {
-   "name": "Fully insured",
-   "text": "General liability and garagekeepers coverage, with a satisfaction guarantee."
-  }
- ],
- "whyTitle": "Why Hill Country Dent Repair",
- "howTitle": "Back to like new, step by step.",
- "steps": [
-  {
-   "name": "Send the details",
-   "text": "Call or text, or upload two photos of your dent for an estimate."
-  },
-  {
-   "name": "Get a straight answer",
-   "text": "I look at the dent under the light and tell you if paintless repair will work, and the exact price."
-  },
-  {
-   "name": "Drive it smooth",
-   "text": "I work the dents out, check every panel under the light and hand the car back."
-  }
- ],
- "contactTitle": "Got a dent?",
- "footerLine": "Paintless dent repair in Spring Branch",
- "reviews": [],
- "hours": [
-  "Mon - Fri: 9:00 am – 4:30 pm",
-  "Saturday: Closed",
-  "Sunday: Closed"
- ],
- "galleryTitle": "Dents gone, paint untouched.",
- "notePlaceholder": "Where the dent is, how big, hail or a door ding…",
- "ctaLabel": "Get an estimate",
- "gallery": [
-  {
-   "src": "img/photo-5.jpg",
-   "alt": "Hood under a reflective light board on a repair stand",
-   "size": "big"
-  },
-  {
-   "src": "img/photo-15.jpg",
-   "alt": "Technician repairing a door dent on a gray car"
-  },
-  {
-   "src": "img/photo-6.jpg",
-   "alt": "Technician using a tool on a car's rear panel"
-  },
-  {
-   "src": "img/photo-4.jpg",
-   "alt": "Small dents in a door panel shown by reflected light"
-  },
-  {
-   "src": "img/photo-9.jpg",
-   "alt": "Technician working a panel with a rod tool",
-   "size": "tall"
-  },
-  {
-   "src": "img/photo-10.jpg",
-   "alt": "Dent on a gray fender near the wheel"
-  },
-  {
-   "src": "img/photo-11.jpg",
-   "alt": "Kevin beside his van with tools at the rear"
-  },
-  {
-   "src": "img/photo-8.jpg",
-   "alt": "Technician working on a red SUV in the shop"
-  }
- ],
- "areas": [
-  "Spring Branch"
- ],
- "pitch": "site"
 }

@@ -1,198 +1,204 @@
 {
- "kit": "detailing",
- "trade": "Boat detailing",
- "name": "Guardian Detail",
- "legalName": "Guardian Detail",
- "preview": true,
- "placeId": "ChIJz5z0A2eQrgsR4Od0rJ38Eaw",
- "title": "Guardian Detail | Boat detailing in Bradenton, FL",
- "description": "Boat detailing in Bradenton, Sarasota and Venice. We clean, polish and protect your vessel to keep it looking new year-round. 4.8 on Google from 20 reviews.",
- "brand": "#1670ff",
- "brandHi": "#52c6ff",
- "accent": "#8fd0ff",
- "logoChip": false,
- "wordmark": {
-  "top": "Guardian",
-  "bottom": "Detail"
- },
- "phone": "(941) 549-0922",
- "email": "info@guardiandetail.com",
- "heroImage": "img/photo-20.jpg",
- "heroAlt": "Detailed white boat bow at the dock",
- "heroPosition": "60% 60%",
- "heroPositionPhone": "60% 50%",
- "rating": {
-  "score": "4.8",
-  "count": 20,
-  "url": "https://maps.google.com/?cid=12398969003261093856"
- },
- "kicker": "Boat detailing · Bradenton",
- "headline": "Like the first day,<br><em>every day.</em>",
- "intro": "Boat detailing in Bradenton, Sarasota and Venice. We clean, polish and protect your vessel to keep it looking new year-round.",
- "mobile": {
-  "title": "We come to your boat.",
-  "intro": "We come directly to your dock or home, so your day keeps moving.",
-  "points": [
-   {
-    "name": "At your dock",
-    "text": "We come directly to your dock or home."
-   },
-   {
-    "name": "We meet you first",
-    "text": "We come meet you to determine what your boat needs."
-   },
-   {
-    "name": "Built around the surface",
-    "text": "Every detail is based on the condition of the surface we coat."
-   },
-   {
-    "name": "Easy to book",
-    "text": "Call, or send the form for a free estimate."
-   }
-  ]
- },
- "servicesTitle": "Waterline up.",
- "servicesIntro": "From regular washes to full restoration, priced and planned around your boat.",
- "services": [
-  {
-   "name": "Wash Programs",
-   "text": "Weekly, bi-weekly and monthly washdowns to keep your boat clean."
+  "kit": "detailing",
+  "trade": "Boat detailing",
+  "name": "Guardian Detail",
+  "legalName": "Guardian Detail",
+  "preview": true,
+  "placeId": "ChIJz5z0A2eQrgsR4Od0rJ38Eaw",
+  "title": "Guardian Detail | Boat detailing in Bradenton, FL",
+  "description": "Boat detailing in Bradenton, Sarasota and Venice. We clean, polish and protect your vessel to keep it looking new year-round. 4.8 on Google from 20 reviews.",
+  "brand": "#1670ff",
+  "brandHi": "#52c6ff",
+  "accent": "#8fd0ff",
+  "logoChip": false,
+  "wordmark": {
+    "top": "Guardian",
+    "bottom": "Detail"
   },
-  {
-   "name": "3-Step Full-Service Detail",
-   "text": "A full wash plus mold, rust and metal work, then compound, polish and wax."
+  "phone": "(941) 549-0922",
+  "email": "info@guardiandetail.com",
+  "heroImage": "img/photo-20.jpg",
+  "heroAlt": "Detailed white boat bow at the dock",
+  "heroPosition": "60% 60%",
+  "heroPositionPhone": "60% 50%",
+  "rating": {
+    "score": "4.8",
+    "count": 20,
+    "url": "https://maps.google.com/?cid=12398969003261093856"
   },
-  {
-   "name": "Oxidation Removal",
-   "text": "Faded, chalky surfaces restored to a deep, glossy shine."
+  "kicker": "Boat detailing · Bradenton",
+  "headline": "Like the first day,<br><em>every day.</em>",
+  "intro": "Boat detailing in Bradenton, Sarasota and Venice. We clean, polish and protect your vessel to keep it looking new year-round.",
+  "mobile": {
+    "title": "We come to your boat.",
+    "intro": "We come directly to your dock or home, so your day keeps moving.",
+    "points": [
+      {
+        "name": "At your dock",
+        "text": "We come directly to your dock or home."
+      },
+      {
+        "name": "We meet you first",
+        "text": "We come meet you to determine what your boat needs."
+      },
+      {
+        "name": "Built around the surface",
+        "text": "Every detail is based on the condition of the surface we coat."
+      },
+      {
+        "name": "Easy to book",
+        "text": "Call, or send the form for a free estimate."
+      }
+    ]
   },
-  {
-   "name": "Gelcoat Restoration",
-   "text": "Dull, faded gelcoat revived and protected from further damage."
-  },
-  {
-   "name": "Teak Treatment",
-   "text": "Sanding, sealing and oiling to restore and renew your teak."
-  },
-  {
-   "name": "Bottom Paint",
-   "text": "Paint refinishing and new paint, with Pettit and Hempel products."
+  "servicesTitle": "Waterline up.",
+  "servicesIntro": "From regular washes to full restoration, priced and planned around your boat.",
+  "services": [
+    {
+      "name": "Wash Programs",
+      "text": "Weekly, bi-weekly and monthly washdowns to keep your boat clean."
+    },
+    {
+      "name": "3-Step Full-Service Detail",
+      "text": "A full wash plus mold, rust and metal work, then compound, polish and wax."
+    },
+    {
+      "name": "Oxidation Removal",
+      "text": "Faded, chalky surfaces restored to a deep, glossy shine."
+    },
+    {
+      "name": "Gelcoat Restoration",
+      "text": "Dull, faded gelcoat revived and protected from further damage."
+    },
+    {
+      "name": "Teak Treatment",
+      "text": "Sanding, sealing and oiling to restore and renew your teak."
+    },
+    {
+      "name": "Bottom Paint",
+      "text": "Paint refinishing and new paint, with Pettit and Hempel products."
+    }
+  ],
+  "also": [
+    {
+      "name": "Diving services"
+    },
+    {
+      "name": "Ceramic coating"
+    },
+    {
+      "name": "Bottom cleaning and assessments"
+    }
+  ],
+  "alsoTitle": "We also detail",
+  "why": [
+    {
+      "name": "We come to you",
+      "text": "Mobile service right at your dock or home."
+    },
+    {
+      "name": "Detail-focused",
+      "text": "Cleaning tailored to your boat's needs, not a one-size routine."
+    },
+    {
+      "name": "Aiming for 100% satisfaction",
+      "text": "Our mission is quality of work and service that exceeds expectations."
+    }
+  ],
+  "whyTitle": "Why boat owners call us.",
+  "howTitle": "Ready for the water in three steps.",
+  "steps": [
+    {
+      "name": "Ask for an estimate",
+      "text": "Call or send the form. The estimate is free."
+    },
+    {
+      "name": "We meet and plan",
+      "text": "We look at your boat and decide what it needs."
+    },
+    {
+      "name": "Back on the water",
+      "text": "Your boat is clean, polished and protected."
+    }
+  ],
+  "contactTitle": "Book your boat in.",
+  "footerLine": "Boat detailing in Bradenton, Sarasota and Venice",
+  "reviews": [],
+  "hours": [
+    "Mon - Fri: 7:00 am – 6:00 pm",
+    "Saturday: 8:00 am – 5:00 pm",
+    "Sunday: Closed"
+  ],
+  "galleryTitle": "Fresh off the water.",
+  "vehicleTypes": [
+    "Boat",
+    "Pontoon",
+    "Yacht",
+    "Jet ski",
+    "Other"
+  ],
+  "modelPlaceholder": "e.g. Sea Ray 240, 24 ft",
+  "notePlaceholder": "Length, where it is docked or stored, what it needs…",
+  "gallery": [
+    {
+      "src": "img/photo-17.jpg",
+      "alt": "Polished blue and white hull on a stand",
+      "size": "big"
+    },
+    {
+      "src": "img/photo-6.jpg",
+      "alt": "Restored teak swim platform"
+    },
+    {
+      "src": "img/photo-7.jpg",
+      "alt": "Glossy white hull side with reflections"
+    },
+    {
+      "src": "img/photo-13.jpg",
+      "alt": "Shiny hull beside a dock piling"
+    },
+    {
+      "src": "img/photo-14.jpg",
+      "alt": "Boat cockpit with teak deck and cream seats",
+      "size": "tall"
+    },
+    {
+      "src": "img/photo-22.jpg",
+      "alt": "Sailboat deck with teak and clean surfaces"
+    },
+    {
+      "src": "img/photo-9.jpg",
+      "alt": "Polished white hull with oval port"
+    },
+    {
+      "src": "img/photo-5.jpg",
+      "alt": "Hull reflecting the marina"
+    },
+    {
+      "src": "img/photo-19.jpg",
+      "alt": "Teak side deck and stainless rail"
+    },
+    {
+      "src": "img/photo-23.jpg",
+      "alt": "Detailed flybridge yacht at the marina"
+    },
+    {
+      "src": "img/photo-24.jpg",
+      "alt": "Yacht stern in afternoon sun"
+    },
+    {
+      "src": "img/photo-18.jpg",
+      "alt": "Detailer working on a teal hull from a float"
+    }
+  ],
+  "areas": [
+    "Bradenton"
+  ],
+  "pitch": "site",
+  "siteCheck": {
+    "reasons": [],
+    "improvements": [
+      "no reviews on the site"
+    ]
   }
- ],
- "also": [
-  {
-   "name": "Diving services"
-  },
-  {
-   "name": "Ceramic coating"
-  },
-  {
-   "name": "Bottom cleaning and assessments"
-  }
- ],
- "alsoTitle": "We also detail",
- "why": [
-  {
-   "name": "We come to you",
-   "text": "Mobile service right at your dock or home."
-  },
-  {
-   "name": "Detail-focused",
-   "text": "Cleaning tailored to your boat's needs, not a one-size routine."
-  },
-  {
-   "name": "Aiming for 100% satisfaction",
-   "text": "Our mission is quality of work and service that exceeds expectations."
-  }
- ],
- "whyTitle": "Why boat owners call us.",
- "howTitle": "Ready for the water in three steps.",
- "steps": [
-  {
-   "name": "Ask for an estimate",
-   "text": "Call or send the form. The estimate is free."
-  },
-  {
-   "name": "We meet and plan",
-   "text": "We look at your boat and decide what it needs."
-  },
-  {
-   "name": "Back on the water",
-   "text": "Your boat is clean, polished and protected."
-  }
- ],
- "contactTitle": "Book your boat in.",
- "footerLine": "Boat detailing in Bradenton, Sarasota and Venice",
- "reviews": [],
- "hours": [
-  "Mon - Fri: 7:00 am – 6:00 pm",
-  "Saturday: 8:00 am – 5:00 pm",
-  "Sunday: Closed"
- ],
- "galleryTitle": "Fresh off the water.",
- "vehicleTypes": [
-  "Boat",
-  "Pontoon",
-  "Yacht",
-  "Jet ski",
-  "Other"
- ],
- "modelPlaceholder": "e.g. Sea Ray 240, 24 ft",
- "notePlaceholder": "Length, where it is docked or stored, what it needs…",
- "gallery": [
-  {
-   "src": "img/photo-17.jpg",
-   "alt": "Polished blue and white hull on a stand",
-   "size": "big"
-  },
-  {
-   "src": "img/photo-6.jpg",
-   "alt": "Restored teak swim platform"
-  },
-  {
-   "src": "img/photo-7.jpg",
-   "alt": "Glossy white hull side with reflections"
-  },
-  {
-   "src": "img/photo-13.jpg",
-   "alt": "Shiny hull beside a dock piling"
-  },
-  {
-   "src": "img/photo-14.jpg",
-   "alt": "Boat cockpit with teak deck and cream seats",
-   "size": "tall"
-  },
-  {
-   "src": "img/photo-22.jpg",
-   "alt": "Sailboat deck with teak and clean surfaces"
-  },
-  {
-   "src": "img/photo-9.jpg",
-   "alt": "Polished white hull with oval port"
-  },
-  {
-   "src": "img/photo-5.jpg",
-   "alt": "Hull reflecting the marina"
-  },
-  {
-   "src": "img/photo-19.jpg",
-   "alt": "Teak side deck and stainless rail"
-  },
-  {
-   "src": "img/photo-23.jpg",
-   "alt": "Detailed flybridge yacht at the marina"
-  },
-  {
-   "src": "img/photo-24.jpg",
-   "alt": "Yacht stern in afternoon sun"
-  },
-  {
-   "src": "img/photo-18.jpg",
-   "alt": "Detailer working on a teal hull from a float"
-  }
- ],
- "areas": [
-  "Bradenton"
- ],
- "pitch": "site"
 }

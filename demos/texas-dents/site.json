@@ -1,119 +1,125 @@
 {
- "kit": "detailing",
- "trade": "Paintless dent repair",
- "name": "Texas Dents",
- "legalName": "Texas Dents",
- "preview": true,
- "placeId": "ChIJYTBkfRuKXIYREdO3XjFw9C8",
- "title": "Texas Dents | Paintless dent repair in San Antonio, TX",
- "description": "Paintless dent repair in San Antonio, from a single door ding to hail damage. Family owned, fully insured, with a 100% guarantee on all work. 4.9 on Google from 108 reviews.",
- "brand": "#1670ff",
- "brandHi": "#52c6ff",
- "accent": "#8fd0ff",
- "logo": "logo.png",
- "logoChip": true,
- "wordmark": {
-  "top": "Texas",
-  "bottom": "Dents"
- },
- "phone": "(210) 257-8650",
- "email": "mikemortensen98@gmail.com",
- "heroImage": null,
- "heroAlt": "",
- "heroPosition": "60% 60%",
- "heroPositionPhone": "60% 50%",
- "rating": {
-  "score": "4.9",
-  "count": 108,
-  "url": "https://maps.google.com/?cid=3455510171444826897"
- },
- "kicker": "Paintless dent repair · San Antonio",
- "headline": "Your car's dents.<br><em>Gone. Paint untouched.</em>",
- "intro": "Paintless dent repair in San Antonio, from a single door ding to hail damage. Family owned, fully insured, with a 100% guarantee on all work.",
- "mobile": {
-  "title": "We come to you. Then we bring it back.",
-  "intro": "We bring the detail to you, so your day keeps moving.",
-  "points": [
-   {
-    "name": "At your door",
-    "text": "Our mobile service brings dent repair to your doorstep."
-   },
-   {
-    "name": "Right in the parking lot",
-    "text": "One customer had his dents fixed in the lot at work, in and out."
-   },
-   {
-    "name": "No time lost",
-    "text": "A typical dent repair takes less than an hour."
-   },
-   {
-    "name": "Easy to book",
-    "text": "Call or text, or send photos for a fast estimate."
-   }
-  ]
- },
- "servicesTitle": "Every kind of dent.",
- "servicesIntro": "From a single door ding to a full hail storm. No job too big or too small.",
- "services": [
-  {
-   "name": "Paintless Dent Repair",
-   "text": "Dents and dings come out at our retail shop, and your vehicle's original finish stays."
+  "kit": "detailing",
+  "trade": "Paintless dent repair",
+  "name": "Texas Dents",
+  "legalName": "Texas Dents",
+  "preview": true,
+  "placeId": "ChIJYTBkfRuKXIYREdO3XjFw9C8",
+  "title": "Texas Dents | Paintless dent repair in San Antonio, TX",
+  "description": "Paintless dent repair in San Antonio, from a single door ding to hail damage. Family owned, fully insured, with a 100% guarantee on all work. 4.9 on Google from 108 reviews.",
+  "brand": "#1670ff",
+  "brandHi": "#52c6ff",
+  "accent": "#8fd0ff",
+  "logo": "logo.png",
+  "logoChip": true,
+  "wordmark": {
+    "top": "Texas",
+    "bottom": "Dents"
   },
-  {
-   "name": "Vehicle Dent Hail Repair",
-   "text": "We restore your car to its pre-storm condition, usually within 24 to 48 hours."
+  "phone": "(210) 257-8650",
+  "email": "mikemortensen98@gmail.com",
+  "heroImage": null,
+  "heroAlt": "",
+  "heroPosition": "60% 60%",
+  "heroPositionPhone": "60% 50%",
+  "rating": {
+    "score": "4.9",
+    "count": 108,
+    "url": "https://maps.google.com/?cid=3455510171444826897"
   },
-  {
-   "name": "Vehicle Dent Repair Mobile Service",
-   "text": "Our team brings top-notch dent repair to your doorstep."
+  "kicker": "Paintless dent repair · San Antonio",
+  "headline": "Your car's dents.<br><em>Gone. Paint untouched.</em>",
+  "intro": "Paintless dent repair in San Antonio, from a single door ding to hail damage. Family owned, fully insured, with a 100% guarantee on all work.",
+  "mobile": {
+    "title": "We come to you. Then we bring it back.",
+    "intro": "We bring the detail to you, so your day keeps moving.",
+    "points": [
+      {
+        "name": "At your door",
+        "text": "Our mobile service brings dent repair to your doorstep."
+      },
+      {
+        "name": "Right in the parking lot",
+        "text": "One customer had his dents fixed in the lot at work, in and out."
+      },
+      {
+        "name": "No time lost",
+        "text": "A typical dent repair takes less than an hour."
+      },
+      {
+        "name": "Easy to book",
+        "text": "Call or text, or send photos for a fast estimate."
+      }
+    ]
+  },
+  "servicesTitle": "Every kind of dent.",
+  "servicesIntro": "From a single door ding to a full hail storm. No job too big or too small.",
+  "services": [
+    {
+      "name": "Paintless Dent Repair",
+      "text": "Dents and dings come out at our retail shop, and your vehicle's original finish stays."
+    },
+    {
+      "name": "Vehicle Dent Hail Repair",
+      "text": "We restore your car to its pre-storm condition, usually within 24 to 48 hours."
+    },
+    {
+      "name": "Vehicle Dent Repair Mobile Service",
+      "text": "Our team brings top-notch dent repair to your doorstep."
+    }
+  ],
+  "also": [],
+  "alsoTitle": "We also fix",
+  "why": [
+    {
+      "name": "Over 25 years of experience",
+      "text": "Texas Dents has served the community since 2009, and the team brings over 25 years in the industry."
+    },
+    {
+      "name": "100% guarantee",
+      "text": "Every job is backed by a 100% guarantee, and estimates are free and guaranteed."
+    },
+    {
+      "name": "Family owned and insured",
+      "text": "Locally and family owned, fully insured, and we work with insurance companies."
+    }
+  ],
+  "whyTitle": "Texas Dents difference.",
+  "howTitle": "Back to like new, step by step.",
+  "steps": [
+    {
+      "name": "Send the details",
+      "text": "Call, or use the form with your year, make, model and photos of the damage."
+    },
+    {
+      "name": "Get an evaluation",
+      "text": "Bring the vehicle in and we look at the hail damage, dings or film options."
+    },
+    {
+      "name": "Drive it smooth",
+      "text": "We work the dents out and hand the vehicle back."
+    }
+  ],
+  "contactTitle": "Got hail damage?",
+  "footerLine": "Paintless dent repair in San Antonio",
+  "reviews": [],
+  "hours": [
+    "Mon - Fri: 9:00 am - 4:00 pm",
+    "Sat: By appointment only",
+    "Sun: Closed"
+  ],
+  "galleryTitle": "Dents gone, paint untouched.",
+  "notePlaceholder": "Where the dent is, how big, hail or a door ding…",
+  "ctaLabel": "Get an estimate",
+  "gallery": [],
+  "areas": [
+    "San Antonio"
+  ],
+  "pitch": "photos",
+  "siteCheck": {
+    "reasons": [],
+    "improvements": [
+      "only 1 photo"
+    ]
   }
- ],
- "also": [],
- "alsoTitle": "We also fix",
- "why": [
-  {
-   "name": "Over 25 years of experience",
-   "text": "Texas Dents has served the community since 2009, and the team brings over 25 years in the industry."
-  },
-  {
-   "name": "100% guarantee",
-   "text": "Every job is backed by a 100% guarantee, and estimates are free and guaranteed."
-  },
-  {
-   "name": "Family owned and insured",
-   "text": "Locally and family owned, fully insured, and we work with insurance companies."
-  }
- ],
- "whyTitle": "Texas Dents difference.",
- "howTitle": "Back to like new, step by step.",
- "steps": [
-  {
-   "name": "Send the details",
-   "text": "Call, or use the form with your year, make, model and photos of the damage."
-  },
-  {
-   "name": "Get an evaluation",
-   "text": "Bring the vehicle in and we look at the hail damage, dings or film options."
-  },
-  {
-   "name": "Drive it smooth",
-   "text": "We work the dents out and hand the vehicle back."
-  }
- ],
- "contactTitle": "Got hail damage?",
- "footerLine": "Paintless dent repair in San Antonio",
- "reviews": [],
- "hours": [
-  "Mon - Fri: 9:00 am - 4:00 pm",
-  "Sat: By appointment only",
-  "Sun: Closed"
- ],
- "galleryTitle": "Dents gone, paint untouched.",
- "notePlaceholder": "Where the dent is, how big, hail or a door ding…",
- "ctaLabel": "Get an estimate",
- "gallery": [],
- "areas": [
-  "San Antonio"
- ],
- "pitch": "photos"
 }

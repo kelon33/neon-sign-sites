@@ -25,7 +25,8 @@
     "review": "node pipeline/review.mjs",
     "mx": "NODE_USE_ENV_PROXY=1 node pipeline/mx.mjs",
     "uptime": "node pipeline/uptime.mjs",
-    "stats": "node pipeline/stats.mjs"
+    "stats": "node pipeline/stats.mjs",
+    "rerender": "node pipeline/rerender.mjs"
   },
   "dependencies": {
     "@anthropic-ai/sdk": "^1.14.0"

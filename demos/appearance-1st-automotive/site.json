@@ -1,104 +1,111 @@
 {
- "kit": "detailing",
- "trade": "Paintless dent repair",
- "name": "Appearance 1st Automotive",
- "legalName": "Appearance 1st Automotive",
- "preview": true,
- "placeId": "ChIJjaI5EmT954gRn0sYpX2WpTE",
- "title": "Appearance 1st Automotive | Paintless dent repair in Jacksonville, FL",
- "description": "Paintless dent repair in Jacksonville, led by Ian Lamb, who has been at it since 2007. Dents come out from behind the panel, so the factory paint stays. Amazing results, or no charge. 5.0 on Google from 163 reviews.",
- "brand": "#1670ff",
- "brandHi": "#52c6ff",
- "accent": "#8fd0ff",
- "logo": null,
- "logoChip": false,
- "wordmark": {
-  "top": "Appearance 1st",
-  "bottom": "Automotive"
- },
- "phone": "(904) 664-1170",
- "email": "info@appearance1stautomotive.com",
- "heroImage": null,
- "heroAlt": "",
- "heroPosition": "60% 60%",
- "heroPositionPhone": "60% 50%",
- "rating": {
-  "score": "5.0",
-  "count": 163,
-  "url": "https://maps.google.com/?cid=3577430945400638367"
- },
- "kicker": "Paintless dent repair · Jacksonville",
- "headline": "Hail damage gone.<br><em>Hassle gone too.</em>",
- "intro": "Paintless dent repair in Jacksonville, led by Ian Lamb, who has been at it since 2007. Dents come out from behind the panel, so the factory paint stays. Amazing results, or no charge.",
- "mobile": null,
- "servicesTitle": "Everything your car needs.",
- "servicesIntro": "From a single door ding to hail damage.",
- "services": [
-  {
-   "name": "Paintless Dent Repair",
-   "text": "Dents and dings worked back to their original shape from behind the panel, with no filler and no repaint."
+  "kit": "detailing",
+  "trade": "Paintless dent repair",
+  "name": "Appearance 1st Automotive",
+  "legalName": "Appearance 1st Automotive",
+  "preview": true,
+  "placeId": "ChIJjaI5EmT954gRn0sYpX2WpTE",
+  "title": "Appearance 1st Automotive | Paintless dent repair in Jacksonville, FL",
+  "description": "Paintless dent repair in Jacksonville, led by Ian Lamb, who has been at it since 2007. Dents come out from behind the panel, so the factory paint stays. Amazing results, or no charge. 5.0 on Google from 163 reviews.",
+  "brand": "#1670ff",
+  "brandHi": "#52c6ff",
+  "accent": "#8fd0ff",
+  "logo": null,
+  "logoChip": false,
+  "wordmark": {
+    "top": "Appearance 1st",
+    "bottom": "Automotive"
   },
-  {
-   "name": "Hail Damage Repair",
-   "text": "Hoods, roofs, trunks and fenders restored after a Florida hailstorm, with insurance claims help at no charge."
+  "phone": "(904) 664-1170",
+  "email": "info@appearance1stautomotive.com",
+  "heroImage": null,
+  "heroAlt": "",
+  "heroPosition": "60% 60%",
+  "heroPositionPhone": "60% 50%",
+  "rating": {
+    "score": "5.0",
+    "count": 163,
+    "url": "https://maps.google.com/?cid=3577430945400638367"
   },
-  {
-   "name": "Door Ding Removal",
-   "text": "Parking-lot dings removed without touching the factory paint."
-  },
-  {
-   "name": "Luxury Vehicle PDR",
-   "text": "Repairs on Porsche, Ferrari, Lamborghini, Rolls-Royce, Bentley, Maserati, Mercedes-Benz and Lexus panels."
-  },
-  {
-   "name": "Insurance Claims Assistance",
-   "text": "We work directly with major insurers and help with the whole claim at no extra charge."
+  "kicker": "Paintless dent repair · Jacksonville",
+  "headline": "Hail damage gone.<br><em>Hassle gone too.</em>",
+  "intro": "Paintless dent repair in Jacksonville, led by Ian Lamb, who has been at it since 2007. Dents come out from behind the panel, so the factory paint stays. Amazing results, or no charge.",
+  "mobile": null,
+  "servicesTitle": "Everything your car needs.",
+  "servicesIntro": "From a single door ding to hail damage.",
+  "services": [
+    {
+      "name": "Paintless Dent Repair",
+      "text": "Dents and dings worked back to their original shape from behind the panel, with no filler and no repaint."
+    },
+    {
+      "name": "Hail Damage Repair",
+      "text": "Hoods, roofs, trunks and fenders restored after a Florida hailstorm, with insurance claims help at no charge."
+    },
+    {
+      "name": "Door Ding Removal",
+      "text": "Parking-lot dings removed without touching the factory paint."
+    },
+    {
+      "name": "Luxury Vehicle PDR",
+      "text": "Repairs on Porsche, Ferrari, Lamborghini, Rolls-Royce, Bentley, Maserati, Mercedes-Benz and Lexus panels."
+    },
+    {
+      "name": "Insurance Claims Assistance",
+      "text": "We work directly with major insurers and help with the whole claim at no extra charge."
+    }
+  ],
+  "also": [],
+  "alsoTitle": "We also fix",
+  "why": [
+    {
+      "name": "Since 2007",
+      "text": "Ian Lamb has been perfecting paintless dent repair for over 18 years."
+    },
+    {
+      "name": "Luxury and exotic expertise",
+      "text": "Deep experience with aluminum panels and premium paint systems."
+    },
+    {
+      "name": "Amazing results, or no charge",
+      "text": "The shop stands behind every repair."
+    }
+  ],
+  "whyTitle": "Why Appearance 1st Automotive",
+  "howTitle": "Back to like new in three steps.",
+  "steps": [
+    {
+      "name": "Book a free inspection",
+      "text": "The owner or a team member comes out to inspect the damage, and a free loaner car is delivered to your home or work."
+    },
+    {
+      "name": "We work with your insurance",
+      "text": "We submit photos and an estimate so your insurance can approve the repair."
+    },
+    {
+      "name": "Pick up your vehicle",
+      "text": "Our master certified technicians repair it. You collect a freshly detailed, dent free vehicle."
+    }
+  ],
+  "contactTitle": "Hail damage? Call us.",
+  "footerLine": "Paintless dent repair in Jacksonville",
+  "reviews": [],
+  "hours": [
+    "Mon–Sat 8AM–6PM"
+  ],
+  "galleryTitle": "Dents gone, paint untouched.",
+  "notePlaceholder": "Where the dent is, how big, hail or a door ding…",
+  "ctaLabel": "Get an estimate",
+  "gallery": [],
+  "areas": [
+    "Jacksonville"
+  ],
+  "pitch": "photos",
+  "siteCheck": {
+    "reasons": [],
+    "improvements": [
+      "no photos",
+      "copyright 2025"
+    ]
   }
- ],
- "also": [],
- "alsoTitle": "We also fix",
- "why": [
-  {
-   "name": "Since 2007",
-   "text": "Ian Lamb has been perfecting paintless dent repair for over 18 years."
-  },
-  {
-   "name": "Luxury and exotic expertise",
-   "text": "Deep experience with aluminum panels and premium paint systems."
-  },
-  {
-   "name": "Amazing results, or no charge",
-   "text": "The shop stands behind every repair."
-  }
- ],
- "whyTitle": "Why Appearance 1st Automotive",
- "howTitle": "Back to like new in three steps.",
- "steps": [
-  {
-   "name": "Book a free inspection",
-   "text": "The owner or a team member comes out to inspect the damage, and a free loaner car is delivered to your home or work."
-  },
-  {
-   "name": "We work with your insurance",
-   "text": "We submit photos and an estimate so your insurance can approve the repair."
-  },
-  {
-   "name": "Pick up your vehicle",
-   "text": "Our master certified technicians repair it. You collect a freshly detailed, dent free vehicle."
-  }
- ],
- "contactTitle": "Hail damage? Call us.",
- "footerLine": "Paintless dent repair in Jacksonville",
- "reviews": [],
- "hours": [
-  "Mon–Sat 8AM–6PM"
- ],
- "galleryTitle": "Dents gone, paint untouched.",
- "notePlaceholder": "Where the dent is, how big, hail or a door ding…",
- "ctaLabel": "Get an estimate",
- "gallery": [],
- "areas": [
-  "Jacksonville"
- ],
- "pitch": "photos"
 }

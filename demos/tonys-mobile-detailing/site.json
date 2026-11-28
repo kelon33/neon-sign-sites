@@ -159,5 +159,11 @@
   "areas": [
     "Sarasota"
   ],
-  "pitch": "site"
+  "pitch": "site",
+  "siteCheck": {
+    "reasons": [],
+    "improvements": [
+      "no quote or booking form"
+    ]
+  }
 }

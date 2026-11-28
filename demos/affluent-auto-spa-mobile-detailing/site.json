@@ -1,127 +1,134 @@
 {
- "kit": "detailing",
- "trade": "Mobile car detailing",
- "name": "Affluent Auto Spa Mobile Detailing",
- "legalName": "Affluent Auto Spa Mobile Detailing",
- "preview": true,
- "placeId": "ChIJSc_WItZ9XIYR9OAm47r73w4",
- "title": "Affluent Auto Spa Mobile Detailing | Mobile car detailing in San Antonio, TX",
- "description": "Premier mobile detailing at your home or office, built for luxury and exotic vehicles. We show up with professional-grade equipment and a treatment plan made for your car. 5.0 on Google from 76 reviews.",
- "brand": "#1670ff",
- "brandHi": "#52c6ff",
- "accent": "#8fd0ff",
- "logo": null,
- "logoChip": false,
- "wordmark": {
-  "top": "Affluent",
-  "bottom": "Auto Spa"
- },
- "phone": "(210) 679-1472",
- "email": "dylan@affluentautospa.com",
- "heroImage": "img/photo-4.jpg",
- "heroAlt": "Affluent Auto Spa technician beside the branded mobile unit van holding detailing supplies",
- "heroPosition": "60% 60%",
- "heroPositionPhone": "60% 50%",
- "rating": {
-  "score": "5.0",
-  "count": 76,
-  "url": "https://maps.google.com/?cid=1071852016430932212"
- },
- "kicker": "Mobile car detailing · San Antonio, TX",
- "headline": "Showroom shine.<br><em>Wherever you are.</em>",
- "intro": "Premier mobile detailing at your home or office, built for luxury and exotic vehicles. We show up with professional-grade equipment and a treatment plan made for your car.",
- "mobile": {
-  "title": "Your driveway is our shop.",
-  "intro": "Book online or call. We show up with everything we need.",
-  "points": [
-   {
-    "name": "At your door",
-    "text": "Home or office. No waiting at a shop, no disrupted schedule."
-   },
-   {
-    "name": "Your own treatment plan",
-    "text": "We assess your car when we arrive and set the right plan for it."
-   },
-   {
-    "name": "Updates all day",
-    "text": "Photo and video updates at each step, so you see the work as it happens."
-   },
-   {
-    "name": "Easy to book",
-    "text": "Call or text (210) 679-1472, or request a private consultation."
-   }
-  ]
- },
- "servicesTitle": "Inside, outside, and everything that shines.",
- "servicesIntro": "From a deep interior clean to multi-stage paint correction, with high-quality products for every surface.",
- "services": [
-  {
-   "name": "Ceramic Coating",
-   "text": "Long-term protection against UV damage, contaminants, water spotting and everyday wear."
+  "kit": "detailing",
+  "trade": "Mobile car detailing",
+  "name": "Affluent Auto Spa Mobile Detailing",
+  "legalName": "Affluent Auto Spa Mobile Detailing",
+  "preview": true,
+  "placeId": "ChIJSc_WItZ9XIYR9OAm47r73w4",
+  "title": "Affluent Auto Spa Mobile Detailing | Mobile car detailing in San Antonio, TX",
+  "description": "Premier mobile detailing at your home or office, built for luxury and exotic vehicles. We show up with professional-grade equipment and a treatment plan made for your car. 5.0 on Google from 76 reviews.",
+  "brand": "#1670ff",
+  "brandHi": "#52c6ff",
+  "accent": "#8fd0ff",
+  "logo": null,
+  "logoChip": false,
+  "wordmark": {
+    "top": "Affluent",
+    "bottom": "Auto Spa"
   },
-  {
-   "name": "Paint Protection Film (PPF)",
-   "text": "Film protection that helps preserve your vehicle's appearance and long-term value."
+  "phone": "(210) 679-1472",
+  "email": "dylan@affluentautospa.com",
+  "heroImage": "img/photo-4.jpg",
+  "heroAlt": "Affluent Auto Spa technician beside the branded mobile unit van holding detailing supplies",
+  "heroPosition": "60% 60%",
+  "heroPositionPhone": "60% 50%",
+  "rating": {
+    "score": "5.0",
+    "count": 76,
+    "url": "https://maps.google.com/?cid=1071852016430932212"
   },
-  {
-   "name": "Window Tinting",
-   "text": "Professional tint installed by certified technicians."
+  "kicker": "Mobile car detailing · San Antonio, TX",
+  "headline": "Showroom shine.<br><em>Wherever you are.</em>",
+  "intro": "Premier mobile detailing at your home or office, built for luxury and exotic vehicles. We show up with professional-grade equipment and a treatment plan made for your car.",
+  "mobile": {
+    "title": "Your driveway is our shop.",
+    "intro": "Book online or call. We show up with everything we need.",
+    "points": [
+      {
+        "name": "At your door",
+        "text": "Home or office. No waiting at a shop, no disrupted schedule."
+      },
+      {
+        "name": "Your own treatment plan",
+        "text": "We assess your car when we arrive and set the right plan for it."
+      },
+      {
+        "name": "Updates all day",
+        "text": "Photo and video updates at each step, so you see the work as it happens."
+      },
+      {
+        "name": "Easy to book",
+        "text": "Call or text (210) 679-1472, or request a private consultation."
+      }
+    ]
   },
-  {
-   "name": "Full Detailing",
-   "text": "Premium cleaners, polishes, sealants and waxes chosen for shine, protection and depth of gloss."
-  },
-  {
-   "name": "Paint Correction",
-   "text": "Precise paint work that restores a clean, glossy finish."
-  },
-  {
-   "name": "VIP Prestige Protection",
-   "text": "An exclusive monthly program to keep your vehicle protected and looking its best."
+  "servicesTitle": "Inside, outside, and everything that shines.",
+  "servicesIntro": "From a deep interior clean to multi-stage paint correction, with high-quality products for every surface.",
+  "services": [
+    {
+      "name": "Ceramic Coating",
+      "text": "Long-term protection against UV damage, contaminants, water spotting and everyday wear."
+    },
+    {
+      "name": "Paint Protection Film (PPF)",
+      "text": "Film protection that helps preserve your vehicle's appearance and long-term value."
+    },
+    {
+      "name": "Window Tinting",
+      "text": "Professional tint installed by certified technicians."
+    },
+    {
+      "name": "Full Detailing",
+      "text": "Premium cleaners, polishes, sealants and waxes chosen for shine, protection and depth of gloss."
+    },
+    {
+      "name": "Paint Correction",
+      "text": "Precise paint work that restores a clean, glossy finish."
+    },
+    {
+      "name": "VIP Prestige Protection",
+      "text": "An exclusive monthly program to keep your vehicle protected and looking its best."
+    }
+  ],
+  "also": [],
+  "alsoTitle": "Not just cars:",
+  "why": [
+    {
+      "name": "Customized treatment plan",
+      "text": "As soon as we arrive, we build a plan for your vehicle to get the best outcome."
+    },
+    {
+      "name": "Top-shelf products",
+      "text": "Cleaners, polishes, sealants and waxes hand selected from top automotive detailing suppliers."
+    },
+    {
+      "name": "Photo and video updates",
+      "text": "You know what is being done, and how, at each step through the day."
+    }
+  ],
+  "whyTitle": "The detail is in the name.",
+  "howTitle": "Book it. We show up. You drive off shining.",
+  "steps": [
+    {
+      "name": "Tell us about your vehicle",
+      "text": "Call or send the form with your vehicle and the service you want."
+    },
+    {
+      "name": "We come to you",
+      "text": "We arrive with the equipment and products to do the job on site."
+    },
+    {
+      "name": "Take the keys back",
+      "text": "Your car is clean, restored and showroom-ready."
+    }
+  ],
+  "contactTitle": "Book your detail.",
+  "footerLine": "Mobile car detailing in San Antonio",
+  "reviews": [],
+  "hours": [
+    "Sunday: Closed"
+  ],
+  "galleryTitle": "Fresh off the driveway.",
+  "gallery": [],
+  "areas": [
+    "San Antonio"
+  ],
+  "pitch": "photos",
+  "siteCheck": {
+    "reasons": [],
+    "improvements": [
+      "no tap-to-call link",
+      "no quote or booking form"
+    ]
   }
- ],
- "also": [],
- "alsoTitle": "Not just cars:",
- "why": [
-  {
-   "name": "Customized treatment plan",
-   "text": "As soon as we arrive, we build a plan for your vehicle to get the best outcome."
-  },
-  {
-   "name": "Top-shelf products",
-   "text": "Cleaners, polishes, sealants and waxes hand selected from top automotive detailing suppliers."
-  },
-  {
-   "name": "Photo and video updates",
-   "text": "You know what is being done, and how, at each step through the day."
-  }
- ],
- "whyTitle": "The detail is in the name.",
- "howTitle": "Book it. We show up. You drive off shining.",
- "steps": [
-  {
-   "name": "Tell us about your vehicle",
-   "text": "Call or send the form with your vehicle and the service you want."
-  },
-  {
-   "name": "We come to you",
-   "text": "We arrive with the equipment and products to do the job on site."
-  },
-  {
-   "name": "Take the keys back",
-   "text": "Your car is clean, restored and showroom-ready."
-  }
- ],
- "contactTitle": "Book your detail.",
- "footerLine": "Mobile car detailing in San Antonio",
- "reviews": [],
- "hours": [
-  "Sunday: Closed"
- ],
- "galleryTitle": "Fresh off the driveway.",
- "gallery": [],
- "areas": [
-  "San Antonio"
- ],
- "pitch": "photos"
 }

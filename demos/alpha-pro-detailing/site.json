@@ -1,143 +1,150 @@
 {
- "kit": "detailing",
- "trade": "Mobile car detailing",
- "name": "Alpha Pro Detailing",
- "legalName": "Alpha Pro Detailing",
- "preview": true,
- "placeId": "ChIJucutXxRRREsRrMQ79q8Lxic",
- "title": "Alpha Pro Detailing | Mobile car detailing in Las Vegas, NV",
- "description": "Mobile detailing in Las Vegas, Henderson and Summerlin, brought to your home or business. Ceramic coating, paint correction and full detailing, built for the harsh Nevada climate. 5.0 on Google from 83 reviews.",
- "brand": "#1670ff",
- "brandHi": "#52c6ff",
- "accent": "#8fd0ff",
- "logo": "logo.png",
- "logoChip": true,
- "wordmark": {
-  "top": "Alpha Pro",
-  "bottom": "Detailing"
- },
- "phone": "(702) 886-0401",
- "email": "alphadetailingcarcare@gmail.com",
- "heroImage": "img/photo-1.jpg",
- "heroAlt": "Car covered in foam during a mobile detail in a driveway next to a detailing van",
- "heroPosition": "60% 60%",
- "heroPositionPhone": "60% 50%",
- "rating": {
-  "score": "5.0",
-  "count": 83,
-  "url": "https://maps.google.com/?cid=2865991063246193836"
- },
- "kicker": "Mobile car detailing · Las Vegas, NV",
- "headline": "Showroom shine.<br><em>Right in your driveway.</em>",
- "intro": "Mobile detailing in Las Vegas, Henderson and Summerlin, brought to your home or business. Ceramic coating, paint correction and full detailing, built for the harsh Nevada climate.",
- "mobile": {
-  "title": "Your driveway is our shop.",
-  "intro": "We come to the place that suits you, so your day keeps moving.",
-  "points": [
-   {
-    "name": "At your door",
-    "text": "We bring professional-grade care to your home or business."
-   },
-   {
-    "name": "Around the valley",
-    "text": "Serving Las Vegas, Henderson, Summerlin and surrounding areas."
-   },
-   {
-    "name": "Open every day",
-    "text": "Monday through Sunday, 7:00am to 6:00pm."
-   },
-   {
-    "name": "Easy to book",
-    "text": "Call 702-886-0401 or send the quote form."
-   }
-  ]
- },
- "servicesTitle": "Inside, outside, and every detail between.",
- "servicesIntro": "From a deep interior clean to multi-stage paint correction, with high-quality products for every surface.",
- "services": [
-  {
-   "name": "Maintenance Detail",
-   "text": "A hand wash, wheels and tires, interior vacuum and windows, finished with a ceramic detail spray.",
-   "price": "Starts $85"
+  "kit": "detailing",
+  "trade": "Mobile car detailing",
+  "name": "Alpha Pro Detailing",
+  "legalName": "Alpha Pro Detailing",
+  "preview": true,
+  "placeId": "ChIJucutXxRRREsRrMQ79q8Lxic",
+  "title": "Alpha Pro Detailing | Mobile car detailing in Las Vegas, NV",
+  "description": "Mobile detailing in Las Vegas, Henderson and Summerlin, brought to your home or business. Ceramic coating, paint correction and full detailing, built for the harsh Nevada climate. 5.0 on Google from 83 reviews.",
+  "brand": "#1670ff",
+  "brandHi": "#52c6ff",
+  "accent": "#8fd0ff",
+  "logo": "logo.png",
+  "logoChip": true,
+  "wordmark": {
+    "top": "Alpha Pro",
+    "bottom": "Detailing"
   },
-  {
-   "name": "Clay & Seal Detail",
-   "text": "Hand wash, clay bar and iron removal, then an SiO2 sealant that protects paint for up to 8 to 10 months.",
-   "price": "Sedans, coupes start at $150"
+  "phone": "(702) 886-0401",
+  "email": "alphadetailingcarcare@gmail.com",
+  "heroImage": "img/photo-1.jpg",
+  "heroAlt": "Car covered in foam during a mobile detail in a driveway next to a detailing van",
+  "heroPosition": "60% 60%",
+  "heroPositionPhone": "60% 50%",
+  "rating": {
+    "score": "5.0",
+    "count": 83,
+    "url": "https://maps.google.com/?cid=2865991063246193836"
   },
-  {
-   "name": "Interior Complete Detail",
-   "text": "Deep-cleaned surfaces, steamed and shampooed carpet and cloth seats, steamed headliner and seatbelts.",
-   "price": "Sedans, coupes start at $200"
+  "kicker": "Mobile car detailing · Las Vegas, NV",
+  "headline": "Showroom shine.<br><em>Right in your driveway.</em>",
+  "intro": "Mobile detailing in Las Vegas, Henderson and Summerlin, brought to your home or business. Ceramic coating, paint correction and full detailing, built for the harsh Nevada climate.",
+  "mobile": {
+    "title": "Your driveway is our shop.",
+    "intro": "We come to the place that suits you, so your day keeps moving.",
+    "points": [
+      {
+        "name": "At your door",
+        "text": "We bring professional-grade care to your home or business."
+      },
+      {
+        "name": "Around the valley",
+        "text": "Serving Las Vegas, Henderson, Summerlin and surrounding areas."
+      },
+      {
+        "name": "Open every day",
+        "text": "Monday through Sunday, 7:00am to 6:00pm."
+      },
+      {
+        "name": "Easy to book",
+        "text": "Call 702-886-0401 or send the quote form."
+      }
+    ]
   },
-  {
-   "name": "Alpha Signature Detail",
-   "text": "Our full inside-and-out detail with engine bay, SiO2 sealant for up to 12 months and trim restored.",
-   "price": "Sedans, coupes start at $300"
-  },
-  {
-   "name": "Ceramic Coating",
-   "text": "Semi-permanent protection that deepens color and keeps your vehicle cleaner, longer. Choose 1, 3 or 5 year protection.",
-   "price": "$500"
-  },
-  {
-   "name": "Paint Correction",
-   "text": "Machine polishing that removes swirls and defects, from a light enhancement to multi-stage correction.",
-   "price": "Starting at $350"
+  "servicesTitle": "Inside, outside, and every detail between.",
+  "servicesIntro": "From a deep interior clean to multi-stage paint correction, with high-quality products for every surface.",
+  "services": [
+    {
+      "name": "Maintenance Detail",
+      "text": "A hand wash, wheels and tires, interior vacuum and windows, finished with a ceramic detail spray.",
+      "price": "Starts $85"
+    },
+    {
+      "name": "Clay & Seal Detail",
+      "text": "Hand wash, clay bar and iron removal, then an SiO2 sealant that protects paint for up to 8 to 10 months.",
+      "price": "Sedans, coupes start at $150"
+    },
+    {
+      "name": "Interior Complete Detail",
+      "text": "Deep-cleaned surfaces, steamed and shampooed carpet and cloth seats, steamed headliner and seatbelts.",
+      "price": "Sedans, coupes start at $200"
+    },
+    {
+      "name": "Alpha Signature Detail",
+      "text": "Our full inside-and-out detail with engine bay, SiO2 sealant for up to 12 months and trim restored.",
+      "price": "Sedans, coupes start at $300"
+    },
+    {
+      "name": "Ceramic Coating",
+      "text": "Semi-permanent protection that deepens color and keeps your vehicle cleaner, longer. Choose 1, 3 or 5 year protection.",
+      "price": "$500"
+    },
+    {
+      "name": "Paint Correction",
+      "text": "Machine polishing that removes swirls and defects, from a light enhancement to multi-stage correction.",
+      "price": "Starting at $350"
+    }
+  ],
+  "also": [
+    {
+      "name": "Boats"
+    },
+    {
+      "name": "RVs"
+    },
+    {
+      "name": "Planes"
+    }
+  ],
+  "alsoTitle": "We also detail",
+  "why": [
+    {
+      "name": "Licensed and insured",
+      "text": "A licensed and insured mobile detailing service in Las Vegas."
+    },
+    {
+      "name": "Gimmick free",
+      "text": "Straight talk and open communication from start to finish."
+    },
+    {
+      "name": "Best chemicals and techniques",
+      "text": "Expert craftsmanship and attention to detail on every vehicle."
+    }
+  ],
+  "whyTitle": "The detail is in the name.",
+  "howTitle": "Book it. We show up. You drive off shining.",
+  "steps": [
+    {
+      "name": "Tell us about your car",
+      "text": "Call, text or send the form: your vehicle, the service and where it's parked."
+    },
+    {
+      "name": "We pull up",
+      "text": "We arrive on time at your home or office, with everything we need."
+    },
+    {
+      "name": "You get the keys back",
+      "text": "To a car that looks, and smells, brand new."
+    }
+  ],
+  "contactTitle": "Book your detail.",
+  "footerLine": "Mobile car detailing in Las Vegas",
+  "reviews": [],
+  "hours": [
+    "Monday to Sunday: 7:00am - 6:00pm"
+  ],
+  "galleryTitle": "Fresh off the driveway.",
+  "gallery": [],
+  "areas": [
+    "Las Vegas"
+  ],
+  "pitch": "photos",
+  "siteCheck": {
+    "reasons": [],
+    "improvements": [
+      "no quote or booking form",
+      "no reviews on the site"
+    ]
   }
- ],
- "also": [
-  {
-   "name": "Boats"
-  },
-  {
-   "name": "RVs"
-  },
-  {
-   "name": "Planes"
-  }
- ],
- "alsoTitle": "We also detail",
- "why": [
-  {
-   "name": "Licensed and insured",
-   "text": "A licensed and insured mobile detailing service in Las Vegas."
-  },
-  {
-   "name": "Gimmick free",
-   "text": "Straight talk and open communication from start to finish."
-  },
-  {
-   "name": "Best chemicals and techniques",
-   "text": "Expert craftsmanship and attention to detail on every vehicle."
-  }
- ],
- "whyTitle": "The detail is in the name.",
- "howTitle": "Book it. We show up. You drive off shining.",
- "steps": [
-  {
-   "name": "Tell us about your car",
-   "text": "Call, text or send the form: your vehicle, the service and where it's parked."
-  },
-  {
-   "name": "We pull up",
-   "text": "We arrive on time at your home or office, with everything we need."
-  },
-  {
-   "name": "You get the keys back",
-   "text": "To a car that looks, and smells, brand new."
-  }
- ],
- "contactTitle": "Book your detail.",
- "footerLine": "Mobile car detailing in Las Vegas",
- "reviews": [],
- "hours": [
-  "Monday to Sunday: 7:00am - 6:00pm"
- ],
- "galleryTitle": "Fresh off the driveway.",
- "gallery": [],
- "areas": [
-  "Las Vegas"
- ],
- "pitch": "photos"
 }

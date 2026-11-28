@@ -169,5 +169,11 @@
   "areas": [
     "Sarasota"
   ],
-  "pitch": "site"
+  "pitch": "site",
+  "siteCheck": {
+    "reasons": [
+      "copyright 2023"
+    ],
+    "improvements": []
+  }
 }

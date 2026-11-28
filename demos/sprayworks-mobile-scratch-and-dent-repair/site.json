@@ -1,115 +1,122 @@
 {
- "kit": "detailing",
- "trade": "Paintless dent repair",
- "name": "Sprayworks Mobile Scratch and Dent Repair",
- "legalName": "Sprayworks Mobile Scratch and Dent Repair",
- "preview": true,
- "placeId": "ChIJr7tLl_HPyIARGve7kV4MxmM",
- "title": "Sprayworks Mobile Scratch and Dent Repair | Paintless dent repair in Las Vegas, NV",
- "description": "Mobile scratch and dent repair in Las Vegas. The body shop comes to you, and your car is done in one day. 4.2 on Google from 57 reviews.",
- "brand": "#1670ff",
- "brandHi": "#52c6ff",
- "accent": "#8fd0ff",
- "logo": null,
- "logoChip": false,
- "wordmark": {
-  "top": "Sprayworks",
-  "bottom": "Mobile Scratch & Dent"
- },
- "phone": "(661) 593-3850",
- "email": "nick.spiers661@gmail.com",
- "heroImage": "img/photo-6.jpg",
- "heroAlt": "Glossy black car panel in sunlight",
- "heroPosition": "60% 60%",
- "heroPositionPhone": "60% 50%",
- "rating": {
-  "score": "4.2",
-  "count": 57,
-  "url": "https://maps.google.com/?cid=7189447455455049498"
- },
- "kicker": "Paintless dent repair · Las Vegas",
- "headline": "Your car's dents.<br><em>Gone. Paint untouched.</em>",
- "intro": "Mobile scratch and dent repair in Las Vegas. The body shop comes to you, and your car is done in one day.",
- "mobile": {
-  "title": "Your driveway is our shop.",
-  "intro": "Our fully equipped mobile units come to your home or office across DFW, so your day keeps moving.",
-  "points": [
-   {
-    "name": "The shop comes to you",
-    "text": "No need for a rental car. We bring the repair to your car."
-   },
-   {
-    "name": "Done in one day",
-    "text": "Your car will be done in just one day."
-   },
-   {
-    "name": "Told upfront",
-    "text": "We update and advise you on the process before we start."
-   },
-   {
-    "name": "Checked to your standard",
-    "text": "We make sure the work meets your standards and expectations."
-   }
-  ]
- },
- "servicesTitle": "Every kind of dent.",
- "servicesIntro": "From a single door ding to a full hail storm. No job too big or too small.",
- "services": [
-  {
-   "name": "Door dings",
-   "text": "Small parking-lot dents pushed out without paint or filler."
+  "kit": "detailing",
+  "trade": "Paintless dent repair",
+  "name": "Sprayworks Mobile Scratch and Dent Repair",
+  "legalName": "Sprayworks Mobile Scratch and Dent Repair",
+  "preview": true,
+  "placeId": "ChIJr7tLl_HPyIARGve7kV4MxmM",
+  "title": "Sprayworks Mobile Scratch and Dent Repair | Paintless dent repair in Las Vegas, NV",
+  "description": "Mobile scratch and dent repair in Las Vegas. The body shop comes to you, and your car is done in one day. 4.2 on Google from 57 reviews.",
+  "brand": "#1670ff",
+  "brandHi": "#52c6ff",
+  "accent": "#8fd0ff",
+  "logo": null,
+  "logoChip": false,
+  "wordmark": {
+    "top": "Sprayworks",
+    "bottom": "Mobile Scratch & Dent"
   },
-  {
-   "name": "Hail damage",
-   "text": "Roofs, hoods and trunks restored after a storm."
+  "phone": "(661) 593-3850",
+  "email": "nick.spiers661@gmail.com",
+  "heroImage": "img/photo-6.jpg",
+  "heroAlt": "Glossy black car panel in sunlight",
+  "heroPosition": "60% 60%",
+  "heroPositionPhone": "60% 50%",
+  "rating": {
+    "score": "4.2",
+    "count": 57,
+    "url": "https://maps.google.com/?cid=7189447455455049498"
   },
-  {
-   "name": "Creases and larger dents",
-   "text": "Worked out from behind the panel where the metal allows."
+  "kicker": "Paintless dent repair · Las Vegas",
+  "headline": "Your car's dents.<br><em>Gone. Paint untouched.</em>",
+  "intro": "Mobile scratch and dent repair in Las Vegas. The body shop comes to you, and your car is done in one day.",
+  "mobile": {
+    "title": "Your driveway is our shop.",
+    "intro": "Our fully equipped mobile units come to your home or office across DFW, so your day keeps moving.",
+    "points": [
+      {
+        "name": "The shop comes to you",
+        "text": "No need for a rental car. We bring the repair to your car."
+      },
+      {
+        "name": "Done in one day",
+        "text": "Your car will be done in just one day."
+      },
+      {
+        "name": "Told upfront",
+        "text": "We update and advise you on the process before we start."
+      },
+      {
+        "name": "Checked to your standard",
+        "text": "We make sure the work meets your standards and expectations."
+      }
+    ]
+  },
+  "servicesTitle": "Every kind of dent.",
+  "servicesIntro": "From a single door ding to a full hail storm. No job too big or too small.",
+  "services": [
+    {
+      "name": "Door dings",
+      "text": "Small parking-lot dents pushed out without paint or filler."
+    },
+    {
+      "name": "Hail damage",
+      "text": "Roofs, hoods and trunks restored after a storm."
+    },
+    {
+      "name": "Creases and larger dents",
+      "text": "Worked out from behind the panel where the metal allows."
+    }
+  ],
+  "also": [],
+  "alsoTitle": "We also fix",
+  "why": [
+    {
+      "name": "Thorough examination",
+      "text": "We locate the source of the problem so you don't have to."
+    },
+    {
+      "name": "Quality materials",
+      "text": "Only the best materials by PPG and 3M."
+    }
+  ],
+  "whyTitle": "The Sprayworks Mobile Scratch and Dent Repair difference.",
+  "howTitle": "Back to like new in three steps.",
+  "steps": [
+    {
+      "name": "Send the details",
+      "text": "Call, or use the form with your year, make, model and photos of the damage."
+    },
+    {
+      "name": "Get an evaluation",
+      "text": "Bring the vehicle in and we look at the hail damage, dings or film options."
+    },
+    {
+      "name": "Drive it smooth",
+      "text": "We work the dents out and hand the vehicle back."
+    }
+  ],
+  "contactTitle": "Got a dent?",
+  "footerLine": "Paintless dent repair in Las Vegas",
+  "reviews": [],
+  "hours": [
+    "Monday – Friday 8:00am – 6:00pm",
+    "Saturday 8:30am – 1:00pm",
+    "Sunday Closed"
+  ],
+  "galleryTitle": "Dents gone, paint untouched.",
+  "notePlaceholder": "Where the dent is, how big, hail or a door ding…",
+  "ctaLabel": "Get an estimate",
+  "gallery": [],
+  "areas": [
+    "Las Vegas"
+  ],
+  "pitch": "photos",
+  "siteCheck": {
+    "reasons": [
+      "copyright 2023",
+      "no domain of its own"
+    ],
+    "improvements": []
   }
- ],
- "also": [],
- "alsoTitle": "We also fix",
- "why": [
-  {
-   "name": "Thorough examination",
-   "text": "We locate the source of the problem so you don't have to."
-  },
-  {
-   "name": "Quality materials",
-   "text": "Only the best materials by PPG and 3M."
-  }
- ],
- "whyTitle": "The Sprayworks Mobile Scratch and Dent Repair difference.",
- "howTitle": "Back to like new in three steps.",
- "steps": [
-  {
-   "name": "Send the details",
-   "text": "Call, or use the form with your year, make, model and photos of the damage."
-  },
-  {
-   "name": "Get an evaluation",
-   "text": "Bring the vehicle in and we look at the hail damage, dings or film options."
-  },
-  {
-   "name": "Drive it smooth",
-   "text": "We work the dents out and hand the vehicle back."
-  }
- ],
- "contactTitle": "Got a dent?",
- "footerLine": "Paintless dent repair in Las Vegas",
- "reviews": [],
- "hours": [
-  "Monday – Friday 8:00am – 6:00pm",
-  "Saturday 8:30am – 1:00pm",
-  "Sunday Closed"
- ],
- "galleryTitle": "Dents gone, paint untouched.",
- "notePlaceholder": "Where the dent is, how big, hail or a door ding…",
- "ctaLabel": "Get an estimate",
- "gallery": [],
- "areas": [
-  "Las Vegas"
- ],
- "pitch": "photos"
 }

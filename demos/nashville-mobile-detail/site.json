@@ -1,143 +1,149 @@
 {
- "kit": "detailing",
- "trade": "Mobile car detailing",
- "name": "Nashville Mobile Detail",
- "legalName": "Nashville Mobile Detail",
- "preview": true,
- "placeId": "ChIJ_-tAGuuitGERfVshW1tnDPA",
- "title": "Nashville Mobile Detail | Mobile car detailing in Nashville, TN",
- "description": "Professional detailing at your home or office, anywhere around Nashville. No drop-off, no waiting room: just a car that looks new again. 4.9 on Google from 1144 reviews.",
- "brand": "#1670ff",
- "brandHi": "#52c6ff",
- "accent": "#8fd0ff",
- "logo": null,
- "logoChip": false,
- "wordmark": {
-  "top": "Nashville",
-  "bottom": "Mobile Detail"
- },
- "phone": "(615) 437-8389",
- "email": "blake@nashvillemobiledetail.com",
- "heroImage": "img/photo-6.jpg",
- "heroAlt": "Detailer wiping down a car door with a microfiber towel",
- "heroPosition": "60% 60%",
- "heroPositionPhone": "60% 50%",
- "rating": {
-  "score": "4.9",
-  "count": 1144,
-  "url": "https://maps.google.com/?cid=17297313910891830141"
- },
- "kicker": "Mobile car detailing · Nashville, TN",
- "headline": "Showroom shine.<br><em>Right in your driveway.</em>",
- "intro": "Professional detailing at your home or office, anywhere around Nashville. No drop-off, no waiting room: just a car that looks new again.",
- "mobile": {
-  "title": "Your driveway is our shop.",
-  "intro": "Book online or call. We show up with everything we need.",
-  "points": [
-   {
-    "name": "We come to you",
-    "text": "Home or office. Nashville, Brentwood, Franklin, College Grove and Murfreesboro."
-   },
-   {
-    "name": "Saves your time",
-    "text": "No drop-off and no waiting around. The detail happens where you are."
-   },
-   {
-    "name": "Same-day service",
-    "text": "Detailing that fits your schedule, done before sunset."
-   }
-  ]
- },
- "servicesTitle": "Three details. One clear price each.",
- "servicesIntro": "Four services, one standard: attention to detail. Prices depend on your vehicle's size, condition and needs.",
- "services": [
-  {
-   "name": "Full Service Detailing",
-   "text": "Inside-and-out detailing that restores your showroom shine, from the wheels to the windows."
+  "kit": "detailing",
+  "trade": "Mobile car detailing",
+  "name": "Nashville Mobile Detail",
+  "legalName": "Nashville Mobile Detail",
+  "preview": true,
+  "placeId": "ChIJ_-tAGuuitGERfVshW1tnDPA",
+  "title": "Nashville Mobile Detail | Mobile car detailing in Nashville, TN",
+  "description": "Professional detailing at your home or office, anywhere around Nashville. No drop-off, no waiting room: just a car that looks new again. 4.9 on Google from 1144 reviews.",
+  "brand": "#1670ff",
+  "brandHi": "#52c6ff",
+  "accent": "#8fd0ff",
+  "logo": null,
+  "logoChip": false,
+  "wordmark": {
+    "top": "Nashville",
+    "bottom": "Mobile Detail"
   },
-  {
-   "name": "Exterior Detailing",
-   "text": "Wash, clay bar, paint polish, then wax or sealant, with wheels, tires and trim finished too."
+  "phone": "(615) 437-8389",
+  "email": "blake@nashvillemobiledetail.com",
+  "heroImage": "img/photo-6.jpg",
+  "heroAlt": "Detailer wiping down a car door with a microfiber towel",
+  "heroPosition": "60% 60%",
+  "heroPositionPhone": "60% 50%",
+  "rating": {
+    "score": "4.9",
+    "count": 1144,
+    "url": "https://maps.google.com/?cid=17297313910891830141"
   },
-  {
-   "name": "Interior Detailing",
-   "text": "Deep cleaning of seats, carpets, mats, dash and door panels, with conditioning for leather and vinyl."
+  "kicker": "Mobile car detailing · Nashville, TN",
+  "headline": "Showroom shine.<br><em>Right in your driveway.</em>",
+  "intro": "Professional detailing at your home or office, anywhere around Nashville. No drop-off, no waiting room: just a car that looks new again.",
+  "mobile": {
+    "title": "Your driveway is our shop.",
+    "intro": "Book online or call. We show up with everything we need.",
+    "points": [
+      {
+        "name": "We come to you",
+        "text": "Home or office. Nashville, Brentwood, Franklin, College Grove and Murfreesboro."
+      },
+      {
+        "name": "Saves your time",
+        "text": "No drop-off and no waiting around. The detail happens where you are."
+      },
+      {
+        "name": "Same-day service",
+        "text": "Detailing that fits your schedule, done before sunset."
+      }
+    ]
   },
-  {
-   "name": "Ceramic Coating",
-   "text": "A durable barrier against UV, chemical stains and contaminants that makes your paint glossier and easier to clean."
-  },
-  {
-   "name": "Window Tinting",
-   "text": "Precision-applied tint film with a bubble-free finish, for UV protection, less glare and a cooler cabin."
-  },
-  {
-   "name": "Paint Protection Film",
-   "text": "Partial Front, Full Front, Track Pack or Full Vehicle coverage against scratches, chips and road debris."
+  "servicesTitle": "Three details. One clear price each.",
+  "servicesIntro": "Four services, one standard: attention to detail. Prices depend on your vehicle's size, condition and needs.",
+  "services": [
+    {
+      "name": "Full Service Detailing",
+      "text": "Inside-and-out detailing that restores your showroom shine, from the wheels to the windows."
+    },
+    {
+      "name": "Exterior Detailing",
+      "text": "Wash, clay bar, paint polish, then wax or sealant, with wheels, tires and trim finished too."
+    },
+    {
+      "name": "Interior Detailing",
+      "text": "Deep cleaning of seats, carpets, mats, dash and door panels, with conditioning for leather and vinyl."
+    },
+    {
+      "name": "Ceramic Coating",
+      "text": "A durable barrier against UV, chemical stains and contaminants that makes your paint glossier and easier to clean."
+    },
+    {
+      "name": "Window Tinting",
+      "text": "Precision-applied tint film with a bubble-free finish, for UV protection, less glare and a cooler cabin."
+    },
+    {
+      "name": "Paint Protection Film",
+      "text": "Partial Front, Full Front, Track Pack or Full Vehicle coverage against scratches, chips and road debris."
+    }
+  ],
+  "also": [],
+  "alsoTitle": "Not just cars:",
+  "why": [
+    {
+      "name": "Family-owned",
+      "text": "A family-operated business built on trust, quality and integrity."
+    },
+    {
+      "name": "Eco-friendly products",
+      "text": "Careful techniques and eco-friendly products that help your car keep its resale value."
+    },
+    {
+      "name": "We make it right",
+      "text": "When they say they'll make it right, they mean it. Their word is how they build lasting relationships."
+    }
+  ],
+  "whyTitle": "The detail is in the name.",
+  "howTitle": "Book it. We show up. You drive off shining.",
+  "steps": [
+    {
+      "name": "Request a consultation",
+      "text": "Call or fill out the form. Consultations are free."
+    },
+    {
+      "name": "Get your quote",
+      "text": "We price by your vehicle's size, condition and needs."
+    },
+    {
+      "name": "Pick up your car",
+      "text": "Detailed, protected and ready for the big reveal."
+    }
+  ],
+  "contactTitle": "Book your consultation.",
+  "footerLine": "Mobile car detailing in Nashville",
+  "reviews": [],
+  "hours": [],
+  "galleryTitle": "Fresh off the driveway.",
+  "gallery": [
+    {
+      "src": "img/photo-3.jpg",
+      "alt": "Foam cleaning a car's center console",
+      "size": "big"
+    },
+    {
+      "src": "img/photo-7.jpg",
+      "alt": "Brushing foam cleaner on a leather console"
+    },
+    {
+      "src": "img/photo-5.jpg",
+      "alt": "Cleaning a steering wheel and dash with a brush"
+    },
+    {
+      "src": "img/photo-1.jpg",
+      "alt": "Vacuuming a leather car seat"
+    },
+    {
+      "src": "img/photo-4.jpg",
+      "alt": "Detailer spraying a car's door panel"
+    }
+  ],
+  "areas": [
+    "Nashville"
+  ],
+  "pitch": "site",
+  "siteCheck": {
+    "reasons": [],
+    "improvements": [
+      "no reviews on the site"
+    ]
   }
- ],
- "also": [],
- "alsoTitle": "Not just cars:",
- "why": [
-  {
-   "name": "Family-owned",
-   "text": "A family-operated business built on trust, quality and integrity."
-  },
-  {
-   "name": "Eco-friendly products",
-   "text": "Careful techniques and eco-friendly products that help your car keep its resale value."
-  },
-  {
-   "name": "We make it right",
-   "text": "When they say they'll make it right, they mean it. Their word is how they build lasting relationships."
-  }
- ],
- "whyTitle": "The detail is in the name.",
- "howTitle": "Book it. We show up. You drive off shining.",
- "steps": [
-  {
-   "name": "Request a consultation",
-   "text": "Call or fill out the form. Consultations are free."
-  },
-  {
-   "name": "Get your quote",
-   "text": "We price by your vehicle's size, condition and needs."
-  },
-  {
-   "name": "Pick up your car",
-   "text": "Detailed, protected and ready for the big reveal."
-  }
- ],
- "contactTitle": "Book your consultation.",
- "footerLine": "Mobile car detailing in Nashville",
- "reviews": [],
- "hours": [],
- "galleryTitle": "Fresh off the driveway.",
- "gallery": [
-  {
-   "src": "img/photo-3.jpg",
-   "alt": "Foam cleaning a car's center console",
-   "size": "big"
-  },
-  {
-   "src": "img/photo-7.jpg",
-   "alt": "Brushing foam cleaner on a leather console"
-  },
-  {
-   "src": "img/photo-5.jpg",
-   "alt": "Cleaning a steering wheel and dash with a brush"
-  },
-  {
-   "src": "img/photo-1.jpg",
-   "alt": "Vacuuming a leather car seat"
-  },
-  {
-   "src": "img/photo-4.jpg",
-   "alt": "Detailer spraying a car's door panel"
-  }
- ],
- "areas": [
-  "Nashville"
- ],
- "pitch": "site"
 }

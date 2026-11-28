@@ -1,135 +1,143 @@
 {
- "kit": "painting",
- "trade": "House painting",
- "name": "Everlast Pro Painting",
- "legalName": "Everlast Pro Painting",
- "preview": true,
- "placeId": "ChIJj3bsu6RhXIYRZLtBNZL1eHU",
- "title": "Everlast Pro Painting | House painting in San Antonio, TX",
- "description": "House painting in San Antonio with over 20 years of experience. About 70% of our time goes into prep, and it shows in the finish. 5.0 on Google from 20 reviews.",
- "logo": null,
- "logoChip": false,
- "wordmark": {
-  "top": "Everlast Pro",
-  "bottom": "Painting"
- },
- "phone": "(210) 834-9761",
- "email": "everlastsa@yahoo.com",
- "heroImage": null,
- "heroAlt": "",
- "heroPosition": "60% 60%",
- "heroPositionPhone": "60% 50%",
- "rating": {
-  "score": "5.0",
-  "count": 20,
-  "url": "https://maps.google.com/?cid=8464785507950377828"
- },
- "kicker": "House painting · San Antonio",
- "headline": "Fresh paint.<br><em>Honest work.</em>",
- "intro": "House painting in San Antonio with over 20 years of experience. About 70% of our time goes into prep, and it shows in the finish.",
- "badges": [
-  "Free estimates"
- ],
- "highlights": null,
- "servicesTitle": "Inside and out.",
- "servicesIntro": "One room or the whole property.",
- "services": [
-  {
-   "name": "Interior painting",
-   "text": "Walls, ceilings, baseboards, crown moldings, doors and rooms of every kind, from kitchens to bedrooms."
+  "kit": "painting",
+  "trade": "House painting",
+  "name": "Everlast Pro Painting",
+  "legalName": "Everlast Pro Painting",
+  "preview": true,
+  "placeId": "ChIJj3bsu6RhXIYRZLtBNZL1eHU",
+  "title": "Everlast Pro Painting | House painting in San Antonio, TX",
+  "description": "House painting in San Antonio with over 20 years of experience. About 70% of our time goes into prep, and it shows in the finish. 5.0 on Google from 20 reviews.",
+  "logo": null,
+  "logoChip": false,
+  "wordmark": {
+    "top": "Everlast Pro",
+    "bottom": "Painting"
   },
-  {
-   "name": "Exterior painting",
-   "text": "Wood siding, stucco, eaves, shutters, gates and garage doors, prepped and painted."
+  "phone": "(210) 834-9761",
+  "email": "everlastsa@yahoo.com",
+  "heroImage": null,
+  "heroAlt": "",
+  "heroPosition": "60% 60%",
+  "heroPositionPhone": "60% 50%",
+  "rating": {
+    "score": "5.0",
+    "count": 20,
+    "url": "https://maps.google.com/?cid=8464785507950377828"
   },
-  {
-   "name": "Cabinet refinishing",
-   "text": "Kitchen cabinets and handrails refinished with careful masking and a smooth finish."
-  },
-  {
-   "name": "Texture and faux finishes",
-   "text": "Textured walls and faux finishes that give a kitchen, living room or bedroom its own character."
-  },
-  {
-   "name": "Repairs and prep",
-   "text": "Drywall repairs, wood damage repairs, wallpaper removal and acoustic removal before any paint goes on."
-  },
-  {
-   "name": "Staining and deck restoration",
-   "text": "Staining, deck restoration and pressure washing for wood and outdoor spaces."
+  "kicker": "House painting · San Antonio",
+  "headline": "Fresh paint.<br><em>Honest work.</em>",
+  "intro": "House painting in San Antonio with over 20 years of experience. About 70% of our time goes into prep, and it shows in the finish.",
+  "badges": [
+    "Free estimates"
+  ],
+  "highlights": null,
+  "servicesTitle": "Inside and out.",
+  "servicesIntro": "One room or the whole property.",
+  "services": [
+    {
+      "name": "Interior painting",
+      "text": "Walls, ceilings, baseboards, crown moldings, doors and rooms of every kind, from kitchens to bedrooms."
+    },
+    {
+      "name": "Exterior painting",
+      "text": "Wood siding, stucco, eaves, shutters, gates and garage doors, prepped and painted."
+    },
+    {
+      "name": "Cabinet refinishing",
+      "text": "Kitchen cabinets and handrails refinished with careful masking and a smooth finish."
+    },
+    {
+      "name": "Texture and faux finishes",
+      "text": "Textured walls and faux finishes that give a kitchen, living room or bedroom its own character."
+    },
+    {
+      "name": "Repairs and prep",
+      "text": "Drywall repairs, wood damage repairs, wallpaper removal and acoustic removal before any paint goes on."
+    },
+    {
+      "name": "Staining and deck restoration",
+      "text": "Staining, deck restoration and pressure washing for wood and outdoor spaces."
+    }
+  ],
+  "also": [
+    {
+      "name": "Epoxy coatings"
+    },
+    {
+      "name": "Elastomeric coatings"
+    },
+    {
+      "name": "Patios and pagodas"
+    },
+    {
+      "name": "Playhouses"
+    },
+    {
+      "name": "Window bars"
+    }
+  ],
+  "alsoTitle": "We also do:",
+  "promise": null,
+  "why": [
+    {
+      "name": "Prep comes first",
+      "text": "About 70% of our time goes into preparation, and it shows in the finished product."
+    },
+    {
+      "name": "Over 20 years of experience",
+      "text": "Everlast Pro Painting has served the San Antonio area for more than two decades."
+    },
+    {
+      "name": "Owner involved",
+      "text": "Clients say owner Patrick Overby is responsive, visits the job and keeps the crew on schedule."
+    }
+  ],
+  "whyTitle": "Why Everlast Pro Painting.",
+  "howTitle": "A fresh coat in three steps.",
+  "steps": [
+    {
+      "name": "Call for a free estimate",
+      "text": "We look at the work, ask questions and give you a flat price."
+    },
+    {
+      "name": "We prep and paint",
+      "text": "We mask, scrape, caulk and prime, then paint. We buy all the supplies."
+    },
+    {
+      "name": "Pay when it is done",
+      "text": "On most jobs, you pay nothing until everything is completely finished."
+    }
+  ],
+  "contactTitle": "Request a free quote.",
+  "footerLine": "House painting in San Antonio",
+  "reviews": [
+    {
+      "text": "Patrick and his team had the tough task of refinishing our new kitchen cabinets that had been almost ruined by our last painter. The cabinets came out beautifully, and look like they have a factory finish on them! I knew they were the right team from the start. Their attention to detail starting with the masking of the kitchen was unlike other painters I have used in the past. The cabinets and trim turned out so great we had them paint the exterior too! The house has been completely transformed. I will definitely be using them again.",
+      "name": "Michael"
+    },
+    {
+      "text": "Everlast painted the exterior of my home as well as the shed. Patrick, the owner, is very involved and very concerned with customer happiness. He was easy to reach and visited our home daily. His crew did an excellent job and cleaned up every day. Would highly recommend this company.",
+      "name": "Megan"
+    },
+    {
+      "text": "When their work is complete, it is nearly impossible to tell that there have been any repairs done. … They show up when they say they will, finish on schedule and clean up at the end.",
+      "name": "Jim H."
+    }
+  ],
+  "hours": [],
+  "galleryTitle": "Homes we’ve painted.",
+  "notePlaceholder": "Inside or outside, how many rooms, a date you have in mind…",
+  "gallery": [],
+  "areas": [
+    "San Antonio"
+  ],
+  "pitch": "photos",
+  "siteCheck": {
+    "reasons": [],
+    "improvements": [
+      "no tap-to-call link",
+      "no meta description",
+      "copyright 2025"
+    ]
   }
- ],
- "also": [
-  {
-   "name": "Epoxy coatings"
-  },
-  {
-   "name": "Elastomeric coatings"
-  },
-  {
-   "name": "Patios and pagodas"
-  },
-  {
-   "name": "Playhouses"
-  },
-  {
-   "name": "Window bars"
-  }
- ],
- "alsoTitle": "We also do:",
- "promise": null,
- "why": [
-  {
-   "name": "Prep comes first",
-   "text": "About 70% of our time goes into preparation, and it shows in the finished product."
-  },
-  {
-   "name": "Over 20 years of experience",
-   "text": "Everlast Pro Painting has served the San Antonio area for more than two decades."
-  },
-  {
-   "name": "Owner involved",
-   "text": "Clients say owner Patrick Overby is responsive, visits the job and keeps the crew on schedule."
-  }
- ],
- "whyTitle": "Why Everlast Pro Painting.",
- "howTitle": "A fresh coat in three steps.",
- "steps": [
-  {
-   "name": "Call for a free estimate",
-   "text": "We look at the work, ask questions and give you a flat price."
-  },
-  {
-   "name": "We prep and paint",
-   "text": "We mask, scrape, caulk and prime, then paint. We buy all the supplies."
-  },
-  {
-   "name": "Pay when it is done",
-   "text": "On most jobs, you pay nothing until everything is completely finished."
-  }
- ],
- "contactTitle": "Request a free quote.",
- "footerLine": "House painting in San Antonio",
- "reviews": [
-  {
-   "text": "Patrick and his team had the tough task of refinishing our new kitchen cabinets that had been almost ruined by our last painter. The cabinets came out beautifully, and look like they have a factory finish on them! I knew they were the right team from the start. Their attention to detail starting with the masking of the kitchen was unlike other painters I have used in the past. The cabinets and trim turned out so great we had them paint the exterior too! The house has been completely transformed. I will definitely be using them again.",
-   "name": "Michael"
-  },
-  {
-   "text": "Everlast painted the exterior of my home as well as the shed. Patrick, the owner, is very involved and very concerned with customer happiness. He was easy to reach and visited our home daily. His crew did an excellent job and cleaned up every day. Would highly recommend this company.",
-   "name": "Megan"
-  },
-  {
-   "text": "When their work is complete, it is nearly impossible to tell that there have been any repairs done. … They show up when they say they will, finish on schedule and clean up at the end.",
-   "name": "Jim H."
-  }
- ],
- "hours": [],
- "galleryTitle": "Homes we’ve painted.",
- "notePlaceholder": "Inside or outside, how many rooms, a date you have in mind…",
- "gallery": [],
- "areas": [
-  "San Antonio"
- ],
- "pitch": "photos"
 }

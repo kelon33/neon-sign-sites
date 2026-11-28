@@ -1,98 +1,107 @@
 {
- "kit": "detailing",
- "trade": "Paintless dent repair",
- "name": "DENT TITAN A.D.R.",
- "legalName": "DENT TITAN A.D.R.",
- "preview": true,
- "placeId": "ChIJAbcFauNbXIYRi0Aol1Ac8b8",
- "title": "DENT TITAN A.D.R. | Paintless dent repair in San Antonio, TX",
- "description": "Paintless dent repair in San Antonio, backed by a lifetime warranty. We work with all insurance providers and guide you through the hail claim. 5.0 on Google from 44 reviews.",
- "brand": "#1670ff",
- "brandHi": "#52c6ff",
- "accent": "#8fd0ff",
- "logo": null,
- "logoChip": false,
- "wordmark": {
-  "top": "Dent Titan",
-  "bottom": "A.D.R."
- },
- "phone": "(210) 643-5443",
- "email": "info@denttitan.com",
- "heroImage": null,
- "heroAlt": "",
- "heroPosition": "60% 60%",
- "heroPositionPhone": "60% 50%",
- "rating": {
-  "score": "5.0",
-  "count": 44,
-  "url": "https://maps.google.com/?cid=13830867063090462859"
- },
- "kicker": "Paintless dent repair · San Antonio",
- "headline": "Your car's dents.<br><em>Gone. Paint untouched.</em>",
- "intro": "Paintless dent repair in San Antonio, backed by a lifetime warranty. We work with all insurance providers and guide you through the hail claim.",
- "mobile": null,
- "servicesTitle": "Every kind of dent.",
- "servicesIntro": "From a single door ding to a full hail storm.",
- "services": [
-  {
-   "name": "Hail damage repair",
-   "text": "Hail dents worked out of your vehicle, with help setting up your insurance-provided rental."
+  "kit": "detailing",
+  "trade": "Paintless dent repair",
+  "name": "DENT TITAN A.D.R.",
+  "legalName": "DENT TITAN A.D.R.",
+  "preview": true,
+  "placeId": "ChIJAbcFauNbXIYRi0Aol1Ac8b8",
+  "title": "DENT TITAN A.D.R. | Paintless dent repair in San Antonio, TX",
+  "description": "Paintless dent repair in San Antonio, backed by a lifetime warranty. We work with all insurance providers and guide you through the hail claim. 5.0 on Google from 44 reviews.",
+  "brand": "#1670ff",
+  "brandHi": "#52c6ff",
+  "accent": "#8fd0ff",
+  "logo": null,
+  "logoChip": false,
+  "wordmark": {
+    "top": "Dent Titan",
+    "bottom": "A.D.R."
   },
-  {
-   "name": "Paintless dent repair",
-   "text": "Small dents pushed out from behind, so the factory paint and OEM panels stay as they are."
+  "phone": "(210) 643-5443",
+  "email": "info@denttitan.com",
+  "heroImage": null,
+  "heroAlt": "",
+  "heroPosition": "60% 60%",
+  "heroPositionPhone": "60% 50%",
+  "rating": {
+    "score": "5.0",
+    "count": 44,
+    "url": "https://maps.google.com/?cid=13830867063090462859"
   },
-  {
-   "name": "Hail claim guidance",
-   "text": "We walk you through the claim and work with all insurance providers."
-  },
-  {
-   "name": "Body shop dent work",
-   "text": "We service over 20 body shops in the greater San Antonio area."
+  "kicker": "Paintless dent repair · San Antonio",
+  "headline": "Your car's dents.<br><em>Gone. Paint untouched.</em>",
+  "intro": "Paintless dent repair in San Antonio, backed by a lifetime warranty. We work with all insurance providers and guide you through the hail claim.",
+  "mobile": null,
+  "servicesTitle": "Every kind of dent.",
+  "servicesIntro": "From a single door ding to a full hail storm.",
+  "services": [
+    {
+      "name": "Hail damage repair",
+      "text": "Hail dents worked out of your vehicle, with help setting up your insurance-provided rental."
+    },
+    {
+      "name": "Paintless dent repair",
+      "text": "Small dents pushed out from behind, so the factory paint and OEM panels stay as they are."
+    },
+    {
+      "name": "Hail claim guidance",
+      "text": "We walk you through the claim and work with all insurance providers."
+    },
+    {
+      "name": "Body shop dent work",
+      "text": "We service over 20 body shops in the greater San Antonio area."
+    }
+  ],
+  "also": [],
+  "alsoTitle": "We also fix",
+  "why": [
+    {
+      "name": "Lifetime warranty",
+      "text": "We stand behind every repair with a lifetime warranty."
+    },
+    {
+      "name": "Experienced, certified",
+      "text": "A certified PDR technician with over 15 years of experience and over 3,500 vehicles repaired."
+    },
+    {
+      "name": "Deductible discounts",
+      "text": "Friendly service, deductible discounts, and we speak Spanish."
+    }
+  ],
+  "whyTitle": "The DENT TITAN A.D.R. difference.",
+  "howTitle": "Back to like new, step by step.",
+  "steps": [
+    {
+      "name": "Send the details",
+      "text": "Call, or use the form with your year, make, model and photos of the damage."
+    },
+    {
+      "name": "Get an evaluation",
+      "text": "Bring the vehicle in and we look at the hail damage, dings or film options."
+    },
+    {
+      "name": "Drive it smooth",
+      "text": "We work the dents out and hand the vehicle back."
+    }
+  ],
+  "contactTitle": "Got a dent?",
+  "footerLine": "Paintless dent repair in San Antonio",
+  "reviews": [],
+  "hours": [],
+  "galleryTitle": "Dents gone, paint untouched.",
+  "notePlaceholder": "Where the dent is, how big, hail or a door ding…",
+  "ctaLabel": "Get an estimate",
+  "gallery": [],
+  "areas": [
+    "San Antonio"
+  ],
+  "pitch": "photos",
+  "siteCheck": {
+    "reasons": [],
+    "improvements": [
+      "no quote or booking form",
+      "no reviews on the site",
+      "no meta description",
+      "loads in 3.3s"
+    ]
   }
- ],
- "also": [],
- "alsoTitle": "We also fix",
- "why": [
-  {
-   "name": "Lifetime warranty",
-   "text": "We stand behind every repair with a lifetime warranty."
-  },
-  {
-   "name": "Experienced, certified",
-   "text": "A certified PDR technician with over 15 years of experience and over 3,500 vehicles repaired."
-  },
-  {
-   "name": "Deductible discounts",
-   "text": "Friendly service, deductible discounts, and we speak Spanish."
-  }
- ],
- "whyTitle": "The DENT TITAN A.D.R. difference.",
- "howTitle": "Back to like new, step by step.",
- "steps": [
-  {
-   "name": "Send the details",
-   "text": "Call, or use the form with your year, make, model and photos of the damage."
-  },
-  {
-   "name": "Get an evaluation",
-   "text": "Bring the vehicle in and we look at the hail damage, dings or film options."
-  },
-  {
-   "name": "Drive it smooth",
-   "text": "We work the dents out and hand the vehicle back."
-  }
- ],
- "contactTitle": "Got a dent?",
- "footerLine": "Paintless dent repair in San Antonio",
- "reviews": [],
- "hours": [],
- "galleryTitle": "Dents gone, paint untouched.",
- "notePlaceholder": "Where the dent is, how big, hail or a door ding…",
- "ctaLabel": "Get an estimate",
- "gallery": [],
- "areas": [
-  "San Antonio"
- ],
- "pitch": "photos"
 }

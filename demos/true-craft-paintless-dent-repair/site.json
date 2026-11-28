@@ -1,101 +1,107 @@
 {
- "kit": "detailing",
- "trade": "Paintless dent repair",
- "name": "True Craft Paintless Dent Repair",
- "legalName": "True Craft Paintless Dent Repair",
- "preview": true,
- "placeId": "ChIJ6fDb0Jl7XIYRsQNOEY1wjXI",
- "title": "True Craft Paintless Dent Repair | Paintless dent repair in Boerne, TX",
- "description": "Door dings, creases and hail dents pushed out from behind, so your paint stays. Family owned in Boerne, with over 10 years in the trade. 5.0 on Google from 143 reviews.",
- "brand": "#1670ff",
- "brandHi": "#52c6ff",
- "accent": "#8fd0ff",
- "logo": "logo.png",
- "logoChip": true,
- "wordmark": {
-  "top": "True Craft",
-  "bottom": "Paintless Dent Repair"
- },
- "phone": "(830) 446-2549",
- "email": "info@truecraftpdr.com",
- "heroImage": null,
- "heroAlt": "",
- "heroPosition": "60% 60%",
- "heroPositionPhone": "60% 50%",
- "rating": {
-  "score": "5.0",
-  "count": 143,
-  "url": "https://maps.google.com/?cid=8254377443223012273"
- },
- "kicker": "Paintless dent repair · Boerne",
- "headline": "Your car's dents.<br><em>Gone. Paint untouched.</em>",
- "intro": "Door dings, creases and hail dents pushed out from behind, so your paint stays. Family owned in Boerne, with over 10 years in the trade.",
- "mobile": null,
- "servicesTitle": "Every kind of dent.",
- "servicesIntro": "From a single door ding to a full hail storm.",
- "services": [
-  {
-   "name": "Paintless Dent Repair",
-   "text": "A method for fixing dings, dents, hail damage and collision damage without repainting."
+  "kit": "detailing",
+  "trade": "Paintless dent repair",
+  "name": "True Craft Paintless Dent Repair",
+  "legalName": "True Craft Paintless Dent Repair",
+  "preview": true,
+  "placeId": "ChIJ6fDb0Jl7XIYRsQNOEY1wjXI",
+  "title": "True Craft Paintless Dent Repair | Paintless dent repair in Boerne, TX",
+  "description": "Door dings, creases and hail dents pushed out from behind, so your paint stays. Family owned in Boerne, with over 10 years in the trade. 5.0 on Google from 143 reviews.",
+  "brand": "#1670ff",
+  "brandHi": "#52c6ff",
+  "accent": "#8fd0ff",
+  "logo": "logo.png",
+  "logoChip": true,
+  "wordmark": {
+    "top": "True Craft",
+    "bottom": "Paintless Dent Repair"
   },
-  {
-   "name": "Hail Damage Repair",
-   "text": "After a storm, we remove the dents and dings hail leaves on your vehicle."
+  "phone": "(830) 446-2549",
+  "email": "info@truecraftpdr.com",
+  "heroImage": null,
+  "heroAlt": "",
+  "heroPosition": "60% 60%",
+  "heroPositionPhone": "60% 50%",
+  "rating": {
+    "score": "5.0",
+    "count": 143,
+    "url": "https://maps.google.com/?cid=8254377443223012273"
   },
-  {
-   "name": "Door Dings and Round Dents",
-   "text": "Small dings and round dents come out clean, with the factory finish intact."
-  },
-  {
-   "name": "Crease Dents",
-   "text": "Creases and dents up to the size of a football can be worked out."
+  "kicker": "Paintless dent repair · Boerne",
+  "headline": "Your car's dents.<br><em>Gone. Paint untouched.</em>",
+  "intro": "Door dings, creases and hail dents pushed out from behind, so your paint stays. Family owned in Boerne, with over 10 years in the trade.",
+  "mobile": null,
+  "servicesTitle": "Every kind of dent.",
+  "servicesIntro": "From a single door ding to a full hail storm.",
+  "services": [
+    {
+      "name": "Paintless Dent Repair",
+      "text": "A method for fixing dings, dents, hail damage and collision damage without repainting."
+    },
+    {
+      "name": "Hail Damage Repair",
+      "text": "After a storm, we remove the dents and dings hail leaves on your vehicle."
+    },
+    {
+      "name": "Door Dings and Round Dents",
+      "text": "Small dings and round dents come out clean, with the factory finish intact."
+    },
+    {
+      "name": "Crease Dents",
+      "text": "Creases and dents up to the size of a football can be worked out."
+    }
+  ],
+  "also": [],
+  "alsoTitle": "We also fix",
+  "why": [
+    {
+      "name": "Faster than a body shop",
+      "text": "Most repairs are done the same day, often within a couple of hours or less."
+    },
+    {
+      "name": "Saves you money",
+      "text": "Paintless dent removal is faster and more cost-effective than traditional body shop repair."
+    },
+    {
+      "name": "Over 10 years of experience",
+      "text": "Jake Didier fixes everything from small door dings to large collision dents and hail damage."
+    }
+  ],
+  "whyTitle": "Why True Craft Paintless Dent Repair",
+  "howTitle": "Dent-free in three steps.",
+  "steps": [
+    {
+      "name": "Send the details",
+      "text": "Call, or use the form with your year, make, model and photos of the damage."
+    },
+    {
+      "name": "Get an evaluation",
+      "text": "Bring the vehicle in and we look at the hail damage, dings or film options."
+    },
+    {
+      "name": "Drive it smooth",
+      "text": "We work the dents out and hand the vehicle back."
+    }
+  ],
+  "contactTitle": "Got hail damage?",
+  "footerLine": "Paintless dent repair in Boerne",
+  "reviews": [],
+  "hours": [
+    "Monday – Friday 8:30 AM – 6:00 PM",
+    "Saturdays By Appointment Only"
+  ],
+  "galleryTitle": "Dents gone, paint untouched.",
+  "notePlaceholder": "Where the dent is, how big, hail or a door ding…",
+  "ctaLabel": "Get an estimate",
+  "gallery": [],
+  "areas": [
+    "Boerne"
+  ],
+  "pitch": "photos",
+  "siteCheck": {
+    "reasons": [],
+    "improvements": [
+      "copyright 2025"
+    ]
   }
- ],
- "also": [],
- "alsoTitle": "We also fix",
- "why": [
-  {
-   "name": "Faster than a body shop",
-   "text": "Most repairs are done the same day, often within a couple of hours or less."
-  },
-  {
-   "name": "Saves you money",
-   "text": "Paintless dent removal is faster and more cost-effective than traditional body shop repair."
-  },
-  {
-   "name": "Over 10 years of experience",
-   "text": "Jake Didier fixes everything from small door dings to large collision dents and hail damage."
-  }
- ],
- "whyTitle": "Why True Craft Paintless Dent Repair",
- "howTitle": "Dent-free in three steps.",
- "steps": [
-  {
-   "name": "Send the details",
-   "text": "Call, or use the form with your year, make, model and photos of the damage."
-  },
-  {
-   "name": "Get an evaluation",
-   "text": "Bring the vehicle in and we look at the hail damage, dings or film options."
-  },
-  {
-   "name": "Drive it smooth",
-   "text": "We work the dents out and hand the vehicle back."
-  }
- ],
- "contactTitle": "Got hail damage?",
- "footerLine": "Paintless dent repair in Boerne",
- "reviews": [],
- "hours": [
-  "Monday – Friday 8:30 AM – 6:00 PM",
-  "Saturdays By Appointment Only"
- ],
- "galleryTitle": "Dents gone, paint untouched.",
- "notePlaceholder": "Where the dent is, how big, hail or a door ding…",
- "ctaLabel": "Get an estimate",
- "gallery": [],
- "areas": [
-  "Boerne"
- ],
- "pitch": "photos"
 }

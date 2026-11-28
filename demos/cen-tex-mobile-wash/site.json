@@ -185,5 +185,11 @@
   "areas": [
     "Waco"
   ],
-  "pitch": "site"
+  "pitch": "site",
+  "siteCheck": {
+    "reasons": [
+      "not mobile-friendly"
+    ],
+    "improvements": []
+  }
 }

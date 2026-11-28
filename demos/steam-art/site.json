@@ -1,130 +1,138 @@
 {
- "kit": "detailing",
- "trade": "Mobile car detailing",
- "name": "Steam Art",
- "legalName": "Steam Art",
- "preview": true,
- "placeId": "ChIJ_wT5wzCPXIYR8F0MPcqnX4Y",
- "title": "Steam Art | Mobile car detailing in San Antonio, TX",
- "description": "Mobile detailing for your auto, motorcycle or aircraft in San Antonio, Boerne and New Braunfels. Wet and dry steam, no harsh chemicals, and we come to you. 5.0 on Google from 148 reviews.",
- "brand": "#1670ff",
- "brandHi": "#52c6ff",
- "accent": "#8fd0ff",
- "logo": null,
- "logoChip": false,
- "wordmark": {
-  "top": "Steam Art",
-  "bottom": "USA Detailing"
- },
- "phone": "(210) 708-8385",
- "email": "detailme@steamartusa.com",
- "heroImage": null,
- "heroAlt": "",
- "heroPosition": "60% 60%",
- "heroPositionPhone": "60% 50%",
- "rating": {
-  "score": "5.0",
-  "count": 148,
-  "url": "https://maps.google.com/?cid=9682642210919308784"
- },
- "kicker": "Mobile car detailing · San Antonio, TX",
- "headline": "Showroom shine.<br><em>Wherever you are.</em>",
- "intro": "Mobile detailing for your auto, motorcycle or aircraft in San Antonio, Boerne and New Braunfels. Wet and dry steam, no harsh chemicals, and we come to you.",
- "mobile": {
-  "title": "Your driveway is our shop.",
-  "intro": "We bring the detail to you, so your day keeps moving.",
-  "points": [
-   {
-    "name": "We come to you",
-    "text": "Serving San Antonio, Boerne and New Braunfels."
-   },
-   {
-    "name": "Chemical-free",
-    "text": "Wet and dry steam technology cleans without harsh chemicals."
-   },
-   {
-    "name": "Instant quote",
-    "text": "Pick your vehicle and package online and see your price right away."
-   },
-   {
-    "name": "Book on your time",
-    "text": "Schedule at your convenience, 24 hours out."
-   }
-  ]
- },
- "servicesTitle": "Inside, outside, and everything that shines.",
- "servicesIntro": "Prices start at the amounts shown and depend on vehicle size: small, medium or large.",
- "services": [
-  {
-   "name": "Wet / Dry Steam Detailing",
-   "text": "Steam cleaning for auto, motorcycle and aircraft, without harsh chemicals."
+  "kit": "detailing",
+  "trade": "Mobile car detailing",
+  "name": "Steam Art",
+  "legalName": "Steam Art",
+  "preview": true,
+  "placeId": "ChIJ_wT5wzCPXIYR8F0MPcqnX4Y",
+  "title": "Steam Art | Mobile car detailing in San Antonio, TX",
+  "description": "Mobile detailing for your auto, motorcycle or aircraft in San Antonio, Boerne and New Braunfels. Wet and dry steam, no harsh chemicals, and we come to you. 5.0 on Google from 148 reviews.",
+  "brand": "#1670ff",
+  "brandHi": "#52c6ff",
+  "accent": "#8fd0ff",
+  "logo": null,
+  "logoChip": false,
+  "wordmark": {
+    "top": "Steam Art",
+    "bottom": "USA Detailing"
   },
-  {
-   "name": "Paint Correction",
-   "text": "Restores the finish of your paint so it looks its best."
+  "phone": "(210) 708-8385",
+  "email": "detailme@steamartusa.com",
+  "heroImage": null,
+  "heroAlt": "",
+  "heroPosition": "60% 60%",
+  "heroPositionPhone": "60% 50%",
+  "rating": {
+    "score": "5.0",
+    "count": 148,
+    "url": "https://maps.google.com/?cid=9682642210919308784"
   },
-  {
-   "name": "Ceramic Coating",
-   "text": "Long-lasting paint protection, offered in 2, 6 and 10 year options."
+  "kicker": "Mobile car detailing · San Antonio, TX",
+  "headline": "Showroom shine.<br><em>Wherever you are.</em>",
+  "intro": "Mobile detailing for your auto, motorcycle or aircraft in San Antonio, Boerne and New Braunfels. Wet and dry steam, no harsh chemicals, and we come to you.",
+  "mobile": {
+    "title": "Your driveway is our shop.",
+    "intro": "We bring the detail to you, so your day keeps moving.",
+    "points": [
+      {
+        "name": "We come to you",
+        "text": "Serving San Antonio, Boerne and New Braunfels."
+      },
+      {
+        "name": "Chemical-free",
+        "text": "Wet and dry steam technology cleans without harsh chemicals."
+      },
+      {
+        "name": "Instant quote",
+        "text": "Pick your vehicle and package online and see your price right away."
+      },
+      {
+        "name": "Book on your time",
+        "text": "Schedule at your convenience, 24 hours out."
+      }
+    ]
   },
-  {
-   "name": "Paint Protection Film",
-   "text": "Protective film in gloss, matte, color, Color-Swift and pattern finishes."
+  "servicesTitle": "Inside, outside, and everything that shines.",
+  "servicesIntro": "Prices start at the amounts shown and depend on vehicle size: small, medium or large.",
+  "services": [
+    {
+      "name": "Wet / Dry Steam Detailing",
+      "text": "Steam cleaning for auto, motorcycle and aircraft, without harsh chemicals."
+    },
+    {
+      "name": "Paint Correction",
+      "text": "Restores the finish of your paint so it looks its best."
+    },
+    {
+      "name": "Ceramic Coating",
+      "text": "Long-lasting paint protection, offered in 2, 6 and 10 year options."
+    },
+    {
+      "name": "Paint Protection Film",
+      "text": "Protective film in gloss, matte, color, Color-Swift and pattern finishes."
+    }
+  ],
+  "also": [
+    {
+      "name": "Motorcycles"
+    },
+    {
+      "name": "Aircraft"
+    },
+    {
+      "name": "SUVs"
+    },
+    {
+      "name": "Pickup Trucks"
+    }
+  ],
+  "alsoTitle": "Not just cars:",
+  "why": [
+    {
+      "name": "Chemical-free steam",
+      "text": "Wet and dry steam technology is the core of how they detail."
+    },
+    {
+      "name": "Fast and simple",
+      "text": "Sign up, choose your vehicle, pick a package, get an instant quote and book."
+    },
+    {
+      "name": "Your service history",
+      "text": "An account keeps your bookings and service history in one place."
+    }
+  ],
+  "whyTitle": "The detail is in the name.",
+  "howTitle": "A clean vehicle in three steps.",
+  "steps": [
+    {
+      "name": "Tell us about your car",
+      "text": "Fill out the form with your vehicle, the services you want and where it is."
+    },
+    {
+      "name": "Get your quote",
+      "text": "We get in touch to confirm the appointment and send a detailed quote."
+    },
+    {
+      "name": "We pull up",
+      "text": "We detail your car at your home, workplace or apartment."
+    }
+  ],
+  "contactTitle": "Book your detail.",
+  "footerLine": "Mobile car detailing in San Antonio",
+  "reviews": [],
+  "hours": [],
+  "galleryTitle": "Fresh off the driveway.",
+  "gallery": [],
+  "areas": [
+    "San Antonio"
+  ],
+  "pitch": "photos",
+  "siteCheck": {
+    "reasons": [],
+    "improvements": [
+      "no tap-to-call link",
+      "no quote or booking form",
+      "no reviews on the site"
+    ]
   }
- ],
- "also": [
-  {
-   "name": "Motorcycles"
-  },
-  {
-   "name": "Aircraft"
-  },
-  {
-   "name": "SUVs"
-  },
-  {
-   "name": "Pickup Trucks"
-  }
- ],
- "alsoTitle": "Not just cars:",
- "why": [
-  {
-   "name": "Chemical-free steam",
-   "text": "Wet and dry steam technology is the core of how they detail."
-  },
-  {
-   "name": "Fast and simple",
-   "text": "Sign up, choose your vehicle, pick a package, get an instant quote and book."
-  },
-  {
-   "name": "Your service history",
-   "text": "An account keeps your bookings and service history in one place."
-  }
- ],
- "whyTitle": "The detail is in the name.",
- "howTitle": "A clean vehicle in three steps.",
- "steps": [
-  {
-   "name": "Tell us about your car",
-   "text": "Fill out the form with your vehicle, the services you want and where it is."
-  },
-  {
-   "name": "Get your quote",
-   "text": "We get in touch to confirm the appointment and send a detailed quote."
-  },
-  {
-   "name": "We pull up",
-   "text": "We detail your car at your home, workplace or apartment."
-  }
- ],
- "contactTitle": "Book your detail.",
- "footerLine": "Mobile car detailing in San Antonio",
- "reviews": [],
- "hours": [],
- "galleryTitle": "Fresh off the driveway.",
- "gallery": [],
- "areas": [
-  "San Antonio"
- ],
- "pitch": "photos"
 }

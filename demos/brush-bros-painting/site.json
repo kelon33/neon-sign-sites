@@ -1,124 +1,130 @@
 {
- "kit": "painting",
- "trade": "House painting",
- "name": "Brush Bros Painting",
- "legalName": "Brush Bros Painting",
- "preview": true,
- "placeId": "ChIJG6GswSVt_oYRTH7RWytagWc",
- "title": "Brush Bros Painting | House painting in Lubbock, TX",
- "description": "Mike, a third-generation painter, does the work himself on every job, inside and out. Locally owned in Lubbock, with free estimates. 4.8 on Google from 26 reviews.",
- "logo": null,
- "logoChip": false,
- "wordmark": {
-  "top": "Brush Bros",
-  "bottom": "Painting"
- },
- "phone": "(806) 715-5782",
- "email": "brushbros806@gmail.com",
- "heroImage": null,
- "heroAlt": "",
- "heroPosition": "60% 60%",
- "heroPositionPhone": "60% 50%",
- "rating": {
-  "score": "4.8",
-  "count": 26,
-  "url": "https://maps.google.com/?cid=7458341600172801612"
- },
- "kicker": "House painting · Lubbock, TX",
- "headline": "The painter you hire<br><em>is the painter who shows up.</em>",
- "intro": "Mike, a third-generation painter, does the work himself on every job, inside and out. Locally owned in Lubbock, with free estimates.",
- "badges": [
-  "Free estimates",
-  "Homes and businesses"
- ],
- "highlights": {
-  "title": "Why neighbors call Brush Bros.",
-  "intro": "Most of our work comes from folks who have seen a Brush Bros job on their street.",
-  "points": [
-   {
-    "name": "Owner on every job",
-    "text": "Mike paints it himself, start to finish. No subcontractors."
-   },
-   {
-    "name": "You reach Mike",
-    "text": "Call or text and the owner answers."
-   },
-   {
-    "name": "Careful prep",
-    "text": "We protect floors and furniture, patch, sand and caulk before the finish coats."
-   },
-   {
-    "name": "Walkthrough at the end",
-    "text": "We go through the work with you before we call it finished."
-   }
-  ]
- },
- "servicesTitle": "Inside and out.",
- "servicesIntro": "Homes and businesses across Lubbock and the South Plains. Every project quoted free.",
- "services": [
-  {
-   "name": "Interior painting",
-   "text": "Walls, ceilings and trim with clean lines and careful prep, leaving every room ready to live in."
+  "kit": "painting",
+  "trade": "House painting",
+  "name": "Brush Bros Painting",
+  "legalName": "Brush Bros Painting",
+  "preview": true,
+  "placeId": "ChIJG6GswSVt_oYRTH7RWytagWc",
+  "title": "Brush Bros Painting | House painting in Lubbock, TX",
+  "description": "Mike, a third-generation painter, does the work himself on every job, inside and out. Locally owned in Lubbock, with free estimates. 4.8 on Google from 26 reviews.",
+  "logo": null,
+  "logoChip": false,
+  "wordmark": {
+    "top": "Brush Bros",
+    "bottom": "Painting"
   },
-  {
-   "name": "Exterior painting",
-   "text": "Siding, brick, stucco and trim, washed, scraped, caulked and primed to stand up to West Texas sun and wind."
+  "phone": "(806) 715-5782",
+  "email": "brushbros806@gmail.com",
+  "heroImage": null,
+  "heroAlt": "",
+  "heroPosition": "60% 60%",
+  "heroPositionPhone": "60% 50%",
+  "rating": {
+    "score": "4.8",
+    "count": 26,
+    "url": "https://maps.google.com/?cid=7458341600172801612"
   },
-  {
-   "name": "Cabinet painting",
-   "text": "Doors and drawers are prepped, primed and sprayed for a durable, like-new kitchen."
+  "kicker": "House painting · Lubbock, TX",
+  "headline": "The painter you hire<br><em>is the painter who shows up.</em>",
+  "intro": "Mike, a third-generation painter, does the work himself on every job, inside and out. Locally owned in Lubbock, with free estimates.",
+  "badges": [
+    "Free estimates",
+    "Homes and businesses"
+  ],
+  "highlights": {
+    "title": "Why neighbors call Brush Bros.",
+    "intro": "Most of our work comes from folks who have seen a Brush Bros job on their street.",
+    "points": [
+      {
+        "name": "Owner on every job",
+        "text": "Mike paints it himself, start to finish. No subcontractors."
+      },
+      {
+        "name": "You reach Mike",
+        "text": "Call or text and the owner answers."
+      },
+      {
+        "name": "Careful prep",
+        "text": "We protect floors and furniture, patch, sand and caulk before the finish coats."
+      },
+      {
+        "name": "Walkthrough at the end",
+        "text": "We go through the work with you before we call it finished."
+      }
+    ]
   },
-  {
-   "name": "Flake flooring",
-   "text": "Decorative flake coatings for garages, shops and patios that are tough, slip-resistant and easy to clean."
-  },
-  {
-   "name": "Commercial painting",
-   "text": "Offices, retail and commercial buildings, inside and out, with lump-sum bids and clear line items."
+  "servicesTitle": "Inside and out.",
+  "servicesIntro": "Homes and businesses across Lubbock and the South Plains. Every project quoted free.",
+  "services": [
+    {
+      "name": "Interior painting",
+      "text": "Walls, ceilings and trim with clean lines and careful prep, leaving every room ready to live in."
+    },
+    {
+      "name": "Exterior painting",
+      "text": "Siding, brick, stucco and trim, washed, scraped, caulked and primed to stand up to West Texas sun and wind."
+    },
+    {
+      "name": "Cabinet painting",
+      "text": "Doors and drawers are prepped, primed and sprayed for a durable, like-new kitchen."
+    },
+    {
+      "name": "Flake flooring",
+      "text": "Decorative flake coatings for garages, shops and patios that are tough, slip-resistant and easy to clean."
+    },
+    {
+      "name": "Commercial painting",
+      "text": "Offices, retail and commercial buildings, inside and out, with lump-sum bids and clear line items."
+    }
+  ],
+  "also": [],
+  "alsoTitle": "We also do:",
+  "promise": null,
+  "why": [
+    {
+      "name": "Owner does the work",
+      "text": "The big franchises sell the job, then send a subcontractor. Mike paints it himself."
+    },
+    {
+      "name": "Three generations of craft",
+      "text": "Over 50 years of combined family experience behind every brush stroke."
+    },
+    {
+      "name": "Insured",
+      "text": "Your home and property are protected while we work. Ask us about coverage when you call."
+    }
+  ],
+  "whyTitle": "Why homeowners call us.",
+  "howTitle": "A fresh coat in three steps.",
+  "steps": [
+    {
+      "name": "Request your free quote",
+      "text": "Fill out the form or call (806) 715-5782. Tell us the rooms, colors and timing."
+    },
+    {
+      "name": "Mike walks it with you",
+      "text": "The owner looks at the work in person and gives you a straight, written price. No pressure."
+    },
+    {
+      "name": "We paint, owner on site",
+      "text": "Mike is on the job every day until it's done right, then walks it through with you."
+    }
+  ],
+  "contactTitle": "Ready for a fresh coat?",
+  "footerLine": "Owner-operated painting in Lubbock, TX",
+  "reviews": [],
+  "hours": [],
+  "galleryTitle": "Homes we’ve painted.",
+  "notePlaceholder": "Inside or outside, how many rooms, a date you have in mind…",
+  "gallery": [],
+  "areas": [
+    "Lubbock"
+  ],
+  "pitch": "photos",
+  "siteCheck": {
+    "reasons": [
+      "no domain of its own"
+    ],
+    "improvements": []
   }
- ],
- "also": [],
- "alsoTitle": "We also do:",
- "promise": null,
- "why": [
-  {
-   "name": "Owner does the work",
-   "text": "The big franchises sell the job, then send a subcontractor. Mike paints it himself."
-  },
-  {
-   "name": "Three generations of craft",
-   "text": "Over 50 years of combined family experience behind every brush stroke."
-  },
-  {
-   "name": "Insured",
-   "text": "Your home and property are protected while we work. Ask us about coverage when you call."
-  }
- ],
- "whyTitle": "Why homeowners call us.",
- "howTitle": "A fresh coat in three steps.",
- "steps": [
-  {
-   "name": "Request your free quote",
-   "text": "Fill out the form or call (806) 715-5782. Tell us the rooms, colors and timing."
-  },
-  {
-   "name": "Mike walks it with you",
-   "text": "The owner looks at the work in person and gives you a straight, written price. No pressure."
-  },
-  {
-   "name": "We paint, owner on site",
-   "text": "Mike is on the job every day until it's done right, then walks it through with you."
-  }
- ],
- "contactTitle": "Ready for a fresh coat?",
- "footerLine": "Owner-operated painting in Lubbock, TX",
- "reviews": [],
- "hours": [],
- "galleryTitle": "Homes we’ve painted.",
- "notePlaceholder": "Inside or outside, how many rooms, a date you have in mind…",
- "gallery": [],
- "areas": [
-  "Lubbock"
- ],
- "pitch": "photos"
 }

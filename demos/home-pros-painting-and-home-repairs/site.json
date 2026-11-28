@@ -1,124 +1,130 @@
 {
- "kit": "painting",
- "trade": "House painting",
- "name": "Home Pros Painting and Home Repairs",
- "legalName": "Home Pros Painting and Home Repairs",
- "preview": true,
- "placeId": "ChIJeS4-i4NhXIYRAGxUVs4pReg",
- "title": "Home Pros Painting and Home Repairs | House painting in San Antonio, TX",
- "description": "Exterior and interior house painting in San Antonio, backed by a 5-year transferable exterior warranty. Local, woman-owned and family-run. 5.0 on Google from 79 reviews.",
- "logo": "logo.png",
- "logoChip": true,
- "wordmark": {
-  "top": "Home Pros",
-  "bottom": "Painting & Repairs"
- },
- "phone": "(210) 910-6662",
- "email": "info@homeprospaintsa.com",
- "heroImage": "img/photo-1.jpg",
- "heroAlt": "Gray two-story house with fresh paint and a red front door",
- "heroPosition": "60% 60%",
- "heroPositionPhone": "60% 50%",
- "rating": {
-  "score": "5.0",
-  "count": 79,
-  "url": "https://maps.google.com/?cid=16736829556380691456"
- },
- "kicker": "House painting · San Antonio",
- "headline": "The painter you hire<br><em>is the painter who shows up.</em>",
- "intro": "Exterior and interior house painting in San Antonio, backed by a 5-year transferable exterior warranty. Local, woman-owned and family-run.",
- "badges": [
-  "Licensed & insured",
-  "Free estimates",
-  "Homes and businesses"
- ],
- "highlights": null,
- "servicesTitle": "Inside and out.",
- "servicesIntro": "Homes and businesses across San Antonio. Every project quoted free.",
- "services": [
-  {
-   "name": "Exterior Painting",
-   "text": "Thorough prep, moisture protection and premium paint, with a 5-year transferable warranty."
+  "kit": "painting",
+  "trade": "House painting",
+  "name": "Home Pros Painting and Home Repairs",
+  "legalName": "Home Pros Painting and Home Repairs",
+  "preview": true,
+  "placeId": "ChIJeS4-i4NhXIYRAGxUVs4pReg",
+  "title": "Home Pros Painting and Home Repairs | House painting in San Antonio, TX",
+  "description": "Exterior and interior house painting in San Antonio, backed by a 5-year transferable exterior warranty. Local, woman-owned and family-run. 5.0 on Google from 79 reviews.",
+  "logo": "logo.png",
+  "logoChip": true,
+  "wordmark": {
+    "top": "Home Pros",
+    "bottom": "Painting & Repairs"
   },
-  {
-   "name": "Interior House Painting",
-   "text": "Walls, ceilings, trim, doors, staircases and built-ins, with low-odor paints, drop cloths and a 2-year transferable warranty."
+  "phone": "(210) 910-6662",
+  "email": "info@homeprospaintsa.com",
+  "heroImage": "img/photo-1.jpg",
+  "heroAlt": "Gray two-story house with fresh paint and a red front door",
+  "heroPosition": "60% 60%",
+  "heroPositionPhone": "60% 50%",
+  "rating": {
+    "score": "5.0",
+    "count": 79,
+    "url": "https://maps.google.com/?cid=16736829556380691456"
   },
-  {
-   "name": "Kitchen Cabinet Painting",
-   "text": "Doors, drawers and hardware come off, and the cabinets are usually sprayed for a smooth, like-new finish."
-  },
-  {
-   "name": "Wood Rot Repair",
-   "text": "Damaged trim, siding and window areas are repaired before painting, backed by a 2-year transferable warranty."
-  },
-  {
-   "name": "Popcorn Ceiling Removal",
-   "text": "We remove the texture down to the drywall, prime, apply knockdown texture and paint."
-  },
-  {
-   "name": "Deck and Fence Staining",
-   "text": "Transparent, semi-transparent and solid stains in over 30 colors, with a free 1-year courtesy visit."
+  "kicker": "House painting · San Antonio",
+  "headline": "The painter you hire<br><em>is the painter who shows up.</em>",
+  "intro": "Exterior and interior house painting in San Antonio, backed by a 5-year transferable exterior warranty. Local, woman-owned and family-run.",
+  "badges": [
+    "Licensed & insured",
+    "Free estimates",
+    "Homes and businesses"
+  ],
+  "highlights": null,
+  "servicesTitle": "Inside and out.",
+  "servicesIntro": "Homes and businesses across San Antonio. Every project quoted free.",
+  "services": [
+    {
+      "name": "Exterior Painting",
+      "text": "Thorough prep, moisture protection and premium paint, with a 5-year transferable warranty."
+    },
+    {
+      "name": "Interior House Painting",
+      "text": "Walls, ceilings, trim, doors, staircases and built-ins, with low-odor paints, drop cloths and a 2-year transferable warranty."
+    },
+    {
+      "name": "Kitchen Cabinet Painting",
+      "text": "Doors, drawers and hardware come off, and the cabinets are usually sprayed for a smooth, like-new finish."
+    },
+    {
+      "name": "Wood Rot Repair",
+      "text": "Damaged trim, siding and window areas are repaired before painting, backed by a 2-year transferable warranty."
+    },
+    {
+      "name": "Popcorn Ceiling Removal",
+      "text": "We remove the texture down to the drywall, prime, apply knockdown texture and paint."
+    },
+    {
+      "name": "Deck and Fence Staining",
+      "text": "Transparent, semi-transparent and solid stains in over 30 colors, with a free 1-year courtesy visit."
+    }
+  ],
+  "also": [
+    {
+      "name": "Wallpaper removal"
+    },
+    {
+      "name": "Fence installation and repair"
+    },
+    {
+      "name": "Deck repair and restoration"
+    },
+    {
+      "name": "Knockdown texture"
+    }
+  ],
+  "alsoTitle": "We also do:",
+  "promise": null,
+  "why": [
+    {
+      "name": "Local, not franchise",
+      "text": "Woman-owned and family-run, with no corporate office dictating the work."
+    },
+    {
+      "name": "Warranties that last",
+      "text": "5 years on exterior painting and 2 years on interior, all transferable."
+    },
+    {
+      "name": "No deposit, fixed quotes",
+      "text": "Estimators measure and photograph the job, so you get a detailed fixed price. You pay when it is done."
+    }
+  ],
+  "whyTitle": "Why homeowners call us.",
+  "howTitle": "A fresh coat in three steps.",
+  "steps": [
+    {
+      "name": "Call for a free estimate",
+      "text": "We look at the work, ask questions and give you a flat price."
+    },
+    {
+      "name": "We prep and paint",
+      "text": "We mask, scrape, caulk and prime, then paint. We buy all the supplies."
+    },
+    {
+      "name": "Pay when it is done",
+      "text": "On most jobs, you pay nothing until everything is completely finished."
+    }
+  ],
+  "contactTitle": "Ready for a fresh coat?",
+  "footerLine": "House painting in San Antonio",
+  "reviews": [],
+  "hours": [
+    "Mon–Fri: 9:00 am–5:30 pm",
+    "Sat–Sun: Closed"
+  ],
+  "galleryTitle": "Homes we’ve painted.",
+  "notePlaceholder": "Inside or outside, how many rooms, a date you have in mind…",
+  "gallery": [],
+  "areas": [
+    "San Antonio"
+  ],
+  "pitch": "photos",
+  "siteCheck": {
+    "reasons": [
+      "copyright 2022"
+    ],
+    "improvements": []
   }
- ],
- "also": [
-  {
-   "name": "Wallpaper removal"
-  },
-  {
-   "name": "Fence installation and repair"
-  },
-  {
-   "name": "Deck repair and restoration"
-  },
-  {
-   "name": "Knockdown texture"
-  }
- ],
- "alsoTitle": "We also do:",
- "promise": null,
- "why": [
-  {
-   "name": "Local, not franchise",
-   "text": "Woman-owned and family-run, with no corporate office dictating the work."
-  },
-  {
-   "name": "Warranties that last",
-   "text": "5 years on exterior painting and 2 years on interior, all transferable."
-  },
-  {
-   "name": "No deposit, fixed quotes",
-   "text": "Estimators measure and photograph the job, so you get a detailed fixed price. You pay when it is done."
-  }
- ],
- "whyTitle": "Why homeowners call us.",
- "howTitle": "A fresh coat in three steps.",
- "steps": [
-  {
-   "name": "Call for a free estimate",
-   "text": "We look at the work, ask questions and give you a flat price."
-  },
-  {
-   "name": "We prep and paint",
-   "text": "We mask, scrape, caulk and prime, then paint. We buy all the supplies."
-  },
-  {
-   "name": "Pay when it is done",
-   "text": "On most jobs, you pay nothing until everything is completely finished."
-  }
- ],
- "contactTitle": "Ready for a fresh coat?",
- "footerLine": "House painting in San Antonio",
- "reviews": [],
- "hours": [
-  "Mon–Fri: 9:00 am–5:30 pm",
-  "Sat–Sun: Closed"
- ],
- "galleryTitle": "Homes we’ve painted.",
- "notePlaceholder": "Inside or outside, how many rooms, a date you have in mind…",
- "gallery": [],
- "areas": [
-  "San Antonio"
- ],
- "pitch": "photos"
 }

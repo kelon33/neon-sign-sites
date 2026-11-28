@@ -113,5 +113,11 @@
   "areas": [
     "Lorena"
   ],
-  "pitch": "photos"
+  "pitch": "photos",
+  "siteCheck": {
+    "reasons": [],
+    "improvements": [
+      "no tap-to-call link"
+    ]
+  }
 }

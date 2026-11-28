@@ -1,115 +1,122 @@
 {
- "kit": "painting",
- "trade": "House painting",
- "name": "Deco Plus Painting",
- "legalName": "Deco Plus Painting",
- "preview": true,
- "placeId": "ChIJAQAAAHC_yIARwurVZj5pRiQ",
- "title": "Deco Plus Painting | House painting in Las Vegas, NV",
- "description": "Residential repainting, cabinet painting and concrete coatings across the Las Vegas Valley. Owner Julian handles every estimate himself. 5.0 on Google from 29 reviews.",
- "logo": "logo.png",
- "logoChip": true,
- "wordmark": {
-  "top": "Deco Plus",
-  "bottom": "Painting"
- },
- "phone": "(702) 810-6537",
- "email": "julian@decopluslv.com",
- "heroImage": "img/photo-1.jpg",
- "heroAlt": "Grand home entryway with curved staircase and wrought iron railing",
- "heroPosition": "60% 60%",
- "heroPositionPhone": "60% 50%",
- "rating": {
-  "score": "5.0",
-  "count": 29,
-  "url": "https://maps.google.com/?cid=2613892350469335746"
- },
- "kicker": "House painting · Las Vegas",
- "headline": "We don't sell paint.<br><em>We sell transformation.</em>",
- "intro": "Residential repainting, cabinet painting and concrete coatings across the Las Vegas Valley. Owner Julian handles every estimate himself.",
- "badges": [
-  "Licensed & insured",
-  "Family owned",
-  "Homes and businesses"
- ],
- "highlights": null,
- "servicesTitle": "Inside and out.",
- "servicesIntro": "One room or the whole house. Every estimate is free and flat.",
- "services": [
-  {
-   "name": "Painting",
-   "text": "Interior and exterior painting for homes and businesses, with a focus on residential repainting."
+  "kit": "painting",
+  "trade": "House painting",
+  "name": "Deco Plus Painting",
+  "legalName": "Deco Plus Painting",
+  "preview": true,
+  "placeId": "ChIJAQAAAHC_yIARwurVZj5pRiQ",
+  "title": "Deco Plus Painting | House painting in Las Vegas, NV",
+  "description": "Residential repainting, cabinet painting and concrete coatings across the Las Vegas Valley. Owner Julian handles every estimate himself. 5.0 on Google from 29 reviews.",
+  "logo": "logo.png",
+  "logoChip": true,
+  "wordmark": {
+    "top": "Deco Plus",
+    "bottom": "Painting"
   },
-  {
-   "name": "Cabinet Painting",
-   "text": "Kitchens, bathrooms and built-ins finished in beautiful, durable coatings."
+  "phone": "(702) 810-6537",
+  "email": "julian@decopluslv.com",
+  "heroImage": "img/photo-1.jpg",
+  "heroAlt": "Grand home entryway with curved staircase and wrought iron railing",
+  "heroPosition": "60% 60%",
+  "heroPositionPhone": "60% 50%",
+  "rating": {
+    "score": "5.0",
+    "count": 29,
+    "url": "https://maps.google.com/?cid=2613892350469335746"
   },
-  {
-   "name": "Concrete & Stone Coating",
-   "text": "Floor coatings for driveways, pool decks, walkways and backyard recreation areas."
+  "kicker": "House painting · Las Vegas",
+  "headline": "We don't sell paint.<br><em>We sell transformation.</em>",
+  "intro": "Residential repainting, cabinet painting and concrete coatings across the Las Vegas Valley. Owner Julian handles every estimate himself.",
+  "badges": [
+    "Licensed & insured",
+    "Family owned",
+    "Homes and businesses"
+  ],
+  "highlights": null,
+  "servicesTitle": "Inside and out.",
+  "servicesIntro": "One room or the whole house. Every estimate is free and flat.",
+  "services": [
+    {
+      "name": "Painting",
+      "text": "Interior and exterior painting for homes and businesses, with a focus on residential repainting."
+    },
+    {
+      "name": "Cabinet Painting",
+      "text": "Kitchens, bathrooms and built-ins finished in beautiful, durable coatings."
+    },
+    {
+      "name": "Concrete & Stone Coating",
+      "text": "Floor coatings for driveways, pool decks, walkways and backyard recreation areas."
+    }
+  ],
+  "also": [],
+  "alsoTitle": "We also do:",
+  "promise": null,
+  "why": [
+    {
+      "name": "24+ years in Las Vegas",
+      "text": "Julian started in 2002 with a vehicle, some tools and a spray rig. The company has transformed more than 2,200 homes and businesses since."
+    },
+    {
+      "name": "You deal with the owner",
+      "text": "Julian does the estimate and talks with every customer. You get a detailed written estimate by email within 24 hours, with no obligation."
+    },
+    {
+      "name": "Licensed, bonded and insured",
+      "text": "A family-owned business with a Nevada contractor license, and a top-rated name on Google, Yelp and Angi."
+    }
+  ],
+  "whyTitle": "Why Deco Plus Painting.",
+  "howTitle": "From estimate to final walkthrough.",
+  "steps": [
+    {
+      "name": "Free estimate",
+      "text": "Tell us about the job. We look it over and give you a quote."
+    },
+    {
+      "name": "We do the work",
+      "text": "The crew arrives on schedule, and you get daily updates your way."
+    },
+    {
+      "name": "Final look",
+      "text": "We finish every detail so you are satisfied with the result."
+    }
+  ],
+  "contactTitle": "Ready for a fresh coat?",
+  "footerLine": "House painting in Las Vegas",
+  "reviews": [],
+  "hours": [],
+  "galleryTitle": "Homes we’ve painted.",
+  "notePlaceholder": "Inside or outside, how many rooms, a date you have in mind…",
+  "gallery": [
+    {
+      "src": "img/photo-3.jpg",
+      "alt": "White painted kitchen cabinets with granite counters",
+      "size": "big"
+    },
+    {
+      "src": "img/photo-5.jpg",
+      "alt": "Interior hallway covered and prepped for painting"
+    },
+    {
+      "src": "img/photo-4.jpg",
+      "alt": "Empty pool room with ladders during a coating project"
+    },
+    {
+      "src": "img/photo-2.jpg",
+      "alt": "Coated concrete driveway beside a stucco home",
+      "size": "tall"
+    }
+  ],
+  "areas": [
+    "Las Vegas"
+  ],
+  "pitch": "site",
+  "siteCheck": {
+    "reasons": [],
+    "improvements": [
+      "no quote or booking form",
+      "no reviews on the site"
+    ]
   }
- ],
- "also": [],
- "alsoTitle": "We also do:",
- "promise": null,
- "why": [
-  {
-   "name": "24+ years in Las Vegas",
-   "text": "Julian started in 2002 with a vehicle, some tools and a spray rig. The company has transformed more than 2,200 homes and businesses since."
-  },
-  {
-   "name": "You deal with the owner",
-   "text": "Julian does the estimate and talks with every customer. You get a detailed written estimate by email within 24 hours, with no obligation."
-  },
-  {
-   "name": "Licensed, bonded and insured",
-   "text": "A family-owned business with a Nevada contractor license, and a top-rated name on Google, Yelp and Angi."
-  }
- ],
- "whyTitle": "Why Deco Plus Painting.",
- "howTitle": "From estimate to final walkthrough.",
- "steps": [
-  {
-   "name": "Free estimate",
-   "text": "Tell us about the job. We look it over and give you a quote."
-  },
-  {
-   "name": "We do the work",
-   "text": "The crew arrives on schedule, and you get daily updates your way."
-  },
-  {
-   "name": "Final look",
-   "text": "We finish every detail so you are satisfied with the result."
-  }
- ],
- "contactTitle": "Ready for a fresh coat?",
- "footerLine": "House painting in Las Vegas",
- "reviews": [],
- "hours": [],
- "galleryTitle": "Homes we’ve painted.",
- "notePlaceholder": "Inside or outside, how many rooms, a date you have in mind…",
- "gallery": [
-  {
-   "src": "img/photo-3.jpg",
-   "alt": "White painted kitchen cabinets with granite counters",
-   "size": "big"
-  },
-  {
-   "src": "img/photo-5.jpg",
-   "alt": "Interior hallway covered and prepped for painting"
-  },
-  {
-   "src": "img/photo-4.jpg",
-   "alt": "Empty pool room with ladders during a coating project"
-  },
-  {
-   "src": "img/photo-2.jpg",
-   "alt": "Coated concrete driveway beside a stucco home",
-   "size": "tall"
-  }
- ],
- "areas": [
-  "Las Vegas"
- ],
- "pitch": "site"
 }

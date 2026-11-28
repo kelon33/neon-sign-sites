@@ -1,145 +1,152 @@
 {
- "kit": "detailing",
- "trade": "Mobile car detailing",
- "name": "the Detail Code",
- "legalName": "the Detail Code",
- "preview": true,
- "placeId": "ChIJ9ck27g5nXIYRm29EbKzply0",
- "title": "the Detail Code | Mobile car detailing in San Antonio, TX",
- "description": "Auto detailing and vehicle protection in San Antonio, at your home or workplace for eligible services, or at our shop. Every job starts with a written estimate. 5.0 on Google from 221 reviews.",
- "brand": "#1670ff",
- "brandHi": "#52c6ff",
- "accent": "#8fd0ff",
- "logo": "logo.png",
- "logoChip": true,
- "wordmark": {
-  "top": "The",
-  "bottom": "Detail Code"
- },
- "phone": "(210) 237-8448",
- "email": "amber@thedetailcode.com",
- "heroImage": "img/photo-1.jpg",
- "heroAlt": "Black wagon with polished wheels parked in a clean garage",
- "heroPosition": "60% 60%",
- "heroPositionPhone": "60% 50%",
- "rating": {
-  "score": "5.0",
-  "count": 221,
-  "url": "https://maps.google.com/?cid=3285351379950137243"
- },
- "kicker": "Mobile car detailing · San Antonio, TX",
- "headline": "Showroom shine.<br><em>Right in your driveway.</em>",
- "intro": "Auto detailing and vehicle protection in San Antonio, at your home or workplace for eligible services, or at our shop. Every job starts with a written estimate.",
- "mobile": {
-  "title": "Your driveway is our shop.",
-  "intro": "Book online or call. We show up with everything we need.",
-  "points": [
-   {
-    "name": "At your door",
-    "text": "For eligible services, we come to your home or workplace."
-   },
-   {
-    "name": "Scope confirmed first",
-    "text": "We review your vehicle, its condition and the location before booking."
-   },
-   {
-    "name": "Written estimate",
-    "text": "See the work, preparation, location and terms before you commit."
-   },
-   {
-    "name": "Easy to book",
-    "text": "Call 210-237-8448 or request an estimate online."
-   }
-  ]
- },
- "servicesTitle": "Three details. One clear price each.",
- "servicesIntro": "Start with an interior detail. Add what your car needs.",
- "services": [
-  {
-   "name": "Interior Detail",
-   "text": "Deep cleaning for carpets, seats and the cabin surfaces you use most.",
-   "price": "Starting at $160"
+  "kit": "detailing",
+  "trade": "Mobile car detailing",
+  "name": "the Detail Code",
+  "legalName": "the Detail Code",
+  "preview": true,
+  "placeId": "ChIJ9ck27g5nXIYRm29EbKzply0",
+  "title": "the Detail Code | Mobile car detailing in San Antonio, TX",
+  "description": "Auto detailing and vehicle protection in San Antonio, at your home or workplace for eligible services, or at our shop. Every job starts with a written estimate. 5.0 on Google from 221 reviews.",
+  "brand": "#1670ff",
+  "brandHi": "#52c6ff",
+  "accent": "#8fd0ff",
+  "logo": "logo.png",
+  "logoChip": true,
+  "wordmark": {
+    "top": "The",
+    "bottom": "Detail Code"
   },
-  {
-   "name": "Commence & Cleanse",
-   "text": "A complete interior and exterior detail finished with ceramic spray wax.",
-   "price": "Starting at $220"
+  "phone": "(210) 237-8448",
+  "email": "amber@thedetailcode.com",
+  "heroImage": "img/photo-1.jpg",
+  "heroAlt": "Black wagon with polished wheels parked in a clean garage",
+  "heroPosition": "60% 60%",
+  "heroPositionPhone": "60% 50%",
+  "rating": {
+    "score": "5.0",
+    "count": 221,
+    "url": "https://maps.google.com/?cid=3285351379950137243"
   },
-  {
-   "name": "Express Optimize",
-   "text": "Exterior decontamination, clay bar treatment and machine-applied wax sealant.",
-   "price": "Starting at $220"
+  "kicker": "Mobile car detailing · San Antonio, TX",
+  "headline": "Showroom shine.<br><em>Right in your driveway.</em>",
+  "intro": "Auto detailing and vehicle protection in San Antonio, at your home or workplace for eligible services, or at our shop. Every job starts with a written estimate.",
+  "mobile": {
+    "title": "Your driveway is our shop.",
+    "intro": "Book online or call. We show up with everything we need.",
+    "points": [
+      {
+        "name": "At your door",
+        "text": "For eligible services, we come to your home or workplace."
+      },
+      {
+        "name": "Scope confirmed first",
+        "text": "We review your vehicle, its condition and the location before booking."
+      },
+      {
+        "name": "Written estimate",
+        "text": "See the work, preparation, location and terms before you commit."
+      },
+      {
+        "name": "Easy to book",
+        "text": "Call 210-237-8448 or request an estimate online."
+      }
+    ]
   },
-  {
-   "name": "Ultimate Detail",
-   "text": "A full interior and exterior detail with clay bar treatment and paint correction.",
-   "price": "Starting at $360"
-  },
-  {
-   "name": "Ceramic Coating",
-   "text": "Gloss and surface protection for your paint."
-  },
-  {
-   "name": "Fleet Services",
-   "text": "Detailing for multiple vehicles, one-time or recurring."
+  "servicesTitle": "Three details. One clear price each.",
+  "servicesIntro": "Start with an interior detail. Add what your car needs.",
+  "services": [
+    {
+      "name": "Interior Detail",
+      "text": "Deep cleaning for carpets, seats and the cabin surfaces you use most.",
+      "price": "Starting at $160"
+    },
+    {
+      "name": "Commence & Cleanse",
+      "text": "A complete interior and exterior detail finished with ceramic spray wax.",
+      "price": "Starting at $220"
+    },
+    {
+      "name": "Express Optimize",
+      "text": "Exterior decontamination, clay bar treatment and machine-applied wax sealant.",
+      "price": "Starting at $220"
+    },
+    {
+      "name": "Ultimate Detail",
+      "text": "A full interior and exterior detail with clay bar treatment and paint correction.",
+      "price": "Starting at $360"
+    },
+    {
+      "name": "Ceramic Coating",
+      "text": "Gloss and surface protection for your paint."
+    },
+    {
+      "name": "Fleet Services",
+      "text": "Detailing for multiple vehicles, one-time or recurring."
+    }
+  ],
+  "also": [
+    {
+      "name": "Window tint"
+    },
+    {
+      "name": "Paint protection film"
+    },
+    {
+      "name": "Vinyl wraps"
+    },
+    {
+      "name": "Business fleets"
+    }
+  ],
+  "alsoTitle": "Not just cars:",
+  "why": [
+    {
+      "name": "Mobile and in-shop",
+      "text": "Choose the option that fits the service and your vehicle."
+    },
+    {
+      "name": "Clear process",
+      "text": "Ceramic coating, PPF, tint and wraps are each explained before you book."
+    },
+    {
+      "name": "Vehicle-specific estimates",
+      "text": "Scope and care guidance matched to your vehicle."
+    }
+  ],
+  "whyTitle": "The detail is in the name.",
+  "howTitle": "A clean vehicle in three steps.",
+  "steps": [
+    {
+      "name": "Tell us about your car",
+      "text": "Fill out the form with your vehicle, the services you want and where it is."
+    },
+    {
+      "name": "Get your quote",
+      "text": "We get in touch to confirm the appointment and send a detailed quote."
+    },
+    {
+      "name": "We pull up",
+      "text": "We detail your car at your home, workplace or apartment."
+    }
+  ],
+  "contactTitle": "Book your consultation.",
+  "footerLine": "Mobile car detailing in San Antonio",
+  "reviews": [],
+  "hours": [
+    "Mon–Sat 9am–5pm",
+    "Sunday closed"
+  ],
+  "galleryTitle": "Fresh off the driveway.",
+  "gallery": [],
+  "areas": [
+    "San Antonio"
+  ],
+  "pitch": "photos",
+  "siteCheck": {
+    "reasons": [],
+    "improvements": [
+      "no tap-to-call link",
+      "only 1 photo"
+    ]
   }
- ],
- "also": [
-  {
-   "name": "Window tint"
-  },
-  {
-   "name": "Paint protection film"
-  },
-  {
-   "name": "Vinyl wraps"
-  },
-  {
-   "name": "Business fleets"
-  }
- ],
- "alsoTitle": "Not just cars:",
- "why": [
-  {
-   "name": "Mobile and in-shop",
-   "text": "Choose the option that fits the service and your vehicle."
-  },
-  {
-   "name": "Clear process",
-   "text": "Ceramic coating, PPF, tint and wraps are each explained before you book."
-  },
-  {
-   "name": "Vehicle-specific estimates",
-   "text": "Scope and care guidance matched to your vehicle."
-  }
- ],
- "whyTitle": "The detail is in the name.",
- "howTitle": "A clean vehicle in three steps.",
- "steps": [
-  {
-   "name": "Tell us about your car",
-   "text": "Fill out the form with your vehicle, the services you want and where it is."
-  },
-  {
-   "name": "Get your quote",
-   "text": "We get in touch to confirm the appointment and send a detailed quote."
-  },
-  {
-   "name": "We pull up",
-   "text": "We detail your car at your home, workplace or apartment."
-  }
- ],
- "contactTitle": "Book your consultation.",
- "footerLine": "Mobile car detailing in San Antonio",
- "reviews": [],
- "hours": [
-  "Mon–Sat 9am–5pm",
-  "Sunday closed"
- ],
- "galleryTitle": "Fresh off the driveway.",
- "gallery": [],
- "areas": [
-  "San Antonio"
- ],
- "pitch": "photos"
 }

@@ -1,163 +1,169 @@
 {
- "kit": "detailing",
- "name": "Archer's Mobile Detailing",
- "legalName": "Archer's Mobile Detailing",
- "preview": true,
- "placeId": "ChIJtSya7vhG3C4RbfHzGOvRqDM",
- "title": "Archer's Mobile Detailing | Mobile car detailing in Austin, TX",
- "description": "Professional detailing at your home, office or apartment. No waiting in line, no drop-off: just a car that looks new again. 4.9 on Google from 304 reviews.",
- "brand": "#1670ff",
- "brandHi": "#52c6ff",
- "accent": "#8fd0ff",
- "logo": null,
- "logoChip": false,
- "wordmark": {
-  "top": "Archer's",
-  "bottom": "Mobile Detailing"
- },
- "phone": "(512) 641-9185",
- "email": "info@archersdetailing.com",
- "heroImage": "img/photo-12.jpg",
- "heroAlt": "Blue Corvette parked in a driveway after detailing",
- "heroPosition": "60% 60%",
- "heroPositionPhone": "60% 50%",
- "rating": {
-  "score": "4.9",
-  "count": 304,
-  "url": "https://maps.google.com/?cid=3722455899687874925"
- },
- "kicker": "Mobile car detailing · Austin, TX",
- "headline": "Showroom shine.<br><em>Right in your driveway.</em>",
- "intro": "Professional detailing at your home, office or apartment. No waiting in line, no drop-off: just a car that looks new again.",
- "mobile": {
-  "title": "Your driveway is our shop.",
-  "intro": "We bring the detail to you, so your day keeps moving.",
-  "points": [
-   {
-    "name": "At your door",
-    "text": "Home, office or apartment, across Austin and nearby cities."
-   },
-   {
-    "name": "No time lost",
-    "text": "Skip the shop and the car wash line. Just book, and we handle the rest."
-   },
-   {
-    "name": "Inside and out",
-    "text": "Every nook and cranny, from carpets to door jambs."
-   },
-   {
-    "name": "Easy to book",
-    "text": "Book online or call. You get updates about your appointment."
-   }
-  ]
- },
- "servicesTitle": "Inside, outside, and everything that shines.",
- "servicesIntro": "Pick what your car needs, from a deep interior clean to lasting paint protection.",
- "services": [
-  {
-   "name": "Interior Detail",
-   "text": "Detailed vacuum, wipe-down, leather conditioning and streak-free glass for a fresh cabin.",
-   "price": "From $217.99"
+  "kit": "detailing",
+  "name": "Archer's Mobile Detailing",
+  "legalName": "Archer's Mobile Detailing",
+  "preview": true,
+  "placeId": "ChIJtSya7vhG3C4RbfHzGOvRqDM",
+  "title": "Archer's Mobile Detailing | Mobile car detailing in Austin, TX",
+  "description": "Professional detailing at your home, office or apartment. No waiting in line, no drop-off: just a car that looks new again. 4.9 on Google from 304 reviews.",
+  "brand": "#1670ff",
+  "brandHi": "#52c6ff",
+  "accent": "#8fd0ff",
+  "logo": null,
+  "logoChip": false,
+  "wordmark": {
+    "top": "Archer's",
+    "bottom": "Mobile Detailing"
   },
-  {
-   "name": "Full Detail",
-   "text": "Our full interior and exterior detail, with hand wash, foam bath and a 3 month paint sealant.",
-   "price": "From $304.99"
+  "phone": "(512) 641-9185",
+  "email": "info@archersdetailing.com",
+  "heroImage": "img/photo-12.jpg",
+  "heroAlt": "Blue Corvette parked in a driveway after detailing",
+  "heroPosition": "60% 60%",
+  "heroPositionPhone": "60% 50%",
+  "rating": {
+    "score": "4.9",
+    "count": 304,
+    "url": "https://maps.google.com/?cid=3722455899687874925"
   },
-  {
-   "name": "Exterior Detail",
-   "text": "Hand wash, clay bar and a 6 month paint sealant for a silky smooth finish.",
-   "price": "From $144.99"
+  "kicker": "Mobile car detailing · Austin, TX",
+  "headline": "Showroom shine.<br><em>Right in your driveway.</em>",
+  "intro": "Professional detailing at your home, office or apartment. No waiting in line, no drop-off: just a car that looks new again.",
+  "mobile": {
+    "title": "Your driveway is our shop.",
+    "intro": "We bring the detail to you, so your day keeps moving.",
+    "points": [
+      {
+        "name": "At your door",
+        "text": "Home, office or apartment, across Austin and nearby cities."
+      },
+      {
+        "name": "No time lost",
+        "text": "Skip the shop and the car wash line. Just book, and we handle the rest."
+      },
+      {
+        "name": "Inside and out",
+        "text": "Every nook and cranny, from carpets to door jambs."
+      },
+      {
+        "name": "Easy to book",
+        "text": "Book online or call. You get updates about your appointment."
+      }
+    ]
   },
-  {
-   "name": "Ceramic Coating",
-   "text": "Expert ceramic coating application for long-lasting shine and protection.",
-   "price": "From $849"
-  },
-  {
-   "name": "Paint Correction",
-   "text": "Professional correction that removes swirl marks, scratches and dullness."
-  },
-  {
-   "name": "Paint Protection Film",
-   "text": "Protection with Stek PPF."
+  "servicesTitle": "Inside, outside, and everything that shines.",
+  "servicesIntro": "Pick what your car needs, from a deep interior clean to lasting paint protection.",
+  "services": [
+    {
+      "name": "Interior Detail",
+      "text": "Detailed vacuum, wipe-down, leather conditioning and streak-free glass for a fresh cabin.",
+      "price": "From $217.99"
+    },
+    {
+      "name": "Full Detail",
+      "text": "Our full interior and exterior detail, with hand wash, foam bath and a 3 month paint sealant.",
+      "price": "From $304.99"
+    },
+    {
+      "name": "Exterior Detail",
+      "text": "Hand wash, clay bar and a 6 month paint sealant for a silky smooth finish.",
+      "price": "From $144.99"
+    },
+    {
+      "name": "Ceramic Coating",
+      "text": "Expert ceramic coating application for long-lasting shine and protection.",
+      "price": "From $849"
+    },
+    {
+      "name": "Paint Correction",
+      "text": "Professional correction that removes swirl marks, scratches and dullness."
+    },
+    {
+      "name": "Paint Protection Film",
+      "text": "Protection with Stek PPF."
+    }
+  ],
+  "also": [
+    {
+      "name": "Trucks"
+    },
+    {
+      "name": "Large SUVs"
+    },
+    {
+      "name": "Family vans"
+    },
+    {
+      "name": "Work trucks"
+    }
+  ],
+  "alsoTitle": "Not just cars:",
+  "why": [
+    {
+      "name": "Certified and background-checked",
+      "text": "Our team is certified and background-checked."
+    },
+    {
+      "name": "Flexible scheduling",
+      "text": "One-time clean or regular maintenance, your call."
+    },
+    {
+      "name": "Eco-friendly products",
+      "text": "We restore and protect your car with eco-friendly products and advanced techniques."
+    }
+  ],
+  "whyTitle": "Why drivers choose Archer's.",
+  "howTitle": "Book it. We show up. You drive off shining.",
+  "steps": [
+    {
+      "name": "Book",
+      "text": "Book online or call, and get updates about your appointment."
+    },
+    {
+      "name": "We pull up",
+      "text": "We arrive to inspect and detail your vehicle with top-rated products and tools."
+    },
+    {
+      "name": "You approve",
+      "text": "We make sure you are fully satisfied, then collect payment."
+    }
+  ],
+  "contactTitle": "Book your detail.",
+  "footerLine": "Mobile car detailing in Austin, Leander and nearby",
+  "reviews": [],
+  "hours": [
+    "Mon–Sun: Open 24 hours"
+  ],
+  "gallery": [
+    {
+      "src": "img/photo-8.jpg",
+      "alt": "Black Mercedes G-Class with a deep gloss finish",
+      "size": "big"
+    },
+    {
+      "src": "img/photo-6.jpg",
+      "alt": "White McLaren with doors raised"
+    },
+    {
+      "src": "img/photo-7.jpg",
+      "alt": "Blue classic Mustang convertible"
+    },
+    {
+      "src": "img/photo-4.jpg",
+      "alt": "Gray Land Rover Defender in a driveway"
+    },
+    {
+      "src": "img/photo-9.jpg",
+      "alt": "Dark blue Ford F-150 pickup"
+    }
+  ],
+  "areas": [
+    "Austin"
+  ],
+  "siteCheck": {
+    "reasons": [],
+    "improvements": [
+      "no quote or booking form"
+    ]
   }
- ],
- "also": [
-  {
-   "name": "Trucks"
-  },
-  {
-   "name": "Large SUVs"
-  },
-  {
-   "name": "Family vans"
-  },
-  {
-   "name": "Work trucks"
-  }
- ],
- "alsoTitle": "Not just cars:",
- "why": [
-  {
-   "name": "Certified and background-checked",
-   "text": "Our team is certified and background-checked."
-  },
-  {
-   "name": "Flexible scheduling",
-   "text": "One-time clean or regular maintenance, your call."
-  },
-  {
-   "name": "Eco-friendly products",
-   "text": "We restore and protect your car with eco-friendly products and advanced techniques."
-  }
- ],
- "whyTitle": "Why drivers choose Archer's.",
- "howTitle": "Book it. We show up. You drive off shining.",
- "steps": [
-  {
-   "name": "Book",
-   "text": "Book online or call, and get updates about your appointment."
-  },
-  {
-   "name": "We pull up",
-   "text": "We arrive to inspect and detail your vehicle with top-rated products and tools."
-  },
-  {
-   "name": "You approve",
-   "text": "We make sure you are fully satisfied, then collect payment."
-  }
- ],
- "contactTitle": "Book your detail.",
- "footerLine": "Mobile car detailing in Austin, Leander and nearby",
- "reviews": [],
- "hours": [
-  "Mon–Sun: Open 24 hours"
- ],
- "gallery": [
-  {
-   "src": "img/photo-8.jpg",
-   "alt": "Black Mercedes G-Class with a deep gloss finish",
-   "size": "big"
-  },
-  {
-   "src": "img/photo-6.jpg",
-   "alt": "White McLaren with doors raised"
-  },
-  {
-   "src": "img/photo-7.jpg",
-   "alt": "Blue classic Mustang convertible"
-  },
-  {
-   "src": "img/photo-4.jpg",
-   "alt": "Gray Land Rover Defender in a driveway"
-  },
-  {
-   "src": "img/photo-9.jpg",
-   "alt": "Dark blue Ford F-150 pickup"
-  }
- ],
- "areas": [
-  "Austin"
- ]
 }

@@ -1,104 +1,110 @@
 {
- "kit": "holiday",
- "name": "Cen-Tex Lighting and Events",
- "legalName": "Cen-Tex Lighting and Events",
- "preview": true,
- "placeId": "ChIJD2xzGlcSzYYRsksm3v2mqVk",
- "title": "Cen-Tex Lighting and Events | Lighting and event rentals in Hewitt, TX",
- "description": "Professional holiday lighting and event rentals across Central Texas. We handle the planning and the setup so you can enjoy the moment. 5.0 on Google from 30 reviews.",
- "logo": "logo.png",
- "logoChip": true,
- "wordmark": {
-  "top": "Cen-Tex Lighting",
-  "bottom": "and Events"
- },
- "phone": "(254) 900-1491",
- "email": "impallari@gmail.com",
- "heroImage": "img/photo-1.jpg",
- "heroAlt": "Lit tent and glowing marquee letters at dusk with string lights overhead",
- "heroPosition": "60% 60%",
- "heroPositionPhone": "60% 50%",
- "rating": {
-  "score": "5.0",
-  "count": 30,
-  "url": "https://maps.google.com/?cid=6460878749723675570"
- },
- "kicker": "Lighting and event rentals \u00b7 Hewitt",
- "headline": "Holidays and events,<br><em>lit up right.</em>",
- "intro": "Professional holiday lighting and event rentals across Central Texas. We handle the planning and the setup so you can enjoy the moment.",
- "badges": [],
- "highlights": null,
- "servicesTitle": "Lighting and rentals, done for you.",
- "servicesIntro": "From holiday lights to milestone celebrations.",
- "services": [
-  {
-   "name": "Christmas lighting",
-   "text": "Holiday lighting for your home, planned and handled by professionals."
+  "kit": "holiday",
+  "name": "Cen-Tex Lighting and Events",
+  "legalName": "Cen-Tex Lighting and Events",
+  "preview": true,
+  "placeId": "ChIJD2xzGlcSzYYRsksm3v2mqVk",
+  "title": "Cen-Tex Lighting and Events | Lighting and event rentals in Hewitt, TX",
+  "description": "Professional holiday lighting and event rentals across Central Texas. We handle the planning and the setup so you can enjoy the moment. 5.0 on Google from 30 reviews.",
+  "logo": "logo.png",
+  "logoChip": true,
+  "wordmark": {
+    "top": "Cen-Tex Lighting",
+    "bottom": "and Events"
   },
-  {
-   "name": "Event lighting",
-   "text": "Lighting that sets the scene for parties, fundraisers and special occasions."
+  "phone": "(254) 900-1491",
+  "email": "impallari@gmail.com",
+  "heroImage": "img/photo-1.jpg",
+  "heroAlt": "Lit tent and glowing marquee letters at dusk with string lights overhead",
+  "heroPosition": "60% 60%",
+  "heroPositionPhone": "60% 50%",
+  "rating": {
+    "score": "5.0",
+    "count": 30,
+    "url": "https://maps.google.com/?cid=6460878749723675570"
   },
-  {
-   "name": "Tents",
-   "text": "Tent rentals for events, set up with reliable planning."
-  },
-  {
-   "name": "Event rentals",
-   "text": "Rentals for holidays, parties, fundraisers and special occasions in Central Texas."
+  "kicker": "Lighting and event rentals · Hewitt",
+  "headline": "Holidays and events,<br><em>lit up right.</em>",
+  "intro": "Professional holiday lighting and event rentals across Central Texas. We handle the planning and the setup so you can enjoy the moment.",
+  "badges": [],
+  "highlights": null,
+  "servicesTitle": "Lighting and rentals, done for you.",
+  "servicesIntro": "From holiday lights to milestone celebrations.",
+  "services": [
+    {
+      "name": "Christmas lighting",
+      "text": "Holiday lighting for your home, planned and handled by professionals."
+    },
+    {
+      "name": "Event lighting",
+      "text": "Lighting that sets the scene for parties, fundraisers and special occasions."
+    },
+    {
+      "name": "Tents",
+      "text": "Tent rentals for events, set up with reliable planning."
+    },
+    {
+      "name": "Event rentals",
+      "text": "Rentals for holidays, parties, fundraisers and special occasions in Central Texas."
+    }
+  ],
+  "also": [],
+  "alsoTitle": "We also do:",
+  "promise": null,
+  "why": [
+    {
+      "name": "Over 10 years of experience",
+      "text": "Over 10 years in the lighting and rental industry."
+    },
+    {
+      "name": "Reliable planning",
+      "text": "Every event is handled with reliable planning and expert execution."
+    },
+    {
+      "name": "Easy to work with",
+      "text": "Customers say we are easy to work with."
+    }
+  ],
+  "whyTitle": "Why Cen-Tex",
+  "howTitle": "Lit up in three steps.",
+  "steps": [
+    {
+      "name": "Ask for a quote",
+      "text": "Call or use the quote form and tell us what you have in mind."
+    },
+    {
+      "name": "Plan the details",
+      "text": "We plan the lighting and rentals with you."
+    },
+    {
+      "name": "Enjoy the moment",
+      "text": "We handle the setup. You enjoy the celebration."
+    }
+  ],
+  "contactTitle": "Ready for a quote?",
+  "footerLine": "Lighting and event rentals in Central Texas",
+  "reviews": [
+    {
+      "text": "Very happy with our lights and they’re very easy to work with!...",
+      "name": "Scott Hannas"
+    },
+    {
+      "text": "They are the only option I will consider for lighting. Their price...",
+      "name": "Laura Wyly"
+    }
+  ],
+  "hours": [],
+  "galleryTitle": "Homes we light up.",
+  "notePlaceholder": "Roofline length, trees, a date you want them up…",
+  "gallery": [],
+  "areas": [
+    "Hewitt"
+  ],
+  "pitch": "photos",
+  "siteCheck": {
+    "reasons": [
+      "GoDaddy site builder"
+    ],
+    "improvements": []
   }
- ],
- "also": [],
- "alsoTitle": "We also do:",
- "promise": null,
- "why": [
-  {
-   "name": "Over 10 years of experience",
-   "text": "Over 10 years in the lighting and rental industry."
-  },
-  {
-   "name": "Reliable planning",
-   "text": "Every event is handled with reliable planning and expert execution."
-  },
-  {
-   "name": "Easy to work with",
-   "text": "Customers say we are easy to work with."
-  }
- ],
- "whyTitle": "Why Cen-Tex",
- "howTitle": "Lit up in three steps.",
- "steps": [
-  {
-   "name": "Ask for a quote",
-   "text": "Call or use the quote form and tell us what you have in mind."
-  },
-  {
-   "name": "Plan the details",
-   "text": "We plan the lighting and rentals with you."
-  },
-  {
-   "name": "Enjoy the moment",
-   "text": "We handle the setup. You enjoy the celebration."
-  }
- ],
- "contactTitle": "Ready for a quote?",
- "footerLine": "Lighting and event rentals in Central Texas",
- "reviews": [
-  {
-   "text": "Very happy with our lights and they\u2019re very easy to work with!...",
-   "name": "Scott Hannas"
-  },
-  {
-   "text": "They are the only option I will consider for lighting. Their price...",
-   "name": "Laura Wyly"
-  }
- ],
- "hours": [],
- "galleryTitle": "Homes we light up.",
- "notePlaceholder": "Roofline length, trees, a date you want them up\u2026",
- "gallery": [],
- "areas": [
-  "Hewitt"
- ],
- "pitch": "photos"
 }

@@ -1,136 +1,142 @@
 {
- "kit": "detailing",
- "trade": "Paintless dent repair",
- "name": "Nexterra",
- "legalName": "Nexterra",
- "preview": true,
- "placeId": "ChIJpRdNV_lrZIgRYQdJliKTX4s",
- "title": "Nexterra | Paintless dent repair in Nashville, TN",
- "description": "Hail and dent damage pushed out by skilled technicians, with the work done at your home or workplace. Repairs take one to two days and carry a lifetime guarantee. 4.7 on Google from 778 reviews.",
- "brand": "#1670ff",
- "brandHi": "#52c6ff",
- "accent": "#8fd0ff",
- "logo": null,
- "logoChip": false,
- "wordmark": {
-  "top": "Nexterra",
-  "bottom": "Dent Repair"
- },
- "phone": "(888) 834-9227",
- "email": "info@nexterras.com",
- "heroImage": "img/photo-1.jpg",
- "heroAlt": "Two Nexterra staff standing beside a blue Hyundai and a Nexterra mobile repair van",
- "heroPosition": "60% 60%",
- "heroPositionPhone": "60% 50%",
- "rating": {
-  "score": "4.7",
-  "count": 778,
-  "url": "https://maps.google.com/?cid=10042907470819034977"
- },
- "kicker": "Paintless dent repair · Nashville",
- "headline": "Your car's dents.<br><em>Gone. Paint untouched.</em>",
- "intro": "Hail and dent damage pushed out by skilled technicians, with the work done at your home or workplace. Repairs take one to two days and carry a lifetime guarantee.",
- "mobile": {
-  "title": "Your driveway is our shop.",
-  "intro": "Our fully equipped mobile units come to your home or office across DFW, so your day keeps moving.",
-  "points": [
-   {
-    "name": "At your door",
-    "text": "Say when and where. Repairs happen at your home or workplace."
-   },
-   {
-    "name": "No routine lost",
-    "text": "Our mobile service means you don't have to disrupt your day."
-   },
-   {
-    "name": "One to two days",
-    "text": "Most repairs are back to normal in one to two days."
-   },
-   {
-    "name": "Rental and tow help",
-    "text": "We coordinate concierge towing and rental car assistance if you need it."
-   }
-  ]
- },
- "servicesTitle": "Every kind of dent.",
- "servicesIntro": "From a single door ding to a full hail storm. No job too big or too small.",
- "services": [
-  {
-   "name": "Paintless Dent Repair",
-   "text": "Technicians massage and push the metal back into shape from behind the panel, without repainting."
+  "kit": "detailing",
+  "trade": "Paintless dent repair",
+  "name": "Nexterra",
+  "legalName": "Nexterra",
+  "preview": true,
+  "placeId": "ChIJpRdNV_lrZIgRYQdJliKTX4s",
+  "title": "Nexterra | Paintless dent repair in Nashville, TN",
+  "description": "Hail and dent damage pushed out by skilled technicians, with the work done at your home or workplace. Repairs take one to two days and carry a lifetime guarantee. 4.7 on Google from 778 reviews.",
+  "brand": "#1670ff",
+  "brandHi": "#52c6ff",
+  "accent": "#8fd0ff",
+  "logo": null,
+  "logoChip": false,
+  "wordmark": {
+    "top": "Nexterra",
+    "bottom": "Dent Repair"
   },
-  {
-   "name": "Hail Damage Repair",
-   "text": "Full repair of hail damage on cars, trucks and SUVs, documented and handled from start to finish."
+  "phone": "(888) 834-9227",
+  "email": "info@nexterras.com",
+  "heroImage": "img/photo-1.jpg",
+  "heroAlt": "Two Nexterra staff standing beside a blue Hyundai and a Nexterra mobile repair van",
+  "heroPosition": "60% 60%",
+  "heroPositionPhone": "60% 50%",
+  "rating": {
+    "score": "4.7",
+    "count": 778,
+    "url": "https://maps.google.com/?cid=10042907470819034977"
   },
-  {
-   "name": "Overspray Reconditioning",
-   "text": "Restoration work for overspray on your vehicle."
+  "kicker": "Paintless dent repair · Nashville",
+  "headline": "Your car's dents.<br><em>Gone. Paint untouched.</em>",
+  "intro": "Hail and dent damage pushed out by skilled technicians, with the work done at your home or workplace. Repairs take one to two days and carry a lifetime guarantee.",
+  "mobile": {
+    "title": "Your driveway is our shop.",
+    "intro": "Our fully equipped mobile units come to your home or office across DFW, so your day keeps moving.",
+    "points": [
+      {
+        "name": "At your door",
+        "text": "Say when and where. Repairs happen at your home or workplace."
+      },
+      {
+        "name": "No routine lost",
+        "text": "Our mobile service means you don't have to disrupt your day."
+      },
+      {
+        "name": "One to two days",
+        "text": "Most repairs are back to normal in one to two days."
+      },
+      {
+        "name": "Rental and tow help",
+        "text": "We coordinate concierge towing and rental car assistance if you need it."
+      }
+    ]
   },
-  {
-   "name": "Tire & Wheel Repair",
-   "text": "Repair for damaged tires and wheels."
-  },
-  {
-   "name": "Collision Repair",
-   "text": "Repairs beyond PDR, coordinated through a certified network of shops nationwide."
+  "servicesTitle": "Every kind of dent.",
+  "servicesIntro": "From a single door ding to a full hail storm. No job too big or too small.",
+  "services": [
+    {
+      "name": "Paintless Dent Repair",
+      "text": "Technicians massage and push the metal back into shape from behind the panel, without repainting."
+    },
+    {
+      "name": "Hail Damage Repair",
+      "text": "Full repair of hail damage on cars, trucks and SUVs, documented and handled from start to finish."
+    },
+    {
+      "name": "Overspray Reconditioning",
+      "text": "Restoration work for overspray on your vehicle."
+    },
+    {
+      "name": "Tire & Wheel Repair",
+      "text": "Repair for damaged tires and wheels."
+    },
+    {
+      "name": "Collision Repair",
+      "text": "Repairs beyond PDR, coordinated through a certified network of shops nationwide."
+    }
+  ],
+  "also": [
+    {
+      "name": "Appraisal"
+    },
+    {
+      "name": "Car rentals"
+    },
+    {
+      "name": "Towing services"
+    }
+  ],
+  "alsoTitle": "We also fix",
+  "why": [
+    {
+      "name": "Lifetime guarantee",
+      "text": "Coverage begins when repairs are finalized and lasts as long as you own the vehicle."
+    },
+    {
+      "name": "Insurance handled",
+      "text": "Nexterra submits the estimate to your insurance company for payment processing."
+    },
+    {
+      "name": "Rated 4.7 on Google",
+      "text": "4.7 from 778 Google reviews from vehicle owners."
+    }
+  ],
+  "whyTitle": "The Nexterra difference.",
+  "howTitle": "Back to like new, step by step.",
+  "steps": [
+    {
+      "name": "Call or text",
+      "text": "Tell us about the damage. We explain the process and set up your rental car."
+    },
+    {
+      "name": "We handle the details",
+      "text": "We help with your insurance claim and can pick up your vehicle."
+    },
+    {
+      "name": "Drive it home",
+      "text": "We repair the damage, give it a mini-detail and deliver it back."
+    }
+  ],
+  "contactTitle": "Got hail damage?",
+  "footerLine": "Paintless dent repair in Nashville",
+  "reviews": [],
+  "hours": [
+    "Monday-Friday: 7am-6pm",
+    "Saturday-Sunday: 8am-5pm"
+  ],
+  "galleryTitle": "Dents gone, paint untouched.",
+  "notePlaceholder": "Where the dent is, how big, hail or a door ding…",
+  "ctaLabel": "Get an estimate",
+  "gallery": [],
+  "areas": [
+    "Nashville"
+  ],
+  "pitch": "photos",
+  "siteCheck": {
+    "reasons": [],
+    "improvements": [
+      "no quote or booking form"
+    ]
   }
- ],
- "also": [
-  {
-   "name": "Appraisal"
-  },
-  {
-   "name": "Car rentals"
-  },
-  {
-   "name": "Towing services"
-  }
- ],
- "alsoTitle": "We also fix",
- "why": [
-  {
-   "name": "Lifetime guarantee",
-   "text": "Coverage begins when repairs are finalized and lasts as long as you own the vehicle."
-  },
-  {
-   "name": "Insurance handled",
-   "text": "Nexterra submits the estimate to your insurance company for payment processing."
-  },
-  {
-   "name": "Rated 4.7 on Google",
-   "text": "4.7 from 778 Google reviews from vehicle owners."
-  }
- ],
- "whyTitle": "The Nexterra difference.",
- "howTitle": "Back to like new, step by step.",
- "steps": [
-  {
-   "name": "Call or text",
-   "text": "Tell us about the damage. We explain the process and set up your rental car."
-  },
-  {
-   "name": "We handle the details",
-   "text": "We help with your insurance claim and can pick up your vehicle."
-  },
-  {
-   "name": "Drive it home",
-   "text": "We repair the damage, give it a mini-detail and deliver it back."
-  }
- ],
- "contactTitle": "Got hail damage?",
- "footerLine": "Paintless dent repair in Nashville",
- "reviews": [],
- "hours": [
-  "Monday-Friday: 7am-6pm",
-  "Saturday-Sunday: 8am-5pm"
- ],
- "galleryTitle": "Dents gone, paint untouched.",
- "notePlaceholder": "Where the dent is, how big, hail or a door ding…",
- "ctaLabel": "Get an estimate",
- "gallery": [],
- "areas": [
-  "Nashville"
- ],
- "pitch": "photos"
 }

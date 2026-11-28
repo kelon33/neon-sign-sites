@@ -1,144 +1,150 @@
 {
- "kit": "lawn",
- "name": "Goat Lawn Services",
- "legalName": "Goat Lawn Services",
- "preview": true,
- "placeId": "ChIJqxRIf3dNW4YR1U4PKHUxb_I",
- "title": "Goat Lawn Services | Lawn care & landscaping in Austin, TX",
- "description": "Family-owned lawn care and landscaping across Austin. Clean edges, tidy beds and a yard that looks cared for, week after week. 5.0 on Google from 28 reviews.",
- "logo": null,
- "logoChip": false,
- "wordmark": {
-  "top": "Goat",
-  "bottom": "Lawn Services"
- },
- "phone": "(512) 487-5055",
- "email": "support@goatlawnsatx.com",
- "heroImage": null,
- "heroAlt": "",
- "heroPosition": "60% 60%",
- "heroPositionPhone": "60% 50%",
- "rating": {
-  "score": "5.0",
-  "count": 28,
-  "url": "https://maps.google.com/?cid=17469235858846469845"
- },
- "kicker": "Lawn care & landscaping · Austin, TX",
- "headline": "A lawn the whole street<br><em>notices.</em>",
- "intro": "Family-owned lawn care and landscaping across Austin. Clean edges, tidy beds and a yard that looks cared for, week after week.",
- "badges": [
-  "Free estimates",
-  "Family owned",
-  "Homes and businesses"
- ],
- "highlights": {
-  "title": "Why Austin neighbors call Goat",
-  "intro": "Simple mowing, set up in minutes, with a crew that shows up on the same day each week.",
-  "points": [
-   {
-    "name": "No yearly contracts",
-    "text": "Sign up without being locked in."
-   },
-   {
-    "name": "Quick sign up",
-    "text": "Five minutes and you are on the schedule."
-   },
-   {
-    "name": "Assigned mow day",
-    "text": "You get a set day, so you know when to expect us."
-   }
-  ]
- },
- "servicesTitle": "Everything your yard needs, in one call.",
- "servicesIntro": "Regular care or a one-time project, handled by one local team.",
- "services": [
-  {
-   "name": "Lawn Care",
-   "text": "We leave your lawn clean and uniform, trim the edges and blow off walkways, driveways, flowerbeds and rock beds."
+  "kit": "lawn",
+  "name": "Goat Lawn Services",
+  "legalName": "Goat Lawn Services",
+  "preview": true,
+  "placeId": "ChIJqxRIf3dNW4YR1U4PKHUxb_I",
+  "title": "Goat Lawn Services | Lawn care & landscaping in Austin, TX",
+  "description": "Family-owned lawn care and landscaping across Austin. Clean edges, tidy beds and a yard that looks cared for, week after week. 5.0 on Google from 28 reviews.",
+  "logo": null,
+  "logoChip": false,
+  "wordmark": {
+    "top": "Goat",
+    "bottom": "Lawn Services"
   },
-  {
-   "name": "Landscaping",
-   "text": "Flower beds, stonework and other landscaping designs, built to fit your yard."
+  "phone": "(512) 487-5055",
+  "email": "support@goatlawnsatx.com",
+  "heroImage": null,
+  "heroAlt": "",
+  "heroPosition": "60% 60%",
+  "heroPositionPhone": "60% 50%",
+  "rating": {
+    "score": "5.0",
+    "count": 28,
+    "url": "https://maps.google.com/?cid=17469235858846469845"
   },
-  {
-   "name": "Fencing",
-   "text": "We tear out your old fence, haul away the waste and put up a new one."
+  "kicker": "Lawn care & landscaping · Austin, TX",
+  "headline": "A lawn the whole street<br><em>notices.</em>",
+  "intro": "Family-owned lawn care and landscaping across Austin. Clean edges, tidy beds and a yard that looks cared for, week after week.",
+  "badges": [
+    "Free estimates",
+    "Family owned",
+    "Homes and businesses"
+  ],
+  "highlights": {
+    "title": "Why Austin neighbors call Goat",
+    "intro": "Simple mowing, set up in minutes, with a crew that shows up on the same day each week.",
+    "points": [
+      {
+        "name": "No yearly contracts",
+        "text": "Sign up without being locked in."
+      },
+      {
+        "name": "Quick sign up",
+        "text": "Five minutes and you are on the schedule."
+      },
+      {
+        "name": "Assigned mow day",
+        "text": "You get a set day, so you know when to expect us."
+      }
+    ]
   },
-  {
-   "name": "Leaf Relief",
-   "text": "Several methods of leaf cleanup, so you get the one that suits your lawn."
-  },
-  {
-   "name": "Land Clearing",
-   "text": "Lots cleared of trees and debris, with a free quote."
-  },
-  {
-   "name": "Tree & Shrub Trimming",
-   "text": "Shrubs and trees trimmed for a manicured look and better curb appeal."
+  "servicesTitle": "Everything your yard needs, in one call.",
+  "servicesIntro": "Regular care or a one-time project, handled by one local team.",
+  "services": [
+    {
+      "name": "Lawn Care",
+      "text": "We leave your lawn clean and uniform, trim the edges and blow off walkways, driveways, flowerbeds and rock beds."
+    },
+    {
+      "name": "Landscaping",
+      "text": "Flower beds, stonework and other landscaping designs, built to fit your yard."
+    },
+    {
+      "name": "Fencing",
+      "text": "We tear out your old fence, haul away the waste and put up a new one."
+    },
+    {
+      "name": "Leaf Relief",
+      "text": "Several methods of leaf cleanup, so you get the one that suits your lawn."
+    },
+    {
+      "name": "Land Clearing",
+      "text": "Lots cleared of trees and debris, with a free quote."
+    },
+    {
+      "name": "Tree & Shrub Trimming",
+      "text": "Shrubs and trees trimmed for a manicured look and better curb appeal."
+    }
+  ],
+  "also": [
+    {
+      "name": "Pet waste cleanup"
+    },
+    {
+      "name": "Mulching"
+    },
+    {
+      "name": "Sod installation"
+    },
+    {
+      "name": "Flower beds"
+    },
+    {
+      "name": "Residential and commercial"
+    },
+    {
+      "name": "Mosquito control (coming soon)"
+    }
+  ],
+  "alsoTitle": "We also do:",
+  "promise": "We don't just mow. <em>We take care of it.</em> Every edge, every bed, every visit.",
+  "why": [
+    {
+      "name": "Professional",
+      "text": "A locally owned family business focused on the highest quality for your lawn."
+    },
+    {
+      "name": "Clean and attentive",
+      "text": "Careful techs who make sure you are satisfied with the service."
+    },
+    {
+      "name": "100% satisfaction guaranteed",
+      "text": "The promise stands behind every job."
+    }
+  ],
+  "whyTitle": "Why choose Goat",
+  "howTitle": "A better lawn in three easy steps.",
+  "steps": [
+    {
+      "name": "Ask for a free quote",
+      "text": "Call or send the form and tell us about your yard."
+    },
+    {
+      "name": "Pick your plan",
+      "text": "Choose weekly or biweekly service, or a one-time project."
+    },
+    {
+      "name": "Enjoy the view",
+      "text": "We come on your assigned day. You get your weekend back."
+    }
+  ],
+  "contactTitle": "Ready for a better lawn?",
+  "footerLine": "Lawn care & landscaping in Austin, TX",
+  "reviews": [],
+  "hours": [
+    "Mon–Fri: 7am–6:30pm",
+    "Saturday: 9am–1pm"
+  ],
+  "gallery": [],
+  "areas": [
+    "Austin"
+  ],
+  "pitch": "photos",
+  "siteCheck": {
+    "reasons": [
+      "copyright 2021"
+    ],
+    "improvements": []
   }
- ],
- "also": [
-  {
-   "name": "Pet waste cleanup"
-  },
-  {
-   "name": "Mulching"
-  },
-  {
-   "name": "Sod installation"
-  },
-  {
-   "name": "Flower beds"
-  },
-  {
-   "name": "Residential and commercial"
-  },
-  {
-   "name": "Mosquito control (coming soon)"
-  }
- ],
- "alsoTitle": "We also do:",
- "promise": "We don't just mow. <em>We take care of it.</em> Every edge, every bed, every visit.",
- "why": [
-  {
-   "name": "Professional",
-   "text": "A locally owned family business focused on the highest quality for your lawn."
-  },
-  {
-   "name": "Clean and attentive",
-   "text": "Careful techs who make sure you are satisfied with the service."
-  },
-  {
-   "name": "100% satisfaction guaranteed",
-   "text": "The promise stands behind every job."
-  }
- ],
- "whyTitle": "Why choose Goat",
- "howTitle": "A better lawn in three easy steps.",
- "steps": [
-  {
-   "name": "Ask for a free quote",
-   "text": "Call or send the form and tell us about your yard."
-  },
-  {
-   "name": "Pick your plan",
-   "text": "Choose weekly or biweekly service, or a one-time project."
-  },
-  {
-   "name": "Enjoy the view",
-   "text": "We come on your assigned day. You get your weekend back."
-  }
- ],
- "contactTitle": "Ready for a better lawn?",
- "footerLine": "Lawn care & landscaping in Austin, TX",
- "reviews": [],
- "hours": [
-  "Mon–Fri: 7am–6:30pm",
-  "Saturday: 9am–1pm"
- ],
- "gallery": [],
- "areas": [
-  "Austin"
- ],
- "pitch": "photos"
 }

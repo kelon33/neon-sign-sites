@@ -1,141 +1,147 @@
 {
- "kit": "detailing",
- "trade": "Paintless dent repair",
- "name": "Smooth A Dent",
- "legalName": "Smooth A Dent",
- "preview": true,
- "placeId": "ChIJPV2_Y-nO5YgRpLqYP6aUjr4",
- "title": "Smooth A Dent | Paintless dent repair in Jacksonville, FL",
- "description": "Mobile paintless dent repair in Jacksonville, by owner Mike Parks. He removes minor dents and keeps your original paint, without a body shop visit. 5.0 on Google from 138 reviews.",
- "brand": "#1670ff",
- "brandHi": "#52c6ff",
- "accent": "#8fd0ff",
- "logo": "logo.png",
- "logoChip": true,
- "wordmark": {
-  "top": "Smooth A",
-  "bottom": "Dent"
- },
- "phone": "(904) 347-1065",
- "email": "smoothadent@gmail.com",
- "heroImage": "img/photo-7.jpg",
- "heroAlt": "White Range Rover Sport parked in a garage",
- "heroPosition": "60% 60%",
- "heroPositionPhone": "60% 50%",
- "rating": {
-  "score": "5.0",
-  "count": 138,
-  "url": "https://maps.google.com/?cid=13731075755651676836"
- },
- "kicker": "Paintless dent repair · Jacksonville",
- "headline": "Your car's dents.<br><em>Gone. Paint untouched.</em>",
- "intro": "Mobile paintless dent repair in Jacksonville, by owner Mike Parks. He removes minor dents and keeps your original paint, without a body shop visit.",
- "mobile": {
-  "title": "Door dings, at your door.",
-  "intro": "For door dings and small dents, I come to you. Hail, deer hits and larger dents are repaired at my Jacksonville shop.",
-  "points": [
-   {
-    "name": "At your location",
-    "text": "Mike comes to you. Mobile service only, by appointment."
-   },
-   {
-    "name": "No shop visit",
-    "text": "No body shop drop-off and no waiting around for your car."
-   },
-   {
-    "name": "Straight to the owner",
-    "text": "From the first call to the finished repair, you deal with Mike Parks."
-   },
-   {
-    "name": "Easy to start",
-    "text": "Call (904) 347-1065 and text photos of the damage."
-   }
-  ]
- },
- "servicesTitle": "Every kind of dent.",
- "servicesIntro": "From a single door ding to a full hail storm. No job too big or too small.",
- "services": [
-  {
-   "name": "Paintless dent repair",
-   "text": "Minor dents removed while your vehicle's original paint stays in place."
+  "kit": "detailing",
+  "trade": "Paintless dent repair",
+  "name": "Smooth A Dent",
+  "legalName": "Smooth A Dent",
+  "preview": true,
+  "placeId": "ChIJPV2_Y-nO5YgRpLqYP6aUjr4",
+  "title": "Smooth A Dent | Paintless dent repair in Jacksonville, FL",
+  "description": "Mobile paintless dent repair in Jacksonville, by owner Mike Parks. He removes minor dents and keeps your original paint, without a body shop visit. 5.0 on Google from 138 reviews.",
+  "brand": "#1670ff",
+  "brandHi": "#52c6ff",
+  "accent": "#8fd0ff",
+  "logo": "logo.png",
+  "logoChip": true,
+  "wordmark": {
+    "top": "Smooth A",
+    "bottom": "Dent"
   },
-  {
-   "name": "Fender repair",
-   "text": "Dents worked out of fenders on trucks and SUVs, like a Lincoln Aviator or a pickup."
+  "phone": "(904) 347-1065",
+  "email": "smoothadent@gmail.com",
+  "heroImage": "img/photo-7.jpg",
+  "heroAlt": "White Range Rover Sport parked in a garage",
+  "heroPosition": "60% 60%",
+  "heroPositionPhone": "60% 50%",
+  "rating": {
+    "score": "5.0",
+    "count": 138,
+    "url": "https://maps.google.com/?cid=13731075755651676836"
   },
-  {
-   "name": "Door repair",
-   "text": "Dents and dings removed from doors, including a Land Rover door."
+  "kicker": "Paintless dent repair · Jacksonville",
+  "headline": "Your car's dents.<br><em>Gone. Paint untouched.</em>",
+  "intro": "Mobile paintless dent repair in Jacksonville, by owner Mike Parks. He removes minor dents and keeps your original paint, without a body shop visit.",
+  "mobile": {
+    "title": "Door dings, at your door.",
+    "intro": "For door dings and small dents, I come to you. Hail, deer hits and larger dents are repaired at my Jacksonville shop.",
+    "points": [
+      {
+        "name": "At your location",
+        "text": "Mike comes to you. Mobile service only, by appointment."
+      },
+      {
+        "name": "No shop visit",
+        "text": "No body shop drop-off and no waiting around for your car."
+      },
+      {
+        "name": "Straight to the owner",
+        "text": "From the first call to the finished repair, you deal with Mike Parks."
+      },
+      {
+        "name": "Easy to start",
+        "text": "Call (904) 347-1065 and text photos of the damage."
+      }
+    ]
   },
-  {
-   "name": "Trunk and liftgate repair",
-   "text": "Careful repair that follows every contour of the panel."
+  "servicesTitle": "Every kind of dent.",
+  "servicesIntro": "From a single door ding to a full hail storm. No job too big or too small.",
+  "services": [
+    {
+      "name": "Paintless dent repair",
+      "text": "Minor dents removed while your vehicle's original paint stays in place."
+    },
+    {
+      "name": "Fender repair",
+      "text": "Dents worked out of fenders on trucks and SUVs, like a Lincoln Aviator or a pickup."
+    },
+    {
+      "name": "Door repair",
+      "text": "Dents and dings removed from doors, including a Land Rover door."
+    },
+    {
+      "name": "Trunk and liftgate repair",
+      "text": "Careful repair that follows every contour of the panel."
+    }
+  ],
+  "also": [],
+  "alsoTitle": "We also fix",
+  "why": [
+    {
+      "name": "Since 1995",
+      "text": "Mike founded Smooth A Dent in 1995 and has done tens of thousands of repairs."
+    },
+    {
+      "name": "Owner-operated",
+      "text": "You work directly with Mike Parks from first conversation to finished repair."
+    },
+    {
+      "name": "An honest assessment",
+      "text": "Each dent is evaluated first, so you know what is possible and the price before work begins."
+    }
+  ],
+  "whyTitle": "The Smooth A Dent difference.",
+  "howTitle": "Back to like new, step by step.",
+  "steps": [
+    {
+      "name": "Send the details",
+      "text": "Call, or use the form with your year, make, model and photos of the damage."
+    },
+    {
+      "name": "Get an evaluation",
+      "text": "Bring the vehicle in and we look at the hail damage, dings or film options."
+    },
+    {
+      "name": "Drive it smooth",
+      "text": "We work the dents out and hand the vehicle back."
+    }
+  ],
+  "contactTitle": "Got a dent?",
+  "footerLine": "Paintless dent repair in Jacksonville",
+  "reviews": [],
+  "hours": [],
+  "galleryTitle": "Dents gone, paint untouched.",
+  "notePlaceholder": "Where the dent is, how big, hail or a door ding…",
+  "ctaLabel": "Get an estimate",
+  "gallery": [
+    {
+      "src": "img/photo-8.jpg",
+      "alt": "Gray Mercedes-Benz SUV in a driveway",
+      "size": "big"
+    },
+    {
+      "src": "img/photo-6.jpg",
+      "alt": "Door panel of a white car with a dent repair light tool attached"
+    },
+    {
+      "src": "img/photo-3.jpg",
+      "alt": "Lincoln Aviator fender after repair"
+    },
+    {
+      "src": "img/photo-4.jpg",
+      "alt": "Silver truck fender after dent repair"
+    },
+    {
+      "src": "img/photo-1.jpg",
+      "alt": "White pickup truck fender after repair"
+    }
+  ],
+  "areas": [
+    "Jacksonville"
+  ],
+  "pitch": "site",
+  "siteCheck": {
+    "reasons": [],
+    "improvements": [
+      "no quote or booking form"
+    ]
   }
- ],
- "also": [],
- "alsoTitle": "We also fix",
- "why": [
-  {
-   "name": "Since 1995",
-   "text": "Mike founded Smooth A Dent in 1995 and has done tens of thousands of repairs."
-  },
-  {
-   "name": "Owner-operated",
-   "text": "You work directly with Mike Parks from first conversation to finished repair."
-  },
-  {
-   "name": "An honest assessment",
-   "text": "Each dent is evaluated first, so you know what is possible and the price before work begins."
-  }
- ],
- "whyTitle": "The Smooth A Dent difference.",
- "howTitle": "Back to like new, step by step.",
- "steps": [
-  {
-   "name": "Send the details",
-   "text": "Call, or use the form with your year, make, model and photos of the damage."
-  },
-  {
-   "name": "Get an evaluation",
-   "text": "Bring the vehicle in and we look at the hail damage, dings or film options."
-  },
-  {
-   "name": "Drive it smooth",
-   "text": "We work the dents out and hand the vehicle back."
-  }
- ],
- "contactTitle": "Got a dent?",
- "footerLine": "Paintless dent repair in Jacksonville",
- "reviews": [],
- "hours": [],
- "galleryTitle": "Dents gone, paint untouched.",
- "notePlaceholder": "Where the dent is, how big, hail or a door ding…",
- "ctaLabel": "Get an estimate",
- "gallery": [
-  {
-   "src": "img/photo-8.jpg",
-   "alt": "Gray Mercedes-Benz SUV in a driveway",
-   "size": "big"
-  },
-  {
-   "src": "img/photo-6.jpg",
-   "alt": "Door panel of a white car with a dent repair light tool attached"
-  },
-  {
-   "src": "img/photo-3.jpg",
-   "alt": "Lincoln Aviator fender after repair"
-  },
-  {
-   "src": "img/photo-4.jpg",
-   "alt": "Silver truck fender after dent repair"
-  },
-  {
-   "src": "img/photo-1.jpg",
-   "alt": "White pickup truck fender after repair"
-  }
- ],
- "areas": [
-  "Jacksonville"
- ],
- "pitch": "site"
 }

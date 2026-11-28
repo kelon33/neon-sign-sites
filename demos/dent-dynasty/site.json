@@ -1,94 +1,101 @@
 {
- "kit": "detailing",
- "trade": "Paintless dent repair",
- "name": "Dent Dynasty",
- "legalName": "Dent Dynasty",
- "preview": true,
- "placeId": "ChIJK5dizvHOY0cRJ_wk1lKYCjY",
- "title": "Dent Dynasty | Paintless dent repair in Murfreesboro, TN",
- "description": "Paintless dent repair across Middle Tennessee, backed by 21 years of experience. We remove most dents without touching your paint, and we do it by appointment. 5.0 on Google from 87 reviews.",
- "brand": "#1670ff",
- "brandHi": "#52c6ff",
- "accent": "#8fd0ff",
- "logo": null,
- "logoChip": false,
- "wordmark": {
-  "top": "Dent",
-  "bottom": "Dynasty"
- },
- "phone": "(615) 807-0844",
- "email": "dentdynastyllc@gmail.com",
- "heroImage": "img/photo-4.jpg",
- "heroAlt": "Front fender and headlight of a silver Ram 4500 heavy-duty truck",
- "heroPosition": "60% 60%",
- "heroPositionPhone": "60% 50%",
- "rating": {
-  "score": "5.0",
-  "count": 87,
-  "url": "https://maps.google.com/?cid=3894092309362703399"
- },
- "kicker": "Paintless dent repair · Murfreesboro",
- "headline": "Hail damage gone.<br><em>Hassle gone too.</em>",
- "intro": "Paintless dent repair across Middle Tennessee, backed by 21 years of experience. We remove most dents without touching your paint, and we do it by appointment.",
- "mobile": null,
- "servicesTitle": "Every kind of dent.",
- "servicesIntro": "From a single door ding to hail damage.",
- "services": [
-  {
-   "name": "Paintless Dent Repair",
-   "text": "Specialized tools and techniques remove most dents without impacting the paintwork."
+  "kit": "detailing",
+  "trade": "Paintless dent repair",
+  "name": "Dent Dynasty",
+  "legalName": "Dent Dynasty",
+  "preview": true,
+  "placeId": "ChIJK5dizvHOY0cRJ_wk1lKYCjY",
+  "title": "Dent Dynasty | Paintless dent repair in Murfreesboro, TN",
+  "description": "Paintless dent repair across Middle Tennessee, backed by 21 years of experience. We remove most dents without touching your paint, and we do it by appointment. 5.0 on Google from 87 reviews.",
+  "brand": "#1670ff",
+  "brandHi": "#52c6ff",
+  "accent": "#8fd0ff",
+  "logo": null,
+  "logoChip": false,
+  "wordmark": {
+    "top": "Dent",
+    "bottom": "Dynasty"
   },
-  {
-   "name": "Plastic Bumper Repair",
-   "text": "Modern plastic bumpers cost a lot to replace. Our methods can eliminate or significantly cut the repair cost on most vehicles."
+  "phone": "(615) 807-0844",
+  "email": "dentdynastyllc@gmail.com",
+  "heroImage": "img/photo-4.jpg",
+  "heroAlt": "Front fender and headlight of a silver Ram 4500 heavy-duty truck",
+  "heroPosition": "60% 60%",
+  "heroPositionPhone": "60% 50%",
+  "rating": {
+    "score": "5.0",
+    "count": 87,
+    "url": "https://maps.google.com/?cid=3894092309362703399"
   },
-  {
-   "name": "Vehicle Body Inspection",
-   "text": "When we fix a visible dent, we also check the vehicle for other damage. It matters most when you turn in a lease vehicle."
+  "kicker": "Paintless dent repair · Murfreesboro",
+  "headline": "Hail damage gone.<br><em>Hassle gone too.</em>",
+  "intro": "Paintless dent repair across Middle Tennessee, backed by 21 years of experience. We remove most dents without touching your paint, and we do it by appointment.",
+  "mobile": null,
+  "servicesTitle": "Every kind of dent.",
+  "servicesIntro": "From a single door ding to hail damage.",
+  "services": [
+    {
+      "name": "Paintless Dent Repair",
+      "text": "Specialized tools and techniques remove most dents without impacting the paintwork."
+    },
+    {
+      "name": "Plastic Bumper Repair",
+      "text": "Modern plastic bumpers cost a lot to replace. Our methods can eliminate or significantly cut the repair cost on most vehicles."
+    },
+    {
+      "name": "Vehicle Body Inspection",
+      "text": "When we fix a visible dent, we also check the vehicle for other damage. It matters most when you turn in a lease vehicle."
+    }
+  ],
+  "also": [],
+  "alsoTitle": "We also fix",
+  "why": [
+    {
+      "name": "Lower cost",
+      "text": "A PDR repair can cost as little as 1/8 of a body shop repair. Nothing is replaced, only repaired."
+    },
+    {
+      "name": "No paint, no waste",
+      "text": "Often a whole panel gets painted for one small dent. PDR fixes just that spot and leaves no paint debris."
+    },
+    {
+      "name": "Better for the environment",
+      "text": "No paints or solvents means fewer chemicals and lower VOC emissions, and almost no energy use."
+    }
+  ],
+  "whyTitle": "Dent Dynasty difference.",
+  "howTitle": "Back to like new, step by step.",
+  "steps": [
+    {
+      "name": "Send the details",
+      "text": "Call, or use the form with your year, make, model and photos of the damage."
+    },
+    {
+      "name": "Get an evaluation",
+      "text": "Bring the vehicle in and we look at the hail damage, dings or film options."
+    },
+    {
+      "name": "Drive it smooth",
+      "text": "We work the dents out and hand the vehicle back."
+    }
+  ],
+  "contactTitle": "Got hail damage?",
+  "footerLine": "Paintless dent repair in Murfreesboro",
+  "reviews": [],
+  "hours": [],
+  "galleryTitle": "Dents gone, paint untouched.",
+  "notePlaceholder": "Where the dent is, how big, hail or a door ding…",
+  "ctaLabel": "Get an estimate",
+  "gallery": [],
+  "areas": [
+    "Murfreesboro"
+  ],
+  "pitch": "photos",
+  "siteCheck": {
+    "reasons": [],
+    "improvements": [
+      "no reviews on the site",
+      "copyright 2025"
+    ]
   }
- ],
- "also": [],
- "alsoTitle": "We also fix",
- "why": [
-  {
-   "name": "Lower cost",
-   "text": "A PDR repair can cost as little as 1/8 of a body shop repair. Nothing is replaced, only repaired."
-  },
-  {
-   "name": "No paint, no waste",
-   "text": "Often a whole panel gets painted for one small dent. PDR fixes just that spot and leaves no paint debris."
-  },
-  {
-   "name": "Better for the environment",
-   "text": "No paints or solvents means fewer chemicals and lower VOC emissions, and almost no energy use."
-  }
- ],
- "whyTitle": "Dent Dynasty difference.",
- "howTitle": "Back to like new, step by step.",
- "steps": [
-  {
-   "name": "Send the details",
-   "text": "Call, or use the form with your year, make, model and photos of the damage."
-  },
-  {
-   "name": "Get an evaluation",
-   "text": "Bring the vehicle in and we look at the hail damage, dings or film options."
-  },
-  {
-   "name": "Drive it smooth",
-   "text": "We work the dents out and hand the vehicle back."
-  }
- ],
- "contactTitle": "Got hail damage?",
- "footerLine": "Paintless dent repair in Murfreesboro",
- "reviews": [],
- "hours": [],
- "galleryTitle": "Dents gone, paint untouched.",
- "notePlaceholder": "Where the dent is, how big, hail or a door ding…",
- "ctaLabel": "Get an estimate",
- "gallery": [],
- "areas": [
-  "Murfreesboro"
- ],
- "pitch": "photos"
 }

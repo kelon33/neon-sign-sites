@@ -1,171 +1,177 @@
 {
- "kit": "detailing",
- "trade": "Mobile detailing",
- "name": "Lake And Land Detailing",
- "legalName": "Lake And Land Detailing",
- "preview": true,
- "placeId": "ChIJ7_Sf8TUUZIgRdSZev2B5TS0",
- "title": "Lake And Land Detailing | Paint correction, ceramic coating & PPF in Mt. Juliet, TN",
- "description": "Lake & Land Detailing handles paint correction, ceramic coatings, paint protection film and full details for cars, trucks and boats in Mt. Juliet. Every owner gets a straight explanation of what their vehicle needs. 5.0 on Google from 30 reviews.",
- "brand": "#1670ff",
- "brandHi": "#52c6ff",
- "accent": "#8fd0ff",
- "logo": "logo.png",
- "logoChip": true,
- "wordmark": {
-  "top": "Lake & Land",
-  "bottom": "Detailing"
- },
- "phone": "(615) 775-6731",
- "email": "lakeandlanddetailing@gmail.com",
- "heroImage": "img/photo-8.jpg",
- "heroAlt": "Black C8 Corvette with red calipers in the shop",
- "heroPosition": "60% 60%",
- "heroPositionPhone": "60% 50%",
- "rating": {
-  "score": "5.0",
-  "count": 30,
-  "url": "https://maps.google.com/?cid=3264398761347917429"
- },
- "kicker": "Paint correction, ceramic coating & PPF · Mt. Juliet, TN",
- "headline": "Paint that looks new,<br><em>and stays that way.</em>",
- "intro": "Lake & Land Detailing handles paint correction, ceramic coatings, paint protection film and full details for cars, trucks and boats in Mt. Juliet. Every owner gets a straight explanation of what their vehicle needs.",
- "mobile": null,
- "servicesTitle": "What we do.",
- "servicesIntro": "Pricing starts at the numbers below. Call or schedule online for an official quote.",
- "services": [
-  {
-   "name": "Full Detail",
-   "text": "Exterior wash, clay and sealant, wheels and fender liners, door jambs and windows, and a full interior steam clean with UV protectant.",
-   "price": "Starting at $300"
+  "kit": "detailing",
+  "trade": "Mobile detailing",
+  "name": "Lake And Land Detailing",
+  "legalName": "Lake And Land Detailing",
+  "preview": true,
+  "placeId": "ChIJ7_Sf8TUUZIgRdSZev2B5TS0",
+  "title": "Lake And Land Detailing | Paint correction, ceramic coating & PPF in Mt. Juliet, TN",
+  "description": "Lake & Land Detailing handles paint correction, ceramic coatings, paint protection film and full details for cars, trucks and boats in Mt. Juliet. Every owner gets a straight explanation of what their vehicle needs. 5.0 on Google from 30 reviews.",
+  "brand": "#1670ff",
+  "brandHi": "#52c6ff",
+  "accent": "#8fd0ff",
+  "logo": "logo.png",
+  "logoChip": true,
+  "wordmark": {
+    "top": "Lake & Land",
+    "bottom": "Detailing"
   },
-  {
-   "name": "Paint Correction",
-   "text": "Removes as many imperfections, surface scratches, swirls and marring as possible from your vehicle's finish."
+  "phone": "(615) 775-6731",
+  "email": "lakeandlanddetailing@gmail.com",
+  "heroImage": "img/photo-8.jpg",
+  "heroAlt": "Black C8 Corvette with red calipers in the shop",
+  "heroPosition": "60% 60%",
+  "heroPositionPhone": "60% 50%",
+  "rating": {
+    "score": "5.0",
+    "count": 30,
+    "url": "https://maps.google.com/?cid=3264398761347917429"
   },
-  {
-   "name": "Ceramic Coating",
-   "text": "A layer of liquid glass bonded to your paint. Think of it as a much stronger, longer-lasting wax that locks in the finish.",
-   "price": "Starting at $775"
-  },
-  {
-   "name": "Paint Protection Film",
-   "text": "A screen protector for your vehicle, cut precisely to fit. Top-tier protection for your surfaces.",
-   "price": "Starting at $700"
-  },
-  {
-   "name": "Window Tinting",
-   "text": "Tint installs for cars, trucks, SUVs and even watercraft."
-  },
-  {
-   "name": "Vessel Ceramic Coating",
-   "text": "Two steps of gelcoat correction and your choice of coating, with trailer and wheels washed.",
-   "price": "Starting at $2250"
+  "kicker": "Paint correction, ceramic coating & PPF · Mt. Juliet, TN",
+  "headline": "Paint that looks new,<br><em>and stays that way.</em>",
+  "intro": "Lake & Land Detailing handles paint correction, ceramic coatings, paint protection film and full details for cars, trucks and boats in Mt. Juliet. Every owner gets a straight explanation of what their vehicle needs.",
+  "mobile": null,
+  "servicesTitle": "What we do.",
+  "servicesIntro": "Pricing starts at the numbers below. Call or schedule online for an official quote.",
+  "services": [
+    {
+      "name": "Full Detail",
+      "text": "Exterior wash, clay and sealant, wheels and fender liners, door jambs and windows, and a full interior steam clean with UV protectant.",
+      "price": "Starting at $300"
+    },
+    {
+      "name": "Paint Correction",
+      "text": "Removes as many imperfections, surface scratches, swirls and marring as possible from your vehicle's finish."
+    },
+    {
+      "name": "Ceramic Coating",
+      "text": "A layer of liquid glass bonded to your paint. Think of it as a much stronger, longer-lasting wax that locks in the finish.",
+      "price": "Starting at $775"
+    },
+    {
+      "name": "Paint Protection Film",
+      "text": "A screen protector for your vehicle, cut precisely to fit. Top-tier protection for your surfaces.",
+      "price": "Starting at $700"
+    },
+    {
+      "name": "Window Tinting",
+      "text": "Tint installs for cars, trucks, SUVs and even watercraft."
+    },
+    {
+      "name": "Vessel Ceramic Coating",
+      "text": "Two steps of gelcoat correction and your choice of coating, with trailer and wheels washed.",
+      "price": "Starting at $2250"
+    }
+  ],
+  "also": [
+    {
+      "name": "Boats"
+    },
+    {
+      "name": "Trucks"
+    },
+    {
+      "name": "SUVs"
+    },
+    {
+      "name": "Vehicle wraps"
+    },
+    {
+      "name": "Vessel wet sanding"
+    }
+  ],
+  "alsoTitle": "We also detail",
+  "why": [
+    {
+      "name": "We teach you the car",
+      "text": "Educating customers is the foundation of the business. You learn how to keep the finish looking its best."
+    },
+    {
+      "name": "Care for every vehicle",
+      "text": "Each vehicle is treated as if it were our own."
+    },
+    {
+      "name": "Something for every budget",
+      "text": "From a traditional inside-and-out detail to a full ceramic and PPF package."
+    }
+  ],
+  "whyTitle": "Why owners pick Lake & Land.",
+  "howTitle": "Three steps to a better finish.",
+  "steps": [
+    {
+      "name": "Tell us what you drive",
+      "text": "Call or fill out the form with your vehicle and the services you want."
+    },
+    {
+      "name": "Get your quote",
+      "text": "Starting prices are posted. We give you an official quote before work begins."
+    },
+    {
+      "name": "Pick it up",
+      "text": "Your vehicle comes back corrected, protected and ready to show."
+    }
+  ],
+  "contactTitle": "Book your vehicle in.",
+  "footerLine": "Paint correction, ceramic coating and detailing in Mt. Juliet",
+  "reviews": [
+    {
+      "text": "Really felt like I under paid for Drew's service. He worked nonstop on my vehicle for 2 days. His workmanship and attention to detail is above and beyond my expectations. He even came to my house and did the job. Lake and Land Detailing puts the customer first and will always be my choice for car care.",
+      "name": "Greg Allen"
+    },
+    {
+      "text": "Drew is a consummate professional. His knowledge of car care is unsurpassed by anyone I have met or spoken to in the car community. … After asking Drew to ceramic coat and paint correct my car, I can't recommend him and his work strongly enough. Thank you, Drew!",
+      "name": "Eric Bohan"
+    }
+  ],
+  "hours": [],
+  "galleryTitle": "Fresh off the water.",
+  "gallery": [
+    {
+      "src": "img/photo-7.jpg",
+      "alt": "White Audi RS7 with black wheels",
+      "size": "big"
+    },
+    {
+      "src": "img/photo-4.jpg",
+      "alt": "Green Mercedes G-Wagen with black accents"
+    },
+    {
+      "src": "img/photo-10.jpg",
+      "alt": "Orange Pontiac Firebird with chrome wheels"
+    },
+    {
+      "src": "img/photo-5.jpg",
+      "alt": "Black Mercedes sedan with bronze wheels"
+    },
+    {
+      "src": "img/photo-6.jpg",
+      "alt": "Blue Mustang and Shelby GT500 side by side"
+    },
+    {
+      "src": "img/photo-2.jpg",
+      "alt": "Black Porsche Macan in the detail bay"
+    },
+    {
+      "src": "img/photo-3.jpg",
+      "alt": "Matte black lifted Ford Bronco"
+    },
+    {
+      "src": "img/photo-1.jpg",
+      "alt": "Technician working on the wheel arch of a blue sports car"
+    },
+    {
+      "src": "img/photo-9.jpg",
+      "alt": "Black Toyota Prius with a glossy finish"
+    }
+  ],
+  "areas": [
+    "Mt. Juliet"
+  ],
+  "pitch": "site",
+  "siteCheck": {
+    "reasons": [],
+    "improvements": [
+      "no reviews on the site"
+    ]
   }
- ],
- "also": [
-  {
-   "name": "Boats"
-  },
-  {
-   "name": "Trucks"
-  },
-  {
-   "name": "SUVs"
-  },
-  {
-   "name": "Vehicle wraps"
-  },
-  {
-   "name": "Vessel wet sanding"
-  }
- ],
- "alsoTitle": "We also detail",
- "why": [
-  {
-   "name": "We teach you the car",
-   "text": "Educating customers is the foundation of the business. You learn how to keep the finish looking its best."
-  },
-  {
-   "name": "Care for every vehicle",
-   "text": "Each vehicle is treated as if it were our own."
-  },
-  {
-   "name": "Something for every budget",
-   "text": "From a traditional inside-and-out detail to a full ceramic and PPF package."
-  }
- ],
- "whyTitle": "Why owners pick Lake & Land.",
- "howTitle": "Three steps to a better finish.",
- "steps": [
-  {
-   "name": "Tell us what you drive",
-   "text": "Call or fill out the form with your vehicle and the services you want."
-  },
-  {
-   "name": "Get your quote",
-   "text": "Starting prices are posted. We give you an official quote before work begins."
-  },
-  {
-   "name": "Pick it up",
-   "text": "Your vehicle comes back corrected, protected and ready to show."
-  }
- ],
- "contactTitle": "Book your vehicle in.",
- "footerLine": "Paint correction, ceramic coating and detailing in Mt. Juliet",
- "reviews": [
-  {
-   "text": "Really felt like I under paid for Drew's service. He worked nonstop on my vehicle for 2 days. His workmanship and attention to detail is above and beyond my expectations. He even came to my house and did the job. Lake and Land Detailing puts the customer first and will always be my choice for car care.",
-   "name": "Greg Allen"
-  },
-  {
-   "text": "Drew is a consummate professional. His knowledge of car care is unsurpassed by anyone I have met or spoken to in the car community. … After asking Drew to ceramic coat and paint correct my car, I can't recommend him and his work strongly enough. Thank you, Drew!",
-   "name": "Eric Bohan"
-  }
- ],
- "hours": [],
- "galleryTitle": "Fresh off the water.",
- "gallery": [
-  {
-   "src": "img/photo-7.jpg",
-   "alt": "White Audi RS7 with black wheels",
-   "size": "big"
-  },
-  {
-   "src": "img/photo-4.jpg",
-   "alt": "Green Mercedes G-Wagen with black accents"
-  },
-  {
-   "src": "img/photo-10.jpg",
-   "alt": "Orange Pontiac Firebird with chrome wheels"
-  },
-  {
-   "src": "img/photo-5.jpg",
-   "alt": "Black Mercedes sedan with bronze wheels"
-  },
-  {
-   "src": "img/photo-6.jpg",
-   "alt": "Blue Mustang and Shelby GT500 side by side"
-  },
-  {
-   "src": "img/photo-2.jpg",
-   "alt": "Black Porsche Macan in the detail bay"
-  },
-  {
-   "src": "img/photo-3.jpg",
-   "alt": "Matte black lifted Ford Bronco"
-  },
-  {
-   "src": "img/photo-1.jpg",
-   "alt": "Technician working on the wheel arch of a blue sports car"
-  },
-  {
-   "src": "img/photo-9.jpg",
-   "alt": "Black Toyota Prius with a glossy finish"
-  }
- ],
- "areas": [
-  "Mt. Juliet"
- ],
- "pitch": "site"
 }

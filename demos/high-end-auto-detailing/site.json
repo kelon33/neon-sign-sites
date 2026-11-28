@@ -1,155 +1,161 @@
 {
- "kit": "detailing",
- "trade": "Mobile car detailing",
- "name": "High End Auto Detailing",
- "legalName": "High End Auto Detailing",
- "preview": true,
- "placeId": "ChIJ4QMhBnxBXIYR00geBBFgPEE",
- "title": "High End Auto Detailing | Mobile car detailing in San Antonio, TX",
- "description": "Premium detailing at your driveway or our shop, across San Antonio and 35 miles around it. Clear prices, by appointment, seven days a week. 4.9 on Google from 47 reviews.",
- "brand": "#1670ff",
- "brandHi": "#52c6ff",
- "accent": "#8fd0ff",
- "logo": null,
- "logoChip": false,
- "wordmark": {
-  "top": "High End",
-  "bottom": "Auto Detailing"
- },
- "phone": "(385) 628-8197",
- "email": "luissvn91@gmail.com",
- "heroImage": "img/photo-1.jpg",
- "heroAlt": "Glossy black BMW sedan in a dark detailing bay",
- "heroPosition": "60% 60%",
- "heroPositionPhone": "60% 50%",
- "rating": {
-  "score": "4.9",
-  "count": 47,
-  "url": "https://maps.google.com/?cid=4700737737267759315"
- },
- "kicker": "Mobile car detailing · San Antonio, TX",
- "headline": "Showroom shine.<br><em>Right in your driveway.</em>",
- "intro": "Premium detailing at your driveway or our shop, across San Antonio and 35 miles around it. Clear prices, by appointment, seven days a week.",
- "mobile": {
-  "title": "Your driveway is our shop.",
-  "intro": "We bring the detail to you, so your day keeps moving.",
-  "points": [
-   {
-    "name": "At your driveway",
-    "text": "We serve San Antonio and every area within 35 miles."
-   },
-   {
-    "name": "Open 7 days",
-    "text": "Arrival windows from 6 AM to 8 PM, every day."
-   },
-   {
-    "name": "Clear pricing",
-    "text": "Every package lists its price for sedans and for trucks and SUVs."
-   },
-   {
-    "name": "Easy to book",
-    "text": "Pick a time online, or call or text."
-   }
-  ]
- },
- "servicesTitle": "Three details. One clear price each.",
- "servicesIntro": "Pick what your car needs, from a deep interior clean to lasting paint protection.",
- "services": [
-  {
-   "name": "Basic Wash",
-   "text": "A careful hand wash with wheels, tires, windows and a hand dry.",
-   "price": "From $65"
+  "kit": "detailing",
+  "trade": "Mobile car detailing",
+  "name": "High End Auto Detailing",
+  "legalName": "High End Auto Detailing",
+  "preview": true,
+  "placeId": "ChIJ4QMhBnxBXIYR00geBBFgPEE",
+  "title": "High End Auto Detailing | Mobile car detailing in San Antonio, TX",
+  "description": "Premium detailing at your driveway or our shop, across San Antonio and 35 miles around it. Clear prices, by appointment, seven days a week. 4.9 on Google from 47 reviews.",
+  "brand": "#1670ff",
+  "brandHi": "#52c6ff",
+  "accent": "#8fd0ff",
+  "logo": null,
+  "logoChip": false,
+  "wordmark": {
+    "top": "High End",
+    "bottom": "Auto Detailing"
   },
-  {
-   "name": "Showroom Exterior",
-   "text": "Iron remover, clay and paint sealant for decontaminated paint with a true showroom gloss.",
-   "price": "From $130"
+  "phone": "(385) 628-8197",
+  "email": "luissvn91@gmail.com",
+  "heroImage": "img/photo-1.jpg",
+  "heroAlt": "Glossy black BMW sedan in a dark detailing bay",
+  "heroPosition": "60% 60%",
+  "heroPositionPhone": "60% 50%",
+  "rating": {
+    "score": "4.9",
+    "count": 47,
+    "url": "https://maps.google.com/?cid=4700737737267759315"
   },
-  {
-   "name": "Gold Interior",
-   "text": "Steam, carpet, upholstery and leather cleaning, with interior protection.",
-   "price": "From $140"
+  "kicker": "Mobile car detailing · San Antonio, TX",
+  "headline": "Showroom shine.<br><em>Right in your driveway.</em>",
+  "intro": "Premium detailing at your driveway or our shop, across San Antonio and 35 miles around it. Clear prices, by appointment, seven days a week.",
+  "mobile": {
+    "title": "Your driveway is our shop.",
+    "intro": "We bring the detail to you, so your day keeps moving.",
+    "points": [
+      {
+        "name": "At your driveway",
+        "text": "We serve San Antonio and every area within 35 miles."
+      },
+      {
+        "name": "Open 7 days",
+        "text": "Arrival windows from 6 AM to 8 PM, every day."
+      },
+      {
+        "name": "Clear pricing",
+        "text": "Every package lists its price for sedans and for trucks and SUVs."
+      },
+      {
+        "name": "Easy to book",
+        "text": "Pick a time online, or call or text."
+      }
+    ]
   },
-  {
-   "name": "Platinum Detail",
-   "text": "Deep Interior plus Showroom Exterior. Their flagship, about 6 hours.",
-   "price": "From $250"
-  },
-  {
-   "name": "1-Year Ceramic",
-   "text": "Wash, decontamination, 1-step machine polish and a one-year ceramic coating.",
-   "price": "From $300"
-  },
-  {
-   "name": "5-Year Ceramic",
-   "text": "Paint correction and a five-year ceramic coating, with glass and wheel face protection.",
-   "price": "From $600"
+  "servicesTitle": "Three details. One clear price each.",
+  "servicesIntro": "Pick what your car needs, from a deep interior clean to lasting paint protection.",
+  "services": [
+    {
+      "name": "Basic Wash",
+      "text": "A careful hand wash with wheels, tires, windows and a hand dry.",
+      "price": "From $65"
+    },
+    {
+      "name": "Showroom Exterior",
+      "text": "Iron remover, clay and paint sealant for decontaminated paint with a true showroom gloss.",
+      "price": "From $130"
+    },
+    {
+      "name": "Gold Interior",
+      "text": "Steam, carpet, upholstery and leather cleaning, with interior protection.",
+      "price": "From $140"
+    },
+    {
+      "name": "Platinum Detail",
+      "text": "Deep Interior plus Showroom Exterior. Their flagship, about 6 hours.",
+      "price": "From $250"
+    },
+    {
+      "name": "1-Year Ceramic",
+      "text": "Wash, decontamination, 1-step machine polish and a one-year ceramic coating.",
+      "price": "From $300"
+    },
+    {
+      "name": "5-Year Ceramic",
+      "text": "Paint correction and a five-year ceramic coating, with glass and wheel face protection.",
+      "price": "From $600"
+    }
+  ],
+  "also": [
+    {
+      "name": "Pet hair removal"
+    },
+    {
+      "name": "Odor treatment"
+    },
+    {
+      "name": "Ozone treatment"
+    },
+    {
+      "name": "Engine bay detail"
+    },
+    {
+      "name": "Headlight restoration"
+    },
+    {
+      "name": "Glass coating"
+    },
+    {
+      "name": "Leather coating"
+    }
+  ],
+  "alsoTitle": "We also detail",
+  "why": [
+    {
+      "name": "Premium products",
+      "text": "Professional-grade products on every surface of your vehicle."
+    },
+    {
+      "name": "Satisfaction guaranteed",
+      "text": "Satisfaction is part of every appointment."
+    },
+    {
+      "name": "Military and senior discount",
+      "text": "15% off every eligible service with valid ID."
+    }
+  ],
+  "whyTitle": "The detail is in the name.",
+  "howTitle": "Book it. We show up. You drive off shining.",
+  "steps": [
+    {
+      "name": "Tell us about your car",
+      "text": "Call, text or send the form: your vehicle, the service and where it's parked."
+    },
+    {
+      "name": "We pull up",
+      "text": "We arrive on time at your home or office, with everything we need."
+    },
+    {
+      "name": "You get the keys back",
+      "text": "To a car that looks, and smells, brand new."
+    }
+  ],
+  "contactTitle": "Book your detail.",
+  "footerLine": "Mobile car detailing in San Antonio",
+  "reviews": [],
+  "hours": [
+    "Daily: 6:00 AM–8:00 PM"
+  ],
+  "galleryTitle": "Fresh off the driveway.",
+  "gallery": [],
+  "areas": [
+    "San Antonio"
+  ],
+  "pitch": "photos",
+  "siteCheck": {
+    "reasons": [],
+    "improvements": [
+      "only 2 photos"
+    ]
   }
- ],
- "also": [
-  {
-   "name": "Pet hair removal"
-  },
-  {
-   "name": "Odor treatment"
-  },
-  {
-   "name": "Ozone treatment"
-  },
-  {
-   "name": "Engine bay detail"
-  },
-  {
-   "name": "Headlight restoration"
-  },
-  {
-   "name": "Glass coating"
-  },
-  {
-   "name": "Leather coating"
-  }
- ],
- "alsoTitle": "We also detail",
- "why": [
-  {
-   "name": "Premium products",
-   "text": "Professional-grade products on every surface of your vehicle."
-  },
-  {
-   "name": "Satisfaction guaranteed",
-   "text": "Satisfaction is part of every appointment."
-  },
-  {
-   "name": "Military and senior discount",
-   "text": "15% off every eligible service with valid ID."
-  }
- ],
- "whyTitle": "The detail is in the name.",
- "howTitle": "Book it. We show up. You drive off shining.",
- "steps": [
-  {
-   "name": "Tell us about your car",
-   "text": "Call, text or send the form: your vehicle, the service and where it's parked."
-  },
-  {
-   "name": "We pull up",
-   "text": "We arrive on time at your home or office, with everything we need."
-  },
-  {
-   "name": "You get the keys back",
-   "text": "To a car that looks, and smells, brand new."
-  }
- ],
- "contactTitle": "Book your detail.",
- "footerLine": "Mobile car detailing in San Antonio",
- "reviews": [],
- "hours": [
-  "Daily: 6:00 AM–8:00 PM"
- ],
- "galleryTitle": "Fresh off the driveway.",
- "gallery": [],
- "areas": [
-  "San Antonio"
- ],
- "pitch": "photos"
 }

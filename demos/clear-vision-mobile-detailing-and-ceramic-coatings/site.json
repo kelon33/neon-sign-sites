@@ -1,202 +1,208 @@
 {
- "kit": "detailing",
- "trade": "Boat detailing",
- "name": "Clear Vision Mobile Detailing and Ceramic Coatings",
- "legalName": "Clear Vision Mobile Detailing and Ceramic Coatings",
- "preview": true,
- "placeId": "ChIJAdZcmktr24gRBHAgJuEWwkU",
- "title": "Clear Vision Mobile Detailing and Ceramic Coatings | Mobile detailing and ceramic coating in Sarasota, FL",
- "description": "Mobile detailing, paint correction and SB3 ceramic coating for cars, RVs and boats across Sarasota County. We arrive fully self-contained, so you skip the shop. 4.9 on Google from 37 reviews.",
- "brand": "#1670ff",
- "brandHi": "#52c6ff",
- "accent": "#8fd0ff",
- "logoChip": false,
- "wordmark": {
-  "top": "Clear Vision",
-  "bottom": "Mobile Detailing"
- },
- "phone": "(941) 350-2088",
- "email": "clearvisiondetailing@gmail.com",
- "heroImage": "img/photo-17.jpg",
- "heroAlt": "Polished purple Porsche 911 Turbo convertible",
- "heroPosition": "60% 60%",
- "heroPositionPhone": "60% 50%",
- "rating": {
-  "score": "4.9",
-  "count": 37,
-  "url": "https://maps.google.com/?cid=5026605290362007556"
- },
- "kicker": "Mobile detailing and ceramic coating · Sarasota",
- "headline": "Clear paint. Clear water.<br><em>Delivered to you.</em>",
- "intro": "Mobile detailing, paint correction and SB3 ceramic coating for cars, RVs and boats across Sarasota County. We arrive fully self-contained, so you skip the shop.",
- "mobile": {
-  "title": "We come to you.",
-  "intro": "Home, office, marina or storage lot. We bring the equipment, the water and the power.",
-  "points": [
-   {
-    "name": "Self-contained",
-    "text": "Our rig carries its own water and power. No hookups needed."
-   },
-   {
-    "name": "No shop trip",
-    "text": "Your vehicle stays where it is stored and used."
-   },
-   {
-    "name": "Cars, RVs and boats",
-    "text": "At homes, workplaces, marinas, RV parks and private docks."
-   },
-   {
-    "name": "Easy to quote",
-    "text": "Call or send 3 photos for a personal recommendation and estimate."
-   }
-  ]
- },
- "servicesTitle": "Surface care, start to finish.",
- "servicesIntro": "Detailing, correction and coating for paint, fiberglass and gel coat.",
- "services": [
-  {
-   "name": "Ceramic Coating",
-   "text": "SB3 nano ceramic coating with clay bar and iron decontamination, in 1-, 3-, 5- and 7-year options.",
-   "price": "From $250"
+  "kit": "detailing",
+  "trade": "Boat detailing",
+  "name": "Clear Vision Mobile Detailing and Ceramic Coatings",
+  "legalName": "Clear Vision Mobile Detailing and Ceramic Coatings",
+  "preview": true,
+  "placeId": "ChIJAdZcmktr24gRBHAgJuEWwkU",
+  "title": "Clear Vision Mobile Detailing and Ceramic Coatings | Mobile detailing and ceramic coating in Sarasota, FL",
+  "description": "Mobile detailing, paint correction and SB3 ceramic coating for cars, RVs and boats across Sarasota County. We arrive fully self-contained, so you skip the shop. 4.9 on Google from 37 reviews.",
+  "brand": "#1670ff",
+  "brandHi": "#52c6ff",
+  "accent": "#8fd0ff",
+  "logoChip": false,
+  "wordmark": {
+    "top": "Clear Vision",
+    "bottom": "Mobile Detailing"
   },
-  {
-   "name": "Paint Correction",
-   "text": "Machine polishing and compounding in 1-, 2- and 3-step packages to remove swirls, oxidation and water spots."
+  "phone": "(941) 350-2088",
+  "email": "clearvisiondetailing@gmail.com",
+  "heroImage": "img/photo-17.jpg",
+  "heroAlt": "Polished purple Porsche 911 Turbo convertible",
+  "heroPosition": "60% 60%",
+  "heroPositionPhone": "60% 50%",
+  "rating": {
+    "score": "4.9",
+    "count": 37,
+    "url": "https://maps.google.com/?cid=5026605290362007556"
   },
-  {
-   "name": "Mobile Auto Detailing",
-   "text": "Foam wash, decontamination and interior deep cleaning at your location."
+  "kicker": "Mobile detailing and ceramic coating · Sarasota",
+  "headline": "Clear paint. Clear water.<br><em>Delivered to you.</em>",
+  "intro": "Mobile detailing, paint correction and SB3 ceramic coating for cars, RVs and boats across Sarasota County. We arrive fully self-contained, so you skip the shop.",
+  "mobile": {
+    "title": "We come to you.",
+    "intro": "Home, office, marina or storage lot. We bring the equipment, the water and the power.",
+    "points": [
+      {
+        "name": "Self-contained",
+        "text": "Our rig carries its own water and power. No hookups needed."
+      },
+      {
+        "name": "No shop trip",
+        "text": "Your vehicle stays where it is stored and used."
+      },
+      {
+        "name": "Cars, RVs and boats",
+        "text": "At homes, workplaces, marinas, RV parks and private docks."
+      },
+      {
+        "name": "Easy to quote",
+        "text": "Call or send 3 photos for a personal recommendation and estimate."
+      }
+    ]
   },
-  {
-   "name": "Boat Detailing",
-   "text": "Hull washing, decontamination, gel coat polishing and oxidation removal at your slip, dry storage or dock."
-  },
-  {
-   "name": "RV Detailing",
-   "text": "Exterior wash, AIO polish and interior detailing, with ceramic coating options.",
-   "price": "$10/ft to $40/ft"
-  },
-  {
-   "name": "Headlight Restoration",
-   "text": "Cloudy lenses wet sanded, polished and sealed with a ceramic coating."
+  "servicesTitle": "Surface care, start to finish.",
+  "servicesIntro": "Detailing, correction and coating for paint, fiberglass and gel coat.",
+  "services": [
+    {
+      "name": "Ceramic Coating",
+      "text": "SB3 nano ceramic coating with clay bar and iron decontamination, in 1-, 3-, 5- and 7-year options.",
+      "price": "From $250"
+    },
+    {
+      "name": "Paint Correction",
+      "text": "Machine polishing and compounding in 1-, 2- and 3-step packages to remove swirls, oxidation and water spots."
+    },
+    {
+      "name": "Mobile Auto Detailing",
+      "text": "Foam wash, decontamination and interior deep cleaning at your location."
+    },
+    {
+      "name": "Boat Detailing",
+      "text": "Hull washing, decontamination, gel coat polishing and oxidation removal at your slip, dry storage or dock."
+    },
+    {
+      "name": "RV Detailing",
+      "text": "Exterior wash, AIO polish and interior detailing, with ceramic coating options.",
+      "price": "$10/ft to $40/ft"
+    },
+    {
+      "name": "Headlight Restoration",
+      "text": "Cloudy lenses wet sanded, polished and sealed with a ceramic coating."
+    }
+  ],
+  "also": [
+    {
+      "name": "Boats"
+    },
+    {
+      "name": "RVs"
+    },
+    {
+      "name": "Motorcycles"
+    },
+    {
+      "name": "Luxury and exotic cars"
+    },
+    {
+      "name": "Electric vehicles"
+    },
+    {
+      "name": "Trucks and SUVs"
+    }
+  ],
+  "alsoTitle": "We also detail",
+  "why": [
+    {
+      "name": "SB3 certified",
+      "text": "Certified surface specialists applying SB3 ceramic coating."
+    },
+    {
+      "name": "Fully self-contained",
+      "text": "Our own water supply and power at every appointment."
+    }
+  ],
+  "whyTitle": "Why Sarasota owners call us.",
+  "howTitle": "Three steps to a clearer finish.",
+  "steps": [
+    {
+      "name": "Request a quote",
+      "text": "Call or send photos of your vehicle for a recommendation and estimate."
+    },
+    {
+      "name": "Schedule",
+      "text": "Pick a time at your home, office, apartment or marina."
+    },
+    {
+      "name": "We detail on site",
+      "text": "We arrive fully equipped and complete the service where it sits."
+    }
+  ],
+  "contactTitle": "Get your free quote.",
+  "footerLine": "Mobile detailing and ceramic coating in Sarasota, FL",
+  "reviews": [],
+  "hours": [],
+  "galleryTitle": "Fresh from the detail.",
+  "vehicleTypes": [
+    "Car",
+    "SUV or truck",
+    "RV",
+    "Boat",
+    "Motorcycle",
+    "Other"
+  ],
+  "modelPlaceholder": "e.g. Ford F-150, or a 24 ft boat",
+  "notePlaceholder": "What it needs, and where it is parked or docked…",
+  "gallery": [
+    {
+      "src": "img/photo-10.jpg",
+      "alt": "Blue and white wake boat at a dock",
+      "size": "big"
+    },
+    {
+      "src": "img/photo-11.jpg",
+      "alt": "Blue yacht and tender on the water"
+    },
+    {
+      "src": "img/photo-22.jpg",
+      "alt": "White Ferrari in a parking garage"
+    },
+    {
+      "src": "img/photo-2.jpg",
+      "alt": "Black Porsche Cayenne on a paver driveway"
+    },
+    {
+      "src": "img/photo-9.jpg",
+      "alt": "Cleaned boat cockpit and seating",
+      "size": "tall"
+    },
+    {
+      "src": "img/photo-15.jpg",
+      "alt": "Blue BMW SUV in a detailing bay"
+    },
+    {
+      "src": "img/photo-12.jpg",
+      "alt": "Red Mazda MX-5 in a shop"
+    },
+    {
+      "src": "img/photo-3.jpg",
+      "alt": "Black Ford dually pickup"
+    },
+    {
+      "src": "img/photo-4.jpg",
+      "alt": "Black GMC Sierra pickup in a shop"
+    },
+    {
+      "src": "img/photo-6.jpg",
+      "alt": "Black fifth-wheel RV on a driveway"
+    },
+    {
+      "src": "img/photo-7.jpg",
+      "alt": "Mercedes Sprinter motorhome"
+    },
+    {
+      "src": "img/photo-23.jpg",
+      "alt": "Black Kawasaki sport motorcycle"
+    }
+  ],
+  "areas": [
+    "Sarasota"
+  ],
+  "pitch": "site",
+  "siteCheck": {
+    "reasons": [],
+    "improvements": [
+      "no quote or booking form"
+    ]
   }
- ],
- "also": [
-  {
-   "name": "Boats"
-  },
-  {
-   "name": "RVs"
-  },
-  {
-   "name": "Motorcycles"
-  },
-  {
-   "name": "Luxury and exotic cars"
-  },
-  {
-   "name": "Electric vehicles"
-  },
-  {
-   "name": "Trucks and SUVs"
-  }
- ],
- "alsoTitle": "We also detail",
- "why": [
-  {
-   "name": "SB3 certified",
-   "text": "Certified surface specialists applying SB3 ceramic coating."
-  },
-  {
-   "name": "Fully self-contained",
-   "text": "Our own water supply and power at every appointment."
-  }
- ],
- "whyTitle": "Why Sarasota owners call us.",
- "howTitle": "Three steps to a clearer finish.",
- "steps": [
-  {
-   "name": "Request a quote",
-   "text": "Call or send photos of your vehicle for a recommendation and estimate."
-  },
-  {
-   "name": "Schedule",
-   "text": "Pick a time at your home, office, apartment or marina."
-  },
-  {
-   "name": "We detail on site",
-   "text": "We arrive fully equipped and complete the service where it sits."
-  }
- ],
- "contactTitle": "Get your free quote.",
- "footerLine": "Mobile detailing and ceramic coating in Sarasota, FL",
- "reviews": [],
- "hours": [],
- "galleryTitle": "Fresh from the detail.",
- "vehicleTypes": [
-  "Car",
-  "SUV or truck",
-  "RV",
-  "Boat",
-  "Motorcycle",
-  "Other"
- ],
- "modelPlaceholder": "e.g. Ford F-150, or a 24 ft boat",
- "notePlaceholder": "What it needs, and where it is parked or docked…",
- "gallery": [
-  {
-   "src": "img/photo-10.jpg",
-   "alt": "Blue and white wake boat at a dock",
-   "size": "big"
-  },
-  {
-   "src": "img/photo-11.jpg",
-   "alt": "Blue yacht and tender on the water"
-  },
-  {
-   "src": "img/photo-22.jpg",
-   "alt": "White Ferrari in a parking garage"
-  },
-  {
-   "src": "img/photo-2.jpg",
-   "alt": "Black Porsche Cayenne on a paver driveway"
-  },
-  {
-   "src": "img/photo-9.jpg",
-   "alt": "Cleaned boat cockpit and seating",
-   "size": "tall"
-  },
-  {
-   "src": "img/photo-15.jpg",
-   "alt": "Blue BMW SUV in a detailing bay"
-  },
-  {
-   "src": "img/photo-12.jpg",
-   "alt": "Red Mazda MX-5 in a shop"
-  },
-  {
-   "src": "img/photo-3.jpg",
-   "alt": "Black Ford dually pickup"
-  },
-  {
-   "src": "img/photo-4.jpg",
-   "alt": "Black GMC Sierra pickup in a shop"
-  },
-  {
-   "src": "img/photo-6.jpg",
-   "alt": "Black fifth-wheel RV on a driveway"
-  },
-  {
-   "src": "img/photo-7.jpg",
-   "alt": "Mercedes Sprinter motorhome"
-  },
-  {
-   "src": "img/photo-23.jpg",
-   "alt": "Black Kawasaki sport motorcycle"
-  }
- ],
- "areas": [
-  "Sarasota"
- ],
- "pitch": "site"
 }

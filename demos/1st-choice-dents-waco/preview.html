@@ -11,7 +11,7 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@100..125,500..800&family=Inter:wght@400;500;600&display=swap">
 <style>
 :root { --brand: #1670ff; --brand-hi: #52c6ff; --brand-lo: #0f4eb3; --accent: #8fd0ff;
-  --bg: #07090d; --panel: #0e1219; --panel-2: #131824; --line: rgba(255,255,255,.08); --ink: #eef2f8; --muted: #98a2b3;
+  --bg: #0d1118; --panel: #131923; --panel-2: #19212d; --brand-glow: #1670ff38; --line: rgba(255,255,255,.08); --ink: #eef2f8; --muted: #98a2b3;
   --display: "Archivo", "Inter", system-ui, sans-serif; --sans: "Inter", system-ui, sans-serif; --ease: cubic-bezier(.22,.61,.36,1); }
 * { box-sizing: border-box; }
 html { scroll-behavior: smooth; }
@@ -189,6 +189,11 @@ form.booking .btn { grid-column: 1 / -1; margin-top: 6px; }
   .hero > img { transform: none; }
 }
 
+/* RULE: no hard edges between sections. Wherever two colours meet, the change is a soft gradient. */
+.hero::after { content: ""; position: absolute; left: 0; right: 0; bottom: 0; height: 84px; z-index: -1; pointer-events: none; background: linear-gradient(180deg, transparent, var(--bg)); }
+.book { border-top: 0; background: linear-gradient(180deg, var(--bg), transparent 140px), radial-gradient(ellipse at 15% 0%, var(--brand-glow), transparent 55%), var(--panel); }
+.footer { background: linear-gradient(180deg, var(--panel), var(--bg)); border-top: 0; }
+
 /* RULE: the first screen reads as a whole page: headline, every hero button and the Google rating
    visible without scrolling, on laptops, desktops and phones (npm run fold checks it). */
 :root:has(.preview-bar) { --bar: 36px; }
@@ -198,7 +203,7 @@ form.booking .btn { grid-column: 1 / -1; margin-top: 6px; }
   .hero { min-height: calc(min(100vh, 860px) - var(--bar, 0px)); }
 }
 @media (min-width: 901px) and (max-height: 920px) {
-  .hero { padding-top: 116px; padding-bottom: 52px; }
+  .hero { padding-top: 112px; padding-bottom: 84px; }
   .hero h1 { font-size: clamp(2.5rem, 8vh, 5.2rem); }
   .hero .lead { margin-top: 16px; }
   .hero .actions { margin-top: 24px; }
@@ -206,7 +211,7 @@ form.booking .btn { grid-column: 1 / -1; margin-top: 6px; }
   .hero .rating { margin-top: 18px; }
 }
 @media (max-width: 900px) {
-  .hero { min-height: calc(100svh - var(--bar, 0px)); padding: 96px 0 26px; }
+  .hero { min-height: calc(100svh - var(--bar, 0px)); padding: 92px 0 58px; }
   .hero h1 { font-size: clamp(1.9rem, min(10.2vw, 6svh), 3.3rem); }
   .hero .eyebrow { margin-bottom: 10px; }
   .hero .lead { font-size: 1rem; line-height: 1.5; margin-top: 12px; display: -webkit-box; -webkit-line-clamp: 4; -webkit-box-orient: vertical; overflow: hidden; }
@@ -219,7 +224,11 @@ form.booking .btn { grid-column: 1 / -1; margin-top: 6px; }
   .hero .lead { -webkit-line-clamp: 3; }
   .badges { display: none; }
 }
-</style>
+.nss-fix{padding:28px 20px 8px}.nss-fix>div{max-width:760px;margin:0 auto;border-radius:18px;padding:20px 22px;background:color-mix(in srgb,currentColor 6%,transparent);box-shadow:inset 0 0 0 1px color-mix(in srgb,currentColor 14%,transparent)}
+.nss-fix h2{font:700 1.05rem/1.3 system-ui,-apple-system,sans-serif;margin:0 0 10px;letter-spacing:.01em}
+.nss-fix ul{list-style:none;margin:0;padding:0;display:grid;gap:8px;font:400 15px/1.45 system-ui,-apple-system,sans-serif}
+.nss-fix li{display:flex;gap:10px;align-items:baseline}.nss-fix li::before{content:"✓";font-weight:700;color:#2fbf71}
+.nss-fix .was{opacity:.75}.nss-fix .now{font-weight:600}</style>
 </head>
 <body>
 <style>
@@ -242,7 +251,7 @@ form.booking .btn { grid-column: 1 / -1; margin-top: 6px; }
 <header class="top">
   <div class="wrap">
     <a class="logo" href="#"><span><b>1st Choice</b><small>Dents Waco</small></span></a>
-    <nav aria-label="Main"><a href="#services">Services</a><a href="#work">Our work</a><a href="#reviews">Reviews</a><a href="#book">Contact</a></nav>
+    <nav aria-label="Main"><a href="#services">Services</a><a href="#work">Our work</a><a href="#book">Contact</a></nav>
     <a class="btn" href="#book">Get an estimate</a>
   </div>
 </header>
@@ -261,6 +270,8 @@ form.booking .btn { grid-column: 1 / -1; margin-top: 6px; }
     <a class="rating" href="https://maps.google.com/?cid=9444729398659226467" target="_blank" rel="noopener"><span class="stars" aria-label="5 stars"><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M10 1.6l2.6 5.3 5.8.8-4.2 4.1 1 5.8L10 14.9l-5.2 2.7 1-5.8L1.6 7.7l5.8-.8z"/></svg><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M10 1.6l2.6 5.3 5.8.8-4.2 4.1 1 5.8L10 14.9l-5.2 2.7 1-5.8L1.6 7.7l5.8-.8z"/></svg><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M10 1.6l2.6 5.3 5.8.8-4.2 4.1 1 5.8L10 14.9l-5.2 2.7 1-5.8L1.6 7.7l5.8-.8z"/></svg><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M10 1.6l2.6 5.3 5.8.8-4.2 4.1 1 5.8L10 14.9l-5.2 2.7 1-5.8L1.6 7.7l5.8-.8z"/></svg><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M10 1.6l2.6 5.3 5.8.8-4.2 4.1 1 5.8L10 14.9l-5.2 2.7 1-5.8L1.6 7.7l5.8-.8z"/></svg></span><b>5.0</b><span>127 Google reviews</span></a>
   </div>
 </section>
+<section class="nss-fix" aria-label="What we fixed"><div><h2>What this page fixes</h2><ul><li><span><span class="was">Your site took 2.9 seconds to load when we checked</span> → <span class="now">one light page that opens fast</span></span></li></ul></div></section>
+
 
 
 
@@ -273,7 +284,7 @@ form.booking .btn { grid-column: 1 / -1; margin-top: 6px; }
       <article class="service"><span class="n">03</span><h3>Creases</h3><p>Most creases can be repaired with the paintless process.</p></article>
       <article class="service"><span class="n">04</span><h3>Insurance claims</h3><p>We walk you through the claim process.</p></article>
     </div>
-    <div class="also"><span>We also fix</span><span class="tag">RVs</span><span class="tag">Trucks</span><span class="tag">SUVs</span></div>
+    <div class="also"><span>We also fix</span><span class="tag">Trucks</span><span class="tag">SUVs</span></div>
   </div>
 </section>
 
@@ -291,20 +302,11 @@ form.booking .btn { grid-column: 1 / -1; margin-top: 6px; }
   <dialog class="lightbox" aria-label="Photo"><form method="dialog"><button aria-label="Close">×</button></form><img alt=""></dialog>
 </section>
 
-<section class="section" id="reviews" style="padding-top:20px">
-  <div class="wrap">
-    <div class="head"><div><p class="eyebrow">Reviews</p><h2>Our customers say it best.</h2></div><p><a class="rating" style="margin:0" href="https://maps.google.com/?cid=9444729398659226467" target="_blank" rel="noopener"><span class="stars" aria-label="5 stars"><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M10 1.6l2.6 5.3 5.8.8-4.2 4.1 1 5.8L10 14.9l-5.2 2.7 1-5.8L1.6 7.7l5.8-.8z"/></svg><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M10 1.6l2.6 5.3 5.8.8-4.2 4.1 1 5.8L10 14.9l-5.2 2.7 1-5.8L1.6 7.7l5.8-.8z"/></svg><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M10 1.6l2.6 5.3 5.8.8-4.2 4.1 1 5.8L10 14.9l-5.2 2.7 1-5.8L1.6 7.7l5.8-.8z"/></svg><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M10 1.6l2.6 5.3 5.8.8-4.2 4.1 1 5.8L10 14.9l-5.2 2.7 1-5.8L1.6 7.7l5.8-.8z"/></svg><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M10 1.6l2.6 5.3 5.8.8-4.2 4.1 1 5.8L10 14.9l-5.2 2.7 1-5.8L1.6 7.7l5.8-.8z"/></svg></span><b>5.0</b><span>from 127 reviews on Google</span></a></p></div>
-    <div class="reviews">
-      <figure class="review" style="margin:0"><span class="stars" aria-label="5 stars"><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M10 1.6l2.6 5.3 5.8.8-4.2 4.1 1 5.8L10 14.9l-5.2 2.7 1-5.8L1.6 7.7l5.8-.8z"/></svg><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M10 1.6l2.6 5.3 5.8.8-4.2 4.1 1 5.8L10 14.9l-5.2 2.7 1-5.8L1.6 7.7l5.8-.8z"/></svg><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M10 1.6l2.6 5.3 5.8.8-4.2 4.1 1 5.8L10 14.9l-5.2 2.7 1-5.8L1.6 7.7l5.8-.8z"/></svg><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M10 1.6l2.6 5.3 5.8.8-4.2 4.1 1 5.8L10 14.9l-5.2 2.7 1-5.8L1.6 7.7l5.8-.8z"/></svg><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M10 1.6l2.6 5.3 5.8.8-4.2 4.1 1 5.8L10 14.9l-5.2 2.7 1-5.8L1.6 7.7l5.8-.8z"/></svg></span><p>“The repair was better than I expected, practically flawless.”</p><cite>Mark Benavidez</cite></figure>
-      <figure class="review" style="margin:0"><span class="stars" aria-label="5 stars"><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M10 1.6l2.6 5.3 5.8.8-4.2 4.1 1 5.8L10 14.9l-5.2 2.7 1-5.8L1.6 7.7l5.8-.8z"/></svg><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M10 1.6l2.6 5.3 5.8.8-4.2 4.1 1 5.8L10 14.9l-5.2 2.7 1-5.8L1.6 7.7l5.8-.8z"/></svg><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M10 1.6l2.6 5.3 5.8.8-4.2 4.1 1 5.8L10 14.9l-5.2 2.7 1-5.8L1.6 7.7l5.8-.8z"/></svg><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M10 1.6l2.6 5.3 5.8.8-4.2 4.1 1 5.8L10 14.9l-5.2 2.7 1-5.8L1.6 7.7l5.8-.8z"/></svg><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M10 1.6l2.6 5.3 5.8.8-4.2 4.1 1 5.8L10 14.9l-5.2 2.7 1-5.8L1.6 7.7l5.8-.8z"/></svg></span><p>“I brought along my own precision inspector (my wife) and she could not find any trace of the more than 30 hail dents in the hood of our RV.”</p><cite>Dennis A Daniel</cite></figure>
-      <figure class="review" style="margin:0"><span class="stars" aria-label="5 stars"><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M10 1.6l2.6 5.3 5.8.8-4.2 4.1 1 5.8L10 14.9l-5.2 2.7 1-5.8L1.6 7.7l5.8-.8z"/></svg><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M10 1.6l2.6 5.3 5.8.8-4.2 4.1 1 5.8L10 14.9l-5.2 2.7 1-5.8L1.6 7.7l5.8-.8z"/></svg><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M10 1.6l2.6 5.3 5.8.8-4.2 4.1 1 5.8L10 14.9l-5.2 2.7 1-5.8L1.6 7.7l5.8-.8z"/></svg><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M10 1.6l2.6 5.3 5.8.8-4.2 4.1 1 5.8L10 14.9l-5.2 2.7 1-5.8L1.6 7.7l5.8-.8z"/></svg><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M10 1.6l2.6 5.3 5.8.8-4.2 4.1 1 5.8L10 14.9l-5.2 2.7 1-5.8L1.6 7.7l5.8-.8z"/></svg></span><p>“They fixed a dent in the door of my black Nissan Frontier Pro4X in about 5 minutes, and absolutely made my day…”</p><cite>J Johnston</cite></figure>
-    </div>
-  </div>
-</section>
+
 
 <section class="section" style="padding-top:30px">
   <div class="wrap">
-    <p class="eyebrow">Why 1st Choice</p>
+    <p class="eyebrow">Why 1st Choice Dents Waco</p>
     <h2 style="margin-bottom:46px;max-width:16em">The 1st Choice Dents difference.</h2>
     <div class="why">
       <div><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3s6 6.4 6 11a6 6 0 01-12 0c0-4.6 6-11 6-11z"/></svg><h3>15+ years of experience</h3><p>A knowledgeable team that explains the work and does it right.</p></div>
@@ -343,7 +345,7 @@ form.booking .btn { grid-column: 1 / -1; margin-top: 6px; }
       <h3>Request a booking</h3>
       <label>Name <input name="name" autocomplete="name" required></label>
       <label>Phone <input name="phone" type="tel" autocomplete="tel" required></label>
-      <label>Vehicle type <select name="vehicle"><option>Car</option><option>SUV or truck</option><option>RVs</option><option>Trucks</option><option>SUVs</option></select></label>
+      <label>Vehicle type <select name="vehicle"><option>Car</option><option>SUV or truck</option><option>Trucks</option><option>SUVs</option></select></label>
       <label>Make and model <input name="model" placeholder="e.g. Toyota RAV4"></label>
       <label class="full">Service <select name="service"><option>Hail damage</option><option>Door dings</option><option>Creases</option><option>Insurance claims</option><option>Not sure yet</option></select></label>
       <label>Where should we come? <input name="address" autocomplete="street-address" placeholder="Address or neighborhood"></label>

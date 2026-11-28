@@ -1,137 +1,143 @@
 {
- "kit": "holiday",
- "name": "Happy Lighting TX",
- "legalName": "Happy Lighting TX",
- "preview": true,
- "placeId": "ChIJbXRsitIi_0oRrAiE86dWgC4",
- "title": "Happy Lighting TX | Christmas light installation in Lubbock, TX",
- "description": "Custom Christmas lighting for Lubbock homes and businesses, cut to fit your property. We handle design, installation, maintenance and takedown. 4.9 on Google from 113 reviews.",
- "logo": null,
- "logoChip": false,
- "wordmark": {
-  "top": "Happy",
-  "bottom": "Lighting"
- },
- "phone": "(806) 503-2333",
- "email": "happylightingtx@gmail.com",
- "heroImage": null,
- "heroAlt": "",
- "heroPosition": "60% 60%",
- "heroPositionPhone": "60% 50%",
- "rating": {
-  "score": "4.9",
-  "count": 113,
-  "url": "https://maps.google.com/?cid=3350773402108692652"
- },
- "kicker": "Christmas light installation \u00b7 Lubbock",
- "headline": "We hang the lights.<br><em>You enjoy the holidays.</em>",
- "intro": "Custom Christmas lighting for Lubbock homes and businesses, cut to fit your property. We handle design, installation, maintenance and takedown.",
- "badges": [],
- "highlights": {
-  "title": "Why Lubbock neighbors call us",
-  "intro": "One crew from first strand to last box in storage.",
-  "points": [
-   {
-    "name": "Cut to fit",
-    "text": "Every strand is custom cut to your home, with extension cords sized to length and hidden."
-   },
-   {
-    "name": "You control the timer",
-    "text": "You choose when the lights turn on."
-   },
-   {
-    "name": "We come back",
-    "text": "If weather, kids or pets cause problems, we come out and rehang them."
-   },
-   {
-    "name": "Takedown included",
-    "text": "In January we remove, label and store your lights."
-   }
-  ]
- },
- "servicesTitle": "Lights, done for you.",
- "servicesIntro": "Design, installation, maintenance and removal, all in one service.",
- "services": [
-  {
-   "name": "Design",
-   "text": "Custom options for your home and budget, in warm white or a range of colors."
+  "kit": "holiday",
+  "name": "Happy Lighting TX",
+  "legalName": "Happy Lighting TX",
+  "preview": true,
+  "placeId": "ChIJbXRsitIi_0oRrAiE86dWgC4",
+  "title": "Happy Lighting TX | Christmas light installation in Lubbock, TX",
+  "description": "Custom Christmas lighting for Lubbock homes and businesses, cut to fit your property. We handle design, installation, maintenance and takedown. 4.9 on Google from 113 reviews.",
+  "logo": null,
+  "logoChip": false,
+  "wordmark": {
+    "top": "Happy",
+    "bottom": "Lighting"
   },
-  {
-   "name": "Installation",
-   "text": "Professional-grade lights cut to fit your home, starting in October."
+  "phone": "(806) 503-2333",
+  "email": "happylightingtx@gmail.com",
+  "heroImage": null,
+  "heroAlt": "",
+  "heroPosition": "60% 60%",
+  "heroPositionPhone": "60% 50%",
+  "rating": {
+    "score": "4.9",
+    "count": 113,
+    "url": "https://maps.google.com/?cid=3350773402108692652"
   },
-  {
-   "name": "Maintenance",
-   "text": "We guarantee our lights and materials and rehang them if something goes wrong."
+  "kicker": "Christmas light installation · Lubbock",
+  "headline": "We hang the lights.<br><em>You enjoy the holidays.</em>",
+  "intro": "Custom Christmas lighting for Lubbock homes and businesses, cut to fit your property. We handle design, installation, maintenance and takedown.",
+  "badges": [],
+  "highlights": {
+    "title": "Why Lubbock neighbors call us",
+    "intro": "One crew from first strand to last box in storage.",
+    "points": [
+      {
+        "name": "Cut to fit",
+        "text": "Every strand is custom cut to your home, with extension cords sized to length and hidden."
+      },
+      {
+        "name": "You control the timer",
+        "text": "You choose when the lights turn on."
+      },
+      {
+        "name": "We come back",
+        "text": "If weather, kids or pets cause problems, we come out and rehang them."
+      },
+      {
+        "name": "Takedown included",
+        "text": "In January we remove, label and store your lights."
+      }
+    ]
   },
-  {
-   "name": "Removal & Storage",
-   "text": "We take down, label and store your lights, then inspect them for next season."
+  "servicesTitle": "Lights, done for you.",
+  "servicesIntro": "Design, installation, maintenance and removal, all in one service.",
+  "services": [
+    {
+      "name": "Design",
+      "text": "Custom options for your home and budget, in warm white or a range of colors."
+    },
+    {
+      "name": "Installation",
+      "text": "Professional-grade lights cut to fit your home, starting in October."
+    },
+    {
+      "name": "Maintenance",
+      "text": "We guarantee our lights and materials and rehang them if something goes wrong."
+    },
+    {
+      "name": "Removal & Storage",
+      "text": "We take down, label and store your lights, then inspect them for next season."
+    }
+  ],
+  "also": [
+    {
+      "name": "Residential"
+    },
+    {
+      "name": "Commercial"
+    },
+    {
+      "name": "Trees"
+    },
+    {
+      "name": "Bushes"
+    },
+    {
+      "name": "Columns"
+    }
+  ],
+  "alsoTitle": "We also do:",
+  "promise": null,
+  "why": [
+    {
+      "name": "Professional-grade LEDs",
+      "text": "Ultra-bright Litnetics LED lights built to last the season."
+    },
+    {
+      "name": "A guarantee on the work",
+      "text": "We guarantee all the lights and materials we provide."
+    },
+    {
+      "name": "Start to finish",
+      "text": "Design, installation, maintenance and removal from one team."
+    }
+  ],
+  "whyTitle": "Why Happy Lighting",
+  "howTitle": "Lit up in three steps.",
+  "steps": [
+    {
+      "name": "Get a free quote",
+      "text": "Call or send the form. Tell us about your home or business."
+    },
+    {
+      "name": "Pick your design",
+      "text": "Choose warm white or color, and where the lights go."
+    },
+    {
+      "name": "We hang them",
+      "text": "We install, maintain and take them down in January."
+    }
+  ],
+  "contactTitle": "Ready to light it up?",
+  "footerLine": "Christmas light installation in Lubbock, TX",
+  "reviews": [
+    {
+      "text": "Happy Lighting transformed our home into a holiday masterpiece! Their attention to detail and creative design exceeded our expectations. The installation process was seamless, and the team was professional and friendly. We received countless compliments from neighbors, and the best part is knowing they’ll be back for maintenance and removal. We couldn’t be happier with our experience!",
+      "name": "Emily Johnson"
+    }
+  ],
+  "hours": [],
+  "galleryTitle": "Homes we light up.",
+  "notePlaceholder": "Roofline length, trees, a date you want them up…",
+  "gallery": [],
+  "areas": [
+    "Lubbock"
+  ],
+  "pitch": "photos",
+  "siteCheck": {
+    "reasons": [
+      "GoDaddy site builder"
+    ],
+    "improvements": []
   }
- ],
- "also": [
-  {
-   "name": "Residential"
-  },
-  {
-   "name": "Commercial"
-  },
-  {
-   "name": "Trees"
-  },
-  {
-   "name": "Bushes"
-  },
-  {
-   "name": "Columns"
-  }
- ],
- "alsoTitle": "We also do:",
- "promise": null,
- "why": [
-  {
-   "name": "Professional-grade LEDs",
-   "text": "Ultra-bright Litnetics LED lights built to last the season."
-  },
-  {
-   "name": "A guarantee on the work",
-   "text": "We guarantee all the lights and materials we provide."
-  },
-  {
-   "name": "Start to finish",
-   "text": "Design, installation, maintenance and removal from one team."
-  }
- ],
- "whyTitle": "Why Happy Lighting",
- "howTitle": "Lit up in three steps.",
- "steps": [
-  {
-   "name": "Get a free quote",
-   "text": "Call or send the form. Tell us about your home or business."
-  },
-  {
-   "name": "Pick your design",
-   "text": "Choose warm white or color, and where the lights go."
-  },
-  {
-   "name": "We hang them",
-   "text": "We install, maintain and take them down in January."
-  }
- ],
- "contactTitle": "Ready to light it up?",
- "footerLine": "Christmas light installation in Lubbock, TX",
- "reviews": [
-  {
-   "text": "Happy Lighting transformed our home into a holiday masterpiece! Their attention to detail and creative design exceeded our expectations. The installation process was seamless, and the team was professional and friendly. We received countless compliments from neighbors, and the best part is knowing they\u2019ll be back for maintenance and removal. We couldn\u2019t be happier with our experience!",
-   "name": "Emily Johnson"
-  }
- ],
- "hours": [],
- "galleryTitle": "Homes we light up.",
- "notePlaceholder": "Roofline length, trees, a date you want them up\u2026",
- "gallery": [],
- "areas": [
-  "Lubbock"
- ],
- "pitch": "photos"
 }

@@ -1,128 +1,134 @@
 {
- "kit": "detailing",
- "trade": "Boat detailing",
- "name": "TX Marine Riggers",
- "legalName": "TX Marine Riggers",
- "preview": true,
- "placeId": "ChIJcaVHDplxXIYRZp-BoVdP2rw",
- "title": "TX Marine Riggers | Boat detailing in Boerne, TX",
- "description": "Boat detailing in Boerne, from a basic wash to intensive restoration. Done by the same shop that repairs, rigs and upgrades boats. 4.8 on Google from 24 reviews.",
- "brand": "#1670ff",
- "brandHi": "#52c6ff",
- "accent": "#8fd0ff",
- "logo": "logo.png",
- "logoChip": false,
- "wordmark": {
-  "top": "TX Marine",
-  "bottom": "Riggers"
- },
- "phone": "(210) 966-8484",
- "email": "service@txmarineriggers.com",
- "heroImage": "img/photo-12.jpg",
- "heroAlt": "White cruiser boat floating at the water's edge",
- "heroPosition": "60% 60%",
- "heroPositionPhone": "60% 50%",
- "rating": {
-  "score": "4.8",
-  "count": 24,
-  "url": "https://maps.google.com/?cid=13608276461843750758"
- },
- "kicker": "Boat detailing · Boerne",
- "headline": "Back on the water<br><em>looking new.</em>",
- "intro": "Boat detailing in Boerne, from a basic wash to intensive restoration. Done by the same shop that repairs, rigs and upgrades boats.",
- "mobile": null,
- "servicesTitle": "Bow to stern.",
- "servicesIntro": "Restoration for weathered boats. Protection to keep every boat looking new.",
- "services": [
-  {
-   "name": "Basic wash",
-   "text": "A clean hull and deck to start the season right."
+  "kit": "detailing",
+  "trade": "Boat detailing",
+  "name": "TX Marine Riggers",
+  "legalName": "TX Marine Riggers",
+  "preview": true,
+  "placeId": "ChIJcaVHDplxXIYRZp-BoVdP2rw",
+  "title": "TX Marine Riggers | Boat detailing in Boerne, TX",
+  "description": "Boat detailing in Boerne, from a basic wash to intensive restoration. Done by the same shop that repairs, rigs and upgrades boats. 4.8 on Google from 24 reviews.",
+  "brand": "#1670ff",
+  "brandHi": "#52c6ff",
+  "accent": "#8fd0ff",
+  "logo": "logo.png",
+  "logoChip": false,
+  "wordmark": {
+    "top": "TX Marine",
+    "bottom": "Riggers"
   },
-  {
-   "name": "Intensive restoration",
-   "text": "Weathered boats brought back to a finish you can be proud of."
+  "phone": "(210) 966-8484",
+  "email": "service@txmarineriggers.com",
+  "heroImage": "img/photo-12.jpg",
+  "heroAlt": "White cruiser boat floating at the water's edge",
+  "heroPosition": "60% 60%",
+  "heroPositionPhone": "60% 50%",
+  "rating": {
+    "score": "4.8",
+    "count": 24,
+    "url": "https://maps.google.com/?cid=13608276461843750758"
   },
-  {
-   "name": "Detailing by the foot",
-   "text": "Pricing is by boat length, so you pay for the size of your boat.",
-   "price": "$25 to $100 per linear foot"
+  "kicker": "Boat detailing · Boerne",
+  "headline": "Back on the water<br><em>looking new.</em>",
+  "intro": "Boat detailing in Boerne, from a basic wash to intensive restoration. Done by the same shop that repairs, rigs and upgrades boats.",
+  "mobile": null,
+  "servicesTitle": "Bow to stern.",
+  "servicesIntro": "Restoration for weathered boats. Protection to keep every boat looking new.",
+  "services": [
+    {
+      "name": "Basic wash",
+      "text": "A clean hull and deck to start the season right."
+    },
+    {
+      "name": "Intensive restoration",
+      "text": "Weathered boats brought back to a finish you can be proud of."
+    },
+    {
+      "name": "Detailing by the foot",
+      "text": "Pricing is by boat length, so you pay for the size of your boat.",
+      "price": "$25 to $100 per linear foot"
+    }
+  ],
+  "also": [],
+  "alsoTitle": "We also detail",
+  "why": [
+    {
+      "name": "Knowledgeable, expert staff",
+      "text": "A full-time team of marine mechanics who know boats inside and out."
+    },
+    {
+      "name": "Fair and honest pricing",
+      "text": "Clear pricing for detailing, from basic wash to full restoration."
+    },
+    {
+      "name": "One-stop shop",
+      "text": "Repair, maintenance, accessories, audio, flooring and detailing under one roof."
+    }
+  ],
+  "whyTitle": "What we give you that others don't.",
+  "howTitle": "Ready for the water in three steps.",
+  "steps": [
+    {
+      "name": "Ask for a quote",
+      "text": "Call, email or use the form and tell us about your boat."
+    },
+    {
+      "name": "We come to you",
+      "text": "We bring the service to your marina slip."
+    },
+    {
+      "name": "Back on the water",
+      "text": "Clean, polished and protected."
+    }
+  ],
+  "contactTitle": "Book your boat in.",
+  "footerLine": "Boat detailing in Boerne",
+  "reviews": [],
+  "hours": [
+    "Mon-Fri: 8am – 5pm",
+    "Sat: By appointment",
+    "Sun: Closed"
+  ],
+  "galleryTitle": "Fresh off the water.",
+  "vehicleTypes": [
+    "Boat",
+    "Pontoon",
+    "Yacht",
+    "Jet ski",
+    "Other"
+  ],
+  "modelPlaceholder": "e.g. Sea Ray 240, 24 ft",
+  "notePlaceholder": "Length, where it is docked or stored, what it needs…",
+  "gallery": [
+    {
+      "src": "img/photo-8.jpg",
+      "alt": "White and navy cruiser running on open water",
+      "size": "big"
+    },
+    {
+      "src": "img/photo-4.jpg",
+      "alt": "Boat deck with gray and blue custom marine decking"
+    },
+    {
+      "src": "img/photo-11.jpg",
+      "alt": "Center console fishing boat with T-top underway"
+    },
+    {
+      "src": "img/photo-17.jpg",
+      "alt": "Marine speaker installed in a white boat's side panel"
+    },
+    {
+      "src": "img/photo-18.jpg",
+      "alt": "Boat helm with navigation screens and steering wheel"
+    }
+  ],
+  "areas": [
+    "Boerne"
+  ],
+  "pitch": "site",
+  "siteCheck": {
+    "reasons": [
+      "Weebly"
+    ],
+    "improvements": []
   }
- ],
- "also": [],
- "alsoTitle": "We also detail",
- "why": [
-  {
-   "name": "Knowledgeable, expert staff",
-   "text": "A full-time team of marine mechanics who know boats inside and out."
-  },
-  {
-   "name": "Fair and honest pricing",
-   "text": "Clear pricing for detailing, from basic wash to full restoration."
-  },
-  {
-   "name": "One-stop shop",
-   "text": "Repair, maintenance, accessories, audio, flooring and detailing under one roof."
-  }
- ],
- "whyTitle": "What we give you that others don't.",
- "howTitle": "Ready for the water in three steps.",
- "steps": [
-  {
-   "name": "Ask for a quote",
-   "text": "Call, email or use the form and tell us about your boat."
-  },
-  {
-   "name": "We come to you",
-   "text": "We bring the service to your marina slip."
-  },
-  {
-   "name": "Back on the water",
-   "text": "Clean, polished and protected."
-  }
- ],
- "contactTitle": "Book your boat in.",
- "footerLine": "Boat detailing in Boerne",
- "reviews": [],
- "hours": [
-  "Mon-Fri: 8am – 5pm",
-  "Sat: By appointment",
-  "Sun: Closed"
- ],
- "galleryTitle": "Fresh off the water.",
- "vehicleTypes": [
-  "Boat",
-  "Pontoon",
-  "Yacht",
-  "Jet ski",
-  "Other"
- ],
- "modelPlaceholder": "e.g. Sea Ray 240, 24 ft",
- "notePlaceholder": "Length, where it is docked or stored, what it needs…",
- "gallery": [
-  {
-   "src": "img/photo-8.jpg",
-   "alt": "White and navy cruiser running on open water",
-   "size": "big"
-  },
-  {
-   "src": "img/photo-4.jpg",
-   "alt": "Boat deck with gray and blue custom marine decking"
-  },
-  {
-   "src": "img/photo-11.jpg",
-   "alt": "Center console fishing boat with T-top underway"
-  },
-  {
-   "src": "img/photo-17.jpg",
-   "alt": "Marine speaker installed in a white boat's side panel"
-  },
-  {
-   "src": "img/photo-18.jpg",
-   "alt": "Boat helm with navigation screens and steering wheel"
-  }
- ],
- "areas": [
-  "Boerne"
- ],
- "pitch": "site"
 }

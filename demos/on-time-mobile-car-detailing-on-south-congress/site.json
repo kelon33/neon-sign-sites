@@ -1,146 +1,152 @@
 {
- "kit": "detailing",
- "trade": "Mobile car detailing",
- "name": "On-Time Mobile Car Detailing on South Congress",
- "legalName": "On-Time Mobile Car Detailing on South Congress",
- "preview": true,
- "placeId": "ChIJvVqfg2e1RIYRFmSgwjRqHpQ",
- "title": "On-Time Mobile Car Detailing on South Congress | Mobile car detailing in Austin, TX",
- "description": "Hand-finished detailing at your home, office or apartment. We bring the water and power, show up in your booked window, and you keep your day. 5.0 on Google from 34 reviews.",
- "brand": "#1670ff",
- "brandHi": "#52c6ff",
- "accent": "#8fd0ff",
- "logo": null,
- "logoChip": false,
- "wordmark": {
-  "top": "On-Time",
-  "bottom": "Mobile Car Detailing"
- },
- "phone": "(737) 377-3849",
- "email": "info@ontimemobilecardetailingatx.com",
- "heroAlt": "",
- "heroPosition": "60% 60%",
- "heroPositionPhone": "60% 50%",
- "rating": {
-  "score": "5.0",
-  "count": 34,
-  "url": "https://maps.google.com/?cid=10673084941750789142"
- },
- "kicker": "Mobile car detailing · Austin, TX",
- "headline": "Showroom shine.<br><em>Right in your driveway.</em>",
- "intro": "Hand-finished detailing at your home, office or apartment. We bring the water and power, show up in your booked window, and you keep your day.",
- "mobile": {
-  "title": "Your driveway is our shop.",
-  "intro": "We bring the detail to you, so your day keeps moving.",
-  "points": [
-   {
-    "name": "We bring everything",
-    "text": "Our own water, power and equipment. No hookups needed."
-   },
-   {
-    "name": "On time, every time",
-    "text": "We arrive in your booked window, fully equipped."
-   },
-   {
-    "name": "Hand off the keys",
-    "text": "Go about your day. We text you when the detail is done."
-   },
-   {
-    "name": "Same-day, 7 days",
-    "text": "Book by 11am for same-day service, subject to the day's route."
-   }
-  ]
- },
- "servicesTitle": "Inside, outside, and every detail between.",
- "servicesIntro": "Prices start at the amounts shown and depend on vehicle size: small, medium or large.",
- "services": [
-  {
-   "name": "Interior Detailing",
-   "text": "Full vacuum, wipe-down and sanitize of every surface.",
-   "price": "$200"
+  "kit": "detailing",
+  "trade": "Mobile car detailing",
+  "name": "On-Time Mobile Car Detailing on South Congress",
+  "legalName": "On-Time Mobile Car Detailing on South Congress",
+  "preview": true,
+  "placeId": "ChIJvVqfg2e1RIYRFmSgwjRqHpQ",
+  "title": "On-Time Mobile Car Detailing on South Congress | Mobile car detailing in Austin, TX",
+  "description": "Hand-finished detailing at your home, office or apartment. We bring the water and power, show up in your booked window, and you keep your day. 5.0 on Google from 34 reviews.",
+  "brand": "#1670ff",
+  "brandHi": "#52c6ff",
+  "accent": "#8fd0ff",
+  "logo": null,
+  "logoChip": false,
+  "wordmark": {
+    "top": "On-Time",
+    "bottom": "Mobile Car Detailing"
   },
-  {
-   "name": "Premium Detail",
-   "text": "Interior and exterior detail with steam disinfection, deep extraction and leather care.",
-   "price": "$250"
+  "phone": "(737) 377-3849",
+  "email": "info@ontimemobilecardetailingatx.com",
+  "heroAlt": "",
+  "heroPosition": "60% 60%",
+  "heroPositionPhone": "60% 50%",
+  "rating": {
+    "score": "5.0",
+    "count": 34,
+    "url": "https://maps.google.com/?cid=10673084941750789142"
   },
-  {
-   "name": "Steam Cleaning & Carpet Shampoo",
-   "text": "Hot steam extraction that lifts set-in carpet stains."
+  "kicker": "Mobile car detailing · Austin, TX",
+  "headline": "Showroom shine.<br><em>Right in your driveway.</em>",
+  "intro": "Hand-finished detailing at your home, office or apartment. We bring the water and power, show up in your booked window, and you keep your day.",
+  "mobile": {
+    "title": "Your driveway is our shop.",
+    "intro": "We bring the detail to you, so your day keeps moving.",
+    "points": [
+      {
+        "name": "We bring everything",
+        "text": "Our own water, power and equipment. No hookups needed."
+      },
+      {
+        "name": "On time, every time",
+        "text": "We arrive in your booked window, fully equipped."
+      },
+      {
+        "name": "Hand off the keys",
+        "text": "Go about your day. We text you when the detail is done."
+      },
+      {
+        "name": "Same-day, 7 days",
+        "text": "Book by 11am for same-day service, subject to the day's route."
+      }
+    ]
   },
-  {
-   "name": "Leather Cleaning & Conditioning",
-   "text": "Gentle cleaning plus conditioner to stop cracking."
-  },
-  {
-   "name": "Pet Hair & Odor Removal",
-   "text": "Multi-pass extraction for embedded fur, and odors neutralized at the source."
-  },
-  {
-   "name": "Exterior Hand Wash",
-   "text": "Two-bucket hand wash with a scratch-safe finish.",
-   "price": "$75"
+  "servicesTitle": "Inside, outside, and every detail between.",
+  "servicesIntro": "Prices start at the amounts shown and depend on vehicle size: small, medium or large.",
+  "services": [
+    {
+      "name": "Interior Detailing",
+      "text": "Full vacuum, wipe-down and sanitize of every surface.",
+      "price": "$200"
+    },
+    {
+      "name": "Premium Detail",
+      "text": "Interior and exterior detail with steam disinfection, deep extraction and leather care.",
+      "price": "$250"
+    },
+    {
+      "name": "Steam Cleaning & Carpet Shampoo",
+      "text": "Hot steam extraction that lifts set-in carpet stains."
+    },
+    {
+      "name": "Leather Cleaning & Conditioning",
+      "text": "Gentle cleaning plus conditioner to stop cracking."
+    },
+    {
+      "name": "Pet Hair & Odor Removal",
+      "text": "Multi-pass extraction for embedded fur, and odors neutralized at the source."
+    },
+    {
+      "name": "Exterior Hand Wash",
+      "text": "Two-bucket hand wash with a scratch-safe finish.",
+      "price": "$75"
+    }
+  ],
+  "also": [
+    {
+      "name": "Fleets"
+    },
+    {
+      "name": "Wax & sealant"
+    },
+    {
+      "name": "Wheel & tire detailing"
+    },
+    {
+      "name": "Headlight restoration"
+    },
+    {
+      "name": "Ceramic coating by quote"
+    },
+    {
+      "name": "Paint correction by quote"
+    }
+  ],
+  "alsoTitle": "Not just cars:",
+  "why": [
+    {
+      "name": "We actually show up on time",
+      "text": "Late arrivals and unanswered texts are the industry norm. Our name is our standard."
+    },
+    {
+      "name": "Upfront pricing",
+      "text": "The price you're quoted is the price you pay. No hidden fees, no surprises."
+    },
+    {
+      "name": "100% satisfaction guarantee",
+      "text": "If you're not happy with the result, we make it right, no questions asked."
+    }
+  ],
+  "whyTitle": "Why people stay with us.",
+  "howTitle": "A clean vehicle in three steps.",
+  "steps": [
+    {
+      "name": "Tell us about your car",
+      "text": "Fill out the form with your vehicle, the services you want and where it is."
+    },
+    {
+      "name": "Get your quote",
+      "text": "We get in touch to confirm the appointment and send a detailed quote."
+    },
+    {
+      "name": "We pull up",
+      "text": "We detail your car at your home, workplace or apartment."
+    }
+  ],
+  "contactTitle": "Book your detail.",
+  "footerLine": "Mobile car detailing in Austin",
+  "reviews": [],
+  "hours": [],
+  "galleryTitle": "Fresh off the driveway.",
+  "gallery": [],
+  "areas": [
+    "Austin"
+  ],
+  "pitch": "photos",
+  "siteCheck": {
+    "reasons": [],
+    "improvements": [
+      "only 0 photos"
+    ]
   }
- ],
- "also": [
-  {
-   "name": "Fleets"
-  },
-  {
-   "name": "Wax & sealant"
-  },
-  {
-   "name": "Wheel & tire detailing"
-  },
-  {
-   "name": "Headlight restoration"
-  },
-  {
-   "name": "Ceramic coating by quote"
-  },
-  {
-   "name": "Paint correction by quote"
-  }
- ],
- "alsoTitle": "Not just cars:",
- "why": [
-  {
-   "name": "We actually show up on time",
-   "text": "Late arrivals and unanswered texts are the industry norm. Our name is our standard."
-  },
-  {
-   "name": "Upfront pricing",
-   "text": "The price you're quoted is the price you pay. No hidden fees, no surprises."
-  },
-  {
-   "name": "100% satisfaction guarantee",
-   "text": "If you're not happy with the result, we make it right, no questions asked."
-  }
- ],
- "whyTitle": "Why people stay with us.",
- "howTitle": "A clean vehicle in three steps.",
- "steps": [
-  {
-   "name": "Tell us about your car",
-   "text": "Fill out the form with your vehicle, the services you want and where it is."
-  },
-  {
-   "name": "Get your quote",
-   "text": "We get in touch to confirm the appointment and send a detailed quote."
-  },
-  {
-   "name": "We pull up",
-   "text": "We detail your car at your home, workplace or apartment."
-  }
- ],
- "contactTitle": "Book your detail.",
- "footerLine": "Mobile car detailing in Austin",
- "reviews": [],
- "hours": [],
- "galleryTitle": "Fresh off the driveway.",
- "gallery": [],
- "areas": [
-  "Austin"
- ],
- "pitch": "photos"
 }

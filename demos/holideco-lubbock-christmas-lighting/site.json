@@ -106,5 +106,11 @@
   "areas": [
     "Lubbock"
   ],
-  "pitch": "photos"
+  "pitch": "photos",
+  "siteCheck": {
+    "reasons": [],
+    "improvements": [
+      "no reviews on the site"
+    ]
+  }
 }

@@ -140,5 +140,11 @@
   "areas": [
     "Lubbock"
   ],
-  "pitch": "site"
+  "pitch": "site",
+  "siteCheck": {
+    "reasons": [],
+    "improvements": [
+      "no quote or booking form"
+    ]
+  }
 }

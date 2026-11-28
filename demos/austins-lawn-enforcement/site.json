@@ -1,192 +1,198 @@
 {
- "kit": "lawn",
- "name": "Austin’s lawn enforcement",
- "legalName": "Austin’s lawn enforcement",
- "preview": true,
- "placeId": "ChIJe5TlSI5NW4YRLNHx2zxlDpQ",
- "title": "Austin’s lawn enforcement | Sod, landscaping & land clearing in Austin, TX",
- "description": "Austin's Lawn Enforcement clears, levels and plants homes and commercial properties across Austin. Veteran owned, family owned and insured. 5.0 on Google from 49 reviews.",
- "logo": "logo.png",
- "logoChip": false,
- "wordmark": {
-  "top": "Austin's",
-  "bottom": "Lawn Enforcement"
- },
- "phone": "(512) 225-4709",
- "email": "austinslawnenforcer@gmail.com",
- "heroImage": "img/photo-2.jpg",
- "heroAlt": "Fresh green lawn with gravel border and stone pavers beside a driveway",
- "heroPosition": "60% 60%",
- "heroPositionPhone": "60% 50%",
- "rating": {
-  "score": "5.0",
-  "count": 49,
-  "url": "https://maps.google.com/?cid=10668575879349784876"
- },
- "kicker": "Sod, landscaping & land clearing · Austin, TX",
- "headline": "Land cleared. Sod laid.<br><em>Yard transformed.</em>",
- "intro": "Austin's Lawn Enforcement clears, levels and plants homes and commercial properties across Austin. Veteran owned, family owned and insured.",
- "badges": [
-  "Free estimates",
-  "Family owned",
-  "Veteran owned",
-  "Homes and businesses"
- ],
- "highlights": {
-  "title": "Why Austin neighbors call us",
-  "intro": "Clear communication, fair prices and a crew that shows up when it says it will.",
-  "points": [
-   {
-    "name": "On time",
-    "text": "Customers say the crew arrives when scheduled."
-   },
-   {
-    "name": "Clear communication",
-    "text": "Enrique keeps you updated from the first call to the final cleanup."
-   },
-   {
-    "name": "Fair pricing",
-    "text": "Quotes cover what you need, with no overselling."
-   },
-   {
-    "name": "Clean finish",
-    "text": "The crew cleans up the area before leaving."
-   }
-  ]
- },
- "servicesTitle": "From bare dirt to finished yard.",
- "servicesIntro": "One crew for clearing, grading, sod and landscaping, for homes and businesses.",
- "services": [
-  {
-   "name": "Sod Installation",
-   "text": "New sod laid for a lush, full lawn that looks finished right away."
+  "kit": "lawn",
+  "name": "Austin’s lawn enforcement",
+  "legalName": "Austin’s lawn enforcement",
+  "preview": true,
+  "placeId": "ChIJe5TlSI5NW4YRLNHx2zxlDpQ",
+  "title": "Austin’s lawn enforcement | Sod, landscaping & land clearing in Austin, TX",
+  "description": "Austin's Lawn Enforcement clears, levels and plants homes and commercial properties across Austin. Veteran owned, family owned and insured. 5.0 on Google from 49 reviews.",
+  "logo": "logo.png",
+  "logoChip": false,
+  "wordmark": {
+    "top": "Austin's",
+    "bottom": "Lawn Enforcement"
   },
-  {
-   "name": "Site Leveling and Grading",
-   "text": "A smooth, even surface that improves drainage and prepares the land for what comes next."
+  "phone": "(512) 225-4709",
+  "email": "austinslawnenforcer@gmail.com",
+  "heroImage": "img/photo-2.jpg",
+  "heroAlt": "Fresh green lawn with gravel border and stone pavers beside a driveway",
+  "heroPosition": "60% 60%",
+  "heroPositionPhone": "60% 50%",
+  "rating": {
+    "score": "5.0",
+    "count": 49,
+    "url": "https://maps.google.com/?cid=10668575879349784876"
   },
-  {
-   "name": "Brush Clearing",
-   "text": "Overgrown vegetation removed to improve appearance and safety and to reduce fire hazards."
+  "kicker": "Sod, landscaping & land clearing · Austin, TX",
+  "headline": "Land cleared. Sod laid.<br><em>Yard transformed.</em>",
+  "intro": "Austin's Lawn Enforcement clears, levels and plants homes and commercial properties across Austin. Veteran owned, family owned and insured.",
+  "badges": [
+    "Free estimates",
+    "Family owned",
+    "Veteran owned",
+    "Homes and businesses"
+  ],
+  "highlights": {
+    "title": "Why Austin neighbors call us",
+    "intro": "Clear communication, fair prices and a crew that shows up when it says it will.",
+    "points": [
+      {
+        "name": "On time",
+        "text": "Customers say the crew arrives when scheduled."
+      },
+      {
+        "name": "Clear communication",
+        "text": "Enrique keeps you updated from the first call to the final cleanup."
+      },
+      {
+        "name": "Fair pricing",
+        "text": "Quotes cover what you need, with no overselling."
+      },
+      {
+        "name": "Clean finish",
+        "text": "The crew cleans up the area before leaving."
+      }
+    ]
   },
-  {
-   "name": "Landscape Design & Installation",
-   "text": "Functional gardens and outdoor spaces that add curb appeal and value."
-  },
-  {
-   "name": "Commercial Lawn Maintenance",
-   "text": "Regular mowing, edging, fertilization and weed control for commercial properties."
+  "servicesTitle": "From bare dirt to finished yard.",
+  "servicesIntro": "One crew for clearing, grading, sod and landscaping, for homes and businesses.",
+  "services": [
+    {
+      "name": "Sod Installation",
+      "text": "New sod laid for a lush, full lawn that looks finished right away."
+    },
+    {
+      "name": "Site Leveling and Grading",
+      "text": "A smooth, even surface that improves drainage and prepares the land for what comes next."
+    },
+    {
+      "name": "Brush Clearing",
+      "text": "Overgrown vegetation removed to improve appearance and safety and to reduce fire hazards."
+    },
+    {
+      "name": "Landscape Design & Installation",
+      "text": "Functional gardens and outdoor spaces that add curb appeal and value."
+    },
+    {
+      "name": "Commercial Lawn Maintenance",
+      "text": "Regular mowing, edging, fertilization and weed control for commercial properties."
+    }
+  ],
+  "also": [
+    {
+      "name": "Residential properties"
+    },
+    {
+      "name": "Commercial properties"
+    }
+  ],
+  "alsoTitle": "We also do:",
+  "promise": "We don't just mow. <em>We take care of it.</em> Every edge, every bed, every visit.",
+  "why": [
+    {
+      "name": "Veteran and family owned",
+      "text": "A locally owned, insured Austin team."
+    },
+    {
+      "name": "Easy to work with",
+      "text": "Customers praise fast replies, clear plans and steady updates."
+    },
+    {
+      "name": "Fair, flexible pricing",
+      "text": "Customers describe the estimates as detailed, fair and based on their budget."
+    }
+  ],
+  "whyTitle": "Why Austin homeowners hire us",
+  "howTitle": "A free quote in three steps.",
+  "steps": [
+    {
+      "name": "Send us a text",
+      "text": "Tell us about your yard by text."
+    },
+    {
+      "name": "Chat on the phone",
+      "text": "We talk through what you need."
+    },
+    {
+      "name": "Receive a quote",
+      "text": "You get a free quote for the work."
+    }
+  ],
+  "contactTitle": "Ready to get started?",
+  "footerLine": "Sod, landscaping & land clearing in Austin, TX",
+  "reviews": [
+    {
+      "text": "We had them tear out our existing sod, level the yard with new compost and install new sod. The end result was impressive and completely transformed our yard. Enrique was communicative throughout the entire process, provided us with a detailed estimate for the work, and was fairly priced.",
+      "name": "Karie Bryan"
+    },
+    {
+      "text": "Enrique and his crew went above and beyond for me on my grass project! Great price, timely delivery, and the sod was very high quality - all pieces were very healthy and thick. I will be using them again for future projects.",
+      "name": "Nik Merz"
+    },
+    {
+      "text": "Cleared a yard of old raised beds, logpile, underused garden beds and ugly turf. They leveled, smoothed and enriched the soil before replanting shrubs and ground cover and installing new grass.",
+      "name": "Pam Rouse"
+    },
+    {
+      "text": "I needed a big boulder moved and leaves bagged. Enrique just quoted me for what I needed and did not try to oversell! I love this. They Showed up when they said they would be here and did a great job!",
+      "name": "Karie Bryan"
+    },
+    {
+      "text": "Fantastic service from Enrique and his team. Laid a new lawn on our front yard. Clear communication and easy to work with.",
+      "name": "Douglas Leggate"
+    },
+    {
+      "text": "Enrique and his crew completely transformed my lawn! He had the best guidance, work ethic, and positive attitude.",
+      "name": "Sadie Rehmann"
+    }
+  ],
+  "hours": [
+    "Mon–Fri: 9:00am – 5:00pm",
+    "Sat–Sun: Closed"
+  ],
+  "gallery": [
+    {
+      "src": "img/photo-1.jpg",
+      "alt": "New green lawn with gravel beds along a front walk",
+      "size": "big"
+    },
+    {
+      "src": "img/photo-5.jpg",
+      "alt": "Front yard with new lawn, gravel and planters"
+    },
+    {
+      "src": "img/photo-6.jpg",
+      "alt": "Large, lush green lawn around a tree"
+    },
+    {
+      "src": "img/photo-4.jpg",
+      "alt": "Gravel bed with sago palms next to a new lawn"
+    },
+    {
+      "src": "img/photo-8.jpg",
+      "alt": "Backyard with newly laid sod",
+      "size": "tall"
+    },
+    {
+      "src": "img/photo-7.jpg",
+      "alt": "Sod being laid on prepared soil along a fence"
+    },
+    {
+      "src": "img/photo-3.jpg",
+      "alt": "Green sloped lawn under a blue sky"
+    },
+    {
+      "src": "img/photo-10.jpg",
+      "alt": "Compact track machine preparing soil beside a building"
+    }
+  ],
+  "areas": [
+    "Austin"
+  ],
+  "siteCheck": {
+    "reasons": [],
+    "improvements": [
+      "no tap-to-call link"
+    ]
   }
- ],
- "also": [
-  {
-   "name": "Residential properties"
-  },
-  {
-   "name": "Commercial properties"
-  }
- ],
- "alsoTitle": "We also do:",
- "promise": "We don't just mow. <em>We take care of it.</em> Every edge, every bed, every visit.",
- "why": [
-  {
-   "name": "Veteran and family owned",
-   "text": "A locally owned, insured Austin team."
-  },
-  {
-   "name": "Easy to work with",
-   "text": "Customers praise fast replies, clear plans and steady updates."
-  },
-  {
-   "name": "Fair, flexible pricing",
-   "text": "Customers describe the estimates as detailed, fair and based on their budget."
-  }
- ],
- "whyTitle": "Why Austin homeowners hire us",
- "howTitle": "A free quote in three steps.",
- "steps": [
-  {
-   "name": "Send us a text",
-   "text": "Tell us about your yard by text."
-  },
-  {
-   "name": "Chat on the phone",
-   "text": "We talk through what you need."
-  },
-  {
-   "name": "Receive a quote",
-   "text": "You get a free quote for the work."
-  }
- ],
- "contactTitle": "Ready to get started?",
- "footerLine": "Sod, landscaping & land clearing in Austin, TX",
- "reviews": [
-  {
-   "text": "We had them tear out our existing sod, level the yard with new compost and install new sod. The end result was impressive and completely transformed our yard. Enrique was communicative throughout the entire process, provided us with a detailed estimate for the work, and was fairly priced.",
-   "name": "Karie Bryan"
-  },
-  {
-   "text": "Enrique and his crew went above and beyond for me on my grass project! Great price, timely delivery, and the sod was very high quality - all pieces were very healthy and thick. I will be using them again for future projects.",
-   "name": "Nik Merz"
-  },
-  {
-   "text": "Cleared a yard of old raised beds, logpile, underused garden beds and ugly turf. They leveled, smoothed and enriched the soil before replanting shrubs and ground cover and installing new grass.",
-   "name": "Pam Rouse"
-  },
-  {
-   "text": "I needed a big boulder moved and leaves bagged. Enrique just quoted me for what I needed and did not try to oversell! I love this. They Showed up when they said they would be here and did a great job!",
-   "name": "Karie Bryan"
-  },
-  {
-   "text": "Fantastic service from Enrique and his team. Laid a new lawn on our front yard. Clear communication and easy to work with.",
-   "name": "Douglas Leggate"
-  },
-  {
-   "text": "Enrique and his crew completely transformed my lawn! He had the best guidance, work ethic, and positive attitude.",
-   "name": "Sadie Rehmann"
-  }
- ],
- "hours": [
-  "Mon–Fri: 9:00am – 5:00pm",
-  "Sat–Sun: Closed"
- ],
- "gallery": [
-  {
-   "src": "img/photo-1.jpg",
-   "alt": "New green lawn with gravel beds along a front walk",
-   "size": "big"
-  },
-  {
-   "src": "img/photo-5.jpg",
-   "alt": "Front yard with new lawn, gravel and planters"
-  },
-  {
-   "src": "img/photo-6.jpg",
-   "alt": "Large, lush green lawn around a tree"
-  },
-  {
-   "src": "img/photo-4.jpg",
-   "alt": "Gravel bed with sago palms next to a new lawn"
-  },
-  {
-   "src": "img/photo-8.jpg",
-   "alt": "Backyard with newly laid sod",
-   "size": "tall"
-  },
-  {
-   "src": "img/photo-7.jpg",
-   "alt": "Sod being laid on prepared soil along a fence"
-  },
-  {
-   "src": "img/photo-3.jpg",
-   "alt": "Green sloped lawn under a blue sky"
-  },
-  {
-   "src": "img/photo-10.jpg",
-   "alt": "Compact track machine preparing soil beside a building"
-  }
- ],
- "areas": [
-  "Austin"
- ]
 }

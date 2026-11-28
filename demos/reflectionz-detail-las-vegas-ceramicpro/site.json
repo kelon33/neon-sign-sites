@@ -1,158 +1,164 @@
 {
- "kit": "detailing",
- "trade": "Mobile car detailing",
- "name": "Reflectionz Detail Las Vegas & CeramicPro",
- "legalName": "Reflectionz Detail Las Vegas & CeramicPro",
- "preview": true,
- "placeId": "ChIJR9r3vzPHyIAR2ewrnAAnfd0",
- "title": "Reflectionz Detail Las Vegas & CeramicPro | Mobile car detailing in Las Vegas, NV",
- "description": "Detailing, ceramic coating and paint correction from a Las Vegas shop that does it all. Call (702) 444-4185 for a free consultation. 4.8 on Google from 501 reviews.",
- "brand": "#1670ff",
- "brandHi": "#52c6ff",
- "accent": "#8fd0ff",
- "logo": null,
- "logoChip": false,
- "wordmark": {
-  "top": "Reflectionz",
-  "bottom": "Detail Las Vegas"
- },
- "phone": "(702) 444-4185",
- "email": "estimates@reflectionzdetail.com",
- "heroImage": "img/photo-9.jpg",
- "heroAlt": "Black Camaro ZL1 with a glossy finish in the shop",
- "heroPosition": "60% 60%",
- "heroPositionPhone": "60% 50%",
- "rating": {
-  "score": "4.8",
-  "count": 501,
-  "url": "https://maps.google.com/?cid=15959955538044513497"
- },
- "kicker": "Mobile car detailing · Las Vegas, NV",
- "headline": "Showroom shine.<br><em>Wherever you are.</em>",
- "intro": "Detailing, ceramic coating and paint correction from a Las Vegas shop that does it all. Call (702) 444-4185 for a free consultation.",
- "mobile": null,
- "servicesTitle": "Inside, outside, and built to last.",
- "servicesIntro": "Prices start at the amounts shown and depend on vehicle size: small, medium or large.",
- "services": [
-  {
-   "name": "Ceramic Coating",
-   "text": "A crystal clear nano ceramic layer that gives your paint a resilient, high gloss finish and protection."
+  "kit": "detailing",
+  "trade": "Mobile car detailing",
+  "name": "Reflectionz Detail Las Vegas & CeramicPro",
+  "legalName": "Reflectionz Detail Las Vegas & CeramicPro",
+  "preview": true,
+  "placeId": "ChIJR9r3vzPHyIAR2ewrnAAnfd0",
+  "title": "Reflectionz Detail Las Vegas & CeramicPro | Mobile car detailing in Las Vegas, NV",
+  "description": "Detailing, ceramic coating and paint correction from a Las Vegas shop that does it all. Call (702) 444-4185 for a free consultation. 4.8 on Google from 501 reviews.",
+  "brand": "#1670ff",
+  "brandHi": "#52c6ff",
+  "accent": "#8fd0ff",
+  "logo": null,
+  "logoChip": false,
+  "wordmark": {
+    "top": "Reflectionz",
+    "bottom": "Detail Las Vegas"
   },
-  {
-   "name": "Paint Correction",
-   "text": "We correct defects under the paint surface and bring back your vehicle's original color after years of sun and heat."
+  "phone": "(702) 444-4185",
+  "email": "estimates@reflectionzdetail.com",
+  "heroImage": "img/photo-9.jpg",
+  "heroAlt": "Black Camaro ZL1 with a glossy finish in the shop",
+  "heroPosition": "60% 60%",
+  "heroPositionPhone": "60% 50%",
+  "rating": {
+    "score": "4.8",
+    "count": 501,
+    "url": "https://maps.google.com/?cid=15959955538044513497"
   },
-  {
-   "name": "Auto Spa Detailing",
-   "text": "Interior and exterior detailing, from floor mats and carpet to full-spectrum steam vehicle washing."
-  },
-  {
-   "name": "ClearBra® Paint Protection Film",
-   "text": "3M film that shields paint from scratches, heat and debris."
-  },
-  {
-   "name": "Auto Customizing",
-   "text": "Custom lighting, headlight restoration, bodykits, lift kits and other owner-furnished modifications installed."
-  },
-  {
-   "name": "Starlight Headliners",
-   "text": "Up to 3000 hand-placed fibre-optic stars in your vehicle's ceiling."
+  "kicker": "Mobile car detailing · Las Vegas, NV",
+  "headline": "Showroom shine.<br><em>Wherever you are.</em>",
+  "intro": "Detailing, ceramic coating and paint correction from a Las Vegas shop that does it all. Call (702) 444-4185 for a free consultation.",
+  "mobile": null,
+  "servicesTitle": "Inside, outside, and built to last.",
+  "servicesIntro": "Prices start at the amounts shown and depend on vehicle size: small, medium or large.",
+  "services": [
+    {
+      "name": "Ceramic Coating",
+      "text": "A crystal clear nano ceramic layer that gives your paint a resilient, high gloss finish and protection."
+    },
+    {
+      "name": "Paint Correction",
+      "text": "We correct defects under the paint surface and bring back your vehicle's original color after years of sun and heat."
+    },
+    {
+      "name": "Auto Spa Detailing",
+      "text": "Interior and exterior detailing, from floor mats and carpet to full-spectrum steam vehicle washing."
+    },
+    {
+      "name": "ClearBra® Paint Protection Film",
+      "text": "3M film that shields paint from scratches, heat and debris."
+    },
+    {
+      "name": "Auto Customizing",
+      "text": "Custom lighting, headlight restoration, bodykits, lift kits and other owner-furnished modifications installed."
+    },
+    {
+      "name": "Starlight Headliners",
+      "text": "Up to 3000 hand-placed fibre-optic stars in your vehicle's ceiling."
+    }
+  ],
+  "also": [
+    {
+      "name": "Trucks"
+    },
+    {
+      "name": "SUVs"
+    },
+    {
+      "name": "Off-road vehicles"
+    },
+    {
+      "name": "Classic cars"
+    },
+    {
+      "name": "Motorcycles"
+    },
+    {
+      "name": "RVs"
+    },
+    {
+      "name": "Jet-skis"
+    },
+    {
+      "name": "Boats"
+    },
+    {
+      "name": "Planes"
+    }
+  ],
+  "alsoTitle": "Not just cars:",
+  "why": [
+    {
+      "name": "Free consultations",
+      "text": "Call for a free consultation. Estimates are provided right away."
+    },
+    {
+      "name": "Warranties available",
+      "text": "Ask about paint warranties. Se habla español."
+    },
+    {
+      "name": "Same-day car washes",
+      "text": "Car washes are completed on the same day."
+    }
+  ],
+  "whyTitle": "The detail is in the name.",
+  "howTitle": "Book it. We show up. You drive off shining.",
+  "steps": [
+    {
+      "name": "Request a consultation",
+      "text": "Call or fill out the form. Consultations are free."
+    },
+    {
+      "name": "Get your quote",
+      "text": "We price by your vehicle's size, condition and needs."
+    },
+    {
+      "name": "Pick up your car",
+      "text": "Detailed, protected and ready for the big reveal."
+    }
+  ],
+  "contactTitle": "Book your detail.",
+  "footerLine": "Mobile car detailing in Las Vegas",
+  "reviews": [],
+  "hours": [
+    "Mon - Fri: 8:00 am - 5:00 pm",
+    "Sat: 9:00 am - 1:00 pm (by appointment only)",
+    "Sun: Closed"
+  ],
+  "galleryTitle": "Fresh off the driveway.",
+  "gallery": [
+    {
+      "src": "img/photo-3.jpg",
+      "alt": "Wrapped Dodge Charger with red underglow and custom lighting",
+      "size": "big"
+    },
+    {
+      "src": "img/photo-11.jpg",
+      "alt": "Glossy black Corvette hood with ceramic coating"
+    },
+    {
+      "src": "img/photo-13.jpg",
+      "alt": "Starlight headliner with fibre-optic stars in a car ceiling"
+    },
+    {
+      "src": "img/photo-5.jpg",
+      "alt": "Blue custom leather interior with starlight headliner"
+    },
+    {
+      "src": "img/photo-1.jpg",
+      "alt": "Black Camaro ZL1 next to a bottle of Ceramic Pro coating"
+    }
+  ],
+  "areas": [
+    "Las Vegas"
+  ],
+  "pitch": "site",
+  "siteCheck": {
+    "reasons": [],
+    "improvements": [
+      "no quote or booking form"
+    ]
   }
- ],
- "also": [
-  {
-   "name": "Trucks"
-  },
-  {
-   "name": "SUVs"
-  },
-  {
-   "name": "Off-road vehicles"
-  },
-  {
-   "name": "Classic cars"
-  },
-  {
-   "name": "Motorcycles"
-  },
-  {
-   "name": "RVs"
-  },
-  {
-   "name": "Jet-skis"
-  },
-  {
-   "name": "Boats"
-  },
-  {
-   "name": "Planes"
-  }
- ],
- "alsoTitle": "Not just cars:",
- "why": [
-  {
-   "name": "Free consultations",
-   "text": "Call for a free consultation. Estimates are provided right away."
-  },
-  {
-   "name": "Warranties available",
-   "text": "Ask about paint warranties. Se habla español."
-  },
-  {
-   "name": "Same-day car washes",
-   "text": "Car washes are completed on the same day."
-  }
- ],
- "whyTitle": "The detail is in the name.",
- "howTitle": "Book it. We show up. You drive off shining.",
- "steps": [
-  {
-   "name": "Request a consultation",
-   "text": "Call or fill out the form. Consultations are free."
-  },
-  {
-   "name": "Get your quote",
-   "text": "We price by your vehicle's size, condition and needs."
-  },
-  {
-   "name": "Pick up your car",
-   "text": "Detailed, protected and ready for the big reveal."
-  }
- ],
- "contactTitle": "Book your detail.",
- "footerLine": "Mobile car detailing in Las Vegas",
- "reviews": [],
- "hours": [
-  "Mon - Fri: 8:00 am - 5:00 pm",
-  "Sat: 9:00 am - 1:00 pm (by appointment only)",
-  "Sun: Closed"
- ],
- "galleryTitle": "Fresh off the driveway.",
- "gallery": [
-  {
-   "src": "img/photo-3.jpg",
-   "alt": "Wrapped Dodge Charger with red underglow and custom lighting",
-   "size": "big"
-  },
-  {
-   "src": "img/photo-11.jpg",
-   "alt": "Glossy black Corvette hood with ceramic coating"
-  },
-  {
-   "src": "img/photo-13.jpg",
-   "alt": "Starlight headliner with fibre-optic stars in a car ceiling"
-  },
-  {
-   "src": "img/photo-5.jpg",
-   "alt": "Blue custom leather interior with starlight headliner"
-  },
-  {
-   "src": "img/photo-1.jpg",
-   "alt": "Black Camaro ZL1 next to a bottle of Ceramic Pro coating"
-  }
- ],
- "areas": [
-  "Las Vegas"
- ],
- "pitch": "site"
 }

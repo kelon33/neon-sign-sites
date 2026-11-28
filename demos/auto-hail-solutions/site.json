@@ -93,5 +93,12 @@
   "areas": [
     "Lubbock"
   ],
-  "pitch": "photos"
+  "pitch": "photos",
+  "siteCheck": {
+    "reasons": [],
+    "improvements": [
+      "no quote or booking form",
+      "no meta description"
+    ]
+  }
 }

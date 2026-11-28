@@ -97,5 +97,12 @@
   "areas": [
     "Waco"
   ],
-  "pitch": "photos"
+  "pitch": "photos",
+  "siteCheck": {
+    "reasons": [],
+    "improvements": [
+      "no tap-to-call link",
+      "no reviews on the site"
+    ]
+  }
 }

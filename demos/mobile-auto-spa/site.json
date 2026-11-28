@@ -1,119 +1,125 @@
 {
- "kit": "detailing",
- "trade": "Mobile car detailing",
- "name": "Mobile Auto Spa",
- "legalName": "Mobile Auto Spa",
- "preview": true,
- "placeId": "ChIJWWlLN2rPyIARJGX92jZRemM",
- "title": "Mobile Auto Spa | Mobile car detailing in Las Vegas, NV",
- "description": "Auto detailing and paint protection built for the Las Vegas sun. Mobile service comes to your driveway or office, and our shop handles the precision work. 4.9 on Google from 148 reviews.",
- "brand": "#1670ff",
- "brandHi": "#52c6ff",
- "accent": "#8fd0ff",
- "logo": "logo.png",
- "logoChip": false,
- "wordmark": {
-  "top": "Mobile",
-  "bottom": "Auto Spa"
- },
- "phone": "(702) 600-2411",
- "email": "brenden@themobileautospa.com",
- "heroImage": "img/photo-1.jpg",
- "heroAlt": "Technician polishing a red sports car in a bright, lit detailing bay",
- "heroPosition": "60% 60%",
- "heroPositionPhone": "60% 50%",
- "rating": {
-  "score": "4.9",
-  "count": 148,
-  "url": "https://maps.google.com/?cid=7168131052957689124"
- },
- "kicker": "Mobile car detailing · Las Vegas, NV",
- "headline": "Showroom shine.<br><em>Right in your driveway.</em>",
- "intro": "Auto detailing and paint protection built for the Las Vegas sun. Mobile service comes to your driveway or office, and our shop handles the precision work.",
- "mobile": {
-  "title": "Your driveway is our shop.",
-  "intro": "We bring the detail to you, so your day keeps moving.",
-  "points": [
-   {
-    "name": "At your door",
-    "text": "Your driveway, your office, wherever works for you."
-   },
-   {
-    "name": "Across the valley",
-    "text": "Mobile service in Las Vegas, Henderson, Summerlin and North Las Vegas."
-   },
-   {
-    "name": "Three packages",
-    "text": "Refresh, Restore or Showroom, built around what your vehicle needs."
-   },
-   {
-    "name": "Same standard",
-    "text": "The location changes. The quality doesn't."
-   }
-  ]
- },
- "servicesTitle": "Inside, outside, and everything that shines.",
- "servicesIntro": "Prices start at the amounts shown and depend on vehicle size: small, medium or large.",
- "services": [
-  {
-   "name": "Paint Correction",
-   "text": "Swirls, scratches and oxidation removed by machine. Not covered up. Actually fixed."
+  "kit": "detailing",
+  "trade": "Mobile car detailing",
+  "name": "Mobile Auto Spa",
+  "legalName": "Mobile Auto Spa",
+  "preview": true,
+  "placeId": "ChIJWWlLN2rPyIARJGX92jZRemM",
+  "title": "Mobile Auto Spa | Mobile car detailing in Las Vegas, NV",
+  "description": "Auto detailing and paint protection built for the Las Vegas sun. Mobile service comes to your driveway or office, and our shop handles the precision work. 4.9 on Google from 148 reviews.",
+  "brand": "#1670ff",
+  "brandHi": "#52c6ff",
+  "accent": "#8fd0ff",
+  "logo": "logo.png",
+  "logoChip": false,
+  "wordmark": {
+    "top": "Mobile",
+    "bottom": "Auto Spa"
   },
-  {
-   "name": "Ceramic Coating",
-   "text": "Liquid glass protection over corrected paint. Hydrophobic, durable and built for this climate."
+  "phone": "(702) 600-2411",
+  "email": "brenden@themobileautospa.com",
+  "heroImage": "img/photo-1.jpg",
+  "heroAlt": "Technician polishing a red sports car in a bright, lit detailing bay",
+  "heroPosition": "60% 60%",
+  "heroPositionPhone": "60% 50%",
+  "rating": {
+    "score": "4.9",
+    "count": 148,
+    "url": "https://maps.google.com/?cid=7168131052957689124"
   },
-  {
-   "name": "Avant-Guard Formula 1051",
-   "text": "A self-leveling resin coating that puts material back onto corrected paint. Installed in the shop only."
+  "kicker": "Mobile car detailing · Las Vegas, NV",
+  "headline": "Showroom shine.<br><em>Right in your driveway.</em>",
+  "intro": "Auto detailing and paint protection built for the Las Vegas sun. Mobile service comes to your driveway or office, and our shop handles the precision work.",
+  "mobile": {
+    "title": "Your driveway is our shop.",
+    "intro": "We bring the detail to you, so your day keeps moving.",
+    "points": [
+      {
+        "name": "At your door",
+        "text": "Your driveway, your office, wherever works for you."
+      },
+      {
+        "name": "Across the valley",
+        "text": "Mobile service in Las Vegas, Henderson, Summerlin and North Las Vegas."
+      },
+      {
+        "name": "Three packages",
+        "text": "Refresh, Restore or Showroom, built around what your vehicle needs."
+      },
+      {
+        "name": "Same standard",
+        "text": "The location changes. The quality doesn't."
+      }
+    ]
   },
-  {
-   "name": "Mobile Detailing",
-   "text": "Refresh, Restore or Showroom details brought to your driveway, your office or wherever works for you."
+  "servicesTitle": "Inside, outside, and everything that shines.",
+  "servicesIntro": "Prices start at the amounts shown and depend on vehicle size: small, medium or large.",
+  "services": [
+    {
+      "name": "Paint Correction",
+      "text": "Swirls, scratches and oxidation removed by machine. Not covered up. Actually fixed."
+    },
+    {
+      "name": "Ceramic Coating",
+      "text": "Liquid glass protection over corrected paint. Hydrophobic, durable and built for this climate."
+    },
+    {
+      "name": "Avant-Guard Formula 1051",
+      "text": "A self-leveling resin coating that puts material back onto corrected paint. Installed in the shop only."
+    },
+    {
+      "name": "Mobile Detailing",
+      "text": "Refresh, Restore or Showroom details brought to your driveway, your office or wherever works for you."
+    }
+  ],
+  "also": [],
+  "alsoTitle": "Not just cars:",
+  "why": [
+    {
+      "name": "Vegas-born operation",
+      "text": "Not a franchise. Aubrie and Brenden grew up here and built the business around what Las Vegas vehicles need."
+    },
+    {
+      "name": "Shop and mobile",
+      "text": "Shop work for the precision services. Mobile for everything else. The standard stays the same."
+    },
+    {
+      "name": "Conversation first",
+      "text": "Every job starts with a real talk about where the vehicle is and where you want it."
+    }
+  ],
+  "whyTitle": "The detail is in the name.",
+  "howTitle": "Book it. We show up. You drive off shining.",
+  "steps": [
+    {
+      "name": "Request a consultation",
+      "text": "Call or fill out the form. Consultations are free."
+    },
+    {
+      "name": "Get your quote",
+      "text": "We price by your vehicle's size, condition and needs."
+    },
+    {
+      "name": "Pick up your car",
+      "text": "Detailed, protected and ready for the big reveal."
+    }
+  ],
+  "contactTitle": "Book your detail.",
+  "footerLine": "Mobile car detailing in Las Vegas",
+  "reviews": [],
+  "hours": [
+    "Mon–Sun 8am–8pm"
+  ],
+  "galleryTitle": "Fresh off the driveway.",
+  "gallery": [],
+  "areas": [
+    "Las Vegas"
+  ],
+  "pitch": "photos",
+  "siteCheck": {
+    "reasons": [],
+    "improvements": [
+      "copyright 2025"
+    ]
   }
- ],
- "also": [],
- "alsoTitle": "Not just cars:",
- "why": [
-  {
-   "name": "Vegas-born operation",
-   "text": "Not a franchise. Aubrie and Brenden grew up here and built the business around what Las Vegas vehicles need."
-  },
-  {
-   "name": "Shop and mobile",
-   "text": "Shop work for the precision services. Mobile for everything else. The standard stays the same."
-  },
-  {
-   "name": "Conversation first",
-   "text": "Every job starts with a real talk about where the vehicle is and where you want it."
-  }
- ],
- "whyTitle": "The detail is in the name.",
- "howTitle": "Book it. We show up. You drive off shining.",
- "steps": [
-  {
-   "name": "Request a consultation",
-   "text": "Call or fill out the form. Consultations are free."
-  },
-  {
-   "name": "Get your quote",
-   "text": "We price by your vehicle's size, condition and needs."
-  },
-  {
-   "name": "Pick up your car",
-   "text": "Detailed, protected and ready for the big reveal."
-  }
- ],
- "contactTitle": "Book your detail.",
- "footerLine": "Mobile car detailing in Las Vegas",
- "reviews": [],
- "hours": [
-  "Mon–Sun 8am–8pm"
- ],
- "galleryTitle": "Fresh off the driveway.",
- "gallery": [],
- "areas": [
-  "Las Vegas"
- ],
- "pitch": "photos"
 }

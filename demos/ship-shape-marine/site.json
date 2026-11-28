@@ -1,118 +1,124 @@
 {
- "kit": "detailing",
- "trade": "Boat detailing",
- "name": "Ship Shape Marine",
- "legalName": "Ship Shape Marine",
- "preview": true,
- "placeId": "ChIJlXTngD4JZIgRqENlKapweuM",
- "title": "Ship Shape Marine | Boat detailing in Smyrna, TN",
- "description": "Boat repair, engine service and marine parts in Smyrna, Tennessee. All makes and models welcome, and serving Middle Tennessee since 2000. 4.8 on Google from 178 reviews.",
- "brand": "#1670ff",
- "brandHi": "#52c6ff",
- "accent": "#8fd0ff",
- "logo": null,
- "logoChip": false,
- "wordmark": {
-  "top": "Ship Shape",
-  "bottom": "Marine"
- },
- "phone": "(615) 459-7202",
- "email": "shipshape@bellsouth.net",
- "heroImage": "img/photo-1.jpg",
- "heroAlt": "Blue sport fishing boat running through open water at sunset",
- "heroPosition": "60% 60%",
- "heroPositionPhone": "60% 50%",
- "rating": {
-  "score": "4.8",
-  "count": 178,
-  "url": "https://maps.google.com/?cid=16391537669909595048"
- },
- "kicker": "Boat detailing · Smyrna",
- "headline": "Lake day ready.<br><em>Every day.</em>",
- "intro": "Boat repair, engine service and marine parts in Smyrna, Tennessee. All makes and models welcome, and serving Middle Tennessee since 2000.",
- "mobile": null,
- "servicesTitle": "Bow to stern.",
- "servicesIntro": "From a wash and wax to full restoration, teak and ceramic coating.",
- "services": [
-  {
-   "name": "Engine Service",
-   "text": "Tune-ups, ignition systems, engine replacements, alternators and starter repairs."
+  "kit": "detailing",
+  "trade": "Boat detailing",
+  "name": "Ship Shape Marine",
+  "legalName": "Ship Shape Marine",
+  "preview": true,
+  "placeId": "ChIJlXTngD4JZIgRqENlKapweuM",
+  "title": "Ship Shape Marine | Boat detailing in Smyrna, TN",
+  "description": "Boat repair, engine service and marine parts in Smyrna, Tennessee. All makes and models welcome, and serving Middle Tennessee since 2000. 4.8 on Google from 178 reviews.",
+  "brand": "#1670ff",
+  "brandHi": "#52c6ff",
+  "accent": "#8fd0ff",
+  "logo": null,
+  "logoChip": false,
+  "wordmark": {
+    "top": "Ship Shape",
+    "bottom": "Marine"
   },
-  {
-   "name": "Outboard & Drive Repair",
-   "text": "Outboard motor service and repairs, drive service, replacements and mechanical upgrades."
+  "phone": "(615) 459-7202",
+  "email": "shipshape@bellsouth.net",
+  "heroImage": "img/photo-1.jpg",
+  "heroAlt": "Blue sport fishing boat running through open water at sunset",
+  "heroPosition": "60% 60%",
+  "heroPositionPhone": "60% 50%",
+  "rating": {
+    "score": "4.8",
+    "count": 178,
+    "url": "https://maps.google.com/?cid=16391537669909595048"
   },
-  {
-   "name": "Maintenance & Rigging",
-   "text": "Water pump and impeller replacement, rigging and preventative maintenance."
-  },
-  {
-   "name": "Marine Parts",
-   "text": "Parts for popular marine engines and drives, including Johnson/Evinrude, MerCruiser and Volvo Penta. Call with your part number, make and model."
+  "kicker": "Boat detailing · Smyrna",
+  "headline": "Lake day ready.<br><em>Every day.</em>",
+  "intro": "Boat repair, engine service and marine parts in Smyrna, Tennessee. All makes and models welcome, and serving Middle Tennessee since 2000.",
+  "mobile": null,
+  "servicesTitle": "Bow to stern.",
+  "servicesIntro": "From a wash and wax to full restoration, teak and ceramic coating.",
+  "services": [
+    {
+      "name": "Engine Service",
+      "text": "Tune-ups, ignition systems, engine replacements, alternators and starter repairs."
+    },
+    {
+      "name": "Outboard & Drive Repair",
+      "text": "Outboard motor service and repairs, drive service, replacements and mechanical upgrades."
+    },
+    {
+      "name": "Maintenance & Rigging",
+      "text": "Water pump and impeller replacement, rigging and preventative maintenance."
+    },
+    {
+      "name": "Marine Parts",
+      "text": "Parts for popular marine engines and drives, including Johnson/Evinrude, MerCruiser and Volvo Penta. Call with your part number, make and model."
+    }
+  ],
+  "also": [
+    {
+      "name": "Sterndrive service"
+    },
+    {
+      "name": "Water pumps and impellers"
+    },
+    {
+      "name": "Boat rigging"
+    },
+    {
+      "name": "Mechanical upgrades"
+    }
+  ],
+  "alsoTitle": "We also detail",
+  "why": [
+    {
+      "name": "Serving Middle Tennessee since 2000",
+      "text": "Over 25 years of boat work in the same region."
+    },
+    {
+      "name": "Quality workmanship, fair pricing",
+      "text": "The business was built on good work, fair prices and customer referrals."
+    },
+    {
+      "name": "Parts and service under one roof",
+      "text": "Talk directly with a local marine team about the part or repair you need."
+    }
+  ],
+  "whyTitle": "Why boat owners call us.",
+  "howTitle": "Back on the water in three steps.",
+  "steps": [
+    {
+      "name": "Request a quote",
+      "text": "Call or send photos of your vehicle for a recommendation and estimate."
+    },
+    {
+      "name": "Schedule",
+      "text": "Pick a time at your home, office, apartment or marina."
+    },
+    {
+      "name": "We detail on site",
+      "text": "We arrive fully equipped and complete the service where it sits."
+    }
+  ],
+  "contactTitle": "Book your boat in.",
+  "footerLine": "Boat detailing in Smyrna",
+  "reviews": [],
+  "hours": [],
+  "galleryTitle": "Fresh off the water.",
+  "vehicleTypes": [
+    "Boat",
+    "Pontoon",
+    "Yacht",
+    "Jet ski",
+    "Other"
+  ],
+  "modelPlaceholder": "e.g. Sea Ray 240, 24 ft",
+  "notePlaceholder": "Length, where it is docked or stored, what it needs…",
+  "gallery": [],
+  "areas": [
+    "Smyrna"
+  ],
+  "pitch": "photos",
+  "siteCheck": {
+    "reasons": [
+      "no https"
+    ],
+    "improvements": []
   }
- ],
- "also": [
-  {
-   "name": "Sterndrive service"
-  },
-  {
-   "name": "Water pumps and impellers"
-  },
-  {
-   "name": "Boat rigging"
-  },
-  {
-   "name": "Mechanical upgrades"
-  }
- ],
- "alsoTitle": "We also detail",
- "why": [
-  {
-   "name": "Serving Middle Tennessee since 2000",
-   "text": "Over 25 years of boat work in the same region."
-  },
-  {
-   "name": "Quality workmanship, fair pricing",
-   "text": "The business was built on good work, fair prices and customer referrals."
-  },
-  {
-   "name": "Parts and service under one roof",
-   "text": "Talk directly with a local marine team about the part or repair you need."
-  }
- ],
- "whyTitle": "Why boat owners call us.",
- "howTitle": "Back on the water in three steps.",
- "steps": [
-  {
-   "name": "Request a quote",
-   "text": "Call or send photos of your vehicle for a recommendation and estimate."
-  },
-  {
-   "name": "Schedule",
-   "text": "Pick a time at your home, office, apartment or marina."
-  },
-  {
-   "name": "We detail on site",
-   "text": "We arrive fully equipped and complete the service where it sits."
-  }
- ],
- "contactTitle": "Book your boat in.",
- "footerLine": "Boat detailing in Smyrna",
- "reviews": [],
- "hours": [],
- "galleryTitle": "Fresh off the water.",
- "vehicleTypes": [
-  "Boat",
-  "Pontoon",
-  "Yacht",
-  "Jet ski",
-  "Other"
- ],
- "modelPlaceholder": "e.g. Sea Ray 240, 24 ft",
- "notePlaceholder": "Length, where it is docked or stored, what it needs…",
- "gallery": [],
- "areas": [
-  "Smyrna"
- ],
- "pitch": "photos"
 }

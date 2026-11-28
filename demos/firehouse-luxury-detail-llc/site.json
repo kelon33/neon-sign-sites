@@ -1,154 +1,162 @@
 {
- "kit": "detailing",
- "trade": "Mobile car detailing",
- "name": "Firehouse Luxury Detail LLC.",
- "legalName": "Firehouse Luxury Detail LLC.",
- "preview": true,
- "placeId": "ChIJ73mshDeRT4YRwYqvj2-dBSU",
- "title": "Firehouse Luxury Detail LLC. | Car detailing in China Spring, TX",
- "description": "Mobile detailing in China Spring, from a full hand wash and vacuum to ceramic coating. Three packages, priced by vehicle size. 5.0 on Google from 9 reviews.",
- "brand": "#1670ff",
- "brandHi": "#52c6ff",
- "accent": "#8fd0ff",
- "logo": "logo.png",
- "logoChip": false,
- "wordmark": {
-  "top": "Firehouse",
-  "bottom": "Luxury Detail"
- },
- "phone": "(909) 557-0351",
- "email": "support@fhdetail.com",
- "heroImage": null,
- "heroAlt": "",
- "heroPosition": "60% 60%",
- "heroPositionPhone": "60% 50%",
- "rating": {
-  "score": "5.0",
-  "count": 9,
-  "url": "https://maps.google.com/?cid=2667711456764463809"
- },
- "kicker": "Car detailing · China Spring, TX",
- "headline": "Showroom shine,<br><em>at your driveway.</em>",
- "intro": "Mobile detailing in China Spring, from a full hand wash and vacuum to ceramic coating. Three packages, priced by vehicle size.",
- "mobile": {
-  "points": [
-   {
-    "name": "Fast and efficient",
-    "text": "The team works to finish quickly without cutting corners, because your time matters."
-   },
-   {
-    "name": "Built around your car",
-    "text": "Interior and exterior packages can be customized to fit what your vehicle needs."
-   },
-   {
-    "name": "Clear pricing",
-    "text": "Every package lists a price for small, mid-size and full-size vehicles."
-   },
-   {
-    "name": "Care for your vehicle",
-    "text": "Experienced hands and quality products, from the first vacuum pass to the last wipe."
-   }
-  ]
- },
- "servicesTitle": "Inside, outside, and every detail between.",
- "servicesIntro": "Pick what your car needs, from a deep interior clean to lasting paint protection.",
- "services": [
-  {
-   "name": "The Rookie (F1)",
-   "text": "Thorough vacuum, interior wipe-down, full hand wash and dry, and wheels and tires cleaned and dressed.",
-   "price": "$145 small, $175 mid-size, $195 full-size"
+  "kit": "detailing",
+  "trade": "Mobile car detailing",
+  "name": "Firehouse Luxury Detail LLC.",
+  "legalName": "Firehouse Luxury Detail LLC.",
+  "preview": true,
+  "placeId": "ChIJ73mshDeRT4YRwYqvj2-dBSU",
+  "title": "Firehouse Luxury Detail LLC. | Car detailing in China Spring, TX",
+  "description": "Mobile detailing in China Spring, from a full hand wash and vacuum to ceramic coating. Three packages, priced by vehicle size. 5.0 on Google from 9 reviews.",
+  "brand": "#1670ff",
+  "brandHi": "#52c6ff",
+  "accent": "#8fd0ff",
+  "logo": "logo.png",
+  "logoChip": false,
+  "wordmark": {
+    "top": "Firehouse",
+    "bottom": "Luxury Detail"
   },
-  {
-   "name": "The Captain (F2)",
-   "text": "Adds light stain removal, ozone odor treatment, UV protectant on exterior plastics and an undercarriage wash.",
-   "price": "$210 small, $230 mid-size, $250 full-size"
+  "phone": "(909) 557-0351",
+  "email": "support@fhdetail.com",
+  "heroImage": null,
+  "heroAlt": "",
+  "heroPosition": "60% 60%",
+  "heroPositionPhone": "60% 50%",
+  "rating": {
+    "score": "5.0",
+    "count": 9,
+    "url": "https://maps.google.com/?cid=2667711456764463809"
   },
-  {
-   "name": "The Chief (F3)",
-   "text": "The full treatment: steam-cleaned plastics, floors and seats, clay bar treatment and a ceramic spray sealer.",
-   "price": "$345 small, $380 mid-size, $425 full-size"
+  "kicker": "Car detailing · China Spring, TX",
+  "headline": "Showroom shine,<br><em>at your driveway.</em>",
+  "intro": "Mobile detailing in China Spring, from a full hand wash and vacuum to ceramic coating. Three packages, priced by vehicle size.",
+  "mobile": {
+    "points": [
+      {
+        "name": "Fast and efficient",
+        "text": "The team works to finish quickly without cutting corners, because your time matters."
+      },
+      {
+        "name": "Built around your car",
+        "text": "Interior and exterior packages can be customized to fit what your vehicle needs."
+      },
+      {
+        "name": "Clear pricing",
+        "text": "Every package lists a price for small, mid-size and full-size vehicles."
+      },
+      {
+        "name": "Care for your vehicle",
+        "text": "Experienced hands and quality products, from the first vacuum pass to the last wipe."
+      }
+    ]
   },
-  {
-   "name": "Ceramic Coating",
-   "text": "A protective layer that shields your paint from the elements and keeps the car looking great for years."
-  },
-  {
-   "name": "Interior Only Detail",
-   "text": "A focused interior clean without the exterior wash.",
-   "price": "$169 small, $199 medium, $229 large"
-  },
-  {
-   "name": "Headlight Restoration",
-   "text": "Cloudy headlights cleaned up, with an option to seal them with ceramic coating.",
-   "price": "$100"
+  "servicesTitle": "Inside, outside, and every detail between.",
+  "servicesIntro": "Pick what your car needs, from a deep interior clean to lasting paint protection.",
+  "services": [
+    {
+      "name": "The Rookie (F1)",
+      "text": "Thorough vacuum, interior wipe-down, full hand wash and dry, and wheels and tires cleaned and dressed.",
+      "price": "$145 small, $175 mid-size, $195 full-size"
+    },
+    {
+      "name": "The Captain (F2)",
+      "text": "Adds light stain removal, ozone odor treatment, UV protectant on exterior plastics and an undercarriage wash.",
+      "price": "$210 small, $230 mid-size, $250 full-size"
+    },
+    {
+      "name": "The Chief (F3)",
+      "text": "The full treatment: steam-cleaned plastics, floors and seats, clay bar treatment and a ceramic spray sealer.",
+      "price": "$345 small, $380 mid-size, $425 full-size"
+    },
+    {
+      "name": "Ceramic Coating",
+      "text": "A protective layer that shields your paint from the elements and keeps the car looking great for years."
+    },
+    {
+      "name": "Interior Only Detail",
+      "text": "A focused interior clean without the exterior wash.",
+      "price": "$169 small, $199 medium, $229 large"
+    },
+    {
+      "name": "Headlight Restoration",
+      "text": "Cloudy headlights cleaned up, with an option to seal them with ceramic coating.",
+      "price": "$100"
+    }
+  ],
+  "also": [
+    {
+      "name": "RVs"
+    },
+    {
+      "name": "Travel trailers"
+    },
+    {
+      "name": "Buses"
+    },
+    {
+      "name": "Watercraft"
+    }
+  ],
+  "alsoTitle": "Not just cars:",
+  "why": [
+    {
+      "name": "Personalized service",
+      "text": "Interior and exterior packages are customizable, from full-service cleaning to specialty treatments."
+    },
+    {
+      "name": "Convenient",
+      "text": "Fast, efficient detailing that respects your time without compromising on quality."
+    },
+    {
+      "name": "Experienced care",
+      "text": "A skilled team using quality products and techniques to make your vehicle look its best."
+    }
+  ],
+  "whyTitle": "The detail is in the name.",
+  "howTitle": "Book it. We show up. You drive off shining.",
+  "steps": [
+    {
+      "name": "Tell us about your vehicle",
+      "text": "Call or send the form with your vehicle and the service you want."
+    },
+    {
+      "name": "We come to you",
+      "text": "We arrive with the equipment and products to do the job on site."
+    },
+    {
+      "name": "Take the keys back",
+      "text": "Your car is clean, restored and showroom-ready."
+    }
+  ],
+  "contactTitle": "Book your detail.",
+  "footerLine": "Car detailing in China Spring",
+  "reviews": [
+    {
+      "text": "Matt did an amazing job on my 2021 Black GMC. They had my truck looking brand new and ready to turn a few heads!! I STRONGLY recommend Matt to detail and get your vehicle looking new again!!!!",
+      "name": "Charles Andy Olvis"
+    },
+    {
+      "text": "Matt was very nice and respectful. He showed amazing results in everything done from fixing rock chips and to applying the ceramic coating. He even detailed the inside without asking. Awesome job, I recommend.",
+      "name": "Chris Bates"
+    },
+    {
+      "text": "Matt did an exceptional job and made our almost 9 year old Yukon look brand new! Worth every penny, and we would absolutely use his services again.",
+      "name": "Sean- Ashlei Musil"
+    }
+  ],
+  "hours": [],
+  "galleryTitle": "Fresh off the driveway.",
+  "gallery": [],
+  "areas": [
+    "China Spring"
+  ],
+  "pitch": "photos",
+  "siteCheck": {
+    "reasons": [],
+    "improvements": [
+      "no tap-to-call link",
+      "no quote or booking form",
+      "no meta description"
+    ]
   }
- ],
- "also": [
-  {
-   "name": "RVs"
-  },
-  {
-   "name": "Travel trailers"
-  },
-  {
-   "name": "Buses"
-  },
-  {
-   "name": "Watercraft"
-  }
- ],
- "alsoTitle": "Not just cars:",
- "why": [
-  {
-   "name": "Personalized service",
-   "text": "Interior and exterior packages are customizable, from full-service cleaning to specialty treatments."
-  },
-  {
-   "name": "Convenient",
-   "text": "Fast, efficient detailing that respects your time without compromising on quality."
-  },
-  {
-   "name": "Experienced care",
-   "text": "A skilled team using quality products and techniques to make your vehicle look its best."
-  }
- ],
- "whyTitle": "The detail is in the name.",
- "howTitle": "Book it. We show up. You drive off shining.",
- "steps": [
-  {
-   "name": "Tell us about your vehicle",
-   "text": "Call or send the form with your vehicle and the service you want."
-  },
-  {
-   "name": "We come to you",
-   "text": "We arrive with the equipment and products to do the job on site."
-  },
-  {
-   "name": "Take the keys back",
-   "text": "Your car is clean, restored and showroom-ready."
-  }
- ],
- "contactTitle": "Book your detail.",
- "footerLine": "Car detailing in China Spring",
- "reviews": [
-  {
-   "text": "Matt did an amazing job on my 2021 Black GMC. They had my truck looking brand new and ready to turn a few heads!! I STRONGLY recommend Matt to detail and get your vehicle looking new again!!!!",
-   "name": "Charles Andy Olvis"
-  },
-  {
-   "text": "Matt was very nice and respectful. He showed amazing results in everything done from fixing rock chips and to applying the ceramic coating. He even detailed the inside without asking. Awesome job, I recommend.",
-   "name": "Chris Bates"
-  },
-  {
-   "text": "Matt did an exceptional job and made our almost 9 year old Yukon look brand new! Worth every penny, and we would absolutely use his services again.",
-   "name": "Sean- Ashlei Musil"
-  }
- ],
- "hours": [],
- "galleryTitle": "Fresh off the driveway.",
- "gallery": [],
- "areas": [
-  "China Spring"
- ],
- "pitch": "photos"
 }

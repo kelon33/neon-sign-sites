@@ -1,129 +1,135 @@
 {
- "kit": "detailing",
- "trade": "Mobile car detailing",
- "name": "Automotive Detailing by Billy",
- "legalName": "Automotive Detailing by Billy",
- "preview": true,
- "placeId": "ChIJG7FkqUCBT4YR2qKWFiemsTQ",
- "title": "Automotive Detailing by Billy | Mobile car detailing in Robinson, TX",
- "description": "Professional mobile detailing that comes to you across Waco, Robinson and Central Texas. Book online, pay a 25% deposit, and get your car back looking showroom new. 5.0 on Google from 24 reviews.",
- "brand": "#1670ff",
- "brandHi": "#52c6ff",
- "accent": "#8fd0ff",
- "logo": "logo.png",
- "logoChip": true,
- "wordmark": {
-  "top": "Automotive Detailing",
-  "bottom": "by Billy"
- },
- "phone": "(254) 229-6223",
- "email": "automotivedetailingbybilly@gmail.com",
- "heroImage": null,
- "heroAlt": "",
- "heroPosition": "60% 60%",
- "heroPositionPhone": "60% 50%",
- "rating": {
-  "score": "5.0",
-  "count": 24,
-  "url": "https://maps.google.com/?cid=3796998647662944986"
- },
- "kicker": "Mobile car detailing · Robinson, TX",
- "headline": "Showroom shine.<br><em>Wherever you are.</em>",
- "intro": "Professional mobile detailing that comes to you across Waco, Robinson and Central Texas. Book online, pay a 25% deposit, and get your car back looking showroom new.",
- "mobile": {
-  "title": "Your driveway is our shop.",
-  "intro": "We bring the detail to you, so your day keeps moving.",
-  "points": [
-   {
-    "name": "We come to you",
-    "text": "Mobile service anywhere in Central Texas."
-   },
-   {
-    "name": "Open 7 days",
-    "text": "Mon–Sun, 6:00 AM to 7:00 PM."
-   },
-   {
-    "name": "Book online",
-    "text": "Pick a package and a date, then secure your spot with a 25% deposit."
-   },
-   {
-    "name": "Pay when done",
-    "text": "The balance is due at completion."
-   }
-  ]
- },
- "servicesTitle": "Inside, outside, and everything that shines.",
- "servicesIntro": "Start with an interior detail. Add what your car needs.",
- "services": [
-  {
-   "name": "Basic Exterior Wash",
-   "text": "Exterior hand wash, wheel cleaning, tire dressing and window cleaning.",
-   "price": "Car $70 · Truck $100 · SUV/Minivan $115"
+  "kit": "detailing",
+  "trade": "Mobile car detailing",
+  "name": "Automotive Detailing by Billy",
+  "legalName": "Automotive Detailing by Billy",
+  "preview": true,
+  "placeId": "ChIJG7FkqUCBT4YR2qKWFiemsTQ",
+  "title": "Automotive Detailing by Billy | Mobile car detailing in Robinson, TX",
+  "description": "Professional mobile detailing that comes to you across Waco, Robinson and Central Texas. Book online, pay a 25% deposit, and get your car back looking showroom new. 5.0 on Google from 24 reviews.",
+  "brand": "#1670ff",
+  "brandHi": "#52c6ff",
+  "accent": "#8fd0ff",
+  "logo": "logo.png",
+  "logoChip": true,
+  "wordmark": {
+    "top": "Automotive Detailing",
+    "bottom": "by Billy"
   },
-  {
-   "name": "Full Interior",
-   "text": "Deep vacuum and wipe-down of all surfaces, door panels, dashboard, console and inside windows.",
-   "price": "Car $120 · Truck $150 · SUV/Minivan $180–$300"
+  "phone": "(254) 229-6223",
+  "email": "automotivedetailingbybilly@gmail.com",
+  "heroImage": null,
+  "heroAlt": "",
+  "heroPosition": "60% 60%",
+  "heroPositionPhone": "60% 50%",
+  "rating": {
+    "score": "5.0",
+    "count": 24,
+    "url": "https://maps.google.com/?cid=3796998647662944986"
   },
-  {
-   "name": "Full Exterior Wash",
-   "text": "Hand wash, clay bar treatment, paint decontamination, tire dressing and streak-free windows.",
-   "price": "Car $80 · Truck $120 · SUV/Minivan $150"
+  "kicker": "Mobile car detailing · Robinson, TX",
+  "headline": "Showroom shine.<br><em>Wherever you are.</em>",
+  "intro": "Professional mobile detailing that comes to you across Waco, Robinson and Central Texas. Book online, pay a 25% deposit, and get your car back looking showroom new.",
+  "mobile": {
+    "title": "Your driveway is our shop.",
+    "intro": "We bring the detail to you, so your day keeps moving.",
+    "points": [
+      {
+        "name": "We come to you",
+        "text": "Mobile service anywhere in Central Texas."
+      },
+      {
+        "name": "Open 7 days",
+        "text": "Mon–Sun, 6:00 AM to 7:00 PM."
+      },
+      {
+        "name": "Book online",
+        "text": "Pick a package and a date, then secure your spot with a 25% deposit."
+      },
+      {
+        "name": "Pay when done",
+        "text": "The balance is due at completion."
+      }
+    ]
   },
-  {
-   "name": "Full Interior & Exterior Wash",
-   "text": "The full interior and full exterior detail combined for a complete transformation.",
-   "price": "Car $150 · Truck $180–$240 · SUV/Minivan $200–$325"
-  },
-  {
-   "name": "Basic Interior",
-   "text": "Vacuum, wipe-down of all interior surfaces and a scent refresher.",
-   "price": "Car $75 · Truck $100 · SUV/Minivan $115"
-  },
-  {
-   "name": "Pet Hair Removal",
-   "text": "Specialized tools and techniques remove embedded pet hair from seats, carpets and floor mats."
+  "servicesTitle": "Inside, outside, and everything that shines.",
+  "servicesIntro": "Start with an interior detail. Add what your car needs.",
+  "services": [
+    {
+      "name": "Basic Exterior Wash",
+      "text": "Exterior hand wash, wheel cleaning, tire dressing and window cleaning.",
+      "price": "Car $70 · Truck $100 · SUV/Minivan $115"
+    },
+    {
+      "name": "Full Interior",
+      "text": "Deep vacuum and wipe-down of all surfaces, door panels, dashboard, console and inside windows.",
+      "price": "Car $120 · Truck $150 · SUV/Minivan $180–$300"
+    },
+    {
+      "name": "Full Exterior Wash",
+      "text": "Hand wash, clay bar treatment, paint decontamination, tire dressing and streak-free windows.",
+      "price": "Car $80 · Truck $120 · SUV/Minivan $150"
+    },
+    {
+      "name": "Full Interior & Exterior Wash",
+      "text": "The full interior and full exterior detail combined for a complete transformation.",
+      "price": "Car $150 · Truck $180–$240 · SUV/Minivan $200–$325"
+    },
+    {
+      "name": "Basic Interior",
+      "text": "Vacuum, wipe-down of all interior surfaces and a scent refresher.",
+      "price": "Car $75 · Truck $100 · SUV/Minivan $115"
+    },
+    {
+      "name": "Pet Hair Removal",
+      "text": "Specialized tools and techniques remove embedded pet hair from seats, carpets and floor mats."
+    }
+  ],
+  "also": [
+    {
+      "name": "Headliner cleaning"
+    },
+    {
+      "name": "Stain removal"
+    },
+    {
+      "name": "Steam cleaning"
+    }
+  ],
+  "alsoTitle": "Not just cars:",
+  "why": [],
+  "whyTitle": "The detail is in the name.",
+  "howTitle": "Book it. We show up. You drive off shining.",
+  "steps": [
+    {
+      "name": "Book",
+      "text": "Book online or by phone and stay updated the whole way."
+    },
+    {
+      "name": "We detail",
+      "text": "Our experts inspect your vehicle and detail it with high-quality products and tools."
+    },
+    {
+      "name": "You approve",
+      "text": "Inspect the result, make sure you're satisfied, then pay."
+    }
+  ],
+  "contactTitle": "Book your detail.",
+  "footerLine": "Mobile car detailing in Robinson",
+  "reviews": [],
+  "hours": [
+    "Mon–Sun 6:00 AM – 7:00 PM"
+  ],
+  "galleryTitle": "Fresh off the driveway.",
+  "gallery": [],
+  "areas": [
+    "Robinson"
+  ],
+  "pitch": "photos",
+  "siteCheck": {
+    "reasons": [],
+    "improvements": [
+      "only 2 photos"
+    ]
   }
- ],
- "also": [
-  {
-   "name": "Headliner cleaning"
-  },
-  {
-   "name": "Stain removal"
-  },
-  {
-   "name": "Steam cleaning"
-  }
- ],
- "alsoTitle": "Not just cars:",
- "why": [],
- "whyTitle": "The detail is in the name.",
- "howTitle": "Book it. We show up. You drive off shining.",
- "steps": [
-  {
-   "name": "Book",
-   "text": "Book online or by phone and stay updated the whole way."
-  },
-  {
-   "name": "We detail",
-   "text": "Our experts inspect your vehicle and detail it with high-quality products and tools."
-  },
-  {
-   "name": "You approve",
-   "text": "Inspect the result, make sure you're satisfied, then pay."
-  }
- ],
- "contactTitle": "Book your detail.",
- "footerLine": "Mobile car detailing in Robinson",
- "reviews": [],
- "hours": [
-  "Mon–Sun 6:00 AM – 7:00 PM"
- ],
- "galleryTitle": "Fresh off the driveway.",
- "gallery": [],
- "areas": [
-  "Robinson"
- ],
- "pitch": "photos"
 }

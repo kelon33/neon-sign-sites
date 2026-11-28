@@ -1,221 +1,227 @@
 {
- "kit": "painting",
- "trade": "House painting",
- "name": "Pro-Tech Painting and Drywall",
- "legalName": "Pro-Tech Painting and Drywall",
- "preview": true,
- "placeId": "ChIJD1W0cb5z_oYRL2PS-TlpPPA",
- "title": "Pro-Tech Painting and Drywall | House painting in Lubbock, TX",
- "description": "Family-owned Lubbock painters with more than 22 years of experience. Interior and exterior repaints, cabinets and drywall repair, from a single room to the whole house. 4.8 on Google from 57 reviews.",
- "logo": "logo.png",
- "logoChip": false,
- "wordmark": {
-  "top": "Pro-Tech Painting",
-  "bottom": "& Drywall"
- },
- "phone": "(806) 544-0299",
- "email": "protechpaint@yahoo.com",
- "heroImage": "img/photo-14.jpg",
- "heroAlt": "White painted brick home with dark trim and green lawn",
- "heroPosition": "60% 60%",
- "heroPositionPhone": "60% 50%",
- "rating": {
-  "score": "4.8",
-  "count": 57,
-  "url": "https://maps.google.com/?cid=17310826765430711087"
- },
- "kicker": "House painting · Lubbock, TX",
- "headline": "Fresh paint.<br><em>Clean finish.</em>",
- "intro": "Family-owned Lubbock painters with more than 22 years of experience. Interior and exterior repaints, cabinets and drywall repair, from a single room to the whole house.",
- "badges": [
-  "Homes and businesses"
- ],
- "highlights": {
-  "title": "Why Lubbock neighbors call us.",
-  "intro": "Homeowners across the South Plains hire us for the same few things.",
-  "points": [
-   {
-    "name": "On time",
-    "text": "Customers say we show up when we say and finish ahead of schedule."
-   },
-   {
-    "name": "Clean work",
-    "text": "We cover floors and furniture, and clean up each day."
-   },
-   {
-    "name": "Fair bids",
-    "text": "We visit your home and write a detailed bid based on the scope of work."
-   },
-   {
-    "name": "Owner involved",
-    "text": "The owner does the estimate and checks in to make sure you are happy."
-   }
-  ]
- },
- "servicesTitle": "Inside and out.",
- "servicesIntro": "One room or the whole house. Custom bids, no guesswork.",
- "services": [
-  {
-   "name": "Interior painting",
-   "text": "Walls, ceilings and trim, painted with careful prep."
+  "kit": "painting",
+  "trade": "House painting",
+  "name": "Pro-Tech Painting and Drywall",
+  "legalName": "Pro-Tech Painting and Drywall",
+  "preview": true,
+  "placeId": "ChIJD1W0cb5z_oYRL2PS-TlpPPA",
+  "title": "Pro-Tech Painting and Drywall | House painting in Lubbock, TX",
+  "description": "Family-owned Lubbock painters with more than 22 years of experience. Interior and exterior repaints, cabinets and drywall repair, from a single room to the whole house. 4.8 on Google from 57 reviews.",
+  "logo": "logo.png",
+  "logoChip": false,
+  "wordmark": {
+    "top": "Pro-Tech Painting",
+    "bottom": "& Drywall"
   },
-  {
-   "name": "Exterior painting",
-   "text": "Wood trim and brick painted to protect your home from the weather."
+  "phone": "(806) 544-0299",
+  "email": "protechpaint@yahoo.com",
+  "heroImage": "img/photo-14.jpg",
+  "heroAlt": "White painted brick home with dark trim and green lawn",
+  "heroPosition": "60% 60%",
+  "heroPositionPhone": "60% 50%",
+  "rating": {
+    "score": "4.8",
+    "count": 57,
+    "url": "https://maps.google.com/?cid=17310826765430711087"
   },
-  {
-   "name": "Cabinet painting",
-   "text": "Kitchen cabinets and trim refreshed, with glazing and custom staining available."
+  "kicker": "House painting · Lubbock, TX",
+  "headline": "Fresh paint.<br><em>Clean finish.</em>",
+  "intro": "Family-owned Lubbock painters with more than 22 years of experience. Interior and exterior repaints, cabinets and drywall repair, from a single room to the whole house.",
+  "badges": [
+    "Homes and businesses"
+  ],
+  "highlights": {
+    "title": "Why Lubbock neighbors call us.",
+    "intro": "Homeowners across the South Plains hire us for the same few things.",
+    "points": [
+      {
+        "name": "On time",
+        "text": "Customers say we show up when we say and finish ahead of schedule."
+      },
+      {
+        "name": "Clean work",
+        "text": "We cover floors and furniture, and clean up each day."
+      },
+      {
+        "name": "Fair bids",
+        "text": "We visit your home and write a detailed bid based on the scope of work."
+      },
+      {
+        "name": "Owner involved",
+        "text": "The owner does the estimate and checks in to make sure you are happy."
+      }
+    ]
   },
-  {
-   "name": "Drywall repair",
-   "text": "Patches, hand texture and texture matching so repairs disappear."
-  },
-  {
-   "name": "Popcorn ceiling removal",
-   "text": "Popcorn ceilings and texture scraped for a smooth, updated look."
-  },
-  {
-   "name": "Commercial painting",
-   "text": "Offices, retail spaces, churches and warehouses, inside and out."
+  "servicesTitle": "Inside and out.",
+  "servicesIntro": "One room or the whole house. Custom bids, no guesswork.",
+  "services": [
+    {
+      "name": "Interior painting",
+      "text": "Walls, ceilings and trim, painted with careful prep."
+    },
+    {
+      "name": "Exterior painting",
+      "text": "Wood trim and brick painted to protect your home from the weather."
+    },
+    {
+      "name": "Cabinet painting",
+      "text": "Kitchen cabinets and trim refreshed, with glazing and custom staining available."
+    },
+    {
+      "name": "Drywall repair",
+      "text": "Patches, hand texture and texture matching so repairs disappear."
+    },
+    {
+      "name": "Popcorn ceiling removal",
+      "text": "Popcorn ceilings and texture scraped for a smooth, updated look."
+    },
+    {
+      "name": "Commercial painting",
+      "text": "Offices, retail spaces, churches and warehouses, inside and out."
+    }
+  ],
+  "also": [
+    {
+      "name": "Power washing"
+    },
+    {
+      "name": "Wood replacement"
+    },
+    {
+      "name": "Wallpaper removal"
+    },
+    {
+      "name": "Fence and pergola staining"
+    },
+    {
+      "name": "Wrought iron fences"
+    },
+    {
+      "name": "Gutter cleaning"
+    }
+  ],
+  "alsoTitle": "We also do:",
+  "promise": null,
+  "why": [
+    {
+      "name": "22+ years, family run",
+      "text": "Locally owned and operated by Kim and Dewayne Poehl."
+    },
+    {
+      "name": "Insured and HUB Certified",
+      "text": "Pro-Tech Painting is fully insured and HUB Certified."
+    },
+    {
+      "name": "Proper prep",
+      "text": "Prep, quality materials and a finish built to last."
+    }
+  ],
+  "whyTitle": "Why homeowners choose Pro-Tech.",
+  "howTitle": "A fresh coat in three steps.",
+  "steps": [
+    {
+      "name": "On-site estimate",
+      "text": "We visit your home and give you a detailed bid based on the scope of work."
+    },
+    {
+      "name": "Approve and choose colors",
+      "text": "Approve the bid, then pick colors with our guidance while we schedule the job."
+    },
+    {
+      "name": "Prep, paint, finish",
+      "text": "We protect your floors and furniture, paint, and leave your space clean."
+    }
+  ],
+  "contactTitle": "Ready for a fresh coat?",
+  "footerLine": "House painting in Lubbock, TX",
+  "reviews": [
+    {
+      "text": "Both the owner, who did the estimate, and the workers were professional, conscientious and timely. I would highly recommend their services!",
+      "name": "M. Wright"
+    },
+    {
+      "text": "They were always on-time and kept a clean workspace. If I ever had any issues, all I had to do was call & they would get them fixed. They ended up finishing the job way ahead of schedule!",
+      "name": "A. Snodgrass"
+    },
+    {
+      "text": "After several recommendations, we used Pro-Tech Painting to paint our interior walls & ceilings & do some drywall repair. Their prices beat anyone in town & they do great work! They were always on time & cleaned up each day they were here.",
+      "name": "Lesa R."
+    },
+    {
+      "text": "I just got home and saw the basement. Wow, it looks great! Thank you, Vince and the rest of your team for the great work!",
+      "name": "Ben D."
+    },
+    {
+      "text": "We felt confident and comfortable enough to leave them alone to work. We will definitely be using them again!",
+      "name": "J. Cotter"
+    }
+  ],
+  "hours": [
+    "Mon–Fri: 8AM – 5PM",
+    "Sat & Sun: Closed"
+  ],
+  "galleryTitle": "Homes we’ve painted.",
+  "notePlaceholder": "Inside or outside, how many rooms, a date you have in mind…",
+  "gallery": [
+    {
+      "src": "img/photo-4.jpg",
+      "alt": "Brick home with arched entry and trimmed lawn",
+      "size": "big"
+    },
+    {
+      "src": "img/photo-3.jpg",
+      "alt": "White kitchen cabinets with granite island"
+    },
+    {
+      "src": "img/photo-13.jpg",
+      "alt": "Dark blue cabinets with glass-front uppers"
+    },
+    {
+      "src": "img/photo-8.jpg",
+      "alt": "Living room with deep navy walls"
+    },
+    {
+      "src": "img/photo-18.jpg",
+      "alt": "Sage green kitchen cabinets",
+      "size": "tall"
+    },
+    {
+      "src": "img/photo-6.jpg",
+      "alt": "Dining room with light walls and chandelier"
+    },
+    {
+      "src": "img/photo-10.jpg",
+      "alt": "Bedroom with soft gray walls"
+    },
+    {
+      "src": "img/photo-24.jpg",
+      "alt": "Kitchen with white upper and black lower cabinets"
+    },
+    {
+      "src": "img/photo-23.jpg",
+      "alt": "Stone entry with painted trim and shutters"
+    },
+    {
+      "src": "img/photo-21.jpg",
+      "alt": "Painter on a ladder at a two-story home exterior"
+    },
+    {
+      "src": "img/photo-20.jpg",
+      "alt": "Pro-Tech crew prepping kitchen cabinets"
+    },
+    {
+      "src": "img/photo-1.jpg",
+      "alt": "Dining nook with blue walls"
+    }
+  ],
+  "areas": [
+    "Lubbock"
+  ],
+  "pitch": "site",
+  "siteCheck": {
+    "reasons": [
+      "copyright 2023"
+    ],
+    "improvements": []
   }
- ],
- "also": [
-  {
-   "name": "Power washing"
-  },
-  {
-   "name": "Wood replacement"
-  },
-  {
-   "name": "Wallpaper removal"
-  },
-  {
-   "name": "Fence and pergola staining"
-  },
-  {
-   "name": "Wrought iron fences"
-  },
-  {
-   "name": "Gutter cleaning"
-  }
- ],
- "alsoTitle": "We also do:",
- "promise": null,
- "why": [
-  {
-   "name": "22+ years, family run",
-   "text": "Locally owned and operated by Kim and Dewayne Poehl."
-  },
-  {
-   "name": "Insured and HUB Certified",
-   "text": "Pro-Tech Painting is fully insured and HUB Certified."
-  },
-  {
-   "name": "Proper prep",
-   "text": "Prep, quality materials and a finish built to last."
-  }
- ],
- "whyTitle": "Why homeowners choose Pro-Tech.",
- "howTitle": "A fresh coat in three steps.",
- "steps": [
-  {
-   "name": "On-site estimate",
-   "text": "We visit your home and give you a detailed bid based on the scope of work."
-  },
-  {
-   "name": "Approve and choose colors",
-   "text": "Approve the bid, then pick colors with our guidance while we schedule the job."
-  },
-  {
-   "name": "Prep, paint, finish",
-   "text": "We protect your floors and furniture, paint, and leave your space clean."
-  }
- ],
- "contactTitle": "Ready for a fresh coat?",
- "footerLine": "House painting in Lubbock, TX",
- "reviews": [
-  {
-   "text": "Both the owner, who did the estimate, and the workers were professional, conscientious and timely. I would highly recommend their services!",
-   "name": "M. Wright"
-  },
-  {
-   "text": "They were always on-time and kept a clean workspace. If I ever had any issues, all I had to do was call & they would get them fixed. They ended up finishing the job way ahead of schedule!",
-   "name": "A. Snodgrass"
-  },
-  {
-   "text": "After several recommendations, we used Pro-Tech Painting to paint our interior walls & ceilings & do some drywall repair. Their prices beat anyone in town & they do great work! They were always on time & cleaned up each day they were here.",
-   "name": "Lesa R."
-  },
-  {
-   "text": "I just got home and saw the basement. Wow, it looks great! Thank you, Vince and the rest of your team for the great work!",
-   "name": "Ben D."
-  },
-  {
-   "text": "We felt confident and comfortable enough to leave them alone to work. We will definitely be using them again!",
-   "name": "J. Cotter"
-  }
- ],
- "hours": [
-  "Mon–Fri: 8AM – 5PM",
-  "Sat & Sun: Closed"
- ],
- "galleryTitle": "Homes we’ve painted.",
- "notePlaceholder": "Inside or outside, how many rooms, a date you have in mind…",
- "gallery": [
-  {
-   "src": "img/photo-4.jpg",
-   "alt": "Brick home with arched entry and trimmed lawn",
-   "size": "big"
-  },
-  {
-   "src": "img/photo-3.jpg",
-   "alt": "White kitchen cabinets with granite island"
-  },
-  {
-   "src": "img/photo-13.jpg",
-   "alt": "Dark blue cabinets with glass-front uppers"
-  },
-  {
-   "src": "img/photo-8.jpg",
-   "alt": "Living room with deep navy walls"
-  },
-  {
-   "src": "img/photo-18.jpg",
-   "alt": "Sage green kitchen cabinets",
-   "size": "tall"
-  },
-  {
-   "src": "img/photo-6.jpg",
-   "alt": "Dining room with light walls and chandelier"
-  },
-  {
-   "src": "img/photo-10.jpg",
-   "alt": "Bedroom with soft gray walls"
-  },
-  {
-   "src": "img/photo-24.jpg",
-   "alt": "Kitchen with white upper and black lower cabinets"
-  },
-  {
-   "src": "img/photo-23.jpg",
-   "alt": "Stone entry with painted trim and shutters"
-  },
-  {
-   "src": "img/photo-21.jpg",
-   "alt": "Painter on a ladder at a two-story home exterior"
-  },
-  {
-   "src": "img/photo-20.jpg",
-   "alt": "Pro-Tech crew prepping kitchen cabinets"
-  },
-  {
-   "src": "img/photo-1.jpg",
-   "alt": "Dining nook with blue walls"
-  }
- ],
- "areas": [
-  "Lubbock"
- ],
- "pitch": "site"
 }

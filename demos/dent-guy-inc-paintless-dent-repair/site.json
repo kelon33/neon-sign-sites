@@ -91,5 +91,14 @@
     "Fate",
     "Rockwall"
   ],
-  "pitch": "photos"
+  "pitch": "photos",
+  "siteCheck": {
+    "reasons": [],
+    "improvements": [
+      "no reviews on the site",
+      "no photos",
+      "no meta description",
+      "loads in 3.5s"
+    ]
+  }
 }

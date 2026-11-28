@@ -118,5 +118,11 @@
   "areas": [
     "Jacksonville"
   ],
-  "pitch": "photos"
+  "pitch": "photos",
+  "siteCheck": {
+    "reasons": [],
+    "improvements": [
+      "loads in 3.1s"
+    ]
+  }
 }

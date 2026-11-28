@@ -1,110 +1,117 @@
 {
- "kit": "detailing",
- "trade": "Paintless dent repair",
- "name": "All States Hail Team",
- "legalName": "All States Hail Team",
- "preview": true,
- "placeId": "ChIJpyfkuJUpl4cR3YG7yojP9Uw",
- "title": "All States Hail Team | Paintless dent repair in San Antonio, TX",
- "description": "Mobile paintless dent and hail repair in San Antonio, with over 20 years behind it. We work with your insurance and bring the vehicle back looking new. 5.0 on Google from 25 reviews.",
- "brand": "#1670ff",
- "brandHi": "#52c6ff",
- "accent": "#8fd0ff",
- "logo": null,
- "logoChip": false,
- "wordmark": {
-  "top": "All States",
-  "bottom": "Hail Team"
- },
- "phone": "(210) 726-0932",
- "email": "allstateshailteam@gmail.com",
- "heroImage": null,
- "heroAlt": "",
- "heroPosition": "60% 60%",
- "heroPositionPhone": "60% 50%",
- "rating": {
-  "score": "5.0",
-  "count": 25,
-  "url": "https://maps.google.com/?cid=5545566702600421853"
- },
- "kicker": "Paintless dent repair · San Antonio",
- "headline": "Hail damage gone.<br><em>Factory paint stays.</em>",
- "intro": "Mobile paintless dent and hail repair in San Antonio, with over 20 years behind it. We work with your insurance and bring the vehicle back looking new.",
- "mobile": null,
- "servicesTitle": "Every kind of dent.",
- "servicesIntro": "From a single door ding to hail damage.",
- "services": [
-  {
-   "name": "Paintless Dent Repair",
-   "text": "Door dings, creases and larger dents come out without harming the factory finish, so your vehicle keeps its value."
+  "kit": "detailing",
+  "trade": "Paintless dent repair",
+  "name": "All States Hail Team",
+  "legalName": "All States Hail Team",
+  "preview": true,
+  "placeId": "ChIJpyfkuJUpl4cR3YG7yojP9Uw",
+  "title": "All States Hail Team | Paintless dent repair in San Antonio, TX",
+  "description": "Mobile paintless dent and hail repair in San Antonio, with over 20 years behind it. We work with your insurance and bring the vehicle back looking new. 5.0 on Google from 25 reviews.",
+  "brand": "#1670ff",
+  "brandHi": "#52c6ff",
+  "accent": "#8fd0ff",
+  "logo": null,
+  "logoChip": false,
+  "wordmark": {
+    "top": "All States",
+    "bottom": "Hail Team"
   },
-  {
-   "name": "Auto Hail Damage Repair",
-   "text": "We work with your insurance company and walk you through the entire process, start to finish."
+  "phone": "(210) 726-0932",
+  "email": "allstateshailteam@gmail.com",
+  "heroImage": null,
+  "heroAlt": "",
+  "heroPosition": "60% 60%",
+  "heroPositionPhone": "60% 50%",
+  "rating": {
+    "score": "5.0",
+    "count": 25,
+    "url": "https://maps.google.com/?cid=5545566702600421853"
   },
-  {
-   "name": "Deductible Assistance",
-   "text": "We can waive your deductible up to $1,000. Call for details."
-  },
-  {
-   "name": "Rental Assistance",
-   "text": "We work with your insurance company to get you a rental car while we assess and repair your vehicle."
+  "kicker": "Paintless dent repair · San Antonio",
+  "headline": "Hail damage gone.<br><em>Factory paint stays.</em>",
+  "intro": "Mobile paintless dent and hail repair in San Antonio, with over 20 years behind it. We work with your insurance and bring the vehicle back looking new.",
+  "mobile": null,
+  "servicesTitle": "Every kind of dent.",
+  "servicesIntro": "From a single door ding to hail damage.",
+  "services": [
+    {
+      "name": "Paintless Dent Repair",
+      "text": "Door dings, creases and larger dents come out without harming the factory finish, so your vehicle keeps its value."
+    },
+    {
+      "name": "Auto Hail Damage Repair",
+      "text": "We work with your insurance company and walk you through the entire process, start to finish."
+    },
+    {
+      "name": "Deductible Assistance",
+      "text": "We can waive your deductible up to $1,000. Call for details."
+    },
+    {
+      "name": "Rental Assistance",
+      "text": "We work with your insurance company to get you a rental car while we assess and repair your vehicle."
+    }
+  ],
+  "also": [],
+  "alsoTitle": "We also fix",
+  "why": [
+    {
+      "name": "$0 out of pocket",
+      "text": "With hail damage, you don't have to worry about out-of-pocket expenses."
+    },
+    {
+      "name": "Over 20 years in business",
+      "text": "A mobile unit known for expertise, honesty and steady service."
+    },
+    {
+      "name": "Insurance handled",
+      "text": "We deal with your insurer and answer your questions from start to finish."
+    }
+  ],
+  "whyTitle": "The All States Hail Team difference.",
+  "howTitle": "Dent-free in three steps.",
+  "steps": [
+    {
+      "name": "Send the details",
+      "text": "Call, or use the form with your year, make, model and photos of the damage."
+    },
+    {
+      "name": "Get an evaluation",
+      "text": "Bring the vehicle in and we look at the hail damage, dings or film options."
+    },
+    {
+      "name": "Drive it smooth",
+      "text": "We work the dents out and hand the vehicle back."
+    }
+  ],
+  "contactTitle": "Got a dent?",
+  "footerLine": "Paintless dent repair in San Antonio",
+  "reviews": [
+    {
+      "text": "Great Experience! They dealt with the insurance company and made it easy start to finish. I received the quote very quickly and the work was projected to take 2 full days, but they finished midday on day 2 so I was able to get my vehicle sooner then expected. They took great care of my vehicle and even washed the exterior and cleaned the inside! Was not expecting that so that was great! Would highly recommend for hail repair!!!!! Thanks Team!!!!",
+      "name": "Officer Chris Waldron"
+    },
+    {
+      "text": "The help I got from Stacy and the whole team at All States Hail was amazing. Not including the absolute beautiful job they did on my truck. They were so helpful in getting me a rental car and dealing with my insurance. I cannot recommend them enough. They made the whole process simple AND my truck is beautiful!!!!",
+      "name": "Shannon Travis"
+    }
+  ],
+  "hours": [
+    "Monday-Friday: 9a to 6p",
+    "Saturdays: 10 to 4p"
+  ],
+  "galleryTitle": "Dents gone, paint untouched.",
+  "notePlaceholder": "Where the dent is, how big, hail or a door ding…",
+  "ctaLabel": "Get an estimate",
+  "gallery": [],
+  "areas": [
+    "San Antonio"
+  ],
+  "pitch": "photos",
+  "siteCheck": {
+    "reasons": [],
+    "improvements": [
+      "no quote or booking form",
+      "copyright 2025"
+    ]
   }
- ],
- "also": [],
- "alsoTitle": "We also fix",
- "why": [
-  {
-   "name": "$0 out of pocket",
-   "text": "With hail damage, you don't have to worry about out-of-pocket expenses."
-  },
-  {
-   "name": "Over 20 years in business",
-   "text": "A mobile unit known for expertise, honesty and steady service."
-  },
-  {
-   "name": "Insurance handled",
-   "text": "We deal with your insurer and answer your questions from start to finish."
-  }
- ],
- "whyTitle": "The All States Hail Team difference.",
- "howTitle": "Dent-free in three steps.",
- "steps": [
-  {
-   "name": "Send the details",
-   "text": "Call, or use the form with your year, make, model and photos of the damage."
-  },
-  {
-   "name": "Get an evaluation",
-   "text": "Bring the vehicle in and we look at the hail damage, dings or film options."
-  },
-  {
-   "name": "Drive it smooth",
-   "text": "We work the dents out and hand the vehicle back."
-  }
- ],
- "contactTitle": "Got a dent?",
- "footerLine": "Paintless dent repair in San Antonio",
- "reviews": [
-  {
-   "text": "Great Experience! They dealt with the insurance company and made it easy start to finish. I received the quote very quickly and the work was projected to take 2 full days, but they finished midday on day 2 so I was able to get my vehicle sooner then expected. They took great care of my vehicle and even washed the exterior and cleaned the inside! Was not expecting that so that was great! Would highly recommend for hail repair!!!!! Thanks Team!!!!",
-   "name": "Officer Chris Waldron"
-  },
-  {
-   "text": "The help I got from Stacy and the whole team at All States Hail was amazing. Not including the absolute beautiful job they did on my truck. They were so helpful in getting me a rental car and dealing with my insurance. I cannot recommend them enough. They made the whole process simple AND my truck is beautiful!!!!",
-   "name": "Shannon Travis"
-  }
- ],
- "hours": [
-  "Monday-Friday: 9a to 6p",
-  "Saturdays: 10 to 4p"
- ],
- "galleryTitle": "Dents gone, paint untouched.",
- "notePlaceholder": "Where the dent is, how big, hail or a door ding…",
- "ctaLabel": "Get an estimate",
- "gallery": [],
- "areas": [
-  "San Antonio"
- ],
- "pitch": "photos"
 }

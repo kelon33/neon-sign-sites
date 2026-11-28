@@ -180,5 +180,11 @@
   "areas": [
     "Sarasota"
   ],
-  "pitch": "site"
+  "pitch": "site",
+  "siteCheck": {
+    "reasons": [],
+    "improvements": [
+      "loads in 2.8s"
+    ]
+  }
 }

@@ -1,118 +1,125 @@
 {
- "kit": "detailing",
- "trade": "Mobile car detailing",
- "name": "Capital Mobile Car Detailing Barton Creek",
- "legalName": "Capital Mobile Car Detailing Barton Creek",
- "preview": true,
- "placeId": "ChIJxRDv_kJLW4YRN1qflRP961I",
- "title": "Capital Mobile Car Detailing Barton Creek | Mobile car detailing in Austin, TX",
- "description": "Hand-finished detailing brought to your driveway in Barton Creek. Rated 5.0 on Google, with 500+ cars detailed. 5.0 on Google from 23 reviews.",
- "brand": "#1670ff",
- "brandHi": "#52c6ff",
- "accent": "#8fd0ff",
- "logo": null,
- "logoChip": false,
- "wordmark": {
-  "top": "Capital Mobile",
-  "bottom": "Car Detailing"
- },
- "phone": "(737) 264-7940",
- "email": "capitaldetail@gmail.com",
- "heroImage": null,
- "heroAlt": "",
- "heroPosition": "60% 60%",
- "heroPositionPhone": "60% 50%",
- "rating": {
-  "score": "5.0",
-  "count": 23,
-  "url": "https://maps.google.com/?cid=5975147591193549367"
- },
- "kicker": "Mobile car detailing · Austin, TX",
- "headline": "Showroom shine,<br><em>at your driveway.</em>",
- "intro": "Hand-finished detailing brought to your driveway in Barton Creek. Rated 5.0 on Google, with 500+ cars detailed.",
- "mobile": {
-  "title": "We come to you.",
-  "intro": "Mobile service means your car gets a full detail right where it sits. All we need is your home's power and water.",
-  "points": [
-   {
-    "name": "At your driveway",
-    "text": "We come to you in Barton Creek and Austin."
-   },
-   {
-    "name": "On your schedule",
-    "text": "Book online or by phone. Open 7 days, 8am to 7pm."
-   },
-   {
-    "name": "60 to 180 minutes",
-    "text": "A hand-finished detail done in one visit."
-   },
-   {
-    "name": "Homes and offices",
-    "text": "Apartments and offices are fine too."
-   }
-  ]
- },
- "servicesTitle": "Inside, outside, and every detail between.",
- "servicesIntro": "Pick what your car needs, from a deep interior clean to lasting paint protection.",
- "services": [
-  {
-   "name": "Interior Reset",
-   "text": "Three-stage interior vacuuming, a full surface wipe and sanitize, and a deep clean of the floor mats.",
-   "price": "$200"
+  "kit": "detailing",
+  "trade": "Mobile car detailing",
+  "name": "Capital Mobile Car Detailing Barton Creek",
+  "legalName": "Capital Mobile Car Detailing Barton Creek",
+  "preview": true,
+  "placeId": "ChIJxRDv_kJLW4YRN1qflRP961I",
+  "title": "Capital Mobile Car Detailing Barton Creek | Mobile car detailing in Austin, TX",
+  "description": "Hand-finished detailing brought to your driveway in Barton Creek. Rated 5.0 on Google, with 500+ cars detailed. 5.0 on Google from 23 reviews.",
+  "brand": "#1670ff",
+  "brandHi": "#52c6ff",
+  "accent": "#8fd0ff",
+  "logo": null,
+  "logoChip": false,
+  "wordmark": {
+    "top": "Capital Mobile",
+    "bottom": "Car Detailing"
   },
-  {
-   "name": "Showroom Detail",
-   "text": "The Interior Reset plus steam disinfection, shampoo, stain and odor treatment, and leather care.",
-   "price": "$250"
+  "phone": "(737) 264-7940",
+  "email": "capitaldetail@gmail.com",
+  "heroImage": null,
+  "heroAlt": "",
+  "heroPosition": "60% 60%",
+  "heroPositionPhone": "60% 50%",
+  "rating": {
+    "score": "5.0",
+    "count": 23,
+    "url": "https://maps.google.com/?cid=5975147591193549367"
   },
-  {
-   "name": "Exterior Add-On",
-   "text": "Add the exterior to your detail for a crystal-clear window finish and more.",
-   "price": "+$75"
+  "kicker": "Mobile car detailing · Austin, TX",
+  "headline": "Showroom shine,<br><em>at your driveway.</em>",
+  "intro": "Hand-finished detailing brought to your driveway in Barton Creek. Rated 5.0 on Google, with 500+ cars detailed.",
+  "mobile": {
+    "title": "We come to you.",
+    "intro": "Mobile service means your car gets a full detail right where it sits. All we need is your home's power and water.",
+    "points": [
+      {
+        "name": "At your driveway",
+        "text": "We come to you in Barton Creek and Austin."
+      },
+      {
+        "name": "On your schedule",
+        "text": "Book online or by phone. Open 7 days, 8am to 7pm."
+      },
+      {
+        "name": "60 to 180 minutes",
+        "text": "A hand-finished detail done in one visit."
+      },
+      {
+        "name": "Homes and offices",
+        "text": "Apartments and offices are fine too."
+      }
+    ]
+  },
+  "servicesTitle": "Inside, outside, and every detail between.",
+  "servicesIntro": "Pick what your car needs, from a deep interior clean to lasting paint protection.",
+  "services": [
+    {
+      "name": "Interior Reset",
+      "text": "Three-stage interior vacuuming, a full surface wipe and sanitize, and a deep clean of the floor mats.",
+      "price": "$200"
+    },
+    {
+      "name": "Showroom Detail",
+      "text": "The Interior Reset plus steam disinfection, shampoo, stain and odor treatment, and leather care.",
+      "price": "$250"
+    },
+    {
+      "name": "Exterior Add-On",
+      "text": "Add the exterior to your detail for a crystal-clear window finish and more.",
+      "price": "+$75"
+    }
+  ],
+  "also": [],
+  "alsoTitle": "We also detail",
+  "why": [
+    {
+      "name": "Rated 5.0 on Google",
+      "text": "A perfect rating from local customers."
+    },
+    {
+      "name": "500+ cars detailed",
+      "text": "Hand-finished work, car after car."
+    },
+    {
+      "name": "Clear pricing",
+      "text": "Packages start at $200, listed up front."
+    }
+  ],
+  "whyTitle": "The detail is in the name.",
+  "howTitle": "Book it. We show up. You drive off shining.",
+  "steps": [
+    {
+      "name": "Tell us about your vehicle",
+      "text": "Call or send the form with your vehicle and the service you want."
+    },
+    {
+      "name": "We come to you",
+      "text": "We arrive with the equipment and products to do the job on site."
+    },
+    {
+      "name": "Take the keys back",
+      "text": "Your car is clean, restored and showroom-ready."
+    }
+  ],
+  "contactTitle": "Book your detail.",
+  "footerLine": "Mobile car detailing in Austin",
+  "reviews": [],
+  "hours": [
+    "Open 7 days, 8am–7pm"
+  ],
+  "galleryTitle": "Fresh off the driveway.",
+  "gallery": [],
+  "areas": [
+    "Austin"
+  ],
+  "pitch": "photos",
+  "siteCheck": {
+    "reasons": [],
+    "improvements": [
+      "no reviews on the site",
+      "only 0 photos"
+    ]
   }
- ],
- "also": [],
- "alsoTitle": "We also detail",
- "why": [
-  {
-   "name": "Rated 5.0 on Google",
-   "text": "A perfect rating from local customers."
-  },
-  {
-   "name": "500+ cars detailed",
-   "text": "Hand-finished work, car after car."
-  },
-  {
-   "name": "Clear pricing",
-   "text": "Packages start at $200, listed up front."
-  }
- ],
- "whyTitle": "The detail is in the name.",
- "howTitle": "Book it. We show up. You drive off shining.",
- "steps": [
-  {
-   "name": "Tell us about your vehicle",
-   "text": "Call or send the form with your vehicle and the service you want."
-  },
-  {
-   "name": "We come to you",
-   "text": "We arrive with the equipment and products to do the job on site."
-  },
-  {
-   "name": "Take the keys back",
-   "text": "Your car is clean, restored and showroom-ready."
-  }
- ],
- "contactTitle": "Book your detail.",
- "footerLine": "Mobile car detailing in Austin",
- "reviews": [],
- "hours": [
-  "Open 7 days, 8am–7pm"
- ],
- "galleryTitle": "Fresh off the driveway.",
- "gallery": [],
- "areas": [
-  "Austin"
- ],
- "pitch": "photos"
 }

@@ -1,180 +1,186 @@
 {
- "kit": "detailing",
- "name": "Paintless DR",
- "legalName": "Paintless Dr Mobile Hail Dent Removal Repair",
- "preview": true,
- "placeId": "ChIJAddZRPJ5ToYRxDcgxq-piAY",
- "title": "Paintless DR | Paintless dent repair in Venus, Mansfield and Dallas–Fort Worth",
- "description": "Paintless dent repair for door dings, creases and hail damage. We keep your factory finish, and we come to your driveway or office, or you can visit our shop in Venus/Mansfield. 4.9 on Google from 60 reviews.",
- "brand": "#1670ff",
- "brandHi": "#52c6ff",
- "accent": "#8fd0ff",
- "logo": "logo.png",
- "logoChip": true,
- "wordmark": {
-  "top": "Paintless DR",
-  "bottom": "Mobile Dent Repair"
- },
- "phone": "(903) 624-2473",
- "email": "info@paintlessdrmobile.com",
- "heroImage": "img/photo-13.jpg",
- "heroAlt": "Blue car fender with dent repair under a reflection line board",
- "heroPosition": "60% 60%",
- "heroPositionPhone": "60% 50%",
- "rating": {
-  "score": "4.9",
-  "count": 60,
-  "url": "https://maps.google.com/?cid=470812733468587972"
- },
- "kicker": "Paintless dent repair · Venus/Mansfield & DFW",
- "headline": "Your car's dents.<br><em>Gone. Paint untouched.</em>",
- "intro": "Paintless dent repair for door dings, creases and hail damage. We keep your factory finish, and we come to your driveway or office, or you can visit our shop in Venus/Mansfield.",
- "mobile": {
-  "title": "Your driveway is our shop.",
-  "intro": "Our fully equipped mobile units come to your home or office across DFW, so your day keeps moving.",
-  "points": [
-   {
-    "name": "At your door",
-    "text": "Home or office, across the DFW Metroplex."
-   },
-   {
-    "name": "No body shop delays",
-    "text": "Send photos, get an estimate, book a time."
-   },
-   {
-    "name": "Factory paint stays",
-    "text": "No paint and no fillers, so original finish and resale value are preserved."
-   },
-   {
-    "name": "Easy to reach",
-    "text": "Call or text photos to 817-728-9500, or email them."
-   }
-  ]
- },
- "servicesTitle": "Every kind of dent.",
- "servicesIntro": "From a single door ding to hail damage.",
- "services": [
-  {
-   "name": "Hail Repair",
-   "text": "Hail dents on hoods, roofs and panels worked out while the original paint and clear coat stay."
+  "kit": "detailing",
+  "name": "Paintless DR",
+  "legalName": "Paintless Dr Mobile Hail Dent Removal Repair",
+  "preview": true,
+  "placeId": "ChIJAddZRPJ5ToYRxDcgxq-piAY",
+  "title": "Paintless DR | Paintless dent repair in Venus, Mansfield and Dallas–Fort Worth",
+  "description": "Paintless dent repair for door dings, creases and hail damage. We keep your factory finish, and we come to your driveway or office, or you can visit our shop in Venus/Mansfield. 4.9 on Google from 60 reviews.",
+  "brand": "#1670ff",
+  "brandHi": "#52c6ff",
+  "accent": "#8fd0ff",
+  "logo": "logo.png",
+  "logoChip": true,
+  "wordmark": {
+    "top": "Paintless DR",
+    "bottom": "Mobile Dent Repair"
   },
-  {
-   "name": "Door Ding Removal",
-   "text": "Parking-lot dings and shopping cart marks removed without paint or filler."
+  "phone": "(903) 624-2473",
+  "email": "info@paintlessdrmobile.com",
+  "heroImage": "img/photo-13.jpg",
+  "heroAlt": "Blue car fender with dent repair under a reflection line board",
+  "heroPosition": "60% 60%",
+  "heroPositionPhone": "60% 50%",
+  "rating": {
+    "score": "4.9",
+    "count": 60,
+    "url": "https://maps.google.com/?cid=470812733468587972"
   },
-  {
-   "name": "Minor Dent Repair",
-   "text": "Small dents and body line creases massaged back to the factory contour."
+  "kicker": "Paintless dent repair · Venus/Mansfield & DFW",
+  "headline": "Your car's dents.<br><em>Gone. Paint untouched.</em>",
+  "intro": "Paintless dent repair for door dings, creases and hail damage. We keep your factory finish, and we come to your driveway or office, or you can visit our shop in Venus/Mansfield.",
+  "mobile": {
+    "title": "Your driveway is our shop.",
+    "intro": "Our fully equipped mobile units come to your home or office across DFW, so your day keeps moving.",
+    "points": [
+      {
+        "name": "At your door",
+        "text": "Home or office, across the DFW Metroplex."
+      },
+      {
+        "name": "No body shop delays",
+        "text": "Send photos, get an estimate, book a time."
+      },
+      {
+        "name": "Factory paint stays",
+        "text": "No paint and no fillers, so original finish and resale value are preserved."
+      },
+      {
+        "name": "Easy to reach",
+        "text": "Call or text photos to 817-728-9500, or email them."
+      }
+    ]
   },
-  {
-   "name": "Mobile PDR Service",
-   "text": "The full repair at your home or office, with a fully equipped unit."
+  "servicesTitle": "Every kind of dent.",
+  "servicesIntro": "From a single door ding to hail damage.",
+  "services": [
+    {
+      "name": "Hail Repair",
+      "text": "Hail dents on hoods, roofs and panels worked out while the original paint and clear coat stay."
+    },
+    {
+      "name": "Door Ding Removal",
+      "text": "Parking-lot dings and shopping cart marks removed without paint or filler."
+    },
+    {
+      "name": "Minor Dent Repair",
+      "text": "Small dents and body line creases massaged back to the factory contour."
+    },
+    {
+      "name": "Mobile PDR Service",
+      "text": "The full repair at your home or office, with a fully equipped unit."
+    }
+  ],
+  "also": [
+    {
+      "name": "Fleet vehicles"
+    },
+    {
+      "name": "Residential vehicles"
+    },
+    {
+      "name": "Luxury and daily drivers"
+    }
+  ],
+  "alsoTitle": "We also fix",
+  "why": [
+    {
+      "name": "No paint, no fillers",
+      "text": "Your factory finish stays, which protects resale value and warranty."
+    },
+    {
+      "name": "Mobile or shop",
+      "text": "We repair across DFW, or you can visit our shop at 6625 FM 157 #106, Venus/Mansfield."
+    },
+    {
+      "name": "20+ years of experience",
+      "text": "Robby, a certified industry veteran, fixes complex dents that others call impossible without painting."
+    }
+  ],
+  "whyTitle": "The Paintless DR difference.",
+  "howTitle": "Dent-free in three steps.",
+  "steps": [
+    {
+      "name": "Send photos",
+      "text": "Take 2–3 photos from different angles and text them to 817-728-9500 or email them."
+    },
+    {
+      "name": "Get an estimate",
+      "text": "We review the photos and reply with an upfront price. If you approve, we schedule."
+    },
+    {
+      "name": "Dents disappear",
+      "text": "We repair the car at your home or office, or at our Venus/Mansfield shop."
+    }
+  ],
+  "contactTitle": "Got a dent?",
+  "footerLine": "Paintless dent repair in Venus/Mansfield and DFW",
+  "reviews": [],
+  "hours": [],
+  "galleryTitle": "Dents gone, paint untouched.",
+  "notePlaceholder": "Where the dent is, how big, hail or a door ding…",
+  "gallery": [
+    {
+      "src": "img/photo-12.jpg",
+      "alt": "Dark car door after dent repair, reflecting straight light lines",
+      "size": "big"
+    },
+    {
+      "src": "img/photo-6.jpg",
+      "alt": "Technician working on a dark blue sedan in a lit shop"
+    },
+    {
+      "src": "img/photo-2.jpg",
+      "alt": "Technician repairing a dent on an SUV beside the mobile trailer"
+    },
+    {
+      "src": "img/photo-3.jpg",
+      "alt": "Technician working at a tool cart next to the Paintless DR trailer"
+    },
+    {
+      "src": "img/photo-14.jpg",
+      "alt": "Blue car rear fender being checked with a reflection board",
+      "size": "tall"
+    },
+    {
+      "src": "img/photo-22.jpg",
+      "alt": "Technician repairing a car hood in a residential driveway"
+    },
+    {
+      "src": "img/photo-24.jpg",
+      "alt": "Technician working on a black wagon in a driveway under an umbrella"
+    },
+    {
+      "src": "img/photo-23.jpg",
+      "alt": "Mobile repair setup on a neighborhood street"
+    },
+    {
+      "src": "img/photo-18.jpg",
+      "alt": "Black Ford truck in the shop under hex lights"
+    },
+    {
+      "src": "img/photo-16.jpg",
+      "alt": "Technician inspecting a silver SUV under a light frame"
+    },
+    {
+      "src": "img/photo-11.jpg",
+      "alt": "Door dent shown in reflected light before repair"
+    },
+    {
+      "src": "img/photo-19.jpg",
+      "alt": "White Mustang outside the Paintless DR shop"
+    }
+  ],
+  "areas": [
+    "Venus",
+    "Mansfield",
+    "Dallas–Fort Worth"
+  ],
+  "ctaLabel": "Get an estimate",
+  "siteCheck": {
+    "reasons": [
+      "no https"
+    ],
+    "improvements": []
   }
- ],
- "also": [
-  {
-   "name": "Fleet vehicles"
-  },
-  {
-   "name": "Residential vehicles"
-  },
-  {
-   "name": "Luxury and daily drivers"
-  }
- ],
- "alsoTitle": "We also fix",
- "why": [
-  {
-   "name": "No paint, no fillers",
-   "text": "Your factory finish stays, which protects resale value and warranty."
-  },
-  {
-   "name": "Mobile or shop",
-   "text": "We repair across DFW, or you can visit our shop at 6625 FM 157 #106, Venus/Mansfield."
-  },
-  {
-   "name": "20+ years of experience",
-   "text": "Robby, a certified industry veteran, fixes complex dents that others call impossible without painting."
-  }
- ],
- "whyTitle": "The Paintless DR difference.",
- "howTitle": "Dent-free in three steps.",
- "steps": [
-  {
-   "name": "Send photos",
-   "text": "Take 2–3 photos from different angles and text them to 817-728-9500 or email them."
-  },
-  {
-   "name": "Get an estimate",
-   "text": "We review the photos and reply with an upfront price. If you approve, we schedule."
-  },
-  {
-   "name": "Dents disappear",
-   "text": "We repair the car at your home or office, or at our Venus/Mansfield shop."
-  }
- ],
- "contactTitle": "Got a dent?",
- "footerLine": "Paintless dent repair in Venus/Mansfield and DFW",
- "reviews": [],
- "hours": [],
- "galleryTitle": "Dents gone, paint untouched.",
- "notePlaceholder": "Where the dent is, how big, hail or a door ding…",
- "gallery": [
-  {
-   "src": "img/photo-12.jpg",
-   "alt": "Dark car door after dent repair, reflecting straight light lines",
-   "size": "big"
-  },
-  {
-   "src": "img/photo-6.jpg",
-   "alt": "Technician working on a dark blue sedan in a lit shop"
-  },
-  {
-   "src": "img/photo-2.jpg",
-   "alt": "Technician repairing a dent on an SUV beside the mobile trailer"
-  },
-  {
-   "src": "img/photo-3.jpg",
-   "alt": "Technician working at a tool cart next to the Paintless DR trailer"
-  },
-  {
-   "src": "img/photo-14.jpg",
-   "alt": "Blue car rear fender being checked with a reflection board",
-   "size": "tall"
-  },
-  {
-   "src": "img/photo-22.jpg",
-   "alt": "Technician repairing a car hood in a residential driveway"
-  },
-  {
-   "src": "img/photo-24.jpg",
-   "alt": "Technician working on a black wagon in a driveway under an umbrella"
-  },
-  {
-   "src": "img/photo-23.jpg",
-   "alt": "Mobile repair setup on a neighborhood street"
-  },
-  {
-   "src": "img/photo-18.jpg",
-   "alt": "Black Ford truck in the shop under hex lights"
-  },
-  {
-   "src": "img/photo-16.jpg",
-   "alt": "Technician inspecting a silver SUV under a light frame"
-  },
-  {
-   "src": "img/photo-11.jpg",
-   "alt": "Door dent shown in reflected light before repair"
-  },
-  {
-   "src": "img/photo-19.jpg",
-   "alt": "White Mustang outside the Paintless DR shop"
-  }
- ],
- "areas": [
-  "Venus",
-  "Mansfield",
-  "Dallas–Fort Worth"
- ],
- "ctaLabel": "Get an estimate"
 }

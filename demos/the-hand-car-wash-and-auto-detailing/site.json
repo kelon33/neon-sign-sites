@@ -154,5 +154,11 @@
   "areas": [
     "San Antonio"
   ],
-  "pitch": "photos"
+  "pitch": "photos",
+  "siteCheck": {
+    "reasons": [],
+    "improvements": [
+      "only 1 photo"
+    ]
+  }
 }

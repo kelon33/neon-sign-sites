@@ -135,5 +135,11 @@
   "areas": [
     "Waco"
   ],
-  "pitch": "site"
+  "pitch": "site",
+  "siteCheck": {
+    "reasons": [
+      "slow (4.4s)"
+    ],
+    "improvements": []
+  }
 }

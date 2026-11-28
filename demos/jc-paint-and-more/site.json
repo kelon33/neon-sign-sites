@@ -1,135 +1,141 @@
 {
- "kit": "painting",
- "trade": "House painting",
- "name": "JC Paint and More",
- "legalName": "JC Paint and More",
- "preview": true,
- "placeId": "ChIJRdABke5dXIYRbXfOmOA8oCc",
- "title": "JC Paint and More | House painting in San Antonio, TX",
- "description": "Family-run drywall, painting and remodeling in San Antonio. John answers the phone himself, day or night. 4.9 on Google from 138 reviews.",
- "logo": "logo.png",
- "logoChip": true,
- "wordmark": {
-  "top": "JC Paint",
-  "bottom": "and More"
- },
- "phone": "(210) 446-5862",
- "email": "jcpaintandmore@gmail.com",
- "heroImage": "img/photo-2.jpg",
- "heroAlt": "Two drywall finishers taping seams on a vaulted ceiling",
- "heroPosition": "60% 60%",
- "heroPositionPhone": "60% 50%",
- "rating": {
-  "score": "4.9",
-  "count": 138,
-  "url": "https://maps.google.com/?cid=2855349099086903149"
- },
- "kicker": "House painting · San Antonio",
- "headline": "Clean walls.<br><em>Family-built finish.</em>",
- "intro": "Family-run drywall, painting and remodeling in San Antonio. John answers the phone himself, day or night.",
- "badges": [
-  "Free estimates",
-  "Homes and businesses"
- ],
- "highlights": null,
- "servicesTitle": "Inside and out.",
- "servicesIntro": "One room or the whole house.",
- "services": [
-  {
-   "name": "Drywall Installation",
-   "text": "New drywall for homes and businesses, from one room to a whole building."
+  "kit": "painting",
+  "trade": "House painting",
+  "name": "JC Paint and More",
+  "legalName": "JC Paint and More",
+  "preview": true,
+  "placeId": "ChIJRdABke5dXIYRbXfOmOA8oCc",
+  "title": "JC Paint and More | House painting in San Antonio, TX",
+  "description": "Family-run drywall, painting and remodeling in San Antonio. John answers the phone himself, day or night. 4.9 on Google from 138 reviews.",
+  "logo": "logo.png",
+  "logoChip": true,
+  "wordmark": {
+    "top": "JC Paint",
+    "bottom": "and More"
   },
-  {
-   "name": "Drywall Repair",
-   "text": "Holes, water damage, cracks, bumps and bulges fixed."
+  "phone": "(210) 446-5862",
+  "email": "jcpaintandmore@gmail.com",
+  "heroImage": "img/photo-2.jpg",
+  "heroAlt": "Two drywall finishers taping seams on a vaulted ceiling",
+  "heroPosition": "60% 60%",
+  "heroPositionPhone": "60% 50%",
+  "rating": {
+    "score": "4.9",
+    "count": 138,
+    "url": "https://maps.google.com/?cid=2855349099086903149"
   },
-  {
-   "name": "Interior & Exterior Painting",
-   "text": "Painting for the inside and outside of your home."
-  },
-  {
-   "name": "Kitchen & Bath Remodeling",
-   "text": "Remodels for kitchens and bathrooms."
-  },
-  {
-   "name": "Room Additions",
-   "text": "New space added to your home."
-  },
-  {
-   "name": "Door and Window Installation",
-   "text": "Doors and windows installed."
+  "kicker": "House painting · San Antonio",
+  "headline": "Clean walls.<br><em>Family-built finish.</em>",
+  "intro": "Family-run drywall, painting and remodeling in San Antonio. John answers the phone himself, day or night.",
+  "badges": [
+    "Free estimates",
+    "Homes and businesses"
+  ],
+  "highlights": null,
+  "servicesTitle": "Inside and out.",
+  "servicesIntro": "One room or the whole house.",
+  "services": [
+    {
+      "name": "Drywall Installation",
+      "text": "New drywall for homes and businesses, from one room to a whole building."
+    },
+    {
+      "name": "Drywall Repair",
+      "text": "Holes, water damage, cracks, bumps and bulges fixed."
+    },
+    {
+      "name": "Interior & Exterior Painting",
+      "text": "Painting for the inside and outside of your home."
+    },
+    {
+      "name": "Kitchen & Bath Remodeling",
+      "text": "Remodels for kitchens and bathrooms."
+    },
+    {
+      "name": "Room Additions",
+      "text": "New space added to your home."
+    },
+    {
+      "name": "Door and Window Installation",
+      "text": "Doors and windows installed."
+    }
+  ],
+  "also": [
+    {
+      "name": "Demolition"
+    },
+    {
+      "name": "Tile and wood flooring"
+    },
+    {
+      "name": "Countertops"
+    },
+    {
+      "name": "Cabinets"
+    },
+    {
+      "name": "Crown molding and baseboards"
+    },
+    {
+      "name": "Acoustic ceilings"
+    }
+  ],
+  "alsoTitle": "We also do:",
+  "promise": null,
+  "why": [
+    {
+      "name": "Over 30 years of experience",
+      "text": "John has been doing this work for over 30 years, with a team he trusts."
+    },
+    {
+      "name": "Family run, owner on the phone",
+      "text": "Call John day or night. He answers or calls you back, and stays available through the whole project."
+    },
+    {
+      "name": "Clean, protected, guaranteed",
+      "text": "We cover and protect your belongings. If you are not happy, we return and fix it."
+    }
+  ],
+  "whyTitle": "Why homeowners call us.",
+  "howTitle": "A finished room in three steps.",
+  "steps": [
+    {
+      "name": "Free estimate",
+      "text": "We evaluate your property, talk through colors and timing, and give you a detailed quote."
+    },
+    {
+      "name": "Prep and protect",
+      "text": "We sand, patch, prime and cover every surface before any paint goes on."
+    },
+    {
+      "name": "Paint and walk through",
+      "text": "We apply each coat with care, then inspect every detail with you."
+    }
+  ],
+  "contactTitle": "Ready for a fresh coat?",
+  "footerLine": "House painting in San Antonio",
+  "reviews": [
+    {
+      "text": "JC Paint and More was great! They did exactly what we needed with no problems at all. They were professional and punctual. They remodeled all 3 of our bathrooms. John was very easy going. We highly recommend their services! Will be using them again.",
+      "name": "Scott R."
+    },
+    {
+      "text": "John's got a great group of people who work with him, which is important when you are letting people inside your house. We called John and he gave us an estimate that evening for sheetrock and paint in 4 rooms. We were thrilled with the price and the results! A+",
+      "name": "Chelsea M."
+    }
+  ],
+  "hours": [],
+  "galleryTitle": "Homes we’ve painted.",
+  "notePlaceholder": "Inside or outside, how many rooms, a date you have in mind…",
+  "gallery": [],
+  "areas": [
+    "San Antonio"
+  ],
+  "pitch": "photos",
+  "siteCheck": {
+    "reasons": [],
+    "improvements": [
+      "no reviews on the site"
+    ]
   }
- ],
- "also": [
-  {
-   "name": "Demolition"
-  },
-  {
-   "name": "Tile and wood flooring"
-  },
-  {
-   "name": "Countertops"
-  },
-  {
-   "name": "Cabinets"
-  },
-  {
-   "name": "Crown molding and baseboards"
-  },
-  {
-   "name": "Acoustic ceilings"
-  }
- ],
- "alsoTitle": "We also do:",
- "promise": null,
- "why": [
-  {
-   "name": "Over 30 years of experience",
-   "text": "John has been doing this work for over 30 years, with a team he trusts."
-  },
-  {
-   "name": "Family run, owner on the phone",
-   "text": "Call John day or night. He answers or calls you back, and stays available through the whole project."
-  },
-  {
-   "name": "Clean, protected, guaranteed",
-   "text": "We cover and protect your belongings. If you are not happy, we return and fix it."
-  }
- ],
- "whyTitle": "Why homeowners call us.",
- "howTitle": "A finished room in three steps.",
- "steps": [
-  {
-   "name": "Free estimate",
-   "text": "We evaluate your property, talk through colors and timing, and give you a detailed quote."
-  },
-  {
-   "name": "Prep and protect",
-   "text": "We sand, patch, prime and cover every surface before any paint goes on."
-  },
-  {
-   "name": "Paint and walk through",
-   "text": "We apply each coat with care, then inspect every detail with you."
-  }
- ],
- "contactTitle": "Ready for a fresh coat?",
- "footerLine": "House painting in San Antonio",
- "reviews": [
-  {
-   "text": "JC Paint and More was great! They did exactly what we needed with no problems at all. They were professional and punctual. They remodeled all 3 of our bathrooms. John was very easy going. We highly recommend their services! Will be using them again.",
-   "name": "Scott R."
-  },
-  {
-   "text": "John's got a great group of people who work with him, which is important when you are letting people inside your house. We called John and he gave us an estimate that evening for sheetrock and paint in 4 rooms. We were thrilled with the price and the results! A+",
-   "name": "Chelsea M."
-  }
- ],
- "hours": [],
- "galleryTitle": "Homes we’ve painted.",
- "notePlaceholder": "Inside or outside, how many rooms, a date you have in mind…",
- "gallery": [],
- "areas": [
-  "San Antonio"
- ],
- "pitch": "photos"
 }

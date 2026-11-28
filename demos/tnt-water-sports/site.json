@@ -1,171 +1,177 @@
 {
- "kit": "detailing",
- "trade": "Boat detailing",
- "name": "TNT Water Sports",
- "legalName": "TNT Water Sports",
- "preview": true,
- "placeId": "ChIJcedcw7RGZIgR-VwIg5hXW7s",
- "title": "TNT Water Sports | Boat detailing in Hendersonville, TN",
- "description": "Boat detailing in Hendersonville from a family-run marine team on the water since 2005. Steam-cleaned carpets, a full hull buff and ceramic coating, done right at your dock for many jobs. 4.7 on Google from 81 reviews.",
- "brand": "#1670ff",
- "brandHi": "#52c6ff",
- "accent": "#8fd0ff",
- "logo": null,
- "logoChip": false,
- "wordmark": {
-  "top": "TNT",
-  "bottom": "Water Sports"
- },
- "phone": "(615) 826-2655",
- "email": "luke@tntwatersports.com",
- "heroImage": "img/photo-5.jpg",
- "heroAlt": "White boat at anchor on calm water at sunset",
- "heroPosition": "60% 60%",
- "heroPositionPhone": "60% 50%",
- "rating": {
-  "score": "4.7",
-  "count": 81,
-  "url": "https://maps.google.com/?cid=13500480620518202617"
- },
- "kicker": "Boat detailing · Hendersonville",
- "headline": "Like the first day,<br><em>every day.</em>",
- "intro": "Boat detailing in Hendersonville from a family-run marine team on the water since 2005. Steam-cleaned carpets, a full hull buff and ceramic coating, done right at your dock for many jobs.",
- "mobile": {
-  "title": "We come to your boat.",
-  "intro": "We come directly to your dock or home, so your day keeps moving.",
-  "points": [
-   {
-    "name": "At your slip",
-    "text": "The team comes to your dock on the major Middle Tennessee lakes, so your boat stays in the water."
-   },
-   {
-    "name": "No haul out",
-    "text": "No trailer, no trip to the shop, no waiting in line."
-   },
-   {
-    "name": "Priced by lake",
-    "text": "Dock call pricing is set by lake. Detailing pricing varies by length and condition."
-   },
-   {
-    "name": "Easy to book",
-    "text": "Call (615) 826-2655 and ask for the Service Department."
-   }
-  ]
- },
- "servicesTitle": "Bow to stern.",
- "servicesIntro": "Regular upkeep, deep restoration and long-lasting protection, all with professional products used every day by the team.",
- "services": [
-  {
-   "name": "Detailing",
-   "text": "Steam cleaning for carpets and a full hull buff. Pricing varies by length and condition."
+  "kit": "detailing",
+  "trade": "Boat detailing",
+  "name": "TNT Water Sports",
+  "legalName": "TNT Water Sports",
+  "preview": true,
+  "placeId": "ChIJcedcw7RGZIgR-VwIg5hXW7s",
+  "title": "TNT Water Sports | Boat detailing in Hendersonville, TN",
+  "description": "Boat detailing in Hendersonville from a family-run marine team on the water since 2005. Steam-cleaned carpets, a full hull buff and ceramic coating, done right at your dock for many jobs. 4.7 on Google from 81 reviews.",
+  "brand": "#1670ff",
+  "brandHi": "#52c6ff",
+  "accent": "#8fd0ff",
+  "logo": null,
+  "logoChip": false,
+  "wordmark": {
+    "top": "TNT",
+    "bottom": "Water Sports"
   },
-  {
-   "name": "Ceramic coating",
-   "text": "Long-lasting ceramic protection for your hull through Platinum for Boats."
+  "phone": "(615) 826-2655",
+  "email": "luke@tntwatersports.com",
+  "heroImage": "img/photo-5.jpg",
+  "heroAlt": "White boat at anchor on calm water at sunset",
+  "heroPosition": "60% 60%",
+  "heroPositionPhone": "60% 50%",
+  "rating": {
+    "score": "4.7",
+    "count": 81,
+    "url": "https://maps.google.com/?cid=13500480620518202617"
   },
-  {
-   "name": "Gel coat repair",
-   "text": "Damaged gel coat repaired. The team sees the boat in person for an accurate estimate."
+  "kicker": "Boat detailing · Hendersonville",
+  "headline": "Like the first day,<br><em>every day.</em>",
+  "intro": "Boat detailing in Hendersonville from a family-run marine team on the water since 2005. Steam-cleaned carpets, a full hull buff and ceramic coating, done right at your dock for many jobs.",
+  "mobile": {
+    "title": "We come to your boat.",
+    "intro": "We come directly to your dock or home, so your day keeps moving.",
+    "points": [
+      {
+        "name": "At your slip",
+        "text": "The team comes to your dock on the major Middle Tennessee lakes, so your boat stays in the water."
+      },
+      {
+        "name": "No haul out",
+        "text": "No trailer, no trip to the shop, no waiting in line."
+      },
+      {
+        "name": "Priced by lake",
+        "text": "Dock call pricing is set by lake. Detailing pricing varies by length and condition."
+      },
+      {
+        "name": "Easy to book",
+        "text": "Call (615) 826-2655 and ask for the Service Department."
+      }
+    ]
   },
-  {
-   "name": "Winterization",
-   "text": "Cold weather prep to keep your boat protected through winter."
-  },
-  {
-   "name": "Maintenance",
-   "text": "Tune-ups, oil changes, transmission fluid, trailer check-ups and overall engine health."
+  "servicesTitle": "Bow to stern.",
+  "servicesIntro": "Regular upkeep, deep restoration and long-lasting protection, all with professional products used every day by the team.",
+  "services": [
+    {
+      "name": "Detailing",
+      "text": "Steam cleaning for carpets and a full hull buff. Pricing varies by length and condition."
+    },
+    {
+      "name": "Ceramic coating",
+      "text": "Long-lasting ceramic protection for your hull through Platinum for Boats."
+    },
+    {
+      "name": "Gel coat repair",
+      "text": "Damaged gel coat repaired. The team sees the boat in person for an accurate estimate."
+    },
+    {
+      "name": "Winterization",
+      "text": "Cold weather prep to keep your boat protected through winter."
+    },
+    {
+      "name": "Maintenance",
+      "text": "Tune-ups, oil changes, transmission fluid, trailer check-ups and overall engine health."
+    }
+  ],
+  "also": [
+    {
+      "name": "Yachts"
+    },
+    {
+      "name": "Pontoons"
+    },
+    {
+      "name": "Wake boats"
+    },
+    {
+      "name": "Surf boats"
+    },
+    {
+      "name": "Center consoles"
+    }
+  ],
+  "alsoTitle": "We also detail",
+  "why": [
+    {
+      "name": "Twenty years in",
+      "text": "TNT has been selling and servicing boats since 2005."
+    },
+    {
+      "name": "Built by riders",
+      "text": "The crew rides every type of hull they sell, so you get straight answers."
+    },
+    {
+      "name": "One team, start to finish",
+      "text": "Sales, service and recovery run under one roof and one family. Nobody gets passed to a third party."
+    }
+  ],
+  "whyTitle": "What we give you that others don't.",
+  "howTitle": "Three steps to a clearer finish.",
+  "steps": [
+    {
+      "name": "Ask for an estimate",
+      "text": "Call or send the form. The estimate is free."
+    },
+    {
+      "name": "We meet and plan",
+      "text": "We look at your boat and decide what it needs."
+    },
+    {
+      "name": "Back on the water",
+      "text": "Your boat is clean, polished and protected."
+    }
+  ],
+  "contactTitle": "Book your boat in.",
+  "footerLine": "Boat detailing in Hendersonville",
+  "reviews": [],
+  "hours": [
+    "Tue–Fri 9–5",
+    "Sat 9–3"
+  ],
+  "galleryTitle": "Fresh off the water.",
+  "vehicleTypes": [
+    "Boat",
+    "Pontoon",
+    "Yacht",
+    "Jet ski",
+    "Other"
+  ],
+  "modelPlaceholder": "e.g. Sea Ray 240, 24 ft",
+  "notePlaceholder": "Length, where it is docked or stored, what it needs…",
+  "gallery": [
+    {
+      "src": "img/photo-14.jpg",
+      "alt": "Wake boat carving a wake with a surfer behind it",
+      "size": "big"
+    },
+    {
+      "src": "img/photo-4.jpg",
+      "alt": "Cruiser running across open water at sunrise"
+    },
+    {
+      "src": "img/photo-11.jpg",
+      "alt": "Premier pontoon boat at a dock at dusk"
+    },
+    {
+      "src": "img/photo-8.jpg",
+      "alt": "Pontoon boat cruising on a lake"
+    },
+    {
+      "src": "img/photo-17.jpg",
+      "alt": "TNT technician working on a boat at the dock"
+    }
+  ],
+  "areas": [
+    "Hendersonville"
+  ],
+  "pitch": "site",
+  "siteCheck": {
+    "reasons": [],
+    "improvements": [
+      "no reviews on the site"
+    ]
   }
- ],
- "also": [
-  {
-   "name": "Yachts"
-  },
-  {
-   "name": "Pontoons"
-  },
-  {
-   "name": "Wake boats"
-  },
-  {
-   "name": "Surf boats"
-  },
-  {
-   "name": "Center consoles"
-  }
- ],
- "alsoTitle": "We also detail",
- "why": [
-  {
-   "name": "Twenty years in",
-   "text": "TNT has been selling and servicing boats since 2005."
-  },
-  {
-   "name": "Built by riders",
-   "text": "The crew rides every type of hull they sell, so you get straight answers."
-  },
-  {
-   "name": "One team, start to finish",
-   "text": "Sales, service and recovery run under one roof and one family. Nobody gets passed to a third party."
-  }
- ],
- "whyTitle": "What we give you that others don't.",
- "howTitle": "Three steps to a clearer finish.",
- "steps": [
-  {
-   "name": "Ask for an estimate",
-   "text": "Call or send the form. The estimate is free."
-  },
-  {
-   "name": "We meet and plan",
-   "text": "We look at your boat and decide what it needs."
-  },
-  {
-   "name": "Back on the water",
-   "text": "Your boat is clean, polished and protected."
-  }
- ],
- "contactTitle": "Book your boat in.",
- "footerLine": "Boat detailing in Hendersonville",
- "reviews": [],
- "hours": [
-  "Tue–Fri 9–5",
-  "Sat 9–3"
- ],
- "galleryTitle": "Fresh off the water.",
- "vehicleTypes": [
-  "Boat",
-  "Pontoon",
-  "Yacht",
-  "Jet ski",
-  "Other"
- ],
- "modelPlaceholder": "e.g. Sea Ray 240, 24 ft",
- "notePlaceholder": "Length, where it is docked or stored, what it needs…",
- "gallery": [
-  {
-   "src": "img/photo-14.jpg",
-   "alt": "Wake boat carving a wake with a surfer behind it",
-   "size": "big"
-  },
-  {
-   "src": "img/photo-4.jpg",
-   "alt": "Cruiser running across open water at sunrise"
-  },
-  {
-   "src": "img/photo-11.jpg",
-   "alt": "Premier pontoon boat at a dock at dusk"
-  },
-  {
-   "src": "img/photo-8.jpg",
-   "alt": "Pontoon boat cruising on a lake"
-  },
-  {
-   "src": "img/photo-17.jpg",
-   "alt": "TNT technician working on a boat at the dock"
-  }
- ],
- "areas": [
-  "Hendersonville"
- ],
- "pitch": "site"
 }

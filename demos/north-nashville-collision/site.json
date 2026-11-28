@@ -1,96 +1,102 @@
 {
- "kit": "detailing",
- "trade": "Paintless dent repair",
- "name": "North Nashville Collision",
- "legalName": "North Nashville Collision",
- "preview": true,
- "placeId": "ChIJUcjCdJpDZIgRk7wtutM01p0",
- "title": "North Nashville Collision | Paintless dent repair in Madison, TN",
- "description": "Paintless dent repair in Madison from a body shop that works with all insurance companies. Call 615-865-8882 or send a VIN and photos for a quote. 5.0 on Google from 68 reviews.",
- "brand": "#1670ff",
- "brandHi": "#52c6ff",
- "accent": "#8fd0ff",
- "logo": "logo.png",
- "logoChip": false,
- "wordmark": {
-  "top": "North Nashville",
-  "bottom": "Collision"
- },
- "phone": "(615) 865-8882",
- "email": "astigma@astigmatic.com",
- "heroImage": null,
- "heroAlt": "",
- "heroPosition": "60% 60%",
- "heroPositionPhone": "60% 50%",
- "rating": {
-  "score": "5.0",
-  "count": 68,
-  "url": "https://maps.google.com/?cid=11373335992937069715"
- },
- "kicker": "Paintless dent repair · Madison",
- "headline": "Your car's dents.<br><em>Gone. Paint untouched.</em>",
- "intro": "Paintless dent repair in Madison from a body shop that works with all insurance companies. Call 615-865-8882 or send a VIN and photos for a quote.",
- "mobile": null,
- "servicesTitle": "Every kind of dent.",
- "servicesIntro": "From a single door ding to a full hail storm.",
- "services": [
-  {
-   "name": "Door dings",
-   "text": "Small parking-lot dents pushed out without paint or filler."
+  "kit": "detailing",
+  "trade": "Paintless dent repair",
+  "name": "North Nashville Collision",
+  "legalName": "North Nashville Collision",
+  "preview": true,
+  "placeId": "ChIJUcjCdJpDZIgRk7wtutM01p0",
+  "title": "North Nashville Collision | Paintless dent repair in Madison, TN",
+  "description": "Paintless dent repair in Madison from a body shop that works with all insurance companies. Call 615-865-8882 or send a VIN and photos for a quote. 5.0 on Google from 68 reviews.",
+  "brand": "#1670ff",
+  "brandHi": "#52c6ff",
+  "accent": "#8fd0ff",
+  "logo": "logo.png",
+  "logoChip": false,
+  "wordmark": {
+    "top": "North Nashville",
+    "bottom": "Collision"
   },
-  {
-   "name": "Hail damage",
-   "text": "Roofs, hoods and trunks restored after a storm."
+  "phone": "(615) 865-8882",
+  "email": "astigma@astigmatic.com",
+  "heroImage": null,
+  "heroAlt": "",
+  "heroPosition": "60% 60%",
+  "heroPositionPhone": "60% 50%",
+  "rating": {
+    "score": "5.0",
+    "count": 68,
+    "url": "https://maps.google.com/?cid=11373335992937069715"
   },
-  {
-   "name": "Creases and larger dents",
-   "text": "Worked out from behind the panel where the metal allows."
+  "kicker": "Paintless dent repair · Madison",
+  "headline": "Your car's dents.<br><em>Gone. Paint untouched.</em>",
+  "intro": "Paintless dent repair in Madison from a body shop that works with all insurance companies. Call 615-865-8882 or send a VIN and photos for a quote.",
+  "mobile": null,
+  "servicesTitle": "Every kind of dent.",
+  "servicesIntro": "From a single door ding to a full hail storm.",
+  "services": [
+    {
+      "name": "Door dings",
+      "text": "Small parking-lot dents pushed out without paint or filler."
+    },
+    {
+      "name": "Hail damage",
+      "text": "Roofs, hoods and trunks restored after a storm."
+    },
+    {
+      "name": "Creases and larger dents",
+      "text": "Worked out from behind the panel where the metal allows."
+    }
+  ],
+  "also": [],
+  "alsoTitle": "We also fix",
+  "why": [
+    {
+      "name": "Certified for major brands",
+      "text": "Certified for Nissan, Infiniti, Ford, Hyundai, Kia, Chrysler, Dodge, Jeep and Ram. We repair all makes and models."
+    },
+    {
+      "name": "Works with all insurers",
+      "text": "The team works with all insurance companies so you get the repair you deserve."
+    },
+    {
+      "name": "Free estimates",
+      "text": "Book online for a free 15 minute estimate, or send your VIN and photos for a quote."
+    }
+  ],
+  "whyTitle": "The North Nashville Collision difference.",
+  "howTitle": "Dent-free in three steps.",
+  "steps": [
+    {
+      "name": "Call or text",
+      "text": "Tell us about the damage. We explain the process and set up your rental car."
+    },
+    {
+      "name": "We handle the details",
+      "text": "We help with your insurance claim and can pick up your vehicle."
+    },
+    {
+      "name": "Drive it home",
+      "text": "We repair the damage, give it a mini-detail and deliver it back."
+    }
+  ],
+  "contactTitle": "Got hail damage?",
+  "footerLine": "Paintless dent repair in Madison",
+  "reviews": [],
+  "hours": [
+    "Sat–Sun: Closed"
+  ],
+  "galleryTitle": "Dents gone, paint untouched.",
+  "notePlaceholder": "Where the dent is, how big, hail or a door ding…",
+  "ctaLabel": "Get an estimate",
+  "gallery": [],
+  "areas": [
+    "Madison"
+  ],
+  "pitch": "photos",
+  "siteCheck": {
+    "reasons": [
+      "GoDaddy site builder"
+    ],
+    "improvements": []
   }
- ],
- "also": [],
- "alsoTitle": "We also fix",
- "why": [
-  {
-   "name": "Certified for major brands",
-   "text": "Certified for Nissan, Infiniti, Ford, Hyundai, Kia, Chrysler, Dodge, Jeep and Ram. We repair all makes and models."
-  },
-  {
-   "name": "Works with all insurers",
-   "text": "The team works with all insurance companies so you get the repair you deserve."
-  },
-  {
-   "name": "Free estimates",
-   "text": "Book online for a free 15 minute estimate, or send your VIN and photos for a quote."
-  }
- ],
- "whyTitle": "The North Nashville Collision difference.",
- "howTitle": "Dent-free in three steps.",
- "steps": [
-  {
-   "name": "Call or text",
-   "text": "Tell us about the damage. We explain the process and set up your rental car."
-  },
-  {
-   "name": "We handle the details",
-   "text": "We help with your insurance claim and can pick up your vehicle."
-  },
-  {
-   "name": "Drive it home",
-   "text": "We repair the damage, give it a mini-detail and deliver it back."
-  }
- ],
- "contactTitle": "Got hail damage?",
- "footerLine": "Paintless dent repair in Madison",
- "reviews": [],
- "hours": [
-  "Sat–Sun: Closed"
- ],
- "galleryTitle": "Dents gone, paint untouched.",
- "notePlaceholder": "Where the dent is, how big, hail or a door ding…",
- "ctaLabel": "Get an estimate",
- "gallery": [],
- "areas": [
-  "Madison"
- ],
- "pitch": "photos"
 }

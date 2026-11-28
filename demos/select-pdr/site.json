@@ -1,125 +1,132 @@
 {
- "kit": "detailing",
- "trade": "Paintless dent repair",
- "name": "SELECT PDR",
- "legalName": "SELECT PDR",
- "preview": true,
- "placeId": "ChIJlz184etfXIYRQVXYF7H3g5A",
- "title": "SELECT PDR | Paintless dent repair in San Antonio, TX",
- "description": "Mobile paintless dent repair out of San Antonio. We come to your home, office or lot and work dents out while the factory paint stays untouched. 5.0 on Google from 17 reviews.",
- "brand": "#1670ff",
- "brandHi": "#52c6ff",
- "accent": "#8fd0ff",
- "logo": "logo.png",
- "logoChip": true,
- "wordmark": {
-  "top": "SELECT",
-  "bottom": "PDR"
- },
- "phone": "(210) 806-4226",
- "email": "info@selectpdrllc.com",
- "heroImage": "img/photo-1.jpg",
- "heroAlt": "Technician working a dent out of an orange classic car door under a reflection lamp",
- "heroPosition": "60% 60%",
- "heroPositionPhone": "60% 50%",
- "rating": {
-  "score": "5.0",
-  "count": 17,
-  "url": "https://maps.google.com/?cid=10413439103392044353"
- },
- "kicker": "Paintless dent repair · San Antonio",
- "headline": "Hail damage gone.<br><em>Factory paint stays.</em>",
- "intro": "Mobile paintless dent repair out of San Antonio. We come to your home, office or lot and work dents out while the factory paint stays untouched.",
- "mobile": {
-  "title": "Door dings, at your door.",
-  "intro": "For door dings and small dents, I come to you. Hail, deer hits and larger dents are repaired at my San Antonio shop.",
-  "points": [
-   {
-    "name": "We come to you",
-    "text": "Your home, your office parking lot, or your fleet yard."
-   },
-   {
-    "name": "No schedule change",
-    "text": "One customer had a door dent fixed in his office lot while he worked."
-   },
-   {
-    "name": "Same day service",
-    "text": "Rapid deployment, and one-day turnaround after a hailstorm."
-   },
-   {
-    "name": "Insurance handled",
-    "text": "We coordinate with adjusters and bill insurers directly."
-   }
-  ]
- },
- "servicesTitle": "Everything your car needs.",
- "servicesIntro": "From a single door ding to hail damage.",
- "services": [
-  {
-   "name": "Paintless Dent Repair",
-   "text": "Minor dents and dings come out without touching the original paint, which protects your vehicle's value."
+  "kit": "detailing",
+  "trade": "Paintless dent repair",
+  "name": "SELECT PDR",
+  "legalName": "SELECT PDR",
+  "preview": true,
+  "placeId": "ChIJlz184etfXIYRQVXYF7H3g5A",
+  "title": "SELECT PDR | Paintless dent repair in San Antonio, TX",
+  "description": "Mobile paintless dent repair out of San Antonio. We come to your home, office or lot and work dents out while the factory paint stays untouched. 5.0 on Google from 17 reviews.",
+  "brand": "#1670ff",
+  "brandHi": "#52c6ff",
+  "accent": "#8fd0ff",
+  "logo": "logo.png",
+  "logoChip": true,
+  "wordmark": {
+    "top": "SELECT",
+    "bottom": "PDR"
   },
-  {
-   "name": "Hail Damage Repair",
-   "text": "Hail-damaged vehicles restored to their pre-damage condition, backed by a lifetime warranty."
+  "phone": "(210) 806-4226",
+  "email": "info@selectpdrllc.com",
+  "heroImage": "img/photo-1.jpg",
+  "heroAlt": "Technician working a dent out of an orange classic car door under a reflection lamp",
+  "heroPosition": "60% 60%",
+  "heroPositionPhone": "60% 50%",
+  "rating": {
+    "score": "5.0",
+    "count": 17,
+    "url": "https://maps.google.com/?cid=10413439103392044353"
   },
-  {
-   "name": "Fleet Services",
-   "text": "Scheduled maintenance and priority service for business fleets, with detailed reporting and minimal downtime."
+  "kicker": "Paintless dent repair · San Antonio",
+  "headline": "Hail damage gone.<br><em>Factory paint stays.</em>",
+  "intro": "Mobile paintless dent repair out of San Antonio. We come to your home, office or lot and work dents out while the factory paint stays untouched.",
+  "mobile": {
+    "title": "Door dings, at your door.",
+    "intro": "For door dings and small dents, I come to you. Hail, deer hits and larger dents are repaired at my San Antonio shop.",
+    "points": [
+      {
+        "name": "We come to you",
+        "text": "Your home, your office parking lot, or your fleet yard."
+      },
+      {
+        "name": "No schedule change",
+        "text": "One customer had a door dent fixed in his office lot while he worked."
+      },
+      {
+        "name": "Same day service",
+        "text": "Rapid deployment, and one-day turnaround after a hailstorm."
+      },
+      {
+        "name": "Insurance handled",
+        "text": "We coordinate with adjusters and bill insurers directly."
+      }
+    ]
   },
-  {
-   "name": "Insurance Claim Assistance",
-   "text": "Help through the claim, from documentation to adjuster coordination and direct billing."
+  "servicesTitle": "Everything your car needs.",
+  "servicesIntro": "From a single door ding to hail damage.",
+  "services": [
+    {
+      "name": "Paintless Dent Repair",
+      "text": "Minor dents and dings come out without touching the original paint, which protects your vehicle's value."
+    },
+    {
+      "name": "Hail Damage Repair",
+      "text": "Hail-damaged vehicles restored to their pre-damage condition, backed by a lifetime warranty."
+    },
+    {
+      "name": "Fleet Services",
+      "text": "Scheduled maintenance and priority service for business fleets, with detailed reporting and minimal downtime."
+    },
+    {
+      "name": "Insurance Claim Assistance",
+      "text": "Help through the claim, from documentation to adjuster coordination and direct billing."
+    }
+  ],
+  "also": [
+    {
+      "name": "Fleet vehicles"
+    },
+    {
+      "name": "Personal vehicles"
+    },
+    {
+      "name": "Business vehicles"
+    }
+  ],
+  "alsoTitle": "We also fix",
+  "why": [
+    {
+      "name": "Rapid deployment",
+      "text": "Certified professionals come to your location, so disruption stays minimal."
+    },
+    {
+      "name": "Less downtime",
+      "text": "The on-demand model gets your vehicle back on the road fast."
+    }
+  ],
+  "whyTitle": "Why SELECT PDR",
+  "howTitle": "Dent-free in three steps.",
+  "steps": [
+    {
+      "name": "Send the details",
+      "text": "Call, or use the form with your year, make, model and photos of the damage."
+    },
+    {
+      "name": "Get an evaluation",
+      "text": "Bring the vehicle in and we look at the hail damage, dings or film options."
+    },
+    {
+      "name": "Drive it smooth",
+      "text": "We work the dents out and hand the vehicle back."
+    }
+  ],
+  "contactTitle": "Got a dent?",
+  "footerLine": "Paintless dent repair in San Antonio",
+  "reviews": [],
+  "hours": [],
+  "galleryTitle": "Dents gone, paint untouched.",
+  "notePlaceholder": "Where the dent is, how big, hail or a door ding…",
+  "ctaLabel": "Get an estimate",
+  "gallery": [],
+  "areas": [
+    "San Antonio"
+  ],
+  "pitch": "photos",
+  "siteCheck": {
+    "reasons": [],
+    "improvements": [
+      "no quote or booking form",
+      "copyright 2025"
+    ]
   }
- ],
- "also": [
-  {
-   "name": "Fleet vehicles"
-  },
-  {
-   "name": "Personal vehicles"
-  },
-  {
-   "name": "Business vehicles"
-  }
- ],
- "alsoTitle": "We also fix",
- "why": [
-  {
-   "name": "Rapid deployment",
-   "text": "Certified professionals come to your location, so disruption stays minimal."
-  },
-  {
-   "name": "Less downtime",
-   "text": "The on-demand model gets your vehicle back on the road fast."
-  }
- ],
- "whyTitle": "Why SELECT PDR",
- "howTitle": "Dent-free in three steps.",
- "steps": [
-  {
-   "name": "Send the details",
-   "text": "Call, or use the form with your year, make, model and photos of the damage."
-  },
-  {
-   "name": "Get an evaluation",
-   "text": "Bring the vehicle in and we look at the hail damage, dings or film options."
-  },
-  {
-   "name": "Drive it smooth",
-   "text": "We work the dents out and hand the vehicle back."
-  }
- ],
- "contactTitle": "Got a dent?",
- "footerLine": "Paintless dent repair in San Antonio",
- "reviews": [],
- "hours": [],
- "galleryTitle": "Dents gone, paint untouched.",
- "notePlaceholder": "Where the dent is, how big, hail or a door ding…",
- "ctaLabel": "Get an estimate",
- "gallery": [],
- "areas": [
-  "San Antonio"
- ],
- "pitch": "photos"
 }

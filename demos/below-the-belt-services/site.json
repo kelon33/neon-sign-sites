@@ -1,126 +1,132 @@
 {
- "kit": "detailing",
- "trade": "Boat detailing",
- "name": "Below the Belt Services",
- "legalName": "Below the Belt Services",
- "preview": true,
- "placeId": "ChIJX_p_WgydXIYRUNjQOosLpdc",
- "title": "Below the Belt Services | Boat detailing in Canyon Lake, TX",
- "description": "Boat and auto detailing in Canyon Lake, with ceramic coating for the finish. Dustin is a local, a fellow enthusiast and a Marine Certified Detailer. 5.0 on Google from 40 reviews.",
- "brand": "#1670ff",
- "brandHi": "#52c6ff",
- "accent": "#8fd0ff",
- "logo": null,
- "logoChip": false,
- "wordmark": {
-  "top": "Below the Belt",
-  "bottom": "Services"
- },
- "phone": "(210) 777-6659",
- "email": "dustin@belowthebeltservices.com",
- "heroImage": "img/photo-1.jpg",
- "heroAlt": "Bow of a blue and white yacht at a dock beside a garage with a sports car",
- "heroPosition": "60% 60%",
- "heroPositionPhone": "60% 50%",
- "rating": {
-  "score": "5.0",
-  "count": 40,
-  "url": "https://maps.google.com/?cid=15538838781926889552"
- },
- "kicker": "Boat detailing · Canyon Lake",
- "headline": "Lake day ready.<br><em>Every day.</em>",
- "intro": "Boat and auto detailing in Canyon Lake, with ceramic coating for the finish. Dustin is a local, a fellow enthusiast and a Marine Certified Detailer.",
- "mobile": null,
- "servicesTitle": "Bow to stern.",
- "servicesIntro": "From a wash and wax to full restoration, teak and ceramic coating.",
- "services": [
-  {
-   "name": "Full Exterior w/Heavy Oxidation",
-   "text": "Thorough wash, deep cleaning, and intensive compounding and polishing to bring faded gel coat back to a deep, glossy shine."
+  "kit": "detailing",
+  "trade": "Boat detailing",
+  "name": "Below the Belt Services",
+  "legalName": "Below the Belt Services",
+  "preview": true,
+  "placeId": "ChIJX_p_WgydXIYRUNjQOosLpdc",
+  "title": "Below the Belt Services | Boat detailing in Canyon Lake, TX",
+  "description": "Boat and auto detailing in Canyon Lake, with ceramic coating for the finish. Dustin is a local, a fellow enthusiast and a Marine Certified Detailer. 5.0 on Google from 40 reviews.",
+  "brand": "#1670ff",
+  "brandHi": "#52c6ff",
+  "accent": "#8fd0ff",
+  "logo": null,
+  "logoChip": false,
+  "wordmark": {
+    "top": "Below the Belt",
+    "bottom": "Services"
   },
-  {
-   "name": "Full Exterior",
-   "text": "Removes dirt, grime and water spots, then protects the surface to enhance shine and revive the finish."
+  "phone": "(210) 777-6659",
+  "email": "dustin@belowthebeltservices.com",
+  "heroImage": "img/photo-1.jpg",
+  "heroAlt": "Bow of a blue and white yacht at a dock beside a garage with a sports car",
+  "heroPosition": "60% 60%",
+  "heroPositionPhone": "60% 50%",
+  "rating": {
+    "score": "5.0",
+    "count": 40,
+    "url": "https://maps.google.com/?cid=15538838781926889552"
   },
-  {
-   "name": "Standard Interior",
-   "text": "Deep cleaning that removes dirt, stains, mold and mildew, leaving the boat fresh and ready for the water."
-  },
-  {
-   "name": "Auto Detailing",
-   "text": "Maintenance, standard and full exterior details with multi-step paint correction, plus maintenance and standard interior details."
-  },
-  {
-   "name": "Boat Ceramic Coating",
-   "text": "A durable, high-gloss, hydrophobic barrier for the exterior, interior, compartments, fish boxes and live wells."
-  },
-  {
-   "name": "Auto Ceramic Coating",
-   "text": "Coating for exterior paint, glass, wheels, interior and seats, to repel water and dirt and protect against UV."
+  "kicker": "Boat detailing · Canyon Lake",
+  "headline": "Lake day ready.<br><em>Every day.</em>",
+  "intro": "Boat and auto detailing in Canyon Lake, with ceramic coating for the finish. Dustin is a local, a fellow enthusiast and a Marine Certified Detailer.",
+  "mobile": null,
+  "servicesTitle": "Bow to stern.",
+  "servicesIntro": "From a wash and wax to full restoration, teak and ceramic coating.",
+  "services": [
+    {
+      "name": "Full Exterior w/Heavy Oxidation",
+      "text": "Thorough wash, deep cleaning, and intensive compounding and polishing to bring faded gel coat back to a deep, glossy shine."
+    },
+    {
+      "name": "Full Exterior",
+      "text": "Removes dirt, grime and water spots, then protects the surface to enhance shine and revive the finish."
+    },
+    {
+      "name": "Standard Interior",
+      "text": "Deep cleaning that removes dirt, stains, mold and mildew, leaving the boat fresh and ready for the water."
+    },
+    {
+      "name": "Auto Detailing",
+      "text": "Maintenance, standard and full exterior details with multi-step paint correction, plus maintenance and standard interior details."
+    },
+    {
+      "name": "Boat Ceramic Coating",
+      "text": "A durable, high-gloss, hydrophobic barrier for the exterior, interior, compartments, fish boxes and live wells."
+    },
+    {
+      "name": "Auto Ceramic Coating",
+      "text": "Coating for exterior paint, glass, wheels, interior and seats, to repel water and dirt and protect against UV."
+    }
+  ],
+  "also": [
+    {
+      "name": "Elite autos"
+    },
+    {
+      "name": "Motorcycles"
+    },
+    {
+      "name": "Airplanes"
+    },
+    {
+      "name": "Golf carts"
+    }
+  ],
+  "alsoTitle": "We also detail",
+  "why": [
+    {
+      "name": "Trained and certified",
+      "text": "Detailers are trained through the International Detailers Association, and Dustin is a Marine Certified Detailer."
+    },
+    {
+      "name": "Marine safe products",
+      "text": "Biodegradable, marine safe chemicals, and a shop lit to show every imperfection."
+    },
+    {
+      "name": "A local enthusiast",
+      "text": "Dustin lives on Canyon Lake and cares for your boat or car like his own."
+    }
+  ],
+  "whyTitle": "Why boat owners call us.",
+  "howTitle": "Back on the water in three steps.",
+  "steps": [
+    {
+      "name": "Request a quote",
+      "text": "Call or send photos of your vehicle for a recommendation and estimate."
+    },
+    {
+      "name": "Schedule",
+      "text": "Pick a time at your home, office, apartment or marina."
+    },
+    {
+      "name": "We detail on site",
+      "text": "We arrive fully equipped and complete the service where it sits."
+    }
+  ],
+  "contactTitle": "Book your boat in.",
+  "footerLine": "Boat detailing in Canyon Lake",
+  "reviews": [],
+  "hours": [],
+  "galleryTitle": "Fresh off the water.",
+  "vehicleTypes": [
+    "Boat",
+    "Pontoon",
+    "Yacht",
+    "Jet ski",
+    "Other"
+  ],
+  "modelPlaceholder": "e.g. Sea Ray 240, 24 ft",
+  "notePlaceholder": "Length, where it is docked or stored, what it needs…",
+  "gallery": [],
+  "areas": [
+    "Canyon Lake"
+  ],
+  "pitch": "photos",
+  "siteCheck": {
+    "reasons": [
+      "copyright 2020"
+    ],
+    "improvements": []
   }
- ],
- "also": [
-  {
-   "name": "Elite autos"
-  },
-  {
-   "name": "Motorcycles"
-  },
-  {
-   "name": "Airplanes"
-  },
-  {
-   "name": "Golf carts"
-  }
- ],
- "alsoTitle": "We also detail",
- "why": [
-  {
-   "name": "Trained and certified",
-   "text": "Detailers are trained through the International Detailers Association, and Dustin is a Marine Certified Detailer."
-  },
-  {
-   "name": "Marine safe products",
-   "text": "Biodegradable, marine safe chemicals, and a shop lit to show every imperfection."
-  },
-  {
-   "name": "A local enthusiast",
-   "text": "Dustin lives on Canyon Lake and cares for your boat or car like his own."
-  }
- ],
- "whyTitle": "Why boat owners call us.",
- "howTitle": "Back on the water in three steps.",
- "steps": [
-  {
-   "name": "Request a quote",
-   "text": "Call or send photos of your vehicle for a recommendation and estimate."
-  },
-  {
-   "name": "Schedule",
-   "text": "Pick a time at your home, office, apartment or marina."
-  },
-  {
-   "name": "We detail on site",
-   "text": "We arrive fully equipped and complete the service where it sits."
-  }
- ],
- "contactTitle": "Book your boat in.",
- "footerLine": "Boat detailing in Canyon Lake",
- "reviews": [],
- "hours": [],
- "galleryTitle": "Fresh off the water.",
- "vehicleTypes": [
-  "Boat",
-  "Pontoon",
-  "Yacht",
-  "Jet ski",
-  "Other"
- ],
- "modelPlaceholder": "e.g. Sea Ray 240, 24 ft",
- "notePlaceholder": "Length, where it is docked or stored, what it needs…",
- "gallery": [],
- "areas": [
-  "Canyon Lake"
- ],
- "pitch": "photos"
 }

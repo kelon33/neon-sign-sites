@@ -12,8 +12,8 @@
 <style>
 /* Real grass greens, whatever the brand colour: lawns should look like lawns. */
 :root { --grass: #4a9a3a; --grass-hi: #7cc85a; --grass-lo: #2f7428; --stripe-a: #4f9d3f; --stripe-b: #448d36;
-  --deep: #163d1b; --deeper: #0f2c13; --sun: #f4c542; --mint: #e9f4df;
-  --bg: #f7f8f1; --panel: #ffffff; --ink: #17240f; --muted: #5b6752; --line: #e1e6d3;
+  --deep: #163d1b; --deeper: #0f2c13; --sun: #f4c542; --mint: #dfe8d2;
+  --bg: #eaeee0; --panel: #f6f8ef; --ink: #17240f; --muted: #56614c; --line: #d6dcc6;
   --serif: "Fraunces", Georgia, serif; --sans: "Inter", system-ui, sans-serif; --ease: cubic-bezier(.22,.61,.36,1); }
 * { box-sizing: border-box; }
 html { scroll-behavior: smooth; }
@@ -183,6 +183,17 @@ form.booking .btn { grid-column: 1 / -1; margin-top: 6px; }
 @media (max-width: 520px) { .logo b { font-size: 1.15rem; } .logo img { height: 44px; } }
 @media (prefers-reduced-motion: reduce) { *, *::before, *::after { animation: none !important; transition: none !important; } .hero > img { transform: none; } }
 
+/* RULE: no hard edges between sections. Wherever two colours meet, the change is a soft gradient. */
+.hero::after { content: ""; position: absolute; left: 0; right: 0; bottom: 0; height: 84px; z-index: -1; pointer-events: none; background: linear-gradient(180deg, transparent, var(--bg)); }
+.promise, .quote { position: relative; overflow: hidden; }
+.promise > .wrap, .quote > .wrap { position: relative; z-index: 1; }
+.promise::before, .promise::after, .quote::before { content: ""; position: absolute; left: 0; right: 0; height: 72px; pointer-events: none; z-index: 0; }
+.promise::before, .quote::before { top: 0; background: linear-gradient(180deg, var(--bg), transparent); }
+.promise::after { bottom: 0; background: linear-gradient(0deg, var(--bg), transparent); }
+.quote { background: linear-gradient(180deg, transparent 72%, var(--deeper)), radial-gradient(ellipse at 10% 10%, rgba(255,255,255,.07), transparent 55%), var(--deep); }
+.section.tint { background: linear-gradient(180deg, var(--bg), var(--mint) 110px, var(--mint) calc(100% - 110px), var(--bg)); }
+.footer { background: var(--deeper); }
+
 /* RULE: the first screen reads as a whole page: headline, every hero button and the Google rating
    visible without scrolling, on laptops, desktops and phones (npm run fold checks it). */
 :root:has(.preview-bar) { --bar: 36px; }
@@ -192,7 +203,7 @@ form.booking .btn { grid-column: 1 / -1; margin-top: 6px; }
   .hero { min-height: calc(min(100vh, 860px) - var(--bar, 0px)); }
 }
 @media (min-width: 901px) and (max-height: 920px) {
-  .hero { padding-top: 116px; padding-bottom: 52px; }
+  .hero { padding-top: 112px; padding-bottom: 84px; }
   .hero h1 { font-size: clamp(2.5rem, 8vh, 5.2rem); }
   .hero .lead { margin-top: 16px; }
   .hero .actions { margin-top: 24px; }
@@ -200,7 +211,7 @@ form.booking .btn { grid-column: 1 / -1; margin-top: 6px; }
   .hero .rating { margin-top: 18px; }
 }
 @media (max-width: 900px) {
-  .hero { min-height: calc(100svh - var(--bar, 0px)); padding: 96px 0 26px; }
+  .hero { min-height: calc(100svh - var(--bar, 0px)); padding: 92px 0 58px; }
   .hero h1 { font-size: clamp(1.9rem, min(10.2vw, 6svh), 3.3rem); }
   .hero .eyebrow { margin-bottom: 10px; }
   .hero .lead { font-size: 1rem; line-height: 1.5; margin-top: 12px; display: -webkit-box; -webkit-line-clamp: 4; -webkit-box-orient: vertical; overflow: hidden; }
@@ -216,8 +227,8 @@ form.booking .btn { grid-column: 1 / -1; margin-top: 6px; }
 
 /* Holiday lighting: pine, berry red, warm gold. */
 :root { --grass: #b3122e; --grass-hi: #ff5a6e; --grass-lo: #8d0f25; --stripe-a: #b3122e; --stripe-b: #f5efe6;
-  --deep: #0c2d1f; --deeper: #071c13; --sun: #f5c04a; --mint: #f6eee4;
-  --bg: #fbf7f0; --panel: #ffffff; --ink: #1d1a17; --muted: #6a6158; --line: #ece2d4; }
+  --deep: #0c2d1f; --deeper: #071c13; --sun: #f5c04a; --mint: #e7dccb;
+  --bg: #efe7da; --panel: #f9f4ec; --ink: #1d1a17; --muted: #665d53; --line: #e0d3bf; }
 .photo, .hero > img { filter: none; }
 .hero { background: #071225; }
 .hero::before { background: linear-gradient(90deg, rgba(5,14,24,.86) 0%, rgba(5,14,24,.6) 42%, rgba(5,14,24,.1) 80%), linear-gradient(180deg, rgba(5,14,24,.55), transparent 35%); }
@@ -231,7 +242,11 @@ dialog.lightbox::backdrop { background: rgba(5,12,20,.92); }
 @media (max-width: 900px) {
   .hero::before { background: linear-gradient(180deg, rgba(5,14,24,.5) 0%, rgba(5,14,24,.3) 30%, rgba(5,14,24,.85) 64%, rgba(5,14,24,.95) 100%); }
 }
-</style>
+.nss-fix{padding:28px 20px 8px}.nss-fix>div{max-width:760px;margin:0 auto;border-radius:18px;padding:20px 22px;background:color-mix(in srgb,currentColor 6%,transparent);box-shadow:inset 0 0 0 1px color-mix(in srgb,currentColor 14%,transparent)}
+.nss-fix h2{font:700 1.05rem/1.3 system-ui,-apple-system,sans-serif;margin:0 0 10px;letter-spacing:.01em}
+.nss-fix ul{list-style:none;margin:0;padding:0;display:grid;gap:8px;font:400 15px/1.45 system-ui,-apple-system,sans-serif}
+.nss-fix li{display:flex;gap:10px;align-items:baseline}.nss-fix li::before{content:"✓";font-weight:700;color:#2fbf71}
+.nss-fix .was{opacity:.75}.nss-fix .now{font-weight:600}</style>
 </head>
 <body>
 <style>
@@ -253,7 +268,7 @@ dialog.lightbox::backdrop { background: rgba(5,12,20,.92); }
 <div class="nss-bar"><span>Preview <span class="nss-for">prepared for Texas Light Crew </span>by <a href="https://neonsignsites.com/">Neon Sign Sites</a>.<span class="nss-yet"> Not the live site yet.</span></span><a class="nss-go" data-plan="monthly" href="https://neonsignsites.com/go?plan=monthly">Make it live</a></div>
 <header class="top">
   <div class="wrap">
-    <a class="logo" href="#"><span><b>Texas</b><small>Light Crew</small></span></a>
+    <a class="logo" href="#"><span><b>Texas Light Crew</b></span></a>
     <nav aria-label="Main"><a href="#services">Services</a><a href="#work">Our work</a><a href="#quote">Contact</a></nav>
     <a class="btn" href="#quote">Free quote</a>
   </div>
@@ -274,6 +289,8 @@ dialog.lightbox::backdrop { background: rgba(5,12,20,.92); }
     <a class="rating" href="https://maps.google.com/?cid=8322766863929716250" target="_blank" rel="noopener"><span class="stars" aria-label="5 stars"><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M10 1.6l2.6 5.3 5.8.8-4.2 4.1 1 5.8L10 14.9l-5.2 2.7 1-5.8L1.6 7.7l5.8-.8z"/></svg><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M10 1.6l2.6 5.3 5.8.8-4.2 4.1 1 5.8L10 14.9l-5.2 2.7 1-5.8L1.6 7.7l5.8-.8z"/></svg><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M10 1.6l2.6 5.3 5.8.8-4.2 4.1 1 5.8L10 14.9l-5.2 2.7 1-5.8L1.6 7.7l5.8-.8z"/></svg><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M10 1.6l2.6 5.3 5.8.8-4.2 4.1 1 5.8L10 14.9l-5.2 2.7 1-5.8L1.6 7.7l5.8-.8z"/></svg><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M10 1.6l2.6 5.3 5.8.8-4.2 4.1 1 5.8L10 14.9l-5.2 2.7 1-5.8L1.6 7.7l5.8-.8z"/></svg></span><b>5.0</b><span>146 Google reviews</span></a>
   </div>
 </section>
+<section class="nss-fix" aria-label="What we fixed"><div><h2>What this page fixes</h2><ul><li><span><span class="was">Your reviews aren’t on your site</span> → <span class="now">your 5.0★ Google rating from 146 reviews up front</span></span></li></ul></div></section>
+
 
 <section class="section" style="padding-bottom:40px">
   <div class="wrap">
@@ -325,7 +342,7 @@ dialog.lightbox::backdrop { background: rgba(5,12,20,.92); }
 
 <section class="section">
   <div class="wrap">
-    <p class="eyebrow">Why Texas</p>
+    <p class="eyebrow">Why Texas Light Crew</p>
     <h2 style="margin-bottom:46px;max-width:16em">Why Texas Light Crew</h2>
     <div class="why">
       <div><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3l8 3v6c0 4.6-3.4 8-8 9-4.6-1-8-4.4-8-9V6z"/><path d="M8.5 12l2.5 2.5 4.5-5"/></svg><h3>Firefighter care</h3><p>Background-checked first responders bring fire service safety and teamwork to your home.</p></div>

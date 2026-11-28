@@ -11,7 +11,7 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@100..125,500..800&family=Inter:wght@400;500;600&display=swap">
 <style>
 :root { --brand: #1670ff; --brand-hi: #52c6ff; --brand-lo: #0f4eb3; --accent: #8fd0ff;
-  --bg: #07090d; --panel: #0e1219; --panel-2: #131824; --line: rgba(255,255,255,.08); --ink: #eef2f8; --muted: #98a2b3;
+  --bg: #0d1118; --panel: #131923; --panel-2: #19212d; --brand-glow: #1670ff38; --line: rgba(255,255,255,.08); --ink: #eef2f8; --muted: #98a2b3;
   --display: "Archivo", "Inter", system-ui, sans-serif; --sans: "Inter", system-ui, sans-serif; --ease: cubic-bezier(.22,.61,.36,1); }
 * { box-sizing: border-box; }
 html { scroll-behavior: smooth; }
@@ -189,6 +189,11 @@ form.booking .btn { grid-column: 1 / -1; margin-top: 6px; }
   .hero > img { transform: none; }
 }
 
+/* RULE: no hard edges between sections. Wherever two colours meet, the change is a soft gradient. */
+.hero::after { content: ""; position: absolute; left: 0; right: 0; bottom: 0; height: 84px; z-index: -1; pointer-events: none; background: linear-gradient(180deg, transparent, var(--bg)); }
+.book { border-top: 0; background: linear-gradient(180deg, var(--bg), transparent 140px), radial-gradient(ellipse at 15% 0%, var(--brand-glow), transparent 55%), var(--panel); }
+.footer { background: linear-gradient(180deg, var(--panel), var(--bg)); border-top: 0; }
+
 /* RULE: the first screen reads as a whole page: headline, every hero button and the Google rating
    visible without scrolling, on laptops, desktops and phones (npm run fold checks it). */
 :root:has(.preview-bar) { --bar: 36px; }
@@ -198,7 +203,7 @@ form.booking .btn { grid-column: 1 / -1; margin-top: 6px; }
   .hero { min-height: calc(min(100vh, 860px) - var(--bar, 0px)); }
 }
 @media (min-width: 901px) and (max-height: 920px) {
-  .hero { padding-top: 116px; padding-bottom: 52px; }
+  .hero { padding-top: 112px; padding-bottom: 84px; }
   .hero h1 { font-size: clamp(2.5rem, 8vh, 5.2rem); }
   .hero .lead { margin-top: 16px; }
   .hero .actions { margin-top: 24px; }
@@ -206,7 +211,7 @@ form.booking .btn { grid-column: 1 / -1; margin-top: 6px; }
   .hero .rating { margin-top: 18px; }
 }
 @media (max-width: 900px) {
-  .hero { min-height: calc(100svh - var(--bar, 0px)); padding: 96px 0 26px; }
+  .hero { min-height: calc(100svh - var(--bar, 0px)); padding: 92px 0 58px; }
   .hero h1 { font-size: clamp(1.9rem, min(10.2vw, 6svh), 3.3rem); }
   .hero .eyebrow { margin-bottom: 10px; }
   .hero .lead { font-size: 1rem; line-height: 1.5; margin-top: 12px; display: -webkit-box; -webkit-line-clamp: 4; -webkit-box-orient: vertical; overflow: hidden; }
@@ -222,7 +227,23 @@ form.booking .btn { grid-column: 1 / -1; margin-top: 6px; }
 </style>
 </head>
 <body>
-<div class="preview-bar">Preview <span class="pv-for">prepared for Erick's Auto Detailing </span>by <a href="https://neonsignsites.com/">Neon Sign Sites</a>. Not the live site.</div>
+<style>
+/* One line, a fixed 40px: the kits subtract --bar from the hero so the first screen still fits (npm run fold). */
+:root:has(.nss-bar) { --bar: 40px; }
+.nss-bar { background: #0b0b10; color: #e9e6ef; font: 500 13px/1.4 system-ui, -apple-system, sans-serif; display: flex; flex-wrap: nowrap; justify-content: center; align-items: center; gap: 14px; height: 40px; box-sizing: border-box; padding: 0 12px; text-align: center; white-space: nowrap; overflow: hidden; }
+.nss-bar > span { min-width: 0; overflow: hidden; text-overflow: ellipsis; }
+@media (max-width: 600px) { .nss-bar .nss-for, .nss-bar .nss-yet { display: none; } }
+.nss-bar a { color: #ff7aa8; }
+.nss-bar .nss-go { flex: none; color: #0b0b10; background: #ff4f8b; border-radius: 999px; padding: 5px 14px; font-weight: 700; text-decoration: none; white-space: nowrap; }
+.nss-end { background: #0b0b10; color: #f3f0e9; text-align: center; padding: 56px 20px 140px; font: 400 16px/1.5 system-ui, -apple-system, sans-serif; }
+.nss-end h2 { font: 600 1.6rem/1.2 system-ui, -apple-system, sans-serif; margin: 0 0 8px; color: #fff; }
+.nss-end p { color: #a9a6b2; margin: 0 auto 22px; max-width: 30em; }
+.nss-end .nss-opts { display: flex; flex-wrap: wrap; gap: 12px; justify-content: center; }
+.nss-end .nss-opts a { text-decoration: none; border-radius: 999px; padding: 14px 24px; font-weight: 700; }
+.nss-end .nss-main { background: #ff4f8b; color: #0b0b10; box-shadow: 0 10px 30px -8px rgba(255,79,139,.6); }
+.nss-end .nss-alt { color: #f3f0e9; box-shadow: inset 0 0 0 1px #3a3a4a; }
+.nss-end small { display: block; color: #8a8794; margin-top: 16px; font-size: 13px; }</style>
+<div class="nss-bar"><span>Preview <span class="nss-for">prepared for Erick's Auto Detailing </span>by <a href="https://neonsignsites.com/">Neon Sign Sites</a>.<span class="nss-yet"> Not the live site yet.</span></span><a class="nss-go" data-plan="monthly" href="https://neonsignsites.com/go?plan=monthly">Make it live</a></div>
 <header class="top">
   <div class="wrap">
     <a class="logo" href="#"><img src="logo-mark.png" alt=""><span><b>Erick's</b><small>Auto Detailing</small></span></a>
@@ -310,7 +331,7 @@ form.booking .btn { grid-column: 1 / -1; margin-top: 6px; }
 
 <section class="section" style="padding-top:30px">
   <div class="wrap">
-    <p class="eyebrow">Why Erick's</p>
+    <p class="eyebrow">Why Erick's Auto Detailing</p>
     <h2 style="margin-bottom:46px;max-width:16em">The detail is in the name.</h2>
     <div class="why">
       <div><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3s6 6.4 6 11a6 6 0 01-12 0c0-4.6 6-11 6-11z"/></svg><h3>High-quality products</h3><p>We use high-quality products for the care of your vehicle, inside and out.</p></div>
@@ -378,5 +399,12 @@ form.booking .btn { grid-column: 1 / -1; margin-top: 6px; }
     clearTimeout(b._t); b._t = setTimeout(() => b.classList.remove('shine'), 800);
   });
 </script>
+<section class="nss-end" aria-label="Make this site live">
+  <h2>Like it? It can go live in a few days.</h2>
+  <p>On your own domain, with hosting and SSL included. Your email and everything else stay as they are.</p>
+  <div class="nss-opts"><a class="nss-main" data-plan="monthly" href="https://neonsignsites.com/go?plan=monthly">$0 first month</a><a class="nss-alt" data-plan="own" href="https://neonsignsites.com/go?plan=own">Own it for $299</a></div>
+  <small>Monthly: then $49/month, minimum 2 paid months after the free one. Own it: $299 once, hosting included the first year, then $49/year. Prepared by Neon Sign Sites.</small>
+</section>
+<script>(function(){var s=(location.pathname.match(/\/p\/([a-z0-9-]+)/)||[])[1];var n="Erick's Auto Detailing";document.querySelectorAll('a[data-plan]').forEach(function(a){var u=new URL(a.href);if(s)u.searchParams.set('site',s);u.searchParams.set('name',n);a.href=u.toString();});})();</script>
 </body>
 </html>

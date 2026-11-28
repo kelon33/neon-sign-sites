@@ -1,97 +1,104 @@
 {
- "kit": "detailing",
- "trade": "Paintless dent repair",
- "name": "Prime Time PDR",
- "legalName": "Prime Time PDR",
- "preview": true,
- "placeId": "ChIJmRVzw7hpXIYRNSwV3YhgrZk",
- "title": "Prime Time PDR | Paintless dent repair in San Antonio, TX",
- "description": "Paintless dent repair in San Antonio since 2009. Hail damage and door dings pushed out from behind, with a lifetime warranty on every dent we fix. 5.0 on Google from 129 reviews.",
- "brand": "#1670ff",
- "brandHi": "#52c6ff",
- "accent": "#8fd0ff",
- "logo": "logo.png",
- "logoChip": false,
- "wordmark": {
-  "top": "Prime Time",
-  "bottom": "PDR"
- },
- "phone": "(210) 823-2547",
- "email": "primetimepdr@gmail.com",
- "heroImage": null,
- "heroAlt": "",
- "heroPosition": "60% 60%",
- "heroPositionPhone": "60% 50%",
- "rating": {
-  "score": "5.0",
-  "count": 129,
-  "url": "https://maps.google.com/?cid=11073613199714888757"
- },
- "kicker": "Paintless dent repair · San Antonio",
- "headline": "Your car's dents.<br><em>Gone. Paint untouched.</em>",
- "intro": "Paintless dent repair in San Antonio since 2009. Hail damage and door dings pushed out from behind, with a lifetime warranty on every dent we fix.",
- "mobile": null,
- "servicesTitle": "Every kind of dent.",
- "servicesIntro": "From a single door ding to a full hail storm.",
- "services": [
-  {
-   "name": "Paintless Dent Repair",
-   "text": "Dents, dings and hail damage on your vehicle's exterior, fixed with special tools and years of hands-on experience."
+  "kit": "detailing",
+  "trade": "Paintless dent repair",
+  "name": "Prime Time PDR",
+  "legalName": "Prime Time PDR",
+  "preview": true,
+  "placeId": "ChIJmRVzw7hpXIYRNSwV3YhgrZk",
+  "title": "Prime Time PDR | Paintless dent repair in San Antonio, TX",
+  "description": "Paintless dent repair in San Antonio since 2009. Hail damage and door dings pushed out from behind, with a lifetime warranty on every dent we fix. 5.0 on Google from 129 reviews.",
+  "brand": "#1670ff",
+  "brandHi": "#52c6ff",
+  "accent": "#8fd0ff",
+  "logo": "logo.png",
+  "logoChip": false,
+  "wordmark": {
+    "top": "Prime Time",
+    "bottom": "PDR"
   },
-  {
-   "name": "Hail Damage Repair",
-   "text": "Interior panels come off, dents are gently pushed back into place, and lights confirm the work is even."
+  "phone": "(210) 823-2547",
+  "email": "primetimepdr@gmail.com",
+  "heroImage": null,
+  "heroAlt": "",
+  "heroPosition": "60% 60%",
+  "heroPositionPhone": "60% 50%",
+  "rating": {
+    "score": "5.0",
+    "count": 129,
+    "url": "https://maps.google.com/?cid=11073613199714888757"
   },
-  {
-   "name": "Door Ding Repair",
-   "text": "Minor parking-lot dings and dents repaired by our expert technicians."
+  "kicker": "Paintless dent repair · San Antonio",
+  "headline": "Your car's dents.<br><em>Gone. Paint untouched.</em>",
+  "intro": "Paintless dent repair in San Antonio since 2009. Hail damage and door dings pushed out from behind, with a lifetime warranty on every dent we fix.",
+  "mobile": null,
+  "servicesTitle": "Every kind of dent.",
+  "servicesIntro": "From a single door ding to a full hail storm.",
+  "services": [
+    {
+      "name": "Paintless Dent Repair",
+      "text": "Dents, dings and hail damage on your vehicle's exterior, fixed with special tools and years of hands-on experience."
+    },
+    {
+      "name": "Hail Damage Repair",
+      "text": "Interior panels come off, dents are gently pushed back into place, and lights confirm the work is even."
+    },
+    {
+      "name": "Door Ding Repair",
+      "text": "Minor parking-lot dings and dents repaired by our expert technicians."
+    }
+  ],
+  "also": [],
+  "alsoTitle": "We also fix",
+  "why": [
+    {
+      "name": "Lifetime warranty",
+      "text": "Every dent we fix is guaranteed for as long as you own your vehicle. If anything happens with our work, we make it right."
+    },
+    {
+      "name": "We handle your insurance",
+      "text": "Our shop managers specialize in hail claims and work with your insurer, including supplemental claims and deductible assistance."
+    },
+    {
+      "name": "Free estimates, free pick-up",
+      "text": "Estimates cost nothing, and we can pick up and drop off your vehicle at no charge."
+    }
+  ],
+  "whyTitle": "Why Prime Time PDR",
+  "howTitle": "Dent-free in three steps.",
+  "steps": [
+    {
+      "name": "Call or text",
+      "text": "Tell us about the damage. We explain the process and set up your rental car."
+    },
+    {
+      "name": "We handle the details",
+      "text": "We help with your insurance claim and can pick up your vehicle."
+    },
+    {
+      "name": "Drive it home",
+      "text": "We repair the damage, give it a mini-detail and deliver it back."
+    }
+  ],
+  "contactTitle": "Got a dent?",
+  "footerLine": "Paintless dent repair in San Antonio",
+  "reviews": [],
+  "hours": [
+    "Mon - Fri 10:00am - 6:00pm",
+    "Saturday, by appointment only"
+  ],
+  "galleryTitle": "Dents gone, paint untouched.",
+  "notePlaceholder": "Where the dent is, how big, hail or a door ding…",
+  "ctaLabel": "Get an estimate",
+  "gallery": [],
+  "areas": [
+    "San Antonio"
+  ],
+  "pitch": "photos",
+  "siteCheck": {
+    "reasons": [],
+    "improvements": [
+      "only 3 photos",
+      "copyright 2024"
+    ]
   }
- ],
- "also": [],
- "alsoTitle": "We also fix",
- "why": [
-  {
-   "name": "Lifetime warranty",
-   "text": "Every dent we fix is guaranteed for as long as you own your vehicle. If anything happens with our work, we make it right."
-  },
-  {
-   "name": "We handle your insurance",
-   "text": "Our shop managers specialize in hail claims and work with your insurer, including supplemental claims and deductible assistance."
-  },
-  {
-   "name": "Free estimates, free pick-up",
-   "text": "Estimates cost nothing, and we can pick up and drop off your vehicle at no charge."
-  }
- ],
- "whyTitle": "Why Prime Time PDR",
- "howTitle": "Dent-free in three steps.",
- "steps": [
-  {
-   "name": "Call or text",
-   "text": "Tell us about the damage. We explain the process and set up your rental car."
-  },
-  {
-   "name": "We handle the details",
-   "text": "We help with your insurance claim and can pick up your vehicle."
-  },
-  {
-   "name": "Drive it home",
-   "text": "We repair the damage, give it a mini-detail and deliver it back."
-  }
- ],
- "contactTitle": "Got a dent?",
- "footerLine": "Paintless dent repair in San Antonio",
- "reviews": [],
- "hours": [
-  "Mon - Fri 10:00am - 6:00pm",
-  "Saturday, by appointment only"
- ],
- "galleryTitle": "Dents gone, paint untouched.",
- "notePlaceholder": "Where the dent is, how big, hail or a door ding…",
- "ctaLabel": "Get an estimate",
- "gallery": [],
- "areas": [
-  "San Antonio"
- ],
- "pitch": "photos"
 }

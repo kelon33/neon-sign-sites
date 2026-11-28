@@ -130,5 +130,11 @@
   "areas": [
     "Waco"
   ],
-  "pitch": "site"
+  "pitch": "site",
+  "siteCheck": {
+    "reasons": [],
+    "improvements": [
+      "no reviews on the site"
+    ]
+  }
 }

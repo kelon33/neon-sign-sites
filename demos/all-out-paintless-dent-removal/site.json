@@ -1,141 +1,148 @@
 {
- "kit": "detailing",
- "trade": "Paintless dent repair",
- "name": "All Out Paintless Dent Removal",
- "legalName": "All Out Paintless Dent Removal",
- "preview": true,
- "placeId": "ChIJc4CfWPu15YgRBAD1DMjYRHg",
- "title": "All Out Paintless Dent Removal | Paintless dent repair in St. Augustine, FL",
- "description": "Paintless dent repair in St. Augustine from a tech with 25+ years in the trade. Door dings, creases, large dents and hail damage worked out from behind the panel. 5.0 on Google from 213 reviews.",
- "brand": "#1670ff",
- "brandHi": "#52c6ff",
- "accent": "#8fd0ff",
- "logo": null,
- "logoChip": false,
- "wordmark": {
-  "top": "All Out",
-  "bottom": "Paintless Dent Removal"
- },
- "phone": "(904) 352-9183",
- "email": "estimates@alloutpdrjax.com",
- "heroImage": null,
- "heroAlt": "",
- "heroPosition": "60% 60%",
- "heroPositionPhone": "60% 50%",
- "rating": {
-  "score": "5.0",
-  "count": 213,
-  "url": "https://maps.google.com/?cid=8666289936690118660"
- },
- "kicker": "Paintless dent repair · St. Augustine",
- "headline": "Hail damage gone.<br><em>Hassle gone too.</em>",
- "intro": "Paintless dent repair in St. Augustine from a tech with 25+ years in the trade. Door dings, creases, large dents and hail damage worked out from behind the panel.",
- "mobile": {
-  "title": "Door dings, at your door.",
-  "intro": "For door dings and small dents, I come to you. Hail, deer hits and larger dents are repaired at my St. Augustine shop.",
-  "points": [
-   {
-    "name": "We come to you",
-    "text": "If you can't come by the shop, call or text and we get back to you as soon as we can."
-   },
-   {
-    "name": "Shop in St. Augustine",
-    "text": "Our shop is at 6980 US-1 N, Unit 104. Retail repairs are by appointment."
-   },
-   {
-    "name": "Estimate by text",
-    "text": "Text photos of the damage or use the estimate form with your year, make and model."
-   },
-   {
-    "name": "Call first",
-    "text": "We may be out on mobile repairs, so contact us before you come to the shop."
-   }
-  ]
- },
- "servicesTitle": "Everything your car needs.",
- "servicesIntro": "From a single door ding to a full hail storm.",
- "services": [
-  {
-   "name": "Door Dings",
-   "text": "Small dents worked out from behind the panel."
+  "kit": "detailing",
+  "trade": "Paintless dent repair",
+  "name": "All Out Paintless Dent Removal",
+  "legalName": "All Out Paintless Dent Removal",
+  "preview": true,
+  "placeId": "ChIJc4CfWPu15YgRBAD1DMjYRHg",
+  "title": "All Out Paintless Dent Removal | Paintless dent repair in St. Augustine, FL",
+  "description": "Paintless dent repair in St. Augustine from a tech with 25+ years in the trade. Door dings, creases, large dents and hail damage worked out from behind the panel. 5.0 on Google from 213 reviews.",
+  "brand": "#1670ff",
+  "brandHi": "#52c6ff",
+  "accent": "#8fd0ff",
+  "logo": null,
+  "logoChip": false,
+  "wordmark": {
+    "top": "All Out",
+    "bottom": "Paintless Dent Removal"
   },
-  {
-   "name": "Hail Damage",
-   "text": "Matt specializes in hail damage repair."
+  "phone": "(904) 352-9183",
+  "email": "estimates@alloutpdrjax.com",
+  "heroImage": null,
+  "heroAlt": "",
+  "heroPosition": "60% 60%",
+  "heroPositionPhone": "60% 50%",
+  "rating": {
+    "score": "5.0",
+    "count": 213,
+    "url": "https://maps.google.com/?cid=8666289936690118660"
   },
-  {
-   "name": "Creases",
-   "text": "Sharp creases in the panel, worked out by hand."
+  "kicker": "Paintless dent repair · St. Augustine",
+  "headline": "Hail damage gone.<br><em>Hassle gone too.</em>",
+  "intro": "Paintless dent repair in St. Augustine from a tech with 25+ years in the trade. Door dings, creases, large dents and hail damage worked out from behind the panel.",
+  "mobile": {
+    "title": "Door dings, at your door.",
+    "intro": "For door dings and small dents, I come to you. Hail, deer hits and larger dents are repaired at my St. Augustine shop.",
+    "points": [
+      {
+        "name": "We come to you",
+        "text": "If you can't come by the shop, call or text and we get back to you as soon as we can."
+      },
+      {
+        "name": "Shop in St. Augustine",
+        "text": "Our shop is at 6980 US-1 N, Unit 104. Retail repairs are by appointment."
+      },
+      {
+        "name": "Estimate by text",
+        "text": "Text photos of the damage or use the estimate form with your year, make and model."
+      },
+      {
+        "name": "Call first",
+        "text": "We may be out on mobile repairs, so contact us before you come to the shop."
+      }
+    ]
   },
-  {
-   "name": "Large Dent Repair",
-   "text": "Larger dents are one of Matt's specialties."
-  },
-  {
-   "name": "Classic Car PDR",
-   "text": "Paintless dent repair for classic cars."
-  },
-  {
-   "name": "Motorcycle Tank Repair",
-   "text": "Dents in motorcycle tanks pushed out."
+  "servicesTitle": "Everything your car needs.",
+  "servicesIntro": "From a single door ding to a full hail storm.",
+  "services": [
+    {
+      "name": "Door Dings",
+      "text": "Small dents worked out from behind the panel."
+    },
+    {
+      "name": "Hail Damage",
+      "text": "Matt specializes in hail damage repair."
+    },
+    {
+      "name": "Creases",
+      "text": "Sharp creases in the panel, worked out by hand."
+    },
+    {
+      "name": "Large Dent Repair",
+      "text": "Larger dents are one of Matt's specialties."
+    },
+    {
+      "name": "Classic Car PDR",
+      "text": "Paintless dent repair for classic cars."
+    },
+    {
+      "name": "Motorcycle Tank Repair",
+      "text": "Dents in motorcycle tanks pushed out."
+    }
+  ],
+  "also": [
+    {
+      "name": "Motorcycles"
+    },
+    {
+      "name": "Classic cars"
+    }
+  ],
+  "alsoTitle": "We also fix",
+  "why": [
+    {
+      "name": "25+ years of experience",
+      "text": "Servicing Jacksonville and surrounding areas since 1998."
+    },
+    {
+      "name": "Dealership-proven",
+      "text": "Matt has serviced every major dealership in Jacksonville at one time or another."
+    },
+    {
+      "name": "Takes on the hard ones",
+      "text": "Matt is known in the industry for taking on some of the most challenging repairs."
+    }
+  ],
+  "whyTitle": "The All Out Paintless Dent Removal difference.",
+  "howTitle": "Dent-free in three steps.",
+  "steps": [
+    {
+      "name": "Send the details",
+      "text": "Call, or use the form with your year, make, model and photos of the damage."
+    },
+    {
+      "name": "Get an evaluation",
+      "text": "Bring the vehicle in and we look at the hail damage, dings or film options."
+    },
+    {
+      "name": "Drive it smooth",
+      "text": "We work the dents out and hand the vehicle back."
+    }
+  ],
+  "contactTitle": "Hail damage? Call us.",
+  "footerLine": "Paintless dent repair in St. Augustine",
+  "reviews": [
+    {
+      "text": "I have worked with Matt for several years now and I can't begin to say enough good things! Matt is personable, easy going, honest, and always does an amazing job. We have worked closely over the years in the auto industry and I would chose him over and over again to work with. The damage he has fixed always comes out perfectly. There has been some damage that I never would have guessed that could be fixed with PDR. I recommend Matt to everyone I know!",
+      "name": "Janelle Aue"
+    }
+  ],
+  "hours": [
+    "Mon - Fri: 9am - 5pm"
+  ],
+  "galleryTitle": "Dents gone, paint untouched.",
+  "notePlaceholder": "Where the dent is, how big, hail or a door ding…",
+  "ctaLabel": "Get an estimate",
+  "gallery": [],
+  "areas": [
+    "St. Augustine"
+  ],
+  "pitch": "photos",
+  "siteCheck": {
+    "reasons": [],
+    "improvements": [
+      "no tap-to-call link",
+      "no quote or booking form"
+    ]
   }
- ],
- "also": [
-  {
-   "name": "Motorcycles"
-  },
-  {
-   "name": "Classic cars"
-  }
- ],
- "alsoTitle": "We also fix",
- "why": [
-  {
-   "name": "25+ years of experience",
-   "text": "Servicing Jacksonville and surrounding areas since 1998."
-  },
-  {
-   "name": "Dealership-proven",
-   "text": "Matt has serviced every major dealership in Jacksonville at one time or another."
-  },
-  {
-   "name": "Takes on the hard ones",
-   "text": "Matt is known in the industry for taking on some of the most challenging repairs."
-  }
- ],
- "whyTitle": "The All Out Paintless Dent Removal difference.",
- "howTitle": "Dent-free in three steps.",
- "steps": [
-  {
-   "name": "Send the details",
-   "text": "Call, or use the form with your year, make, model and photos of the damage."
-  },
-  {
-   "name": "Get an evaluation",
-   "text": "Bring the vehicle in and we look at the hail damage, dings or film options."
-  },
-  {
-   "name": "Drive it smooth",
-   "text": "We work the dents out and hand the vehicle back."
-  }
- ],
- "contactTitle": "Hail damage? Call us.",
- "footerLine": "Paintless dent repair in St. Augustine",
- "reviews": [
-  {
-   "text": "I have worked with Matt for several years now and I can't begin to say enough good things! Matt is personable, easy going, honest, and always does an amazing job. We have worked closely over the years in the auto industry and I would chose him over and over again to work with. The damage he has fixed always comes out perfectly. There has been some damage that I never would have guessed that could be fixed with PDR. I recommend Matt to everyone I know!",
-   "name": "Janelle Aue"
-  }
- ],
- "hours": [
-  "Mon - Fri: 9am - 5pm"
- ],
- "galleryTitle": "Dents gone, paint untouched.",
- "notePlaceholder": "Where the dent is, how big, hail or a door ding…",
- "ctaLabel": "Get an estimate",
- "gallery": [],
- "areas": [
-  "St. Augustine"
- ],
- "pitch": "photos"
 }
