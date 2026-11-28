@@ -79,10 +79,11 @@ async function main() {
       // or a bounce of one of ours. Everything else (warm-up traffic, newsletters) is left alone.
       // The site's forms (hello@neonsignsites.com → alon@neonsignsites.com, delivered to alon@neonsignsites.net):
       // a preview request or a "Make it live" is a hot lead too.
-      const site = /hello@neonsignsites\.com/i.test(from) && /^(Make it live|Preview request):/i.test(h.subject ?? '') && !/TEST by Claude/.test(h.subject ?? '');
+      const site = /hello@neonsignsites\.com/i.test(from) && /^(Make it live|Preview request|Payment received):/i.test(h.subject ?? '') && !/TEST by Claude/.test(h.subject ?? '');
+      const paid = site && /^Payment received:/i.test(h.subject ?? '');
       if (!match && !site && !(k === 'bounce' && sent.some((s) => text.toLowerCase().includes(s.to?.toLowerCase())))) { seen.add(id); continue; }
       const inSpam = (m.labelIds ?? []).includes('SPAM');
-      const r = { id, threadId: m.threadId, box, from, ...(inSpam ? { inSpam: true } : {}), subject: h.subject ?? '', date: new Date(Number(m.internalDate)).toISOString(), slug: match?.slug ?? null, kind: site ? 'site-form' : k, messageId: h['message-id'] ?? null, text: text.slice(0, 4000) };
+      const r = { id, threadId: m.threadId, box, from, ...(inSpam ? { inSpam: true } : {}), subject: h.subject ?? '', date: new Date(Number(m.internalDate)).toISOString(), slug: match?.slug ?? (paid ? (text.match(/^Slug: *([a-z0-9-]+)/m)?.[1] ?? null) : null), kind: paid ? 'payment' : site ? 'site-form' : k, messageId: h['message-id'] ?? null, text: text.slice(0, 4000) };
       if (r.kind === 'no' && !site) {
         const email = address(from);
         const domain = !FREE_MAIL.test(email) ? email.split('@')[1] : undefined;
@@ -99,7 +100,7 @@ async function main() {
   const abLine = `Subject test: ${ab.join(', ')}.`;
   if (!fresh.length) { console.log(`No new replies. ${abLine}`); return; }
   for (const r of fresh) {
-    console.log(`\n### ${r.kind === 'no' ? 'NO (added to do-not-contact)' : r.kind === 'bounce' ? 'BOUNCE' : r.kind === 'site-form' ? 'SITE FORM (hot lead)' : 'REPLY'}${r.inSpam ? ' (was in the spam folder)' : ''}: ${r.from} → ${r.box}${r.slug ? ` (preview: ${r.slug})` : ''}\nSubject: ${r.subject}\n${r.date}\n\n${r.text.split(/\n(On .+wrote:|-----Original Message-----)/)[0].trim().slice(0, 1500)}`);
+    console.log(`\n### ${r.kind === 'no' ? 'NO (added to do-not-contact)' : r.kind === 'bounce' ? 'BOUNCE' : r.kind === 'payment' ? 'PAYMENT (launch the site)' : r.kind === 'site-form' ? 'SITE FORM (hot lead)' : 'REPLY'}${r.inSpam ? ' (was in the spam folder)' : ''}: ${r.from} → ${r.box}${r.slug ? ` (preview: ${r.slug})` : ''}\nSubject: ${r.subject}\n${r.date}\n\n${r.text.split(/\n(On .+wrote:|-----Original Message-----)/)[0].trim().slice(0, 1500)}`);
   }
   console.log(`\n${fresh.length} new: ${fresh.filter((r) => r.kind === 'reply').length} replies, ${fresh.filter((r) => r.kind === 'no').length} no, ${fresh.filter((r) => r.kind === 'bounce').length} bounces. Commit leads/replies.json and do-not-contact.json.\n${abLine}`);
 }

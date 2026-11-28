@@ -60,7 +60,7 @@ export default {
         // Count the "Make it live" click for the dashboard (from the form's own fields, before it is read).
         const f = await request.clone().formData().catch(() => null);
         const slug = String(f?.get('site') ?? '').replace(/[^a-z0-9-]/g, '').slice(0, 80);
-        if (slug && !/TEST by Claude/.test(String(f?.get('business') ?? '')) && !/(?:^|;\s*)nss_owner=1/.test(request.headers.get('cookie') ?? '')) ctx?.waitUntil(record(env, 'm', slug, { plan: String(f.get('plan') ?? '').slice(0, 10) }).catch(() => {}));
+        if (slug && !/TEST by Claude/.test(String(f?.get('business') ?? '')) && !/(?:^|;\s*)nss_owner=1/.test(request.headers.get('cookie') ?? '')) ctx?.waitUntil(record(env, 'm', slug, { plan: String(f.get('plan') ?? '').slice(0, 10), domain: String(f.get('domain') ?? '').trim().toLowerCase().replace(/^https?:\/\//, '').replace(/\/.*$/, '').slice(0, 80), email: String(f.get('email') ?? '').trim().slice(0, 100) }).catch(() => {}));
         return makeItLive(request, env);
       }
       // Alon's own visits never count: previews opened from the dashboard carry ?me=1 (which also marks

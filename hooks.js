@@ -9,6 +9,8 @@
 // KV keys: c:<10-digit number> completed calls (metadata c, f, l, vm, missed, in), r:<number> incoming rings (c, f, l), s:<number> texts (c, f, l, last),
 //          $:<event id> payments (type, amt, cur, slug, sub, at), S:<subscription id> subscriptions (status, slug, at).
 
+import { notify } from './forms.js';
+
 const digits = (n) => String(n ?? '').replace(/\D/g, '').slice(-10);
 
 const b64 = (buf) => btoa(String.fromCharCode(...new Uint8Array(buf)));
@@ -112,15 +114,30 @@ export async function paypalHook(request, env) {
   await diag(env, 'paypal', 'accepted', request, ev.event_type ?? null);
   const r = ev.resource ?? {};
   const at = ev.create_time ?? new Date().toISOString();
+  // A new customer (monthly plan signed up, or $299 paid): email Alon's inbox a "Payment received" note with
+  // the preview and their domain (from their "Make it live" form), so the reply check launches the site.
+  const tellAlon = async (slug, plan, amount) => {
+    let m = slug ? (await env.EVENTS.getWithMetadata(`m:${slug}`)).metadata : null;
+    if (!slug) { // a $299 payment link carries no slug: take the latest "Make it live" for Own it in the last 2 hours
+      const list = await env.EVENTS.list({ prefix: 'm:' });
+      const recent = list.keys.filter((k) => k.metadata?.plan === 'own' && Date.now() - Date.parse(k.metadata?.l ?? 0) < 2 * 3600e3)
+        .sort((a, b) => String(b.metadata.l).localeCompare(String(a.metadata.l)))[0];
+      if (recent) { slug = recent.name.slice(2); m = recent.metadata; }
+    }
+    await notify(env, { subject: `Payment received: ${slug ?? 'unknown preview'} (${plan}${amount ? `, $${amount}` : ''})`,
+      text: `A customer paid.\n\nPlan: ${plan}\nPreview: ${slug ? `https://neonsignsites.com/p/${slug}/` : '(not known: check PayPal)'}\nSlug: ${slug ?? ''}\nDomain: ${m?.domain || '(none given)'}\nCustomer email: ${m?.email || '(see PayPal)'}\nPayPal event: ${ev.event_type} ${ev.id}\n\nNext: launch the site (npm run launch) and send them the domain email.` }).catch(() => {});
+  };
   if (ev.event_type?.startsWith('BILLING.SUBSCRIPTION.')) {
     const status = ev.event_type.replace('BILLING.SUBSCRIPTION.', '').toLowerCase();
     const old = (await env.EVENTS.getWithMetadata(`S:${r.id}`)).metadata ?? {};
     await env.EVENTS.put(`S:${r.id}`, '', { metadata: { ...old, status, slug: r.custom_id ?? old.slug ?? null, at, email: r.subscriber?.email_address?.slice(0, 80) ?? old.email ?? null } });
+    if (status === 'activated' && old.status !== 'activated') await tellAlon(r.custom_id ?? old.slug ?? null, 'Monthly', null);
   } else if (['PAYMENT.SALE.COMPLETED', 'PAYMENT.CAPTURE.COMPLETED', 'PAYMENT.SALE.REFUNDED', 'PAYMENT.CAPTURE.REFUNDED'].includes(ev.event_type)) {
     const amt = Number(r.amount?.total ?? r.amount?.value ?? 0) * (/REFUNDED/.test(ev.event_type) ? -1 : 1);
     const sub = r.billing_agreement_id ?? null;
     const slug = r.custom_id ?? (sub ? (await env.EVENTS.getWithMetadata(`S:${sub}`)).metadata?.slug : null) ?? null;
     await env.EVENTS.put(`$:${ev.id}`, '', { metadata: { type: sub ? 'monthly' : 'own', amt, cur: r.amount?.currency ?? r.amount?.currency_code ?? 'USD', slug, sub, at } });
+    if (!sub && ev.event_type === 'PAYMENT.CAPTURE.COMPLETED') await tellAlon(slug, 'Own it', amt);
   }
   return new Response('ok');
 }

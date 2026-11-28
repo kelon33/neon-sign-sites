@@ -2,6 +2,9 @@
 // Sends Alon's approved answer to a reply, from the mailbox that got it, in the same email thread,
 // so he never has to sign in to the six mailboxes.
 //   npm run answer -- --reply <id from leads/replies.json> --file <answer.txt> [--dry]
+//   npm run answer -- --customer <slug> --to <their email> --file <connect-email.txt> [--dry]
+//       a new customer's email (e.g. the domain steps from npm run launch), from the mailbox that first
+//       emailed them, in that same thread.
 // Only after Alon approved the exact text (CLAUDE.md). The signature is added from config.json sender.
 
 import { readFile, writeFile } from 'node:fs/promises';
@@ -31,7 +34,23 @@ async function main() {
   const config = await json(path.join(root, 'config.json'), {});
   const file = path.join(root, 'leads', 'replies.json');
   const store = await json(file, { replies: [] });
-  const r = store.replies.find((x) => x.id === arg('reply'));
+  let r = store.replies.find((x) => x.id === arg('reply'));
+  if (arg('customer')) {
+    // A paying customer: answer in the thread of our first email to them.
+    const sent = await json(path.join(root, 'leads', 'sent.json'), []);
+    const first = sent.find((x) => x.slug === arg('customer') && x.kind !== 'followup');
+    if (!first) throw new Error(`No email to ${arg('customer')} in leads/sent.json.`);
+    if (!arg('to')) throw new Error('--to <their email> is required with --customer.');
+    let messageId = null;
+    if (!args.includes('--dry')) {
+      const tok = await (await fetch('https://oauth2.googleapis.com/token', { method: 'POST', headers: { 'content-type': 'application/x-www-form-urlencoded' },
+        body: new URLSearchParams({ client_id: process.env.NEON_GMAIL_CLIENT_ID, client_secret: process.env.NEON_GMAIL_CLIENT_SECRET, refresh_token: process.env[tokenVar(first.from)] ?? '', grant_type: 'refresh_token' }) })).json();
+      const m = await (await fetch(`https://gmail.googleapis.com/gmail/v1/users/me/messages/${first.messageId}?format=metadata&metadataHeaders=Message-ID`, { headers: { authorization: `Bearer ${tok.access_token}` } })).json();
+      messageId = m.payload?.headers?.find((h) => h.name.toLowerCase() === 'message-id')?.value ?? null;
+    }
+    r = { id: `customer-${first.slug}`, kind: 'customer', box: first.from, from: arg('to'), subject: first.subject, threadId: first.threadId, messageId, slug: first.slug };
+    store.replies.push(r);
+  }
   if (!r) throw new Error('No such reply in leads/replies.json (--reply <id>).');
   if (r.kind === 'no' || r.kind === 'bounce') throw new Error(`That message is a "${r.kind}": never answer it.`);
   const text = (await readFile(arg('file'), 'utf8')).trim();
