@@ -45,3 +45,5 @@
 - neonsignsites.co email DNS is complete (MX, SPF, DKIM, DMARC p=none, no rua). Our Cloudflare token covers only .com and .net.
 - Decided: no inbox-placement seed test and no Instantly API for now; revisit when the reply numbers come in (about 150 emails; near 0% replies would point at spam).
 - Not now (Alon): separate .com mailbox; receipts setup.
+- **Daily list moved (Alon, 2026-11-28):** the daily list run now fires into the builder chat (`trig_018XQnPonED8vNfBAUKhEjSg`, 5:37 ET / 12:37 Israel), sends Alon a push itself and waits for "go" there. The hidden-session task `trig_016zFxSADCoihHr8BUxxe3QE` is disabled (its sessions could not push). Today's list of 30 sits unpushed in session_019BJDWtDAdRfffTrCy3tCrY: if it is re-planned elsewhere, check leads/sent.json first so no email goes out twice.
+- Fresh-session tasks (reply check, preview builder) now start with add_repo (push) so their commits reach main.
