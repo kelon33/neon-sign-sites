@@ -268,8 +268,9 @@
   "checked": "2026-11-28"
  },
  "em.hillcountrypdr.com": {
-  "ok": true,
-  "checked": "2026-11-28"
+  "ok": false,
+  "checked": "2026-11-28",
+  "note": "Mailgun sending subdomain: mail to it is likely never read"
  },
  "evergreenoutdoorservicestx.com": {
   "ok": true,
