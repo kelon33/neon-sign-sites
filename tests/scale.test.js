@@ -179,3 +179,10 @@ test('batch pick: an email another preview already uses is skipped', async () =>
   assert.equal(pick([lead], { built: new Set(['email:info@shared.com']) }).length, 0);
   assert.equal(pick([lead]).length, 1);
 });
+
+test('leadScore: a small busy owner-run business beats a huge one with no photos', async () => {
+  const { leadScore } = await import('../pipeline/batch.mjs');
+  const good = { reviews: 60, rating: 4.9, email: 'mike@gmail.com', reasons: ['no tap-to-call link'] };
+  const weak = { reviews: 900, rating: 4.1, email: 'info@x.com', emailNote: 'differs', reasons: ['no photos'] };
+  assert.ok(leadScore(good) > leadScore(weak));
+});

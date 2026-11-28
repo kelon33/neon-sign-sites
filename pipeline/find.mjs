@@ -174,6 +174,15 @@ export function pickEmail(html, website) {
   const found = new Set();
   // Decoded and trimmed: a link like mailto:%20info@x.com must not give "%20info@x.com".
   const clean = (e) => { try { e = decodeURIComponent(e); } catch { /* keep as is */ } return e.trim().toLowerCase().replace(/^[^a-z0-9]+/, '').replace(/[^a-z0-9._+@-].*$/, ''); }; // ends at page code stuck to it (&quot;...)
+  // Cloudflare's email protection hides addresses as hex (data-cfemail / #email-protection-…): decode them.
+  for (const m of html.matchAll(/(?:data-cfemail=["']|email-protection#)([0-9a-f]{6,})/gi)) {
+    const h = m[1]; const k = parseInt(h.slice(0, 2), 16); let e = '';
+    for (let i = 2; i < h.length; i += 2) e += String.fromCharCode(parseInt(h.slice(i, i + 2), 16) ^ k);
+    if (e.includes('@')) found.add(clean(e));
+  }
+  // Written out to dodge spam bots: "name [at] domain [dot] com", "name(at)domain.com".
+  for (const m of html.replace(/<[^>]+>/g, ' ').matchAll(/\b([a-z0-9._%+-]+)\s*[\[(]\s*at\s*[\])]\s*([a-z0-9-]+(?:\s*(?:[\[(]\s*dot\s*[\])]|\.)\s*[a-z0-9-]+)+)\b/gi))
+    found.add(clean(`${m[1]}@${m[2].replace(/\s*(?:[\[(]\s*dot\s*[\])]|\.)\s*/gi, '.')}`));
   for (const m of html.matchAll(/mailto:([^"'?\s>]+)/gi)) found.add(clean(m[1]));
   for (const m of html.matchAll(/[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}/gi)) found.add(clean(m[0]));
   // Font licences embedded in the page ("Copyright 2016 The Cabin Project Authors (impallari@gmail.com)")
@@ -256,11 +265,15 @@ export async function checkSite(lead, browser) {
     const reasons = weaknesses(home.html, { url: home.url, ms: home.ms });
     let mail = pickEmail(home.html, home.url);
     if (!mail.email || mail.emailNote) {
-      const contact = home.html.match(/href=["']([^"']*contact[^"']*)["']/i)?.[1] ?? home.html.match(/href=["']([^"']*about[^"']*)["']/i)?.[1];
-      if (contact) {
-        const page = await get(new URL(contact, home.url).href, browser).catch(() => null);
+      // Up to 3 more pages: their contact, about and quote pages (linked, else the usual paths).
+      const linked = (re) => [...home.html.matchAll(/href=["']([^"'#]+)["']/gi)].map((m) => m[1]).find((h) => re.test(h) && !/^(mailto|tel):/i.test(h));
+      const pages = [...new Set([linked(/contact/i) ?? '/contact', linked(/about/i) ?? '/about', linked(/quote|estimate|book/i)].filter(Boolean)
+        .map((h) => { try { return new URL(h, home.url).href; } catch { return null; } }).filter((u) => u && new URL(u).hostname === new URL(home.url).hostname))].slice(0, 3);
+      for (const u of pages) {
+        const page = await get(u, browser).catch(() => null);
         const better = page?.ok ? pickEmail(page.html, home.url) : null;
         if (better?.email && (!mail.email || !better.emailNote)) mail = better;
+        if (mail.email && !mail.emailNote) break;
       }
     }
     const better = reasons.length ? [] : improvements(home.html, { ms: home.ms });

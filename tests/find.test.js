@@ -143,3 +143,10 @@ test('pickEmail: page code stuck to a mailto is cut off, placeholders are droppe
   const html = '<a href="mailto:mobile.speed.detailing@gmail.com&quot;],&quot;type&quot;:[0">x</a> john@doe.com unsubscriberequest@constantcontact.com';
   assert.equal(pickEmail(html, 'https://mobilespeed.com').email, 'mobile.speed.detailing@gmail.com');
 });
+
+test('pickEmail: Cloudflare-protected and written-out addresses are found', () => {
+  // "joe@joeslawn.com" encoded with key 0x42
+  const key = 0x42; const hex = key.toString(16) + [...'joe@joeslawn.com'].map((c) => (c.charCodeAt(0) ^ key).toString(16).padStart(2, '0')).join('');
+  assert.equal(pickEmail(`<a href="/cdn-cgi/l/email-protection#${hex}">email</a>`, 'https://joeslawn.com').email, 'joe@joeslawn.com');
+  assert.equal(pickEmail('<p>Write to office [at] joeslawn [dot] com</p>', 'https://joeslawn.com').email, 'office@joeslawn.com');
+});

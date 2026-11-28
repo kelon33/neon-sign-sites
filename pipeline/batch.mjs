@@ -30,6 +30,21 @@ const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 export const slugify = (s) => s.toLowerCase().replace(/['’]/g, '').replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
 const KINDS = { weak: 'weak site', decent: 'decent site' };
 
+/** How promising a lead is, within its kind (weak or decent site): a busy but small business with a
+ *  good rating, an owner who reads the address, and a site with photos of their work scores highest. */
+export function leadScore(l) {
+  const n = l.reviews ?? 0, r = l.rating ?? 0, found = [...(l.reasons ?? []), ...(l.improvements ?? [])].join(' | ');
+  let s = 0;
+  s += n >= 15 && n <= 150 ? 3 : n >= 5 && n < 15 ? 1 : n > 150 && n <= 400 ? 1 : 0; // big operations often have a marketing person already
+  s += r >= 4.7 ? 2 : r >= 4.5 ? 1 : r && r < 4.2 ? -2 : 0;
+  if (/@(gmail|yahoo|hotmail|outlook|aol|icloud|live|msn|comcast|att|ymail|sbcglobal)\./i.test(l.email ?? '')) s += 1; // the owner's own inbox
+  else if (/^(info|contact|office|hello|sales|support|admin|service)@/i.test(l.email ?? '')) s += 0;
+  else if (l.email) s += 1; // a named address at their domain
+  if (l.emailNote) s -= 3; // an address on another domain: may not be theirs
+  if (/no photos/.test(found)) s -= 2; else if (/only \d+ photos?/.test(found)) s -= 1; // the photo pitch is weaker
+  return s;
+}
+
 /** The leads to build, in order. `built` holds the slugs and place IDs already in demos/. */
 export function pick(leads, { count = 5, kinds = ['weak site', 'decent site'], built = new Set(), dnc = [], trade = '' } = {}) {
   const ok = leads.filter((l) => l.email && !JUNK_EMAIL.test(l.email) && (l.trade ?? '').toLowerCase().includes(trade.toLowerCase()) && kitFor(l.trade) && !TEST_TRADES.has(l.trade) && kinds.includes(l.kind) && !blocked(l, dnc) && !CHAINS.test(l.name ?? '') && !CHAINS.test(l.website ?? '')
@@ -38,7 +53,7 @@ export function pick(leads, { count = 5, kinds = ['weak site', 'decent site'], b
   for (const kind of kinds) {
     // Trades in turn, so a batch is not all lawn or all detailing.
     const queues = Object.values(Object.groupBy(ok.filter((l) => l.kind === kind), (l) => kitFor(l.trade)))
-      .map((q) => q.sort((a, b) => (b.reviews ?? 0) - (a.reviews ?? 0)));
+      .map((q) => q.sort((a, b) => leadScore(b) - leadScore(a) || (b.reviews ?? 0) - (a.reviews ?? 0)));
     while (out.length < count && queues.some((q) => q.length)) for (const q of queues) if (q.length && out.length < count) out.push(q.shift());
   }
   return out;
