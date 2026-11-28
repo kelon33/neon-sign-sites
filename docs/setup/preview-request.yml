@@ -1,0 +1,64 @@
+# A preview request from the neonsignsites.com form, done at once (Alon, 2026-11-28): no approval, no batch.
+# Started by the Worker (forms.js → repository_dispatch "preview-request") the moment the form is sent.
+# Builds the preview (pipeline/inbound.mjs), pushes it live, emails them; anything it can't do goes to Alon.
+# Repository secrets (Settings → Secrets and variables → Actions): NEON_ANTHROPIC_API_KEY,
+# NEON_GOOGLE_PLACES_API_KEY, NEON_GMAIL_CLIENT_ID, NEON_GMAIL_CLIENT_SECRET, NEON_GMAIL_TOKEN_ALON_NET.
+name: Preview request
+on:
+  repository_dispatch:
+    types: [preview-request]
+concurrency:
+  group: preview-request
+  cancel-in-progress: false
+permissions:
+  contents: write
+jobs:
+  build-and-send:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    env:
+      INBOUND: ${{ toJson(github.event.client_payload) }}
+      NEON_ANTHROPIC_API_KEY: ${{ secrets.NEON_ANTHROPIC_API_KEY }}
+      NEON_GOOGLE_PLACES_API_KEY: ${{ secrets.NEON_GOOGLE_PLACES_API_KEY }}
+      NEON_GMAIL_CLIENT_ID: ${{ secrets.NEON_GMAIL_CLIENT_ID }}
+      NEON_GMAIL_CLIENT_SECRET: ${{ secrets.NEON_GMAIL_CLIENT_SECRET }}
+      NEON_GMAIL_TOKEN_ALON_NET: ${{ secrets.NEON_GMAIL_TOKEN_ALON_NET }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      # Playwright is preinstalled in the cloud sessions, not a dependency: same version here.
+      - run: npm i --no-save playwright@1.63.0 && npx playwright install --with-deps chromium
+      - name: Build the preview
+        id: build
+        run: |
+          set +e
+          node pipeline/inbound.mjs --build
+          code=$?
+          echo "code=$code" >> "$GITHUB_OUTPUT"
+          [ -f outbox/inbound-slug.txt ] && echo "slug=$(cat outbox/inbound-slug.txt)" >> "$GITHUB_OUTPUT"
+          exit 0
+      - name: Publish it (a push to main goes live in about a minute)
+        if: steps.build.outputs.code == '0'
+        run: |
+          git config user.name "neon-preview-bot"
+          git config user.email "alon@neonsignsites.net"
+          git add demos leads/found-inbound.json leads/places-usage.json
+          git commit -m "Preview request: ${{ steps.build.outputs.slug }} (built automatically from the site form)"
+          for i in 1 2 3 4; do git pull --rebase origin main && git push origin HEAD:main && break; sleep $((i * 5)); done
+      - name: Email them
+        if: steps.build.outputs.code == '0'
+        run: |
+          node pipeline/inbound.mjs --send "${{ steps.build.outputs.slug }}"
+          git add leads/sent.json
+          git commit -m "Preview request: emailed ${{ steps.build.outputs.slug }}"
+          for i in 1 2 3 4; do git pull --rebase origin main && git push origin HEAD:main && break; sleep $((i * 5)); done
+      - name: Anything that went wrong goes to Alon
+        if: failure() || steps.build.outputs.code != '0'
+        run: |
+          node pipeline/inbound.mjs --tell-alon
+          git add leads/found-inbound.json leads/places-usage.json 2>/dev/null || true
+          git diff --cached --quiet || { git config user.name "neon-preview-bot"; git config user.email "alon@neonsignsites.net"; git commit -m "Preview request: needs Alon"; git pull --rebase origin main && git push origin HEAD:main; }
