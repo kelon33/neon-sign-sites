@@ -82,7 +82,7 @@ export function refuse(e, { approved, sent, dnc, mailboxes, config, replies = []
   return null;
 }
 
-async function accessToken(address) {
+export async function accessToken(address) {
   const refresh = process.env[tokenVar(address)];
   if (!refresh) throw new Error(`No ${tokenVar(address)} in the environment.`);
   const r = await fetch('https://oauth2.googleapis.com/token', {

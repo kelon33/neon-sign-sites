@@ -322,7 +322,7 @@ async function nextCities(n, tradeKeys) {
   return picked;
 }
 
-async function searchPage(key, textQuery, pageToken) {
+export async function searchPage(key, textQuery, pageToken) {
   const res = await fetch('https://places.googleapis.com/v1/places:searchText', {
     method: 'POST',
     headers: { 'Content-Type': 'application/json', 'X-Goog-Api-Key': key, 'X-Goog-FieldMask': FIELD_MASK },

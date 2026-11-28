@@ -57,7 +57,8 @@ async function main() {
   // A place ID picks one exact listing; a name can match several (one business, many listings).
   const leads = (await findLead(query)).filter((l) => !arg('place') || l.placeId === query);
   if (!leads.length) throw new Error(`No lead matches "${query}" in leads/.`);
-  lead = leads.find((l) => l.website && l.email) ?? leads[0];
+  // A request from the site's form wins over the same business found by a search (its email is theirs).
+  lead = leads.find((l) => l.source === 'form') ?? leads.find((l) => l.website && l.email) ?? leads[0];
   if (leads.length > 1) console.log(`(${leads.length} matches; using ${lead.name})`);
   const dnc = JSON.parse(await readFile(path.join(root, 'do-not-contact.json'), 'utf8')).entries;
   const no = blocked(lead, dnc);

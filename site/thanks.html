@@ -44,7 +44,8 @@
 <script>
   const q = new URLSearchParams(location.search);
   const t = document.getElementById('t-title'), p = document.getElementById('t-text');
-  if (q.get('for') === 'preview') { t.textContent = "We're on it."; p.textContent = "We'll build your free preview and email you a private link, usually within two business days. Keep an eye on your inbox (and spam folder)."; }
+  if (q.get('for') === 'preview-fast') { t.textContent = "We're building it now."; p.textContent = "Your free preview is being built from your current site. We'll email you a private link, usually within 15 minutes. Keep an eye on your inbox (and spam folder)."; }
+  else if (q.get('for') === 'preview') { t.textContent = "We're on it."; p.textContent = "We'll build your free preview and email you a private link, usually within two business days. Keep an eye on your inbox (and spam folder)."; }
   if (q.get('for') === 'paid') { t.textContent = "You're in. Thank you!"; p.textContent = "Your payment is set up. Within one business day we'll email you two easy ways to connect your domain: do it yourself in 5 minutes, or let us do it for you."; }
   if (q.get('for') === 'go') { t.textContent = 'Almost live!'; p.textContent = "We'll email you a secure payment link within one business day. Once that's done, we'll send two easy ways to connect your domain: do it yourself in 5 minutes, or let us do it for you."; }
 </script>

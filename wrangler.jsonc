@@ -14,7 +14,9 @@
     "MAIL_FROM": "Neon Sign Sites <hello@neonsignsites.com>",
     "NOTIFY_TO": "alon@neonsignsites.com",
     "PAYPAL_MONTHLY_URL": "/subscribe",
-    "PAYPAL_OWN_URL": "https://www.paypal.com/ncp/payment/8BEKHHQQHC7SN"
+    "PAYPAL_OWN_URL": "https://www.paypal.com/ncp/payment/8BEKHHQQHC7SN",
+    // Preview requests are built by a GitHub Action in this repository (forms.js startBuild; secret GITHUB_DISPATCH_TOKEN).
+    "GITHUB_REPO": "kelon33/neon-sign-sites"
   },
   // Preview visits and "Make it live" clicks for the dashboard (events.js). Created by Alon, 2026-11-27.
   "kv_namespaces": [{ "binding": "EVENTS", "id": "42bf638324ae44659d2d9dd1d2f753dd" }],

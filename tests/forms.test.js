@@ -53,3 +53,15 @@ test('previews lead to the make-it-live page; live sites do not', async () => {
   assert.match(renderSite(d), /minimum 2 paid months/);
   assert.doesNotMatch(renderSite({ ...d, preview: false }), /neonsignsites\.com\/go\?/);
 });
+
+test('preview request: starts the GitHub build at once and promises the link within 15 minutes', async () => {
+  const calls = [];
+  const fetchImpl = async (url, init) => { calls.push({ url, body: JSON.parse(init.body) }); return url.includes('api.github.com') ? new Response(null, { status: 204 }) : new Response('{}', { status: 200 }); };
+  const res = await previewRequest(post({ business: 'Evergreen', website: 'evergreen.com', email: 'owner@evergreen.com' }), { ...env, GITHUB_DISPATCH_TOKEN: 't', GITHUB_REPO: 'o/r' }, fetchImpl);
+  assert.equal(res.headers.get('location'), '/thanks?for=preview-fast');
+  const gh = calls.find((c) => c.url === 'https://api.github.com/repos/o/r/dispatches');
+  assert.deepEqual(gh.body, { event_type: 'preview-request', client_payload: { business: 'Evergreen', website: 'evergreen.com', email: 'owner@evergreen.com' } });
+  // GitHub down or no token: the old way (Alon answers by hand).
+  const down = async (url) => new Response('{}', { status: url.includes('api.github.com') ? 500 : 200 });
+  assert.equal((await previewRequest(post({ business: 'E', website: 'e.com', email: 'o@e.com' }), { ...env, GITHUB_DISPATCH_TOKEN: 't', GITHUB_REPO: 'o/r' }, down)).headers.get('location'), '/thanks?for=preview');
+});

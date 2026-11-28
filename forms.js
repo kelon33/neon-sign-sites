@@ -54,12 +54,30 @@ export async function previewRequest(request, env, fetchImpl) {
   const website = clean(f.get('website'), 500);
   const email = clean(f.get('email'), 200);
   if (!business || !website || !isEmail(email)) return problem('Please fill in the business name, its website or Google listing, and a valid email.');
+  // Built and emailed at once, without approval (Alon, 2026-11-28): a GitHub Action does it
+  // (.github/workflows/preview-request.yml). Alon still gets this email as a heads-up.
+  const started = await startBuild(env, { business, website, email }, fetchImpl);
   const failed = await notify(env, {
-    subject: `Preview request: ${business}`,
-    text: `Someone asked for a free preview on neonsignsites.com.\n\nBusiness: ${business}\nWebsite or Google listing: ${website}\nEmail: ${email}\n\nReply to this email to answer them.`,
+    subject: `Preview request: ${business}${started ? ' (building it now, automatically)' : ''}`,
+    text: `Someone asked for a free preview on neonsignsites.com.\n\nBusiness: ${business}\nWebsite or Google listing: ${website}\nEmail: ${email}\n\n${started ? 'The preview is being built and will be emailed to them automatically, usually within 15 minutes. If that fails, you get a "needs you" email.' : 'Automatic building is not set up or did not start: reply to this email to answer them.'}`,
     replyTo: email,
   }, fetchImpl);
-  return failed ? problem("Our form isn't working right now.", failed) : redirect('/thanks?for=preview');
+  if (failed && !started) return problem("Our form isn't working right now.", failed);
+  return redirect(started ? '/thanks?for=preview-fast' : '/thanks?for=preview');
+}
+
+/** Starts the GitHub Action that builds and sends the preview. Needs the Worker secret
+ *  GITHUB_DISPATCH_TOKEN (a fine-grained token for this repository, "Contents: read and write")
+ *  and the variable GITHUB_REPO ("owner/name"). Returns true when GitHub accepted it. */
+export async function startBuild(env, payload, fetchImpl = fetch) {
+  if (!env.GITHUB_DISPATCH_TOKEN || !env.GITHUB_REPO) return false;
+  const res = await fetchImpl(`https://api.github.com/repos/${env.GITHUB_REPO}/dispatches`, {
+    method: 'POST',
+    headers: { authorization: `Bearer ${env.GITHUB_DISPATCH_TOKEN}`, accept: 'application/vnd.github+json', 'user-agent': 'neon-sign-sites-worker', 'content-type': 'application/json' },
+    body: JSON.stringify({ event_type: 'preview-request', client_payload: payload }),
+  }).catch(() => null);
+  if (!res?.ok) console.log('GitHub dispatch failed', res?.status);
+  return !!res?.ok;
 }
 
 export async function makeItLive(request, env, fetchImpl) {

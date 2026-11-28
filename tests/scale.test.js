@@ -187,3 +187,16 @@ test('leadScore: a small busy owner-run business beats a huge one with no photos
   const weak = { reviews: 900, rating: 4.1, email: 'info@x.com', emailNote: 'differs', reasons: ['no photos'] };
   assert.ok(leadScore(good) > leadScore(weak));
 });
+
+test('inbound preview request: trade from their site, town from the address, email without a price', async () => {
+  const { tradeOf, cityOf, inboundEmail } = await import('../pipeline/inbound.mjs');
+  assert.equal(tradeOf('Hail damage and paintless dent repair, dents gone'), 'Paintless dent repair');
+  assert.equal(tradeOf('Weekly lawn mowing, mulch and landscaping for your yard'), 'Lawn care');
+  assert.equal(tradeOf('We sell insurance'), null);
+  assert.equal(cityOf('123 Main St, Tampa, FL 33604, USA'), 'Tampa, FL');
+  const { subject, body } = inboundEmail({ name: 'Joe Lawn', link: 'L', improvements: ['no tap-to-call link'], sender: { name: 'A', address: 'Addr' } });
+  assert.equal(subject, 'Your new website preview – Joe Lawn');
+  assert.match(body, /Thanks for asking\. Here's the preview of a new website for Joe Lawn:\nL/);
+  assert.match(body, /can't tap to call you/);
+  assert.doesNotMatch(body, /\$\d/);
+});
