@@ -98,7 +98,10 @@ export async function saveImage(page, src, file, { max = 1200, logo = false } = 
   if (!res?.ok()) return null;
   const type = res.headers()['content-type'] ?? 'image/jpeg';
   if (!type.startsWith('image/') || type.includes('svg')) return null;
-  const dataUrl = `data:${type};base64,${(await res.body()).toString('base64')}`;
+  // A body the page navigated away from, or bytes the browser can't decode: skip this image only.
+  const body = await res.body().catch(() => null);
+  if (!body) return null;
+  const dataUrl = `data:${type};base64,${body.toString('base64')}`;
   const out = await page.evaluate(shrinkInPage, { dataUrl, max, logo }).catch(() => null);
   if (!out) return null;
   await mkdir(path.dirname(file), { recursive: true });

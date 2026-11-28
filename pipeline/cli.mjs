@@ -18,7 +18,7 @@ const { chromium } = createRequire(import.meta.url)('playwright');
 import { scrapeSite } from './scrape.mjs';
 import { photoCandidates, logoCandidate, galleryPlan, saveImage, thumbnail, pickHero } from './photos.mjs';
 import { kitFor, detailingCopy, lawnCopy, tradeCopy, sharpenRequest, parseSharpen, callClaude, anthropicKey, verify, cleanName, splitWordmark, FACT_FIELDS } from './copy.mjs';
-import { ownReviews, HEARSAY, vehicleFocus, fixStepsTitle, townsInAlso } from './checks.mjs';
+import { ownReviews, HEARSAY, vehicleFocus, vehicleCounts, fixStepsTitle, townsInAlso } from './checks.mjs';
 import { draftEmail } from './email.mjs';
 import { blocked } from './dnc.mjs';
 import { renderSite } from '../generator/render.mjs';
@@ -95,6 +95,8 @@ async function main() {
       checks.push(`Listed as ${lead.trade}, but their site is about cars: built as mobile car detailing.`);
       lead.trade = 'Mobile car detailing';
     } else if (kit === 'detailing' && /boat/i.test(lead.trade) && vehicleFocus(text) === 'both') {
+      // Mostly cars: a neutral label, so the kicker, title and footer don't say "Boat detailing".
+      if (vehicleCounts(text).cars >= vehicleCounts(text).boats) lead.trade = 'Mobile detailing';
       // Cars and boats (often more cars): the preview shows the work they do, not only the boats.
       lead.note = 'We found them by searching for boat detailing, but they detail cars and other vehicles too. Show the work they actually do: their real photos of any vehicle are good gallery and hero photos, and their car services belong in the services.';
       checks.push('Details cars and boats (found by a boat search): the AI was told to show all their work.');
@@ -106,7 +108,8 @@ async function main() {
       const file = path.join(out, 'img', `photo-${photos.length + 1}.jpg`);
       const saved = await saveImage(tool, c.src, file);
       // Small files (icons, textures behind a big box) are dropped once their real size is known.
-      if (saved && Math.max(saved.w, saved.h) >= 600 && Math.min(saved.w, saved.h) >= 380) photos.push({ file, rel: `img/photo-${photos.length + 1}.jpg`, ...saved, alt: c.alt });
+      // The saved copy must decode again for the AI's thumbnail, or one bad image stops the build.
+      if (saved && Math.max(saved.w, saved.h) >= 600 && Math.min(saved.w, saved.h) >= 380 && await thumbnail(tool, file).then(() => true, () => false)) photos.push({ file, rel: `img/photo-${photos.length + 1}.jpg`, ...saved, alt: c.alt });
     }
     console.log(`${photos.length} photos`);
     logo = null;
@@ -210,6 +213,18 @@ async function main() {
         checks.push('Logo dropped: Claude saw it is not theirs (a badge, a client\'s or their web designer\'s). The header shows the name only.');
       }
       if (r.notes) checks.push(`Claude's notes: ${r.notes}`);
+      // Not their trade, or a franchise: no preview, and no batch builds it again.
+      if (r.fit && r.fit !== 'yes') {
+        const reason = r.fit === 'franchise' ? 'franchise location (Claude)' : `does not do ${lead.trade} itself (Claude): ${String(r.notes ?? '').slice(0, 160)}`;
+        const fs = await import('node:fs/promises');
+        const file = path.join(root, 'leads', 'rejected.json');
+        const rej = JSON.parse(await fs.readFile(file, 'utf8').catch(() => '[]'));
+        rej.push({ placeId: lead.placeId, name: lead.name, slug, reason, date: new Date().toISOString().slice(0, 10), auto: true });
+        await fs.writeFile(file, JSON.stringify(rej, null, 1) + '\n');
+        await fs.rm(out, { recursive: true, force: true });
+        console.log(`✗ Not built: ${lead.name}, ${reason}. Added to leads/rejected.json.`);
+        return;
+      }
       const u = ai.usage;
       // A Message Batch costs half (Sonnet 5.5: $2 in / $10 out per million tokens, $1 / $5 in a batch).
       const price = (model.startsWith('claude-haiku') ? [0.10, 0.50] : [2, 10]).map((p) => (viaBatch ? p / 2 : p));

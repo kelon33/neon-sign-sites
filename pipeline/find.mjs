@@ -173,7 +173,7 @@ export function pickEmail(html, website) {
   const site = hostOf(website);
   const found = new Set();
   // Decoded and trimmed: a link like mailto:%20info@x.com must not give "%20info@x.com".
-  const clean = (e) => { try { e = decodeURIComponent(e); } catch { /* keep as is */ } return e.trim().toLowerCase().replace(/^[^a-z0-9]+/, ''); };
+  const clean = (e) => { try { e = decodeURIComponent(e); } catch { /* keep as is */ } return e.trim().toLowerCase().replace(/^[^a-z0-9]+/, '').replace(/[^a-z0-9._+@-].*$/, ''); }; // ends at page code stuck to it (&quot;...)
   for (const m of html.matchAll(/mailto:([^"'?\s>]+)/gi)) found.add(clean(m[1]));
   for (const m of html.matchAll(/[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}/gi)) found.add(clean(m[0]));
   // Font licences embedded in the page ("Copyright 2016 The Cabin Project Authors (impallari@gmail.com)")

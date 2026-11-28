@@ -138,3 +138,8 @@ test('noSiteReason keeps businesses with no site of their own, enough reviews, n
   assert.equal(noSiteReason(p({ displayName: { text: 'Lawn Doctor of Waco' } })), null);
   assert.equal(noSiteReason(p(), { known: new Set(['x']) }), null);
 });
+
+test('pickEmail: page code stuck to a mailto is cut off, placeholders are dropped', () => {
+  const html = '<a href="mailto:mobile.speed.detailing@gmail.com&quot;],&quot;type&quot;:[0">x</a> john@doe.com unsubscriberequest@constantcontact.com';
+  assert.equal(pickEmail(html, 'https://mobilespeed.com').email, 'mobile.speed.detailing@gmail.com');
+});

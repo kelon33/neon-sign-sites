@@ -53,11 +53,16 @@ export function ownReviews(reviews = [], pages = []) {
 export const HEARSAY = /\b(customers|clients|reviewers|people) (say|said|call|rave|love)\b|according to (our )?(customers|clients|reviews)|reviews (say|mention)/i;
 
 /** What a detailer's site is about: 'boats', 'cars' or 'both' (a boat search finds car detailers too). */
-export function vehicleFocus(text = '') {
+export function vehicleCounts(text = '') {
   const t = text.toLowerCase();
   const count = (re) => (t.match(re) ?? []).length;
-  const boats = count(/\b(boats?|marine|yachts?|vessels?|pontoons?|hulls?|gel ?coat|watercraft|jet skis?)\b/g);
-  const cars = count(/\b(cars?|vehicles?|trucks?|suvs?|sedans?|automotive|auto)\b/g);
+  return {
+    boats: count(/\b(boats?|marine|yachts?|vessels?|pontoons?|hulls?|gel ?coat|watercraft|jet skis?)\b/g),
+    cars: count(/\b(cars?|vehicles?|trucks?|suvs?|sedans?|automotive|auto)\b/g),
+  };
+}
+export function vehicleFocus(text = '') {
+  const { boats, cars } = vehicleCounts(text);
   if (boats < 3 && cars >= 3) return 'cars';
   if (cars < boats / 4) return 'boats';
   return 'both';

@@ -167,3 +167,8 @@ test('wording library: a line naming someone else (a person, a region) is not re
   assert.equal(out.whyTitle, 'Why us.');
   assert.equal(out.servicesIntro, 'Kit intro.');
 });
+
+test('vehicleCounts: counts car and boat words', async () => {
+  const { vehicleCounts } = await import('../pipeline/checks.mjs');
+  assert.deepEqual(vehicleCounts('Cars, trucks and boats. Boat detailing. Car wash.'), { boats: 2, cars: 3 });
+});
