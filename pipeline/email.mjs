@@ -61,6 +61,12 @@ export function compose({ opening, ownList, link, photoPitch, sender }) {
   return `Hi,\n\n${opening}\n\n${built}\n\n${signature(sender)}\n\nNot interested? Reply "no" and I won't email you again.`;
 }
 
+/** The one follow-up (FOLLOWUP_DAYS after the first email, only when there was no reaction at all), in the same thread. */
+export const FOLLOWUP_DAYS = 4;
+export function followupBody({ name, link, sender }) {
+  return `Hi,\n\nJust checking you saw the new website I built for ${name}:\n${link}\n\nIt can be live this week, and I'm happy to change anything first. Want me to put it live?\n\n${signature(sender)}\n\nNot interested? Reply "no" and I won't email you again.`;
+}
+
 /** Subject lines under test (A/B by replies): A says what it is, B reads like a personal note. */
 export function subjectFor(variant, { name, domain }) {
   return variant === 'B' ? `Quick question about ${domain || name}` : `${name} – new website (preview)`;

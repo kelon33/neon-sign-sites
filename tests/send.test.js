@@ -69,3 +69,32 @@ test('an answer goes in the same thread, as a reply', async () => {
   assert.match(raw, /Subject: Re: Quick question about x\.com/);
   assert.match(raw, /In-Reply-To: <abc@mail\.gmail\.com>\r\nReferences: <abc@mail\.gmail\.com>/);
 });
+
+test('address check: a domain recorded without a mail server is left out of the plan', async () => {
+  const { plan } = await import('../pipeline/queue.mjs');
+  const { noMail } = await import('../pipeline/mx.mjs');
+  const mx = { 'deadco.com': { ok: false }, 'liveco.com': { ok: true } };
+  assert.equal(noMail('a@deadco.com', mx), true);
+  assert.equal(noMail('a@liveco.com', mx), false);
+  assert.equal(noMail('a@unchecked.com', mx), false);
+  const ready = [{ slug: 'dead', to: 'a@deadco.com', name: 'Dead' }, { slug: 'live', to: 'b@liveco.com', name: 'Live' }];
+  const { out, skipped } = plan({ ready, sent: [], dnc: [], mx, mailboxes: [{ address: 'alon@neonsignsites.net', start: '2026-11-27', daily: { first: 3, step: 2 }, max: 10 }], day: '2026-11-28' });
+  assert.deepEqual(out.map((o) => o.slug), ['live']);
+  assert.match(skipped.join(), /no mail server/);
+});
+
+test('follow-up: one, same thread, only after 4 days with no reaction', async () => {
+  const { dueFollowups } = await import('../pipeline/queue.mjs');
+  const first = (slug, date) => ({ slug, to: `${slug}@x.com`, from: 'alon@neonsignsites.net', date, subject: 'S', messageId: 'm' + slug, threadId: 't' + slug });
+  const sent = [first('old', '2026-11-27'), first('new', '2026-11-30'), first('replied', '2026-11-27'), first('done', '2026-11-27'), { ...first('done', '2026-12-01'), kind: 'followup' }];
+  const due = dueFollowups({ sent, replies: [{ slug: 'replied', kind: 'reply' }], dnc: [], day: '2026-12-01' });
+  assert.deepEqual(due.map((d) => d.slug), ['old']);
+  const { refuse, hash } = await import('../pipeline/send.mjs');
+  const text = 'To: old@x.com\nSubject: Re: S\n\nHi\n\n6421 N. Florida Ave\n\nNot interested? Reply "no" and I won\'t email you again.\n';
+  const e = { n: 1, kind: 'followup', slug: 'old', name: 'Old', to: 'old@x.com', from: 'alon@neonsignsites.net', text };
+  const ctx = { approved: { skip: [], hashes: { 1: hash(text) } }, sent, dnc: [], replies: [], mailboxes: [{ address: 'alon@neonsignsites.net', start: '2026-11-27', daily: { first: 3, step: 2 }, max: 10 }], config: { sender: { address: '6421 N. Florida Ave' } }, day: '2026-12-01' };
+  assert.equal(refuse(e, ctx), null);
+  assert.match(refuse(e, { ...ctx, replies: [{ slug: 'old', kind: 'no' }] }), /reacted/);
+  assert.match(refuse({ ...e, slug: 'done', to: 'done@x.com' }, ctx), /already followed up/);
+  assert.match(refuse({ ...e, kind: undefined }, ctx), /already emailed/);
+});

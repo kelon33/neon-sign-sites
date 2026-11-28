@@ -44,11 +44,12 @@ export function parseDraft(text) {
 const header = (s) => (/^[\x20-\x7e]*$/.test(s) ? s : `=?UTF-8?B?${Buffer.from(s).toString('base64')}?=`);
 
 /** A plain-text email, as Gmail's API takes it (base64url of the whole message). */
-export function mime({ from, fromName, to, subject, body }) {
+export function mime({ from, fromName, to, subject, body, inReplyTo }) {
   const msg = [
     `From: ${header(fromName)} <${from}>`,
     `To: ${to}`,
     `Subject: ${header(subject)}`,
+    ...(inReplyTo ? [`In-Reply-To: ${inReplyTo}`, `References: ${inReplyTo}`] : []),
     `List-Unsubscribe: <mailto:${from}?subject=unsubscribe>`,
     'MIME-Version: 1.0',
     'Content-Type: text/plain; charset=UTF-8',
@@ -60,7 +61,7 @@ export function mime({ from, fromName, to, subject, body }) {
 }
 
 /** Why this email must not go out now, or null. */
-export function refuse(e, { approved, sent, dnc, mailboxes, config, day = today() }) {
+export function refuse(e, { approved, sent, dnc, mailboxes, config, replies = [], day = today() }) {
   if (!approved) return 'the list is not approved';
   if ((approved.skip ?? []).includes(e.n)) return 'skipped by Alon';
   if (approved.hashes?.[e.n] !== hash(e.text)) return 'its text changed after approval';
@@ -68,7 +69,12 @@ export function refuse(e, { approved, sent, dnc, mailboxes, config, day = today(
   const box = mailboxes.find((b) => b.address === e.from);
   if (!box) return `${e.from} is not a sending mailbox in config.json`;
   if (sent.filter((s) => s.from === e.from && s.date === day).length >= dailyLimit(box, day)) return `${e.from} reached today's limit`;
-  if (sent.some((s) => s.slug === e.slug || s.to?.toLowerCase() === e.to.toLowerCase())) return 'already emailed (one email per business)';
+  if (e.kind === 'followup') {
+    // The one follow-up: only after a first email, never twice, and only while there is still no reaction.
+    if (!sent.some((s) => s.slug === e.slug && s.kind !== 'followup')) return 'no first email to follow up';
+    if (sent.some((s) => s.slug === e.slug && s.kind === 'followup')) return 'already followed up';
+    if ((replies ?? []).some((r) => r.slug === e.slug)) return 'they reacted since (reply, no, bounce or form)';
+  } else if (sent.some((s) => s.slug === e.slug || s.to?.toLowerCase() === e.to.toLowerCase())) return 'already emailed (one first email per business)';
   if (blocked({ email: e.to, name: e.name }, dnc)) return 'on the do-not-contact list';
   if (JUNK_EMAIL.test(e.to)) return `${e.to} is not their address (a font licence or placeholder)`;
   if (!config.sender?.address || !e.text.includes(config.sender.address)) return 'no postal address in the email';
@@ -92,10 +98,17 @@ async function accessToken(address) {
 async function gmailSend(e, fromName) {
   const { to, subject, body } = parseDraft(e.text);
   if (to.toLowerCase() !== e.to.toLowerCase()) throw new Error(`${e.slug}: To: line and plan disagree.`);
+  const token = await accessToken(e.from);
+  let inReplyTo = null;
+  if (e.kind === 'followup' && e.firstMessageId) {
+    // The first email's Message-ID header, so the follow-up lands in the same thread on their side too.
+    const m = await (await fetch(`https://gmail.googleapis.com/gmail/v1/users/me/messages/${e.firstMessageId}?format=metadata&metadataHeaders=Message-ID`, { headers: { authorization: `Bearer ${token}` } })).json();
+    inReplyTo = m.payload?.headers?.find((h) => h.name.toLowerCase() === 'message-id')?.value ?? null;
+  }
   const r = await fetch('https://gmail.googleapis.com/gmail/v1/users/me/messages/send', {
     method: 'POST',
-    headers: { authorization: `Bearer ${await accessToken(e.from)}`, 'content-type': 'application/json' },
-    body: JSON.stringify({ raw: mime({ from: e.from, fromName, to, subject, body }) }),
+    headers: { authorization: `Bearer ${token}`, 'content-type': 'application/json' },
+    body: JSON.stringify({ raw: mime({ from: e.from, fromName, to, subject, body, inReplyTo }), ...(e.kind === 'followup' && e.threadId ? { threadId: e.threadId } : {}) }),
   });
   const j = await r.json().catch(() => ({}));
   if (!r.ok) throw new Error(`Gmail refused ${e.slug} from ${e.from}: ${r.status} ${j.error?.message ?? ''}`);
@@ -124,6 +137,7 @@ async function main() {
   const config = await json(path.join(root, 'config.json'), {});
   const mailboxes = config.sending?.mailboxes ?? [];
   const dnc = (await json(path.join(root, 'do-not-contact.json'), { entries: [] })).entries;
+  const replies = async () => (await json(path.join(root, 'leads', 'replies.json'), { replies: [] })).replies ?? [];
   const dry = args.includes('--dry');
   const [lo, hi] = (arg('gap') ?? '120-300').split('-').map(Number);
   let sentNow = 0;
@@ -142,7 +156,7 @@ async function main() {
     let mine = 0;
     for (const e of list) {
       const tz = e.tz ?? 'America/New_York';
-      const pre = await exclusive(async () => refuse(e, { approved: outbox.approved, sent: await json(SENT, []), dnc, mailboxes, config, day: outbox.date }));
+      const pre = await exclusive(async () => refuse(e, { approved: outbox.approved, sent: await json(SENT, []), dnc, mailboxes, config, replies: await replies(), day: outbox.date }));
       if (pre) { console.log(`#${e.n} ${e.slug}: not sent (${pre}).`); continue; }
       if (e.link && !(await opens(e.link))) { console.log(`#${e.n} ${e.slug}: not sent (the preview ${e.link} does not open).`); continue; }
       if (dry) { console.log(`#${e.n} ${e.slug}: would send to ${e.to} from ${e.from} (${tz}: ${windowState(tz)}).`); continue; }
@@ -151,10 +165,10 @@ async function main() {
       if (windowState(tz) === 'late') { console.log(`#${e.n} ${e.slug}: not sent (after 17:00 their time; it goes on the next list).`); continue; }
       await exclusive(async () => {
         const sent = await json(SENT, []);
-        const no = refuse(e, { approved: outbox.approved, sent, dnc, mailboxes, config, day: outbox.date }); // re-check right before sending
+        const no = refuse(e, { approved: outbox.approved, sent, dnc, mailboxes, config, replies: await replies(), day: outbox.date }); // re-check right before sending
         if (no) { console.log(`#${e.n} ${e.slug}: not sent (${no}).`); return; }
         const r = await gmailSend(e, config.sender.name);
-        sent.push({ date: outbox.date, slug: e.slug, to: e.to, from: e.from, variant: e.variant ?? null, subject: r.subject, messageId: r.id, threadId: r.threadId, sentAt: new Date().toISOString() });
+        sent.push({ date: outbox.date, slug: e.slug, to: e.to, from: e.from, ...(e.kind === 'followup' ? { kind: 'followup' } : {}), variant: e.variant ?? null, subject: r.subject, messageId: r.id, threadId: r.threadId, sentAt: new Date().toISOString() });
         await writeFile(SENT, JSON.stringify(sent, null, 1) + '\n');
         sentNow++; mine++;
         console.log(`#${e.n} ${e.slug}: sent to ${e.to} from ${e.from}.`);

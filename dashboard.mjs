@@ -14,7 +14,9 @@ const day = (iso) => (iso ? new Date(iso).toLocaleDateString('en-CA', { timeZone
 /** Every business we emailed (or that wrote in through the site), with its status. Exported for tests. */
 export function pipeline({ sent, replies, dnc, names = {} }) {
   const rows = new Map();
-  for (const s of sent) rows.set(s.slug, { slug: s.slug, name: names[s.slug] ?? s.slug, to: s.to, from: s.from, variant: s.variant ?? null, sentOn: day(s.sentAt ?? s.date), status: 'cold', last: null });
+  const followed = new Set();
+  for (const s of sent.filter((x) => x.kind === 'followup')) followed.add(s.slug);
+  for (const s of sent.filter((x) => x.kind !== 'followup')) rows.set(s.slug, { slug: s.slug, name: names[s.slug] ?? s.slug, to: s.to, from: s.from, variant: s.variant ?? null, sentOn: day(s.sentAt ?? s.date), status: 'cold', last: null });
   const rank = { 'site-form': 5, reply: 4, no: 2, bounce: 1 };
   for (const r of replies) {
     if (!r.slug) continue;
@@ -27,6 +29,7 @@ export function pipeline({ sent, replies, dnc, names = {} }) {
   for (const row of rows.values()) {
     if (row.status === 'cold' && dnc.some((e) => e.email && row.to && e.email.toLowerCase() === row.to.toLowerCase())) row.status = 'no';
   }
+  for (const r of rows.values()) r.followedUp = followed.has(r.slug);
   return [...rows.values()];
 }
 
@@ -80,7 +83,7 @@ export async function buildDashboard(root) {
   const open = (slug) => `<a class="open" href="/p/${esc(slug)}/?me=1" target="_blank" rel="noopener">Preview ↗</a><small>neonsignsites.com/p/${esc(slug)}/</small>`;
   const quote = (r) => r?.text ? `<q>${esc(r.text.split(/\n(On .+wrote:|-----Original Message-----)/)[0].trim().slice(0, 220))}</q>` : '';
   const table = (list) => list.length ? `<table><thead><tr><th>Business</th><th>Preview</th><th>Status</th><th>Opened</th><th>Calls / texts</th><th>Emailed</th><th>From</th><th>Subj.</th></tr></thead><tbody>${list.map((r) =>
-    `<tr class="${esc(r.status)}" data-slug="${esc(r.slug)}"><td>${preview(r.slug)}<small>${esc(r.to ?? '')}</small></td><td>${open(r.slug)}</td><td><span class="tag ${esc(r.status)}">${esc(label[r.status])}</span></td><td class="opened">–</td><td class="calls">–</td><td>${esc(r.sentOn ?? '')}</td><td>${esc((r.from ?? '').replace('@neonsignsites.', ' @ .'))}</td><td>${esc(r.variant ?? '–')}</td></tr>`).join('')}</tbody></table>` : '<p class="muted">Nothing here yet.</p>';
+    `<tr class="${esc(r.status)}" data-slug="${esc(r.slug)}"><td>${preview(r.slug)}<small>${esc(r.to ?? '')}</small></td><td>${open(r.slug)}</td><td><span class="tag ${esc(r.status)}">${esc(label[r.status])}</span></td><td class="opened">–</td><td class="calls">–</td><td>${esc(r.sentOn ?? '')}${r.followedUp ? '<small>+ follow-up</small>' : ''}</td><td>${esc((r.from ?? '').replace('@neonsignsites.', ' @ .'))}</td><td>${esc(r.variant ?? '–')}</td></tr>`).join('')}</tbody></table>` : '<p class="muted">Nothing here yet.</p>';
   const order = { 'hot-form': 0, 'hot-reply': 1, cold: 2, no: 3, bounced: 4 };
   const all = [...rows].sort((a, b) => order[a.status] - order[b.status] || String(b.sentOn).localeCompare(String(a.sentOn)));
   // Every time on the dashboard is Israel time (Alon's), whatever the device's own time zone.
