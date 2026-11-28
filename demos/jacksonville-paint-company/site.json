@@ -1,0 +1,132 @@
+{
+  "kit": "painting",
+  "trade": "House painting",
+  "name": "Jacksonville Paint Company",
+  "legalName": "Jacksonville Paint Company",
+  "preview": true,
+  "placeId": "ChIJ-W8CxfS35YgRrUjR52dVTS4",
+  "title": "Jacksonville Paint Company | House painting in Jacksonville, FL",
+  "description": "Interior and exterior painting for homes and businesses in Jacksonville. Walls, cabinets, decks and popcorn ceiling removal, with the prep done right. 5.0 on Google from 54 reviews.",
+  "logo": null,
+  "logoChip": false,
+  "wordmark": {
+    "top": "Jacksonville",
+    "bottom": "Paint Company"
+  },
+  "phone": "(904) 867-2801",
+  "email": "hello@jacksonvillepaintcompany.com",
+  "heroPosition": "60% 60%",
+  "heroPositionPhone": "60% 50%",
+  "rating": {
+    "score": "5.0",
+    "count": 54,
+    "url": "https://maps.google.com/?cid=3336416803710650541"
+  },
+  "kicker": "House painting · Jacksonville",
+  "headline": "Clean walls.<br><em>Family-built finish.</em>",
+  "intro": "Interior and exterior painting for homes and businesses in Jacksonville. Walls, cabinets, decks and popcorn ceiling removal, with the prep done right.",
+  "badges": [
+    "Homes and businesses"
+  ],
+  "highlights": null,
+  "servicesTitle": "Inside and out.",
+  "servicesIntro": "One room, a custom home or a commercial space.",
+  "services": [
+    {
+      "name": "Interior painting",
+      "text": "Walls and living spaces painted with careful detail, from accent walls to soothing neutrals."
+    },
+    {
+      "name": "House painting",
+      "text": "Color palette help and a finished look for your whole home, one room or the entire house."
+    },
+    {
+      "name": "Commercial painting",
+      "text": "Offices, retail spaces, restaurants and hotels painted to match your brand."
+    },
+    {
+      "name": "Popcorn ceiling removal",
+      "text": "Remove the popcorn texture so the room feels more open and modern."
+    },
+    {
+      "name": "Cabinet painting",
+      "text": "Custom cabinet painting that brings outdated cabinets back to life."
+    },
+    {
+      "name": "Deck painting",
+      "text": "Decks and pergolas painted for a space you can enjoy outdoors."
+    }
+  ],
+  "also": [
+    {
+      "name": "Homes"
+    },
+    {
+      "name": "Offices"
+    },
+    {
+      "name": "Retail spaces"
+    },
+    {
+      "name": "Restaurants"
+    },
+    {
+      "name": "Hotels"
+    },
+    {
+      "name": "Pergolas"
+    }
+  ],
+  "alsoTitle": "We also do:",
+  "promise": null,
+  "why": [
+    {
+      "name": "Thorough prep",
+      "text": "Every job starts with surface cleaning, patching and priming, so the paint goes on right."
+    },
+    {
+      "name": "Quality materials",
+      "text": "They use high-quality paints and materials built for a lasting finish."
+    },
+    {
+      "name": "Satisfaction guarantee",
+      "text": "The goal is customers who are 100% satisfied with the results."
+    }
+  ],
+  "whyTitle": "Why Jacksonville Paint Company.",
+  "howTitle": "A fresh coat in three steps.",
+  "steps": [
+    {
+      "name": "Free estimate",
+      "text": "Tell us about the job. We look it over and give you a quote."
+    },
+    {
+      "name": "We do the work",
+      "text": "The crew arrives on schedule, and you get daily updates your way."
+    },
+    {
+      "name": "Final look",
+      "text": "We finish every detail so you are satisfied with the result."
+    }
+  ],
+  "contactTitle": "Ready for a fresh coat?",
+  "footerLine": "House painting in Jacksonville",
+  "reviews": [],
+  "hours": [
+    "Mon–Sat: 8:00 AM – 6:00 PM",
+    "Sun: Closed"
+  ],
+  "galleryTitle": "Homes we’ve painted.",
+  "notePlaceholder": "Inside or outside, how many rooms, a date you have in mind…",
+  "gallery": [],
+  "areas": [
+    "Jacksonville"
+  ],
+  "siteCheck": {
+    "reasons": [],
+    "improvements": [
+      "no reviews on the site"
+    ]
+  },
+  "pitch": "photos"
+}

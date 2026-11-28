@@ -1,0 +1,9 @@
+- Hero uses a portrait photo, cropped: check it looks good.
+- No hero photo: Claude found none of their photos usable.
+- Photo pitch: only 0 usable photos by Claude's choice, so no gallery; the email asks them for photos of their work.
+- Claude's notes: Only photo is a logo graphic, so no hero or gallery photos. Only one review on site. No hours or prices listed. Site address shows zip 32707, which looks wrong for Nashville.
+- Dropped review by Charisma Biyani: not in their own pages (added by a script, likely a Google widget).
+- No photos at all: the hero has no picture. Find photos by hand.
+- Only 0 gallery photos.
+- No reviews on the site: the page shows the Google rating only.
+- Hero is a licensed stock photo for the trade (credited on the page, see generator/assets/CREDITS.md), not their work: swap in their own photo once they send one.

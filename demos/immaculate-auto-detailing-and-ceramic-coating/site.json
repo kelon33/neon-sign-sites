@@ -1,0 +1,134 @@
+{
+ "kit": "detailing",
+ "trade": "Mobile car detailing",
+ "name": "Immaculate Auto Detailing and Ceramic Coating",
+ "legalName": "Immaculate Auto Detailing and Ceramic Coating",
+ "preview": true,
+ "placeId": "ChIJkceLNpymkmAR3rY7_o-lnJA",
+ "title": "Immaculate Auto Detailing and Ceramic Coating | Mobile car detailing in North Las Vegas, NV",
+ "description": "Mobile detailing and ceramic coating, brought to your home, office or approved spot across the Las Vegas valley. We arrive with our own water and power, and you pay after the work is done. 4.8 on Google from 155 reviews.",
+ "brand": "#1670ff",
+ "brandHi": "#52c6ff",
+ "accent": "#8fd0ff",
+ "logo": null,
+ "logoChip": false,
+ "wordmark": {
+  "top": "Immaculate",
+  "bottom": "Auto Detailing"
+ },
+ "phone": "(702) 580-6168",
+ "email": "immaculateautodetailinglv@gmail.com",
+ "heroImage": null,
+ "heroAlt": "",
+ "heroPosition": "60% 60%",
+ "heroPositionPhone": "60% 50%",
+ "rating": {
+  "score": "4.8",
+  "count": 155,
+  "url": "https://maps.google.com/?cid=10420385675692717790"
+ },
+ "kicker": "Mobile car detailing · North Las Vegas, NV",
+ "headline": "Showroom shine.<br><em>Wherever you are.</em>",
+ "intro": "Mobile detailing and ceramic coating, brought to your home, office or approved spot across the Las Vegas valley. We arrive with our own water and power, and you pay after the work is done.",
+ "mobile": {
+  "title": "Your driveway is our shop.",
+  "intro": "We bring the detail to you, so your day keeps moving.",
+  "points": [
+   {
+    "name": "At your door",
+    "text": "Home, workplace, apartment or condo, or any approved location in the valley."
+   },
+   {
+    "name": "Fully equipped",
+    "text": "We bring our own water, power and pro equipment. No hookups needed."
+   },
+   {
+    "name": "Seven days a week",
+    "text": "Appointments are available from 7am."
+   },
+   {
+    "name": "Pay after service",
+    "text": "No deposit and no upfront payment. You pay in full once the work is done."
+   }
+  ]
+ },
+ "servicesTitle": "Inside, outside, and everything that shines.",
+ "servicesIntro": "Prices start at the amounts shown and depend on vehicle size: small, medium or large.",
+ "services": [
+  {
+   "name": "Intermediate interior detail",
+   "text": "Thorough vacuum, steam clean, leather and plastics conditioned, dog hair removal, windows and door jambs.",
+   "price": "from $150"
+  },
+  {
+   "name": "Deep Interior Cleaning",
+   "text": "Everything in Intermediate, plus hot water extraction upholstery shampoo and stain removal.",
+   "price": "from $210"
+  },
+  {
+   "name": "Immaculate Showroom Detail",
+   "text": "Interior and exterior: seats and carpets shampooed, clay bar, paint polish, engine bay, headlights and machine wax.",
+   "price": "from $375"
+  },
+  {
+   "name": "Paint correction",
+   "text": "Swirl and scratch removal to bring back clarity in your paint.",
+   "price": "from $250"
+  },
+  {
+   "name": "Ceramic coating",
+   "text": "Multi-year protection from 1 to 8 years, with paint polish and trim coating included.",
+   "price": "from $450"
+  }
+ ],
+ "also": [],
+ "alsoTitle": "Not just cars:",
+ "why": [
+  {
+   "name": "Built for desert heat",
+   "text": "Coatings and products chosen to hold up to Las Vegas sun and 115° summers."
+  },
+  {
+   "name": "Spot-free finish",
+   "text": "Careful drying and protection against hard-water spotting."
+  },
+  {
+   "name": "Warranty on coatings",
+   "text": "Every ceramic coating package includes a warranty."
+  }
+ ],
+ "whyTitle": "The detail is in the name.",
+ "howTitle": "A clean vehicle in three steps.",
+ "steps": [
+  {
+   "name": "Tell us about your car",
+   "text": "Call, text or send the form: your vehicle, the service and where it's parked."
+  },
+  {
+   "name": "We pull up",
+   "text": "We arrive on time at your home or office, with everything we need."
+  },
+  {
+   "name": "You get the keys back",
+   "text": "To a car that looks, and smells, brand new."
+  }
+ ],
+ "contactTitle": "Book your detail.",
+ "footerLine": "Mobile car detailing in North Las Vegas",
+ "reviews": [],
+ "hours": [
+  "Seven days a week, appointments from 7am"
+ ],
+ "galleryTitle": "Fresh off the driveway.",
+ "gallery": [],
+ "areas": [
+  "North Las Vegas"
+ ],
+ "siteCheck": {
+  "reasons": [],
+  "improvements": [
+   "only 3 photos"
+  ]
+ },
+ "pitch": "photos"
+}

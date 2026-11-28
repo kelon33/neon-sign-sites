@@ -1,0 +1,149 @@
+{
+ "kit": "detailing",
+ "trade": "Mobile car detailing",
+ "name": "Candodetails Mobile",
+ "legalName": "Candodetails Mobile",
+ "preview": true,
+ "placeId": "ChIJf7XAIrjr9YYRaRBr860HPPQ",
+ "title": "Candodetails Mobile | Mobile car detailing in Boerne, TX",
+ "description": "Mobile detailing for cars, RVs, boats and aircraft around San Antonio and Boerne. We come to you, and we stay until the job is done. 4.8 on Google from 94 reviews.",
+ "brand": "#1670ff",
+ "brandHi": "#52c6ff",
+ "accent": "#8fd0ff",
+ "logo": null,
+ "logoChip": false,
+ "wordmark": {
+  "top": "Candodetails",
+  "bottom": "Mobile"
+ },
+ "phone": "(830) 309-8822",
+ "email": "candodetails52@gmail.com",
+ "heroImage": null,
+ "heroAlt": "",
+ "heroPosition": "60% 60%",
+ "heroPositionPhone": "60% 50%",
+ "rating": {
+  "score": "4.8",
+  "count": 94,
+  "url": "https://maps.google.com/?cid=17598949887551672425"
+ },
+ "kicker": "Mobile car detailing · Boerne, TX",
+ "headline": "Showroom shine,<br><em>at your driveway.</em>",
+ "intro": "Mobile detailing for cars, RVs, boats and aircraft around San Antonio and Boerne. We come to you, and we stay until the job is done.",
+ "mobile": {
+  "title": "Your driveway is our shop.",
+  "intro": "We bring the detail to your home, apartment or office, and work until it's just right.",
+  "points": [
+   {
+    "name": "We come to you",
+    "text": "Mobile detailing across the greater San Antonio and Boerne areas."
+   },
+   {
+    "name": "On schedule",
+    "text": "Each job is finished on schedule, and we show up when we say we will."
+   },
+   {
+    "name": "Kept informed",
+    "text": "We explain the work, including the parts you might not know to ask about."
+   },
+   {
+    "name": "Easy to book",
+    "text": "Call or text 830-309-8822 to set up your appointment."
+   }
+  ]
+ },
+ "servicesTitle": "Inside, outside, and everything that shines.",
+ "servicesIntro": "From a deep interior clean to multi-stage paint correction, with high-quality products for every surface.",
+ "services": [
+  {
+   "name": "Express Detail",
+   "text": "A 3 hour detail that gets your car clean and looking sharp.",
+   "price": "$190"
+  },
+  {
+   "name": "Complete Auto Detail",
+   "text": "A full 4 hour detail of paint, interior and wheels, with deep cleaning of every nook and cranny.",
+   "price": "$240"
+  },
+  {
+   "name": "2-year Ceramic",
+   "text": "A ceramic coating that protects your paint from the elements.",
+   "price": "$375"
+  },
+  {
+   "name": "5-year Ceramic",
+   "text": "Our longest-lasting ceramic coating for your paint.",
+   "price": "$600"
+  },
+  {
+   "name": "Graphene Coating",
+   "text": "One year of paint protection in a 2 hour service.",
+   "price": "$199"
+  },
+  {
+   "name": "Headlights Repair",
+   "text": "Cloudy, worn headlights restored.",
+   "price": "$35 a pair"
+  }
+ ],
+ "also": [
+  {
+   "name": "RVs"
+  },
+  {
+   "name": "Boats"
+  },
+  {
+   "name": "Aircraft"
+  }
+ ],
+ "alsoTitle": "Not just cars:",
+ "why": [
+  {
+   "name": "Honest and reliable",
+   "text": "We build trust at every step and keep you informed along the way."
+  },
+  {
+   "name": "Finished on schedule",
+   "text": "Each project is completed on time and to a high standard of quality."
+  },
+  {
+   "name": "Personal service",
+   "text": "Competitive rates and a focus on customer satisfaction."
+  }
+ ],
+ "whyTitle": "The detail is in the name.",
+ "howTitle": "Book it. We show up. You drive off shining.",
+ "steps": [
+  {
+   "name": "Request a consultation",
+   "text": "Call or fill out the form. Consultations are free."
+  },
+  {
+   "name": "Get your quote",
+   "text": "We price by your vehicle's size, condition and needs."
+  },
+  {
+   "name": "Pick up your car",
+   "text": "Detailed, protected and ready for the big reveal."
+  }
+ ],
+ "contactTitle": "Book your detail.",
+ "footerLine": "Mobile car detailing in Boerne",
+ "reviews": [],
+ "hours": [],
+ "galleryTitle": "Fresh off the driveway.",
+ "gallery": [],
+ "areas": [
+  "Boerne"
+ ],
+ "siteCheck": {
+  "reasons": [],
+  "improvements": [
+   "no tap-to-call link",
+   "no quote or booking form",
+   "no reviews on the site"
+  ]
+ },
+ "pitch": "photos"
+}

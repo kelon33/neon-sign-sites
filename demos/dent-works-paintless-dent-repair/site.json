@@ -1,0 +1,101 @@
+{
+ "kit": "detailing",
+ "trade": "Paintless dent repair",
+ "name": "Dent Works Paintless Dent Repair",
+ "legalName": "Dent Works Paintless Dent Repair",
+ "preview": true,
+ "placeId": "ChIJHxF5PhtzToYRt3NFg7l4ZJw",
+ "title": "Dent Works Paintless Dent Repair | Paintless dent repair in Fort Worth, TX",
+ "description": "Paintless dent repair in Fort Worth since June 1995. Hail damage, door dings and minor dents worked out by hand, so the factory paint stays. 4.9 on Google from 117 reviews.",
+ "brand": "#1670ff",
+ "brandHi": "#52c6ff",
+ "accent": "#8fd0ff",
+ "logo": null,
+ "logoChip": false,
+ "wordmark": {
+  "top": "Dent Works",
+  "bottom": "Paintless Dent Repair"
+ },
+ "phone": "(817) 735-4746",
+ "email": "dentworksdfw@gmail.com",
+ "heroImage": null,
+ "heroAlt": "",
+ "heroPosition": "60% 60%",
+ "heroPositionPhone": "60% 50%",
+ "rating": {
+  "score": "4.9",
+  "count": 117,
+  "url": "https://maps.google.com/?cid=11269264905754473399"
+ },
+ "kicker": "Paintless dent repair · Fort Worth",
+ "headline": "Your car's dents.<br><em>Gone. Paint untouched.</em>",
+ "intro": "Paintless dent repair in Fort Worth since June 1995. Hail damage, door dings and minor dents worked out by hand, so the factory paint stays.",
+ "mobile": null,
+ "servicesTitle": "Everything your car needs.",
+ "servicesIntro": "From a single door ding to a full hail storm.",
+ "services": [
+  {
+   "name": "Hail damage",
+   "text": "Hail dents removed without repainting, so the original finish stays on your vehicle."
+  },
+  {
+   "name": "Door dings",
+   "text": "Dings massaged back out with specialized tools, with no paint damage."
+  },
+  {
+   "name": "Minor dents",
+   "text": "Small dents gently worked out of the metal without breaking the paint."
+  }
+ ],
+ "also": [],
+ "alsoTitle": "We also fix",
+ "why": [
+  {
+   "name": "Established in 1995",
+   "text": "Serving Fort Worth since June 1995, formerly Precision Dent Repair."
+  },
+  {
+   "name": "Factory paint stays",
+   "text": "PDR repairs the metal without breaking or damaging the paint, which protects your resale value."
+  },
+  {
+   "name": "Guaranteed and free to quote",
+   "text": "All work is 100% guaranteed, and estimates are free."
+  }
+ ],
+ "whyTitle": "Why Dent Works Paintless Dent Repair",
+ "howTitle": "Back to like new in three steps.",
+ "steps": [
+  {
+   "name": "Send the details",
+   "text": "Call, or use the form with your year, make, model and photos of the damage."
+  },
+  {
+   "name": "Get an evaluation",
+   "text": "Bring the vehicle in and we look at the hail damage, dings or film options."
+  },
+  {
+   "name": "Drive it smooth",
+   "text": "We work the dents out and hand the vehicle back."
+  }
+ ],
+ "contactTitle": "Got hail damage?",
+ "footerLine": "Paintless dent repair in Fort Worth",
+ "reviews": [],
+ "hours": [],
+ "galleryTitle": "Dents gone, paint untouched.",
+ "notePlaceholder": "Where the dent is, how big, hail or a door ding…",
+ "ctaLabel": "Get an estimate",
+ "gallery": [],
+ "areas": [
+  "Fort Worth"
+ ],
+ "siteCheck": {
+  "reasons": [
+   "not mobile-friendly",
+   "Weebly"
+  ],
+  "improvements": []
+ },
+ "pitch": "photos"
+}

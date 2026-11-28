@@ -1,0 +1,130 @@
+{
+ "kit": "painting",
+ "trade": "House painting",
+ "name": "Infinity Painting",
+ "legalName": "Infinity Painting",
+ "preview": true,
+ "placeId": "ChIJAbcA55Vasg8RojSulOSOwvs",
+ "title": "Infinity Painting | House painting in San Antonio, TX",
+ "description": "Interior and exterior painting for homes, businesses and multi-family properties in San Antonio. Drywall, cabinets and remodeling too. 5.0 on Google from 87 reviews.",
+ "logo": null,
+ "logoChip": false,
+ "wordmark": {
+  "top": "Infinity",
+  "bottom": "Painting"
+ },
+ "phone": "(210) 726-4735",
+ "email": "infinitypainting26@gmail.com",
+ "heroImage": null,
+ "heroAlt": "",
+ "heroPosition": "60% 60%",
+ "heroPositionPhone": "60% 50%",
+ "rating": {
+  "score": "5.0",
+  "count": 87,
+  "url": "https://maps.google.com/?cid=18141219361399911586"
+ },
+ "kicker": "House painting · San Antonio",
+ "headline": "Fresh paint.<br><em>Honest work.</em>",
+ "intro": "Interior and exterior painting for homes, businesses and multi-family properties in San Antonio. Drywall, cabinets and remodeling too.",
+ "badges": [
+  "Homes and businesses"
+ ],
+ "highlights": null,
+ "servicesTitle": "Inside and out.",
+ "servicesIntro": "One room or the whole house. Every estimate is free and flat.",
+ "services": [
+  {
+   "name": "Interior and exterior painting",
+   "text": "Residential and commercial painting, inside and out."
+  },
+  {
+   "name": "Drywall repair and installation",
+   "text": "Walls fixed or built new, ready for paint."
+  },
+  {
+   "name": "Cabinet refinishing and painting",
+   "text": "Cabinets refinished and painted for a fresh look."
+  },
+  {
+   "name": "Pressure washing and surface preparation",
+   "text": "Surfaces cleaned and prepped before the first coat."
+  },
+  {
+   "name": "Remodeling services",
+   "text": "Flooring, trim and finish carpentry, tailored to your needs."
+  }
+ ],
+ "also": [
+  {
+   "name": "Commercial properties"
+  },
+  {
+   "name": "Multi-family properties"
+  },
+  {
+   "name": "Apartment communities"
+  },
+  {
+   "name": "Texture matching"
+  },
+  {
+   "name": "Subcontracting and project support"
+  }
+ ],
+ "alsoTitle": "We also do:",
+ "promise": null,
+ "why": [
+  {
+   "name": "Projects of all sizes",
+   "text": "From single-family homes to large commercial developments and apartment communities."
+  },
+  {
+   "name": "Trained team",
+   "text": "A highly trained and experienced workforce focused on quality, safety and professionalism."
+  },
+  {
+   "name": "On time, within budget",
+   "text": "A network of licensed, experienced subcontractors adds the manpower and flexibility to hit your schedule."
+  }
+ ],
+ "whyTitle": "Why homeowners call us.",
+ "howTitle": "A fresh coat in three steps.",
+ "steps": [
+  {
+   "name": "Ask for a free estimate",
+   "text": "Call or use the form to tell us about your project."
+  },
+  {
+   "name": "Plan the job",
+   "text": "We go over the work, colors and timing with you."
+  },
+  {
+   "name": "Enjoy the new look",
+   "text": "We paint, and aim to finish on time and on budget."
+  }
+ ],
+ "contactTitle": "Ready for a fresh coat?",
+ "footerLine": "House painting in San Antonio",
+ "reviews": [
+  {
+   "text": "Infinity Painting exceeded our expectations. The team was professional, punctual and delivered outstanding quality from star to finish. We couldn't be happier with the results and highly recommend their services.",
+   "name": "Tania F."
+  }
+ ],
+ "hours": [],
+ "galleryTitle": "Homes we’ve painted.",
+ "notePlaceholder": "Inside or outside, how many rooms, a date you have in mind…",
+ "gallery": [],
+ "areas": [
+  "San Antonio"
+ ],
+ "siteCheck": {
+  "reasons": [
+   "Weebly",
+   "no domain of its own"
+  ],
+  "improvements": []
+ },
+ "pitch": "photos"
+}

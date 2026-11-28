@@ -2,6 +2,14 @@
 
 Every hand fix or rejection in a preview review, and the script change that stops it next time (rule in CLAUDE.md). Newest first.
 
+## 2026-11-28 (11 leads with recovered emails)
+
+| Problem | Previews | Cause | Script change | Status |
+|---|---|---|---|---|
+| Hull/fiberglass shop (Boat Doctors) | 1 | Search phrase matched | `fit` check rejected it automatically | done (worked) |
+| One lead's site returned an error page | 1 | Their site was down | The new error-page stop worked; retry later | done (worked) |
+| Hero photo kept although Claude's own note called it stock-like (Jacksonville Paint Company) | 1 | The prompt says leave stock out, but the hero pick and the note disagree | Swapped to the licensed stock hero by hand. Open: when the notes say the hero is stock-like, use no hero photo automatically | open |
+
 ## 2026-11-28 (24 leads left from found-2026-11-27)
 
 | Problem | Previews | Cause | Script change | Status |

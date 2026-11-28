@@ -1,0 +1,9 @@
+- Found by a search in Waco, TX, but their address is in Fort Worth, TX: the site uses that. Check their service area.
+- No logo found: the header shows the name only.
+- No hero photo: Claude found none of their photos usable.
+- Photo pitch: only 0 usable photos by Claude's choice, so no gallery; the email asks them for photos of their work.
+- Claude's notes: No reviews on site text. No photos were visible to evaluate, so none were selected. Site text has no prices or hours. Verify the logo image, since none was shown. Kit is detailing, but this is a PDR shop with no mobile service claimed.
+- No photos at all: the hero has no picture. Find photos by hand.
+- Only 0 gallery photos.
+- No reviews on the site: the page shows the Google rating only.
+- Hero is a licensed stock photo for the trade (credited on the page, see generator/assets/CREDITS.md), not their work: swap in their own photo once they send one.

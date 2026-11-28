@@ -1,0 +1,11 @@
+- Found by a search in San Antonio, TX, but their address is in Boerne, TX: the site uses that. Check their service area.
+- Listed as Boat detailing, but their site is about cars: built as mobile car detailing.
+- No logo found: the header shows the name only.
+- No hero photo: Claude found none of their photos usable.
+- Photo pitch: only 0 usable photos by Claude's choice, so no gallery; the email asks them for photos of their work.
+- Claude's notes: Only one review on site. Photos 1-3 are a chat-widget screenshot and flyers with text, and 4-5 are a dark, blurry, near-duplicate foam shot, so none were used. Flyer phone numbers differ (830-309-8822 vs 830-308-8822); the site lists 830-309-8822. Site says 91 reviews while Google shows 94. Prices for RV, boat and aircraft are per foot and were left out of the cards. Logo image not seen, so logoIsTheirs is assumed true. Check the 'Basic exterior' listing, which shows as Ended.
+- Dropped 1 review: a review widget (wprev) on https://www.candodetails.com/about.
+- No photos at all: the hero has no picture. Find photos by hand.
+- Only 0 gallery photos.
+- No reviews on the site: the page shows the Google rating only.
+- Hero is a licensed stock photo for the trade (credited on the page, see generator/assets/CREDITS.md), not their work: swap in their own photo once they send one.

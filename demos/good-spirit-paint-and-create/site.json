@@ -1,0 +1,128 @@
+{
+ "kit": "painting",
+ "trade": "House painting",
+ "name": "Good Spirit Paint and Create",
+ "legalName": "Good Spirit Paint and Create",
+ "preview": true,
+ "placeId": "ChIJ93p4C8lpZIgR71_wCpxEtk8",
+ "title": "Good Spirit Paint and Create | House painting in Nashville, TN",
+ "description": "Painting, staining, lime wash and plaster finishes for Nashville homes and businesses. Interior and exterior, from one bedroom to a full micro cement shower. 5.0 on Google from 48 reviews.",
+ "logo": "logo.png",
+ "logoChip": true,
+ "wordmark": {
+  "top": "Good Spirit",
+  "bottom": "Paint and Create"
+ },
+ "phone": "(615) 604-0575",
+ "email": "goodspiritpainters@gmail.com",
+ "heroImage": null,
+ "heroAlt": "",
+ "heroPosition": "60% 60%",
+ "heroPositionPhone": "60% 50%",
+ "rating": {
+  "score": "5.0",
+  "count": 48,
+  "url": "https://maps.google.com/?cid=5743853811746758639"
+ },
+ "kicker": "House painting · Nashville",
+ "headline": "Fresh paint.<br><em>Done by family.</em>",
+ "intro": "Painting, staining, lime wash and plaster finishes for Nashville homes and businesses. Interior and exterior, from one bedroom to a full micro cement shower.",
+ "badges": [
+  "Homes and businesses"
+ ],
+ "highlights": null,
+ "servicesTitle": "Inside and out.",
+ "servicesIntro": "One room, a custom home or a commercial space.",
+ "services": [
+  {
+   "name": "Interior and Exterior Painting",
+   "text": "High quality painting for both residential and commercial spaces."
+  },
+  {
+   "name": "Plaster / Lime Wash",
+   "text": "Lime wash and plaster finishes that look striking and are non-toxic."
+  },
+  {
+   "name": "Staining",
+   "text": "Staining for all wood surfaces, including decks, fences and trim work."
+  },
+  {
+   "name": "Color and Paint Consultation",
+   "text": "Talk through color, paint grades and application before the first brush touches the wall."
+  },
+  {
+   "name": "Custom Painting / Design",
+   "text": "Stripes, faux finishes, patterns and murals."
+  },
+  {
+   "name": "Restoration / Historical",
+   "text": "Historically accurate restoration of old finishes."
+  }
+ ],
+ "also": [
+  {
+   "name": "Cedar restoration"
+  },
+  {
+   "name": "Furniture refinishing"
+  },
+  {
+   "name": "Venetian plaster"
+  },
+  {
+   "name": "Roman clay"
+  },
+  {
+   "name": "Micro cement"
+  }
+ ],
+ "alsoTitle": "We also do:",
+ "promise": null,
+ "why": [
+  {
+   "name": "Born in restoration",
+   "text": "Owners Tyler and Beau met on a 1920s home restoration in 2017, where shortcuts were not an option and details mattered."
+  },
+  {
+   "name": "Clear communication",
+   "text": "They review the space, listen to your vision and explain any cautions up front."
+  },
+  {
+   "name": "One team for every finish",
+   "text": "Fine painting, specialty finishes and traditional plaster techniques under one roof."
+  }
+ ],
+ "whyTitle": "Why Good Spirit Paint and Create.",
+ "howTitle": "A fresh coat in three steps.",
+ "steps": [
+  {
+   "name": "Ask for a free estimate",
+   "text": "Call or use the form to tell us about your project."
+  },
+  {
+   "name": "Plan the job",
+   "text": "We go over the work, colors and timing with you."
+  },
+  {
+   "name": "Enjoy the new look",
+   "text": "We paint, and aim to finish on time and on budget."
+  }
+ ],
+ "contactTitle": "Ready for a fresh coat?",
+ "footerLine": "House painting in Nashville",
+ "reviews": [],
+ "hours": [],
+ "galleryTitle": "Homes we’ve painted.",
+ "notePlaceholder": "Inside or outside, how many rooms, a date you have in mind…",
+ "gallery": [],
+ "areas": [
+  "Nashville"
+ ],
+ "siteCheck": {
+  "reasons": [],
+  "improvements": [
+   "no reviews on the site"
+  ]
+ },
+ "pitch": "photos"
+}

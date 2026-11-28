@@ -91,5 +91,13 @@
   "slug": "hendrick-painting",
   "reason": "only email is the placeholder john@doe.com",
   "date": "2026-11-28"
+ },
+ {
+  "placeId": "ChIJXTMNPbRyZIgR-z4jdQ6LoAo",
+  "name": "Boat Doctors",
+  "slug": "boat-doctors",
+  "reason": "does not do Boat detailing itself (Claude): Business is mainly hull, fiberglass and gel-coat repair, not detailing. Only one review on site. No prices on site. Photos 5-12 are damage and repair-in-progres",
+  "date": "2026-11-28",
+  "auto": true
  }
 ]

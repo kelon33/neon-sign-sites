@@ -1,0 +1,172 @@
+{
+ "kit": "detailing",
+ "trade": "Mobile car detailing",
+ "name": "Dr. Detail",
+ "legalName": "Dr. Detail",
+ "preview": true,
+ "placeId": "ChIJtUvjvHZpZIgRw5LedH-Mu9k",
+ "title": "Dr. Detail | Mobile car detailing in Nashville, TN",
+ "description": "Interior and exterior detailing for Nashville and Davidson County, at your door or at our Lewis St. office. Never had a detail before? We walk you through it and give you a free estimate. 5.0 on Google from 163 reviews.",
+ "brand": "#1670ff",
+ "brandHi": "#52c6ff",
+ "accent": "#8fd0ff",
+ "logo": "logo.png",
+ "logoChip": false,
+ "wordmark": {
+  "top": "Dr.",
+  "bottom": "Detail"
+ },
+ "phone": "(615) 516-6440",
+ "email": "dcunio@docdetail.net",
+ "heroImage": null,
+ "heroAlt": "",
+ "heroPosition": "60% 60%",
+ "heroPositionPhone": "60% 50%",
+ "rating": {
+  "score": "5.0",
+  "count": 163,
+  "url": "https://maps.google.com/?cid=15689288205924733635"
+ },
+ "kicker": "Mobile car detailing · Nashville, TN",
+ "headline": "Showroom shine,<br><em>at your driveway.</em>",
+ "intro": "Interior and exterior detailing for Nashville and Davidson County, at your door or at our Lewis St. office. Never had a detail before? We walk you through it and give you a free estimate.",
+ "mobile": {
+  "title": "Your driveway is our shop.",
+  "intro": "We bring the detail to you, so your day keeps moving.",
+  "points": [
+   {
+    "name": "House calls",
+    "text": "We make house calls with our mobile detailing service, or you can come to our office."
+   },
+   {
+    "name": "Free estimate",
+    "text": "We inspect your car with you first, then price it for your vehicle."
+   },
+   {
+    "name": "Around Nashville",
+    "text": "Nashville, Franklin, Brentwood, Green Hills, Belle Meade, Bellevue and more."
+   },
+   {
+    "name": "Easy to book",
+    "text": "Call, email or send the form. We are open Monday to Saturday."
+   }
+  ]
+ },
+ "servicesTitle": "Three details. One clear price each.",
+ "servicesIntro": "Start with an interior detail. Add what your car needs.",
+ "services": [
+  {
+   "name": "Interior Detail",
+   "text": "Vacuum, steam-cleaned carpet, fabric and leather, stain treatment, and protectant on leather, vinyl and plastic.",
+   "price": "$225"
+  },
+  {
+   "name": "Exterior Detail",
+   "text": "Hand wash, bug and tar removal, clay bar, wheels and tires cleaned, and a paint sealant that lasts 3 to 6 months.",
+   "price": "$200"
+  },
+  {
+   "name": "Full Detail",
+   "text": "Everything in the interior and exterior details, done in one visit.",
+   "price": "$350"
+  },
+  {
+   "name": "Paint Correction",
+   "text": "Machine polishing and compounding, with wet sanding if needed, to take paint to near perfection."
+  },
+  {
+   "name": "Ceramic Paint Coating",
+   "text": "Long-term paint protection, with options from 1 year to 7 years."
+  },
+  {
+   "name": "Express Detail",
+   "text": "A good cleaning and lasting protection for a new or well-maintained car, truck or SUV.",
+   "price": "$200"
+  }
+ ],
+ "also": [
+  {
+   "name": "Engine detailing"
+  },
+  {
+   "name": "Odor removal"
+  },
+  {
+   "name": "Leather treatment"
+  },
+  {
+   "name": "Wheel curb rash repair"
+  },
+  {
+   "name": "Paintless dent repair"
+  }
+ ],
+ "alsoTitle": "Not just cars:",
+ "why": [
+  {
+   "name": "Air Force One team",
+   "text": "Dr. Detail was hand picked for the team that details the President's Air Force One aircraft."
+  },
+  {
+   "name": "Certified and trained",
+   "text": "Certified Skills Verified Detailer with the International Detailers Association, with ongoing training for the whole team."
+  },
+  {
+   "name": "Top-tier products",
+   "text": "Professional detailing products and equipment, for a car that looks like the day it left the dealership."
+  }
+ ],
+ "whyTitle": "The detail is in the name.",
+ "howTitle": "A clean vehicle in three steps.",
+ "steps": [
+  {
+   "name": "Request a consultation",
+   "text": "Call or fill out the form. Consultations are free."
+  },
+  {
+   "name": "Get your quote",
+   "text": "We price by your vehicle's size, condition and needs."
+  },
+  {
+   "name": "Pick up your car",
+   "text": "Detailed, protected and ready for the big reveal."
+  }
+ ],
+ "contactTitle": "Book your consultation.",
+ "footerLine": "Mobile car detailing in Nashville",
+ "reviews": [
+  {
+   "text": "Took my Ford Raptor in for a detail and it turned out perfect both inside and out. I recently moved to Nashville and Dave is the first auto detail place I've used. Thankful I found him and will be using him again!",
+   "name": "Samuël D."
+  },
+  {
+   "text": "His job on my car paint correction and ceramic coating was unbelievable! I would highly recommend his services on any exotic car.",
+   "name": "R P."
+  },
+  {
+   "text": "Had never gotten a true detailing before. Got an exterior detail and headlight restoration for a fair price. Seemingly permanent bugs were taken care of and my car looks new again. Great result and friendly staff!",
+   "name": "Kyle M."
+  },
+  {
+   "text": "They always do a great job, have been here multiple times. My go to detailing place in Nashville",
+   "name": "Deepsagar L."
+  }
+ ],
+ "hours": [
+  "Monday–Saturday: 8:30am – 5pm",
+  "Sunday: Closed"
+ ],
+ "galleryTitle": "Fresh off the driveway.",
+ "gallery": [],
+ "areas": [
+  "Nashville"
+ ],
+ "siteCheck": {
+  "reasons": [],
+  "improvements": [
+   "no photos",
+   "loads in 2.7s"
+  ]
+ },
+ "pitch": "photos"
+}

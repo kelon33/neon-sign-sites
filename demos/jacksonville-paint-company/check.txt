@@ -1,0 +1,6 @@
+- Logo is dark on a transparent background: shown on a white chip. Check it reads well.
+- Photo pitch: only 3 usable photos by Claude's choice, so no gallery; the email asks them for photos of their work.
+- Logo dropped: Claude saw it is not theirs (a badge, a client's or their web designer's). The header shows the name only.
+- Claude's notes: No reviews on site (Google shows 5 from 54). Most photos look like stock images, so only a few were used; the hero and photos 24 and 10 are also stock-like, so confirm or replace them. Logo image appears blank. Site lists two phone numbers: (904) 867-2801 and (901) 657-5855; the 901 number looks like a template leftover. Site gives no prices.
+- Only 0 gallery photos.
+- No reviews on the site: the page shows the Google rating only.

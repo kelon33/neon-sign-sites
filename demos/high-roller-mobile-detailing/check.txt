@@ -1,0 +1,9 @@
+- Listed as Boat detailing, but their site is about cars: built as mobile car detailing.
+- Logo is dark on a transparent background: shown on a white chip. Check it reads well.
+- No hero photo: Claude found none of their photos usable.
+- Photo pitch: only 0 usable photos by Claude's choice, so no gallery; the email asks them for photos of their work.
+- Claude's notes: All six site photos look like stock or generic (a staged supercar, a showroom, a car interior, a manufacturer-style shot, a model-type worker), so none were used. Gallery on the site is an Instagram feed with no images. Prices are listed 'and up' on the site. Business hours are not stated, and the 10+ years and licensed/insured claims are from the site and should be confirmed.
+- Dropped review by Chanel: not in their own pages (added by a script, likely a Google widget).
+- No photos at all: the hero has no picture. Find photos by hand.
+- Only 0 gallery photos.
+- Hero is a licensed stock photo for the trade (credited on the page, see generator/assets/CREDITS.md), not their work: swap in their own photo once they send one.

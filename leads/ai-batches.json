@@ -1561,5 +1561,153 @@
    }
   ],
   "done": true
+ },
+ {
+  "id": "msgbatch_01F6j6zNrLvoYV6usS44UQft",
+  "created": "2026-11-28T10:26:35.590Z",
+  "map": {
+   "p0": "dent-works-paintless-dent-repair",
+   "p1": "infinity-painting",
+   "p2": "high-roller-mobile-detailing",
+   "p3": "candodetails-mobile",
+   "p4": "good-spirit-paint-and-create",
+   "p5": "auto-hail-recon",
+   "p6": "jacksonville-paint-company",
+   "p7": "boat-doctors",
+   "p8": "immaculate-auto-detailing-and-ceramic-coating",
+   "p9": "dr-detail"
+  },
+  "leads": [
+   {
+    "slug": "dent-works-paintless-dent-repair",
+    "name": "Dent Works Paintless Dent Repair",
+    "kind": "weak site",
+    "trade": "Paintless dent repair",
+    "reviews": 117,
+    "website": "http://www.dentworksdfw.com/",
+    "reasons": [
+     "not mobile-friendly",
+     "Weebly"
+    ],
+    "improvements": []
+   },
+   {
+    "slug": "infinity-painting",
+    "name": "Infinity Painting LLC",
+    "kind": "weak site",
+    "trade": "House painting",
+    "reviews": 87,
+    "website": "https://infinitypaint.weebly.com/",
+    "reasons": [
+     "Weebly",
+     "no domain of its own"
+    ],
+    "improvements": []
+   },
+   {
+    "slug": "high-roller-mobile-detailing",
+    "name": "High Roller Mobile Detailing",
+    "kind": "weak site",
+    "trade": "Boat detailing",
+    "reviews": 67,
+    "website": "http://www.highrollermobiledetailing.com/",
+    "reasons": [
+     "copyright 2022"
+    ],
+    "improvements": []
+   },
+   {
+    "slug": "candodetails-mobile",
+    "name": "Candodetails Mobile",
+    "kind": "decent site",
+    "trade": "Boat detailing",
+    "reviews": 94,
+    "website": "http://www.candodetails.com/",
+    "reasons": [],
+    "improvements": [
+     "no tap-to-call link",
+     "no quote or booking form",
+     "no reviews on the site"
+    ]
+   },
+   {
+    "slug": "good-spirit-paint-and-create",
+    "name": "Good Spirit Paint and Create",
+    "kind": "decent site",
+    "trade": "House painting",
+    "reviews": 48,
+    "website": "http://www.goodspiritpainters.com/",
+    "reasons": [],
+    "improvements": [
+     "no reviews on the site"
+    ]
+   },
+   {
+    "slug": "auto-hail-recon",
+    "name": "Auto Hail Recon",
+    "kind": "decent site",
+    "trade": "Paintless dent repair",
+    "reviews": 61,
+    "website": "https://auto-hailrecon.com/",
+    "reasons": [],
+    "improvements": [
+     "no tap-to-call link",
+     "no meta description"
+    ]
+   },
+   {
+    "slug": "jacksonville-paint-company",
+    "name": "Jacksonville Paint Company",
+    "kind": "decent site",
+    "trade": "House painting",
+    "reviews": 54,
+    "website": "https://jacksonvillepaintcompany.com/",
+    "reasons": [],
+    "improvements": [
+     "no reviews on the site"
+    ]
+   },
+   {
+    "slug": "boat-doctors",
+    "name": "Boat Doctors",
+    "kind": "decent site",
+    "trade": "Boat detailing",
+    "reviews": 23,
+    "website": "http://www.boatdoctors.net/",
+    "reasons": [],
+    "improvements": [
+     "no tap-to-call link",
+     "only 2 photos",
+     "no meta description",
+     "loads in 3.1s"
+    ]
+   },
+   {
+    "slug": "immaculate-auto-detailing-and-ceramic-coating",
+    "name": "Immaculate Auto Detailing and Ceramic Coating",
+    "kind": "decent site",
+    "trade": "Boat detailing",
+    "reviews": 155,
+    "website": "https://www.immaculateautodetailing.net/",
+    "reasons": [],
+    "improvements": [
+     "only 3 photos"
+    ]
+   },
+   {
+    "slug": "dr-detail",
+    "name": "Dr. Detail",
+    "kind": "decent site",
+    "trade": "Boat detailing",
+    "reviews": 163,
+    "website": "http://www.docdetail.net/",
+    "reasons": [],
+    "improvements": [
+     "no photos",
+     "loads in 2.7s"
+    ]
+   }
+  ],
+  "done": true
  }
 ]

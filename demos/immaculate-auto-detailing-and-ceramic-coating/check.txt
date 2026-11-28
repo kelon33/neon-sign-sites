@@ -1,0 +1,10 @@
+- Found by a search in Las Vegas, NV, but their address is in North Las Vegas, NV: the site uses that. Check their service area.
+- Listed as Boat detailing, but their site is about cars: built as mobile car detailing.
+- No logo found: the header shows the name only.
+- No hero photo: Claude found none of their photos usable.
+- Photo pitch: only 0 usable photos by Claude's choice, so no gallery; the email asks them for photos of their work.
+- Claude's notes: No reviews on the site (it says reviews are on the way). Photo 1 looks like a stock or rendered close-up and photo 2 is a screenshot, so no photos were used. Site gives Las Vegas as the main base, with North Las Vegas as a listed service area and the address. Confirm the logo image is theirs. The draft's 'Wax, clay & sealant', 'Seat & carpet shampoo' cards were replaced with services the site actually lists.
+- No photos at all: the hero has no picture. Find photos by hand.
+- Only 0 gallery photos.
+- No reviews on the site: the page shows the Google rating only.
+- Hero is a licensed stock photo for the trade (credited on the page, see generator/assets/CREDITS.md), not their work: swap in their own photo once they send one.

@@ -1,0 +1,8 @@
+- Listed as Boat detailing, but their site is about cars: built as mobile car detailing.
+- No hero photo: Claude found none of their photos usable.
+- Photo pitch: only 0 usable photos by Claude's choice, so no gallery; the email asks them for photos of their work.
+- Claude's notes: Only one photo, a red supercar that looks like stock, so no photos used. Site claims awards, Air Force One team and 2005 founding; only the Air Force One and IDA claims are used. Mobile service has a $200 minimum and SUVs cost extra. Express Detail is not available for vehicles over 5 years old unless they had a Full Detail. The site's Express price is a typical price. Review dates are from 2020-2021.
+- Dropped review by Christine D.: not in their own pages (added by a script, likely a Google widget).
+- No photos at all: the hero has no picture. Find photos by hand.
+- Only 0 gallery photos.
+- Hero is a licensed stock photo for the trade (credited on the page, see generator/assets/CREDITS.md), not their work: swap in their own photo once they send one.

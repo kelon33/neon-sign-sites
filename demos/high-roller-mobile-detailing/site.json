@@ -1,0 +1,144 @@
+{
+ "kit": "detailing",
+ "trade": "Mobile car detailing",
+ "name": "High Roller Mobile Detailing",
+ "legalName": "High Roller Mobile Detailing",
+ "preview": true,
+ "placeId": "ChIJXdNUUr9mqS8Rn0up4PgC1Xw",
+ "title": "High Roller Mobile Detailing | Mobile car detailing in Las Vegas, NV",
+ "description": "Professional detailing at your home or office in Las Vegas. We bring our own water and power, and we offer Saturday and evening appointments. 5.0 on Google from 67 reviews.",
+ "brand": "#1670ff",
+ "brandHi": "#52c6ff",
+ "accent": "#8fd0ff",
+ "logo": "logo.png",
+ "logoChip": true,
+ "wordmark": {
+  "top": "High Roller",
+  "bottom": "Mobile Detailing"
+ },
+ "phone": "(702) 530-1228",
+ "email": "info@highrollermobiledetailing.com",
+ "heroImage": null,
+ "heroAlt": "",
+ "heroPosition": "60% 60%",
+ "heroPositionPhone": "60% 50%",
+ "rating": {
+  "score": "5.0",
+  "count": 67,
+  "url": "https://maps.google.com/?cid=8995099098686770079"
+ },
+ "kicker": "Mobile car detailing · Las Vegas, NV",
+ "headline": "Showroom shine.<br><em>Right in your driveway.</em>",
+ "intro": "Professional detailing at your home or office in Las Vegas. We bring our own water and power, and we offer Saturday and evening appointments.",
+ "mobile": {
+  "title": "We come to you.",
+  "intro": "Mobile service means your car gets a full detail right where it sits. All we need is your home's power and water.",
+  "points": [
+   {
+    "name": "At your door",
+    "text": "We detail your car in your driveway or office parking lot."
+   },
+   {
+    "name": "Our own water and power",
+    "text": "We bring what we need. You don't have to set anything up."
+   },
+   {
+    "name": "Fits your schedule",
+    "text": "Saturday and evening appointments are available."
+   },
+   {
+    "name": "Saves gas and travel",
+    "text": "No drive to a shop. Get your car done while you work."
+   }
+  ]
+ },
+ "servicesTitle": "Inside, outside, and everything that shines.",
+ "servicesIntro": "From a deep interior clean to multi-stage paint correction, with high-quality products for every surface.",
+ "services": [
+  {
+   "name": "Signature Detail",
+   "text": "Everything in our interior detail and our exterior detail, in one visit.",
+   "price": "$175 and up"
+  },
+  {
+   "name": "High Roller Max",
+   "text": "Everything in the High Roller Interior and High Roller Exterior packages.",
+   "price": "$475 and up"
+  },
+  {
+   "name": "Interior Detail",
+   "text": "Premium vacuum, carpet blasting, streak-free windows, leather clean and condition, and UV protection on all panels.",
+   "price": "$100 and up"
+  },
+  {
+   "name": "Exterior Detail",
+   "text": "Gloss enhancing wash, paint decontamination, premium wheel package and premium paint sealant.",
+   "price": "$100 and up"
+  },
+  {
+   "name": "Paint Correction",
+   "text": "Buff and polish work to bring your paint back to a deep shine."
+  },
+  {
+   "name": "Ceramic Coating",
+   "text": "Protection for your paint that keeps your car looking new for longer."
+  }
+ ],
+ "also": [],
+ "alsoTitle": "Not just cars:",
+ "why": [
+  {
+   "name": "We come to you",
+   "text": "We detail your car in your driveway or office parking lot, with our own water and power."
+  },
+  {
+   "name": "Trusted experience",
+   "text": "Over 10 years in the automotive industry, fully licensed and insured."
+  },
+  {
+   "name": "Quality and value",
+   "text": "Premium detail products at a great price."
+  }
+ ],
+ "whyTitle": "Why people stay with us.",
+ "howTitle": "Booked in a minute. We come to you.",
+ "steps": [
+  {
+   "name": "Tell us about your car",
+   "text": "Call, text or send the form: your vehicle, the service and where it's parked."
+  },
+  {
+   "name": "We pull up",
+   "text": "We arrive on time at your home or office, with everything we need."
+  },
+  {
+   "name": "You get the keys back",
+   "text": "To a car that looks, and smells, brand new."
+  }
+ ],
+ "contactTitle": "Book your detail.",
+ "footerLine": "Mobile car detailing in Las Vegas",
+ "reviews": [
+  {
+   "text": "I cannot remember the last time I had my car look this good! It definitely needed some love and Myles did not disappoint. Highly recommended!",
+   "name": "Alexandra"
+  },
+  {
+   "text": "Best detailing service in town by far ! I will be using high roller regularly and recommending everyone to do the same.",
+   "name": "Joe"
+  }
+ ],
+ "hours": [],
+ "galleryTitle": "Fresh off the driveway.",
+ "gallery": [],
+ "areas": [
+  "Las Vegas"
+ ],
+ "siteCheck": {
+  "reasons": [
+   "copyright 2022"
+  ],
+  "improvements": []
+ },
+ "pitch": "photos"
+}

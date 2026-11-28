@@ -1,0 +1,120 @@
+{
+ "kit": "detailing",
+ "trade": "Paintless dent repair",
+ "name": "Auto Hail Recon",
+ "legalName": "Auto Hail Recon",
+ "preview": true,
+ "placeId": "ChIJjXBsJ2VdXIYRxZD9LeRVeu4",
+ "title": "Auto Hail Recon | Paintless dent repair in San Antonio, TX",
+ "description": "Family-owned paintless dent repair in San Antonio. We work out door dings, creases and hail damage from behind the panel, so your original paint stays. 4.9 on Google from 61 reviews.",
+ "brand": "#1670ff",
+ "brandHi": "#52c6ff",
+ "accent": "#8fd0ff",
+ "logo": null,
+ "logoChip": false,
+ "wordmark": {
+  "top": "Auto Hail",
+  "bottom": "Recon"
+ },
+ "phone": "(210) 236-8058",
+ "email": "claims@auto-hailrecon.com",
+ "heroImage": "img/photo-6.jpg",
+ "heroAlt": "Hail dents across a light-colored car roof",
+ "heroPosition": "60% 60%",
+ "heroPositionPhone": "60% 50%",
+ "rating": {
+  "score": "4.9",
+  "count": 61,
+  "url": "https://maps.google.com/?cid=17184141766698045637"
+ },
+ "kicker": "Paintless dent repair · San Antonio",
+ "headline": "Your car's dents.<br><em>Gone. Paint untouched.</em>",
+ "intro": "Family-owned paintless dent repair in San Antonio. We work out door dings, creases and hail damage from behind the panel, so your original paint stays.",
+ "mobile": null,
+ "servicesTitle": "Every kind of dent.",
+ "servicesIntro": "From a single door ding to a full hail storm.",
+ "services": [
+  {
+   "name": "Door Ding & Dent Repair",
+   "text": "Parking-lot dings, minor collisions and everyday impacts, worked out of the panel."
+  },
+  {
+   "name": "Hail Damage Repair",
+   "text": "Small to medium dents across the vehicle after a storm, reversed to pre-storm condition."
+  },
+  {
+   "name": "Large Dent & Crease Repair",
+   "text": "Bigger dents and creases, as long as the paint has not cracked, keep their original contour and finish."
+  }
+ ],
+ "also": [],
+ "alsoTitle": "We also fix",
+ "why": [
+  {
+   "name": "Original paint stays",
+   "text": "No repainting means the factory finish and the resale value stay with the car."
+  },
+  {
+   "name": "Faster and cheaper than a body shop",
+   "text": "No filling, sanding or painting. Skilled technicians massage the dents out with specialized tools."
+  },
+  {
+   "name": "Lifetime guarantee",
+   "text": "Every repair comes with a 100% satisfaction guarantee and a lifetime warranty, from a family-owned team with over four decades in auto hail repair."
+  }
+ ],
+ "whyTitle": "The Auto Hail Recon difference.",
+ "howTitle": "Back to like new in three steps.",
+ "steps": [
+  {
+   "name": "Send the details",
+   "text": "Call, or use the form with your year, make, model and photos of the damage."
+  },
+  {
+   "name": "Get an evaluation",
+   "text": "Bring the vehicle in and we look at the hail damage, dings or film options."
+  },
+  {
+   "name": "Drive it smooth",
+   "text": "We work the dents out and hand the vehicle back."
+  }
+ ],
+ "contactTitle": "Got a dent?",
+ "footerLine": "Paintless dent repair in San Antonio",
+ "reviews": [],
+ "hours": [],
+ "galleryTitle": "Dents gone, paint untouched.",
+ "notePlaceholder": "Where the dent is, how big, hail or a door ding…",
+ "ctaLabel": "Get an estimate",
+ "gallery": [
+  {
+   "src": "img/photo-3.jpg",
+   "alt": "Technician removing a dent from a white car door with a headlamp and lifting tool",
+   "size": "big"
+  },
+  {
+   "src": "img/photo-2.jpg",
+   "alt": "Technician inspecting a panel and marking dents"
+  },
+  {
+   "src": "img/photo-9.jpg",
+   "alt": "Technician checking a white car's wheel arch with a tool"
+  },
+  {
+   "src": "img/photo-1.jpg",
+   "alt": "Hammer tool working on a dent along a car roof rail",
+   "size": "tall"
+  }
+ ],
+ "areas": [
+  "San Antonio"
+ ],
+ "siteCheck": {
+  "reasons": [],
+  "improvements": [
+   "no tap-to-call link",
+   "no meta description"
+  ]
+ },
+ "pitch": "site"
+}
