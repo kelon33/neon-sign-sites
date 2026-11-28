@@ -1,0 +1,14 @@
+{
+ "about": "Previews held back from sending by npm run queue -- --plan: an unsettled doubt in check.txt or a CLAUDE.md rule. slug → reason. Remove an entry once the preview is fixed and re-reviewed.",
+ "hold": {
+  "appearance-1st-automotive": "free loaner car and master certified technicians are in the preview but not on their site (invented claims)",
+  "automobiles-for-tomorrow-auto-body-collision-repair": "collision shop built as paintless dent repair; headline and title don't match their trade",
+  "collision-center": "site text too thin: services come from the draft, not their site; part of a multi-location group",
+  "collision-san-antonio-auto-body-shop-bumper-repair-paintless-dent-removal": "body shop built on the dent/detailing wording; phone on site differs from Google's",
+  "colorwise-painting": "their site only showed a verification page: services come from the draft, not their site",
+  "anchors-up-marine-detailing-and-gelcoat-repair": "address unchorsupdetailing@ looks like a typo of their domain (bounce risk); site text names other businesses",
+  "cal-pac-painting-of-nevada": "services inferred from reviews, the site has no service list",
+  "benfield-marine": "boat repair shop, detailing only mentioned in one review (fit doubt)",
+  "dent-magic": "site is for Auto Magic Enterprises with a different phone; headline claims hail repair the site does not state"
+ }
+}

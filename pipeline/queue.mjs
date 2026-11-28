@@ -140,7 +140,9 @@ async function main() {
     if (!config.sender?.address) throw new Error('No postal address in config.json (sender.address): US law (CAN-SPAM) requires it in every email. No plan until it is set.');
     if (!mailboxes.length) throw new Error('No sending mailboxes in config.json (sending.mailboxes).');
     const replies = (await json(path.join(root, 'leads', 'replies.json'), { replies: [] })).replies ?? [];
-    const readyList = await readyPreviews();
+    // leads/hold.json: previews held back from sending (an unsettled doubt in check.txt or a CLAUDE.md rule), slug → reason.
+    const hold = (await json(path.join(root, 'leads', 'hold.json'), { hold: {} })).hold ?? {};
+    const readyList = (await readyPreviews()).filter((r) => !hold[r.slug]);
     const { out, skipped, room } = plan({ ready: readyList, sent, mailboxes, dnc, mx: await json(MX_FILE, {}), replies });
     const lines = [`# Emails for ${today()}: for Alon's approval`, '', 'Nothing has been sent. Alon approves the list as a whole ("go", or "go, skip #4"); then `npm run send -- --approve [--skip 4]` and `npm run send` send exactly these texts.', ''];
     const emails = [];
@@ -172,6 +174,7 @@ async function main() {
       emails.push({ n, slug: o.slug, name: o.name, to: o.to, from: o.from, variant: o.variant, version: EMAIL_VERSION, state: o.state, tz: zoneOf(o.state), text: o.text.trim() + '\n', link, linkLive: up });
       lines.push(`## ${n}. ${o.name} → ${o.to} (from ${o.from}; ${o.state ?? '?'}, sent from 8:00 their time; subject ${o.variant})`, '', up === false ? '**The preview link does not open yet (not on main?). It will not be sent.**\n' : '', '```', o.text.trim(), '```', '');
     }
+    for (const [slug, why] of Object.entries(hold)) skipped.push(`${slug}: held (${why})`);
     if (skipped.length) lines.push('Left out:', ...skipped.map((s) => `- ${s}`), '');
     await mkdir(path.join(root, 'outbox'), { recursive: true });
     const file = path.join(root, 'outbox', `${today()}.md`);
