@@ -2,7 +2,7 @@
 // Address check before sending: does the email's domain accept mail (MX record, or an A record as a fallback)?
 // Bounces above ~2% push the mailboxes into spam, and a domain with no mail server always bounces.
 //   npm run mx      checks every not-yet-emailed preview's address domain (and found-lead emails) and saves
-//                   leads/mx.json { domain: { ok, checked } }. Needs DNS (the builder environment has it).
+//                   leads/mx.json { domain: { ok, checked } }. Uses DNS over HTTPS, so it works in any environment.
 // npm run queue -- --plan leaves out any address whose domain is recorded as not accepting mail.
 
 import { readFile, writeFile, readdir } from 'node:fs/promises';
@@ -16,12 +16,28 @@ const json = (f, fallback) => readFile(f, 'utf8').then(JSON.parse).catch(() => f
 export const domainOf = (email) => String(email ?? '').split('@')[1]?.toLowerCase().trim() ?? '';
 const BIG = new Set(['gmail.com', 'yahoo.com', 'hotmail.com', 'outlook.com', 'aol.com', 'icloud.com', 'live.com', 'msn.com', 'att.net', 'comcast.net', 'me.com']);
 
-/** true: accepts mail, false: no mail server (NXDOMAIN, or no MX and no A), null: could not tell (DNS error). */
+/** One DNS question over HTTPS (Cloudflare's resolver): works where plain DNS is blocked or answers
+ *  MX queries with nothing (the cloud environments do; run with NODE_USE_ENV_PROXY=1 there). */
+async function doh(name, type) {
+  const res = await fetch(`https://cloudflare-dns.com/dns-query?name=${encodeURIComponent(name)}&type=${type}`, { headers: { accept: 'application/dns-json' }, signal: AbortSignal.timeout(15000) });
+  if (!res.ok) throw new Error(`DNS over HTTPS: ${res.status}`);
+  return res.json();
+}
+
+/** true: accepts mail, false: no mail server (NXDOMAIN, a null MX, or no MX and no A), null: could not tell. */
 export async function acceptsMail(domain) {
   if (BIG.has(domain)) return true;
-  try { const mx = await dns.resolveMx(domain); if (mx.some((m) => m.exchange && m.exchange !== '.')) return true; if (mx.length) return false; }
-  catch (e) { if (!['ENODATA', 'ENOTFOUND'].includes(e.code)) return null; if (e.code === 'ENOTFOUND') return false; }
-  try { return (await dns.resolve4(domain)).length > 0; } catch (e) { return ['ENODATA', 'ENOTFOUND'].includes(e.code) ? false : null; }
+  if (!/^[a-z0-9-]+(\.[a-z0-9-]+)*\.[a-z]{2,}$/.test(domain)) return false;
+  try {
+    const mx = await doh(domain, 'MX');
+    if (mx.Status === 3) return false;
+    const hosts = (mx.Answer ?? []).filter((a) => a.type === 15).map((a) => a.data.split(' ')[1]);
+    if (hosts.length) return hosts.some((h) => h && h !== '.');
+    const a = await doh(domain, 'A');
+    return (a.Answer ?? []).some((r) => r.type === 1);
+  } catch { /* the resolver could not be reached */ }
+  try { const mx = await dns.resolveMx(domain); if (mx.some((m) => m.exchange && m.exchange !== '.')) return true; } catch { /* plain DNS: no answer */ }
+  return null;
 }
 
 /** Whether to leave an address out: only when its domain was checked and has no mail server. */

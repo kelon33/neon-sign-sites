@@ -84,5 +84,12 @@
   "slug": "t-k-boat-repair-and-fiberglass-specialist",
   "reason": "email is on an unrelated spam domain (gudanghokiwebsite.com): site likely hacked",
   "date": "2026-11-28"
+ },
+ {
+  "placeId": "ChIJNbUVkLdgXIYRMBVPB7J44nQ",
+  "name": "Hendrick Painting",
+  "slug": "hendrick-painting",
+  "reason": "only email is the placeholder john@doe.com",
+  "date": "2026-11-28"
  }
 ]
