@@ -44,7 +44,6 @@ We rebuild weak websites of US local service businesses (lawn care, mobile detai
 - `config.json` `analyticsToken` (Cloudflare Web Analytics, public): `deploy.mjs` adds the beacon to the site and previews, never to customer sites.
 
 ## Later (remind Alon when we get there)
-- **Trust details:** a short "who's behind this" line about Alon, and the business postal address in the footer and terms, once the address is sorted.
 - **Examples:** a "Recent sites" section with before/after, only from customers who are live and agreed. Never show unsent previews publicly.
 
 ## Daily schedule (scheduled tasks on Alon's account, US Eastern time)
