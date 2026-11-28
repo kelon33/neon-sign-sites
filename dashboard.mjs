@@ -7,6 +7,7 @@
 import { readFile, readdir } from 'node:fs/promises';
 import path from 'node:path';
 import { loadStats, MIN_SENT } from './pipeline/stats.mjs';
+import { EMAIL_VERSION } from './pipeline/email.mjs';
 
 const json = (f, fallback) => readFile(f, 'utf8').then(JSON.parse).catch(() => fallback);
 const esc = (s) => String(s ?? '').replace(/[&<>"']/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' })[c]);
@@ -73,8 +74,10 @@ export async function buildDashboard(root) {
   const max = Math.max(1, ...days.map((d) => perDay[d]));
   const stats = await loadStats();
   const ab = ['A', 'B'].map((v) => {
-    const n = sent.filter((s) => s.variant === v).length;
-    const r = new Set(replies.filter((x) => x.kind === 'reply' && sent.find((s) => s.slug === x.slug)?.variant === v).map((x) => x.slug)).size;
+    // Only sends of the current email wording: a new body restarts the subject test.
+    const cur = sent.filter((s) => s.version === EMAIL_VERSION);
+    const n = cur.filter((s) => s.variant === v).length;
+    const r = new Set(replies.filter((x) => x.kind === 'reply' && cur.find((s) => s.slug === x.slug)?.variant === v).map((x) => x.slug)).size;
     return { v, n, r, pct: n ? Math.round((100 * r) / n) : 0 };
   });
   const month = new Date().toISOString().slice(0, 7);

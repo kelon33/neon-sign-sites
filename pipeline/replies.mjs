@@ -6,6 +6,7 @@
 // address). A clear "no" / unsubscribe goes on do-not-contact.json at once (CAN-SPAM: same day, never
 // removed). Bounces are marked. Nothing is ever answered from here: Alon and Claude decide each answer.
 
+import { EMAIL_VERSION } from './email.mjs';
 import { readFile, writeFile } from 'node:fs/promises';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
@@ -95,8 +96,10 @@ async function main() {
   }
   await writeFile(FILE, JSON.stringify(store, null, 1) + '\n');
   await writeFile(DNC, JSON.stringify(dnc, null, 1) + '\n');
-  // Subject A/B test: replies (not "no", not bounces) per variant.
-  const ab = ['A', 'B'].map((v) => { const n = sent.filter((x) => x.variant === v).length; const r = new Set(store.replies.filter((x) => x.kind === 'reply' && sent.find((y) => y.slug === x.slug)?.variant === v).map((x) => x.slug)).size; return `${v}: ${r}/${n} replied${n ? ` (${Math.round((100 * r) / n)}%)` : ''}`; });
+  // Subject A/B test: replies (not "no", not bounces) per variant, counting only sends of the current email
+  // wording (EMAIL_VERSION): a new body restarts the test.
+  const cur = sent.filter((x) => x.version === EMAIL_VERSION);
+  const ab = ['A', 'B'].map((v) => { const n = cur.filter((x) => x.variant === v).length; const r = new Set(store.replies.filter((x) => x.kind === 'reply' && cur.find((y) => y.slug === x.slug)?.variant === v).map((x) => x.slug)).size; return `${v}: ${r}/${n} replied${n ? ` (${Math.round((100 * r) / n)}%)` : ''}`; });
   const abLine = `Subject test: ${ab.join(', ')}.`;
   if (!fresh.length) { console.log(`No new replies. ${abLine}`); return; }
   for (const r of fresh) {

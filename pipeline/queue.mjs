@@ -15,7 +15,7 @@ import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { blocked } from './dnc.mjs';
 import { JUNK_EMAIL } from './find.mjs';
-import { refreshSignature, rewordDraft, subjectFor, followupBody, FOLLOWUP_DAYS } from './email.mjs';
+import { refreshSignature, rewordDraft, subjectFor, followupBody, FOLLOWUP_DAYS, EMAIL_VERSION } from './email.mjs';
 import { stateOf, zoneOf } from './timing.mjs';
 import { noMail, MX_FILE } from './mx.mjs';
 
@@ -169,7 +169,7 @@ async function main() {
       const link = o.text.match(/https:\/\/neonsignsites\.com\/p\/[^\s]+/)?.[0];
       const up = link ? await live(link) : null;
       const n = emails.length + 1;
-      emails.push({ n, slug: o.slug, name: o.name, to: o.to, from: o.from, variant: o.variant, state: o.state, tz: zoneOf(o.state), text: o.text.trim() + '\n', link, linkLive: up });
+      emails.push({ n, slug: o.slug, name: o.name, to: o.to, from: o.from, variant: o.variant, version: EMAIL_VERSION, state: o.state, tz: zoneOf(o.state), text: o.text.trim() + '\n', link, linkLive: up });
       lines.push(`## ${n}. ${o.name} → ${o.to} (from ${o.from}; ${o.state ?? '?'}, sent from 8:00 their time; subject ${o.variant})`, '', up === false ? '**The preview link does not open yet (not on main?). It will not be sent.**\n' : '', '```', o.text.trim(), '```', '');
     }
     if (skipped.length) lines.push('Left out:', ...skipped.map((s) => `- ${s}`), '');

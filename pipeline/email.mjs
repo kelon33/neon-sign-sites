@@ -41,8 +41,7 @@ export function weakness(reasons = []) {
 export const OFFER = 'your first month is free, then $49 a month with hosting and edits included (minimum 2 paid months after the free one, then cancel anytime). Or own it outright for $299, with the first year of hosting included, then $49 a year.';
 
 export function signature(sender) {
-  const call = sender.phone ? `If you'd rather talk it through, call me at ${sender.phone}.\n\n` : '';
-  return call + [sender.name, 'Neon Sign Sites', sender.phone, sender.address ?? '[POSTAL ADDRESS: required before sending]'].filter(Boolean).join('\n');
+  return [sender.name, 'Neon Sign Sites', sender.phone, sender.address ?? '[POSTAL ADDRESS: required before sending]'].filter(Boolean).join('\n');
 }
 
 /** Puts the current signature into a saved draft, so drafts written before a change (address, phone) stay current. */
@@ -53,18 +52,23 @@ export function refreshSignature(text, sender) {
 /** The short offer line in emails (the full terms are on the site and shown before anyone pays). */
 export const OFFER_SHORT = 'First month free, then $49/month, or $299 to own it.';
 
-/** The email body after the opening line (2026-11-27 wording, agreed with Alon): short, one link, one question. */
+/** Which email wording a send used: the subject A/B test counts only sends of the current one. */
+export const EMAIL_VERSION = '2026-11-28';
+
+/** The email body after the opening line (2026-11-28 wording, Alon): no price (it comes after a "yes"; the
+ *  preview shows it), who we are, one link, one short question. */
+export const WHO = 'I build websites for small local businesses, so I made you a new one';
 export function compose({ opening, ownList, link, photoPitch, sender }) {
   const built = photoPitch
-    ? `So I built you a new one with your own ${ownList}, and left room for your work:\n${link}\n\nSend me 5 or 6 photos of jobs you're proud of and it can be live this week. ${OFFER_SHORT}\n\nWant me to finish it?`
-    : `So I built you a new one, with your own ${ownList}:\n${link}\n\nIf you like it, it can be live this week. ${OFFER_SHORT}\n\nWant me to put it live?`;
+    ? `${WHO} with your own ${ownList}, and left room for your work:\n${link}\n\nSend me 5 or 6 photos of jobs you're proud of and I'll finish it. Want it?`
+    : `${WHO}, with your own ${ownList}:\n${link}\n\nWant it?`;
   return `Hi,\n\n${opening}\n\n${built}\n\n${signature(sender)}\n\nNot interested? Reply "no" and I won't email you again.`;
 }
 
 /** The one follow-up (FOLLOWUP_DAYS after the first email, only when there was no reaction at all), in the same thread. */
 export const FOLLOWUP_DAYS = 4;
 export function followupBody({ name, link, sender }) {
-  return `Hi,\n\nJust checking you saw the new website I built for ${name}:\n${link}\n\nIt can be live this week, and I'm happy to change anything first. Want me to put it live?\n\n${signature(sender)}\n\nNot interested? Reply "no" and I won't email you again.`;
+  return `Hi,\n\nJust checking you saw the new website I built for ${name}:\n${link}\n\nIt can be live this week, and I'm happy to change anything first. Want it?\n\n${signature(sender)}\n\nNot interested? Reply "no" and I won't email you again.`;
 }
 
 /** Subject lines under test (A/B by replies): A says what it is, B reads like a personal note. */

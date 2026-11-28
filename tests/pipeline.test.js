@@ -70,7 +70,7 @@ test('verify drops invented numbers and reviews not on the site', () => {
   assert.equal(dropped.length, 3);
 });
 
-test('email: names the site problem, has the link, the price, an address and an opt-out', () => {
+test('email: names the site problem, says who we are, has the link, no price, an address and an opt-out', () => {
   assert.match(weakness(['slow (5.5s)']), /5\.5 seconds/);
   const { subject, body } = draftEmail({
     lead: { name: "Erick's Auto Detailing", rating: 5, reviews: 161, reasons: ['slow (5.5s)'] },
@@ -80,8 +80,9 @@ test('email: names the site problem, has the link, the price, an address and an 
   assert.equal(subject, "Erick's Auto Detailing – new website (preview)");
   assert.match(body, /5\.0 stars from 161 Google reviews is great, but your website takes 5\.5 seconds/);
   assert.match(body, /https:\/\/neonsignsites\.com\/p\/ericks-auto-detailing\//);
-  assert.match(body, /First month free, then \$49\/month, or \$299 to own it\./);
-  assert.match(body, /Want me to put it live\?/);
+  assert.match(body, /I build websites for small local businesses, so I made you a new one/);
+  assert.doesNotMatch(body, /\$\d|free/i); // the price comes after a "yes"
+  assert.match(body, /Want it\?/);
   assert.match(body, /POSTAL ADDRESS/);
   assert.match(body, /Reply "no"/);
 });

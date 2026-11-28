@@ -168,7 +168,7 @@ async function main() {
         const no = refuse(e, { approved: outbox.approved, sent, dnc, mailboxes, config, replies: await replies(), day: outbox.date }); // re-check right before sending
         if (no) { console.log(`#${e.n} ${e.slug}: not sent (${no}).`); return; }
         const r = await gmailSend(e, config.sender.name);
-        sent.push({ date: outbox.date, slug: e.slug, to: e.to, from: e.from, ...(e.kind === 'followup' ? { kind: 'followup' } : {}), variant: e.variant ?? null, subject: r.subject, messageId: r.id, threadId: r.threadId, sentAt: new Date().toISOString() });
+        sent.push({ date: outbox.date, slug: e.slug, to: e.to, from: e.from, ...(e.kind === 'followup' ? { kind: 'followup' } : {}), variant: e.variant ?? null, version: e.version ?? null, subject: r.subject, messageId: r.id, threadId: r.threadId, sentAt: new Date().toISOString() });
         await writeFile(SENT, JSON.stringify(sent, null, 1) + '\n');
         sentNow++; mine++;
         console.log(`#${e.n} ${e.slug}: sent to ${e.to} from ${e.from}.`);
