@@ -6,6 +6,7 @@
 
 import { readFile, readdir } from 'node:fs/promises';
 import path from 'node:path';
+import { loadStats, MIN_SENT } from './pipeline/stats.mjs';
 
 const json = (f, fallback) => readFile(f, 'utf8').then(JSON.parse).catch(() => fallback);
 const esc = (s) => String(s ?? '').replace(/[&<>"']/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' })[c]);
@@ -70,6 +71,7 @@ export async function buildDashboard(root) {
   for (const s of sent) perDay[day(s.sentAt ?? s.date)] = (perDay[day(s.sentAt ?? s.date)] ?? 0) + 1;
   const days = Object.keys(perDay).sort().slice(-14);
   const max = Math.max(1, ...days.map((d) => perDay[d]));
+  const stats = await loadStats();
   const ab = ['A', 'B'].map((v) => {
     const n = sent.filter((s) => s.variant === v).length;
     const r = new Set(replies.filter((x) => x.kind === 'reply' && sent.find((s) => s.slug === x.slug)?.variant === v).map((x) => x.slug)).size;
@@ -146,6 +148,8 @@ a.open:hover { background: rgba(255,79,139,.12); text-decoration: none; } a:hove
   <p class="muted" id="hooks-status"></p>
   <p class="muted">Said no: ${count('no')} · Bounced: ${count('bounced')} · Do-not-contact list: ${dnc.length}<br>Google Places this month: ${esc(places)} of ${esc(cap)} requests</p></div></div>
 </div>
+
+<h2>What gets replies</h2><div class="card"><p class="muted" style="margin-top:0">Replies, site forms and payments per first email (not "no" or bounces). A rate shows once a group has ${MIN_SENT} emails; the daily runs then build and send the best groups first.</p>${Object.entries({ trade: 'Trade', state: 'State', site: 'Their site', rating: 'Google rating', reviews: 'Google reviews' }).map(([d, label]) => `<p><b>${label}:</b> ${stats[d].map((g) => `${esc(g.key)} <span class="muted">${g.replied}/${g.sent}${g.sent >= MIN_SENT ? ` (${Math.round(100 * g.rate)}%)` : ''}</span>`).join(' · ') || '<span class="muted">nothing sent yet</span>'}</p>`).join('')}</div>
 
 <h2>Every business</h2><div class="card">${table(all)}</div>
 <p class="muted" style="margin-top:20px">Preview visits and "Make it live" clicks are live (from today; bots, link scanners and your own visits from any browser where you opened this dashboard are not counted). Calls and texts to (888) 444-1847 (Quo) and PayPal payments appear once their webhooks are set up.</p>

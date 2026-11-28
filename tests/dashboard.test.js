@@ -48,3 +48,12 @@ test('Quo whsec_ secrets: Standard Webhooks signatures', async () => {
   assert.equal(await standardSignatureOk(h(`v1,bad v1,${sig}`), body, secret), true);
   assert.equal(await standardSignatureOk(h('v1,bad'), body, secret), false);
 });
+
+test('stats: reply rate by trade counts replies, forms and payments, not no or bounces', async () => {
+  const { replyStats } = await import('../pipeline/stats.mjs');
+  const sent = ['a', 'b', 'c', 'd'].map((s) => ({ slug: s, to: `${s}@x.com` }));
+  const leads = [{ email: 'a@x.com', trade: 'Boat detailing' }, { email: 'b@x.com', trade: 'Boat detailing' }, { email: 'c@x.com', trade: 'Lawn care' }, { email: 'd@x.com', trade: 'Lawn care' }];
+  const replies = [{ slug: 'a', kind: 'reply' }, { slug: 'c', kind: 'no' }, { slug: 'd', kind: 'bounce' }];
+  const t = replyStats({ sent, replies, leads }).trade;
+  assert.deepEqual(t.map((g) => [g.key, g.replied, g.sent]), [['Boat detailing', 1, 2], ['Lawn care', 0, 2]]);
+});
