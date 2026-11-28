@@ -240,17 +240,23 @@ dialog.lightbox::backdrop { background: rgba(12,19,28,.9); }
 <style>
 /* One line, a fixed 40px: the kits subtract --bar from the hero so the first screen still fits (npm run fold). */
 :root:has(.nss-bar) { --bar: 48px; }
-.nss-bar { background: #0b0b10; color: #e9e6ef; font: 500 13px/1.4 system-ui, -apple-system, sans-serif; display: flex; flex-wrap: nowrap; justify-content: center; align-items: center; gap: 14px; height: 48px; box-sizing: border-box; padding: 0 12px; text-align: center; white-space: nowrap; overflow: hidden;
+.nss-bar { background: #0b0b10; color: #e9e6ef; font: 500 13px/1.4 system-ui, -apple-system, sans-serif; display: flex; flex-wrap: nowrap; justify-content: center; align-items: center; gap: 14px; height: 48px; box-sizing: border-box; padding: 0 12px; text-align: center; white-space: nowrap; overflow: visible;
   position: sticky; top: 0; z-index: 60; box-shadow: 0 6px 18px -10px rgba(0,0,0,.6); }
 .nss-bar > span { min-width: 0; overflow: hidden; text-overflow: ellipsis; }
 @media (max-width: 600px) { .nss-bar .nss-for, .nss-bar .nss-yet { display: none; } }
 .nss-bar a { color: #ff7aa8; }
-.nss-bar .nss-go { flex: none; color: #0b0b10; background: #ff4f8b; border-radius: 999px; padding: 8px 20px; font-size: 15px; font-weight: 800; text-decoration: none; white-space: nowrap; box-shadow: 0 0 0 0 rgba(255,79,139,.55); animation: nss-glow 2.8s ease-out 1.5s 3; }
+.nss-bar .nss-go { flex: none; color: #0b0b10; background: #ff4f8b; border-radius: 999px; padding: 8px 20px; font-size: 15px; font-weight: 800; text-decoration: none; white-space: nowrap; position: relative; overflow: hidden; animation: nss-glow-fast 2s ease-in-out .8s 2, nss-glow 12s ease-in-out 4.8s infinite; }
+.nss-bar .nss-go::after { content: ''; position: absolute; top: 0; bottom: 0; left: -60%; width: 40%; background: linear-gradient(100deg, transparent, rgba(255,255,255,.85), transparent); transform: skewX(-20deg); animation: nss-shine-fast 2s ease-in-out .8s 2, nss-shine 12s ease-in-out 4.8s infinite; pointer-events: none; }
 .nss-bar .nss-go:hover { background: #ff6b9e; }
 .nss-bar .nss-go small { font-weight: 600; opacity: .8; font-size: 13px; }
 @media (max-width: 600px) { .nss-bar .nss-go small { display: none; } }
-@keyframes nss-glow { 0% { box-shadow: 0 0 0 0 rgba(255,79,139,.55); } 70% { box-shadow: 0 0 0 12px rgba(255,79,139,0); } 100% { box-shadow: 0 0 0 0 rgba(255,79,139,0); } }
-@media (prefers-reduced-motion: reduce) { .nss-bar .nss-go { animation: none; } }
+/* Neon flash (Alon, 2026-11-28): twice right away, then once every 12 s. The button lights up with a wide
+   pink glow while a white shine sweeps across it. */
+@keyframes nss-glow-fast { 0%, 100% { background: #ff4f8b; box-shadow: 0 0 0 0 rgba(255,79,139,0); } 45% { background: #ff8ab3; box-shadow: 0 0 18px 6px rgba(255,79,139,.95), 0 0 44px 14px rgba(255,79,139,.55); } 75% { background: #ff4f8b; box-shadow: 0 0 10px 2px rgba(255,79,139,.6); } }
+@keyframes nss-glow { 0%, 83%, 100% { background: #ff4f8b; box-shadow: 0 0 0 0 rgba(255,79,139,0); } 90% { background: #ff8ab3; box-shadow: 0 0 18px 6px rgba(255,79,139,.95), 0 0 44px 14px rgba(255,79,139,.55); } 95% { background: #ff4f8b; box-shadow: 0 0 10px 2px rgba(255,79,139,.6); } }
+@keyframes nss-shine-fast { 0%, 20% { left: -60%; } 70%, 100% { left: 130%; } }
+@keyframes nss-shine { 0%, 84% { left: -60%; } 96%, 100% { left: 130%; } }
+@media (prefers-reduced-motion: reduce) { .nss-bar .nss-go, .nss-bar .nss-go::after { animation: none; } }
 .nss-end { background: #0b0b10; color: #f3f0e9; text-align: center; padding: 56px 20px 140px; font: 400 16px/1.5 system-ui, -apple-system, sans-serif; }
 .nss-end h2 { font: 600 1.6rem/1.2 system-ui, -apple-system, sans-serif; margin: 0 0 8px; color: #fff; }
 .nss-end p { color: #a9a6b2; margin: 0 auto 22px; max-width: 30em; }
